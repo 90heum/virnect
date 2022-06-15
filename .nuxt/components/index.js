@@ -1,5 +1,6 @@
 export { default as Footer } from '../../components/footer.vue'
 export { default as Header } from '../../components/header.vue'
+export { default as Main } from '../../components/main.vue'
 export { default as GnbCompany } from '../../components/Gnb/Company/index.vue'
 export { default as GnbContact } from '../../components/Gnb/Contact/index.vue'
 export { default as GnbFreeTrials } from '../../components/Gnb/FreeTrials/index.vue'

@@ -5,6 +5,9 @@
   "Header": {
     "description": "Auto imported from components/header.vue"
   },
+  "Main": {
+    "description": "Auto imported from components/main.vue"
+  },
   "GnbCompany": {
     "description": "Auto imported from components/Gnb/Company/index.vue"
   },

@@ -8,6 +8,7 @@ You can directly use them in pages and other components without the need to impo
 
 - `<Footer>` | `<footer>` (components/footer.vue)
 - `<Header>` | `<header>` (components/header.vue)
+- `<Main>` | `<main>` (components/main.vue)
 - `<GnbCompany>` | `<gnb-company>` (components/Gnb/Company/index.vue)
 - `<GnbContact>` | `<gnb-contact>` (components/Gnb/Contact/index.vue)
 - `<GnbFreeTrials>` | `<gnb-free-trials>` (components/Gnb/FreeTrials/index.vue)
