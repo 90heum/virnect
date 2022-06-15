@@ -3,14 +3,12 @@
     "name": "energy-energy",
     "path": "/energy/energy",
     "component": "/Users/majeongheum/virnect/pages/energy/energy.vue",
-    "chunkName": "pages/energy/energy",
-    "_name": "_024a1e1a"
+    "chunkName": "pages/energy/energy"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/majeongheum/virnect/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_4e2f2456"
+    "chunkName": "pages/index"
   }
 ]
