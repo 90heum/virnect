@@ -1,0 +1,101 @@
+.container {
+    width: 100%;
+    height: 850px;
+    background-color: black;
+}
+
+.titleBox {
+    padding: 150px;
+}
+
+.titleBox>h1 {
+    color: white;
+    font-size: 50px;
+}
+
+.container2 {
+    height: 800px;
+    width: 100%;
+    background: darkgray;
+}
+
+.titleBox2 {
+    text-align: center;
+}
+
+.middleT {
+    font-weight: bold;
+    color: royalblue;
+    padding-top: 130px;
+    margin-bottom: 30px;
+}
+
+.middleTitle {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.middleP {
+    margin: 5px;
+}
+
+.threeDchild {
+    height: 450px;
+    width: 400px;
+    background-color: hotpink;
+    margin: 15px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.threeD {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    /*수평 정렬*/
+    justify-content: center;
+}
+
+.threeDchildchild {
+    width: 100%;
+    height: 200px;
+    background-color: blanchedalmond;
+    position: absolute;
+    bottom: 0px;
+}
+
+.containerSolutions {
+    width: 100%;
+    height: 700px;
+    background-color: blue;
+}
+
+.containerProducts {
+    width: 100%;
+    height: 800px;
+    background-color: aquamarine;
+}
+
+.credibilityBox {
+    text-align: center;
+}
+
+.brandBox {
+    width: 100%;
+    height: 800px;
+    background-color: bisque;
+}
+
+.containerNews {
+    width: 100%;
+    height: 700px;
+    background-color: aquamarine;
+}
+
+.containerArdt {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    background-color: darkslategrey;
+}
