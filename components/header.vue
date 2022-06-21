@@ -451,6 +451,7 @@
 <script>
 import SubSolutionMenu from './modules/SubSolutionMenu.vue';
 import MobileHeader from "../components/Gnb/headerPartial/mobileHeader.vue";
+import debounce from "lodash.debounce";
 
 const navList = [
     {title: "Use Case"},
@@ -490,7 +491,7 @@ export default {
     MobileHeader
   },
   mounted () {
-    if (process.client) this.handleReactiveView(); 
+    if (process.client) window.innerWidth > 1025 ? this.isWeb = true : this.isWeb = false;
   },
   created() {
     if (process.client) { window.addEventListener('resize', this.handleReactiveView)};
@@ -512,6 +513,8 @@ export default {
       this.gnbTextStyle.color = this.isNavMenu ? "#0a51b7" : "#fff";
     },
     handleReactiveView () {
+      setTimeout(() => {
+        console.log("테스트")
         if (window.innerWidth > 1025) {
             this.isWeb = true;
             this.isMenu = false;
@@ -521,6 +524,7 @@ export default {
             this.gnbStyle.backgroundColor = "#121212";
             this.isNavMenu = {}
         }
+      }, 600)
     },
     showMenu (e) {
       this.isMenu = e;

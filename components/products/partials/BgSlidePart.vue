@@ -5,7 +5,7 @@
     <div v-swiper:mySwiper="bgExampleOption">
       <div class="swiper-wrapper">
         <div v-for="(list, idx) of bgExampleArr" :key="idx" class="img-wrapper swiper-slide">
-          <img :src="`${isMobile[idx]}.png`" />
+          <img :src="`require(${list.img + '.png'})`" />
           <p class="contents" v-html="list.contents"></p>
           <p class="category">{{list.category}}</p>
         </div>

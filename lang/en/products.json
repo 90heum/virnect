@@ -114,30 +114,30 @@
 			"exampleContents":"View our latest cases on the innovation <br class='mobile-hidden'>and efficiency created by VIRNECT Track.",
       "exampleList": [
 				{
-					"img": "../images/pages/products/arsdk-usecase-01.png",
+					"img": "~assets/images/pages/products/arsdk-usecase-01.png",
 					"title": "Cooperative development with a Korean mobile carrier"
 				},
 				{
-					"img": "../images/pages/products/arsdk-usecase-02.png",
+					"img": "~assets/images/pages/products/arsdk-usecase-02.png",
 					"title": "Real-time recognition of HMI screen"
 				},
 				{
-					"img": "../images/pages/products/arsdk-usecase-03.png",
+					"img": "~assets/images/pages/products/arsdk-usecase-03.png",
 					"title": "Real-time recognition of analog measuring instrument"
 				},
 				{
-					"img": "../images/pages/products/arsdk-usecase-04.png",
+					"img": "~assets/images/pages/products/arsdk-usecase-04.png",
 					"title": "Detection and tracing of smart welding device"
 				}
 			],
       "bgExampleList": [
 				{
-					"img": "../images/pages/products/logo-recommendation-kaeri",
+					"img": "~assets/images/pages/products/logo-recommendation-kaeri",
 					"contents": "VIRNECT Solution provides a platform of systematic information management <br class='mobile-hidden'>and optimal safety management, even for areas requiring high reliability.",
 					"category": " - Waste Management Researcher, Korea Atomic Energy Research Institute"
 				},
 				{
-					"img": "../images/pages/products/logo-recommendation-kt",
+					"img": "~assets/images/pages/products/logo-recommendation-kt",
 					"contents": "The highly-reliable object detection feature of VIRNECT Track <br class='mobile-hidden'>can provide industrial worksites with a platform for managing measurement information.",
 					"category": " - Kim Young-seok, KT Infra R&D Lab"
 				}
@@ -243,78 +243,78 @@
 			"exampleContents":"View our latest cases on the innovation <br class='mobile-hidden'>and efficiency created by VIRNECT View.",
       "exampleList": [
 				{
-					"img": "../images/pages/products/view-usecase-01.png",
+					"img": "~assets/images/pages/products/view-usecase-01.png",
 					"title": "AR inspection and visualization of smoothness of structure,"
 				},
 				{
-					"img": "../images/pages/products/view-usecase-02.png",
+					"img": "~assets/images/pages/products/view-usecase-02.png",
 					"title": "AR measurement and surveying of structure"
 				},
 				{
-					"img": "../images/pages/products/view-usecase-08.png",
+					"img": "~assets/images/pages/products/view-usecase-08.png",
 					"title": "Visualization of earthquake damage simulation training information"
 				},
 				{
-					"img": "../images/pages/products/view-usecase-03.png",
+					"img": "~assets/images/pages/products/view-usecase-03.png",
 					"title": "AR visualization of MCT machine BOM information"
 				},
 				{
-					"img": "../images/pages/products/view-usecase-04.png",
+					"img": "~assets/images/pages/products/view-usecase-04.png",
 					"title": "Visualization of automobile cluster manufacturing line"
 				},
 				{
-					"img": "../images/pages/products/view-usecase-05.png",
+					"img": "~assets/images/pages/products/view-usecase-05.png",
 					"title": "Self-diagnosis system for railway vehicles"
 				},
 				{
-					"img": "../images/pages/products/view-usecase-06.png",
+					"img": "~assets/images/pages/products/view-usecase-06.png",
 					"title": "Visualization of electric power distribution guide"
 				},
 				{
-					"img": "../images/pages/products/view-usecase-07.png",
+					"img": "~assets/images/pages/products/view-usecase-07.png",
 					"title": "Electric motorcycle assembly guide"
 				},
 				{
-					"img": "../images/pages/products/view-usecase-13.png",
+					"img": "~assets/images/pages/products/view-usecase-13.png",
 					"title": "Visualizing Vehicle Self-Maintenance Manual"
 				},
 				{
-					"img": "../images/pages/solution/view-usecase-10.png",
+					"img": "~assets/images/pages/solution/view-usecase-10.png",
 					"title": "Visualizing promotional content for virtual vehicle experience"
 				},
 				{
-					"img": "../images/pages/solution/view-usecase-11.png",
+					"img": "~assets/images/pages/solution/view-usecase-11.png",
 					"title": "Visualizing AR/VR education content for schools, companies, and educational institutions"
 				}
       ],
       "bgExampleList": [
 				{
-					"img": "../images/pages/products/logo-recommendation-steel",
+					"img": "~assets/images/pages/products/logo-recommendation-steel",
 					"contents": "VIRNECT Solution has greatly contributed to <br class='mobile-hidden'>our company's Smart Factory platform development.",
 					"category": "- Hyundai Steel"
 				},
 				{
-					"img": "../images/pages/products/logo-recommendation-kaeri",
+					"img": "~assets/images/pages/products/logo-recommendation-kaeri",
 					"contents": "VIRNECT Solution provides a platform of systematic information management <br class='mobile-hidden'>and optimal safety management, even for areas requiring high reliability.",
 					"category": " - Waste Management Researcher, Korea Atomic Energy Research Institute"
 				},
 				{
-					"img": "../images/pages/products/logo-recommendation-kumc",
+					"img": "~assets/images/pages/products/logo-recommendation-kumc",
 					"contents": "With VIRNECT Solution applied to surgical operations <br class='mobile-hidden'>where the patient's safety is the most important factor, <br class='mobile-hidden'>our medical staff can now stay more focused to give better results.",
 					"category": "- Cosmetic surgery, Korea University"
 				},
 				{
-					"img": "../images/pages/products/logo-recommendation-end",
+					"img": "~assets/images/pages/products/logo-recommendation-end",
 					"contents": "VIRNECT Solution helped our company to envision a future of smart factories.",
 					"category": "- END Electric"
 				},
 				{
-					"img": "../images/pages/products/logo-recommendation-skcnc",
+					"img": "~assets/images/pages/products/logo-recommendation-skcnc",
 					"contents": "AR solution applied to facility maintenance created an easier understanding of <br class='mobile-hidden'>work and improved work efficiency.",
 					"category": "- SK CnC"
 				},
 				{
-					"img": "../images/pages/products/logo-recommendation-seole-m",
+					"img": "~assets/images/pages/products/logo-recommendation-seole-m",
 					"contents": "The world-class local AR specialized company VIRNECT's core solution surely has its own selling point. <br class='mobile-hidden'>It will become an essential partner for increasing industrial productivity.",
 					"category": "- Seoil E&M"
 				}
@@ -421,66 +421,66 @@
 			"exampleContents":"View our latest cases on the innovation <br class='mobile-hidden'>and efficiency created by VIRNECT Make.",
       "exampleList": [
 				{
-					"img": "../images/pages/products/make-usecase-01.png",
+					"img": "~assets/images/pages/products/make-usecase-01.png",
 					"title": "Authoring of AR content for internal data collection of factories and linking of collected data"
 				},
 				{
-					"img": "../images/pages/products/make-usecase-02.png",
+					"img": "~assets/images/pages/products/make-usecase-02.png",
 					"title": "Authoring of AR content for facility data through interlocking internal systems"
 				},
 				{
-					"img": "../images/pages/products/make-usecase-03.png",
+					"img": "~assets/images/pages/products/make-usecase-03.png",
 					"title": "Authoring of AR content for reporting work issues and connecting smart tools"
 				},
 				{
-					"img": "../images/pages/products/make-usecase-04.png",
+					"img": "~assets/images/pages/products/make-usecase-04.png",
 					"title": "Authoring of AR content for connecting real-time production line information"
 				},
 				{
-					"img": "../images/pages/products/make-usecase-05.png",
+					"img": "~assets/images/pages/products/make-usecase-05.png",
 					"title": "Creation of electronic document type AR content for reporting work results"
 				},
 				{
-					"img": "../images/pages/products/make-usecase-13.png",
+					"img": "~assets/images/pages/products/make-usecase-13.png",
 					"title": "Creation of promotional AR content manuals for purchase of new cars"
 				},
 				{
-					"img": "../images/pages/products/make-usecase-07.png",
+					"img": "~assets/images/pages/products/make-usecase-07.png",
 					"title": "Authoring of AR content for exhibitions"
 				},
 				{
-					"img": "../images/pages/products/make-usecase-08.png",
+					"img": "~assets/images/pages/products/make-usecase-08.png",
 					"title": "Authoring of AR content for construction site supervision using BIM data"
 				},
 				{
-					"img": "../images/pages/products/make-usecase-09.png",
+					"img": "~assets/images/pages/products/make-usecase-09.png",
 					"title": "Authoring of AR content for education evaluation and reporting of evaluation data"
 				},
 				{
-					"img": "../images/pages/solution/make-usecase-10.png",
+					"img": "~assets/images/pages/solution/make-usecase-10.png",
 					"title": "Creating Electric Vehicle Self-Maintenance Manual"
 				},
 				{
-					"img": "../images/pages/solution/make-usecase-11.png",
+					"img": "~assets/images/pages/solution/make-usecase-11.png",
 					"title": "Creating promotional content for virtual vehicle experience"
 				},
 				{
-					"img": "../images/pages/solution/view-usecase-11.png",
+					"img": "~assets/images/pages/solution/view-usecase-11.png",
 					"title": "Creating AR/VR education content for schools, companies, and educational institutions"
 				},
 				{
-					"img": "../images/pages/solution/make-usecase-13.png",
+					"img": "~assets/images/pages/solution/make-usecase-13.png",
 					"title": "Converting models and creating AR content"
 				}
       ], 
       "bgExampleList": [
 				{
-					"img": "../images/pages/products/logo-recommendation-ibim",
+					"img": "~assets/images/pages/products/logo-recommendation-ibim",
 					"contents": "By implementing and utilizing pre-digital mock-up of<br class='mobile-hidden'> various structures on Augmented Reality, <br class='mobile-hidden'>it has been very helpful in understanding blueprints and improving skills, as well as in business consultation.",
 					"category": "- Infra BIM"
 				},
 				{
-					"img": "../images/pages/products/logo-recommendation-seole-m",
+					"img": "~assets/images/pages/products/logo-recommendation-seole-m",
 					"contents": "The world-class local AR specialized company VIRNECT's core solution surely has its own selling point. <br class='mobile-hidden'>It will become an essential partner for increasing industrial productivity.",
 					"category": "- Seoil E&M"
 				}
@@ -587,56 +587,56 @@
 			"exampleContents":"View our latest cases on the innovation <br class='mobile-hidden'>and efficiency created by the VIRNECT Remote.",
       "exampleList": [
 				{
-					"img": "../images/pages/products/remote-usecase-01.png",
+					"img": "~assets/images/pages/products/remote-usecase-01.png",
 					"title": "Support for railway vehicle training and maintenance"
 				},
 				{
-					"img": "../images/pages/products/remote-usecase-02.png",
+					"img": "~assets/images/pages/products/remote-usecase-02.png",
 					"title": "Support for power plant facility inspection and maintenance"
 				},
 				{
-					"img": "../images/pages/products/remote-usecase-03.png",
+					"img": "~assets/images/pages/products/remote-usecase-03.png",
 					"title": "Guide for detailed and accurate equipment operation"
 				},
 				{
-					"img": "../images/pages/products/remote-usecase-04.png",
+					"img": "~assets/images/pages/products/remote-usecase-04.png",
 					"title": "Quality control for overseas manufacturing sites"
 				},
 				{
-					"img": "../images/pages/products/remote-usecase-05.png",
+					"img": "~assets/images/pages/products/remote-usecase-05.png",
 					"title": "Stable communications support during long-term/large-scale construction process"
 				},
 				{
-					"img": "../images/pages/products/remote-usecase-06.png",
+					"img": "~assets/images/pages/products/remote-usecase-06.png",
 					"title": "Replacement of overseas remote workers"
 				},
 				{
-					"img": "../images/pages/products/remote-usecase-07.png",
+					"img": "~assets/images/pages/products/remote-usecase-07.png",
 					"title": "Online docent/remote support during MICE events"
 				},
 				{
-					"img": "../images/pages/products/remote-usecase-08.png",
+					"img": "~assets/images/pages/products/remote-usecase-08.png",
 					"title": "Remote support for commissioning at new construction plant sites"
 				}
       ],
       "bgExampleList": [
 				{
-					"img": "../images/pages/products/logo-recommendation-sds",
+					"img": "~assets/images/pages/products/logo-recommendation-sds",
 					"contents": "The VIRNECT AR Solution applied <br class='mobile-hidden'>for worker inspections highly improved customer satisfaction.",
 					"category": " - Samsung SDS"
 				},
 				{
-					"img": "../images/pages/products/logo-recommendation-oci",
+					"img": "~assets/images/pages/products/logo-recommendation-oci",
 					"contents": "This is a powerful tool that allows quick collaboration of <br class='mobile-hidden'>facility maintenance without the limitations of space and time.",
 					"category": "- OCI"
 				},
 				{
-					"img": "../images/pages/products/logo-recommendation-miraecity",
+					"img": "~assets/images/pages/products/logo-recommendation-miraecity",
 					"contents": "The work efficiency of facility safety inspectors is <br class='mobile-hidden'>increasing due to the real-time information sharing among offices and worksites.",
 					"category": "- Mirae City"
 				},
 				{
-					"img": "../images/pages/products/logo-recommendation-lgchem",
+					"img": "~assets/images/pages/products/logo-recommendation-lgchem",
 					"contents": "VIRNECT Remote is actually very helpful in working with <br class='mobile-hidden'>our overseas production sites.",
 					"category": "- LG Chemistry"
 				}
@@ -744,26 +744,26 @@
 			"exampleContents": "View our latest cases on the innovation <br class='mobile-hidden'>and efficiency created by VIRNECT Twin.",
       "exampleList": [
 				{
-					"img": "../images/pages/products/twin-usecase-01.png",
+					"img": "~assets/images/pages/products/twin-usecase-01.png",
 					"title": "3D visualization of the gas industry"
 				},
 				{
-					"img": "../images/pages/products/twin-usecase-02.png",
+					"img": "~assets/images/pages/products/twin-usecase-02.png",
 					"title": "Worker behavior analysis and prediction of accidents"
 				},
 				{
-					"img": "../images/pages/products/view-usecase-09.png",
+					"img": "~assets/images/pages/products/view-usecase-09.png",
 					"title": "Real-time monitoring of GIS facility status"
 				}
       ],
       "bgExampleList": [
 				{
-					"img": "../images/pages/products/logo-recommendation-kaeri",
+					"img": "~assets/images/pages/products/logo-recommendation-kaeri",
 					"contents": "VIRNECT Solution provides a platform of systematic information management <br class='mobile-hidden'>and optimal safety management, even for areas requiring high reliability.",
 					"category": " - Waste Management Researcher, Korea Atomic Energy Research Institute"
 				},
 				{
-					"img": "../images/pages/products/logo-recommendation-doosan",
+					"img": "~assets/images/pages/products/logo-recommendation-doosan",
 					"contents": "The implementation of VIRNECT Solution supports the enhancement of productivity <br class='mobile-hidden'>and sharing of information for fields of developing industries.",
 					"category": "- Technology Innovation Researcher, Environmental Technology Development Team, Doosan Heavy Industries & Construction"
 				}

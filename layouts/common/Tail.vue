@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+// import { mapGetters } from 'vuex'
 // import mixin from 'mixins/mixin' << 모바일 체크용인듯
 export default {
   // mixins: [mixin],
@@ -42,11 +42,11 @@ export default {
     greyRouter: String,
   },
   computed: {
-    ...mapGetters(['isMobile']),
-    mobileImg() {
-      if (!this.isMobile) return this.bg
-      else return `${this.bg}-m@2x`
-    },
+    // ...mapGetters(['isMobile']),
+    // mobileImg() {
+    //   if (!this.isMobile) return this.bg
+    //   else return `${this.bg}-m@2x`
+    // },
   },
 }
 </script>

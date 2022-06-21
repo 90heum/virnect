@@ -360,10 +360,10 @@ const optionList = [
     {title: "Workstation 2.0"},
     {title: "Remote 2.0"},
 ];
-let windowWidth = 0;
-if (process.client) {
-    windowWidth = window.innerWidth;
-}
+// let windowWidth = 0;
+// if (process.client) {
+//     windowWidth = window.innerWidth;
+// }
 
 export default {
   computed: {

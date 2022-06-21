@@ -75,17 +75,17 @@ export default {
     moveTo(idx) {
       this.active = idx
     },
-    cursorIn() {
-      window.addEventListener('scroll', this.noscroll)
-      window.addEventListener('wheel', this.wheel)
-    },
-    cursorOut() {
-      window.removeEventListener('scroll', this.noscroll)
-      window.removeEventListener('wheel', this.wheel)
-    },
-    noscroll() {
-      window.scrollTo(0, 0)
-    },
+    // cursorIn() {
+    //   window.addEventListener('scroll', this.noscroll)
+    //   window.addEventListener('wheel', this.wheel)
+    // },
+    // cursorOut() {
+    //   window.removeEventListener('scroll', this.noscroll)
+    //   window.removeEventListener('wheel', this.wheel)
+    // },
+    // noscroll() {
+    //   window.scrollTo(0, 0)
+    // },
     autoPlay() {
       this.playBanner = setInterval(() => {
         if (this.active < this.listLegnth - 1) {
@@ -122,9 +122,9 @@ export default {
       this.$emit('toggleBanner')
     },
   },
-  beforeDestroy() {
-    window.removeEventListener('scroll', this.noscroll)
-  },
+  // beforeDestroy() {
+  //   window.removeEventListener('scroll', this.noscroll)
+  // },
   mounted() {
     if (
       this.$t('bannerText.bannerList').length > 1 &&

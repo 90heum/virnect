@@ -50,7 +50,7 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+// import { mapGetters } from 'vuex'
 // import mixin from 'mixins/mixin'
 export default {
   // mixins: [mixin],
@@ -60,6 +60,7 @@ export default {
   },
   data() {
     return {
+      isMobile: false,
       introOption: {
         spaceBetween: 12,
         slidesPerView: 'auto',
@@ -67,7 +68,7 @@ export default {
     }
   },
   computed: {
-    ...mapGetters(['isMobile']),
+    // ...mapGetters(['isMobile']),
   },
   methods: {
     loadMore() {

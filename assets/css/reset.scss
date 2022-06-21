@@ -27,8 +27,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   line-height: 1;
 }
-ol, ul {
-  list-style: none;
+ol, ul, li {
+  list-style: none!important;
 }
 blockquote, q {
   quotes: none;

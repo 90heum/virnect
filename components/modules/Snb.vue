@@ -30,61 +30,61 @@ export default {
     }
   },
   watch: {
-    $route() {
-      if (process.client) {
-        this.didScroll = window.pageYOffset
-      if (this.didScroll > this.snbTop) {
-        this.snbSticky = true
-        document.querySelector('#headerSection').classList.add('sticky-pushup')
-      } else {
-        this.snbSticky = false
-      }
-      }
+    // $route() {
+    //   if (process.client) {
+    //     this.didScroll = window.pageYOffset
+    //   if (this.didScroll > this.snbTop) {
+    //     this.snbSticky = true
+    //     document.querySelector('#headerSection').classList.add('sticky-pushup')
+    //   } else {
+    //     this.snbSticky = false
+    //   }
+    //   }
       
-    },
+    // },
   },
   computed: {
-    isMobile() {
-      return this.$store.getters.isMobile
-    },
+    // isMobile() {
+    //   return this.$store.getters.isMobile
+    // },
   },
   created() {
-    if (process.client) window.addEventListener('scroll', this.snbNav)
+    // if (process.client) window.addEventListener('scroll', this.snbNav)
   },
   beforeDestroy() {
-    window.removeEventListener('scroll', this.snbNav)
-    window.removeEventListener('scroll', this.hasScrolled)
+    // window.removeEventListener('scroll', this.snbNav)
+    // window.removeEventListener('scroll', this.hasScrolled)
   },
   methods: {
-    snbNav() {
-      let scrollY = window.pageYOffset
-      let elHeight = this.$el.offsetHeight
-      this.snbTop = document.querySelector('#subVisualSection').offsetHeight
-      if (scrollY - elHeight > this.snbTop) {
-        this.snbSticky = true
-        document.querySelector('#headerSection').classList.add('sticky-pushup')
-        document.querySelector('#headerSection').classList.remove('active')
-        this.$eventHub.$emit('headerClose')
-        this.hasScrolled()
-      } else {
-        this.snbSticky = false
-        document
-          .querySelector('#headerSection')
-          .classList.remove('sticky-pushup')
-      }
-    },
-    hasScrolled() {
-      let header = document.querySelector('#headerSection')
+    // snbNav() {
+    //   let scrollY = window.pageYOffset
+    //   let elHeight = this.$el.offsetHeight
+    //   this.snbTop = document.querySelector('#subVisualSection').offsetHeight
+    //   if (scrollY - elHeight > this.snbTop) {
+    //     this.snbSticky = true
+    //     document.querySelector('#headerSection').classList.add('sticky-pushup')
+    //     document.querySelector('#headerSection').classList.remove('active')
+    //     this.$eventHub.$emit('headerClose')
+    //     this.hasScrolled()
+    //   } else {
+    //     this.snbSticky = false
+    //     document
+    //       .querySelector('#headerSection')
+    //       .classList.remove('sticky-pushup')
+    //   }
+    // },
+    // hasScrolled() {
+    //   let header = document.querySelector('#headerSection')
 
-      if (window.pageYOffset > this.didScroll) {
-        header.classList.add('sticky-pushup')
-        document.querySelector('#headerSection').classList.remove('active')
-      } else {
-        header.classList.remove('sticky-pushup')
-      }
+    //   if (window.pageYOffset > this.didScroll) {
+    //     header.classList.add('sticky-pushup')
+    //     document.querySelector('#headerSection').classList.remove('active')
+    //   } else {
+    //     header.classList.remove('sticky-pushup')
+    //   }
 
-      this.didScroll = window.pageYOffset
-    },
+    //   this.didScroll = window.pageYOffset
+    // },
   },
 }
 </script>
