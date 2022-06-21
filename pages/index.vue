@@ -3,7 +3,7 @@
   <section id="mainSection" class="main-section">
     <div class="container">
       <div class="titleBox">
-        <h1>{{ $t("mainPost") }}</h1>
+        <h1 v-html="$t(`bannerText.bannerList[0].title`)"></h1>
         <h1>{{ $t("mainSolve") }}</h1>
       </div>
     </div>

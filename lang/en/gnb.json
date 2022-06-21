@@ -1,0 +1,198 @@
+{
+  "gnb": [
+    {
+      "text": "Solutions",
+      "page": "energy_resource",
+      "to": "/solutions/energy_resource",
+      "array": [
+        {
+          "text": "Energy/Resources",
+          "page": "energy_resource",
+          "to": "/solutions/energy_resource"
+        },
+        {
+          "text": "Refinery/Petrochemical/Batteries",
+          "page": "oil_chemical_battery",
+          "to": "/solutions/oil_chemical_battery"
+        },
+        {
+          "text": "Automotive/Parts",
+          "page": "motor_parts",
+          "to": "/solutions/motor_parts"
+        },
+        {
+          "text": "Aviation/Railway",
+          "page": "airline_railroad",
+          "to": "/solutions/airline_railroad"
+        },
+        {
+          "text": "EPC",
+          "page": "epc",
+          "to": "/solutions/epc"
+        }
+      ]
+    }, {
+      "text": "Products",
+      "page": "remote",
+      "to": "/products/remote",
+      "array": [
+        {
+          "text": "VIRNECT Remote",
+          "page": "remote",
+          "to": "/products/remote"
+        },
+        {
+          "text": "VIRNECT Make",
+          "page": "make",
+          "to": "/products/make"
+        },
+        {
+          "text": "VIRNECT View",
+          "page": "view",
+          "to": "/products/view"
+        },
+        {
+          "text": "VIRNECT Twin",
+          "page": "twin",
+          "to": "/products/twin"
+        },
+        {
+          "text": "VIRNECT Track",
+          "page": "track",
+          "to": "/products/track"
+        },
+        {
+          "text": "VIRNECT X MS",
+          "page": "ms",
+          "to": "/products/ms"
+        }
+      ]
+    }, {
+      "text": "Pricing",
+      "page": "pricing",
+      "to": "/pricing/remote",
+      "array": [
+        {
+          "text": "Price Guidance",
+          "page": "pricing_remote",
+          "to": "/pricing/remote",
+          "depth": [
+            {
+              "text": "VIRNECT Remote",
+              "page": "pricing_remote",
+              "to": "/pricing/remote"
+            },
+            {
+              "text": "VIRNECT Make",
+              "page": "pricing_make",
+              "to": "/pricing/make"
+            },
+            {
+              "text": "VIRNECT View",
+              "page": "pricing_view",
+              "to": "/pricing/view"
+            },
+            {
+              "text": "VIRNECT Workstation",
+              "page": "pricing_workstation",
+              "to": "/pricing/workstation"
+            }
+          ]
+        },
+        {
+          "text": "Value Calculator(ROI)",
+          "page": "pricing_calculator",
+          "to": "/pricing/calculator",
+          "depth": []
+        }
+      ]
+    }, {
+      "text": "Resources",
+      "page": "resources",
+      "to": "/resources/library",
+      "array": [
+        {
+          "text": "Library",
+          "page": "resources_library",
+          "to": "/resources/library"
+        }
+      ]
+    }, {
+      "text": "Company",
+      "page": "summary",
+      "to": "/company/summary",
+      "array": [
+        {
+          "text": "About VIRNECT",
+          "page": "summary",
+          "to": "/company/summary",
+          "depth": [
+            {
+              "text": " Company overview",
+              "page": "summary",
+              "to": "/company/summary"
+            },
+            {
+              "text": "VIRTUAL CONNECT",
+              "page": "virtual_connect",
+              "to": "/company/virtual_connect"
+            },
+            {
+              "text": "Brand",
+              "page": "brand",
+              "to": "/company/brand"
+            },
+            {
+              "text": "History",
+              "page": "history",
+              "to": "/company/history"
+            }
+          ]
+        },
+        {
+          "text": "News Center",
+          "page": "pr",
+          "to": "/media/pr",
+          "depth": [
+            {
+              "text": "PR",
+              "page": "pr",
+              "to": "/media/pr"
+            },
+            {
+              "text": "IR",
+              "page": "ir",
+              "to": "/media/ir"
+            }
+          ]
+        },
+        {
+          "text": "Recruitment",
+          "page": "recruitment",
+          "to": "/company/recruitment"
+        }
+      ]
+    }, {
+      "text": "Contact",
+      "page": "inquiry",
+      "to": "/contact/inquiry",
+      "array": [
+        {
+          "text": "Inquiries",
+          "page": "inquiry",
+          "to": "/contact/inquiry"
+        },
+        {
+          "text": "Support Center",
+          "page": "blank",
+          "to": "https://support.virnect.com/"
+        },
+        {
+          "text": "How to visit us",
+          "page": "location",
+          "to": "/contact/location"
+        }
+      ]
+    }
+  ]
+}

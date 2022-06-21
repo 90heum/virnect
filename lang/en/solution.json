@@ -1,0 +1,533 @@
+{
+  "solutionText": {
+    "visualText": {
+      "title": "View the solutions for <br class='mobile-hidden'>innovating your worksites.",
+      "contents": "We provide the optimized solution for you, <br class='mobile-hidden'>from consulting for problem diagnosis to coming up with solutions and the actual application, <br class='mobile-hidden'>considering the nature of your business and the demands of your worksites."
+    },
+    "exampleTitle": {
+      "category": "Application",
+      "title": "We share an enhanced <br>value experience.",
+      "contents":"View our latest news and material <br>on the innovation and efficiency created <br>by VIRNECT Twin."
+    },
+    "bgNormalText": {
+      "text": "Create innovation in your worksites with",
+      "boldText": "AR and Digital Twin technologies"
+    },
+    "roiText": {
+      "text": "Enhance your business value",
+      "boldText": "through the VIRNECT Solution."
+    },
+    "offerText" : {
+      "title": "We provide a sustainable solution <br class='mobile-hidden'>for your problems.",
+      "contents": "VIRNECT provides a one-on-one service to our clients for <br class='mobile-hidden'>a sustainable solution in rooting out fundamental problems.",
+      "array": [
+				{
+					"text": "Virtual monitoring <br>and simulation <br>by data connection",
+					"image": "../images/pages/solution/logo-solutions-remote",
+					"router": "remote"
+				}, {
+					"text": "Multi-party <br>AR remote collaboration",
+					"image": "../images/pages/solution/logo-solutions-make",
+					"router": "make"
+				}, {
+					"text": "Production and <br>distribution of AR content",
+					"image": "../images/pages/solution/logo-solutions-view",
+					"router": "view"
+				}, {
+					"text": "AR visualization of <br>information and data",
+					"image": "../images/pages/solution/logo-solutions-twin",
+					"router": "twin"
+				}, {
+					"text": "객체 검출/추적용 <br>AR 개발 SDK",
+					"image": "../images/pages/solution/logo-solutions-track",
+					"router": "track"
+				}
+      ]
+    },
+    "energyText": {
+      "motorTitle": {
+				"category": "Energy/Resources",
+				"title": "Have you been concerned with issues of the energy/resources industry?",
+				"contents": "The management system of the energy/resources industry has become less effective due to the complexity of facilities and data. The embedded facilities and complicated connection make it difficult to understand the worksites. There is also an issue of insufficient availability of professionals in this field."
+			},
+      "issueTitle": "Industry issues",
+      "issueList": [
+        {
+          "title": "The need for an energy management system",
+          "contents":
+            "With the increase in production costs and aging of production facilities, there has been a rising demand for management systems. Fine dust and greenhouse gas reduction policies are obstacles in growing industries, and frequent earthquakes are increasing concerns for safety."
+        },
+        {
+          "title": "Lack of expertise in facility inspection",
+          "contents":
+            "Job rotations and retirement of inspection personnel deteriorate the professionalism of facility inspection, leading to less thorough execution of the correct procedures."
+        },
+        {
+          "title": "Complicated facilities, difficult decision-making",
+          "contents":
+            "One problem in a facility requires inspection of all of the other connected facilities, requiring a group of experts to detect the problem. This causes prolonged and multiple steps for decision-making, while the work process is halted."
+        },
+        {
+          "title": "Information of unseen embedded facilities",
+          "contents":
+            "Data of underground facilities is often not handled, and location information for power lines and communication cables is usually unreliable. Even if they are regularly updated, it is not helpful in maintenance work as they are embedded and not directly visible."
+        }
+      ],
+      "infographicText": {
+				"category": "Solution",
+				"title": "VIRNECT proposes a solution for the growth and advancement of the energy and resources industry",
+				"contents": "The Energy/Resources industry requires large power facilities and systematic supply chain management. VIRNECT AR/DT technologies streamline the environment for monitoring and preventive maintenance of vast facilities and enhance work productivity by improving the work process.",
+				"image": "../images/pages/solution/img-energy-infographic-00_en.svg",
+				"infographicList": [
+					{
+						"title": "Integrated energy <br class='mobile-hidden'>management system",
+						"contents": "All information needed for energy production process is managed by visualizing the vast data of large facilities connected within a power plant and other data such as for fine dust and greenhouse gas that require inspection.",
+            "image": "../images/pages/solution/img-energy-infographic-01_en.svg"
+          },
+					{
+						"title": "Optimized <br class='mobile-hidden'>facility management",
+						"contents": "Information of substations, transmission, power generation facility information, and inspection items, maintenance process, etc. that need to be checked on site are selectively visualized with a smartphone or smart glasses. In the event of trouble in a system, a trouble memo (TM) is immediately issued on site, allowing the related department to view the problem in real-time.",
+            "image": "../images/pages/solution/img-energy-infographic-02_en.svg"
+					},
+					{
+						"title": "Fast detection and <br class='mobile-hidden'>solution for problems",
+						"contents": "VIRNECT Remote features a communication platform where a group of experts can share information. Professionals can simultaneously view facility data and inspection history to come up with response measures, enhancing the efficiency and reliability of the outcome.",
+            "image": "../images/pages/solution/img-energy-infographic-03_en.svg"
+					},
+					{
+						"title": "3D visualization of <br class='mobile-hidden'>unseen facilities",
+						"contents": "Facilities that are embedded underground do not have to be exposed for inspection, but can instead be viewed through 3D visualization. With VIRNECT View installed in a smartphone or smart glasses, you can view live and dead lines, the power distribution directions, and the condition of the facility simply by flashing the device toward the ground, enabling the right response for any emergency situation.",
+            "image": "../images/pages/solution/img-energy-infographic-04_en.svg"
+					}
+				]
+      },
+      "exampleList": [
+				{
+					"img": "../images/pages/solution/arsdk-usecase-03.png",
+					"title": "Real-time recognition of analog measuring instrument"
+				},
+				{
+					"img": "../images/pages/products/view-usecase-08.png",
+					"title": "Visualization of earthquake damage simulation training information"
+				},
+				{
+					"img": "../images/pages/solution/view-usecase-08.png",
+					"title": "Real-time monitoring of GIS facility status"
+				},
+				{
+					"img": "../images/pages/solution/make-usecase-06.png",
+					"title": "Creation of electronic document type AR content for reporting work results"
+				},
+				{
+					"img": "../images/pages/solution/make-usecase-02.png",
+					"title": "Creation of AR content for facility data through interlocking internal systems"
+				},
+				{
+					"img": "../images/pages/solution/make-usecase-09.png",
+					"title": "Creation of AR content for education evaluation and reporting of evaluation data"
+				},
+				{
+					"img": "../images/pages/solution/twin-usecase-01.png",
+					"title": "3D visualization of gas industry"
+				},
+				{
+					"img": "../images/pages/solution/twin-usecase-02.png",
+					"title": "Worker behavior analysis and prediction of accidents"
+				},
+				{
+					"img": "../images/pages/solution/remote-usecase-02.png",
+					"title": "Support for power plant facility inspection and maintenance"
+				},
+				{
+					"img": "../images/pages/solution/remote-usecase-09.png",
+					"title": "Real-time information check by sharing drawings and files during collaboration"
+				},
+				{
+					"img": "../images/pages/solution/remote-usecase-10.png",
+					"title": "Real-time communication with overseas business sites (translator provided)"
+				}
+      ],
+      "bgExampleList": [
+				{
+					"img": "../images/pages/solution/logo-recommendation-steel",
+					"contents": "VIRNECT Solution contributed greatly to our company's <br class='mobile-hidden'>Smart Factory platform development.",
+					"category": " - Hyundai Steel"
+				},
+				{
+					"img": "../images/pages/products/logo-recommendation-kaeri",
+					"contents": "VIRNECT Solution provides a platform of systematic information management and optimal safety management, <br class='mobile-hidden'>even for areas requiring high reliability.",
+					"category": " - Waste Management Researcher, Korea Atomic Energy Research Institute"
+				},
+				{
+					"img": "../images/pages/products/logo-recommendation-doosan",
+					"contents": "The implementation of VIRNECT Solution supports enhancement of productivity and <br class='mobile-hidden'>sharing of information for fields of developing industries.",
+					"category": "- Technology Innovation Researcher, Environmental Technology Development Team, Doosan Heavy Industries & Construction"
+				}
+      ]
+    },
+    "epcText": {
+      "epcTitle": {
+        "category": "EPC",
+				"title": "Have you been concerned <br class='mobile-hidden'>with the issues of the EPC industry?",
+				"contents": "In the designing and construction industry, communication and sharing of information among actual construction sites have always been a challenge. <br class='mobile-hidden'>The gaps between planning and actual construction work and defects in the outcomes are usually caused by information asymmetry and poor management. This later becomes a cause for industrial disasters."
+			},
+      "issueTitle": "Industry issues",
+      "issueList": [
+        {
+          "title": "Management of construction sites",
+          "contents":
+            "Unanticipated accidents in construction sites usually occur due to poor data management. A precise monitoring system is needed."
+        },
+        {
+          "title": "Site workers' lack of information",
+          "contents":
+            "The sites are still driven based on worker experience and intuition. For work efficiency and accuracy, workers must be checking work information from sites."
+        },
+        {
+          "title": "Gap between 2D blueprints and actual construction sites",
+          "contents":
+            "Despite the development of 3D modeling technology, blueprints are still produced in 2D CAD drawings. Actual outcomes show discrepancies from the drawings due to limitations."
+        },
+        {
+          "title": "Difficulty in direct communication",
+          "contents":
+            "Communication should be direct and fast between the developer and construction company. Intervals between construction work for discussion and distant business trips for meetings cause project delays and extra costs."
+        }
+      ],
+      "infographicText": {
+				"category": "Solution",
+				"title": "VIRNECT proposes a safe and <br class='mobile-hidden'>predictable EPC industrial site",
+				"contents": "In the designing and construction industry, there have been continued efforts to apply ICT technology in construction work for improving efficiency. VIRNECT can visualize construction drawings and the expected final outcome on-site, <br class='mobile-hidden'>making a more efficient environment for construction inspection and safety management.",
+				"image": "../images/pages/solution/img-epc-infographic-00_en.svg",
+				"infographicList": [
+					{
+						"title": "Accurate <br class='mobile-hidden'>site monitoring",
+						"contents": "VIRNECT Twin perfectly replicates worksites, allowing you to closely manage and check on the work situation and facility conditions via the program. You can view automated facilities and where each workers are positioned, the work status, etc., providing a more efficient management system.",
+            "image": "../images/pages/solution/img-epc-infographic-01_en.svg"
+          },
+					{
+						"title": "Immediate viewing of <br class='mobile-hidden'>information",
+						"contents": "Visualize the to-do list, drawings, material dimensions, and quality assessment process. All visualized information can be accessed directly while working, increasing the accuracy and speed of work. This improves the work process and the quality of the outcome.",
+            "image": "../images/pages/solution/img-epc-infographic-02_en.svg"
+					},
+					{
+						"title": "Visualization of <br class='mobile-hidden'>AR drawings and sites",
+						"contents": "Drawings can be 3D visualized, facilitating the inspection of the work status and the situation of the overall construction sites. Any modifications of the drawing can be done with VIRNECT Make, or for simple modifications, VIRNECT View can be used.",
+            "image": "../images/pages/solution/img-epc-infographic-03_en.svg"
+					},
+					{
+						"title": "Highly realistic <br class='mobile-hidden'>remote collaboration",
+						"contents": "With the systematic and complex nature of EPC infrastructure projects, one defect can cause a series of problems, resulting in a snowball effect with severe damage. Utilize VIRNECT Remote for quick and highly realistic remote communication among experts to produce solutions.",
+            "image": "../images/pages/solution/img-epc-infographic-04_en.svg"
+					}
+				]
+      },
+      "exampleList": [
+				{
+					"img": "../images/pages/solution/view-usecase-01.png",
+					"title": "AR inspection and visualization of smoothness of structure"
+				},
+				{
+					"img": "../images/pages/solution/view-usecase-02.png",
+					"title": "AR measurement and survey of structure"
+				},
+				{
+					"img": "../images/pages/solution/make-usecase-08.png",
+					"title": "Authoring of AR content for construction site supervision using BIM data"
+				},
+				{
+					"img": "../images/pages/solution/make-usecase-13.png",
+					"title": "Visualizing BIM content at the actual size"
+				},
+				{
+					"img": "../images/pages/solution/view-usecase-12.png",
+					"title": "Supports efficient facility management by increasing actual-size content"
+				}
+      ],
+      "bgExampleList": [
+				{
+					"img": "../images/pages/products/logo-recommendation-miraecity",
+					"contents": "Work efficiency of facility safety inspectors is increasing <br class='mobile-hidden'>thanks to real-time information sharing among offices and field sites.",
+					"category": "- Mirae City"
+				}, 
+				{
+					"img": "../images/pages/products/logo-recommendation-skcnc",
+					"contents": "The AR solution applied to facility maintenance provided <br class='mobile-hidden'>an easier understanding of work and improved work efficiency.",
+					"category": "- SK CnC"
+				}, 
+				{
+					"img": "../images/pages/products/logo-recommendation-ibim",
+					"contents": "By implementing and utilizing pre-digital mock-up of various structures on Augmented Reality, <br class='mobile-hidden'>it has been very helpful in understanding blueprints and improving skills, as well as in business consultation.",
+					"category": "- Infra BIM"
+				}, 
+				{
+					"img": "../images/pages/products/logo-recommendation-seole-m",
+					"contents": "The world-class local AR specialized company VIRNECT's core solution surely has its own selling point. <br class='mobile-hidden'>It will become an essential partner for increasing industrial productivity.",
+					"category": "- Seoil E&M"
+				}
+      ]
+    },
+    "motorText": {
+      "motorTitle": {
+				"category": "Automotive/Parts",
+				"title": "Have you been concerned with <br class='mobile-hidden'>the automotive and parts industry?",
+				"contents": "In the automotive/parts industry, assembly defects and the danger of manufacturing processes have always been a challenge. Defective products lower reliability for customers, and can cause problems in the final product leading to accidents. A precise and accurate manufacturing system must be established by securing the safety of workers."
+			},
+      "issueTitle": "Industry issues",
+      "issueList": [
+        {
+          "title": "Defects from assembling complex parts",
+          "contents":
+            "To maintain high quality of products and productivity, it is critical to follow the step-by-step procedures. However, in reality, it is impossible to entirely avoid defects in an environment where workers handle and assemble thousands of parts each day."
+        },
+        {
+          "title": "Exposure to danger factors of heavy equipment such as conveyers, pressers, assembly facilities, etc.",
+          "contents":
+            "Severe accidents from workplaces with heavy equipment occur every year. Casualties occur when the necessary procedures are not followed."
+        },
+        {
+          "title": "Need for monitoring of assembly process and information management of trouble areas",
+          "contents":
+            "In a sequence of assembly procedures, a single problem can lead to consequential problems in the following process, plunging productivity. It is hard to quickly settle the problem, as it takes a significant amount of time just to look for the main problem."
+        },
+        {
+          "title": "Conventional product design",
+          "contents":
+            "Significant time and money are wasted in creating numerous mockups for the verification stage of creating external and internal designs."
+        }
+      ],
+      "infographicText": {
+				"category": "Solution",
+				"title": "Improve production facilities and change assembly processes with VIRNECT.",
+				"contents": "The current automotive/parts industry needs upgraded quality and efficient processing. <br class='mobile-hidden'>VIRNECT's AR/DT technology guarantees quality and creates an efficient management system.",
+				"image": "../images/pages/solution/img-motor-infographic-00_en.svg",
+				"infographicList": [
+					{
+						"title": "Processing manual using AR",
+						"contents": "The automotive/parts industry is allotting significant time to vocational training due to improvement of production facilities and shifts in assembly processes. AR manuals deliver information for the various facilities, parts, and the step-by-step procedures with 3D models including text, images, video clips, and animations. The manuals are easy to understand, reducing the need for separate training sessions, while enhancing workers' understanding of the work.",
+            "image": "../images/pages/solution/img-motor-infographic-01_en.svg"
+          },
+					{
+						"title": "Safe working environment",
+						"contents": "The location information of facilities and workers are helpful in controlling the movement of heavy equipment and alerting workers in a dangerous situation. Appropriate information can be provided to workers during the procedures for an environment to work more safely and precisely.",
+            "image": "../images/pages/solution/img-motor-infographic-02_en.svg"
+					},
+					{
+						"title": "Close monitoring of <br class='mobile-hidden'>processing and <br class='mobile-hidden'>quick problem-solving",
+						"contents": "VIRNECT Twin allows you to view in one screen the entire process of complex assembly of thousands of parts. When a problem occurs, workers and managers can immediately check where the problem is from the screen and quickly act on it. VIRNECT Remote can also be utilized when there is a need for a remote meeting of a group of people.",
+            "image": "../images/pages/solution/img-motor-infographic-03_en.svg"
+					},
+					{
+						"title": "Review of AR designs",
+						"contents": "When a 3D model of a newly designed part is distributed using VIRNECT Make, a simulation of the part being utilized in the real world can be viewed through VIRNECT View in a virtual model (AR model). Each time there is a modification in the design, there is no need to create a new model, as AR models can be attached to the existing model. It can also be projected on a large screen for a reviewing session with a group of people.",
+            "image": "../images/pages/solution/img-motor-infographic-04_en.svg"
+					}
+				]
+      },
+      "exampleList": [
+				{
+					"img": "../images/pages/solution/arsdk-usecase-02.png",
+					"title": "Real-time recognition of HMI screen"
+				},
+				{
+					"img": "../images/pages/solution/view-usecase-07.png",
+					"title": "Electric motorcycle assembly guide"
+				},
+				{
+					"img": "../images/pages/solution/view-usecase-03.png",
+					"title": "AR visualization of MCT machine BOM information"
+				},
+				{
+					"img": "../images/pages/solution/view-usecase-04.png",
+					"title": "Visualization of automobile cluster manufacturing line"
+				},
+				{
+					"img": "../images/pages/solution/make-usecase-04.png",
+					"title": "Authoring of AR content for connecting real-time production line information"
+				},
+				{
+					"img": "../images/pages/solution/make-usecase-11.png",
+					"title": "Creating promotional content for virtual vehicle experience"
+				},
+				{
+					"img": "../images/pages/solution/make-usecase-10.png",
+					"title": "Electric Vehicle Self-Maintenance Manual"
+				},
+				{
+					"img": "../images/pages/solution/view-usecase-10.png",
+					"title": "Promotional content for virtual vehicle experience"
+				},
+        {
+					"img": "../images/pages/solution/make-usecase-01.png",
+					"title": "Authoring of AR content for internal data collection of factories and linking of collected data"
+				},
+				{
+					"img": "../images/pages/solution/make-usecase-03.png",
+					"title": "Authoring of AR content for reporting work issues and connecting smart tools"
+				},
+				{
+					"img": "../images/pages/solution/view-usecase-06.png",
+					"title": "Visualization of electric power distribution guid"
+				}
+      ],
+      "bgExampleList": [
+				{
+					"img": "../images/pages/products/logo-recommendation-sds",
+					"contents": "The VIRNECT AR Solution applied <br class='mobile-hidden'>for worker inspections highly improved customer satisfaction.",
+					"category": " - Samsung SDS"
+				},
+				{
+					"img": "../images/pages/products/logo-recommendation-end",
+					"contents": "The VIRNECT Solution helped <br class='mobile-hidden'>our company to envision a future of smart factories.",
+					"category": "- END Electric"
+				}
+      ]
+    },
+    "airlineText": {
+      "airlineTitle": {
+				"category": "Aviation/Railway",
+				"title": "Have you been concerned with the aviation and railway industry?",
+				"contents": "In the aviation/railway industry, safety is of the greatest importance. The issue of the need for a management system for safe operation and precise maintenance is raised every time an accident occurs. However, in reality, there is a challenge in real-time communication with the operation of aircraft/trains and hiring of professionals."
+			},
+      "issueTitle": "Industry issues",
+      "issueList": [
+        {
+          "title": "Insufficient training system for maintenance personnel",
+          "contents":
+            "Along with the expansion of the railway and air transportation infrastructure, the demand for maintenance personnel is also increasing, but the supply of intermediate and advanced maintenance personnel that can immediately function is insufficient. An efficient training system is needed."
+        },
+        {
+          "title": "Reconsideration of railway/aviation safety management system (SMS)",
+          "contents":
+            "In areas where poor operational management can lead to major accidents, SMS plays an important role in preventing accidents and identifying operational limitations."
+        },
+        {
+          "title": "Remote support relying on voice messages",
+          "contents":
+            "Walkie-talkies are still used for communication among control rooms and sites (runways or train garages). Communication relying on voice is inaccurate and poses difficulties in conveying detailed information."
+        },
+        {
+          "title": "Lack of accident management and response simulation",
+          "contents":
+            "Emergency response manuals in text and images are not helpful in emergency situations. The predicted result and the correct response according to the operation of the pilot or the maintenance personnel need to be visualized."
+        }
+      ],
+      "infographicText": {
+				"category": "Solution",
+				"title": "Operate a top-notch aviation/railway service with VIRNECT's safety management system.",
+				"contents": "Operations in the aviation/railway industry have become more complex than ever due to increasing demand and technology development. With VIRNECT, establish a platform for risk management and safety assurance, a key process in the safety management system.",
+				"image": "../images/pages/solution/img-airline-infographic-00_en.svg",
+				"infographicList": [
+					{
+						"title": "AR manuals for <br class='mobile-hidden'>on-site facilities",
+						"contents": "Virtual information applied in actual facilities instead of mockups can be used for maintenance training sessions. The 5 million or so parts that compose an aircraft or train can be digitalized for systematic maintenance of facilities, and the work process can be recorded for use in training.",
+            "image": "../images/pages/solution/img-airline-infographic-01_en.svg"
+          },
+					{
+						"title": "Management of risk indicators <br class='mobile-hidden'>and monitoring of operations",
+						"contents": "With VIRNECT View, report the registration and status of an aircraft/train and input the data generated from safety inspection and operation duties. With VIRNECT Twin, collect and analyze the data for visualization of the safety management status for stable operation and a reliable system.",
+            "image": "../images/pages/solution/img-airline-infographic-02_en.svg"
+					},
+					{
+						"title": "Remote inspection <br class='mobile-hidden'>based on operation information",
+						"contents": "Due to the high complexity of aircraft and trains, there are situations where experts in the fields of operation, aircraft, and engines must communicate with each other. This can be resolved with VIRNECT Remote by identifying the situation and sharing information for more accurate diagnosis and decision-making regarding a problem.",
+            "image": "../images/pages/solution/img-airline-infographic-03_en.svg"
+					},
+					{
+						"title": "Accident management and <br class='mobile-hidden'>risk prediction analysis",
+						"contents": "Based on the accident and maintenance information, the cause of the accident is analyzed and the risk level of the accident is modeled and staged. This is provided to the pilot and the maintenance personnel to acknowledge and enhance the accuracy of work. An optimal manual is also provided in case of an accident for more appropriate responsive action. The accident prediction model is developed through accumulation of response information.",
+            "image": "../images/pages/solution/img-airline-infographic-04_en.svg"
+					}
+				]
+      },
+      "exampleList": [
+				{
+					"img": "../images/pages/solution/view-usecase-05.png",
+					"title": "Self-diagnosis system for railway vehicles"
+				},
+				{
+					"img": "../images/pages/solution/remote-usecase-01.png",
+					"title": "Support for railway vehicle training and maintenance"
+				}
+      ],
+      "bgExampleList": [
+				{
+					"img": "../images/pages/products/logo-recommendation-kt",
+					"contents": "The highly reliable object detection feature of <br class='mobile-hidden'>VIRNECT Track can provide industrial worksites with a platform for managing measurement information.",
+					"category": " - Kim Young-seok, KT Infra R&D Lab"
+				}
+      ]
+    },
+    "oilText": {
+      "oilTitle": {
+				"category": "Refinery/Petrochemical/Battery",
+				"title": "Have you been concerned with the refinery, petrochemical, and battery industries?",
+				"contents": "The refinery, petrochemical, and battery industries where chemicals are handled always need to maintain a safe environment. Process efficiency is indeed important, but facility maintenance for preventing accidents, accurate facility control, and elaborate safety inspection must come first."
+			},
+      "issueTitle": "Industry issues",
+      "issueList": [
+        {
+          "title": "Reconsideration of the facility maintenance system",
+          "contents":
+            "Management of operations in the petrochemical sector, where chemicals are reprocessed, is an important task. A precise monitoring system based on PSM (Process Safety Management) is required to prevent fire, explosion, and water leakage due to poor management."
+        },
+        {
+          "title": "Inadequate prevention of incorrect operations and accident response",
+          "contents":
+            "Incorrect control in facilities leads to fatal accidents. Auxiliary devices are needed to prevent erroneous operation, and the operator must be able to quickly check how to respond in the early stage of an accident."
+        },
+        {
+          "title": "Non-professionalism in on-site safety inspections",
+          "contents":
+            " Gas leakage accidents resulting from piping cracks frequently cause dizziness and vomiting of workers, and operations are halted for detection of the cause and pipe replacement. An on-site support system is required for thorough safety diagnosis."
+        },
+        {
+          "title": "Difficulty in communication among the head office and factories in rural areas and overseas",
+          "contents":
+            "While the head office is located in the metropolitan area, industrial facilities are mostly in rural areas or overseas due to accident concerns and environmental regulations. This results in frequent business trips and difficulties in communication."
+        }
+      ],
+      "infographicText": {
+				"category": "Solution",
+				"title": "Innovate the refinery/chemical asset management system where vast facilities are interconnected.",
+				"contents": "In the refinery, petrochemical, and battery industries, various production facilities are connected by processing stages. VIRNECT monitors the facility and provides the solution for maintaining a safe processing status.",
+				"image": "../images/pages/solution/img-chemical-infographic-00_en.svg",
+				"infographicList": [
+					{
+						"title": "Precise facility <br class='mobile-hidden'>management system",
+						"contents": "We provide a monitoring system that precisely checks all activities occurring on site by overseeing chemical handling management information and assets, 3D position estimation information for workers, and status information for each process. In this way, danger factors or potential risks can be identified and reduced.",
+            "image": "../images/pages/solution/img-chemical-infographic-01_en.svg"
+          },
+					{
+						"title": "Accurate operation and <br class='mobile-hidden'>accident response manual",
+						"contents": "By distributing the operation and incident response manuals through VIRNECT Make, the operator can accurately view where and how to use a space by flashing the facility with VIRNECT View. This achieves quick on-the-spot work input for unskilled personnel and improves the operator's work accuracy to prevent erroneous operation.",
+            "image": "../images/pages/solution/img-chemical-infographic-02_en.svg"
+					},
+					{
+						"title": "Support of <br class='mobile-hidden'>on-site safety diagnosis with <br class='mobile-hidden'>sensors and AR/DT technology",
+						"contents": "Through the installation of sensors, the status information of piping is constantly checked and safety diagnosis and accurate maintenance work are supported by visualizing detailed manuals for non-destructive tests such as radiation transmission tests, ultrasonic inspection tests, and magnetic particle inspection tests, on-site piping, and utilized equipment. Diagnosis results and repair results can be reported directly by the operator.",
+            "image": "../images/pages/solution/img-chemical-infographic-03_en.svg"
+					},
+					{
+						"title": "Realistic <br class='mobile-hidden'>remote collaboration",
+						"contents": "In chemical and petrochemical processes where complex tasks are planned and sequentially performed, one error can lead to consecutive problems that cause major losses. Utilize VIRNECT Remote for quick and highly realistic remote communication among experts to produce solutions.",
+            "image": "../images/pages/solution/img-chemical-infographic-04_en.svg"
+					}
+				]
+      },
+      "bgExampleList": [
+				{
+					"img": "../images/pages/products/logo-recommendation-oci",
+					"contents": "This is a powerful tool that allows quick collaboration of <br class='mobile-hidden'>facility maintenance without the limitations of space and time.",
+					"category": "- OCI"
+				},
+				{
+					"img": "../images/pages/products/logo-recommendation-lgchem",
+					"contents": "VIRNECT Remote is actually very helpful in working <br class='mobile-hidden'>with our overseas production sites.",
+					"category": "- LG Chemistry"
+				}
+      ]
+    },
+    "tailText": "AR/DT innovation in worksites. Make it happen now."    
+  }
+}

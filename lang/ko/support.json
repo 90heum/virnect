@@ -1,0 +1,64 @@
+{
+  "supportText": {
+    "visualText": {
+      "title": " 서비스 이용에 도움이 되도록<p>빠르고 친절하게 해결해 드리겠습니다.</p>",
+      "url": ""
+    },
+    "menuList": {
+      "productNotice": {
+        "title": "Product Notice",
+        "url": "",
+        "list":
+          [
+            {
+              "title": "릴리즈 노트",
+              "url": ""
+            },
+            {
+              "title": "안내",
+              "url": ""
+            },
+            {
+              "title": "점검",
+              "url": ""
+            },
+            {
+              "title": "장애",
+              "url": ""
+            }
+          ]
+      },
+    "faq": {
+      "title": "FAQ",
+      "url": "",
+      "list":
+        [
+          {
+            "title": "회원",
+            "url": ""
+          },
+          {
+            "title": "제품",
+            "url": ""
+          },
+          {
+            "title": "결제",
+            "url": ""
+          },
+          {
+            "title": "서비스",
+            "url": ""
+          },
+          {
+            "title": "기기",
+            "url": ""
+          },
+          {
+            "title": "기타",
+            "url": ""
+          }
+        ]
+      }
+    }
+  }
+}
