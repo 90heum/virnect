@@ -1,0 +1,774 @@
+{
+  "productsText": {
+    "visualText": {
+      "title": "Try our optimized products <br class='mobile-hidden'>for industrial worksites.",
+      "contents": "VIRNECT products make safer and more efficient industrial worksites <br class='mobile-hidden'>by applying original AR and Digital Twin technologies."
+    },
+    "supportTitle": {
+      "category": "Use and support",
+      "title": "We provide support for optimal use.",
+      "contents": "We provide convenient usability <br class='mobile-hidden'>and the best customer service."
+    },
+    "exampleTitle": {
+      "category": "Application",
+      "title": "We share an enhanced value experience.",
+      "contents": "View our latest cases <br class='mobile-hidden'>on the innovation and efficiency created <br class='mobile-hidden'>by VIRNECT Twin."
+    },
+    "arsdkText": {
+      "introText": { 
+          "category": "AR Development SDK for Object Detecting/Tracking",
+          "title": "We create the perfect AR application.",
+          "contents": "VIRNECT Track is our own development AR engine that ensures fast and precise object learning, recognizing/detecting and tracking. It can detect target with more than 90% of accuracy and with the speed below 15ms. It also assures stability when it comes to contents augmentation based on the SLAM engine. Installed within VIRNECT AR Products, VIRNECT Track guarantees users superior performances."
+      },
+			"benefitLists": [
+				{
+					"title": "Superior Detecting Performance",
+					"contents": 
+						"VIRNECT Track can detect target with more than 90% of accuracy and with the speed below 15ms. According to TTA V&V test, VIRNECT Track's superior in detecting performance in various circumstances has been proved."
+				},
+				{
+					"title": "Mobile Device Optimization",
+					"contents":
+						"With the optimization of the calculation that leads to decrease of the battery loss, VIRNECT Track can be downloaded on various types of light weight devices such as Smart Glass, Smart Phone, Tablet PC and others."
+				},
+				{
+					"title": "Modifiable Source Code",
+					"contents":
+						"SLAM Engine which is developed with VIRNECT's own technical skills enables superior expandability when it comes to modification and application."
+				},
+				{
+					"title": "Support Various Types of Targets",
+					"contents": "VIRNECT Track can be applied to various types of targets such as QR code, image, 3D or instants target."
+				}
+      ],
+			"funcTitle": {
+				"category": "Features",
+				"title": "It can stably detect and <br class='mobile-hidden'>trace under any circumstances."
+			},
+      "functionLists": [
+				{
+					"title": "Detecting/Tracking of QR Code",
+          "contents": "VIRNECT Track perceives QR code and bring out the contents, and measures the posture of the camera that enables unaffected augmentation of the AR contents. "
+        },
+				{
+					"title": "Detecting/Tracking of the Image(2D)",
+					"contents": "VIRNECT Track perceives 2D image as a target, and measures the posture of the camera that enables  unaffected augmentation of the object. "
+        },
+				{
+					"title": "Detecting/Tracking of the 3D Object",
+          "contents": "VIRNECT Track 3D perceives model of the objects, structures or spaces as a target, and measures the posture of the camera that enables unaffected augmentation of the object."
+        },
+				{
+					"title": "Detecting/Tracking of the Instant Target",
+					"contents": "VIRNECT Track perceives and tracks surroundings in real time without designated target that enables arrangement of objects as users desire."
+        },
+				{
+					"title": "Detecting/Tracking of the Multiple Targets",
+          "contents": "VIRNECT Track complexly perceives multiple images or 3D spaces that enables augmentation of the objects."
+        },
+				{
+					"title": "Visual SLAM",
+          "contents": "VIRNECT Track can draw the feature points of the video clips and form a virtual map of the reality, which ensures the stability of the augmentation of objects."
+        }
+      ],
+      "effectHeading": {
+				"category": "Effect",
+				"title": "Field Type AR Service Development <br class='mobile-hidden'>with the free customizing system",
+				"contents": "With VIRNECT Track, developers can create an innovative AR service and provide a positive AR experience to users. <br class='mobile-hidden'>The exceptional flexibility and stability of VIRNECT Track enables the development of a strong AR service in actual practice."
+      },
+      "effectList": [
+				{
+					"title": "Faster",
+					"contents": "Easier AR system function realization <br class='mobile-hidden'>and faster service development/distribution"
+				},
+				{
+					"title": "Reliable",
+					"contents": "Precise and stable AR Function that <br class='mobile-hidden'>ensures quality service and robust reliability"
+				},
+				{
+					"title": "Stable",
+					"contents": "Self-made SDK, which is free from the license issue, <br class='mobile-hidden'>ensures free and stable service management"
+				},
+				{
+					"title": "Convenient",
+					"contents": "SDK optimization regarding service environment <br class='mobile-hidden'>ensures extra convenience in AR service"
+				}
+      ],
+			"supportList": [
+				{
+					"title": "Customer oriented SDK",
+					"contents":
+						"Regarding customer's service environment, SDK offers the best recognition/detection/tracking module that enables system to provide stable performance. Also, in accordance with customers' needs, SDK provides additional function development."
+				},
+				{
+					"title": "Heavy Security",
+					"contents":
+						"Security processing such as secure coding, encoding and obfuscation ensures the safe driving environment of the application program. For the company with the closed network system, SDK can be downloaded in their own closed network."
+				},
+				{
+					"title": "Supporting Various Types of Mobile OS",
+					"contents":
+						"SDK can be applied to various types of OS environments such as Android and iOS, and it can be developed in cross-platform as well, which ensures the free development environment."
+				}
+			],
+			"exampleContents":"View our latest cases on the innovation <br class='mobile-hidden'>and efficiency created by VIRNECT Track.",
+      "exampleList": [
+				{
+					"img": "../images/pages/products/arsdk-usecase-01.png",
+					"title": "Cooperative development with a Korean mobile carrier"
+				},
+				{
+					"img": "../images/pages/products/arsdk-usecase-02.png",
+					"title": "Real-time recognition of HMI screen"
+				},
+				{
+					"img": "../images/pages/products/arsdk-usecase-03.png",
+					"title": "Real-time recognition of analog measuring instrument"
+				},
+				{
+					"img": "../images/pages/products/arsdk-usecase-04.png",
+					"title": "Detection and tracing of smart welding device"
+				}
+			],
+      "bgExampleList": [
+				{
+					"img": "../images/pages/products/logo-recommendation-kaeri",
+					"contents": "VIRNECT Solution provides a platform of systematic information management <br class='mobile-hidden'>and optimal safety management, even for areas requiring high reliability.",
+					"category": " - Waste Management Researcher, Korea Atomic Energy Research Institute"
+				},
+				{
+					"img": "../images/pages/products/logo-recommendation-kt",
+					"contents": "The highly-reliable object detection feature of VIRNECT Track <br class='mobile-hidden'>can provide industrial worksites with a platform for managing measurement information.",
+					"category": " - Kim Young-seok, KT Infra R&D Lab"
+				}
+			]
+    },
+    "viewText": {
+      "introText": {
+        "category": "AR Visualization of the Information and Data",
+        "title": "All information can be <br class='mobile-hidden'>viewed immediately on-site.",
+        "contents": "With VIRNECT View, task information such as work manual or safety guide and operation data from IoT sensor to SCADA will be right in front of the users' sights. Also, important data will be checked directly on the site that help users to intuitively understand the problem. In the end, VIRNECT View will enable users to come up with right decision making and faster problem solving."
+      },
+			"benefitLists": [
+				{
+					"title": "Coping with the Workload Using One Single Device",
+					"contents":
+						"Compatible with wide range of devices such as SmartGlasses, web browser, smart phone, tablet and Hololens 2."
+				},
+				{
+					"title": "Reinforcing Task execution & Reporting protocol",
+					"contents":
+						"The users can edit and check the AR content based on the on-site environment. In case the internet connection is not valid, content can still be augmented from the APP."
+				},
+				{
+					"title": "Supporting Offline Environment",
+					"contents":
+						"Task information contents can be downloaded in advance, which enables users to work offline as well. Users don't need to set up all the network in every work space any more with VIRNECT View."
+				},
+				{
+					"title": "Products with the Linkage Ensuring the Expansion of the System",
+					"contents":
+						"VIRNECT View can be linked with other products of the VIRNECT, which ensures the expansion of the system. Interconnected products builds stronger bonds among factory managing systems, which leads to maximization of the efficiency in operation."
+				}
+      ],
+			"funcTitle": {
+				"category": "Features",
+				"title": "Absolute visibility provides insight into the whole operation system."
+			},
+      "functionLists": [
+				{
+					"title": "Various device compatibility",
+          "contents": "Complete tasks using devices that fit for purpose, such as MS Hololens 2 for XR augmentation, smart phones or tablets for AR augmentation."
+        },
+				{
+					"title": "Performance Inquiry and Fulfillment",
+					"contents": "List of the tasks that has been assigned to workers can be checked and tasks can be done in accordance with the AR Guide. Also, progress of the task and feedbacks from the previous works can be checked as well. "
+        },
+				{
+					"title": "Visualization of Customized Content for on-site",
+          "contents": "The users can edit and check the AR content based on the on-site environment. Internet connection is not necessary to check a content."
+        },
+				{
+					"title": "Task History and Reporting",
+					"contents": "Tasks being done in the site can be reported right through the system. Graphic description of the site is guaranteed with the image files and feedbacks of the inspectors of the site."
+        },
+				{
+					"title": "AR Visualization of the Managing/IoT Information.",
+          "contents": "Efficiently operate by figuring out the real-time process status though augmenting process information and equipment data on the actual component. (Limited for on-premise)"
+        },
+				{
+					"title": "Visualization of the Emergency Alarm",
+          "contents": "In case a on-site technician is in a dangerous situation, the users can share the location of accident to quickly provide support. (Limited for on-premise)"
+        }
+      ],
+      "effectHeading": {
+				"category": "Effect",
+				"title": "Fast and accurate decision-making <br class='mobile-hidden'>based on real-time data",
+				"contents": "VIRNECT View supports a powerful remote communication system that enables convenient work processes <br class='mobile-hidden'>and productivity enhancement through fast consultation and accurate actions. <br class='mobile-hidden'>The entire operation system is improved in efficiency by reducing the need for experts physically traveling and the down time for solving problems."
+      },
+      "effectList": [
+				{
+					"title": "Visualize",
+					"contents": "Through AR visualization of the facilities and data, <br class='mobile-hidden'>convenience in understanding <br class='mobile-hidden'>of the present condition can be increased"
+				},
+				{
+					"title": "Intuitive",
+					"contents": "Task information can be intuitively augmented <br class='mobile-hidden'>in the site facilities which minimize <br class='mobile-hidden'>the errors made in work."
+				},
+				{
+					"title": "Real-Time",
+					"contents": "Through real Time reporting system, <br class='mobile-hidden'>process of the reporting itself can be optimized <br class='mobile-hidden'>and efficiency in facility management will be increased. "
+				},
+				{
+					"title": "Speedy​",
+					"contents": "Visualization of the alarm information, <br class='mobile-hidden'>such as notification of the location of the accident <br class='mobile-hidden'>and types of the problem, <br class='mobile-hidden'>will increase the speed of dealing with the problem."
+				}
+      ],
+			"supportList": [
+				{
+					"title": "Customization Specialized for Different Industries",
+					"contents":
+						"In accordance with different industries, customization regarding the service environment is available by introducing specific functions or extra developed UI. Best AR based operating process can be provided which ensures the efficiency in site."
+				},
+				{
+					"title": "Various Supporting Devices",
+					"contents":
+						"VIRNECT View can be applied for Smart Glass such as HoloLens or RealWear and Android based devices such as Smartphone or Tablet PC. Specialized UI is offered for each devices so that the usability can be increased."
+				},
+				{
+					"title": "Customer Oriented Server Development",
+					"contents": "VIRNECT View offers all of the server development systems such as On-premise, Cloud and Hybrid cloud so that the users can choose the most suitable ways of installment in accordance with the requirement or previous operation environment."
+				}
+      ],
+			"exampleContents":"View our latest cases on the innovation <br class='mobile-hidden'>and efficiency created by VIRNECT View.",
+      "exampleList": [
+				{
+					"img": "../images/pages/products/view-usecase-01.png",
+					"title": "AR inspection and visualization of smoothness of structure,"
+				},
+				{
+					"img": "../images/pages/products/view-usecase-02.png",
+					"title": "AR measurement and surveying of structure"
+				},
+				{
+					"img": "../images/pages/products/view-usecase-08.png",
+					"title": "Visualization of earthquake damage simulation training information"
+				},
+				{
+					"img": "../images/pages/products/view-usecase-03.png",
+					"title": "AR visualization of MCT machine BOM information"
+				},
+				{
+					"img": "../images/pages/products/view-usecase-04.png",
+					"title": "Visualization of automobile cluster manufacturing line"
+				},
+				{
+					"img": "../images/pages/products/view-usecase-05.png",
+					"title": "Self-diagnosis system for railway vehicles"
+				},
+				{
+					"img": "../images/pages/products/view-usecase-06.png",
+					"title": "Visualization of electric power distribution guide"
+				},
+				{
+					"img": "../images/pages/products/view-usecase-07.png",
+					"title": "Electric motorcycle assembly guide"
+				},
+				{
+					"img": "../images/pages/products/view-usecase-13.png",
+					"title": "Visualizing Vehicle Self-Maintenance Manual"
+				},
+				{
+					"img": "../images/pages/solution/view-usecase-10.png",
+					"title": "Visualizing promotional content for virtual vehicle experience"
+				},
+				{
+					"img": "../images/pages/solution/view-usecase-11.png",
+					"title": "Visualizing AR/VR education content for schools, companies, and educational institutions"
+				}
+      ],
+      "bgExampleList": [
+				{
+					"img": "../images/pages/products/logo-recommendation-steel",
+					"contents": "VIRNECT Solution has greatly contributed to <br class='mobile-hidden'>our company's Smart Factory platform development.",
+					"category": "- Hyundai Steel"
+				},
+				{
+					"img": "../images/pages/products/logo-recommendation-kaeri",
+					"contents": "VIRNECT Solution provides a platform of systematic information management <br class='mobile-hidden'>and optimal safety management, even for areas requiring high reliability.",
+					"category": " - Waste Management Researcher, Korea Atomic Energy Research Institute"
+				},
+				{
+					"img": "../images/pages/products/logo-recommendation-kumc",
+					"contents": "With VIRNECT Solution applied to surgical operations <br class='mobile-hidden'>where the patient's safety is the most important factor, <br class='mobile-hidden'>our medical staff can now stay more focused to give better results.",
+					"category": "- Cosmetic surgery, Korea University"
+				},
+				{
+					"img": "../images/pages/products/logo-recommendation-end",
+					"contents": "VIRNECT Solution helped our company to envision a future of smart factories.",
+					"category": "- END Electric"
+				},
+				{
+					"img": "../images/pages/products/logo-recommendation-skcnc",
+					"contents": "AR solution applied to facility maintenance created an easier understanding of <br class='mobile-hidden'>work and improved work efficiency.",
+					"category": "- SK CnC"
+				},
+				{
+					"img": "../images/pages/products/logo-recommendation-seole-m",
+					"contents": "The world-class local AR specialized company VIRNECT's core solution surely has its own selling point. <br class='mobile-hidden'>It will become an essential partner for increasing industrial productivity.",
+					"category": "- Seoil E&M"
+				}
+			]
+    },
+    "makeText": {
+      "introText": {
+          "category": "Making and Distribution of the AR Contents",
+          "title": "Creates the easiest and <br class='mobile-hidden'>fastest AR content for worksites.",
+          "contents": "VIRNECT Make is the tool that enables users to make information needed in industry in general, for example from facility management & education to work protocol, into AR contents. It is All-In-One tool that enables users to make, distribute and modify the AR contents used for various types of industrial devices. With VIRNECT Make, the company is able to build up the safe and efficient work environment and manage that by themselves."
+      },
+			"benefitLists": [
+				{
+					"title": "Application of PowerPoint Content",
+					"contents":
+						"Easily convert existing content into AR content using MS PowerPoint plugin."
+				},
+				{
+					"title": "List Formation and Contents Making in Steps",
+					"contents":
+						"Selecting and forming the list that enables the checking of the contents and provide the contents making environment in steps that helps the understanding of the users."
+				},
+				{
+					"title": "Real Time Data AR Contents Making",
+					"contents":
+						"Users will be able to select the key data for the tasks and make it into AR contents with VIRNECT Make. It will also help site workers to achieve better decision making and working progress."
+				},
+				{
+					"title": "Cross Platform AR Contents Making",
+					"contents":
+						"Let alone with the Smartphone and Tablet PC, various types of devices such as SmartGlass products including HoloLens are accessible to AR contents made with the VIRNECT View."
+				}
+      ],
+			"funcTitle": {
+				"category": "Features",
+				"title": "Improves job performance and <br class='mobile-hidden'>strengthens management"
+			},
+      "functionLists": [
+				{
+					"title": "AR Contents Making with Various Types of Targets",
+          "contents": "Users can choose the types of AR content targets such as QR Code/Image/Instant and more. VR content making is also possible with choosing the instant target as well."
+        },
+				{
+					"title": "Optimization for Different Devices",
+					"contents": "When users pick the devices for the usage of the content, best-optimized function for the device will be offered. This will help users to make AR contents that maximize the pros of the device that they have chosen."
+        },
+				{
+					"title": "Real Time Data Linked Graph/Table",
+          "contents": "Real time data using graphs or tables such as OPC UA, SQL Quarry or TCP/IP can be turn into AR Contents. Complex data will be able to easily and efficiently delivered to others."
+        },
+				{
+					"title": "Task Reporting List Making",
+					"contents": "Facility checking and maintenance information can be turn into AR E-document, and managers can be assigned based on that. Users can be debriefed from the assigned managers regarding their tasks in real time."
+        },
+				{
+					"title": "Interaction Setting",
+          "contents": "Users can set the customized interaction and each reactions for buttons and assets. Users are also able to expand AR contents as single application and distribute it."
+        },
+				{
+					"title": "Adding Animation",
+          "contents": "Animation can be added for different objects, which helps presenting the direction or speed of the objects' movement. Objects with mobility will enhance the concentration of the workers, and contribute to intuitive understanding of the works."
+        }
+      ],
+      "effectHeading": {
+				"category": "Effect",
+				"title": "Enhancement of the Work Efficiency <br class='mobile-hidden'>by Offering Faster and Clearer Information",
+				"contents": "With VIRNECT Make, you can maximize the delivery of work information at a reasonable cost. <br class='mobile-hidden'>VIRNECT's AR production method supports the security of industrial information, <br class='mobile-hidden'>and quickly conveys the workflow and process changes to the field for immediate application."
+      },
+      "effectList": [
+				{
+					"title": "Speedy",
+					"contents": "Company-made contents <br class='mobile-hidden'>which is three times faster than <br class='mobile-hidden'>the outsourcing ways of job done"
+				},
+				{
+					"title": "Reliable",
+					"contents": "More than 99% of cost saving <br class='mobile-hidden'>achieved regarding production <br class='mobile-hidden'>and reinforcement of the contents <br class='mobile-hidden'>compared to outsourcing"
+				},
+				{
+					"title": "Immediately",
+					"contents": "In case of change in the site circumstance <br class='mobile-hidden'>or the task itself, <br class='mobile-hidden'>immediate modifying of the contents <br class='mobile-hidden'>and distribution are available"
+				},
+				{
+					"title": "Security​",
+					"contents": "Important information relating industry is <br class='mobile-hidden'>safe from the worries of outside leak."
+				}
+      ],
+			"supportList": [
+				{
+					"title": "Operating Method of PC Installment",
+					"contents":
+						"VIRNECT Make is available as PC Installment program as well. Compared to web-based operating ways, contents making in much more stable environment is guaranteed."
+				},
+				{
+					"title": "Various Ways of Installment",
+					"contents":
+						"Both full-buying and renting of the program are available regarding the previous environment of the system. Also, VIRNECT Make offers the high-security server which can be applied to original security network or inside business network of the user's company."
+				},
+				{
+					"title": "VIRNECT MAKE Training Session",
+					"contents":
+						"In order to enhance the users' understanding of the VIRNECT Make and help them make quality contents with it, there are training sessions provided in collaboration with outsourcing educational institutions."
+				}
+      ],
+			"exampleContents":"View our latest cases on the innovation <br class='mobile-hidden'>and efficiency created by VIRNECT Make.",
+      "exampleList": [
+				{
+					"img": "../images/pages/products/make-usecase-01.png",
+					"title": "Authoring of AR content for internal data collection of factories and linking of collected data"
+				},
+				{
+					"img": "../images/pages/products/make-usecase-02.png",
+					"title": "Authoring of AR content for facility data through interlocking internal systems"
+				},
+				{
+					"img": "../images/pages/products/make-usecase-03.png",
+					"title": "Authoring of AR content for reporting work issues and connecting smart tools"
+				},
+				{
+					"img": "../images/pages/products/make-usecase-04.png",
+					"title": "Authoring of AR content for connecting real-time production line information"
+				},
+				{
+					"img": "../images/pages/products/make-usecase-05.png",
+					"title": "Creation of electronic document type AR content for reporting work results"
+				},
+				{
+					"img": "../images/pages/products/make-usecase-13.png",
+					"title": "Creation of promotional AR content manuals for purchase of new cars"
+				},
+				{
+					"img": "../images/pages/products/make-usecase-07.png",
+					"title": "Authoring of AR content for exhibitions"
+				},
+				{
+					"img": "../images/pages/products/make-usecase-08.png",
+					"title": "Authoring of AR content for construction site supervision using BIM data"
+				},
+				{
+					"img": "../images/pages/products/make-usecase-09.png",
+					"title": "Authoring of AR content for education evaluation and reporting of evaluation data"
+				},
+				{
+					"img": "../images/pages/solution/make-usecase-10.png",
+					"title": "Creating Electric Vehicle Self-Maintenance Manual"
+				},
+				{
+					"img": "../images/pages/solution/make-usecase-11.png",
+					"title": "Creating promotional content for virtual vehicle experience"
+				},
+				{
+					"img": "../images/pages/solution/view-usecase-11.png",
+					"title": "Creating AR/VR education content for schools, companies, and educational institutions"
+				},
+				{
+					"img": "../images/pages/solution/make-usecase-13.png",
+					"title": "Converting models and creating AR content"
+				}
+      ], 
+      "bgExampleList": [
+				{
+					"img": "../images/pages/products/logo-recommendation-ibim",
+					"contents": "By implementing and utilizing pre-digital mock-up of<br class='mobile-hidden'> various structures on Augmented Reality, <br class='mobile-hidden'>it has been very helpful in understanding blueprints and improving skills, as well as in business consultation.",
+					"category": "- Infra BIM"
+				},
+				{
+					"img": "../images/pages/products/logo-recommendation-seole-m",
+					"contents": "The world-class local AR specialized company VIRNECT's core solution surely has its own selling point. <br class='mobile-hidden'>It will become an essential partner for increasing industrial productivity.",
+					"category": "- Seoil E&M"
+				}
+			]
+    },
+    "remoteText": {
+      "introText": {
+          "category": "Multilateral Remote Co-working Through AR",
+          "title": "Connects various fields together and <br class='mobile-hidden'>freely shares information",
+          "contents": "The VIRNCET Remote, which is  real-time remote co-working service, ensures the information and issues related to field to be shared so that workers can immediately deal with their works wherever they are. Precision and efficiency of the task can be increased by maintaining the familiar working environment which also guarantees the faster and convenient co-working."
+      },
+			"benefitLists": [
+				{
+					"title": "Various device compatibility",
+					"contents":
+						"Compatible with various devices such as SmartGlasses (including Hololens 2), web browser, smart phone,tablet, 360 neckband and USB camera, which are suitable for user environment."
+				},
+				{
+					"title": "Utilize various collaboration tools including AR Guide feature",
+					"contents":
+						"Various communication tools are supported to enhance the intuition and deliver the meaningful information."
+				},
+				{
+					"title": "Seamless remote collaboration",
+					"contents":
+						"Low CPU usage and optimization of data transfer allow higher quality of collaboration.Increased security by deploying a server within customer’s secured network or cloud server."
+				},
+				{
+					"title": "Language barrier mitigation",
+					"contents":
+						"The translation feature removes language barrier. The users can experience higher communication velocity and work efficiency."
+				}
+      ],
+			"funcTitle": {
+				"category": "Features",
+				"title": "Provides delicate features <br class='mobile-hidden'>for perfect teamwork"
+			},
+      "functionLists": [
+				{
+					"title": "Multilateral Communication",
+          "contents": "Maximum 6 individuals can be participating while co-working in various types of circumstances regarding the task, which enable them to communicate in real time."
+        },
+				{
+					"title": "AR Drawing and Pointing",
+					"contents": "With Visual SLAM technology, users can pointing specific spot of the contents. User's drawing on the contents can be augmented directly, which ensures users to make precise direction and achieve faster co-working."
+        },
+				{
+					"title": "Video Quality Setting",
+          "contents": "If quality of the video is considered to be inadequate, in accordance with network environment, best suitable video quality(Maximum FHD) will be provided. Users can choose the quality of the video so that they can communicate easily when they are co-working with others in real time."
+        },
+				{
+					"title": "Share and attach files",
+					"contents": "The information can be shared among users via CollaBoard. The various formats of files can be attached and downloaded from the chat box."
+        },
+				{
+					"title": "Translation feature",
+          "contents": "Remove the language barrier with STT (Speech To Text) / TTS (Text To Speech) which supports 9 different language translation."
+        },
+				{
+					"title": "Screen Recording",
+          "contents": "Real time video recording (Maximum FHD) and information shared during work can be saved and modified, which leads to understanding the problem and enhancement of the work efficiency. "
+        }
+      ],
+      "effectHeading": {
+				"category": "Effect",
+				"title": "Immediately dealing with the problem brought up <br class='mobile-hidden'>in the site by remote co-working",
+				"contents": "The VIRNECT Remote supports a powerful remote communication system that enables convenient work processes and <br class='mobile-hidden'>productivity enhancement through fast consultation and accurate actions. <br class='mobile-hidden'>The entire operation system is improved in efficiency by reducing the need for experts physically traveling and the down time for solving problems."
+      },
+      "effectList": [
+				{
+					"title": "Speedy",
+					"contents": "Cost saving from the frequent business trips <br class='mobile-hidden'>and faster problem solving"
+				},
+				{
+					"title": "Accurate",
+					"contents": "enhanced precision in task <br class='mobile-hidden'>and efficiency in communication"
+				},
+				{
+					"title": "Hands-Free",
+					"contents": "With SmartGlass, both hands can be used while <br class='mobile-hidden'>workers are working in the remote co-working session"
+				},
+				{
+					"title": "Efficient​",
+					"contents": "Apprentice worker's training efficiency <br class='mobile-hidden'>and work speed will be enhanced"
+				}
+      ],
+			"supportList": [
+				{
+					"title": "Various Ways of Communication",
+					"contents":
+						"In various types of network environment such as 3G, 4G, 5G, WIFI tethering and LTE dongle, field workers can be remotely checked by professional. During these various types of information can be shared among members."
+				},
+				{
+					"title": "Supporting Suitable Device for the Business",
+					"contents":
+						"Various types of devices such as SmartGlass, Smartphone, Tablet PC and PC can be chosen for the different types of work in favor of users. Specialized UI for each device will be provided which helps users to achieve superior level of usability."
+				},
+				{
+					"title": "Various Ways of Installment",
+					"contents":
+						"Both full-buying and renting of the program are available regarding the previous environment of the system. Also, VIRNECT Make offers the high-security server which can be applied to original security network or inside business network of the user's company."
+				}
+      ],
+			"exampleContents":"View our latest cases on the innovation <br class='mobile-hidden'>and efficiency created by the VIRNECT Remote.",
+      "exampleList": [
+				{
+					"img": "../images/pages/products/remote-usecase-01.png",
+					"title": "Support for railway vehicle training and maintenance"
+				},
+				{
+					"img": "../images/pages/products/remote-usecase-02.png",
+					"title": "Support for power plant facility inspection and maintenance"
+				},
+				{
+					"img": "../images/pages/products/remote-usecase-03.png",
+					"title": "Guide for detailed and accurate equipment operation"
+				},
+				{
+					"img": "../images/pages/products/remote-usecase-04.png",
+					"title": "Quality control for overseas manufacturing sites"
+				},
+				{
+					"img": "../images/pages/products/remote-usecase-05.png",
+					"title": "Stable communications support during long-term/large-scale construction process"
+				},
+				{
+					"img": "../images/pages/products/remote-usecase-06.png",
+					"title": "Replacement of overseas remote workers"
+				},
+				{
+					"img": "../images/pages/products/remote-usecase-07.png",
+					"title": "Online docent/remote support during MICE events"
+				},
+				{
+					"img": "../images/pages/products/remote-usecase-08.png",
+					"title": "Remote support for commissioning at new construction plant sites"
+				}
+      ],
+      "bgExampleList": [
+				{
+					"img": "../images/pages/products/logo-recommendation-sds",
+					"contents": "The VIRNECT AR Solution applied <br class='mobile-hidden'>for worker inspections highly improved customer satisfaction.",
+					"category": " - Samsung SDS"
+				},
+				{
+					"img": "../images/pages/products/logo-recommendation-oci",
+					"contents": "This is a powerful tool that allows quick collaboration of <br class='mobile-hidden'>facility maintenance without the limitations of space and time.",
+					"category": "- OCI"
+				},
+				{
+					"img": "../images/pages/products/logo-recommendation-miraecity",
+					"contents": "The work efficiency of facility safety inspectors is <br class='mobile-hidden'>increasing due to the real-time information sharing among offices and worksites.",
+					"category": "- Mirae City"
+				},
+				{
+					"img": "../images/pages/products/logo-recommendation-lgchem",
+					"contents": "VIRNECT Remote is actually very helpful in working with <br class='mobile-hidden'>our overseas production sites.",
+					"category": "- LG Chemistry"
+				}
+			]
+    },
+    "twinText": {
+			"videoLink": "https://player.vimeo.com/external/427961749.hd.mp4?s=6b23eba39ac6959a06f7b7d11e4bee8191f35f18&profile_id=175",
+      "introText": {
+          "category": "Data Linked Virtual Monitoring and Simulation",
+          "title": "Predicts and manages situations by digitally replicating sites",
+          "contents": "VIRNECT Twin is the product that can build up the industrial site as a virtual model and linked it with the real field data, so that users can monitor the operating status and the process of the field. With VIRNECT Twin, company can optimize the operation of work space by predicting, controlling and managing the overall facilities and process."
+      },
+			"benefitLists": [
+				{
+					"title": "Robust Co-working System",
+					"contents":
+						"Through the connection with other products within VIRNECT, robust co-working system can be built such as AR Remote support, manual production and work condition checking. "
+				},
+				{
+					"title": "Real Time Monitoring",
+					"contents":
+						"Let along with the live data of the field such as facility operation data, real-time video, worker's location and the condition of the equipment in real-time base through the virtual TWIN."
+				},
+				{
+					"title": "Web Based Environment Operating",
+					"contents":
+						"With VIRNECT's own 3D visualization process, 3D data with large capacity can be light weight. This enables accessibility of various devices in the web-based environment."
+				},
+				{
+					"title": "Perfect Facility Linkage",
+					"contents":
+						"Using 2D HMI screen recognition technology, separate operating environment can be set, which can be aligned with previous HMI."
+				}
+      ],
+			"funcTitle": {
+				"category": "Features",
+				"title": "Supports powerful monitoring utilizing <br class='mobile-hidden'>all available resources on site"
+			},
+      "functionLists": [
+				{
+					"title": "Virtual 3D Environment Forming/Built",
+          "contents": "Assigning Virtual 3D model and linked it with the collected sensor data, VIRNECT Twin can build 3D virtual environment which is equivalent with real industrial site."
+        },
+				{
+					"title": "IoT/Facility Data Management",
+					"contents": "Facility driving data, thermal imaging camera(FLIR) and IoT sensor(Gas, vibration, micro-dust, temperature and humidity, etc.) that has been managed previously are visualized in real time."
+        },
+				{
+					"title": "Facility/Workers Location Management",
+          "contents": "Based on AI based smart observing system and location measuring technology, location of the workers and facility can be notified in real time."
+        },
+				{
+					"title": "Site Monitoring/Management",
+					"contents": "Control room can monitor the real time site and data of the virtual model simultaneously with the 360PTZ security camera that can check the overall site."
+        },
+				{
+					"title": "Site Working History Management",
+          "contents": "In control room, site workers' maintenance/driving of the workflow and history can be browsed in real time."
+        },
+				{
+					"title": "Predicting, Diagnosis and analysis of the information",
+          "contents": "Various types of insights such as pattern of the errors, life cycle of the products and safety protocol can be provided."
+        }
+      ],
+      "effectHeading": {
+				"category": "Effect",
+				"title": "The most precise ways of field checking protocol <br class='mobile-hidden'>for the best decision making",
+				"contents": "VIRNECT Twin can establish a powerful monitoring system on all sites, providing managers with insight on overall management as well as enhanced decision-making skills. <br class='mobile-hidden'>The data analysis and prediction feature of VIRNECT Twin optimizes the overall process and enhances the quality of outcomes."
+      },
+      "effectList": [
+				{
+					"title": "Real-Time",
+					"contents": "Checking the real time data collected <br class='mobile-hidden'>from the model that mimics the real site"
+				},
+				{
+					"title": "Prediction",
+					"contents": "Predicting the data based equipment's <br class='mobile-hidden'>maintenance due and preventing <br class='mobile-hidden'>of the down time of it."
+				},
+				{
+					"title": "Efficiency",
+					"contents": "Site operating efficiency enhancing <br class='mobile-hidden'>with the virtual simulation of the field"
+				},
+				{
+					"title": "Safe",
+					"contents": "Prevention of the accident <br class='mobile-hidden'>with the shared information <br class='mobile-hidden'>of the site workers location"
+				}
+      ],
+			"supportList": [
+				{
+					"title": "Using Light Weighted Product Using Weight Lightening 3D Model",
+					"contents":
+						"Applying data weight lightening technology for the 3D model with large capacity, VIRNECT Twin can be run on web-based environment without high prices for the data use or issues regarding speed."
+				},
+				{
+					"title": "Supporting Various Mobile Devices",
+					"contents":
+						"VIRNECT Twin can be used in web-based environment without downloading the exclusive application, so it can be applied in various devices such as PC and Tablet PC."
+				},
+				{
+					"title": "Providing 3D Model Making Service",
+					"contents":
+						"3D scanning service that make it easier to establish the industrial facilities and equipment is provided for the buildup of virtual industrial field."
+				}
+      ],
+			"exampleContents": "View our latest cases on the innovation <br class='mobile-hidden'>and efficiency created by VIRNECT Twin.",
+      "exampleList": [
+				{
+					"img": "../images/pages/products/twin-usecase-01.png",
+					"title": "3D visualization of the gas industry"
+				},
+				{
+					"img": "../images/pages/products/twin-usecase-02.png",
+					"title": "Worker behavior analysis and prediction of accidents"
+				},
+				{
+					"img": "../images/pages/products/view-usecase-09.png",
+					"title": "Real-time monitoring of GIS facility status"
+				}
+      ],
+      "bgExampleList": [
+				{
+					"img": "../images/pages/products/logo-recommendation-kaeri",
+					"contents": "VIRNECT Solution provides a platform of systematic information management <br class='mobile-hidden'>and optimal safety management, even for areas requiring high reliability.",
+					"category": " - Waste Management Researcher, Korea Atomic Energy Research Institute"
+				},
+				{
+					"img": "../images/pages/products/logo-recommendation-doosan",
+					"contents": "The implementation of VIRNECT Solution supports the enhancement of productivity <br class='mobile-hidden'>and sharing of information for fields of developing industries.",
+					"category": "- Technology Innovation Researcher, Environmental Technology Development Team, Doosan Heavy Industries & Construction"
+				}
+			]
+    },
+    "tailText": "The AR/DT solution for industrial problems. VIRNECT can show you."    
+  }
+}

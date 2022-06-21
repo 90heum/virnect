@@ -1,0 +1,124 @@
+@charset "utf-8";
+@import "../mixin.scss";
+
+.sub-visual-section {
+  text-align: center;
+  background-color: #333;
+  background-position: center;
+  background-size: cover;
+  .visual-text-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    height: 740px;
+    margin-top: 70px;
+  }
+  &.sm .visual-text-wrap {
+    height: 480px;
+  }
+  p {
+    width: 100%;
+    color: #fff;
+  }
+
+  .category {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: $poppins;
+  }
+
+  .title {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 44px;
+    font-family: $poppins, $noto;
+    line-height: 1.45;
+  }
+
+  .contents {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  .search-group {
+    @include area-flex(788px);
+    position: relative;
+    margin: 48px auto 0;
+
+    input {
+      width: calc(100% - 52px);
+      height: 32px;
+      padding: 18px 26px 14px;
+      font-size: 16px;
+      background-color: #fff;
+      border: solid 1px #979797;
+
+      &:focus {
+        outline: none;
+      }
+
+      &::placeholder {
+        color: #7a869a;
+        font-weight: 500;
+        font-size: 18px;
+      }
+    }
+
+    img {
+      position: absolute;
+      top: 12px;
+      right: 20px;
+      width: 42px;
+      cursor: pointer;
+    }
+    .del-btn {
+      position: absolute;
+      top: 12px;
+      right: 68px;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    .visual-text-wrap {
+      height: 320px;
+      margin-top: 63px;
+    }
+    &.sm .visual-text-wrap {
+      height: 320px;
+    }
+    .category {
+      font-weight: 600;
+      font-size: 14px;
+    }
+    p {
+      margin: 0 32px;
+    }
+    .title {
+      margin-bottom: 16px;
+      font-size: 24px;
+    }
+    .contents {
+      font-size: 14px;
+    }
+    .search-group {
+      margin: 34px 0 0;
+      input {
+        padding: 8px 24px;
+
+        &::placeholder {
+          color: #7a869a;
+          font-weight: 500;
+          font-size: 14px;
+        }
+      }
+
+      img {
+        top: 13px;
+        right: 40px;
+        width: 24px;
+      }
+    }
+  }
+}

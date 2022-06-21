@@ -1,0 +1,16 @@
+{
+  "bannerText": {
+    "bannerList": [
+      {
+        "category": "NOTICE",
+        "title": "VIRNECT <br>AR Solution<br><strong>무료 지원</strong>​",
+        "content": "​",
+        "router": "prDetail",
+        "period": "2021.02.19 - 06.30",
+        "seq": 197
+      }
+    ],
+    "nomore": "오늘 하루 보지 않기",
+    "close": "닫기"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "bannerText": {
+    "bannerList": [
+      {
+        "category": "EVENT",
+        "title": "VIRNECT<br>AR Solution 2.0<br><strong>Launching Promotion​</strong>​",
+        "content": "Gearing you up with many benefits,<br><strong>including the rock solid SmartGlasses<br> and free AR content service program​</strong>",
+        "router": "prDetail",
+        "seq": 168
+      }
+    ],
+    "nomore": "Nomore",
+    "close": "Close"
+  }
+}

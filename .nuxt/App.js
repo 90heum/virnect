@@ -6,9 +6,29 @@ import NuxtError from './components/nuxt-error.vue'
 import NuxtLoading from './components/nuxt-loading.vue'
 import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
+import _04a999c7 from '../layouts/common/Main.vue'
+import _301b735c from '../layouts/common/SubVisual.vue'
+import _04acc85e from '../layouts/common/Tail.vue'
 import _6f6c098b from '../layouts/default.vue'
+import _352b576c from '../layouts/modules/Banner.vue'
+import _a6d403f0 from '../layouts/modules/Board.vue'
+import _560068cd from '../layouts/modules/BoardView.vue'
+import _083a9928 from '../layouts/modules/CalculatorPopup.vue'
+import _749e93ee from '../layouts/modules/Dialog-Mobile.vue'
+import _edf96ca2 from '../layouts/modules/Dropdown.vue'
+import _5f7b7418 from '../layouts/modules/Gallery.vue'
+import _0b5d4ca4 from '../layouts/modules/Heading.vue'
+import _34441946 from '../layouts/modules/Library.vue'
+import _14f3aba2 from '../layouts/modules/LibraryView.vue'
+import _43911ad7 from '../layouts/modules/Newsletter.vue'
+import _a5490064 from '../layouts/modules/Popup.vue'
+import _e2b989dc from '../layouts/modules/PopupConfirm.vue'
+import _e1215566 from '../layouts/modules/PopupVideo.vue'
+import _4bf48d6f from '../layouts/modules/RequiredPopup.vue'
+import _33dc2d09 from '../layouts/modules/Snb.vue'
+import _13d6c140 from '../layouts/modules/YoutubeFullscreen.vue'
 
-const layouts = { "_default": sanitizeComponent(_6f6c098b) }
+const layouts = { "_common/Main": sanitizeComponent(_04a999c7),"_common/SubVisual": sanitizeComponent(_301b735c),"_common/Tail": sanitizeComponent(_04acc85e),"_default": sanitizeComponent(_6f6c098b),"_modules/Banner": sanitizeComponent(_352b576c),"_modules/Board": sanitizeComponent(_a6d403f0),"_modules/BoardView": sanitizeComponent(_560068cd),"_modules/CalculatorPopup": sanitizeComponent(_083a9928),"_modules/Dialog-Mobile": sanitizeComponent(_749e93ee),"_modules/Dropdown": sanitizeComponent(_edf96ca2),"_modules/Gallery": sanitizeComponent(_5f7b7418),"_modules/Heading": sanitizeComponent(_0b5d4ca4),"_modules/Library": sanitizeComponent(_34441946),"_modules/LibraryView": sanitizeComponent(_14f3aba2),"_modules/Newsletter": sanitizeComponent(_43911ad7),"_modules/Popup": sanitizeComponent(_a5490064),"_modules/PopupConfirm": sanitizeComponent(_e2b989dc),"_modules/PopupVideo": sanitizeComponent(_e1215566),"_modules/RequiredPopup": sanitizeComponent(_4bf48d6f),"_modules/Snb": sanitizeComponent(_33dc2d09),"_modules/YoutubeFullscreen": sanitizeComponent(_13d6c140) }
 
 export default {
   render (h, props) {

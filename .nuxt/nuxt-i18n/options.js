@@ -12,7 +12,7 @@ export const nuxtOptions = {
 export const options = {
   vueI18n: {},
   vueI18nLoader: false,
-  locales: [{"code":"en","name":"English","file":"en.json"},{"code":"ko","name":"korean","file":"ko.json"}],
+  locales: [{"code":"en","name":"English","file":"en/index.js"},{"code":"ko","name":"korean","file":"ko/index.js"}],
   defaultLocale: "ko",
   defaultDirection: "ltr",
   routesNameSeparator: "___",
@@ -20,7 +20,7 @@ export const options = {
   sortRoutes: true,
   strategy: "no_prefix",
   lazy: true,
-  langDir: "/Users/majeongheum/virnect/lang",
+  langDir: "/Users/hellodigital/virnect/lang",
   rootRedirect: null,
   detectBrowserLanguage: {"alwaysRedirect":false,"cookieCrossOrigin":false,"cookieDomain":null,"cookieKey":"i18n_redirected","cookieSecure":false,"fallbackLocale":"","redirectOn":"root","useCookie":true},
   differentDomains: false,
@@ -32,12 +32,12 @@ export const options = {
   onBeforeLanguageSwitch: () => {},
   onLanguageSwitched: () => null,
   seo: true,
-  normalizedLocales: [{"code":"en","name":"English","file":"en.json"},{"code":"ko","name":"korean","file":"ko.json"}],
+  normalizedLocales: [{"code":"en","name":"English","file":"en/index.js"},{"code":"ko","name":"korean","file":"ko/index.js"}],
   localeCodes: ["en","ko"],
   additionalMessages: [],
 }
 
 export const localeMessages = {
-  'en.json': () => import('../../lang/en.json' /* webpackChunkName: "lang-en.json" */),
-  'ko.json': () => import('../../lang/ko.json' /* webpackChunkName: "lang-ko.json" */),
+  'en/index.js': () => import('../../lang/en/index.js' /* webpackChunkName: "lang-en/index.js" */),
+  'ko/index.js': () => import('../../lang/ko/index.js' /* webpackChunkName: "lang-ko/index.js" */),
 }

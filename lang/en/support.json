@@ -1,0 +1,64 @@
+{
+    "supportText": {
+      "visualText": {
+        "title": " 영문영문영문<p>빠르고 친절하게 해결해 드리겠습니다.</p>",
+        "contents": ""
+      },
+      "menuList": {
+        "productNotice": {
+          "title": "영문영문영문 Notice",
+          "url": "",
+          "list":
+            [
+              {
+                "title": "릴리즈 노트",
+                "url": ""
+              },
+              {
+                "title": "안내",
+                "url": ""
+              },
+              {
+                "title": "점검",
+                "url": ""
+              },
+              {
+                "title": "장애",
+                "url": ""
+              }
+            ]
+        },
+      "faq": {
+        "title": "영문영문영문 FAQ",
+        "url": "",
+        "list":
+          [
+            {
+              "title": "회원",
+              "url": ""
+            },
+            {
+              "title": "제품",
+              "url": ""
+            },
+            {
+              "title": "결제",
+              "url": ""
+            },
+            {
+              "title": "서비스",
+              "url": ""
+            },
+            {
+              "title": "기기",
+              "url": ""
+            },
+            {
+              "title": "기타",
+              "url": ""
+            }
+          ]
+      }
+    }
+  }
+}

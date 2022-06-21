@@ -19,11 +19,15 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-  ],
+  css: [],
+  buildModules: ['@nuxtjs/style-resources'],
+  styleResources: {
+    less: '~/assets/css/*.scss'
+  },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    { src: './plugins/vue-awesome-swiper.js', ssr: false, mode: "client" }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -33,6 +37,7 @@ export default {
   buildModules: [
   ],
   modules: [
+    ['@nuxtjs/axios'],
     // Doc: https://http.nuxtjs.org
     [
       "@nuxtjs/i18n",
@@ -48,12 +53,12 @@ export default {
           {
             code: "en",
             name: "English",
-            file: "en.json"
+            file: "en/index.js"
           },
           {
             code: "ko",
             name: "korean",
-            file: "ko.json"
+            file: "ko/index.js"
           }
         ]
       }
