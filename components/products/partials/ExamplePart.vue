@@ -11,9 +11,9 @@
              class="img-wrapper swiper-slide" 
              :class="{'cursor-pointer': list.video } " 
              :data-idx="idx + 1" >
-          <div class="img-wrap" :style="`background-image : url(require(${list.img}))`">
+          <div class="img-wrap" :style="`background-image : url(${list.img})`">
           <img
-              src="require(~/assets/images/pages/company/ic-play.svg)"
+              src="https://virnect.com/assets/images/pages/company/ic-play.svg"
               class="icon"
               alt="재생 아이콘"
             />
