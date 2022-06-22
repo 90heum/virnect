@@ -3,91 +3,78 @@
     "name": "energy-energy",
     "path": "/energy/energy",
     "component": "/Users/hellodigital/virnect/pages/energy/energy.vue",
-    "chunkName": "pages/energy/energy",
-    "_name": "_4f01422a"
+    "chunkName": "pages/energy/energy"
   },
   {
     "name": "products-make",
     "path": "/products/make",
     "component": "/Users/hellodigital/virnect/pages/products/make.vue",
-    "chunkName": "pages/products/make",
-    "_name": "_22b4b5b5"
+    "chunkName": "pages/products/make"
   },
   {
     "name": "products-ms",
     "path": "/products/ms",
     "component": "/Users/hellodigital/virnect/pages/products/ms.vue",
-    "chunkName": "pages/products/ms",
-    "_name": "_4e70612d"
+    "chunkName": "pages/products/ms"
   },
   {
     "name": "products-remote",
     "path": "/products/remote",
     "component": "/Users/hellodigital/virnect/pages/products/remote.vue",
-    "chunkName": "pages/products/remote",
-    "_name": "_93f92766"
+    "chunkName": "pages/products/remote"
   },
   {
     "name": "products-track",
     "path": "/products/track",
     "component": "/Users/hellodigital/virnect/pages/products/track.vue",
-    "chunkName": "pages/products/track",
-    "_name": "_1687e814"
+    "chunkName": "pages/products/track"
   },
   {
     "name": "products-twin",
     "path": "/products/twin",
     "component": "/Users/hellodigital/virnect/pages/products/twin.vue",
-    "chunkName": "pages/products/twin",
-    "_name": "_fa89aca2"
+    "chunkName": "pages/products/twin"
   },
   {
     "name": "products-view",
     "path": "/products/view",
     "component": "/Users/hellodigital/virnect/pages/products/view.vue",
-    "chunkName": "pages/products/view",
-    "_name": "_6791b6ec"
+    "chunkName": "pages/products/view"
   },
   {
     "name": "solutions-airline_railroad",
     "path": "/solutions/airline_railroad",
     "component": "/Users/hellodigital/virnect/pages/solutions/airline_railroad.vue",
-    "chunkName": "pages/solutions/airline_railroad",
-    "_name": "_4259191c"
+    "chunkName": "pages/solutions/airline_railroad"
   },
   {
     "name": "solutions-energy_resource",
     "path": "/solutions/energy_resource",
     "component": "/Users/hellodigital/virnect/pages/solutions/energy_resource.vue",
-    "chunkName": "pages/solutions/energy_resource",
-    "_name": "_a76be328"
+    "chunkName": "pages/solutions/energy_resource"
   },
   {
     "name": "solutions-epc",
     "path": "/solutions/epc",
     "component": "/Users/hellodigital/virnect/pages/solutions/epc.vue",
-    "chunkName": "pages/solutions/epc",
-    "_name": "_098e989f"
+    "chunkName": "pages/solutions/epc"
   },
   {
     "name": "solutions-motor_parts",
     "path": "/solutions/motor_parts",
     "component": "/Users/hellodigital/virnect/pages/solutions/motor_parts.vue",
-    "chunkName": "pages/solutions/motor_parts",
-    "_name": "_5ff0e7c6"
+    "chunkName": "pages/solutions/motor_parts"
   },
   {
     "name": "solutions-oil_chemical_battery",
     "path": "/solutions/oil_chemical_battery",
     "component": "/Users/hellodigital/virnect/pages/solutions/oil_chemical_battery.vue",
-    "chunkName": "pages/solutions/oil_chemical_battery",
-    "_name": "_a048c694"
+    "chunkName": "pages/solutions/oil_chemical_battery"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/hellodigital/virnect/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_a985eb64"
+    "chunkName": "pages/index"
   }
 ]
