@@ -1,14 +1,13 @@
 <template>
   <section class="products-section">
-
-    <sub-menu />
-
     <sub-visual-section
       :image="visualText.image"
       :category="visualText.category"
       :title="$t('solutionText.visualText.title')"
       :contents="$t('solutionText.visualText.contents')"
     ></sub-visual-section>
+
+<sub-menu />
 
     <!-- <snb-section :snbArr="$t('gnb[0].array')"></snb-section> -->
     <transition name="app-fade" mode="out-in">

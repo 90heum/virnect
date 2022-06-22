@@ -2,7 +2,7 @@
   <section class="issue-part">
     <div
       class="img-wrap"
-      :style="`background-image : url(${isMobile}.png)`"
+      :style="`background-image : url(${bannerImg})`"
     ></div>
     <div class="text-wrap">
       <p class="issue-title">{{ title }}</p>
@@ -41,6 +41,7 @@ export default {
     image: String,
     title: String,
     issueArr: Array,
+    bannerImg: String
   },
   computed: {
     isMobile() {

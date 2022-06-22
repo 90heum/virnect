@@ -5,7 +5,7 @@
     <div v-swiper:mySwiper="bgExampleOption">
       <div class="swiper-wrapper">
         <div v-for="(list, idx) of bgExampleArr" :key="idx" class="img-wrapper swiper-slide">
-          <img :src="`require(${list.img + '.png'})`" />
+          <img :src="`${imgList[idx]}`" />
           <p class="contents" v-html="list.contents"></p>
           <p class="category">{{list.category}}</p>
         </div>
@@ -23,6 +23,10 @@ export default {
   // mixins: [mixin],
   data() {
     return {
+      imgList: ['https://virnect.com/images/pages/products/logo-recommendation-sds.png',
+      'https://virnect.com/images/pages/products/logo-recommendation-oci.png',
+      'https://virnect.com/images/pages/products/logo-recommendation-miraecity.png',
+      'https://virnect.com/images/pages/products/logo-recommendation-lgchem.png'],
       bgExampleOption: {
         loop: true,
         direction: 'vertical',
@@ -31,13 +35,10 @@ export default {
           el: '.pagination.bg',
           clickable: true,
           renderBullet(index, classs) {
-            return `<li class="${classs}"><svg
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="10px" height="12px">
-<path fill-rule="evenodd"  
- d="M5.000,-0.000 L-0.000,3.000 L-0.000,9.000 L5.000,12.000 L10.000,9.000 L10.000,3.000 L5.000,-0.000 Z"/>
-</svg></li>`
+            return `<li class="${classs} swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="12px">
+<path fill-rule="evenodd" d="M5.000,-0.000 L-0.000,3.000 L-0.000,9.000 L5.000,12.000 L10.000,9.000 L10.000,3.000 L5.000,-0.000 Z"></path>
+</svg></li>
+`
           },
         },
 
@@ -52,7 +53,7 @@ export default {
     }
   },
   props: {
-    bgExampleArr: Array,
+    bgExampleArr: Array
   },
   computed: {
     isMobile() {
@@ -91,6 +92,8 @@ export default {
   right: 68px;
   z-index: 2;
   transform: translateY(-50%);
+  list-style: none;
+
 }
 p {
   font-family: $noto;

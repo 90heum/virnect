@@ -49,26 +49,31 @@
               <button class="prev-btn arrow-btn"></button>
               <div class="fade-bg left"></div>
             </div>
-            <swiper
-              :options="solutionGellaryOption"
-              v-if="slideList"
-              @transitionEnd="getArrowSlide()"
-              class="solution-slide-image"
-            >
-              <swiper-slide
-                v-for="(list, idx) of slideList[idx]"
-                :key="idx"
-                :style="`background-image: url(${list.thumb})`"
-              >
-                <img
+            <!-- 1 -->
+            <div class="carousel-wrapper">
+              <div v-swiper:mySwiper="solutionGellaryOption" class="solution-slide-image">
+                <div class="swiper-wrapper"
+                     @transitionEnd="getArrowSlide()">
+                  <div v-for="(list, idx) of slideList[idx]" 
+                       :key="idx" 
+                       class="img-wrapper swiper-slide" 
+                       :style="`background-image: url(${list.thumb})`"
+                  >
+                   <img
                   class="product-icon"
                   v-for="(ico, i) of list.iconList"
                   :src="`${ico}@2x.png`"
                   :key="i"
                 />
-                <div @click="fancyPop(list.img)"></div>
-              </swiper-slide>
-            </swiper>
+                <!-- <div @click="fancyPop(list.img)"></div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 2 -->
+            <!-- 3 -->
+            <!-- 4 -->
+            
             <div v-if="(arrow[idx] = false)">
               <button class="next-btn arrow-btn"></button>
               <div class="fade-bg right"></div>
@@ -78,7 +83,7 @@
             <div class="fancy-box" v-if="fancyPopup">
               <div>
                 <button class="popup-close-btn" @click="fancyPop()">
-                  <img src="~assets/images/common/ic-close@2x.png" />
+                  <img src="https://virnect.com/images/common/ic-close@2x.png" />
                 </button>
                 <img :src="showImage" />
               </div>
@@ -119,6 +124,7 @@ export default {
       activeIdx: 0,
       fancyPopup: false,
       showImage: '',
+      direction: 'horizontal',
       solutionGellaryOption: {
         slidesPerView: 'auto',
         spaceBetween: 12,
@@ -203,7 +209,7 @@ h3 {
   font-family: $noto;
   line-height: 1.88;
 }
-
+.img-wrapper { margin-right: 12px; }
 ul {
   margin-top: 108px;
 }
@@ -343,10 +349,27 @@ li {
     }
   }
 }
-
+.swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
 .slide-wrap {
   position: relative;
-
+  .swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+  }
   .arrow-btn {
     position: absolute;
     top: 50%;

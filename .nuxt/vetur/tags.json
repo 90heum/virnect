@@ -23,6 +23,9 @@
   "MainBanner": {
     "description": "Auto imported from components/main/mainBanner.vue"
   },
+  "MainProducts": {
+    "description": "Auto imported from components/main/products.vue"
+  },
   "MainSuppoert": {
     "description": "Auto imported from components/main/suppoert.vue"
   },
@@ -92,17 +95,17 @@
   "GnbContact": {
     "description": "Auto imported from components/Gnb/Contact/index.vue"
   },
-  "GnbPricing": {
-    "description": "Auto imported from components/Gnb/Pricing/index.vue"
-  },
   "GnbFreeTrials": {
     "description": "Auto imported from components/Gnb/FreeTrials/index.vue"
   },
-  "GnbHeaderPartialMobileHeader": {
-    "description": "Auto imported from components/Gnb/headerPartial/mobileHeader.vue"
+  "GnbPricing": {
+    "description": "Auto imported from components/Gnb/Pricing/index.vue"
   },
   "GnbProducts": {
     "description": "Auto imported from components/Gnb/Products/index.vue"
+  },
+  "GnbHeaderPartialMobileHeader": {
+    "description": "Auto imported from components/Gnb/headerPartial/mobileHeader.vue"
   },
   "GnbSolution": {
     "description": "Auto imported from components/Gnb/Solution/index.vue"
@@ -149,11 +152,17 @@
   "ProductsPartialsXRSolution": {
     "description": "Auto imported from components/products/partials/XRSolution.vue"
   },
+  "ProductsPartialsBottomBannerRemote": {
+    "description": "Auto imported from components/products/partials/bottomBannerRemote.vue"
+  },
   "ProductsPartialsProductProperty": {
     "description": "Auto imported from components/products/partials/productProperty.vue"
   },
   "ProductsPartialsSubBanner": {
     "description": "Auto imported from components/products/partials/subBanner.vue"
+  },
+  "ProductsPartialsSubMenuProduct": {
+    "description": "Auto imported from components/products/partials/subMenuProduct.vue"
   },
   "SolutionsPagesAirline": {
     "description": "Auto imported from components/solutions/pages/Airline.vue"

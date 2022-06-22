@@ -4,8 +4,7 @@
             <span class="mainBannerTit">
                 <p class="bannerTitN1">생활 전반에 XR 기술이 스며들게 한다</p>
                 <h1 class="bannerTitN2">
-                    글로벌 No.1 확장현실<p>(XR)</p> 플랫폼 기업
-                    <p>VIRNECT</p>
+                    글로벌 No.1 확장현실<p>(XR)</p> 플랫폼 기업 VIRNECT
                 </h1>
                 <p class="bannerTitN3">
                     산업 현장을 혁신으로 이끌 버넥트 XR 솔루션을 확인하세요
@@ -19,12 +18,12 @@
                     </button>
                 </span>
                 <span class="bannerTitN4">
-                    <p>준비가된 기술 컨설턴트가 직접 도움을 드립니다.</p>
+                    <p>준비된 기술 컨설턴트가 직접 도움을 드립니다.</p>
                     <span>
                         <i>
                             <img :src="`https://velog.velcdn.com/images/kyj0206/post/8430c7fd-128e-491d-9ff0-45b2ca725f5d/image.png`" alt="문의하기 이미지">
                         </i>
-                        <p>070.7133.22025 <a href="#"><u>문의하기</u></a></p>
+                        <p>070.7733.2025 <a href="#"><u>문의하기</u></a></p>
                     </span>
                 </span> 
             </span>
@@ -44,12 +43,12 @@
                     </button>
                 </span>
                 <span class="bannerTitMb2">
-                    <p>준비가된 기술 컨설턴트가 직접 도움을 드립니다.</p>
+                    <p>준비된 기술 컨설턴트가 직접 도움을 드립니다.</p>
                     <span>
                         <i>
                             <img src="https://velog.velcdn.com/images/kyj0206/post/8430c7fd-128e-491d-9ff0-45b2ca725f5d/image.png" alt="문의하기 이미지">
                         </i>
-                        <p>070.7133.22025 <a href="#"><u>문의하기</u></a></p>
+                        <p>070. 7733. 2025 <a href="#"><u>문의하기</u></a></p>
                     </span>
                 </span> 
             </span>

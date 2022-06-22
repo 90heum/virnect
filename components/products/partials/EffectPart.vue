@@ -1,5 +1,5 @@
 <template>
-  <section class="effect-part dark">
+  <section class="effect-part dark" :id="`${id}`">
     <div class="heading-wrap">
       <p class="category">{{ category }}</p>
       <p class="title" v-html="title"></p>
@@ -7,7 +7,7 @@
     </div>
     <div
       class="effectlist-wrap"
-      :style="`background-image: url(${bg})`"
+      :style="`background-image: url(https://virnect.com/images/pages/products/img-remote-effect.png)`"
       v-if="!isMobile"
     >
       <dl
@@ -48,6 +48,7 @@ export default {
     effectArr: Array,
     greyBtn: String,
     blueBtn: String,
+    id: String
   },
   data() {
     return {
@@ -106,12 +107,14 @@ export default {
       font-size: 44px;
       font-family: $noto;
       line-height: 1.45;
+      color: #fff;
     }
     .contents {
       font-weight: normal;
       font-size: 16px;
       font-family: $noto;
       line-height: 1.88;
+      color: #fff;
     }
   }
   @media (max-width: $mobile) {
@@ -150,6 +153,7 @@ export default {
       overflow: hidden;
       background: rgba(9, 16, 27, 0.6);
       transition: width 0.2s, background-color 0.4s;
+      color: #fff;
       &.active {
         width: 41%;
         background: rgba(9, 16, 27, 0);
@@ -161,6 +165,7 @@ export default {
         dd {
           height: 57px;
           opacity: 1;
+          color: #fff;
         }
       }
     }
@@ -210,4 +215,5 @@ export default {
     @include default-btn(220px);
   }
 }
+
 </style>

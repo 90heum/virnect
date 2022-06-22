@@ -4,9 +4,21 @@
       <div class="footerFist">
         <span class="footerSpan">
           <ul class="footerGnb">
+
+            <li>
+              <a href="#">Solutions</a>
+              <ul style="padding-left:0px;">
+                <li><a href="#">에너지/자원</a></li>
+                <li><a href="#">정유/화학/배터리</a></li>
+                <li><a href="#">자동차/부품</a></li>
+                <li><a href="#">항공/철도</a></li>
+                <li><a href="#">EPC</a></li>
+              </ul>
+            </li>
+
             <li>
               <a href="#">Products</a>
-              <ul>
+              <ul style="padding-left:0px;">
                 <li><a href="#">VIRNECT Remote</a></li>
                 <li><a href="#">VIRNECT Make</a></li>
                 <li><a href="#">VIRNECT View</a></li>
@@ -15,19 +27,10 @@
                 <li><a href="#">XR Devices</a></li>
               </ul>
             </li>
-            <li>
-              <a href="#">Solutions</a>
-              <ul>
-                <li><a href="#">에너지/자원</a></li>
-                <li><a href="#">정유/석유화학/배터리</a></li>
-                <li><a href="#">자동차/부품</a></li>
-                <li><a href="#">항공/철도</a></li>
-                <li><a href="#">EPC</a></li>
-              </ul>
-            </li>
+
             <li>
               <a href="#"> Support</a>
-              <ul>
+              <ul style="padding-left:0px;">
                 <li><a href="#">Notice</a></li>
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#">학습센터</a></li>
@@ -35,17 +38,17 @@
               </ul>
             </li>
             <li>
-              <a href="#">Newsroom</a>
-              <ul>
-                <li><a href="#">News&press</a></li>
-                <li><a href="#">People&Culture</a></li>
+              <a href="#">News</a>
+              <ul style="padding-left:0px;">
+                <li><a href="#">News & press</a></li>
+                <li><a href="#">People & Culture</a></li>
                 <li><a href="#">Insight</a></li>
                 <li><a href="#">ESG</a></li>
               </ul>
             </li>
             <li>
               <a href="#">Company</a>
-              <ul>
+              <ul style="padding-left:0px;">
                 <li><a href="#">About VIRNECT</a></li>
                 <li><a href="#">인재채용</a></li>
                 <li><a href="#">IR</a></li>
@@ -131,7 +134,7 @@
                 VIRNECT가 전하는 최신 Digital Insight를 만나보세요
               </div>
               <div class="viInput">
-                <input type="text" placeholder="eMail을 입력하세요" />
+                <input type="text" placeholder=" email을 입력하세요" />
                 <button class="bottomGDBtn">구독</button>
               </div>
             </div>

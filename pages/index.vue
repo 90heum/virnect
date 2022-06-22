@@ -6,8 +6,8 @@
 
     <banner-module />
 
-    <!-- 프로덕트 들어갈 듯 -->
-
+    <product-component />
+    
     <use-case />
 
     <company-component />
@@ -25,7 +25,8 @@ import BannerModule from "~/components/main/bannerModule.vue";
 import UseCase from "~/components/main/useCase.vue";
 import CompanyComponent from "~/components/main/company.vue";
 import SupportComponent from "~/components/products/partials/SupportPart.vue";
-import CtaModule from '../components/main/ctaModule.vue';
+import CtaModule from '~/components/main/ctaModule.vue';
+import ProductComponent from "~/components/main/products.vue";
 export default {
   computed: {
     availableLocales() {
@@ -38,10 +39,12 @@ export default {
     UseCase,
     CompanyComponent,
     SupportComponent,
-    CtaModule
+    CtaModule,
+    ProductComponent
   }
 };
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/css/reset.scss";
 </style>

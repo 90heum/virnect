@@ -11,8 +11,7 @@
                     <p>솔루션</p>
                 </h2>
                 <span class="subExplanation">
-                    VIRNECT Remote는 시/공간 제약 없이 여러 현장을 하나로 
-                    <p>연결하여 자유롭게 정보를 공유합니다.</p>
+                    VIRNECT Remote는 시/공간 제약 없이 여러 현장을 하나로 연결하여 자유롭게 정보를 공유합니다.
                 </span>
                 <span>
                     <button>
@@ -153,7 +152,7 @@ export default {
                                 display: block;
                                 font-size: 16px;
                                 font-weight: bold;
-                                padding: 7px 42px;
+                                padding: 10px 42px;
                                 color: #121212;
                                 
                                 p{
@@ -170,6 +169,7 @@ export default {
             max-width: 951px;
             width: 100%;
             min-width: auto;
+            border: solid 2px #BFDCFF;
         }
     }
 }
@@ -832,4 +832,7 @@ export default {
         width: 100%;
     }
 }
+.subExplanation{ span {
+    padding-top: 3px;
+} }
 </style>
