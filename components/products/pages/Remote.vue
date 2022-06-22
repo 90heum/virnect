@@ -7,16 +7,19 @@
       :contents="$t('productsText.remoteText.introText.contents')"
     ></heading-module> -->
 
-    <benefit-part
+    <!-- <benefit-part
       :benefitArr="$t('productsText.remoteText.benefitLists')"
-    ></benefit-part>
+    ></benefit-part> -->
+    
     <heading-module
       :category="$t('productsText.remoteText.funcTitle.category')"
       :title="$t('productsText.remoteText.funcTitle.title')"
+      :id="remoteHeadingModuleId"
     ></heading-module>
     <function-part
       :functionArr="$t('productsText.remoteText.functionLists')"
       :iconImage="functionIconImage"
+      :id="remoteFunctionPartId"
     ></function-part>
 
     <effect-part
@@ -27,9 +30,10 @@
       :effectArr="$t('productsText.remoteText.effectList')"
       :greyBtn="$t('global.demoText')"
       :blueBtn="$t('global.ROIText')"
+      :id="`remoteEffectPartId`"
     ></effect-part>
 
-    <section class="divide-section">
+    <!-- <section class="divide-section">
       <heading-module
         :align="supportTitle.align"
         :category="$t('productsText.supportTitle.category')"
@@ -42,9 +46,9 @@
           :supportArr="$t('productsText.remoteText.supportList')"
         ></support-part>
       </div>
-    </section>
+    </section> -->
 
-    <div class="example-wrap">
+    <!-- <div class="example-wrap">
       <section class="divide-section">
         <div class="example-style">
           <heading-module
@@ -61,10 +65,11 @@
           </div>
         </div>
       </section>
-    </div>
-
+    </div> -->
+    
     <bg-slide-part
       :bgExampleArr="$t('productsText.remoteText.bgExampleList')"
+      :id="remoteBgExampleArrId"
     ></bg-slide-part>
   </section>
 </template>
@@ -76,7 +81,7 @@ import functionPart from '../partials/FunctionPart.vue'
 import effectPart from '../partials/EffectPart.vue'
 import supportPart from '../partials/SupportPart'
 import examplePart from '../partials/ExamplePart'
-import bgSlidePart from '../partials/BgSlidePart'
+import bgSlidePart from '../partials/BgSlidePart.vue'
 
 
 import headingModule from '../../modules/Heading'
@@ -89,7 +94,7 @@ export default {
     supportPart,
     examplePart,
     bgSlidePart,
-    headingModule,
+    headingModule
   },
   data() {
     return {
@@ -103,7 +108,7 @@ export default {
           'https://player.vimeo.com/external/560735983.hd.mp4?s=e14e93e201c67212624d232508ddcad911d7d617&profile_id=174',
       },
       functionIconImage:
-        '~assets/images/pages/products/img-products-remote-function-0.png',
+        '~assets/images/pages/products/img-products-remote-function-0',
       effectBG: '~assets/images/pages/products/img-remote-effect.png',
       supportTitle: {
         align: 'left',

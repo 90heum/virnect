@@ -226,7 +226,7 @@
                                 <p>AR 부문 수상</p>
                             </span>
                         </span>
-    
+<!--     
                         <span class="SliderList">
                             <span>
                                 <img src="https://velog.velcdn.com/images/kyj0206/post/061e68fb-52c4-46b9-bc38-51c92252c262/image.jpg" alt="기술혁신대상 수상">
@@ -434,7 +434,7 @@
                                 <p>도전! K-스타트업</p>
                                 <p>일자리 특별상</p>
                             </span>
-                        </span>
+                        </span> -->
                     </div>
                 </div>
             </span>
@@ -696,6 +696,7 @@ export default {
                 box-sizing: unset;
                 padding: 180px 30px 70px;
                 li, ul { list-style: none; }
+                ul { padding-left: 0px; }
                 >span{
                     display: flex;
                     width: 100%;
@@ -792,6 +793,7 @@ export default {
         .companyAwards{
             display: block;
             width: 100%;
+            background-color: #f7f8fa;
             .awardsWrap{
                 margin: 0 auto;
                 display: flex;

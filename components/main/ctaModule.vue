@@ -30,10 +30,10 @@ export default {
 .CtaModule{
     display: flex;
     width: 100%;
-    max-width: 2400px;
+    /* max-width: 2400px; */
     height: 479px;
     background-image: url('https://velog.velcdn.com/images/kyj0206/post/e22550d0-b661-41a6-8803-eef9ada91ff3/image.jpg');
-    background-size: auto 100%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     justify-content: center;
@@ -45,7 +45,7 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 0 0 0 90px;
+        padding: 0 0 0 0px;
         
         h2{
             font-size: 48px;

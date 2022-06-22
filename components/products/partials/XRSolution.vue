@@ -1,5 +1,5 @@
 <template>
-    <div class="xrSolutionWrapper">
+    <div class="xrSolutionWrapper" id="xrSolutionId">
         <img :src="require(`~/assets/images/pages/products/ARSection_remote.svg`)" />
     </div>
 </template>
@@ -17,7 +17,8 @@ export default {
         justify-content: center;
         align-items: cemter;
         img {
-            width: 80%;
+            width: 100%;
+            max-width: 1260px;
         }
     }
 </style>

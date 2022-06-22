@@ -3,7 +3,7 @@
     <dl
       v-for="(list, idx) of functionArr"
       :key="idx"
-      :style="`background-image : url(${iconImage}${idx + 1}@2x.png)`"
+      :style="`backgroundImage : url(${list.img})`"
       @click="slideDown(idx)"
       :class="{ active: idx == activeIdx }"
     >
@@ -47,6 +47,7 @@ export default {
   border-left: 1px solid #ced3dc;
 
   dl {
+    background-position-x: calc(80%);
     width: calc(100% / 4);
     min-height: 320px;
     padding: 26px 30px 28px;
@@ -114,7 +115,8 @@ export default {
 @media (min-width: $mobile) {
   html:lang(en) .function-part dl {
     min-height: 380px;
-    background-position: 274px 260px;
+    background-position-y: 274px;
+    background-position-x: calc(80%);
   }
 }
 </style>

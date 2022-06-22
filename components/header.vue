@@ -81,7 +81,7 @@
               v-bind:style="gnbStyle[`list4`]"
             >
               <a href="#" class="navTab container4">
-                Newsrooom
+                News
                 <i>
                   <img
                     class="downIcon4"
@@ -438,7 +438,7 @@
           </span>
           <a href="#">
             <img
-              src="https://velog.velcdn.com/images/kyj0206/post/f1f9bdfc-bd63-42a8-8083-72003e7bfbd4/image.png"
+              src="https://velog.velcdn.com/images/kyj0206/post/e8af89e4-bc0f-4c5f-a89f-a403f4c537a0/image.png"
               alt="컴퍼니 이미지"
             />
           </a>

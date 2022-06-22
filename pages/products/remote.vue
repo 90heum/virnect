@@ -1,5 +1,6 @@
 <template>
   <section class="products-section">
+    <sub-menu-product />
     <!-- <sub-visual-section
       :image="visualText.image"
       :category="visualText.category"
@@ -18,7 +19,7 @@
     <transition name="app-fade" mode="out-in">
       <remote-component />
     </transition>
-    <tail-section
+    <!-- <tail-section
       :bg="tailText.bg"
       :mention="$t('productsText.tailText')"
       :blueBtn="tailText.blue"
@@ -26,6 +27,11 @@
       :greyBtn="tailText.grey"
       :greyRouter="tailText.greyRouter"
     ></tail-section>
+     -->
+    <bottom-banner-remote />
+
+    <cta-module />
+
   </section>
 </template>
 
@@ -38,6 +44,9 @@ import SubBanner from "~/components/products/partials/subBanner.vue";
 import XrSolution from "~/components/products/partials/XRSolution.vue";
 import XRSolution from '~/components/products/partials/XRSolution.vue';
 import ProductProperty from "~/components/products/partials/productProperty.vue";
+import BottomBannerRemote from "~/components/products/partials/bottomBannerRemote.vue";
+import CtaModule from '~/components/main/ctaModule.vue';
+import SubMenuProduct from "~/components/products/partials/subMenuProduct.vue";
 
 export default {
   components: {
@@ -49,6 +58,9 @@ export default {
     XrSolution,
     XRSolution,
     ProductProperty,
+    BottomBannerRemote,
+    CtaModule,
+    SubMenuProduct,
   },
   data() {
     return {

@@ -5,10 +5,10 @@ footer {
 
 .footerInner {
     display: flex;
-    margin: 0 auto;
-    max-width: 1920px;
+    margin: 0 0;
+    
     width: 100%;
-    padding: 0 30px;
+    
     background-color: #e6e8eb;
     flex-direction: column;
 
@@ -20,6 +20,7 @@ footer {
 
 .footerInner .footerGnb {
     display: flex;
+    flex-wrap: wrap;
 
 }
 
@@ -35,6 +36,7 @@ footer {
     text-decoration: none;
 }
 .footerGnb>li {
+    padding-left: 0px!important;
     list-style: none;
     margin-right: 160px;
     font-weight: 900;
@@ -86,7 +88,7 @@ footer {
 /* footer VEIRNECT  부분 */
 
 .footerSecond {
-    padding: 60px 0;
+    padding: 60px 30px;
 }
 .footerSecond .Tit>img {
     width: 118px;
@@ -101,7 +103,6 @@ footer {
     justify-content: space-between;
     .conbox>span div {
         width: 290px;
-        margin: 12.5px 15px 12.5px 2px;
         opacity: 0.9;
         font-size: 14px;
         font-weight: bold;
@@ -122,6 +123,9 @@ footer {
     display: flex;
     margin-left: 20px;
     padding-top: 1px;
+    align-items: center;
+    justify-content: center;
+    i { margin-right: 6px; }
 }
 
 
@@ -133,6 +137,9 @@ footer {
 
 .pdfbox span {
     margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .pdfbox span a {
     color: #121212;
@@ -142,8 +149,8 @@ footer {
 
 .viInputText {
 
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 12px;
+    font-weight: 500;
     padding-bottom: 12px;
 
 }
@@ -155,9 +162,10 @@ footer {
 }
 
 .bottomGDBtn {
+    border: none;
     background-color: #121212;
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     width: 58px;
     height: 34px;
 
@@ -229,7 +237,7 @@ footer {
         justify-content: space-between;
         background-color: #121212;
         margin-right: 10px;
-        .arrow>img { width: 24px; }
+        .arrow>img { width: 24px; vertical-align: middle; }
     }
 }
 
@@ -322,7 +330,7 @@ footer {
 
 .serviceSelect .select .selected-value {
     max-width: 112.61px;
-    font-size: 16px;
+    font-size: 14px;
     white-space: nowrap;
 }
 
@@ -336,7 +344,7 @@ footer {
     display: flex;
     gap: 10px;
     justify-content: space-between;
-    padding: 3px 13px;
+    padding: 2px 13px;
     color: #e6e8eb;
     font-weight: 500;
 }
@@ -369,13 +377,11 @@ footer {
 /* footer third  */
 
 .footerThird {
-    width: 99vw;
-    margin-left: -30px;
+    width: 100%;
     background-color: #727378;
     height: 146px;
     display: flex;
-    padding: 44px 0px;
-    padding-left: 40px;
+    padding: 0px 30px;
     justify-content: space-between;
     align-items: center;
     .serviceList {

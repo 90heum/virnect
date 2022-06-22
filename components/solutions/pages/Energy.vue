@@ -10,6 +10,7 @@
       :image="issueBg"
       :title="$t('solutionText.energyText.issueTitle')"
       :issueArr="$t('solutionText.energyText.issueList')"
+      :bannerImg="`https://virnect.com/images/pages/solution/img-solution-energy-top.png`"
     ></issue-part>
 
     <bg-normal-part
@@ -68,7 +69,7 @@
 </template>
 
 <script>
-import issuePart from '../partials/IssuePart'
+import issuePart from '../partials/IssuePart.vue'
 import bgNormalPart from '../partials/BgNormalPart'
 import infographicPart from '../partials/InfographicPart'
 import roiPart from '../partials/RoiPart'
@@ -91,7 +92,7 @@ export default {
   },
   data() {
     return {
-      issueBg: '../images/pages/solution/img-solution-energy-top',
+      issueBg: 'https://virnect.com/images/pages/solution/img-solution-energy-top',
       infographicBtn: [
         [
           {
@@ -130,55 +131,55 @@ export default {
       solutionGellary: [
         [
           {
-            thumb: '../images/pages/solution/info-energy-01-01.png',
-            img: '../images/pages/solution/info-energy-01-01@3x.png',
-            iconList: ['../images/common/logo-arsdk'],
+            thumb: 'https://virnect.com/images/pages/solution/info-energy-01-01.png',
+            img: 'https://virnect.com/images/pages/solution/info-energy-01-01@3x.png',
+            iconList: ['https://virnect.com/images/common/logo-arsdk'],
           },
           {
-            thumb: '../images/pages/solution/info-energy-01-02.png',
-            img: '../images/pages/solution/info-energy-01-02@3x.png',
-            iconList: ['../images/common/logo-twin'],
+            thumb: 'https://virnect.com/images/pages/solution/info-energy-01-02.png',
+            img: 'https://virnect.com/images/pages/solution/info-energy-01-02@3x.png',
+            iconList: ['https://virnect.com/images/common/logo-twin'],
           },
           {
-            thumb: '../images/pages/solution/info-energy-01-03.png',
-            img: '../images/pages/solution/info-energy-01-03@3x.png',
-            iconList: ['../images/common/logo-twin'],
-          },
-        ],
-        [
-          {
-            thumb: '../images/pages/solution/info-energy-02-01.png',
-            img: '../images/pages/solution/info-energy-02-01@3x.png',
-            iconList: ['../images/common/logo-make'],
-          },
-          {
-            thumb: '../images/pages/solution/info-energy-02-02.png',
-            img: '../images/pages/solution/info-energy-02-02@3x.png',
-            iconList: ['../images/common/logo-make'],
-          },
-          {
-            thumb: '../images/pages/solution/info-energy-02-03.png',
-            img: '../images/pages/solution/info-energy-02-03@3x.png',
-            iconList: ['../images/common/logo-view'],
-          },
-          {
-            thumb: '../images/pages/solution/info-energy-02-04.png',
-            img: '../images/pages/solution/info-energy-02-04@3x.png',
-            iconList: ['../images/common/logo-remote'],
+            thumb: 'https://virnect.com/images/pages/solution/info-energy-01-03.png',
+            img: 'https://virnect.com/images/pages/solution/info-energy-01-03@3x.png',
+            iconList: ['https://virnect.com/images/common/logo-twin'],
           },
         ],
         [
           {
-            thumb: '../images/pages/solution/info-energy-03-01.png',
-            img: '../images/pages/solution/info-energy-03-01@3x.png',
-            iconList: ['../images/common/logo-remote'],
+            thumb: 'https://virnect.com/images/pages/solution/info-energy-02-01.png',
+            img: 'https://virnect.com/images/pages/solution/info-energy-02-01@3x.png',
+            iconList: ['https://virnect.com/images/common/logo-make'],
+          },
+          {
+            thumb: 'https://virnect.com/images/pages/solution/info-energy-02-02.png',
+            img: 'https://virnect.com/images/pages/solution/info-energy-02-02@3x.png',
+            iconList: ['https://virnect.com/images/common/logo-make'],
+          },
+          {
+            thumb: 'https://virnect.com/images/pages/solution/info-energy-02-03.png',
+            img: 'https://virnect.com/images/pages/solution/info-energy-02-03@3x.png',
+            iconList: ['https://virnect.com/images/common/logo-view'],
+          },
+          {
+            thumb: 'https://virnect.com/images/pages/solution/info-energy-02-04.png',
+            img: 'https://virnect.com/images/pages/solution/info-energy-02-04@3x.png',
+            iconList: ['https://virnect.com/images/common/logo-remote'],
           },
         ],
         [
           {
-            thumb: '../images/pages/solution/info-energy-04-01.png',
-            img: '../images/pages/solution/info-energy-04-01@3x.png',
-            iconList: ['../images/common/logo-view'],
+            thumb: 'https://virnect.com/images/pages/solution/info-energy-03-01.png',
+            img: 'https://virnect.com/images/pages/solution/info-energy-03-01@3x.png',
+            iconList: ['https://virnect.com/images/common/logo-remote'],
+          },
+        ],
+        [
+          {
+            thumb: 'https://virnect.com/images/pages/solution/info-energy-04-01.png',
+            img: 'https://virnect.com/images/pages/solution/info-energy-04-01@3x.png',
+            iconList: ['https://virnect.com/images/common/logo-view'],
           },
         ],
       ],
