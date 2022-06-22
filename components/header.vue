@@ -292,7 +292,7 @@
                 <span class="subNavProductsTit" v-html="$t(`productsText.exampleTitle.title`)"></span>
                 <sub-solution-menu :snbArr="$t('gnb[1].array').filter((e, idx) => {if(idx > 2) return e; })"
                                    :name="`subNavProductsMenu`"
-                                   @click="changeGnbColor(`list1`)"/>
+                                   @click="changeGnbColor(`list2`)"/>
               </span>
             </div>
           </span>
@@ -453,7 +453,6 @@
 <script>
 import SubSolutionMenu from './modules/SubSolutionMenu.vue';
 import MobileHeader from "../components/Gnb/headerPartial/mobileHeader.vue";
-import debounce from "lodash.debounce";
 
 const navList = [
     {title: "Use Case"},

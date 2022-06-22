@@ -12,7 +12,7 @@
 
     <company-component />
 
-    <suppoer-component />
+    <support-component />
 
     <cta-module />
     
@@ -24,7 +24,7 @@ import MainBanner from "~/components/main/mainBanner.vue";
 import BannerModule from "~/components/main/bannerModule.vue";
 import UseCase from "~/components/main/useCase.vue";
 import CompanyComponent from "~/components/main/company.vue";
-import SupportComponent from "~/components/main/suppoert.vue";
+import SupportComponent from "~/components/products/partials/SupportPart.vue";
 import CtaModule from '../components/main/ctaModule.vue';
 export default {
   computed: {

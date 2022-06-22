@@ -1,12 +1,20 @@
 <template>
   <section class="products-section">
-    <sub-visual-section
+    <!-- <sub-visual-section
       :image="visualText.image"
       :category="visualText.category"
       :title="$t('productsText.visualText.title')"
       :contents="$t('productsText.visualText.contents')"
-    ></sub-visual-section>
-    <snb-section :snbArr="$t('gnb[1].array')"></snb-section>
+    ></sub-visual-section> -->
+    <!-- <snb-section :snbArr="$t('gnb[1].array')"></snb-section> -->
+    <sub-banner />
+
+    <!-- 제품개요 -->
+    <xr-solution />
+    <!-- 제품특징 -->
+    <product-property />
+    <!-- 기능소개 -->
+  <sub-menu />
     <transition name="app-fade" mode="out-in">
       <remote-component />
     </transition>
@@ -26,12 +34,21 @@ import subVisualSection from '../../layouts/common/SubVisual.vue'
 import snbSection from '../../layouts/modules/Snb.vue'
 import tailSection from '../../layouts/common/Tail.vue'
 import remoteComponent from "../../components/products/pages/Remote.vue";
+import SubBanner from "~/components/products/partials/subBanner.vue";
+import XrSolution from "~/components/products/partials/XRSolution.vue";
+import XRSolution from '~/components/products/partials/XRSolution.vue';
+import ProductProperty from "~/components/products/partials/productProperty.vue";
+
 export default {
   components: {
     subVisualSection,
     snbSection,
     tailSection,
-    remoteComponent
+    remoteComponent,
+    SubBanner,
+    XrSolution,
+    XRSolution,
+    ProductProperty,
   },
   data() {
     return {

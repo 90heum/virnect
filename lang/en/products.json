@@ -532,6 +532,10 @@
           "contents": "If quality of the video is considered to be inadequate, in accordance with network environment, best suitable video quality(Maximum FHD) will be provided. Users can choose the quality of the video so that they can communicate easily when they are co-working with others in real time."
         },
 				{
+					"title": "고객 맞춤형 커스터마이징",
+					"contents": "고객사 시스템과 연동 / GPS를 통한 작업자 위치 파악 / 다양한 XR 디바이스와 연결을 지원하며, 계정이 없는 사용자도 초대하여 협업 가능합니다."
+		},
+				{
 					"title": "Share and attach files",
 					"contents": "The information can be shared among users via CollaBoard. The various formats of files can be attached and downloaded from the chat box."
         },
@@ -542,7 +546,11 @@
 				{
 					"title": "Screen Recording",
           "contents": "Real time video recording (Maximum FHD) and information shared during work can be saved and modified, which leads to understanding the problem and enhancement of the work efficiency. "
-        }
+        },
+				{
+					"title": "보완성 확보",
+			"contents": "국정원 인증을 받은 보안성이 보장된 솔루션으로 내부망 내 구축 또는 전문가들이 고객의 네트워크 환경을 분석하여 제안합니다."
+		}
       ],
       "effectHeading": {
 				"category": "Effect",

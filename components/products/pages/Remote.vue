@@ -1,11 +1,11 @@
 <template>
   <section class="remote-section">
-    <intro-part :introSource="remoteIntro"></intro-part>
-    <heading-module
+    <!-- <intro-part :introSource="remoteIntro"></intro-part> -->
+    <!-- <heading-module
       :category="$t('productsText.remoteText.introText.category')"
       :title="$t('productsText.remoteText.introText.title')"
       :contents="$t('productsText.remoteText.introText.contents')"
-    ></heading-module>
+    ></heading-module> -->
 
     <benefit-part
       :benefitArr="$t('productsText.remoteText.benefitLists')"
@@ -72,11 +72,12 @@
 <script>
 import introPart from '../partials/IntroducePart'
 import benefitPart from '../partials/BenefitPart'
-import functionPart from '../partials/FunctionPart'
+import functionPart from '../partials/FunctionPart.vue'
 import effectPart from '../partials/EffectPart.vue'
 import supportPart from '../partials/SupportPart'
 import examplePart from '../partials/ExamplePart'
 import bgSlidePart from '../partials/BgSlidePart'
+
 
 import headingModule from '../../modules/Heading'
 export default {

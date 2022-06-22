@@ -89,11 +89,11 @@
   "GnbCompany": {
     "description": "Auto imported from components/Gnb/Company/index.vue"
   },
-  "GnbPricing": {
-    "description": "Auto imported from components/Gnb/Pricing/index.vue"
-  },
   "GnbContact": {
     "description": "Auto imported from components/Gnb/Contact/index.vue"
+  },
+  "GnbPricing": {
+    "description": "Auto imported from components/Gnb/Pricing/index.vue"
   },
   "GnbFreeTrials": {
     "description": "Auto imported from components/Gnb/FreeTrials/index.vue"
@@ -101,11 +101,11 @@
   "GnbHeaderPartialMobileHeader": {
     "description": "Auto imported from components/Gnb/headerPartial/mobileHeader.vue"
   },
-  "GnbSolution": {
-    "description": "Auto imported from components/Gnb/Solution/index.vue"
-  },
   "GnbProducts": {
     "description": "Auto imported from components/Gnb/Products/index.vue"
+  },
+  "GnbSolution": {
+    "description": "Auto imported from components/Gnb/Solution/index.vue"
   },
   "ProductsPagesMS": {
     "description": "Auto imported from components/products/pages/MS.vue"
@@ -146,20 +146,14 @@
   "ProductsPartialsSupportPart": {
     "description": "Auto imported from components/products/partials/SupportPart.vue"
   },
-  "SolutionsPartialsBgNormalPart": {
-    "description": "Auto imported from components/solutions/partials/BgNormalPart.vue"
+  "ProductsPartialsXRSolution": {
+    "description": "Auto imported from components/products/partials/XRSolution.vue"
   },
-  "SolutionsPartialsInfographicPart": {
-    "description": "Auto imported from components/solutions/partials/InfographicPart.vue"
+  "ProductsPartialsProductProperty": {
+    "description": "Auto imported from components/products/partials/productProperty.vue"
   },
-  "SolutionsPartialsIssuePart": {
-    "description": "Auto imported from components/solutions/partials/IssuePart.vue"
-  },
-  "SolutionsPartialsOfferPart": {
-    "description": "Auto imported from components/solutions/partials/OfferPart.vue"
-  },
-  "SolutionsPartialsRoiPart": {
-    "description": "Auto imported from components/solutions/partials/RoiPart.vue"
+  "ProductsPartialsSubBanner": {
+    "description": "Auto imported from components/products/partials/subBanner.vue"
   },
   "SolutionsPagesAirline": {
     "description": "Auto imported from components/solutions/pages/Airline.vue"
@@ -175,5 +169,23 @@
   },
   "SolutionsPagesOil": {
     "description": "Auto imported from components/solutions/pages/Oil.vue"
+  },
+  "SolutionsPartialsBgNormalPart": {
+    "description": "Auto imported from components/solutions/partials/BgNormalPart.vue"
+  },
+  "SolutionsPartialsInfographicPart": {
+    "description": "Auto imported from components/solutions/partials/InfographicPart.vue"
+  },
+  "SolutionsPartialsIssuePart": {
+    "description": "Auto imported from components/solutions/partials/IssuePart.vue"
+  },
+  "SolutionsPartialsOfferPart": {
+    "description": "Auto imported from components/solutions/partials/OfferPart.vue"
+  },
+  "SolutionsPartialsRoiPart": {
+    "description": "Auto imported from components/solutions/partials/RoiPart.vue"
+  },
+  "SolutionsPartialsSubMenu": {
+    "description": "Auto imported from components/solutions/partials/subMenu.vue"
   }
 }
