@@ -1,13 +1,16 @@
 <template>
   <section class="products-section">
+
+    <sub-menu />
+
     <sub-visual-section
       :image="visualText.image"
       :category="visualText.category"
       :title="$t('solutionText.visualText.title')"
       :contents="$t('solutionText.visualText.contents')"
     ></sub-visual-section>
-    <snb-section :snbArr="$t('gnb[0].array')"></snb-section>
 
+    <!-- <snb-section :snbArr="$t('gnb[0].array')"></snb-section> -->
     <transition name="app-fade" mode="out-in">
       <energy-component />
     </transition>
@@ -27,19 +30,22 @@ import subVisualSection from '../../layouts/common/SubVisual.vue'
 import snbSection from '../../components/modules/Snb.vue'
 import tailSection from '../../layouts/common/Tail.vue';
 import energyComponent from "../../components/solutions/pages/Energy.vue";
+import SubMenu from '../../components/solutions/partials/subMenu.vue';
+
 export default {
   components: {
     subVisualSection,
     snbSection,
     tailSection,
-    energyComponent
+    energyComponent,
+    SubMenu
   },
   data() {
     return {
       visualText: {
         image:
           'https://image.virnect.com/images/pages/solution/img-products-main.png',
-        category: 'Solutions',
+        category: 'Use Case',
       },
       tailText: {
         // 막줄 꼬리 텍스트

@@ -7,7 +7,7 @@
     </div>
     <div
       class="effectlist-wrap"
-      :style="`background-image: url('${bg}.png')`"
+      :style="`background-image: url(${bg})`"
       v-if="!isMobile"
     >
       <dl
@@ -26,7 +26,7 @@
       :options="effectOptions"
       class="effectlist-wrap"
       v-if="isMobile"
-      :style="`background-image: url('${isMobileImage}.png')`"
+      :style="`background-image : url(require(${bg}))`"
     >
       <swiper-slide v-for="(list, idx) of effectArr" :key="idx">
         <p class="title">{{ list.title }}</p>
@@ -38,7 +38,7 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+// import { mapGetters } from 'vuex'
 export default {
   props: {
     bg: String,
@@ -51,6 +51,7 @@ export default {
   },
   data() {
     return {
+      isMobile: false,
       activeIndex: '0',
       effectOptions: {
         loop: true,
@@ -71,11 +72,11 @@ export default {
     }
   },
   computed: {
-    ...mapGetters(['isMobile']),
-    isMobileImage() {
-      if (!this.isMobile) return this.bg
-      else return `${this.bg}-m@2x`
-    },
+    // ...mapGetters(['isMobile']),
+    // isMobileImage() {
+    //   if (!this.isMobile) return this.bg
+    //   else return `${this.bg}-m@2x`
+    // },
   },
 }
 </script>

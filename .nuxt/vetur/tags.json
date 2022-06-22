@@ -11,6 +11,24 @@
   "ApiAxios": {
     "description": "Auto imported from components/api/axios.js"
   },
+  "MainBannerModule": {
+    "description": "Auto imported from components/main/bannerModule.vue"
+  },
+  "MainCompany": {
+    "description": "Auto imported from components/main/company.vue"
+  },
+  "MainCtaModule": {
+    "description": "Auto imported from components/main/ctaModule.vue"
+  },
+  "MainBanner": {
+    "description": "Auto imported from components/main/mainBanner.vue"
+  },
+  "MainSuppoert": {
+    "description": "Auto imported from components/main/suppoert.vue"
+  },
+  "MainUseCase": {
+    "description": "Auto imported from components/main/useCase.vue"
+  },
   "MixinsMixin": {
     "description": "Auto imported from components/mixins/mixin.js"
   },
@@ -80,14 +98,14 @@
   "GnbFreeTrials": {
     "description": "Auto imported from components/Gnb/FreeTrials/index.vue"
   },
+  "GnbHeaderPartialMobileHeader": {
+    "description": "Auto imported from components/Gnb/headerPartial/mobileHeader.vue"
+  },
   "GnbProducts": {
     "description": "Auto imported from components/Gnb/Products/index.vue"
   },
   "GnbSolution": {
     "description": "Auto imported from components/Gnb/Solution/index.vue"
-  },
-  "GnbHeaderPartialMobileHeader": {
-    "description": "Auto imported from components/Gnb/headerPartial/mobileHeader.vue"
   },
   "ProductsPagesMS": {
     "description": "Auto imported from components/products/pages/MS.vue"
@@ -128,6 +146,15 @@
   "ProductsPartialsSupportPart": {
     "description": "Auto imported from components/products/partials/SupportPart.vue"
   },
+  "ProductsPartialsXRSolution": {
+    "description": "Auto imported from components/products/partials/XRSolution.vue"
+  },
+  "ProductsPartialsProductProperty": {
+    "description": "Auto imported from components/products/partials/productProperty.vue"
+  },
+  "ProductsPartialsSubBanner": {
+    "description": "Auto imported from components/products/partials/subBanner.vue"
+  },
   "SolutionsPagesAirline": {
     "description": "Auto imported from components/solutions/pages/Airline.vue"
   },
@@ -157,5 +184,8 @@
   },
   "SolutionsPartialsRoiPart": {
     "description": "Auto imported from components/solutions/partials/RoiPart.vue"
+  },
+  "SolutionsPartialsSubMenu": {
+    "description": "Auto imported from components/solutions/partials/subMenu.vue"
   }
 }

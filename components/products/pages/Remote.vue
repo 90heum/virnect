@@ -1,11 +1,11 @@
 <template>
   <section class="remote-section">
-    <intro-part :introSource="remoteIntro"></intro-part>
-    <heading-module
+    <!-- <intro-part :introSource="remoteIntro"></intro-part> -->
+    <!-- <heading-module
       :category="$t('productsText.remoteText.introText.category')"
       :title="$t('productsText.remoteText.introText.title')"
       :contents="$t('productsText.remoteText.introText.contents')"
-    ></heading-module>
+    ></heading-module> -->
 
     <benefit-part
       :benefitArr="$t('productsText.remoteText.benefitLists')"
@@ -72,11 +72,12 @@
 <script>
 import introPart from '../partials/IntroducePart'
 import benefitPart from '../partials/BenefitPart'
-import functionPart from '../partials/FunctionPart'
-import effectPart from '../partials/EffectPart'
+import functionPart from '../partials/FunctionPart.vue'
+import effectPart from '../partials/EffectPart.vue'
 import supportPart from '../partials/SupportPart'
 import examplePart from '../partials/ExamplePart'
 import bgSlidePart from '../partials/BgSlidePart'
+
 
 import headingModule from '../../modules/Heading'
 export default {
@@ -102,8 +103,8 @@ export default {
           'https://player.vimeo.com/external/560735983.hd.mp4?s=e14e93e201c67212624d232508ddcad911d7d617&profile_id=174',
       },
       functionIconImage:
-        '../images/pages/products/img-products-remote-function-0',
-      effectBG: '../images/pages/products/img-remote-effect',
+        '~assets/images/pages/products/img-products-remote-function-0.png',
+      effectBG: '~assets/images/pages/products/img-remote-effect.png',
       supportTitle: {
         align: 'left',
         btnText: 'Pricing',

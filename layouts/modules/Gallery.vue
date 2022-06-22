@@ -57,6 +57,7 @@ export default {
   },
   data() {
     return {
+      isMobile: false,
       introOption: {
         spaceBetween: 12,
         slidesPerView: 'auto',

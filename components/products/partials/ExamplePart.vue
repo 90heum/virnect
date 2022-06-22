@@ -11,9 +11,9 @@
              class="img-wrapper swiper-slide" 
              :class="{'cursor-pointer': list.video } " 
              :data-idx="idx + 1" >
-          <div class="img-wrap" :style="`background-image : url(${list.img})`">
+          <div class="img-wrap" :style="`background-image : url(require(${list.img}))`">
           <img
-              src="~assets/images/pages/company/ic-play.svg"
+              src="require(~/assets/images/pages/company/ic-play.svg)"
               class="icon"
               alt="재생 아이콘"
             />
@@ -56,6 +56,7 @@ export default {
   },
   data() {
     return {
+      isWeb: "full",
       options: {
         slidesPerView: "auto",
         loop: true,
@@ -68,35 +69,31 @@ export default {
           prevEl: '.prev-btn',
         },
          breakpoints: {
+           1200: {
+            slidesPerView: "1",
+            loop: true,
+            mousewheel: false,
+            direction: 'horizontal',
+            spaceBetween: 12
+           },
           480: {
+            mousewheel: false,
+            direction: 'vertical',
             spaceBetween: 12,
           },
         },
       },
       exampleActiveIdx: '1',
-      exampleOption: {
-        loop: true,
-        slidesPerView: 'auto',
-        spaceBetween: 30,
-        slidesPerGroup: 1,
-        pagination: {
-          el: '.pagination-progressive-bar',
-          type: 'progressbar',
-        },
-        navigation: {
-          nextEl: '.next-btn',
-          prevEl: '.prev-btn',
-        },
-        breakpoints: {
-          480: {
-            spaceBetween: 12,
-          },
-        },
-      },
     }
   },
   props: {
     exampleArr: Array,
+  },
+  created() {
+    if (process.client) document.addEventListener("resize", this.handleReactWebView);
+  },
+  beforeDestroy () {
+    if (process.client) document.removeEventListener("resize", this.handleReactWebView);
   },
   methods: {
     getActiveSlide() {
@@ -110,6 +107,19 @@ export default {
       const video = this.exampleArr[idx - 1].video
       // if (video) this.$refs.player.play(video)
     },
+    handleReactWebView () {
+      if (process.client) {
+        const innerWidth = window.innerWidth;
+        if ((innerWidth <= 1200 && innerWidth > 480)&& this.isWeb !== "tablet") {
+          this.isWeb = "tablet";
+        } else if ((innerWidth <= 480) && this.isWeb !== "mobile") {
+          this.isWeb = "mobile";
+        } else if (innerWidth > 1200 && this.isWeb !== "full") {
+          this.isWeb = "full";
+        }
+        console.log(this.isWeb);
+      }
+    }
   },
 }
 </script>

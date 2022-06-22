@@ -47,7 +47,7 @@ export default {
   border-left: 1px solid #ced3dc;
 
   dl {
-    width: calc(100% / 3);
+    width: calc(100% / 4);
     min-height: 320px;
     padding: 26px 30px 28px;
     text-align: left;

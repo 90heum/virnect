@@ -32,6 +32,11 @@
 // import mixin from 'mixins/mixin'
 export default {
   // mixins: [mixin],
+  data() {
+    return {
+      isMobile: false,
+    }
+  },
   props: {
     image: String,
     title: String,

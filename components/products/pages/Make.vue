@@ -119,10 +119,11 @@ export default {
   },
   data() {
     return {
+      isMobile: false,
       makeIntro: {
         logo: '../images/pages/products/logo-products-bi-make',
         img: '../images/pages/products/img-products-make',
-        intoBtn: `${window.urls['download']}/make`,
+        // intoBtn: `${window.urls['download']}/make`,
         btnText: this.$t('global.downloadIntoBtn'),
         videoLink:
           'https://player.vimeo.com/external/560736136.hd.mp4?s=34d4f2557f02474e88d1c1450bbecf3ae5ebb8cb&profile_id=174',
