@@ -44,7 +44,7 @@ export default {
         breakpoints: {
           1200: {
             mousewheel: false,
-            direction: 'horizontal',
+            direction: 'vertical',
             spaceBetween: 32,
           },
         },

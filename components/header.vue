@@ -2,12 +2,12 @@
   <header>
     <div class="headerInner">
       <div class="logo">
-        <a href="#">
+        <nuxt-link to="/">
           <img
             src="https://velog.velcdn.com/images/kyj0206/post/9ebd4dfa-26bb-4b50-bb22-9350ed0089b7/image.png"
             alt="알트텍스트로 글로벌 No.1 확장현실(XR) 플랫폼 기업 VIRNECT - 버넥트"
           />
-        </a>
+        </nuxt-link>
       </div>
       <!-- 
 @mouseover="[changeGnbColor(`list1`)]"
@@ -22,7 +22,7 @@
               v-bind:style="gnbStyle[`list1`]"
             >
               <a href="#" class="navTab container1" v-bind:style="gnbTextStyle[`list1`]">
-                Products
+                Use Case
                 <i>
                   <img
                     class="downIcon1"
@@ -42,7 +42,7 @@
               v-bind:style="gnbStyle[`list2`]"
             >
               <a href="#" class="navTab container2" v-bind:style="gnbTextStyle[`list2`]">
-                Solutions
+                Products
                 <i>
                   <img
                     class="downIcon2"
@@ -221,9 +221,51 @@
 
       </div>
     </div>
+     <!-- 솔루션 영역 -->
+    <div class="subNavi subNavSolutions" 
+         v-if="isNavMenu[`list1`]">
+      <div class="subNavSolutionsInner">
+        <div>
+          <span>
+            <span class="subNavSolutionsTit" v-html="$t(`solutionText.visualText.title`)"></span>
+                        <sub-solution-menu :snbArr="$t('gnb[0].array')"
+                                           :name="`subNavSolutionsMenu`"
+                                           @click="changeGnbColor(`list1`)"/>
+          </span>
+        </div>
+        <span class="asideInfoLink">
+          <span class="asideInfoLinkTit">
+            더 많은 디지털 인사이트를 발견하세요.
+          </span>
+          <span class="asideInfoLinkCont">
+            <p>
+              <a href="#"> <u>Technology</u> () </a>
+            </p>
+            <p>
+              <a href="#"> <u>Market Trend</u> () </a>
+            </p>
+            <p>
+              <a href="#"> <u>Virnect Products 관련</u> () </a>
+            </p>
+          </span>
+          <div>
+            <a href="#">
+              모든 인사이트 보기
+              <i>
+                <img
+                  src="https://velog.velcdn.com/images/kyj0206/post/6d82fca8-fda9-4286-9b2b-597c38cda81f/image.png"
+                  alt="#"
+                />
+              </i>
+            </a>
+          </div>
+        </span>
+      </div>
+    </div>
+    <!-- 프로덕트 영역 -->
     <div
       class="subNavi subNavProducts"
-      v-show="isNavMenu[`list1`]">
+      v-show="isNavMenu[`list2`]">
       <div class="subNavProductsInner">
         <div>
           <span>
@@ -236,7 +278,7 @@
                 <span class="subNavProductsTit" v-html="$t(`productsText.visualText.title`)"></span>
                 <sub-solution-menu :snbArr="$t('gnb[1].array').filter((e, idx) => {if(idx < 3) return e; })"
                                    :name="`subNavProductsMenu`"
-                                   @click="changeGnbColor(`list1`)" />
+                                   @click="changeGnbColor(`list2`)" />
                </span>
             </div>
           </span>
@@ -285,47 +327,7 @@
         </span>
       </div>
     </div>
-    <!-- 솔루션 영역 -->
-    <div class="subNavi subNavSolutions" 
-         v-if="isNavMenu[`list2`]">
-      <div class="subNavSolutionsInner">
-        <div>
-          <span>
-            <span class="subNavSolutionsTit" v-html="$t(`solutionText.visualText.title`)"></span>
-                        <sub-solution-menu :snbArr="$t('gnb[0].array')"
-                                           :name="`subNavSolutionsMenu`"
-                                           @click="changeGnbColor(`list2`)"/>
-          </span>
-        </div>
-        <span class="asideInfoLink">
-          <span class="asideInfoLinkTit">
-            더 많은 디지털 인사이트를 발견하세요.
-          </span>
-          <span class="asideInfoLinkCont">
-            <p>
-              <a href="#"> <u>Technology</u> () </a>
-            </p>
-            <p>
-              <a href="#"> <u>Market Trend</u> () </a>
-            </p>
-            <p>
-              <a href="#"> <u>Virnect Products 관련</u> () </a>
-            </p>
-          </span>
-          <div>
-            <a href="#">
-              모든 인사이트 보기
-              <i>
-                <img
-                  src="https://velog.velcdn.com/images/kyj0206/post/6d82fca8-fda9-4286-9b2b-597c38cda81f/image.png"
-                  alt="#"
-                />
-              </i>
-            </a>
-          </div>
-        </span>
-      </div>
-    </div>
+   
     <!-- 서포트 -->
     <div class="subNavi subNavSupport" 
          v-if="isNavMenu[`list3`]">
@@ -513,18 +515,15 @@ export default {
       this.gnbTextStyle.color = this.isNavMenu ? "#0a51b7" : "#fff";
     },
     handleReactiveView () {
-      setTimeout(() => {
-        console.log("테스트")
-        if (window.innerWidth > 1025) {
-            this.isWeb = true;
-            this.isMenu = false;
-        } else {
-            this.isWeb = false;
-            this.gnbTextStyle.color = "#fff";
-            this.gnbStyle.backgroundColor = "#121212";
-            this.isNavMenu = {}
-        }
-      }, 600)
+      if (window.innerWidth > 1025 && !this.isWeb) {
+          this.isWeb = true;
+          this.isMenu = false;
+      } else if (window.innerWidth < 1025 && this.isWeb) {
+          this.isWeb = false;
+          this.gnbTextStyle.color = "#fff";
+          this.gnbStyle.backgroundColor = "#121212";
+          this.isNavMenu = {}
+      }
     },
     showMenu (e) {
       this.isMenu = e;

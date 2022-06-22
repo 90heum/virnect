@@ -28,28 +28,31 @@ footer {
 .footerGnb {
     margin-top: 79px;
     margin-bottom: 79px;
+    list-style: none;
 }
-
-
+.footerGnb>li>a, .footerGnb>li>ul>li>a {
+    color: #121212;
+    text-decoration: none;
+}
 .footerGnb>li {
+    list-style: none;
     margin-right: 160px;
     font-weight: 900;
     font-size: 18px;
     color: #121212;
-
 }
 
 .footerGnb>li>a:hover {
     color: #0a51b7;
     text-decoration: underline;
 }
-
 .footerGnb>li>ul>li>a:hover {
     color: #0a51b7;
     text-decoration: underline;
 }
 
 .footerGnb>li>ul {
+    list-style: none;
     margin-top: 36px;
     font-weight: 500;
     font-size: 14px;
@@ -58,7 +61,16 @@ footer {
 
 .footerGnb>li>ul>li {
     margin-bottom: 12px;
-
+    width: 113px;
+    height: 20px;
+    margin: 0 0 12px;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #616161;
 }
 
 /* .footerSpan {
@@ -76,12 +88,31 @@ footer {
 .footerSecond {
     padding: 60px 0;
 }
-
+.footerSecond .Tit>img {
+    width: 118px;
+    height: 21px;
+    margin: 0 69px 0px 1px;
+    object-fit: contain;
+    opacity: 0.9;
+    filter: invert(100%);
+}
 .Cont1 {
-
-
     display: flex;
     justify-content: space-between;
+    .conbox>span div {
+        width: 290px;
+        margin: 12.5px 15px 12.5px 2px;
+        opacity: 0.9;
+        font-size: 14px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: normal;
+        color: #121212;
+        a { color: #121212; }
+        a:hover { color: #0a51b7; }
+    }
 
 }
 
@@ -102,6 +133,9 @@ footer {
 
 .pdfbox span {
     margin-right: 10px;
+}
+.pdfbox span a {
+    color: #121212;
 }
 
 
@@ -161,7 +195,10 @@ footer {
 .contactBtn {
     width: 99px;
     height: 34px;
-    background-color: #ffffff;
+    cursor: pointer;
+    background-color: #fff;
+    border: solid 1px #fff;
+    opacity: 0.9;
 }
 
 .contactBtn:hover {
@@ -182,21 +219,20 @@ footer {
 .virnectFourLine {
     display: flex;
     margin-top: 7px;
+    .serviceSelect .select .selected  {
+        cursor: pointer;
+        max-width: 178px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #121212;
+        margin-right: 10px;
+        .arrow>img { width: 24px; }
+    }
 }
 
-
-
-.serviceSelect .select {
-    cursor: pointer;
-    max-width: 178px;
-    width: 100%;
-    position: relative;
-    display: inline-block;
-    display: flex;
-    align-items: center;
-    background-color: #121212;
-    margin-right: 10px;
-}
 
 .serviceSelect .select:hover {
     background-color: #0a51b7;
@@ -224,7 +260,7 @@ footer {
     border: solid 1px #fff;
     color: #0a51b7;
     background: #fff;
-    font-size: 1.6rem;
+    font-size: 16px;
     font-weight: 500;
 }
 
@@ -333,28 +369,33 @@ footer {
 /* footer third  */
 
 .footerThird {
+    width: 99vw;
+    margin-left: -30px;
     background-color: #727378;
     height: 146px;
     display: flex;
     padding: 44px 0px;
+    padding-left: 40px;
     justify-content: space-between;
-
+    align-items: center;
+    .serviceList {
+        padding-left: 0px;
+        color: #fff;
+        text-decoration: underline;
+        font-size: 14px;
+        margin-bottom: 7px;
+        list-style: none;
+        display: flex;
+    }
+    
+    .serviceList li {
+        margin-right: 30px;
+        color: #fff;
+    }
+    .serviceList li a {color: #fff;}
 }
 
-.serviceList {
 
-    color: #fff;
-    text-decoration: underline;
-    font-size: 14px;
-    margin-bottom: 7px;
-
-
-    display: flex;
-}
-
-.serviceList li {
-    margin-right: 30px;
-}
 
 .coperationT {
     color: #fff;

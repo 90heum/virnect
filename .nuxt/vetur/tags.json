@@ -11,6 +11,27 @@
   "ApiAxios": {
     "description": "Auto imported from components/api/axios.js"
   },
+  "MainBannerModule": {
+    "description": "Auto imported from components/main/bannerModule.vue"
+  },
+  "MainCompany": {
+    "description": "Auto imported from components/main/company.vue"
+  },
+  "MainCtaModule": {
+    "description": "Auto imported from components/main/ctaModule.vue"
+  },
+  "MainBanner": {
+    "description": "Auto imported from components/main/mainBanner.vue"
+  },
+  "MainSuppoert": {
+    "description": "Auto imported from components/main/suppoert.vue"
+  },
+  "MainUseCase": {
+    "description": "Auto imported from components/main/useCase.vue"
+  },
+  "MixinsMixin": {
+    "description": "Auto imported from components/mixins/mixin.js"
+  },
   "ModulesBanner": {
     "description": "Auto imported from components/modules/Banner.vue"
   },
@@ -65,11 +86,11 @@
   "ModulesYoutubeFullscreen": {
     "description": "Auto imported from components/modules/YoutubeFullscreen.vue"
   },
-  "MixinsMixin": {
-    "description": "Auto imported from components/mixins/mixin.js"
-  },
   "GnbCompany": {
     "description": "Auto imported from components/Gnb/Company/index.vue"
+  },
+  "GnbPricing": {
+    "description": "Auto imported from components/Gnb/Pricing/index.vue"
   },
   "GnbContact": {
     "description": "Auto imported from components/Gnb/Contact/index.vue"
@@ -77,17 +98,14 @@
   "GnbFreeTrials": {
     "description": "Auto imported from components/Gnb/FreeTrials/index.vue"
   },
-  "GnbPricing": {
-    "description": "Auto imported from components/Gnb/Pricing/index.vue"
-  },
-  "GnbProducts": {
-    "description": "Auto imported from components/Gnb/Products/index.vue"
+  "GnbHeaderPartialMobileHeader": {
+    "description": "Auto imported from components/Gnb/headerPartial/mobileHeader.vue"
   },
   "GnbSolution": {
     "description": "Auto imported from components/Gnb/Solution/index.vue"
   },
-  "GnbHeaderPartialMobileHeader": {
-    "description": "Auto imported from components/Gnb/headerPartial/mobileHeader.vue"
+  "GnbProducts": {
+    "description": "Auto imported from components/Gnb/Products/index.vue"
   },
   "ProductsPagesMS": {
     "description": "Auto imported from components/products/pages/MS.vue"
@@ -128,21 +146,6 @@
   "ProductsPartialsSupportPart": {
     "description": "Auto imported from components/products/partials/SupportPart.vue"
   },
-  "SolutionsPagesAirline": {
-    "description": "Auto imported from components/solutions/pages/Airline.vue"
-  },
-  "SolutionsPagesEPC": {
-    "description": "Auto imported from components/solutions/pages/EPC.vue"
-  },
-  "SolutionsPagesEnergy": {
-    "description": "Auto imported from components/solutions/pages/Energy.vue"
-  },
-  "SolutionsPagesMotor": {
-    "description": "Auto imported from components/solutions/pages/Motor.vue"
-  },
-  "SolutionsPagesOil": {
-    "description": "Auto imported from components/solutions/pages/Oil.vue"
-  },
   "SolutionsPartialsBgNormalPart": {
     "description": "Auto imported from components/solutions/partials/BgNormalPart.vue"
   },
@@ -157,5 +160,20 @@
   },
   "SolutionsPartialsRoiPart": {
     "description": "Auto imported from components/solutions/partials/RoiPart.vue"
+  },
+  "SolutionsPagesAirline": {
+    "description": "Auto imported from components/solutions/pages/Airline.vue"
+  },
+  "SolutionsPagesEPC": {
+    "description": "Auto imported from components/solutions/pages/EPC.vue"
+  },
+  "SolutionsPagesEnergy": {
+    "description": "Auto imported from components/solutions/pages/Energy.vue"
+  },
+  "SolutionsPagesMotor": {
+    "description": "Auto imported from components/solutions/pages/Motor.vue"
+  },
+  "SolutionsPagesOil": {
+    "description": "Auto imported from components/solutions/pages/Oil.vue"
   }
 }
