@@ -98,17 +98,17 @@
   "GnbFreeTrials": {
     "description": "Auto imported from components/Gnb/FreeTrials/index.vue"
   },
-  "GnbPricing": {
-    "description": "Auto imported from components/Gnb/Pricing/index.vue"
-  },
   "GnbProducts": {
     "description": "Auto imported from components/Gnb/Products/index.vue"
   },
-  "GnbHeaderPartialMobileHeader": {
-    "description": "Auto imported from components/Gnb/headerPartial/mobileHeader.vue"
+  "GnbPricing": {
+    "description": "Auto imported from components/Gnb/Pricing/index.vue"
   },
   "GnbSolution": {
     "description": "Auto imported from components/Gnb/Solution/index.vue"
+  },
+  "GnbHeaderPartialMobileHeader": {
+    "description": "Auto imported from components/Gnb/headerPartial/mobileHeader.vue"
   },
   "ProductsPagesMS": {
     "description": "Auto imported from components/products/pages/MS.vue"
