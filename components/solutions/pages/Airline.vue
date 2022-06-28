@@ -10,6 +10,10 @@
       :image="issueBg"
       :title="$t('solutionText.airlineText.issueTitle')"
       :issueArr="$t('solutionText.airlineText.issueList')"
+      :bannerImg="
+        $t('global.myUrl') +
+        `/images/pages/solution/img-solution-airline-top.png`
+      "
     ></issue-part>
 
     <bg-normal-part
@@ -68,16 +72,16 @@
 </template>
 
 <script>
-import issuePart from '../partials/IssuePart'
-import bgNormalPart from '../partials/BgNormalPart'
-import infographicPart from '../partials/InfographicPart'
-import roiPart from '../partials/RoiPart'
-import offerPart from '../partials/OfferPart'
+import issuePart from "../partials/IssuePart";
+import bgNormalPart from "../partials/BgNormalPart";
+import infographicPart from "../partials/InfographicPart";
+import roiPart from "../partials/RoiPart";
+import offerPart from "../partials/OfferPart";
 
-import examplePart from '../../products/partials/ExamplePart'
-import bgSlidePart from '../../products/partials/BgSlidePart'
+import examplePart from "../../products/partials/ExamplePart";
+import bgSlidePart from "../../products/partials/BgSlidePart";
 
-import headingModule from '../../modules/Heading'
+import headingModule from "../../modules/Heading";
 export default {
   components: {
     issuePart,
@@ -91,76 +95,76 @@ export default {
   },
   data() {
     return {
-      issueBg: '../images/pages/solution/img-solution-airline-top',
+      issueBg: "../images/pages/solution/img-solution-airline-top",
       infographicBtn: [
         [
           {
-            name: 'VIRNECT Make',
-            router: 'make',
+            name: "VIRNECT Make",
+            router: "make",
           },
           {
-            name: 'VIRNECT View',
-            router: 'view',
-          },
-        ],
-        [
-          {
-            name: 'VIRNECT Twin',
-            router: 'twin',
-          },
-          {
-            name: 'VIRNECT View',
-            router: 'view',
+            name: "VIRNECT View",
+            router: "view",
           },
         ],
         [
           {
-            name: 'VIRNECT Twin',
-            router: 'twin',
+            name: "VIRNECT Twin",
+            router: "twin",
           },
           {
-            name: 'VIRNECT Remote',
-            router: 'remote',
+            name: "VIRNECT View",
+            router: "view",
           },
         ],
         [
           {
-            name: 'VIRNECT Make',
-            router: 'make',
+            name: "VIRNECT Twin",
+            router: "twin",
           },
           {
-            name: 'VIRNECT View',
-            router: 'view',
+            name: "VIRNECT Remote",
+            router: "remote",
+          },
+        ],
+        [
+          {
+            name: "VIRNECT Make",
+            router: "make",
           },
           {
-            name: 'VIRNECT Twin',
-            router: 'twin',
+            name: "VIRNECT View",
+            router: "view",
+          },
+          {
+            name: "VIRNECT Twin",
+            router: "twin",
           },
         ],
       ],
-      exampleAlign: 'left',
+      exampleAlign: "left",
       solutionGellary: [
         [
           {
-            thumb: '../images/pages/solution/info-airline-01-01.png',
-            img: '../images/pages/solution/info-airline-01-01@3x.png',
-            iconList: ['../images/common/logo-remote'],
+            thumb: "../images/pages/solution/info-airline-01-01.png",
+            img: "../images/pages/solution/info-airline-01-01@3x.png",
+            iconList: ["../images/common/logo-remote"],
           },
         ],
         [
           {
-            thumb: '../images/pages/solution/info-airline-01-02.png',
-            img: '../images/pages/solution/info-airline-01-02@3x.png',
-            iconList: ['../images/common/logo-view'],
+            thumb: "../images/pages/solution/info-airline-01-02.png",
+            img: "../images/pages/solution/info-airline-01-02@3x.png",
+            iconList: ["../images/common/logo-view"],
           },
         ],
         [],
         [],
       ],
-    }
+    };
   },
-}
+};
 </script>
 <style lang="scss" scoped>
-@import '~assets/css/pages/products.scss';
+@import "~assets/css/pages/products.scss";
 </style>

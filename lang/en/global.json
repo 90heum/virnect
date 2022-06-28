@@ -1,5 +1,6 @@
 {
   "global": {
+    "myUrl": "https://virnect.com",
     "videoBtnText": "Introduction video",
     "shortcut": "Shortcut",
     "totalBtnText": "View all",

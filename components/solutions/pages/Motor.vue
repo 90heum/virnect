@@ -10,8 +10,10 @@
       :image="issueBg"
       :title="$t('solutionText.motorText.issueTitle')"
       :issueArr="$t('solutionText.motorText.issueList')"
+      :bannerImg="
+        $t('global.myUrl') + `/images/pages/solution/img-solution-motor-top.png`
+      "
     ></issue-part>
-
     <bg-normal-part
       :text="$t('solutionText.bgNormalText.text')"
       :boldText="$t('solutionText.bgNormalText.boldText')"
@@ -68,16 +70,16 @@
 </template>
 
 <script>
-import issuePart from '../partials/IssuePart'
-import bgNormalPart from '../partials/BgNormalPart'
-import infographicPart from '../partials/InfographicPart'
-import roiPart from '../partials/RoiPart'
-import offerPart from '../partials/OfferPart'
+import issuePart from "../partials/IssuePart";
+import bgNormalPart from "../partials/BgNormalPart";
+import infographicPart from "../partials/InfographicPart";
+import roiPart from "../partials/RoiPart";
+import offerPart from "../partials/OfferPart";
 
-import examplePart from '../../products/partials/ExamplePart'
-import bgSlidePart from '../../products/partials/BgSlidePart'
+import examplePart from "../../products/partials/ExamplePart";
+import bgSlidePart from "../../products/partials/BgSlidePart";
 
-import headingModule from '../../modules/Heading'
+import headingModule from "../../modules/Heading";
 export default {
   components: {
     issuePart,
@@ -91,104 +93,104 @@ export default {
   },
   data() {
     return {
-      issueBg: '../images/pages/solution/img-solution-motor-top',
+      issueBg: "../images/pages/solution/img-solution-motor-top",
       infographicBtn: [
         [
           {
-            name: 'VIRNECT Make',
-            router: 'make',
+            name: "VIRNECT Make",
+            router: "make",
           },
           {
-            name: 'VIRNECT View',
-            router: 'view',
-          },
-        ],
-        [
-          {
-            name: 'VIRNECT Twin',
-            router: 'twin',
+            name: "VIRNECT View",
+            router: "view",
           },
         ],
         [
           {
-            name: 'VIRNECT Remote',
-            router: 'remote',
-          },
-          {
-            name: 'VIRNECT Twin',
-            router: 'twin',
+            name: "VIRNECT Twin",
+            router: "twin",
           },
         ],
         [
           {
-            name: 'VIRNECT Make',
-            router: 'make',
+            name: "VIRNECT Remote",
+            router: "remote",
           },
           {
-            name: 'VIRNECT View',
-            router: 'view',
+            name: "VIRNECT Twin",
+            router: "twin",
+          },
+        ],
+        [
+          {
+            name: "VIRNECT Make",
+            router: "make",
+          },
+          {
+            name: "VIRNECT View",
+            router: "view",
           },
         ],
       ],
-      exampleAlign: 'left',
+      exampleAlign: "left",
       solutionGellary: [
         [
           {
-            thumb: '../images/pages/solution/info-motor-01-01.png',
-            img: '../images/pages/solution/info-motor-01-01@3x.png',
-            iconList: ['../images/common/logo-make'],
+            thumb: "../images/pages/solution/info-motor-01-01.png",
+            img: "../images/pages/solution/info-motor-01-01@3x.png",
+            iconList: ["../images/common/logo-make"],
           },
           {
-            thumb: '../images/pages/solution/info-motor-01-02.png',
-            img: '../images/pages/solution/info-motor-01-02@3x.png',
-            iconList: ['../images/common/logo-make'],
+            thumb: "../images/pages/solution/info-motor-01-02.png",
+            img: "../images/pages/solution/info-motor-01-02@3x.png",
+            iconList: ["../images/common/logo-make"],
           },
           {
-            thumb: '../images/pages/solution/info-motor-01-03.png',
-            img: '../images/pages/solution/info-motor-01-03@3x.png',
-            iconList: ['../images/common/logo-arsdk'],
+            thumb: "../images/pages/solution/info-motor-01-03.png",
+            img: "../images/pages/solution/info-motor-01-03@3x.png",
+            iconList: ["../images/common/logo-arsdk"],
           },
           {
-            thumb: '../images/pages/solution/info-motor-01-04.png',
-            img: '../images/pages/solution/info-motor-01-04@3x.png',
-            iconList: ['../images/common/logo-view'],
+            thumb: "../images/pages/solution/info-motor-01-04.png",
+            img: "../images/pages/solution/info-motor-01-04@3x.png",
+            iconList: ["../images/common/logo-view"],
           },
           {
-            thumb: '../images/pages/solution/info-motor-01-05.png',
-            img: '../images/pages/solution/info-motor-01-05@3x.png',
-            iconList: ['../images/common/logo-view'],
+            thumb: "../images/pages/solution/info-motor-01-05.png",
+            img: "../images/pages/solution/info-motor-01-05@3x.png",
+            iconList: ["../images/common/logo-view"],
           },
         ],
         [
           {
-            thumb: '../images/pages/solution/info-motor-02-01.png',
-            img: '../images/pages/solution/info-motor-02-01@3x.png',
-            iconList: ['../images/common/logo-view'],
+            thumb: "../images/pages/solution/info-motor-02-01.png",
+            img: "../images/pages/solution/info-motor-02-01@3x.png",
+            iconList: ["../images/common/logo-view"],
           },
         ],
         [],
         [
           {
-            thumb: '../images/pages/solution/info-motor-04-01.png',
-            img: '../images/pages/solution/info-motor-04-01@3x.png',
-            iconList: ['../images/common/logo-make'],
+            thumb: "../images/pages/solution/info-motor-04-01.png",
+            img: "../images/pages/solution/info-motor-04-01@3x.png",
+            iconList: ["../images/common/logo-make"],
           },
           {
-            thumb: '../images/pages/solution/info-motor-04-03.png',
-            img: '../images/pages/solution/info-motor-04-03@3x.png',
-            iconList: ['../images/common/logo-make'],
+            thumb: "../images/pages/solution/info-motor-04-03.png",
+            img: "../images/pages/solution/info-motor-04-03@3x.png",
+            iconList: ["../images/common/logo-make"],
           },
           {
-            thumb: '../images/pages/solution/info-motor-04-02.png',
-            img: '../images/pages/solution/info-motor-04-02@3x.png',
-            iconList: ['../images/common/logo-view'],
+            thumb: "../images/pages/solution/info-motor-04-02.png",
+            img: "../images/pages/solution/info-motor-04-02@3x.png",
+            iconList: ["../images/common/logo-view"],
           },
         ],
       ],
-    }
+    };
   },
-}
+};
 </script>
 <style lang="scss" scoped>
-@import '~assets/css/pages/products.scss';
+@import "~assets/css/pages/products.scss";
 </style>
