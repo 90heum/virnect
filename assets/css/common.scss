@@ -2,12 +2,18 @@
 @import "~assets/css/font.scss";
 @import "~assets/css/mixin.scss";
 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
 $mobile: "425px";
-.header-section + section {
+
+.header-section+section {
   min-height: 70vh;
 }
 
@@ -32,6 +38,7 @@ $mobile: "425px";
   &:hover {
     background-color: rgba(210, 220, 228, 0.4);
   }
+
   &:active {
     background-color: rgba(210, 220, 228, 0.29);
   }
@@ -60,17 +67,20 @@ $mobile: "425px";
     border-radius: 50%;
     content: "";
   }
+
   &:hover {
     &:after {
       background-color: #1655bf;
     }
   }
+
   &:active {
     &:after {
       background-color: #14479e;
     }
   }
 }
+
 .dark .circle-arrow-btn {
   &:after {
     background-color: #5e91e5;
@@ -83,12 +93,15 @@ $mobile: "425px";
   vertical-align: middle;
   background-repeat: no-repeat;
   background-size: 100%;
+
   &.prev-btn {
     background-image: url("~assets/images/common/ic-arrow-back@2x.png");
   }
+
   &.next-btn {
     background-image: url("~assets/images/common/ic-arrow-forward@2x.png");
   }
+
   @media (max-width: $mobile) {
     width: 20px;
     height: 18px;
@@ -101,24 +114,28 @@ $mobile: "425px";
   margin-right: auto;
   /* margin-bottom: 50px; */
   margin-left: auto;
+
   .pagination-progressive-bar {
     position: relative;
     float: left;
     width: 900px;
     height: 1px;
     margin-top: 10px;
+
     &.swiper-pagination-progressbar {
       .swiper-pagination-progressbar-fill {
         background-color: $point;
       }
     }
   }
+
   .pagination-number-wrap {
     float: left;
     height: 28px;
     margin-left: 55px;
     color: #7e8792;
     vertical-align: middle;
+
     i {
       display: inline-block;
       margin: 0 28px;
@@ -127,20 +144,25 @@ $mobile: "425px";
       font-family: $noto;
       line-height: 24px;
       vertical-align: top;
+
       span {
         color: #1655bf;
       }
     }
   }
+
   @media (max-width: $mobile) {
     /* @include area-flex(100%); */
     width: 100%;
     margin-top: 28px;
+
     .pagination-progressive-bar {
       width: calc(92% - 106px);
     }
+
     .pagination-number-wrap {
       margin-left: 8%;
+
       i {
         margin: 0 13px;
         font-size: 16px;
@@ -156,7 +178,8 @@ $mobile: "425px";
   // width: 100%;
   // height: 100%; */
   transition: opacity 0.5s;
-  & + #footerSection {
+
+  &+#footerSection {
     opacity: 0;
   }
 }
@@ -170,20 +193,24 @@ $mobile: "425px";
 .app-fade-enter-to {
   opacity: 1;
 }
+
 .tag-placeholder {
   /* padding-top: 5px; */
   padding-left: 10px;
   color: #8b96a8;
   font-weight: normal;
   font-size: 15px;
+
   &::selection {
     background-color: white;
     cursor: default;
   }
+
   &:hover {
     background-color: white;
     cursor: default;
   }
+
   @media (max-width: $mobile) {
     padding-left: 0;
     font-size: 14px;
@@ -201,12 +228,13 @@ $mobile: "425px";
   line-height: 56px;
   text-align: center;
   border: 1px solid $point;
+
   &:hover {
     color: #fff;
     background: $point;
   }
 
-  
+
   @media (max-width: $mobile) {
     width: 200px;
     height: 56px;
@@ -214,4 +242,3 @@ $mobile: "425px";
     line-height: 52px;
   }
 }
-

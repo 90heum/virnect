@@ -10,7 +10,7 @@
     <!-- <benefit-part
       :benefitArr="$t('productsText.remoteText.benefitLists')"
     ></benefit-part> -->
-    
+
     <heading-module
       :category="$t('productsText.remoteText.funcTitle.category')"
       :title="$t('productsText.remoteText.funcTitle.title')"
@@ -66,7 +66,7 @@
         </div>
       </section>
     </div> -->
-    
+
     <bg-slide-part
       :bgExampleArr="$t('productsText.remoteText.bgExampleList')"
       :id="remoteBgExampleArrId"
@@ -75,16 +75,15 @@
 </template>
 
 <script>
-import introPart from '../partials/IntroducePart'
-import benefitPart from '../partials/BenefitPart'
-import functionPart from '../partials/FunctionPart.vue'
-import effectPart from '../partials/EffectPart.vue'
-import supportPart from '../partials/SupportPart'
-import examplePart from '../partials/ExamplePart'
-import bgSlidePart from '../partials/BgSlidePart.vue'
+import introPart from "../partials/IntroducePart";
+import benefitPart from "../partials/BenefitPart";
+import functionPart from "../partials/FunctionPart.vue";
+import effectPart from "../partials/EffectPart.vue";
+import supportPart from "../partials/SupportPart";
+import examplePart from "../partials/ExamplePart";
+import bgSlidePart from "../partials/BgSlidePart.vue";
 
-
-import headingModule from '../../modules/Heading'
+import headingModule from "../../modules/Heading";
 export default {
   components: {
     introPart,
@@ -94,36 +93,36 @@ export default {
     supportPart,
     examplePart,
     bgSlidePart,
-    headingModule
+    headingModule,
   },
   data() {
     return {
       remoteIntro: {
-        logo: '../images/pages/products/logo-products-bi-remote',
+        logo: "../images/pages/products/logo-products-bi-remote",
         // img: '../images/pages/products/img-products-remote',
         // intoBtn: `${window.urls['remote']}`,
-        intoBtn: `${'remote'}`,
-        btnText: `Remote ${this.$t('global.shortcut')}`,
+        intoBtn: `${"remote"}`,
+        btnText: `Remote ${this.$t("global.shortcut")}`,
         videoLink:
-          'https://player.vimeo.com/external/560735983.hd.mp4?s=e14e93e201c67212624d232508ddcad911d7d617&profile_id=174',
+          "https://player.vimeo.com/external/560735983.hd.mp4?s=e14e93e201c67212624d232508ddcad911d7d617&profile_id=174",
       },
       functionIconImage:
-        '~assets/images/pages/products/img-products-remote-function-0',
-      effectBG: '~assets/images/pages/products/img-remote-effect.png',
+        "~assets/images/pages/products/img-products-remote-function-0",
+      effectBG: "~assets/images/pages/products/img-remote-effect.png",
       supportTitle: {
-        align: 'left',
-        btnText: 'Pricing',
+        align: "left",
+        btnText: "Pricing",
       },
-      exampleAlign: 'left',
-    }
+      exampleAlign: "left",
+    };
   },
   methods: {
     popupToggle() {
-      this.videoPopup = true
+      this.videoPopup = true;
     },
   },
-}
+};
 </script>
 <style lang="scss" scoped>
-@import '~assets/css/pages/products.scss';
+@import "~assets/css/pages/products.scss";
 </style>

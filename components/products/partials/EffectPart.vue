@@ -48,16 +48,16 @@ export default {
     effectArr: Array,
     greyBtn: String,
     blueBtn: String,
-    id: String
+    id: String,
   },
   data() {
     return {
       isMobile: false,
-      activeIndex: '0',
+      activeIndex: "0",
       effectOptions: {
         loop: true,
         pagination: {
-          el: '.pagination.effect',
+          el: ".pagination.effect",
           clickable: true,
           renderBullet(index, classs) {
             return `<li class="${classs}"><svg
@@ -66,11 +66,11 @@ export default {
  width="10px" height="12px">
 <path fill-rule="evenodd"  
  d="M5.000,-0.000 L-0.000,3.000 L-0.000,9.000 L5.000,12.000 L10.000,9.000 L10.000,3.000 L5.000,-0.000 Z"/>
-</svg></li>`
+</svg></li>`;
           },
         },
       },
-    }
+    };
   },
   computed: {
     // ...mapGetters(['isMobile']),
@@ -79,11 +79,11 @@ export default {
     //   else return `${this.bg}-m@2x`
     // },
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>
-@import '~assets/css/mixin.scss';
+@import "~assets/css/mixin.scss";
 .effect-part {
   position: relative;
   margin-top: 258px;
@@ -215,5 +215,4 @@ export default {
     @include default-btn(220px);
   }
 }
-
 </style>
