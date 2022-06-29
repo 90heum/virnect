@@ -1,5 +1,86 @@
 @charset "utf-8";
-*, html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, b, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+
+*,
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+b,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -9,42 +90,70 @@
   box-sizing: border-box;
   word-break: keep-all;
 }
+
 /* a-style */
-  a {
+a {
   color: #fff;
   line-height: initial;
   text-decoration: none;
 }
+
 a {
   text-decoration: none;
   outline: none;
 }
-a:hover, a:active {
+
+a:hover,
+a:active {
   text-decoration: none;
 }
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
-ol, ul, li {
-  list-style: none!important;
+
+ol,
+ul,
+li {
+  list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
   quotes: none;
 }
-blockquote:before, blockquote:after, q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: “”;
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 strong {
   font-weight: bold;
 }
+
 pre {
   margin-bottom: 2%;
   white-space: pre-wrap;
@@ -56,18 +165,102 @@ pre {
   vertical-align: baseline;
   line-height: 1.7;
 }
+
 sup {
   vertical-align: super;
   font-size: smaller;
 }
+
 sub {
   vertical-align: sub;
   font-size: smaller;
 }
+
 input[type=text]::-ms-clear {
   display: none;
 }
-*, html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, b, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+
+*,
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+b,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -76,41 +269,68 @@ input[type=text]::-ms-clear {
   vertical-align: baseline;
   box-sizing: border-box;
 }
+
 /* a-style */
-  a {
+a {
   line-height: initial;
   text-decoration: none;
 }
+
 a {
   text-decoration: none;
   outline: none;
 }
-a:hover, a:active {
+
+a:hover,
+a:active {
   text-decoration: none;
 }
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
   list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
   quotes: none;
 }
-blockquote:before, blockquote:after, q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: “”;
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 strong {
   font-weight: bold;
 }
+
 pre {
   margin-bottom: 2%;
   white-space: pre-wrap;
@@ -122,14 +342,17 @@ pre {
   vertical-align: baseline;
   line-height: 1.7;
 }
+
 sup {
   vertical-align: super;
   font-size: smaller;
 }
+
 sub {
   vertical-align: sub;
   font-size: smaller;
 }
+
 input[type=text]::-ms-clear {
   display: none;
 }

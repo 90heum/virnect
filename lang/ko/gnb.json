@@ -6,27 +6,27 @@
       "to": "/solutions/energy_resource",
       "array": [
         {
-          "text": "에너지/자원",
+          "text": "인프라/자원",
           "page": "energy_resource",
           "to": "/solutions/energy_resource"
         },
         {
-          "text": "정유/석유화학/배터리",
+          "text": "제조/건설",
           "page": "oil_chemical_battery",
           "to": "/solutions/oil_chemical_battery"
         },
         {
-          "text": "자동차/부품",
+          "text": "공공/교육",
           "page": "motor_parts",
           "to": "/solutions/motor_parts"
         },
         {
-          "text": "항공/철도",
+          "text": "엔터테인먼트",
           "page": "airline_railroad",
           "to": "/solutions/airline_railroad"
         },
         {
-          "text": "EPC",
+          "text": "기타",
           "page": "epc",
           "to": "/solutions/epc"
         }

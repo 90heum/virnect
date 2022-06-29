@@ -11,6 +11,16 @@ You can directly use them in pages and other components without the need to impo
 - `<Header>` | `<header>` (components/header.vue)
 - `<ApiAxios>` | `<api-axios>` (components/api/axios.js)
 - `<MixinsMixin>` | `<mixins-mixin>` (components/mixins/mixin.js)
+<<<<<<< HEAD
+=======
+- `<MainBannerModule>` | `<main-banner-module>` (components/main/bannerModule.vue)
+- `<MainCompany>` | `<main-company>` (components/main/company.vue)
+- `<MainCtaModule>` | `<main-cta-module>` (components/main/ctaModule.vue)
+- `<MainBanner>` | `<main-banner>` (components/main/mainBanner.vue)
+- `<MainProducts>` | `<main-products>` (components/main/products.vue)
+- `<MainSuppoert>` | `<main-suppoert>` (components/main/suppoert.vue)
+- `<MainUseCase>` | `<main-use-case>` (components/main/useCase.vue)
+>>>>>>> main
 - `<ModulesBanner>` | `<modules-banner>` (components/modules/Banner.vue)
 - `<ModulesBoard>` | `<modules-board>` (components/modules/Board.vue)
 - `<ModulesBoardView>` | `<modules-board-view>` (components/modules/BoardView.vue)
@@ -36,6 +46,7 @@ You can directly use them in pages and other components without the need to impo
 - `<GnbProducts>` | `<gnb-products>` (components/Gnb/Products/index.vue)
 - `<GnbSolution>` | `<gnb-solution>` (components/Gnb/Solution/index.vue)
 - `<GnbHeaderPartialMobileHeader>` | `<gnb-header-partial-mobile-header>` (components/Gnb/headerPartial/mobileHeader.vue)
+<<<<<<< HEAD
 - `<MainBannerModule>` | `<main-banner-module>` (components/main/bannerModule.vue)
 - `<MainCompany>` | `<main-company>` (components/main/company.vue)
 - `<MainCtaModule>` | `<main-cta-module>` (components/main/ctaModule.vue)
@@ -43,6 +54,8 @@ You can directly use them in pages and other components without the need to impo
 - `<MainProducts>` | `<main-products>` (components/main/products.vue)
 - `<MainSuppoert>` | `<main-suppoert>` (components/main/suppoert.vue)
 - `<MainUseCase>` | `<main-use-case>` (components/main/useCase.vue)
+=======
+>>>>>>> main
 - `<ProductsPagesMS>` | `<products-pages-m-s>` (components/products/pages/MS.vue)
 - `<ProductsPagesMake>` | `<products-pages-make>` (components/products/pages/Make.vue)
 - `<ProductsPagesRemote>` | `<products-pages-remote>` (components/products/pages/Remote.vue)

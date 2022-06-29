@@ -1,37 +1,172 @@
 <template>
-    <div class="productPropertyWrapper" id="productPropertyId">
-        <img :src="require(`~/assets/images/pages/products/productProperty_remote.png`)" />
+  <div class="productPropertyWrapper" id="productPropertyId">
+    <div class="features">
+      <div class="featuresWrap">
+        <span class="featuresTit">
+          <p>제품특징</p>
+          <h2>
+            업계 최고 수준의 기술력을
+            <p>통한 VIRNECT Remote만의 특징</p>
+          </h2>
+          <ul>
+            <li>
+              <i
+                ><img
+                  src="https://velog.velcdn.com/images/kyj0206/post/6ee9bae6-3d0a-4c24-9868-c8a3af3759a9/image.png"
+                  alt="리스트1"
+              /></i>
+              <p>
+                Web/App, Smart Glass, 360º Camera, Robot 등 다양한 구동 환경
+                제공
+              </p>
+            </li>
+            <li>
+              <i
+                ><img
+                  src="https://velog.velcdn.com/images/kyj0206/post/6ee9bae6-3d0a-4c24-9868-c8a3af3759a9/image.png"
+                  alt="리스트2"
+              /></i>
+              <p>설정한 언어로 실시간 통번역</p>
+            </li>
+            <li>
+              <i
+                ><img
+                  src="https://velog.velcdn.com/images/kyj0206/post/6ee9bae6-3d0a-4c24-9868-c8a3af3759a9/image.png"
+                  alt="리스트3"
+              /></i>
+              <p>네트워크 상태가 불안정해도 고화질 영상 선택 가능</p>
+            </li>
+            <li>
+              <i
+                ><img
+                  src="https://velog.velcdn.com/images/kyj0206/post/6ee9bae6-3d0a-4c24-9868-c8a3af3759a9/image.png"
+                  alt="리스트4"
+              /></i>
+              <p>내부망 내 구축을 통한 보안성 확보</p>
+            </li>
+            <li>
+              <i
+                ><img
+                  src="https://velog.velcdn.com/images/kyj0206/post/6ee9bae6-3d0a-4c24-9868-c8a3af3759a9/image.png"
+                  alt="리스트5"
+              /></i>
+              <p>RealWear 기기 전원을 켜면 Remote 자동 실행 및 빠른 사용</p>
+            </li>
+            <li>
+              <i
+                ><img
+                  src="https://velog.velcdn.com/images/kyj0206/post/6ee9bae6-3d0a-4c24-9868-c8a3af3759a9/image.png"
+                  alt="리스트6"
+              /></i>
+              <p>고객 맞춤형 커스터마이징 기능 탑재 가능</p>
+            </li>
+          </ul>
+        </span>
+        <span class="featuresCont">
+          <img
+            src="https://velog.velcdn.com/images/kyj0206/post/1dc714b8-20fb-4609-b92b-1f1472ed777b/image.jpg"
+            alt="features"
+          />
+        </span>
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
 export default {
-    data() {
-        return {
-            xrSolutionWrapperPosition: 0
-            
-        }
+  data() {
+    return {
+      xrSolutionWrapperPosition: 0,
+    };
+  },
+  methods: {
+    positionSetting() {
+      if (process.client)
+        window.scrollTo({
+          left: 0,
+          top: Number(divPosition.get(e.target).getAttribute("class")) - 250,
+          behavior: "smooth",
+        });
+      Number(ids.getBoundingClientRect().top + window.pageYOffset);
     },
-    methods: {
-        positionSetting () {
-            if (process.client) window.scrollTo({ left: 0, top: (Number(divPosition.get(e.target).getAttribute("class"))-250), behavior: "smooth" });
-            Number(ids.getBoundingClientRect().top + window.pageYOffset);
-        },
-
-    }
-}
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-    .productPropertyWrapper {
-        width: 100%;
-        display: flex;
-        justify-content: center;    
-        align-items: center;
-
-        img { 
-            width: 100%; 
-            max-width: 1260px;
-        }
-    }
+@import "~assets/css/common.scss";
+@import "~assets/css/reset.scss";
+.productPropertyWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.features {
+  max-width: 2400px;
+}
+.features .featuresWrap {
+  max-width: 1200px;
+  gap: 65px;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  padding: 0 30px 85px 30px;
+  border-bottom: 1px solid #c5c8cf;
+}
+.features .featuresWrap .featuresTit {
+  width: 50%;
+}
+.features .featuresWrap .featuresTit > p {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -0.23px;
+  color: #0a51b7;
+  margin-bottom: 16px;
+}
+.features .featuresWrap .featuresTit h2 {
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 1.54;
+  letter-spacing: -0.43px;
+  color: #121212;
+  margin-bottom: 80px;
+}
+.features .featuresWrap .featuresTit h2 p {
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 1.54;
+  letter-spacing: -0.43px;
+  color: #121212;
+}
+.features .featuresWrap .featuresTit ul li {
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.33;
+  letter-spacing: normal;
+  color: #121212;
+  display: flex;
+}
+.features .featuresWrap .featuresTit ul li i {
+  display: flex;
+  align-items: center;
+}
+.features .featuresWrap .featuresTit ul li i img {
+  width: 16px;
+}
+.features .featuresWrap .featuresTit ul li p {
+  display: block;
+}
+.features .featuresWrap .featuresCont {
+  width: 50%;
+}
+.features .featuresWrap .featuresCont img {
+  max-width: 525px;
+  width: 100%;
+}
 </style>

@@ -3,6 +3,16 @@ export { default as GnbHeader } from '../../components/gnbHeader.vue'
 export { default as Header } from '../../components/header.vue'
 export { default as ApiAxios } from '../../components/api/axios.js'
 export { default as MixinsMixin } from '../../components/mixins/mixin.js'
+<<<<<<< HEAD
+=======
+export { default as MainBannerModule } from '../../components/main/bannerModule.vue'
+export { default as MainCompany } from '../../components/main/company.vue'
+export { default as MainCtaModule } from '../../components/main/ctaModule.vue'
+export { default as MainBanner } from '../../components/main/mainBanner.vue'
+export { default as MainProducts } from '../../components/main/products.vue'
+export { default as MainSuppoert } from '../../components/main/suppoert.vue'
+export { default as MainUseCase } from '../../components/main/useCase.vue'
+>>>>>>> main
 export { default as ModulesBanner } from '../../components/modules/Banner.vue'
 export { default as ModulesBoard } from '../../components/modules/Board.vue'
 export { default as ModulesBoardView } from '../../components/modules/BoardView.vue'
@@ -28,6 +38,7 @@ export { default as GnbPricing } from '../../components/Gnb/Pricing/index.vue'
 export { default as GnbProducts } from '../../components/Gnb/Products/index.vue'
 export { default as GnbSolution } from '../../components/Gnb/Solution/index.vue'
 export { default as GnbHeaderPartialMobileHeader } from '../../components/Gnb/headerPartial/mobileHeader.vue'
+<<<<<<< HEAD
 export { default as MainBannerModule } from '../../components/main/bannerModule.vue'
 export { default as MainCompany } from '../../components/main/company.vue'
 export { default as MainCtaModule } from '../../components/main/ctaModule.vue'
@@ -35,6 +46,8 @@ export { default as MainBanner } from '../../components/main/mainBanner.vue'
 export { default as MainProducts } from '../../components/main/products.vue'
 export { default as MainSuppoert } from '../../components/main/suppoert.vue'
 export { default as MainUseCase } from '../../components/main/useCase.vue'
+=======
+>>>>>>> main
 export { default as ProductsPagesMS } from '../../components/products/pages/MS.vue'
 export { default as ProductsPagesMake } from '../../components/products/pages/Make.vue'
 export { default as ProductsPagesRemote } from '../../components/products/pages/Remote.vue'

@@ -1,5 +1,6 @@
 {
   "global": {
+    "myUrl": "https://virnect.com",
     "videoBtnText": "소개영상",
     "shortcut": "바로가기",
     "totalBtnText": "전체보기",
