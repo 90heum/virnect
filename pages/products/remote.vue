@@ -15,7 +15,7 @@
     <!-- 제품특징 -->
     <product-property />
     <!-- 기능소개 -->
-  <sub-menu />
+    <sub-menu />
     <transition name="app-fade" mode="out-in">
       <remote-component />
     </transition>
@@ -31,21 +31,20 @@
     <bottom-banner-remote />
 
     <cta-module />
-
   </section>
 </template>
 
 <script>
-import subVisualSection from '../../layouts/common/SubVisual.vue'
-import snbSection from '../../layouts/modules/Snb.vue'
-import tailSection from '../../layouts/common/Tail.vue'
+import subVisualSection from "../../layouts/common/SubVisual.vue";
+import snbSection from "../../layouts/modules/Snb.vue";
+import tailSection from "../../layouts/common/Tail.vue";
 import remoteComponent from "../../components/products/pages/Remote.vue";
 import SubBanner from "~/components/products/partials/subBanner.vue";
 import XrSolution from "~/components/products/partials/XRSolution.vue";
-import XRSolution from '~/components/products/partials/XRSolution.vue';
+import XRSolution from "~/components/products/partials/XRSolution.vue";
 import ProductProperty from "~/components/products/partials/productProperty.vue";
 import BottomBannerRemote from "~/components/products/partials/bottomBannerRemote.vue";
-import CtaModule from '~/components/main/ctaModule.vue';
+import CtaModule from "~/components/main/ctaModule.vue";
 import SubMenuProduct from "~/components/products/partials/subMenuProduct.vue";
 
 export default {
@@ -67,22 +66,22 @@ export default {
       visualText: {
         // 상단 비주얼 텍스트
         image:
-          'https://image.virnect.com/images/pages/solution/img-products-main.png',
-        category: 'Products',
+          "https://image.virnect.com/images/pages/solution/img-products-main.png",
+        category: "Products",
       },
       tailText: {
         // 막줄 꼬리 텍스트
-        bg: 'assets/images/pages/products/img-products-banner.png',
-        blue: 'SOLUTIONS',
-        blueRouter: 'energy_resource',
-        grey: 'Contact',
-        greyRouter: 'inquiry',
+        bg: "assets/images/pages/products/img-products-banner.png",
+        blue: "SOLUTIONS",
+        blueRouter: "energy_resource",
+        grey: "Contact",
+        greyRouter: "inquiry",
       },
-    }
+    };
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>
-@import '~assets/css/pages/products.scss';
+@import "~assets/css/pages/products.scss";
 </style>

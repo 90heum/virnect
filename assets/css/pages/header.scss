@@ -1,10 +1,12 @@
-body{
-    &.hidden{
+body {
+    &.hidden {
         overflow-y: auto;
     }
 }
+
 header {
     background-color: #121212;
+
     .headerInner {
         display: flex;
         align-items: center;
@@ -44,7 +46,11 @@ header {
                     height: 100%;
 
                     li {
+                        width: 20%;
+                        border-bottom: 2px solid #121212;
+
                         a {
+                            white-space: nowrap;
                             display: flex;
                             height: 100%;
                             align-items: center;
@@ -57,6 +63,7 @@ header {
                             line-height: normal;
                             letter-spacing: normal;
                             color: #e6e8eb;
+                            justify-content: center;
 
                             &.navActive1 {
                                 border-bottom: 4px solid #fff;
@@ -87,6 +94,7 @@ header {
 
                             &.container2 {
                                 background-color: inherit;
+
                                 &:hover {
                                     .upIcon2 {
                                         display: block;
@@ -97,7 +105,11 @@ header {
                                     }
                                 }
                             }
-                            &.container2:hover { background-color: #fff; }
+
+                            &.container2:hover {
+                                background-color: #fff;
+                            }
+
                             &.container3 {
                                 &:hover {
                                     .upIcon3 {
@@ -141,6 +153,7 @@ header {
 
                             img {
                                 max-width: 19px;
+                                min-width: 19px;
                                 width: 100%;
                                 object-fit: contain;
                                 transform: rotate(-360deg);
@@ -173,6 +186,14 @@ header {
                     }
                 }
             }
+
+            .demo {
+                padding-bottom: 3px;
+            }
+
+            .serviceSelect {
+                padding-bottom: 3px;
+            }
         }
 
         .demo {
@@ -188,7 +209,7 @@ header {
                 color: #121212;
                 font-size: 14px;
                 font-weight: 500;
-                height: 34px;
+                height: 35px;
                 line-height: 24px;
 
                 &:hover {
@@ -239,17 +260,21 @@ header {
                         background: #fff;
                         font-size: 16px;
                         font-weight: 500;
+
                         a {
                             color: #0a51b7;
                             display: flex;
                             justify-content: space-between;
-                            p{
+
+                            p {
                                 line-height: initial;
                             }
-                            i{
+
+                            i {
                                 display: flex;
                                 align-items: center;
                             }
+
                             img {
                                 display: inline;
                                 max-width: 8px;
@@ -265,11 +290,12 @@ header {
                             }
 
                         }
+
                         &:first-child {
-                            border-top: 2px solid #0a51b7;
+                            border-top: 2px solid #fff;
 
                             &:hover {
-                                border-top: 2px solid #0a51b7;
+                                border-top: 2px solid #fff;
                             }
                         }
 
@@ -283,6 +309,7 @@ header {
                             border: 1px solid #0a51b7;
                             background: #0a51b7;
                             color: #fff;
+
                             .subBottomMenuIconOpen {
                                 display: none;
                             }
@@ -291,8 +318,14 @@ header {
                                 display: block;
                             }
                         }
-                        &:hover a {color: white;}
-                        a:hover {color: white;}
+
+                        &:hover a {
+                            color: white;
+                        }
+
+                        a:hover {
+                            color: white;
+                        }
                     }
                 }
 
@@ -302,6 +335,7 @@ header {
                     white-space: nowrap;
                     display: flex;
                     align-items: center;
+
                     a {
                         vertical-align: text-top;
                     }
@@ -313,7 +347,7 @@ header {
                     display: flex;
                     gap: 10px;
                     justify-content: space-between;
-                    padding: 3px 13px;
+                    padding: 4.5px 13px;
                     color: #e6e8eb;
                     font-weight: 500;
 
@@ -325,6 +359,7 @@ header {
                     }
 
                     .arrow {
+                        display: flex;
                         width: 24px;
                         background-size: 50% 50%;
                     }
@@ -340,6 +375,8 @@ header {
             cursor: pointer;
 
             i {
+                display: flex;
+
                 img {
                     max-width: 34px;
                 }
@@ -505,7 +542,10 @@ header {
                             text-decoration: none;
                         }
                     }
-                    span.subMenuInnerSpan:hover a {color: #0a51b7;}
+
+                    span.subMenuInnerSpan:hover a {
+                        color: #0a51b7;
+                    }
                 }
             }
 
@@ -561,7 +601,7 @@ header {
                                 letter-spacing: normal;
                                 text-align: center;
                                 color: #e6e8eb;
-                                
+
                             }
                         }
 
@@ -690,8 +730,9 @@ header {
                     line-height: 2.43;
                     letter-spacing: normal;
                     color: #092e6e;
-                    
-                    u,a {
+
+                    u,
+                    a {
                         display: inline;
                         color: #092e6e;
                     }
@@ -767,6 +808,7 @@ header {
                 height: 100%;
                 padding-top: 50px;
                 margin-right: 103px;
+
                 >span {
                     width: 100%;
 
@@ -809,6 +851,7 @@ header {
                                     color: #616161;
                                     font-weight: normal;
                                     text-decoration: none;
+
                                     &:hover {
                                         color: #0a51b7;
                                     }
@@ -827,6 +870,7 @@ header {
 
                                 a {
                                     display: block;
+
                                     span {
                                         height: 34px;
                                         font-size: 14px;
@@ -1101,6 +1145,7 @@ header {
     .hamSubBox {
         background: #fff;
         position: relative;
+
         .hamSubMenu {
             padding: 30px 24px;
 
@@ -1209,7 +1254,8 @@ header {
                 border: solid 1px #e6e8eb;
                 background-color: #121212;
                 position: relative;
-                &:hover{
+
+                &:hover {
                     background-color: #0a51b7;
                     color: #fff;
                 }
@@ -1247,9 +1293,11 @@ header {
                     box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.15);
                     border: solid 1px #0a51b7;
                     background-color: #fff;
-                    &.menuHamSubOn{
+
+                    &.menuHamSubOn {
                         display: block;
                     }
+
                     li {
                         text-align: left;
                         padding: 12px 14px 12px;
@@ -1316,6 +1364,7 @@ header {
 
             >span {
                 position: relative;
+
                 a {
                     img {
                         max-width: 34px;
@@ -1323,6 +1372,7 @@ header {
                     }
                 }
             }
+
             .languageWrap {
                 max-width: 95px;
                 width: auto;
@@ -1400,8 +1450,15 @@ header .headerInner .navWrap nav ul li a.navActive+header .subNavi {
     header .headerInner .demo {
         margin-left: 10px;
     }
-    header .headerInner .demo a { font-size: 14px; }
-    .serviceSelect .select .selected-value a { font-size: 14px;}
+
+    header .headerInner .demo a {
+        font-size: 14px;
+    }
+
+    .serviceSelect .select .selected-value a {
+        font-size: 14px;
+    }
+
     header .headerInner .navWrap nav ul li a {
         padding: 25px 10px;
         font-size: 14px;
@@ -1413,6 +1470,7 @@ header .headerInner .navWrap nav ul li a.navActive+header .subNavi {
         max-width: 1024px;
         padding: 0 24px;
     }
+
     header .subNav {
         padding: 0 24px;
     }
@@ -1424,6 +1482,11 @@ header .headerInner .navWrap nav ul li a.navActive+header .subNavi {
     header .headerInner .MbHam .MbOpen {
         display: block;
     }
+
+    header .headerInner .navWrap nav {
+        display: none;
+    }
+
 }
 
 @media screen and(max-width: 768px) {

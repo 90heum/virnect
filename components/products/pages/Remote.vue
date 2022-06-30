@@ -16,6 +16,7 @@
       :title="$t('productsText.remoteText.funcTitle.title')"
       :id="remoteHeadingModuleId"
     ></heading-module>
+
     <function-part
       :functionArr="$t('productsText.remoteText.functionLists')"
       :iconImage="functionIconImage"

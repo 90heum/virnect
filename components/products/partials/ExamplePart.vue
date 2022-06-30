@@ -1,35 +1,39 @@
 <template>
   <div class="example-part">
     <div class="slide-wrap">
-
-  <div class="carousel-wrapper">
-    <!-- @click.native="sliderClicked" -->
-    <div v-swiper:mySwiper="options" class="dark" @slideChangeTransitionStart="getActiveSlide()">
-      <div class="swiper-wrapper">
-        <div v-for="(list, idx) of exampleArr" 
-             :key="idx" 
-             class="img-wrapper swiper-slide" 
-             :class="{'cursor-pointer': list.video } " 
-             :data-idx="idx + 1" >
-          <div class="img-wrap" :style="`background-image : url(${list.img})`">
-          <img
-              src="https://virnect.com/assets/images/pages/company/ic-play.svg"
-              class="icon"
-              alt="재생 아이콘"
-            />
-          </div>
-            <div class="text-wrap">
-            <p class="title" v-html="list.title"></p>
+      <div class="carousel-wrapper">
+        <!-- @click.native="sliderClicked" -->
+        <div
+          v-swiper:mySwiper="options"
+          class="dark"
+          @slideChangeTransitionStart="getActiveSlide()"
+        >
+          <div class="swiper-wrapper">
+            <div
+              v-for="(list, idx) of exampleArr"
+              :key="idx"
+              class="img-wrapper swiper-slide"
+              :class="{ 'cursor-pointer': list.video }"
+              :data-idx="idx + 1"
+            >
+              <div
+                class="img-wrap"
+                :style="`background-image : url(${list.img})`"
+              >
+                <img
+                  src="https://virnect.com/assets/images/pages/company/ic-play.svg"
+                  class="icon"
+                  alt="재생 아이콘"
+                />
+              </div>
+              <div class="text-wrap">
+                <p class="title" v-html="list.title"></p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-
-
-  </div>
-
 
     <div class="navy-infomation-list-pagination">
       <div class="pagination-progressive-bar" slot="pagination"></div>
@@ -48,7 +52,7 @@
 </template>
 
 <script>
-import YoutubeFullscreen from '../../modules/YoutubeFullscreen'
+import YoutubeFullscreen from "../../modules/YoutubeFullscreen";
 
 export default {
   components: {
@@ -61,82 +65,88 @@ export default {
         slidesPerView: "auto",
         loop: true,
         pagination: {
-          el: '.pagination-progressive-bar',
-          type: 'progressbar',
+          el: ".pagination-progressive-bar",
+          type: "progressbar",
         },
-         navigation: {
-          nextEl: '.next-btn',
-          prevEl: '.prev-btn',
+        navigation: {
+          nextEl: ".next-btn",
+          prevEl: ".prev-btn",
         },
-         breakpoints: {
-           1200: {
+        breakpoints: {
+          1200: {
             slidesPerView: "1",
             loop: true,
             mousewheel: false,
-            direction: 'horizontal',
-            spaceBetween: 12
-           },
+            direction: "horizontal",
+            spaceBetween: 12,
+          },
           480: {
             mousewheel: false,
-            direction: 'vertical',
+            direction: "vertical",
             spaceBetween: 12,
           },
         },
       },
-      exampleActiveIdx: '1',
-    }
+      exampleActiveIdx: "1",
+    };
   },
   props: {
     exampleArr: Array,
   },
   created() {
-    if (process.client) document.addEventListener("resize", this.handleReactWebView);
+    if (process.client)
+      document.addEventListener("resize", this.handleReactWebView);
   },
-  beforeDestroy () {
-    if (process.client) document.removeEventListener("resize", this.handleReactWebView);
+  beforeDestroy() {
+    if (process.client)
+      document.removeEventListener("resize", this.handleReactWebView);
   },
   methods: {
     getActiveSlide() {
       this.exampleActiveIdx = this.$el
-        .querySelector('.swiper-slide-active')
-        .getAttribute('data-idx')
+        .querySelector(".swiper-slide-active")
+        .getAttribute("data-idx");
     },
     sliderClicked(e) {
-      const idx = e.target.parentElement.getAttribute('data-idx')
-      if (!idx) return false
-      const video = this.exampleArr[idx - 1].video
+      const idx = e.target.parentElement.getAttribute("data-idx");
+      if (!idx) return false;
+      const video = this.exampleArr[idx - 1].video;
       // if (video) this.$refs.player.play(video)
     },
-    handleReactWebView () {
+    handleReactWebView() {
       if (process.client) {
         const innerWidth = window.innerWidth;
-        if ((innerWidth <= 1200 && innerWidth > 480)&& this.isWeb !== "tablet") {
+        if (innerWidth <= 1200 && innerWidth > 480 && this.isWeb !== "tablet") {
           this.isWeb = "tablet";
-        } else if ((innerWidth <= 480) && this.isWeb !== "mobile") {
+        } else if (innerWidth <= 480 && this.isWeb !== "mobile") {
           this.isWeb = "mobile";
         } else if (innerWidth > 1200 && this.isWeb !== "full") {
           this.isWeb = "full";
         }
         console.log(this.isWeb);
       }
-    }
+    },
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>
-@import '~assets/css/mixin.scss';
+@import "~assets/css/mixin.scss";
 $height: 340px;
 $width: 534px;
+
+.title {
+  color: #fff;
+}
 .swiper-wrapper {
-      position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    display: -ms-flexbox;
-    display: flex;
-    transition-property: transform;
-    box-sizing: content-box;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: -ms-flexbox;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
 }
 .swiper-slide {
   width: $width;
@@ -168,17 +178,17 @@ $width: 534px;
     opacity: 1;
   }
 }
-.swiper-pagination-progressbar>.swiper-pagination-progressbar-fill {
-    height: 3px;
-    margin-top: -1px;
-    background: #1655bf;
-    position: absolute;
-    right: 41%;
-    top: 0;
-    width: 100%;  
+.swiper-pagination-progressbar > .swiper-pagination-progressbar-fill {
+  height: 3px;
+  margin-top: -1px;
+  background: #1655bf;
+  position: absolute;
+  right: 41%;
+  top: 0;
+  width: 100%;
 }
 .swiper-pagination-progressbar {
-  background: rgba(0,0,0,.25);
+  background: rgba(0, 0, 0, 0.25);
 }
 
 @media (max-width: $mobile) {
@@ -192,7 +202,7 @@ $width: 534px;
       display: block;
       width: 100%;
       padding-top: 63.57%;
-      content: '';
+      content: "";
     }
   }
   .cursor-pointer .img-wrap .icon {
@@ -233,7 +243,6 @@ $width: 534px;
     }
   }
 }
-
 
 @media (max-width: $mobile) {
   .text-wrap {
@@ -278,10 +287,10 @@ $width: 534px;
     background-repeat: no-repeat;
     background-size: 100%;
     &.prev-btn {
-      background-image: url('~assets/images/common/ic-arrow-back@2x.png');
+      background-image: url("~assets/images/common/ic-arrow-back@2x.png");
     }
     &.next-btn {
-      background-image: url('~assets/images/common/ic-arrow-forward@2x.png');
+      background-image: url("~assets/images/common/ic-arrow-forward@2x.png");
     }
   }
 
