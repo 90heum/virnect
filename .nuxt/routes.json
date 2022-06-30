@@ -84,6 +84,20 @@
     "_name": "_a048c694"
   },
   {
+    "name": "support-faq",
+    "path": "/support/faq",
+    "component": "/Users/hellodigital/virnect/pages/support/faq.vue",
+    "chunkName": "pages/support/faq",
+    "_name": "_5f16a55c"
+  },
+  {
+    "name": "support-inquiry",
+    "path": "/support/inquiry",
+    "component": "/Users/hellodigital/virnect/pages/support/inquiry.vue",
+    "chunkName": "pages/support/inquiry",
+    "_name": "_4316f983"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/Users/hellodigital/virnect/pages/index.vue",

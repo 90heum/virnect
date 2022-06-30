@@ -10,9 +10,6 @@ You can directly use them in pages and other components without the need to impo
 - `<GnbHeader>` | `<gnb-header>` (components/gnbHeader.vue)
 - `<Header>` | `<header>` (components/header.vue)
 - `<ApiAxios>` | `<api-axios>` (components/api/axios.js)
-- `<MixinsMixin>` | `<mixins-mixin>` (components/mixins/mixin.js)
-<<<<<<< HEAD
-=======
 - `<MainBannerModule>` | `<main-banner-module>` (components/main/bannerModule.vue)
 - `<MainCompany>` | `<main-company>` (components/main/company.vue)
 - `<MainCtaModule>` | `<main-cta-module>` (components/main/ctaModule.vue)
@@ -20,7 +17,7 @@ You can directly use them in pages and other components without the need to impo
 - `<MainProducts>` | `<main-products>` (components/main/products.vue)
 - `<MainSuppoert>` | `<main-suppoert>` (components/main/suppoert.vue)
 - `<MainUseCase>` | `<main-use-case>` (components/main/useCase.vue)
->>>>>>> main
+- `<MixinsMixin>` | `<mixins-mixin>` (components/mixins/mixin.js)
 - `<ModulesBanner>` | `<modules-banner>` (components/modules/Banner.vue)
 - `<ModulesBoard>` | `<modules-board>` (components/modules/Board.vue)
 - `<ModulesBoardView>` | `<modules-board-view>` (components/modules/BoardView.vue)
@@ -39,23 +36,16 @@ You can directly use them in pages and other components without the need to impo
 - `<ModulesSnb>` | `<modules-snb>` (components/modules/Snb.vue)
 - `<ModulesSubSolutionMenu>` | `<modules-sub-solution-menu>` (components/modules/SubSolutionMenu.vue)
 - `<ModulesYoutubeFullscreen>` | `<modules-youtube-fullscreen>` (components/modules/YoutubeFullscreen.vue)
+- `<Paging>` | `<paging>` (components/paging/paging.vue)
+- `<SupportSubMenu>` | `<support-sub-menu>` (components/support/SubMenu.vue)
+- `<SupportHeadBanner>` | `<support-head-banner>` (components/support/headBanner.vue)
 - `<GnbCompany>` | `<gnb-company>` (components/Gnb/Company/index.vue)
 - `<GnbContact>` | `<gnb-contact>` (components/Gnb/Contact/index.vue)
 - `<GnbFreeTrials>` | `<gnb-free-trials>` (components/Gnb/FreeTrials/index.vue)
 - `<GnbPricing>` | `<gnb-pricing>` (components/Gnb/Pricing/index.vue)
 - `<GnbProducts>` | `<gnb-products>` (components/Gnb/Products/index.vue)
-- `<GnbSolution>` | `<gnb-solution>` (components/Gnb/Solution/index.vue)
 - `<GnbHeaderPartialMobileHeader>` | `<gnb-header-partial-mobile-header>` (components/Gnb/headerPartial/mobileHeader.vue)
-<<<<<<< HEAD
-- `<MainBannerModule>` | `<main-banner-module>` (components/main/bannerModule.vue)
-- `<MainCompany>` | `<main-company>` (components/main/company.vue)
-- `<MainCtaModule>` | `<main-cta-module>` (components/main/ctaModule.vue)
-- `<MainBanner>` | `<main-banner>` (components/main/mainBanner.vue)
-- `<MainProducts>` | `<main-products>` (components/main/products.vue)
-- `<MainSuppoert>` | `<main-suppoert>` (components/main/suppoert.vue)
-- `<MainUseCase>` | `<main-use-case>` (components/main/useCase.vue)
-=======
->>>>>>> main
+- `<GnbSolution>` | `<gnb-solution>` (components/Gnb/Solution/index.vue)
 - `<ProductsPagesMS>` | `<products-pages-m-s>` (components/products/pages/MS.vue)
 - `<ProductsPagesMake>` | `<products-pages-make>` (components/products/pages/Make.vue)
 - `<ProductsPagesRemote>` | `<products-pages-remote>` (components/products/pages/Remote.vue)
@@ -85,3 +75,6 @@ You can directly use them in pages and other components without the need to impo
 - `<SolutionsPartialsOfferPart>` | `<solutions-partials-offer-part>` (components/solutions/partials/OfferPart.vue)
 - `<SolutionsPartialsRoiPart>` | `<solutions-partials-roi-part>` (components/solutions/partials/RoiPart.vue)
 - `<SolutionsPartialsSubMenu>` | `<solutions-partials-sub-menu>` (components/solutions/partials/subMenu.vue)
+- `<SupportFaqAsideMenu>` | `<support-faq-aside-menu>` (components/support/faq/AsideMenu.vue)
+- `<SupportFaqContents>` | `<support-faq-contents>` (components/support/faq/FaqContents.vue)
+- `<SupportFaqGoogleMap>` | `<support-faq-google-map>` (components/support/faq/GoogleMap.vue)

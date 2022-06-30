@@ -2,9 +2,6 @@ export { default as Footer } from '../../components/footer.vue'
 export { default as GnbHeader } from '../../components/gnbHeader.vue'
 export { default as Header } from '../../components/header.vue'
 export { default as ApiAxios } from '../../components/api/axios.js'
-export { default as MixinsMixin } from '../../components/mixins/mixin.js'
-<<<<<<< HEAD
-=======
 export { default as MainBannerModule } from '../../components/main/bannerModule.vue'
 export { default as MainCompany } from '../../components/main/company.vue'
 export { default as MainCtaModule } from '../../components/main/ctaModule.vue'
@@ -12,7 +9,7 @@ export { default as MainBanner } from '../../components/main/mainBanner.vue'
 export { default as MainProducts } from '../../components/main/products.vue'
 export { default as MainSuppoert } from '../../components/main/suppoert.vue'
 export { default as MainUseCase } from '../../components/main/useCase.vue'
->>>>>>> main
+export { default as MixinsMixin } from '../../components/mixins/mixin.js'
 export { default as ModulesBanner } from '../../components/modules/Banner.vue'
 export { default as ModulesBoard } from '../../components/modules/Board.vue'
 export { default as ModulesBoardView } from '../../components/modules/BoardView.vue'
@@ -31,23 +28,16 @@ export { default as ModulesRequiredPopup } from '../../components/modules/Requir
 export { default as ModulesSnb } from '../../components/modules/Snb.vue'
 export { default as ModulesSubSolutionMenu } from '../../components/modules/SubSolutionMenu.vue'
 export { default as ModulesYoutubeFullscreen } from '../../components/modules/YoutubeFullscreen.vue'
+export { default as Paging } from '../../components/paging/paging.vue'
+export { default as SupportSubMenu } from '../../components/support/SubMenu.vue'
+export { default as SupportHeadBanner } from '../../components/support/headBanner.vue'
 export { default as GnbCompany } from '../../components/Gnb/Company/index.vue'
 export { default as GnbContact } from '../../components/Gnb/Contact/index.vue'
 export { default as GnbFreeTrials } from '../../components/Gnb/FreeTrials/index.vue'
 export { default as GnbPricing } from '../../components/Gnb/Pricing/index.vue'
 export { default as GnbProducts } from '../../components/Gnb/Products/index.vue'
-export { default as GnbSolution } from '../../components/Gnb/Solution/index.vue'
 export { default as GnbHeaderPartialMobileHeader } from '../../components/Gnb/headerPartial/mobileHeader.vue'
-<<<<<<< HEAD
-export { default as MainBannerModule } from '../../components/main/bannerModule.vue'
-export { default as MainCompany } from '../../components/main/company.vue'
-export { default as MainCtaModule } from '../../components/main/ctaModule.vue'
-export { default as MainBanner } from '../../components/main/mainBanner.vue'
-export { default as MainProducts } from '../../components/main/products.vue'
-export { default as MainSuppoert } from '../../components/main/suppoert.vue'
-export { default as MainUseCase } from '../../components/main/useCase.vue'
-=======
->>>>>>> main
+export { default as GnbSolution } from '../../components/Gnb/Solution/index.vue'
 export { default as ProductsPagesMS } from '../../components/products/pages/MS.vue'
 export { default as ProductsPagesMake } from '../../components/products/pages/Make.vue'
 export { default as ProductsPagesRemote } from '../../components/products/pages/Remote.vue'
@@ -77,6 +67,9 @@ export { default as SolutionsPartialsIssuePart } from '../../components/solution
 export { default as SolutionsPartialsOfferPart } from '../../components/solutions/partials/OfferPart.vue'
 export { default as SolutionsPartialsRoiPart } from '../../components/solutions/partials/RoiPart.vue'
 export { default as SolutionsPartialsSubMenu } from '../../components/solutions/partials/subMenu.vue'
+export { default as SupportFaqAsideMenu } from '../../components/support/faq/AsideMenu.vue'
+export { default as SupportFaqContents } from '../../components/support/faq/FaqContents.vue'
+export { default as SupportFaqGoogleMap } from '../../components/support/faq/GoogleMap.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

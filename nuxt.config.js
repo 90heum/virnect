@@ -37,6 +37,7 @@ export default {
   buildModules: [
   ],
   modules: [
+    [ '@nuxtjs/proxy'],
     ['@nuxtjs/axios'],
     // Doc: https://http.nuxtjs.org
     [
@@ -66,6 +67,12 @@ export default {
     ],
 
   ],
+  // Proxy: ["http://13.209.200.75:8080/"],
+  // axios: {
+  //   // host: "13.209.75",
+  //   // port: "8080",
+  //   // prefix: "/",
+  // },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }

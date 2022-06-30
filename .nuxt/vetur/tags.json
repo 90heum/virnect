@@ -11,11 +11,6 @@
   "ApiAxios": {
     "description": "Auto imported from components/api/axios.js"
   },
-  "MixinsMixin": {
-    "description": "Auto imported from components/mixins/mixin.js"
-  },
-<<<<<<< HEAD
-=======
   "MainBannerModule": {
     "description": "Auto imported from components/main/bannerModule.vue"
   },
@@ -37,7 +32,9 @@
   "MainUseCase": {
     "description": "Auto imported from components/main/useCase.vue"
   },
->>>>>>> main
+  "MixinsMixin": {
+    "description": "Auto imported from components/mixins/mixin.js"
+  },
   "ModulesBanner": {
     "description": "Auto imported from components/modules/Banner.vue"
   },
@@ -92,6 +89,15 @@
   "ModulesYoutubeFullscreen": {
     "description": "Auto imported from components/modules/YoutubeFullscreen.vue"
   },
+  "Paging": {
+    "description": "Auto imported from components/paging/paging.vue"
+  },
+  "SupportSubMenu": {
+    "description": "Auto imported from components/support/SubMenu.vue"
+  },
+  "SupportHeadBanner": {
+    "description": "Auto imported from components/support/headBanner.vue"
+  },
   "GnbCompany": {
     "description": "Auto imported from components/Gnb/Company/index.vue"
   },
@@ -107,38 +113,11 @@
   "GnbProducts": {
     "description": "Auto imported from components/Gnb/Products/index.vue"
   },
+  "GnbHeaderPartialMobileHeader": {
+    "description": "Auto imported from components/Gnb/headerPartial/mobileHeader.vue"
+  },
   "GnbSolution": {
     "description": "Auto imported from components/Gnb/Solution/index.vue"
-<<<<<<< HEAD
-  },
-  "GnbHeaderPartialMobileHeader": {
-    "description": "Auto imported from components/Gnb/headerPartial/mobileHeader.vue"
-  },
-  "MainBannerModule": {
-    "description": "Auto imported from components/main/bannerModule.vue"
-  },
-  "MainCompany": {
-    "description": "Auto imported from components/main/company.vue"
-  },
-  "MainCtaModule": {
-    "description": "Auto imported from components/main/ctaModule.vue"
-  },
-  "MainBanner": {
-    "description": "Auto imported from components/main/mainBanner.vue"
-  },
-  "MainProducts": {
-    "description": "Auto imported from components/main/products.vue"
-  },
-  "MainSuppoert": {
-    "description": "Auto imported from components/main/suppoert.vue"
-  },
-  "MainUseCase": {
-    "description": "Auto imported from components/main/useCase.vue"
-=======
->>>>>>> main
-  },
-  "GnbHeaderPartialMobileHeader": {
-    "description": "Auto imported from components/Gnb/headerPartial/mobileHeader.vue"
   },
   "ProductsPagesMS": {
     "description": "Auto imported from components/products/pages/MS.vue"
@@ -226,5 +205,14 @@
   },
   "SolutionsPartialsSubMenu": {
     "description": "Auto imported from components/solutions/partials/subMenu.vue"
+  },
+  "SupportFaqAsideMenu": {
+    "description": "Auto imported from components/support/faq/AsideMenu.vue"
+  },
+  "SupportFaqContents": {
+    "description": "Auto imported from components/support/faq/FaqContents.vue"
+  },
+  "SupportFaqGoogleMap": {
+    "description": "Auto imported from components/support/faq/GoogleMap.vue"
   }
 }
