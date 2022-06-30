@@ -1,6 +1,6 @@
 <template>
   <section class="view-section">
-    <intro-part :introSource="viewIntro"></intro-part>
+    <!-- <intro-part :introSource="viewIntro"></intro-part> -->
     <heading-module
       :category="$t('productsText.viewText.introText.category')"
       :title="$t('productsText.viewText.introText.title')"
@@ -28,7 +28,7 @@
       :blueBtn="$t('global.ROIText')"
     ></effect-part>
 
-    <section class="divide-section">
+    <!-- <section class="divide-section">
       <heading-module
         :align="supportTitle.align"
         :category="$t('productsText.supportTitle.category')"
@@ -41,7 +41,7 @@
           :supportArr="$t('productsText.viewText.supportList')"
         ></support-part>
       </div>
-    </section>
+    </section> -->
 
     <div class="example-wrap">
       <section class="divide-section">
@@ -69,15 +69,15 @@
 </template>
 
 <script>
-import introPart from '../partials/IntroducePart'
-import benefitPart from '../partials/BenefitPart'
-import functionPart from '../partials/FunctionPart'
-import effectPart from '../partials/EffectPart'
-import supportPart from '../partials/SupportPart'
-import examplePart from '../partials/ExamplePart'
-import bgSlidePart from '../partials/BgSlidePart'
+import introPart from "../partials/IntroducePart";
+import benefitPart from "../partials/BenefitPart";
+import functionPart from "../partials/FunctionPart";
+import effectPart from "../partials/EffectPart";
+import supportPart from "../partials/SupportPart";
+import examplePart from "../partials/ExamplePart";
+import bgSlidePart from "../partials/BgSlidePart";
 
-import headingModule from '../../modules/Heading'
+import headingModule from "../../modules/Heading";
 export default {
   components: {
     introPart,
@@ -92,25 +92,25 @@ export default {
   data() {
     return {
       viewIntro: {
-        logo: '../images/pages/products/logo-products-bi-view',
+        logo: "../images/pages/products/logo-products-bi-view",
         // img: '../images/pages/products/img-products-view',
         // intoBtn: `${window.urls['download']}/view`,
-        btnText: this.$t('global.downloadIntoBtn'),
+        btnText: this.$t("global.downloadIntoBtn"),
         videoLink:
-          'https://player.vimeo.com/external/427962056.hd.mp4?s=4c405dbd984c474798385f7ccc95c1b38de0e7db&profile_id=174',
+          "https://player.vimeo.com/external/427962056.hd.mp4?s=4c405dbd984c474798385f7ccc95c1b38de0e7db&profile_id=174",
       },
       functionIconImage:
-        '../images/pages/products/img-products-view-function-0',
-      effectBG: '../images/pages/products/img-view-effect',
+        "../images/pages/products/img-products-view-function-0",
+      effectBG: "../images/pages/products/img-view-effect",
       supportTitle: {
-        align: 'left',
-        btnText: 'Pricing',
+        align: "left",
+        btnText: "Pricing",
       },
-      exampleAlign: 'left',
-    }
+      exampleAlign: "left",
+    };
   },
-}
+};
 </script>
 <style lang="scss" scoped>
-@import '~assets/css/pages/products.scss';
+@import "~assets/css/pages/products.scss";
 </style>

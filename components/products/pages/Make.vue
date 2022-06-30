@@ -1,6 +1,6 @@
 <template>
   <section class="make-section">
-    <intro-part :introSource="makeIntro"></intro-part>
+    <!-- <intro-part :introSource="makeIntro"></intro-part> -->
     <heading-module
       :category="$t('productsText.makeText.introText.category')"
       :title="$t('productsText.makeText.introText.title')"
@@ -54,20 +54,20 @@
       </article>
     </div>
 
-    <section class="divide-section">
-      <heading-module
+    <!-- <section class="divide-section">
+       <heading-module
         :align="supportTitle.align"
         :category="$t('productsText.supportTitle.category')"
         :title="$t('productsText.supportTitle.title')"
         :contents="$t('productsText.supportTitle.contents')"
-      ></heading-module>
+      ></heading-module> 
 
       <div class="divide-contents-section">
         <support-part
           :supportArr="$t('productsText.makeText.supportList')"
         ></support-part>
       </div>
-    </section>
+    </section> -->
 
     <div class="example-wrap">
       <section class="divide-section">
@@ -96,15 +96,15 @@
 
 <script>
 // import mixin from 'mixins/mixin'
-import introPart from '../partials/IntroducePart'
-import benefitPart from '../partials/BenefitPart'
-import functionPart from '../partials/FunctionPart'
-import effectPart from '../partials/EffectPart'
-import supportPart from '../partials/SupportPart'
-import examplePart from '../partials/ExamplePart'
-import bgSlidePart from '../partials/BgSlidePart'
+import introPart from "../partials/IntroducePart";
+import benefitPart from "../partials/BenefitPart";
+import functionPart from "../partials/FunctionPart";
+import effectPart from "../partials/EffectPart";
+import supportPart from "../partials/SupportPart";
+import examplePart from "../partials/ExamplePart";
+import bgSlidePart from "../partials/BgSlidePart";
 
-import headingModule from '../../modules/Heading'
+import headingModule from "../../modules/Heading";
 export default {
   // mixins: [mixin],
   components: {
@@ -121,23 +121,23 @@ export default {
     return {
       isMobile: false,
       makeIntro: {
-        logo: '../images/pages/products/logo-products-bi-make',
-        img: '../images/pages/products/img-products-make',
+        logo: "../images/pages/products/logo-products-bi-make",
+        img: "../images/pages/products/img-products-make",
         // intoBtn: `${window.urls['download']}/make`,
-        btnText: this.$t('global.downloadIntoBtn'),
+        btnText: this.$t("global.downloadIntoBtn"),
         videoLink:
-          'https://player.vimeo.com/external/560736136.hd.mp4?s=34d4f2557f02474e88d1c1450bbecf3ae5ebb8cb&profile_id=174',
+          "https://player.vimeo.com/external/560736136.hd.mp4?s=34d4f2557f02474e88d1c1450bbecf3ae5ebb8cb&profile_id=174",
       },
       functionIconImage:
-        '../images/pages/products/img-products-make-function-0',
-      effectBG: '../images/pages/products/img-make-effect',
+        "../images/pages/products/img-products-make-function-0",
+      effectBG: "../images/pages/products/img-make-effect",
       supportTitle: {
-        align: 'left',
-        btnText: 'Pricing',
+        align: "left",
+        btnText: "Pricing",
       },
-      exampleAlign: 'left',
+      exampleAlign: "left",
       videoPlaying: false,
-    }
+    };
   },
   computed: {
     isMobile() {
@@ -147,15 +147,15 @@ export default {
   },
   methods: {
     popupToggle() {
-      this.videoPopup = true
+      this.videoPopup = true;
     },
     video() {
-      this.videoPlaying = true
-      return
+      this.videoPlaying = true;
+      return;
     },
   },
-}
+};
 </script>
 <style lang="scss" scoped>
-@import '~assets/css/pages/products.scss';
+@import "~assets/css/pages/products.scss";
 </style>
