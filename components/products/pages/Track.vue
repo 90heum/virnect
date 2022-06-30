@@ -1,6 +1,6 @@
 <template>
   <section class="arsdk-section">
-    <intro-part :introSource="arsdkIntro"></intro-part>
+    <!-- <intro-part :introSource="arsdkIntro"></intro-part> -->
     <heading-module
       :category="$t('productsText.arsdkText.introText.category')"
       :title="$t('productsText.arsdkText.introText.title')"
@@ -28,7 +28,7 @@
       :blueBtn="$t('global.ROIText')"
     ></effect-part>
 
-    <section class="divide-section">
+    <!-- <section class="divide-section">
       <heading-module
         :align="supportTitle.align"
         :category="$t('productsText.supportTitle.category')"
@@ -41,7 +41,7 @@
           :supportArr="$t('productsText.arsdkText.supportList')"
         ></support-part>
       </div>
-    </section>
+    </section> -->
 
     <div class="example-wrap">
       <section class="divide-section">
@@ -69,15 +69,15 @@
 </template>
 
 <script>
-import introPart from '../partials/IntroducePart'
-import benefitPart from '../partials/BenefitPart'
-import functionPart from '../partials/FunctionPart'
-import effectPart from '../partials/EffectPart'
-import supportPart from '../partials/SupportPart'
-import examplePart from '../partials/ExamplePart'
-import bgSlidePart from '../partials/BgSlidePart'
+import introPart from "../partials/IntroducePart";
+import benefitPart from "../partials/BenefitPart";
+import functionPart from "../partials/FunctionPart";
+import effectPart from "../partials/EffectPart";
+import supportPart from "../partials/SupportPart";
+import examplePart from "../partials/ExamplePart";
+import bgSlidePart from "../partials/BgSlidePart";
 
-import headingModule from '../../modules/Heading'
+import headingModule from "../../modules/Heading";
 export default {
   components: {
     introPart,
@@ -92,24 +92,24 @@ export default {
   data() {
     return {
       arsdkIntro: {
-        logo: '../images/pages/products/logo-products-bi-track',
+        logo: "../images/pages/products/logo-products-bi-track",
         // intoBtn: `${window.urls['download']}/track`,
         site: `http://track.virnect.com/`,
-        btnText: this.$t('global.downloadIntoBtn'),
-        img: '../images/pages/products/img-products-ar-sdk',
+        btnText: this.$t("global.downloadIntoBtn"),
+        img: "../images/pages/products/img-products-ar-sdk",
       },
       functionIconImage:
-        '../images/pages/products/img-products-ar-sdk-function-0',
-      effectBG: '../images/pages/products/img-ar-sdk-effect',
+        "../images/pages/products/img-products-ar-sdk-function-0",
+      effectBG: "../images/pages/products/img-ar-sdk-effect",
       supportTitle: {
-        align: 'left',
-        btnText: 'Pricing',
+        align: "left",
+        btnText: "Pricing",
       },
-      exampleAlign: 'left',
-    }
+      exampleAlign: "left",
+    };
   },
-}
+};
 </script>
 <style lang="scss" scoped>
-@import '~assets/css/pages/products.scss';
+@import "~assets/css/pages/products.scss";
 </style>

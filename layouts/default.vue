@@ -16,16 +16,12 @@ export default {
 </script>
 
 
-
-
-
-
 <style>
 /* @import "~assets/css/reset.scss";
 @import "~assets/css/common.scss"; */
 html {
   /* font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", */
-    /* Roboto, "Helvetica Neue", Arial, sans-serif; */
+  /* Roboto, "Helvetica Neue", Arial, sans-serif; */
   font-family: "NotoSansKR", "Noto Sans";
   font-size: 16px;
   word-spacing: 1px;

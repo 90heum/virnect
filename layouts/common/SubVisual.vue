@@ -21,10 +21,10 @@ export default {
     title: String,
     contents: String,
   },
-  computed: {}
-}
+  computed: {},
+};
 </script>
 
 <style lang="scss" scoped>
-@import '~assets/css/global/subVisual.scss';
+@import "~assets/css/global/subVisual.scss";
 </style>

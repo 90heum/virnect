@@ -4,15 +4,15 @@
         "menuList": [
             {
                 "title": "About VIRNECT",
-                "url": ""
+                "url": "/company/about"
             },
             {
                 "title": "인재채용",
-                "url": ""
+                "url": "/company/talent"
             },
             {
                 "title": "IR",
-                "url": ""
+                "url": "/company/ir"
             }
         ]
     }

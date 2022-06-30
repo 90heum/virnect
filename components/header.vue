@@ -372,7 +372,7 @@
                 <sub-solution-menu
                   :snbArr="
                     $t('gnb[1].array').filter((e, idx) => {
-                      if (idx < 3) return e;
+                      if (idx < 6) return e;
                     })
                   "
                   :name="`subNavProductsMenu`"
@@ -713,11 +713,11 @@ export default {
       this.gnbStyle1.backgroundColor = "#121212";
       this.gnbTextStyle1.color = "#fff";
     },
-    changeBorder2() {
+    /* changeBorder2() {
       this.gnbStyle2.borderBottomColor = "#fff";
       this.gnbStyle2.backgroundColor = "#121212";
       this.gnbTextStyle2.color = "#fff";
-    },
+    }, */
     originalBorder() {
       this.gnbStyle1.borderBottomColor = "#121212";
       this.gnbStyle1.backgroundColor = "#121212";
@@ -792,6 +792,7 @@ export default {
 
 header {
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 3;
 }
