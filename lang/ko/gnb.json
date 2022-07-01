@@ -134,12 +134,12 @@
             {
               "text": "기업 소개",
               "page": "summary",
-              "to": "/company/summary"
+              "to": "/company/subCompany/summary"
             },
             {
               "text": "브랜드",
               "page": "brand",
-              "to": "/company/brand"
+              "to": "/company/subCompany/brand"
             }
           ]
         },

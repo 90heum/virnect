@@ -4,7 +4,7 @@
   overflow: hidden;
   padding-bottom: 380px;
 
-  @media (max-width: $mobile) {
+  @media (max-width: 768px) {
     padding-bottom: 140px;
   }
 }
@@ -15,7 +15,7 @@
   justify-content: center;
   margin-bottom: 20px;
   text-align: center;
-  @include area-flex(1200px);
+  // @include area-flex(1200px);
 
   &:after {
     position: absolute;
@@ -52,13 +52,13 @@
   }
 
   .count {
-    color: $point;
+    // color: $point;
     font-weight: 500;
     font-size: 28px;
     line-height: 1.43;
   }
 
-  @media (max-width: $mobile) {
+  @media (max-width: 768px) {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 28px;
@@ -99,7 +99,7 @@
   line-height: 1.71;
   text-align: center;
 
-  @media (max-width: $mobile) {
+  @media (max-width: 768px) {
     top: -188px;
     margin-right: 24px;
     font-size: 12px;
@@ -109,7 +109,7 @@
 
 html:lang(en) {
   .we-proud-noti {
-    @media (max-width: $mobile) {
+    @media (max-width: 768px) {
       top: -272px;
     }
   }
@@ -117,18 +117,18 @@ html:lang(en) {
 
 .insight-section {
   position: relative;
-  @include area-flex(720px);
-  @include clearfix();
+  //@include area-flex(720px);
+  //@include clearfix();
   margin-bottom: 52px;
-  @include default-text(#222, 24px);
+  //@include default-text(#222, 24px);
 
   dt {
     float: left;
     width: 160px;
-    font-family: $noto;
+    //  font-family: $noto;
 
     &.title {
-      color: $point;
+      // color: $point;
     }
   }
 
@@ -142,7 +142,7 @@ html:lang(en) {
     }
   }
 
-  @media (max-width: $mobile) {
+  @media (max-width: 768px) {
     margin-bottom: 44px;
 
     .title {
@@ -176,7 +176,7 @@ html:lang(en) {
 
   .category {
     margin-bottom: 12px;
-    color: $point;
+    // color: $point;
     font-weight: bold;
     font-size: 18px;
     line-height: 1.56;
@@ -193,7 +193,7 @@ html:lang(en) {
     margin-top: 42px;
   }
 
-  @media (max-width: $mobile) {
+  @media (max-width: 768px) {
     margin-top: 60px;
     padding: 40px 24px 32px;
 
@@ -208,14 +208,14 @@ html:lang(en) {
 }
 
 .line-divide-list {
-  @include area-flex(1200px);
+  // @include area-flex(1200px);
   padding-top: 180px;
   overflow: hidden;
 
   h3 {
     font-weight: 600;
     font-size: 42px;
-    font-family: $poppins;
+    //font-family: $poppins;
     letter-spacing: 0.95px;
   }
 
@@ -267,7 +267,7 @@ html:lang(en) {
     }
   }
 
-  @media (max-width: $mobile) {
+  @media (max-width:768px) {
     margin-top: 112px;
     padding-top: 0;
 
@@ -327,7 +327,7 @@ html:lang(en) {
       }
     }
 
-    @media (max-width: $mobile) {
+    @media (max-width: 768px) {
       margin-top: 0;
       margin-bottom: 80px;
 
@@ -341,11 +341,11 @@ html:lang(en) {
 }
 
 .news-view {
-  @include area-flex(1200px);
+  // @include area-flex(1200px);
 }
 
 .title-line-section {
-  @include area-flex(1200px);
+  //@include area-flex(1200px);
   margin-top: 108px;
 
   dl {
@@ -353,7 +353,7 @@ html:lang(en) {
     padding-bottom: 20px;
     text-align: left;
     border-top: 1px solid #ced3dc;
-    @include clearfix();
+    //@include clearfix();
 
     dt {
       float: left;
@@ -403,14 +403,14 @@ html:lang(en) {
     color: #08286a;
     font-weight: bold;
     font-size: 20px;
-    font-family: $noto;
+    //font-family: $noto;
   }
 
   .contents {
     margin-bottom: 15px;
     font-weight: 400;
     font-size: 16px;
-    font-family: $noto;
+    //font-family: $noto;
     line-height: 1.75;
   }
 
@@ -420,7 +420,7 @@ html:lang(en) {
     background: #f8f9fb;
   }
 
-  @media (max-width: $mobile) {
+  @media (max-width: 768px) {
     margin-top: 24px;
 
     dl {
@@ -455,14 +455,14 @@ html:lang(en) {
 }
 
 .title-align-section {
-  @include area-flex(1200px);
+  //@extend  @include area-flex(1200px);
   margin-top: 108px;
 
   dl {
     margin-bottom: 44px;
     padding-top: 24px;
     text-align: left;
-    @include clearfix();
+    // @include clearfix();
 
     dt {
       float: left;
@@ -480,7 +480,7 @@ html:lang(en) {
     }
   }
 
-  @media (max-width: $mobile) {
+  @media (max-width: 768px) {
     dl {
       dt {
         margin-bottom: 12px;
@@ -510,7 +510,7 @@ html:lang(en) {
     }
   }
 
-  @media (max-width: $mobile) {
+  @media (max-width: 768px) {
     font-size: 13px;
 
     dl {
@@ -570,10 +570,10 @@ html:lang(en) {
     position: absolute;
     top: -11px;
     left: 64px;
-    color: $point;
+    //color: $point;
     font-weight: bold;
     font-size: 16px;
-    font-family: $roboto;
+    // font-family: $roboto;
     white-space: nowrap;
     opacity: 0.2;
 
@@ -583,7 +583,7 @@ html:lang(en) {
       right: 160%;
       width: 0%;
       height: 2px;
-      background: $point;
+      // background: $point;
       transition: all 0.5s;
       content: "";
     }
@@ -593,7 +593,7 @@ html:lang(en) {
 
       &:before {
         width: 160%;
-        background: $point;
+        // background: $point;
       }
     }
   }
@@ -603,7 +603,7 @@ html:lang(en) {
     display: block;
   }
 
-  @media (max-width: $mobile) {
+  @media (max-width: 768px) {
     &.sticky {
       display: none;
     }
@@ -612,7 +612,7 @@ html:lang(en) {
 
 .history-section {
   .history-wrap {
-    @include area-flex(840px);
+    // @include area-flex(840px);
     margin-top: 140px;
   }
 
@@ -635,7 +635,7 @@ html:lang(en) {
     color: #0d2a58;
     font-weight: bold;
     font-size: 44px;
-    font-family: $roboto;
+    //font-family: $roboto;
 
     svg {
       position: absolute;
@@ -657,7 +657,7 @@ html:lang(en) {
       transform: translateX(-420px);
 
       svg path {
-        fill: $point;
+        //    fill: $point;
       }
     }
   }
@@ -669,7 +669,7 @@ html:lang(en) {
     margin-left: 160px;
     padding-bottom: 72px;
     padding-left: $left;
-    @include clearfix();
+    // @include clearfix();
 
     &:before {
       position: absolute;
@@ -691,7 +691,7 @@ html:lang(en) {
     width: 50px;
     font-weight: bold;
     font-size: 18px;
-    font-family: $roboto;
+    //: $roboto;
 
     svg {
       position: absolute;
@@ -715,12 +715,12 @@ html:lang(en) {
     li {
       padding-bottom: 20px;
       font-size: 16px;
-      font-family: $noto;
+      // font-family: $noto;
       line-height: 1.88;
     }
   }
 
-  @media (max-width: $mobile) {
+  @media (max-width: 768px) {
     .history-container:last-child {
       margin-bottom: 0;
     }
@@ -781,15 +781,15 @@ html:lang(en) {
 }
 
 .recruit-wrap {
-  @include area-flex(1200px);
-  @include clearfix();
+  // @include area-flex(1200px);
+  //@debug clearfix();
 
   h3 {
     float: left;
     width: 294px;
     font-weight: 600;
     font-size: 44px;
-    font-family: $poppins;
+    //: $poppins;
   }
 
   >div {
@@ -803,7 +803,7 @@ html:lang(en) {
     line-height: 1.75;
   }
 
-  @media (max-width: $mobile) {
+  @media (max-width: 768px) {
     h3 {
       float: none;
       width: 100%;
@@ -825,7 +825,7 @@ html:lang(en) {
 
 .newsletter-section,
 .news-contents-list {
-  @include area-flex(1200px);
+  // @include area-flex(1200px);
 }
 
 .filter-wrap {
@@ -837,13 +837,13 @@ html:lang(en) {
     display: none;
   }
 
-  @media (max-width: $mobile) {
+  @media (max-width: 768px) {
     margin-bottom: 4px;
   }
 }
 
 .category-filter {
-  @include area-flex(1200px);
+  //  @include area-flex(1200px);
   display: flex;
   justify-content: center;
 
@@ -867,7 +867,7 @@ html:lang(en) {
       left: 0;
       width: 100%;
       height: 4px;
-      background: $point;
+      //background: $point;
       content: "";
     }
   }
@@ -877,7 +877,7 @@ html:lang(en) {
     color: #8b96a8;
     font-weight: 500;
     font-size: 16px;
-    font-family: $poppins, $noto;
+    //font-family: $poppins, $noto;
   }
 
   span {
@@ -887,12 +887,12 @@ html:lang(en) {
     margin-left: 8px;
     color: #fff;
     font-size: 14px;
-    font-family: $poppins;
+    // font-family: $poppins;
     line-height: 22px;
-    background: $point;
+    //  background: $point;
   }
 
-  @media (max-width: $mobile) {
+  @media (max-width: 768px) {
     display: block;
     padding: 0 12px;
     overflow-x: scroll;
@@ -927,7 +927,7 @@ html:lang(en) {
     font-size: 18px;
   }
 
-  @media (max-width: $mobile) {
+  @media (max-width: 768px) {
     li {
       margin: 0 14px;
     }
@@ -962,7 +962,7 @@ html:lang(en) {
     padding-bottom: 30px;
     font-weight: bold;
     font-size: 32px;
-    font-family: $poppins;
+    //: $poppins;
 
     &:after {
       position: absolute;
@@ -982,7 +982,7 @@ html:lang(en) {
     line-height: 1.75;
   }
 
-  @media (max-width: $mobile) {
+  @media (max-width: 768px) {
     margin-top: 32px;
     // margin-bottom: 230px;
     padding-bottom: 0;
@@ -1038,7 +1038,7 @@ html:lang(en) {
     width: auto;
     font-weight: normal;
     font-size: 20px;
-    font-family: $noto;
+    //font-family: $noto;
 
     &:after {
       position: absolute;
@@ -1051,7 +1051,7 @@ html:lang(en) {
     }
   }
 
-  @media (max-width: $mobile) {
+  @media (max-width: 768px) {
     // position: absolute;
     // top: 100%;
     left: 0;
@@ -1093,7 +1093,7 @@ html:lang(en) {
   width: 100%;
   margin-top: 43px;
   margin-bottom: 220px;
-  font-family: $noto;
+  //font-family: $noto;
   border-bottom: 1px solid #d4d9e1;
 
   dt {
@@ -1199,7 +1199,7 @@ html:lang(en) {
     }
   }
 
-  @media (max-width: $tablet) {
+  @media (max-width: 1200px) {
     margin-top: 26px;
     margin-bottom: 140px;
 
@@ -1293,7 +1293,7 @@ html:lang(en) {
 }
 
 html:lang(en) {
-  @media (max-width: $mobile) {
+  @media (max-width: 768px) {
     .recruit-table .recruit-contents .tit {
       width: 100%;
     }
@@ -1337,7 +1337,7 @@ html:lang(en) {
     width: 100% - $doubleWidth;
   }
 
-  @media (max-width: $tablet) {
+  @media (max-width: 1200px) {
     .double {
       width: 100%;
     }

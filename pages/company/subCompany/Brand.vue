@@ -5,12 +5,12 @@
       :image="visualText.image"
       :category="visualText.category"
       :title="
-        $route.name === 'company-about'
+        $route.name === 'company-subCompany-Brand'
           ? $t('virtualConnect.title')
           : $t('companyText.visualText.title')
       "
       :contents="
-        $route.name === 'company-about'
+        $route.name === 'company-subCompany-Brand'
           ? $t('virtualConnect.visualContents')
           : $t('companyText.visualText.contents')
       "
@@ -44,8 +44,8 @@
 import subVisualSection from "~/layouts/common/SubVisual.vue";
 import snbSection from "~/components/modules/Snb";
 import tailSection from "~/layouts/common/Tail";
-import SubMenu from "../../components/company/partials/subMenu.vue";
-import indroduceComponent from "../../components/company/pages/introduce.vue";
+import SubMenu from "../../../components/company/partials/subMenuBrand.vue";
+import indroduceComponent from "../../../components/company/pages/brand.vue";
 export default {
   components: {
     subVisualSection,

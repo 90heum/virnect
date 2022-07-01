@@ -31,7 +31,8 @@
           "to": "/solutions/epc"
         }
       ]
-    }, {
+    },
+    {
       "text": "Products",
       "page": "remote",
       "to": "/products/remote",
@@ -67,7 +68,8 @@
           "to": "/products/ms"
         }
       ]
-    }, {
+    },
+    {
       "text": "Pricing",
       "page": "pricing",
       "to": "/pricing/remote",
@@ -106,7 +108,8 @@
           "depth": []
         }
       ]
-    }, {
+    },
+    {
       "text": "Resources",
       "page": "resources",
       "to": "/resources/library",
@@ -117,7 +120,8 @@
           "to": "/resources/library"
         }
       ]
-    }, {
+    },
+    {
       "text": "Company",
       "page": "summary",
       "to": "/company/summary",
@@ -130,22 +134,12 @@
             {
               "text": " Company overview",
               "page": "summary",
-              "to": "/company/summary"
-            },
-            {
-              "text": "VIRTUAL CONNECT",
-              "page": "virtual_connect",
-              "to": "/company/virtual_connect"
+              "to": "/company/subCompany/summary"
             },
             {
               "text": "Brand",
               "page": "brand",
-              "to": "/company/brand"
-            },
-            {
-              "text": "History",
-              "page": "history",
-              "to": "/company/history"
+              "to": "/company/subCompany/brand"
             }
           ]
         },
@@ -172,7 +166,8 @@
           "to": "/company/recruitment"
         }
       ]
-    }, {
+    },
+    {
       "text": "Contact",
       "page": "inquiry",
       "to": "/contact/inquiry",

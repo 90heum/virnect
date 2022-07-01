@@ -8,7 +8,6 @@
     ></sub-visual-section>
 
     <sub-menu />
-
     <!-- <snb-section :snbArr="$t('gnb[0].array')"></snb-section> -->
     <transition name="app-fade" mode="out-in">
       <energy-component />
