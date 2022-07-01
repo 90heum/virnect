@@ -134,6 +134,7 @@ export default {
 .subMenuReal {margin-top: 80px; position: relative; }
 .SubMenu{
     position: fixed;
+    z-index: 999;
     li, a { text-decoration: none; list-style: none; }
     background-color: #f7f8f9;
     box-shadow: 4px 0 10px 0 rgba(0, 0, 0, 0.2);

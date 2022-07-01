@@ -33,13 +33,13 @@ export default {
 // .banner 는 사용 안함 테스트용 껍데기
 .banner {
     width: 100%;
-    background-color: #000;
+    /* background-color: #000; */
 
     .bannerWrap {
         position: relative;
-        width: 100%;
+        /* width: 100%;
         height: 300px;
-        padding: 50px 30px;
+        padding: 50px 30px; */
 
         // 실제사용 모듈용 css 구역!!!!!!!!!!!!!!
         .bannerMoule {

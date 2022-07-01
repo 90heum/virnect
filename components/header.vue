@@ -49,11 +49,7 @@
               @click="changeBorder2()"
               v-bind:style="gnbStyle2"
             >
-              <a
-                href="#"
-                class="navTab container2"
-                v-bind:style="gnbTextStyle2"
-              >
+              <a class="navTab container2" v-bind:style="gnbTextStyle2">
                 Products
                 <i>
                   <img
@@ -253,12 +249,7 @@
         </div>
 
         <!-- 언어선택 박스 -->
-        <div
-          class="language"
-          @click="[(lang = true), langlang()]"
-          v-if="isWeb"
-          v-on:click="isServiceMenu = false"
-        >
+        <div class="language" @click="[(lang = true), langlang()]" v-if="isWeb">
           <i>
             <img
               src="https://velog.velcdn.com/images/kyj0206/post/3904dc78-e6ec-44d2-8bc0-f6e4c0c7c3a0/image.png"
@@ -272,7 +263,7 @@
               @click.prevent.stop="$i18n.setLocale(locale.code)"
               @click="langlang()"
             >
-              <a>{{ locale.name }}</a>
+              <a href="#">{{ locale.name }}</a>
             </span>
           </div>
         </div>
@@ -372,10 +363,25 @@
                 <sub-solution-menu
                   :snbArr="
                     $t('gnb[1].array').filter((e, idx) => {
-                      if (idx < 6) return e;
+                      if (idx < 3) return e;
                     })
                   "
-                  :name="`subNavProductsMenu`"
+                  :name="`subNavProductsMenus`"
+                  @click="changeGnbColor(`list2`)"
+                />
+              </span>
+              <span>
+                <span
+                  class="subNavProductsTit"
+                  v-html="$t(`productsText.productText.title`)"
+                ></span>
+                <sub-solution-menu
+                  :snbArr="
+                    $t('gnb[2].array').filter((e, idx) => {
+                      if (idx < 3) return e;
+                    })
+                  "
+                  :name="`subNavProductsMenus`"
                   @click="changeGnbColor(`list2`)"
                 />
               </span>
@@ -386,14 +392,14 @@
               확장현실(XR) 및 디지털 트윈 기술을
               <p>바탕으로 미래산업을 만들어 갑니다.</p>
             </span> -->
-            <div class="subNavProductsMenu">
+            <!-- <div class="subNavProductsMenu">
               <span>
                 <span class="subNavProductsTit"></span>
-                <!-- <sub-solution-menu :snbArr="$t('gnb[1].array').filter((e, idx) => {if(idx > 2) return e; })"
+                 <sub-solution-menu :snbArr="$t('gnb[1].array').filter((e, idx) => {if(idx > 2) return e; })"
                                    :name="`subNavProductsMenu`"
-                                   @click="changeGnbColor(`list2`)"/> -->
+                                   @click="changeGnbColor(`list2`)"/> 
               </span>
-            </div>
+            </div> -->
           </span>
         </div>
         <span class="asideInfoLink">
@@ -794,14 +800,10 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 3;
+  z-index: 10000;
 }
 * {
   padding: 0;
   margin: 0;
-}
-@media screen and (max-width: 1025px) {
-  nav { display: none!important; }
-  .MbHam {display: flex; }
 }
 </style>

@@ -5,7 +5,7 @@
       <li class="hamUseCase">
         <span class="hamUseCaseTit">
           <a href="#"> Value </a>
-          <ul class="hamUseCaseMenu">
+          <ul class="hamUseCaseMenu" v-if="isSub">
             <li>
               <a href="#"> 인프라/자원 </a>
             </li>
@@ -23,7 +23,7 @@
             </li>
           </ul>
         </span>
-        <span class="hamMenuToggle">
+        <span class="hamMenuToggle" @click="[showUse(true)]">
           <img
             class="hamSubMenuOpen"
             src="https://velog.velcdn.com/images/kyj0206/post/77d76d78-4bc7-4e93-afa3-23eff596d40a/image.png"
@@ -39,7 +39,7 @@
       <li class="hamProducts">
         <span class="hamProductsTit">
           <a href="#"> Products </a>
-          <ul class="hamProductsMenu">
+          <ul class="hamProductsMenu" v-if="isSub2">
             <li>
               <a href="#"> VIRNECT Remote </a>
             </li>
@@ -60,7 +60,7 @@
             </li>
           </ul>
         </span>
-        <span class="hamMenuToggle">
+        <span class="hamMenuToggle" @click="[showUse2(true)]">
           <img
             class="hamSubMenuOpen"
             src="https://velog.velcdn.com/images/kyj0206/post/77d76d78-4bc7-4e93-afa3-23eff596d40a/image.png"
@@ -76,7 +76,7 @@
       <li class="hamSupport">
         <span class="hamSupportTit">
           <a href="#"> Support </a>
-          <ul class="hamSupportMenu">
+          <ul class="hamSupportMenu" v-if="isSub3">
             <li>
               <a href="#"> Product Notice </a>
             </li>
@@ -91,7 +91,7 @@
             </li>
           </ul>
         </span>
-        <span class="hamMenuToggle">
+        <span class="hamMenuToggle" @click="[showUse3(true)]">
           <img
             class="hamSubMenuOpen"
             src="https://velog.velcdn.com/images/kyj0206/post/77d76d78-4bc7-4e93-afa3-23eff596d40a/image.png"
@@ -107,7 +107,7 @@
       <li class="hamNews">
         <span class="hamNewsTit">
           <a href="#"> News </a>
-          <ul class="hamNewsMenu">
+          <ul class="hamNewsMenu" v-if="isSub4">
             <li>
               <a href="#"> News & Press </a>
             </li>
@@ -119,7 +119,7 @@
             </li>
           </ul>
         </span>
-        <span class="hamMenuToggle">
+        <span class="hamMenuToggle" @click="[showUse4(true)]">
           <img
             class="hamSubMenuOpen"
             src="https://velog.velcdn.com/images/kyj0206/post/77d76d78-4bc7-4e93-afa3-23eff596d40a/image.png"
@@ -135,7 +135,7 @@
       <li class="hamCompany">
         <span class="hamCompanyTit">
           <a href="#"> Company </a>
-          <ul class="hamCompanyMenu">
+          <ul class="hamCompanyMenu" v-if="isSub5">
             <li>
               <a href="#"> About VIRNECT </a>
             </li>
@@ -147,7 +147,7 @@
             </li>
           </ul>
         </span>
-        <span class="hamMenuToggle">
+        <span class="hamMenuToggle" @click="[showUse5(true)]">
           <img
             class="hamSubMenuOpen"
             src="https://velog.velcdn.com/images/kyj0206/post/77d76d78-4bc7-4e93-afa3-23eff596d40a/image.png"
@@ -162,17 +162,25 @@
       </li>
     </ul>
     <div class="hamSubBottom">
-      <button class="bottomButton">
+      <button class="bottomButton" @click="subBottom()" v-if="isWeb">
         <a>
           <p>VIRNECT Service</p>
-          <i>
+          <div class="arrow">
             <img
-              src="https://velog.velcdn.com/images/kyj0206/post/403aea25-9c5a-498a-acf2-8766e5383a18/image.png"
+              class="downIcon6"
+              src="https://velog.velcdn.com/images/kyj0206/post/5933ac65-99ad-42c7-a624-4158514e9df8/image.png"
               alt="다운아이콘"
+              v-if="!isBottomMenu"
             />
-          </i>
+            <img
+              class="upIcon6"
+              src="https://velog.velcdn.com/images/kyj0206/post/40c8c0f7-9963-4afb-b488-b7fab422d86f/image.png"
+              alt="업아이콘"
+              v-if="isBottomMenu"
+            />
+          </div>
         </a>
-        <ul class="hamSubBottomMenu">
+        <ul class="hamSubBottomMenu" v-if="isBottomMenu">
           <li class="option">
             <a href="#">
               <p>서비스 로그인</p>
@@ -243,7 +251,7 @@
           </li>
         </ul>
       </button>
-      <span>
+      <span @click="[(lang = true), langlang()]" v-if="isWeb">
         <a class="subBottomLanguage">
           <img
             src="https://velog.velcdn.com/images/kyj0206/post/98320b08-1c52-4226-a6f0-7ab1e58fb363/image.png"
@@ -256,7 +264,6 @@
             v-for="locale in availableLocales"
             :key="locale.code"
             @click.prevent.stop="$i18n.setLocale(locale.code)"
-            @click="langlang()"
           >
             <a>{{ locale.name }}</a>
           </span>
@@ -267,10 +274,71 @@
 </template>
 
 <script>
+//import vClickOutside from 'v-click-outside'
+
 export default {
+  /* directives: {
+    clickOutside: vClickOutside.directive
+  },
+  components: {
+  }, */
   props: {
     isMenu: Boolean,
     availableLocales: Array,
+  },
+  data: () => ({
+    lang: false,
+    isHam: true,
+    isSub: false,
+    isSub2: false,
+    isSub3: false,
+    isSub4: false,
+    isSub5: false,
+    isBottomMenu: false,
+    isWeb: true,
+    showEarth: false,
+  }),
+  methods: {
+    showUse() {
+      this.isSub = !this.isSub;
+    },
+    showUse2() {
+      this.isSub2 = !this.isSub2;
+    },
+    showUse3() {
+      this.isSub3 = !this.isSub3;
+    },
+    showUse4() {
+      this.isSub4 = !this.isSub4;
+    },
+    showUse5() {
+      this.isSub5 = !this.isSub5;
+    },
+    test() {
+      console.log("test");
+      this.$emit("close");
+    },
+    subBottom() {
+      this.isBottomMenu = !this.isBottomMenu;
+    },
+    langlang() {
+      this.showEarth = !this.showEarth;
+    },
+
+    /* onClickOutside (event) {
+          this.isSub = false
+        },
+        selectTab (input) {
+          this.value = input
+          this.isSub = false
+        }, */
+    /* showUse(){
+            if(this.isSub){
+                window.addEventListener('click', this.onClick);
+            }else{
+                window.removeEventListener('click', this.onClick);
+            } 
+        } */
   },
 };
 </script>

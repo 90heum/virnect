@@ -51,7 +51,14 @@
           "text": "VIRNECT View",
           "page": "view",
           "to": "/products/view"
-        },
+        }
+      ]
+    },
+    {
+      "text": "Products",
+      "page": "twin",
+      "to": "/products/twin",
+      "array": [
         {
           "text": "VIRNECT Twin",
           "page": "twin",
@@ -134,12 +141,12 @@
             {
               "text": "기업 소개",
               "page": "summary",
-              "to": "/company/subCompany/summary"
+              "to": "/company/summary"
             },
             {
               "text": "브랜드",
               "page": "brand",
-              "to": "/company/subCompany/brand"
+              "to": "/company/brand"
             }
           ]
         },

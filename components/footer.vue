@@ -1,17 +1,19 @@
 <template>
   <div class="footer">
-    <div class="upButton">
-      <img
-        class="upup"
-        src="https://velog.velcdn.com/images/kyj0206/post/d74f9933-4e13-4838-aa1a-4f7993020afc/image.svg"
-        alt="upButton"
-      />
-      <img
-        class="upHover"
-        src="https://velog.velcdn.com/images/kyj0206/post/fcd53b94-13c9-4499-b141-239c5ac68704/image.png"
-        alt="upButton"
-      />
-    </div>
+      <div class="upButton">
+        <a href="javascript:window.scrollTo(0,0);">
+          <img
+            class="upup"
+            src="https://velog.velcdn.com/images/kyj0206/post/d74f9933-4e13-4838-aa1a-4f7993020afc/image.svg"
+            alt="upButton"
+          />
+          <img
+            class="upHover"
+            src="https://velog.velcdn.com/images/kyj0206/post/fcd53b94-13c9-4499-b141-239c5ac68704/image.png"
+            alt="upButton"
+          />
+        </a>
+      </div>
     <div class="footerWrap">
       <span class="footerTop">
         <span class="footerNavWeb">
@@ -176,7 +178,10 @@
             <span class="infoButton">
               <span class="buttonWrap">
                 <!-- 서비스선택 박스 -->
-                <div class="serviceSelect">
+                <div class="serviceSelect"
+                    @click="showServiceMenu()"
+                    v-if="isWeb"
+                >
                   <div class="select">
                     <div class="selected">
                       <div class="selected-value"><a>VIRNECT Service</a></div>
@@ -185,15 +190,17 @@
                           class="downIcon6"
                           src="https://velog.velcdn.com/images/kyj0206/post/5933ac65-99ad-42c7-a624-4158514e9df8/image.png"
                           alt="다운아이콘"
+                          v-if="!isServiceMenu"
                         />
                         <img
                           class="upIcon6"
                           src="https://velog.velcdn.com/images/kyj0206/post/40c8c0f7-9963-4afb-b488-b7fab422d86f/image.png"
                           alt="업아이콘"
+                          v-if="isServiceMenu"
                         />
                       </div>
                     </div>
-                    <ul>
+                    <ul v-if="isServiceMenu">
                       <li class="option">
                         <a
                           href="https://console.virnect.com/?continue=https%3A%2F%2Fvirnect.com%2F"
@@ -423,7 +430,7 @@
                 /></i>
               </a>
             </span>
-            <span>
+            <span @click="[(lang = true), langlang()]" v-if="isWeb">
               <i
                 ><img
                   src="https://velog.velcdn.com/images/kyj0206/post/20a62134-5b70-4f72-ab0d-fdef4689940f/image.png"
@@ -437,7 +444,7 @@
                     alt="다운아이콘"
                 /></i>
               </div>
-              <div class="tabLang">
+              <div class="tabLang" v-if="showEarth">
                 <span>Korean</span>
                 <span>English</span>
               </div>
@@ -451,7 +458,33 @@
     </div>
   </div>
 </template>
-
+<script>
+export default {
+  data: () => ({
+    lang: false,
+    isWeb: true,
+    showEarth: false,
+    isServiceMenu: false,
+    select:{},
+  }),
+  methods: {
+    langlang() {
+      this.showEarth = !this.showEarth;
+    },
+    showServiceMenu() {
+      this.isServiceMenu = !this.isServiceMenu;
+      this.select.backgroundColor="#0a51b7";
+    },
+    /* showServiceMenu () {
+      if (isServiceMenu == true) {
+          this.select.backgroundColor="#0a51b7";/images/kyj0206/post/3ab14d47-45c9-4f4c-aaa0-ead413260671/image.png
+      } else if(isServiceMenu == false) { 
+          this.select.backgroundColor="#121212";
+      }
+    }, */
+  },
+};
+</script>
 <style lang="scss" scoped>
 @import "~/assets/css/pages/footer.scss";
 @import "~/assets/css/reset.scss";
