@@ -4,6 +4,23 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
+
+const _4f01422a = () => interopDefault(import('../pages/energy/energy.vue' /* webpackChunkName: "pages/energy/energy" */))
+const _22b4b5b5 = () => interopDefault(import('../pages/products/make.vue' /* webpackChunkName: "pages/products/make" */))
+const _4e70612d = () => interopDefault(import('../pages/products/ms.vue' /* webpackChunkName: "pages/products/ms" */))
+const _93f92766 = () => interopDefault(import('../pages/products/remote.vue' /* webpackChunkName: "pages/products/remote" */))
+const _1687e814 = () => interopDefault(import('../pages/products/track.vue' /* webpackChunkName: "pages/products/track" */))
+const _fa89aca2 = () => interopDefault(import('../pages/products/twin.vue' /* webpackChunkName: "pages/products/twin" */))
+const _6791b6ec = () => interopDefault(import('../pages/products/view.vue' /* webpackChunkName: "pages/products/view" */))
+const _4259191c = () => interopDefault(import('../pages/solutions/airline_railroad.vue' /* webpackChunkName: "pages/solutions/airline_railroad" */))
+const _a76be328 = () => interopDefault(import('../pages/solutions/energy_resource.vue' /* webpackChunkName: "pages/solutions/energy_resource" */))
+const _098e989f = () => interopDefault(import('../pages/solutions/epc.vue' /* webpackChunkName: "pages/solutions/epc" */))
+const _5ff0e7c6 = () => interopDefault(import('../pages/solutions/motor_parts.vue' /* webpackChunkName: "pages/solutions/motor_parts" */))
+const _a048c694 = () => interopDefault(import('../pages/solutions/oil_chemical_battery.vue' /* webpackChunkName: "pages/solutions/oil_chemical_battery" */))
+const _5f16a55c = () => interopDefault(import('../pages/support/faq.vue' /* webpackChunkName: "pages/support/faq" */))
+const _4316f983 = () => interopDefault(import('../pages/support/inquiry.vue' /* webpackChunkName: "pages/support/inquiry" */))
+const _3f2d804c = () => interopDefault(import('../pages/support/notice.vue' /* webpackChunkName: "pages/support/notice" */))
+const _a985eb64 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 const _ca203302 = () => interopDefault(import('../pages/company/about.vue' /* webpackChunkName: "pages/company/about" */))
 const _732d62a7 = () => interopDefault(import('../pages/company/ir.vue' /* webpackChunkName: "pages/company/ir" */))
 const _789d6c2c = () => interopDefault(import('../pages/company/talent.vue' /* webpackChunkName: "pages/company/talent" */))
@@ -92,6 +109,18 @@ export const routerOptions = {
     path: "/solutions/oil_chemical_battery",
     component: _02655bae,
     name: "solutions-oil_chemical_battery"
+  }, {
+    path: "/support/faq",
+    component: _5f16a55c,
+    name: "support-faq"
+  }, {
+    path: "/support/inquiry",
+    component: _4316f983,
+    name: "support-inquiry"
+  }, {
+    path: "/support/notice",
+    component: _3f2d804c,
+    name: "support-notice"
   }, {
     path: "/",
     component: _4e2f2456,

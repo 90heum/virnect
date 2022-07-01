@@ -90,6 +90,24 @@
     "chunkName": "pages/solutions/oil_chemical_battery"
   },
   {
+    "name": "support-faq",
+    "path": "/support/faq",
+    "component": "/Users/hellodigital/virnect/pages/support/faq.vue",
+    "chunkName": "pages/support/faq"
+  },
+  {
+    "name": "support-inquiry",
+    "path": "/support/inquiry",
+    "component": "/Users/hellodigital/virnect/pages/support/inquiry.vue",
+    "chunkName": "pages/support/inquiry"
+  },
+  {
+    "name": "support-notice",
+    "path": "/support/notice",
+    "component": "/Users/hellodigital/virnect/pages/support/notice.vue",
+    "chunkName": "pages/support/notice"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/Users/majeongheum/virnect/pages/index.vue",

@@ -800,4 +800,8 @@ header {
   padding: 0;
   margin: 0;
 }
+@media screen and (max-width: 1025px) {
+  nav { display: none!important; }
+  .MbHam {display: flex; }
+}
 </style>

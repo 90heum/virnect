@@ -6,7 +6,7 @@
       :title="$t('productsText.visualText.title')"
       :contents="$t('productsText.visualText.contents')"
     ></sub-visual-section> -->
-    <SubBannerMake />
+    <sub-banner-make />
     <!-- <snb-section :snbArr="$t('gnb[1].array')"></snb-section> -->
     <transition name="app-fade" mode="out-in">
       <make-component />
@@ -27,7 +27,7 @@ import subVisualSection from "../../layouts/common/SubVisual.vue";
 import snbSection from "../../layouts/modules/Snb.vue";
 import tailSection from "../../layouts/common/Tail.vue";
 import makeComponent from "../../components/products/pages/Make.vue";
-import SubBannerMake from "~/components/products/partials/subBannerMake.vue";
+import SubBannerMake from "~/components/products/partials/subBanner.vue";
 export default {
   components: {
     subVisualSection,
