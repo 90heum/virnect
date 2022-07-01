@@ -67,12 +67,12 @@ export default {
     ],
 
   ],
-  // Proxy: ["http://13.209.200.75:8080/"],
-  // axios: {
-  //   // host: "13.209.75",
-  //   // port: "8080",
-  //   // prefix: "/",
-  // },
+  publicRuntimeConfig: {
+    axios: {
+      baseURL: 'http://13.209.200.75:8080',
+      credential: true
+    }
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }

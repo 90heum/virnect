@@ -2,11 +2,14 @@
 
 <div>
     <span class="FAQList">
-       <div class="FAQListInnerWrap active">
+       <div class="FAQListInnerWrap"
+            v-for="(data, idx) of contentList"
+            :key="idx"
+            @click="chooseIsDetail(data.id)">
             <ul>
-                <li><p>Twin</p></li>
+                <li><p>{{$i18n.localeProperties.code === "ko" ? data.typeName : data.typeNameEn}}</p></li>
                 <li>
-                    <p>Remote의 음성인식은 어떻게 on/off 하나요?</p>
+                    <p>{{$i18n.localeProperties.code === "ko" ? data.title : data.titleEn}}</p>
                 </li>
                 <li>
                     <i>
@@ -15,79 +18,15 @@
                     </i>
                 </li>
             </ul>
-            <div class="FAQInnerWrap">
-                <span class="FaqInner">
-                    <h1>
-                        H1 스타일 제목글<br>
-                        H1 스타일 제목글
-                    </h1>
-                    <h2>
-                        H2 스타일 제목글<br>
-                        H2 스타일 제목글
-                    </h2>
-                    <h3>
-                        H3 스타일 제목글<br>
-                        H3 스타일 제목글
-                    </h3>
-                    <h4>
-                        H4 스타일 제목글<br>
-                        H4 스타일 제목글
-                    </h4>
-                    <p>
-                        본문 글 스타일 입니다. 본문 글 스타일 입니다. 본문 글 스타일 입니다. 본문 글 스타일 입니다.<br>
-                        본문 글 스타일 입니다. 본문 글 스타일 입니다. 본문 글 스타일 입니다. 본문 글 스타일 입니다.<br>
-                        본문 글 스타일 입니다. 본문 글 스타일 입니다.<br> 
-                        <br>
-                        본문 글 스타일 입니다. 본문 글 스타일 입니다.<br> 
-                        본문 글 스타일 입니다. 본문 글 스타일 입니다.<br>
-                    </p>
-                </span>
-            </div>
-        </div>
-        <div class="FAQListInnerWrap">
-            <ul>
-                <li><p>Twin</p></li>
-                <li>
-                    <p>Remote의 음성인식은 어떻게 on/off 하나요?</p>
-                </li>
-                <li>
-                    <i>
-                        <img class="normal" src="https://velog.velcdn.com/images/kyj0206/post/c005c24b-ce96-4a0b-98eb-3f299de4bd5a/image.png" alt="문의기본">
-                        <img class="hover" src="https://velog.velcdn.com/images/kyj0206/post/ea1ff28b-e1d6-4f0d-aafe-125a72606beb/image.png" alt="문의호버">
-                    </i>
-                </li>
-            </ul>
-            <div class="FAQInnerWrap">
-                <span class="FaqInner">
-                    <h1>
-                        H1 스타일 제목글<br>
-                        H1 스타일 제목글
-                    </h1>
-                    <h2>
-                        H2 스타일 제목글<br>
-                        H2 스타일 제목글
-                    </h2>
-                    <h3>
-                        H3 스타일 제목글<br>
-                        H3 스타일 제목글
-                    </h3>
-                    <h4>
-                        H4 스타일 제목글<br>
-                        H4 스타일 제목글
-                    </h4>
-                    <p>
-                        본문 글 스타일 입니다. 본문 글 스타일 입니다. 본문 글 스타일 입니다. 본문 글 스타일 입니다.<br>
-                        본문 글 스타일 입니다. 본문 글 스타일 입니다. 본문 글 스타일 입니다. 본문 글 스타일 입니다.<br>
-                        본문 글 스타일 입니다. 본문 글 스타일 입니다.<br> 
-                        <br>
-                        본문 글 스타일 입니다. 본문 글 스타일 입니다.<br> 
-                        본문 글 스타일 입니다. 본문 글 스타일 입니다.<br>
-                    </p>
+            <div class="FAQInnerWrap"
+                 v-if="isDetail === data.id">
+                <span class="FaqInner"
+                      v-html="$i18n.localeProperties.code === 'ko' ? responseData.contents : responseData.contentsEn">
                 </span>
             </div>
         </div>
 
-       <common-paging />
+       <common-paging :pagingData="pagingData"/>
     </span>
     </div>
 </template>
@@ -98,6 +37,28 @@ import CommonPaging from "~/components/paging/paging.vue";
 export default {
     components: {
         CommonPaging
+    },
+    props: {
+        contentList: Array,
+        pagingData: Object
+    },
+    data() {
+        return {
+            isDetail: null,
+            responseData: {},
+        }
+    },
+    methods: {
+        chooseIsDetail(e) {
+            this.isDetail = this.isDetail === e ? null : e;
+            this.requestData(this.isDetail);
+        },
+        async requestData (e) {
+            this.responseData = {};
+            if (!this.isDetail) return;
+            const {data} = await this.$axios.$get(`admin/support/faq/${e}`);
+            this.responseData = data;
+        }
     }
 }
 </script>
@@ -218,7 +179,6 @@ export default {
             }
         }
         .FAQInnerWrap{
-            display: none;
             &::before{
                 content: '';
                 display: block;

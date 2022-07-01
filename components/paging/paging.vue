@@ -57,6 +57,9 @@
 
 <script>
 export default {
+    props: {
+        pagingData: Object
+    }
 
 }
 </script>

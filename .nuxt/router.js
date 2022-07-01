@@ -18,6 +18,7 @@ const _5ff0e7c6 = () => interopDefault(import('../pages/solutions/motor_parts.vu
 const _a048c694 = () => interopDefault(import('../pages/solutions/oil_chemical_battery.vue' /* webpackChunkName: "pages/solutions/oil_chemical_battery" */))
 const _5f16a55c = () => interopDefault(import('../pages/support/faq.vue' /* webpackChunkName: "pages/support/faq" */))
 const _4316f983 = () => interopDefault(import('../pages/support/inquiry.vue' /* webpackChunkName: "pages/support/inquiry" */))
+const _3f2d804c = () => interopDefault(import('../pages/support/notice.vue' /* webpackChunkName: "pages/support/notice" */))
 const _a985eb64 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
@@ -87,6 +88,10 @@ export const routerOptions = {
     path: "/support/inquiry",
     component: _4316f983,
     name: "support-inquiry"
+  }, {
+    path: "/support/notice",
+    component: _3f2d804c,
+    name: "support-notice"
   }, {
     path: "/",
     component: _a985eb64,

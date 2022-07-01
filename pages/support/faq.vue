@@ -13,14 +13,16 @@
             <!-- 리스트 탭 -->
             <div class="FAQTab">
                 <span v-for="(data, idx) of typeList" 
-                      :class="`${isType === (data.id) ? 'active' : ''}`"
+                      :class="`${isCategory === (data.id) ? 'active' : ''}`"
                       :key="idx"
-                      @click="chooseType(data.id)">{{data.name}}</span>
+                      @click="chooseCategory(data.id)">{{$i18n.localeProperties.code === "ko" ? data.name : data.nameEn}}</span>
             </div>
 
             <div class="tabCont">
-                <aside-menu />
-                <faq-contents />
+                <aside-menu :asideMenuList="asideMenuList"
+                            :chooseType="chooseType"/>
+                <faq-contents :contentList="contentList"
+                              :pagingData="pagingData"/>
             </div>
             </div>    
         </div>
@@ -37,66 +39,12 @@ import FaqContents from "~/components/support/faq/FaqContents.vue";
 export default {
     data() {
         return {
-            isType: 3,
-            isCategory: 0,
-            typeList: [
-      {
-        "id": 1,
-        "name": "회원",
-        "nameEn": "customer",
-        "createdDate": "2020-07-21T15:00:00",
-        "updatedDate": "2020-07-21T15:00:00"
-      },
-      {
-        "id": 2,
-        "name": "서비스",
-        "nameEn": "service",
-        "createdDate": "2020-07-21T15:00:00",
-        "updatedDate": "2020-07-21T15:00:00"
-      },
-      {
-        "id": 3,
-        "name": "제품",
-        "nameEn": "product",
-        "createdDate": "2020-07-21T15:00:00",
-        "updatedDate": "2020-07-21T15:00:00"
-      },
-      {
-        "id": 4,
-        "name": "결제",
-        "nameEn": "payment",
-        "createdDate": "2020-07-21T15:00:00",
-        "updatedDate": "2020-07-21T15:00:00"
-      },
-      {
-        "id": 5,
-        "name": "기타",
-        "nameEn": "etc",
-        "createdDate": "2020-07-21T15:00:00",
-        "updatedDate": "2020-07-21T15:00:00"
-      },
-      {
-        "id": 6,
-        "name": "기기",
-        "nameEn": "device",
-        "createdDate": "2021-09-07T07:44:12",
-        "updatedDate": "2021-09-07T07:44:12"
-      },
-      {
-        "id": 7,
-        "name": "experience_center",
-        "nameEn": "experience_center",
-        "createdDate": "2021-09-07T07:44:12",
-        "updatedDate": "2021-09-07T07:44:12"
-      },
-      {
-        "id": 13,
-        "name": "category name update",
-        "nameEn": "category update description",
-        "createdDate": "2022-06-30T12:17:22.587013",
-        "updatedDate": "2022-06-30T12:21:54.782236"
-      }
-    ]
+            isCategory: 3,
+            isType: 0,
+            typeList: [],
+            asideMenuList: [],
+            contentList: [],
+            pagingData: {},
         }
     },
     components: {
@@ -105,17 +53,73 @@ export default {
         FaqContents,
         HeadBanner
     },
-    async asyncData({$axios}) {
-        await $axios.get("http://13.209.200.75:8080/admin/support/faq/category")
-                    .then(res => console.log(res.data))
-                    .catch(e => console.error(e));
-    },
     methods: {
-        chooseType (e) {
+        async chooseCategory (e) {
+            if (this.isCategory === e) return;
+            this.isCategory = e;
+            try{
+                const data = Promise.all([this.$axios.$get(`admin/support/faq/type?categoryId=${this.isCategory}`), 
+                                        this.$axios.$get("admin/support/faq", {params: {
+                                                                                category: this.isCategory,
+                                                                                type: null,
+                                                                                device: null,
+                                                                                pageRequest: {
+                                                                                    page: 1,
+                                                                                    size: 20,
+                                                                                    sort: "updated_at,DESC"
+                                                                                }
+                                                                            }})]);
+            const dataJson = await data;
+            this.asideMenuList = dataJson[0].data.typeList;
+            this.contentList = dataJson[1].data.supportFaqDTOList;
+            this.pagingData = dataJson[1].data.pageMetadataResponse;
+            } catch (e) {console.error(e)}
+        },
+
+        async chooseType (e) {
+            if (this.isType === e) return;
             this.isType = e;
+            try {
+                 const data = this.$axios.$get("admin/support/faq", {params: {
+                                                                    category: this.isCategory,
+                                                                    type: this.isType,
+                                                                    device: null,
+                                                                    pageRequest: {
+                                                                        page: 1,
+                                                                        size: 20,
+                                                                        sort: "updated_at,DESC"
+                                                                    }
+                                                                }});
+                const dataJson = await data;
+                this.contentList = dataJson.data.supportFaqDTOList;
+                this.pagingData = dataJson.data.pageMetadataResponse;
+            } catch(e) { console.error(e) };
         }
+    },
+    async asyncData ({$axios}) {
+        try{
+            const data = Promise.all([$axios.$get("admin/support/faq/category"), 
+                                      $axios.$get("admin/support/faq/type?categoryId=3"), 
+                                      $axios.$get("admin/support/faq", {params: {
+                                          category: 3,
+                                          type: null,
+                                          device: null,
+                                          pageRequest: {
+                                              page: 1,
+                                              size: 20,
+                                              sort: "updated_at,DESC"
+                                          }
+                                      }})])
+            const dataJson = await data;
+            return {
+                typeList: dataJson[0].data.categoryList, 
+                asideMenuList: dataJson[1].data.typeList, 
+                contentList: dataJson[2].data.supportFaqDTOList,
+                pagingData: dataJson[2].data.pageMetadataResponse
+            };
+        } catch (e) {console.error(e)}
+            
     }
-    
 }
 </script>
 

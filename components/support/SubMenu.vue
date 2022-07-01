@@ -2,7 +2,7 @@
         <!-- 탭메뉴 -->
     <div class="contactTabMenu">
         <ul>
-            <li :class="isActive" data-tab="1">
+            <li data-tab="1" :class="`${isActive === 'notice' ? 'contactTabActive' : ''}`">
                 <p><nuxt-link to="notice">NOTICE</nuxt-link></p>
             </li>
             <li data-tab="2" :class="`${isActive === 'faq' ? 'contactTabActive' : ''}`">

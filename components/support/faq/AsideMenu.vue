@@ -1,33 +1,13 @@
 <template>
     <!-- aside -->
     <span class="FAQAside">
-        <span>
+        <span @click="chooseType(null)">
             <p>전체</p>
-            <i><img src="https://velog.velcdn.com/images/kyj0206/post/677e0a5b-146e-46a5-a5db-ef2b185febf4/image.png"
-                    alt="noticeTag"></i>
         </span>
-        <span>
-            <p>Remote</p>
-            <i><img src="https://velog.velcdn.com/images/kyj0206/post/677e0a5b-146e-46a5-a5db-ef2b185febf4/image.png"
-                    alt="noticeTag"></i>
-        </span>
-        <span>
-            <p>Make</p>
-            <i><img src="https://velog.velcdn.com/images/kyj0206/post/677e0a5b-146e-46a5-a5db-ef2b185febf4/image.png"
-                    alt="noticeTag"></i>
-        </span>
-        <span>
-            <p>View</p>
-            <i><img src="https://velog.velcdn.com/images/kyj0206/post/677e0a5b-146e-46a5-a5db-ef2b185febf4/image.png"
-                    alt="noticeTag"></i>
-        </span>
-        <span>
-            <p>Twin</p>
-            <i><img src="https://velog.velcdn.com/images/kyj0206/post/677e0a5b-146e-46a5-a5db-ef2b185febf4/image.png"
-                    alt="noticeTag"></i>
-        </span>
-        <span>
-            <p>Track</p>
+        <span v-for="(data, idx) of asideMenuList"
+              :key="idx"
+              @click="chooseType(data.id)">
+            <p>{{data.name}}</p>
             <i><img src="https://velog.velcdn.com/images/kyj0206/post/677e0a5b-146e-46a5-a5db-ef2b185febf4/image.png"
                     alt="noticeTag"></i>
         </span>
@@ -36,7 +16,10 @@
 
 <script>
 export default {
-
+    props: {
+        asideMenuList: Array,
+        chooseType: Function
+    }
 }
 </script>
 
