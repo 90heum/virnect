@@ -1,0 +1,93 @@
+<template>
+  <section class="company-section">
+    <sub-visual-section
+      class="sm"
+      :image="visualText.image"
+      :category="visualText.category"
+      :title="
+        $route.name === 'company-about'
+          ? $t('virtualConnect.title')
+          : $t('companyText.visualText.title')
+      "
+      :contents="
+        $route.name === 'company-about'
+          ? $t('virtualConnect.visualContents')
+          : $t('companyText.visualText.contents')
+      "
+    ></sub-visual-section>
+
+    <SubMenu />
+    <transition name="app-fade" mode="out-in">
+      <indroduce-component />
+    </transition>
+    <!-- <snb-section
+      v-if="$route.name === 'company-about'"
+      :snbArr="
+        $t('gnb[4].array[0].depth').filter((d) => d.page !== 'company-about')
+      "
+    ></snb-section> -->
+    <transition name="app-fade" mode="out-in">
+      <router-view></router-view>
+    </transition>
+    <tail-section
+      :bg="tailText.bg"
+      :mention="$t('companyText.tailText')"
+      :blueBtn="tailText.blue"
+      :blueRouter="tailText.blueRouter"
+      :greyBtn="tailText.grey"
+      :greyRouter="tailText.greyRouter"
+    ></tail-section>
+  </section>
+</template>
+
+<script>
+import subVisualSection from "~/layouts/common/SubVisual.vue";
+import snbSection from "~/components/modules/Snb";
+import tailSection from "~/layouts/common/Tail";
+import SubMenu from "../../components/company/partials/subMenu.vue";
+import indroduceComponent from "../../components/company/pages/introduce.vue";
+export default {
+  components: {
+    subVisualSection,
+    snbSection,
+    tailSection,
+    indroduceComponent,
+    SubMenu,
+  },
+  data() {
+    return {
+      visualText: {
+        image: "../images/pages/company/img-company-top",
+        category: "Company",
+      },
+      tailText: {
+        // 막줄 꼬리 텍스트
+        bg: "../images/pages/products/img-products-banner",
+        blue: "SOLUTIONS",
+        blueRouter: "energy_resource",
+        grey: "Contact",
+        greyRouter: "inquiry",
+      },
+    };
+  },
+};
+</script>
+
+<style lang="scss" scoped>
+.tabWrap {
+  display: flex;
+  justify-content: center;
+}
+.tabWrap ul {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  width: 300px;
+  align-items: center;
+}
+.tabWrap ul li {
+  padding: 30px;
+  text-decoration: none;
+  border: 1px solid #000;
+}
+</style>

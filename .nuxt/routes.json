@@ -1,74 +1,92 @@
 [
   {
+    "name": "company-about",
+    "path": "/company/about",
+    "component": "/Users/majeongheum/virnect/pages/company/about.vue",
+    "chunkName": "pages/company/about"
+  },
+  {
+    "name": "company-ir",
+    "path": "/company/ir",
+    "component": "/Users/majeongheum/virnect/pages/company/ir.vue",
+    "chunkName": "pages/company/ir"
+  },
+  {
+    "name": "company-talent",
+    "path": "/company/talent",
+    "component": "/Users/majeongheum/virnect/pages/company/talent.vue",
+    "chunkName": "pages/company/talent"
+  },
+  {
     "name": "energy-energy",
     "path": "/energy/energy",
-    "component": "/Users/hellodigital/virnect/pages/energy/energy.vue",
+    "component": "/Users/majeongheum/virnect/pages/energy/energy.vue",
     "chunkName": "pages/energy/energy"
   },
   {
     "name": "products-make",
     "path": "/products/make",
-    "component": "/Users/hellodigital/virnect/pages/products/make.vue",
+    "component": "/Users/majeongheum/virnect/pages/products/make.vue",
     "chunkName": "pages/products/make"
   },
   {
     "name": "products-ms",
     "path": "/products/ms",
-    "component": "/Users/hellodigital/virnect/pages/products/ms.vue",
+    "component": "/Users/majeongheum/virnect/pages/products/ms.vue",
     "chunkName": "pages/products/ms"
   },
   {
     "name": "products-remote",
     "path": "/products/remote",
-    "component": "/Users/hellodigital/virnect/pages/products/remote.vue",
+    "component": "/Users/majeongheum/virnect/pages/products/remote.vue",
     "chunkName": "pages/products/remote"
   },
   {
     "name": "products-track",
     "path": "/products/track",
-    "component": "/Users/hellodigital/virnect/pages/products/track.vue",
+    "component": "/Users/majeongheum/virnect/pages/products/track.vue",
     "chunkName": "pages/products/track"
   },
   {
     "name": "products-twin",
     "path": "/products/twin",
-    "component": "/Users/hellodigital/virnect/pages/products/twin.vue",
+    "component": "/Users/majeongheum/virnect/pages/products/twin.vue",
     "chunkName": "pages/products/twin"
   },
   {
     "name": "products-view",
     "path": "/products/view",
-    "component": "/Users/hellodigital/virnect/pages/products/view.vue",
+    "component": "/Users/majeongheum/virnect/pages/products/view.vue",
     "chunkName": "pages/products/view"
   },
   {
     "name": "solutions-airline_railroad",
     "path": "/solutions/airline_railroad",
-    "component": "/Users/hellodigital/virnect/pages/solutions/airline_railroad.vue",
+    "component": "/Users/majeongheum/virnect/pages/solutions/airline_railroad.vue",
     "chunkName": "pages/solutions/airline_railroad"
   },
   {
     "name": "solutions-energy_resource",
     "path": "/solutions/energy_resource",
-    "component": "/Users/hellodigital/virnect/pages/solutions/energy_resource.vue",
+    "component": "/Users/majeongheum/virnect/pages/solutions/energy_resource.vue",
     "chunkName": "pages/solutions/energy_resource"
   },
   {
     "name": "solutions-epc",
     "path": "/solutions/epc",
-    "component": "/Users/hellodigital/virnect/pages/solutions/epc.vue",
+    "component": "/Users/majeongheum/virnect/pages/solutions/epc.vue",
     "chunkName": "pages/solutions/epc"
   },
   {
     "name": "solutions-motor_parts",
     "path": "/solutions/motor_parts",
-    "component": "/Users/hellodigital/virnect/pages/solutions/motor_parts.vue",
+    "component": "/Users/majeongheum/virnect/pages/solutions/motor_parts.vue",
     "chunkName": "pages/solutions/motor_parts"
   },
   {
     "name": "solutions-oil_chemical_battery",
     "path": "/solutions/oil_chemical_battery",
-    "component": "/Users/hellodigital/virnect/pages/solutions/oil_chemical_battery.vue",
+    "component": "/Users/majeongheum/virnect/pages/solutions/oil_chemical_battery.vue",
     "chunkName": "pages/solutions/oil_chemical_battery"
   },
   {
@@ -92,7 +110,7 @@
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/hellodigital/virnect/pages/index.vue",
+    "component": "/Users/majeongheum/virnect/pages/index.vue",
     "chunkName": "pages/index"
   }
 ]

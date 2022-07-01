@@ -1,6 +1,6 @@
 <template>
   <section class="twin-section">
-    <intro-part :introSource="twinIntro"></intro-part>
+    <!-- <intro-part :introSource="twinIntro"></intro-part> -->
     <heading-module
       :category="$t('productsText.twinText.introText.category')"
       :title="$t('productsText.twinText.introText.title')"
@@ -28,7 +28,7 @@
       :blueBtn="$t('global.ROIText')"
     ></effect-part>
 
-    <section class="divide-section">
+    <!-- <section class="divide-section">
       <heading-module
         :align="supportTitle.align"
         :category="$t('productsText.supportTitle.category')"
@@ -41,7 +41,7 @@
           :supportArr="$t('productsText.twinText.supportList')"
         ></support-part>
       </div>
-    </section>
+    </section> -->
 
     <div class="example-wrap">
       <section class="divide-section">
@@ -69,15 +69,15 @@
 </template>
 
 <script>
-import introPart from '../partials/IntroducePart'
-import benefitPart from '../partials/BenefitPart'
-import functionPart from '../partials/FunctionPart'
-import effectPart from '../partials/EffectPart'
-import supportPart from '../partials/SupportPart'
-import examplePart from '../partials/ExamplePart'
-import bgSlidePart from '../partials/BgSlidePart'
+import introPart from "../partials/IntroducePart";
+import benefitPart from "../partials/BenefitPart";
+import functionPart from "../partials/FunctionPart";
+import effectPart from "../partials/EffectPart";
+import supportPart from "../partials/SupportPart";
+import examplePart from "../partials/ExamplePart";
+import bgSlidePart from "../partials/BgSlidePart";
 
-import headingModule from '../../modules/Heading'
+import headingModule from "../../modules/Heading";
 export default {
   components: {
     introPart,
@@ -92,24 +92,24 @@ export default {
   data() {
     return {
       twinIntro: {
-        logo: '../images/pages/products/logo-products-bi-twin',
+        logo: "../images/pages/products/logo-products-bi-twin",
         // img: '../images/pages/products/img-products-twin',
         // intoBtn: 'https://download.virnect.com/make',
-        videoLink: this.$t('productsText.twinText.videoLink'),
+        videoLink: this.$t("productsText.twinText.videoLink"),
       },
       functionIconImage:
-        '../images/pages/products/img-products-twin-function-0',
+        "../images/pages/products/img-products-twin-function-0",
       effectBG:
-        'https://image.virnect.com/images/pages/products/img-twin-effect',
+        "https://image.virnect.com/images/pages/products/img-twin-effect",
       supportTitle: {
-        align: 'left',
-        btnText: 'Pricing',
+        align: "left",
+        btnText: "Pricing",
       },
-      exampleAlign: 'left',
-    }
+      exampleAlign: "left",
+    };
   },
-}
+};
 </script>
 <style lang="scss" scoped>
-@import '~assets/css/pages/products.scss';
+@import "~assets/css/pages/products.scss";
 </style>
