@@ -23,7 +23,7 @@
               v-bind:style="gnbStyle1"
             >
               <nuxt-link
-                to="{path:}"
+                to="/solutions/energy_resource"
                 class="navTab container1"
                 v-bind:style="gnbTextStyle1"
               >
@@ -47,7 +47,11 @@
               @mouseleave="[(gnb2 = false), originalGnbColor2()]"
               v-bind:style="gnbStyle2"
             >
-              <a class="navTab container2" v-bind:style="gnbTextStyle2">
+              <nuxt-link
+                to="/products/remote"
+                class="navTab container2"
+                v-bind:style="gnbTextStyle2"
+              >
                 Products
                 <i>
                   <img
@@ -61,7 +65,7 @@
                     alt="업아이콘"
                   />
                 </i>
-              </a>
+              </nuxt-link>
             </li>
             <li
               @mouseover="[(gnb3 = true), changeGnbColor3()]"
@@ -119,8 +123,8 @@
               @mouseleave="[(gnb5 = false), originalGnbColor5()]"
               v-bind:style="gnbStyle5"
             >
-              <a
-                href="#"
+              <nuxt-link
+                to="/company/about"
                 class="navTab container5"
                 v-bind:style="gnbTextStyle5"
               >
@@ -137,7 +141,7 @@
                     alt="업아이콘"
                   />
                 </i>
-              </a>
+              </nuxt-link>
             </li>
           </ul>
         </nav>
@@ -452,8 +456,7 @@
               <span>
                 <ul>
                   <li>
-                    <nuxt-link
-                      to="/support/notice"
+                    <nuxt-link to="/support/notice"
                       ><span>{{
                         $t(`supportText.menuList.productNotice.title`)
                       }}</span></nuxt-link

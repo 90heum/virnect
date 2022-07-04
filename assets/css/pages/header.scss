@@ -525,16 +525,22 @@ header {
 
                 .subNavProductsMenu {
                     display: flex;
+
                     .subNavProductsMenus {
                         display: flex;
                         flex-direction: column;
+                        margin-top: 20px;
+
                     }
-                    span{
+
+                    span {
                         flex: 1;
-                        
+
                     }
+
                     span.subMenuInnerSpan {
                         flex-direction: row;
+
                         a {
                             font-size: 14px;
                             font-weight: bold;
@@ -710,6 +716,7 @@ header {
                 border-left: 2px solid #c5c8cf;
                 margin: 50px 0 110px;
                 padding-left: 40px;
+                opacity: 0;
 
                 .asideInfoLinkTit {
                     width: 282.84px;
@@ -793,6 +800,7 @@ header {
                     margin: 50px 0 110px;
                     padding-left: 40px;
                     display: inline-block;
+                    opacity: 0;
 
                     a {
                         img {
@@ -1278,16 +1286,18 @@ header {
                         text-align: center;
                         color: #e6e8eb;
                     }
+
                     .arrow {
                         width: 24px;
                         background-size: 50% 50%;
+
                         img {
                             display: inline;
                             vertical-align: text-top;
                             max-width: 19px;
                             width: 100%;
                         }
-          
+
                     }
                 }
 
