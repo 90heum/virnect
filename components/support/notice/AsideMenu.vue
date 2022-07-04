@@ -1,17 +1,14 @@
 <template>
     <span class="noticeAside">
-        <span>
+        <span @click="chooseType(null)">
             <p>전체</p>
             <i><img src="https://velog.velcdn.com/images/kyj0206/post/677e0a5b-146e-46a5-a5db-ef2b185febf4/image.png"
                     alt="noticeTag"></i>
         </span>
-        <span>
-            <p>안내</p>
-            <i><img src="https://velog.velcdn.com/images/kyj0206/post/677e0a5b-146e-46a5-a5db-ef2b185febf4/image.png"
-                    alt="noticeTag"></i>
-        </span>
-        <span>
-            <p>릴리즈 노트</p>
+        <span v-for="(data, idx) of asideData"
+              :key="idx"
+              @click="chooseType(data.id)">
+            <p>{{$i18n.localeProperties.code === "ko" ? data.name : data.nameEn}}</p>
             <i><img src="https://velog.velcdn.com/images/kyj0206/post/677e0a5b-146e-46a5-a5db-ef2b185febf4/image.png"
                     alt="noticeTag"></i>
         </span>
@@ -20,7 +17,10 @@
 
 <script>
 export default {
-
+    props: {
+        asideData: Array,
+        chooseType: Function
+    }
 }
 </script>
 

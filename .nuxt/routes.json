@@ -119,6 +119,13 @@
     "_name": "_3f2d804c"
   },
   {
+    "name": "support-notice-detail",
+    "path": "/support/notice-detail",
+    "component": "/Users/hellodigital/virnect/pages/support/notice-detail.vue",
+    "chunkName": "pages/support/notice-detail",
+    "_name": "_05c9c622"
+  },
+  {
     "name": "company-subCompany-Brand",
     "path": "/company/subCompany/Brand",
     "component": "/Users/hellodigital/virnect/pages/company/subCompany/Brand.vue",

@@ -21,6 +21,7 @@ const _a048c694 = () => interopDefault(import('../pages/solutions/oil_chemical_b
 const _5f16a55c = () => interopDefault(import('../pages/support/faq.vue' /* webpackChunkName: "pages/support/faq" */))
 const _4316f983 = () => interopDefault(import('../pages/support/inquiry.vue' /* webpackChunkName: "pages/support/inquiry" */))
 const _3f2d804c = () => interopDefault(import('../pages/support/notice.vue' /* webpackChunkName: "pages/support/notice" */))
+const _05c9c622 = () => interopDefault(import('../pages/support/notice-detail.vue' /* webpackChunkName: "pages/support/notice-detail" */))
 const _379d9e0a = () => interopDefault(import('../pages/company/subCompany/Brand.vue' /* webpackChunkName: "pages/company/subCompany/Brand" */))
 const _a985eb64 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -103,6 +104,10 @@ export const routerOptions = {
     path: "/support/notice",
     component: _3f2d804c,
     name: "support-notice"
+  }, {
+    path: "/support/notice-detail",
+    component: _05c9c622,
+    name: "support-notice-detail"
   }, {
     path: "/company/subCompany/Brand",
     component: _379d9e0a,
