@@ -63,7 +63,6 @@ export default {
             try {
                 const data = await this.$axios.get(`admin/support/notice?page=${this.pagingData.currentPage}&size=${this.pagingData.currentSize}${this.isType ? '&type=' + this.isType : ''}`);
                 const dataJson = await data;
-                console.log(dataJson)
                 this.contentData = dataJson.data.data.supportNoticeResponseList;
                 this.pagingData = dataJson.data.data.pageMetadataResponse;
             } catch(e) {console.error(e)}
@@ -74,7 +73,6 @@ export default {
         try {
             const data = Promise.all([$axios.get("admin/support/notice/type"), $axios.get(`admin/support/notice?page=1&size=${20}`)]);
             const dataJson = await data;
-            console.log(dataJson[1].data.data.supportNoticeResponseList)
             return {
                 asideData: dataJson[0].data.data.noticeType,
                 contentData: dataJson[1].data.data.supportNoticeResponseList,

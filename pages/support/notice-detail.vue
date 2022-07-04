@@ -116,7 +116,6 @@ export default {
     async asyncData ({$axios, route}) {
         const data = await $axios.get(`admin/support/notice/${route.query.id}`);
         const dataJson = await data;
-        console.log(dataJson.data.data)
         return {contentData: dataJson.data.data, id: route.query.id}
     }
 }

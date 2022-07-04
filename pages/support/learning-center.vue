@@ -68,7 +68,6 @@ export default {
             const data = Promise.all([$axios.get("admin/support/learning/category"),
                                       $axios.get("admin/support/learning/type")]);
             const dataJson = await data;
-            console.log(dataJson[1].data.data.typeList)
             return {categoryList: dataJson[0].data.data.categoryList, typeList: dataJson[1].data.data.typeList}
         } catch (e) {console.error(e)}
     }

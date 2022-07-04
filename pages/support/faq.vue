@@ -64,7 +64,6 @@ export default {
     methods: {
         movePage (currentPage) {
             this.pagingData = {...this.pagingData, currentPage: currentPage};
-            console.log(currentPage)
             this.chooseType(this.isType, true);
 
         },
@@ -122,7 +121,6 @@ export default {
                                           }
                                       }})])
             const dataJson = await data;
-            // console.log(dataJson[2].data.pageMetadataResponse);
             return {
                 typeList: dataJson[0].data.categoryList, 
                 asideMenuList: dataJson[1].data.typeList, 
