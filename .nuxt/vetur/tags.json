@@ -113,11 +113,23 @@
   "GnbProducts": {
     "description": "Auto imported from components/Gnb/Products/index.vue"
   },
+  "GnbSolution": {
+    "description": "Auto imported from components/Gnb/Solution/index.vue"
+  },
   "GnbHeaderPartialMobileHeader": {
     "description": "Auto imported from components/Gnb/headerPartial/mobileHeader.vue"
   },
-  "GnbSolution": {
-    "description": "Auto imported from components/Gnb/Solution/index.vue"
+  "CompanyPagesBrand": {
+    "description": "Auto imported from components/company/pages/brand.vue"
+  },
+  "CompanyPagesIntroduce": {
+    "description": "Auto imported from components/company/pages/introduce.vue"
+  },
+  "CompanyPartialsSubMenu": {
+    "description": "Auto imported from components/company/partials/subMenu.vue"
+  },
+  "CompanyPartialsSubMenuBrand": {
+    "description": "Auto imported from components/company/partials/subMenuBrand.vue"
   },
   "SolutionsPagesAirline": {
     "description": "Auto imported from components/solutions/pages/Airline.vue"
@@ -151,6 +163,18 @@
   },
   "SolutionsPartialsSubMenu": {
     "description": "Auto imported from components/solutions/partials/subMenu.vue"
+  },
+  "SolutionsPartialsSubMenuAirLine": {
+    "description": "Auto imported from components/solutions/partials/subMenuAirLine.vue"
+  },
+  "SolutionsPartialsSubMenuEpc": {
+    "description": "Auto imported from components/solutions/partials/subMenuEpc.vue"
+  },
+  "SolutionsPartialsSubMenuMotor": {
+    "description": "Auto imported from components/solutions/partials/subMenuMotor.vue"
+  },
+  "SolutionsPartialsSubMenuOil": {
+    "description": "Auto imported from components/solutions/partials/subMenuOil.vue"
   },
   "ProductsPagesMS": {
     "description": "Auto imported from components/products/pages/MS.vue"
@@ -202,6 +226,18 @@
   },
   "ProductsPartialsSubBanner": {
     "description": "Auto imported from components/products/partials/subBanner.vue"
+  },
+  "ProductsPartialsSubBannerMake": {
+    "description": "Auto imported from components/products/partials/subBannerMake.vue"
+  },
+  "ProductsPartialsSubBannerTrack": {
+    "description": "Auto imported from components/products/partials/subBannerTrack.vue"
+  },
+  "ProductsPartialsSubBannerTwin": {
+    "description": "Auto imported from components/products/partials/subBannerTwin.vue"
+  },
+  "ProductsPartialsSubBannerView": {
+    "description": "Auto imported from components/products/partials/subBannerView.vue"
   },
   "ProductsPartialsSubMenuProduct": {
     "description": "Auto imported from components/products/partials/subMenuProduct.vue"

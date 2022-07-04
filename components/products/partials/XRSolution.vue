@@ -33,7 +33,11 @@
                 alt="Inform Quicky and ccurately"
             /></i>
             <p>Inform Quicky and ccurately</p>
-            <p>정보를 신속하고 정확하게</p>
+            <p>
+              정보를 신속하고 정확하게{{
+                $t("productsText.makeText.introText.category")
+              }}
+            </p>
             <p>전달할 수 있습니다.</p>
           </span>
           <span>

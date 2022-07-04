@@ -6,19 +6,19 @@
       :category="visualText.category"
       :title="
         $route.name === 'company-subCompany-Brand'
-          ? $t('virtualConnect.title')
-          : $t('companyText.visualText.title')
+          ? $t('companyText.brandText.headingTitle.title')
+          : $t('companyText.brandText.headingTitle.title')
       "
       :contents="
         $route.name === 'company-subCompany-Brand'
-          ? $t('virtualConnect.visualContents')
-          : $t('companyText.visualText.contents')
+          ? $t('companyText.brandText.headingTitle.contents')
+          : $t('companyText.brandText.headingTitle.contents')
       "
     ></sub-visual-section>
 
     <SubMenu />
     <transition name="app-fade" mode="out-in">
-      <indroduce-component />
+      <brand-component />
     </transition>
     <!-- <snb-section
       v-if="$route.name === 'company-about'"
@@ -45,13 +45,13 @@ import subVisualSection from "~/layouts/common/SubVisual.vue";
 import snbSection from "~/components/modules/Snb";
 import tailSection from "~/layouts/common/Tail";
 import SubMenu from "../../../components/company/partials/subMenuBrand.vue";
-import indroduceComponent from "../../../components/company/pages/brand.vue";
+import brandComponent from "../../../components/company/pages/brand.vue";
 export default {
   components: {
     subVisualSection,
     snbSection,
     tailSection,
-    indroduceComponent,
+    brandComponent,
     SubMenu,
   },
   data() {

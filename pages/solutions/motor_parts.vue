@@ -6,7 +6,8 @@
       :title="$t('solutionText.visualText.title')"
       :contents="$t('solutionText.visualText.contents')"
     ></sub-visual-section>
-    <snb-section :snbArr="$t('gnb[0].array')"></snb-section>
+    <!-- <snb-section :snbArr="$t('gnb[0].array')"></snb-section> -->
+    <SubMenuMotor />
 
     <transition name="app-fade" mode="out-in">
       <motor-component />
@@ -23,37 +24,40 @@
 </template>
 
 <script>
-import subVisualSection from '../../layouts/common/SubVisual.vue'
-import snbSection from '../../components/modules/Snb.vue'
-import tailSection from '../../layouts/common/Tail.vue';
+import subVisualSection from "../../layouts/common/SubVisual.vue";
+import snbSection from "../../components/modules/Snb.vue";
+import tailSection from "../../layouts/common/Tail.vue";
 import motorComponent from "../../components/solutions/pages/Motor.vue";
+import SubMenuMotor from "~/components/solutions/partials/subMenuMotor.vue";
+
 export default {
   components: {
     subVisualSection,
     snbSection,
     tailSection,
-    motorComponent
+    motorComponent,
+    SubMenuMotor,
   },
   data() {
     return {
       visualText: {
         image:
-          'https://image.virnect.com/images/pages/solution/img-products-main.png',
-        category: 'Solutions',
+          "https://image.virnect.com/images/pages/solution/img-products-main.png",
+        category: "Solutions",
       },
       tailText: {
         // 막줄 꼬리 텍스트
-        bg: '../images/pages/products/img-products-banner',
-        blue: 'Pricing',
-        blueRouter: 'pricing_remote',
-        grey: 'Contact',
-        greyRouter: 'inquiry',
+        bg: "../images/pages/products/img-products-banner",
+        blue: "Pricing",
+        blueRouter: "pricing_remote",
+        grey: "Contact",
+        greyRouter: "inquiry",
       },
-    }
+    };
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>
-@import '~assets/css/pages/products.scss';
+@import "~assets/css/pages/products.scss";
 </style>
