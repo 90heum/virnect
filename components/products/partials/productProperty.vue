@@ -3,10 +3,9 @@
     <div class="features">
       <div class="featuresWrap">
         <span class="featuresTit">
-          <p>제품특징</p>
+          <p>{{$t("productsText.productPropertyTitle.title")}}</p>
           <h2>
-            업계 최고 수준의 기술력을
-            <p>통한 VIRNECT Remote만의 특징</p>
+            {{$t("productsText.productPropertyTitle.contents")}}
           </h2>
           <ul>
             <li>
@@ -16,8 +15,7 @@
                   alt="리스트1"
               /></i>
               <p>
-                Web/App, Smart Glass, 360º Camera, Robot 등 다양한 구동 환경
-                제공
+                {{$t("productsText.productPropertyText.multiple")}}
               </p>
             </li>
             <li>
@@ -26,7 +24,9 @@
                   src="https://velog.velcdn.com/images/kyj0206/post/6ee9bae6-3d0a-4c24-9868-c8a3af3759a9/image.png"
                   alt="리스트2"
               /></i>
-              <p>설정한 언어로 실시간 통번역</p>
+              <p>
+                {{$t("productsText.productPropertyText.translation")}}
+                </p>
             </li>
             <li>
               <i
@@ -34,7 +34,9 @@
                   src="https://velog.velcdn.com/images/kyj0206/post/6ee9bae6-3d0a-4c24-9868-c8a3af3759a9/image.png"
                   alt="리스트3"
               /></i>
-              <p>네트워크 상태가 불안정해도 고화질 영상 선택 가능</p>
+              <p>
+                {{$t("productsText.productPropertyText.images")}}
+              </p>
             </li>
             <li>
               <i
@@ -42,7 +44,9 @@
                   src="https://velog.velcdn.com/images/kyj0206/post/6ee9bae6-3d0a-4c24-9868-c8a3af3759a9/image.png"
                   alt="리스트4"
               /></i>
-              <p>내부망 내 구축을 통한 보안성 확보</p>
+              <p>
+                {{$t("productsText.productPropertyText.secured")}}
+              </p>
             </li>
             <li>
               <i
@@ -50,7 +54,9 @@
                   src="https://velog.velcdn.com/images/kyj0206/post/6ee9bae6-3d0a-4c24-9868-c8a3af3759a9/image.png"
                   alt="리스트5"
               /></i>
-              <p>RealWear 기기 전원을 켜면 Remote 자동 실행 및 빠른 사용</p>
+              <p>
+                {{$t("productsText.productPropertyText.autoStart")}}
+              </p>
             </li>
             <li>
               <i
@@ -58,7 +64,9 @@
                   src="https://velog.velcdn.com/images/kyj0206/post/6ee9bae6-3d0a-4c24-9868-c8a3af3759a9/image.png"
                   alt="리스트6"
               /></i>
-              <p>고객 맞춤형 커스터마이징 기능 탑재 가능</p>
+              <p>
+                {{$t("productsText.productPropertyText.personalization")}}
+              </p>
             </li>
           </ul>
         </span>

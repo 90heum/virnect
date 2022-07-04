@@ -1,5 +1,6 @@
 <template>
   <section class="products-section">
+    <subMenuTrack />
     <SubBannerTrack />
     <!-- <sub-visual-section
       :image="visualText.image"
@@ -28,6 +29,7 @@ import snbSection from "../../layouts/modules/Snb.vue";
 import tailSection from "../../layouts/common/Tail.vue";
 import trackComponent from "../../components/products/pages/Track.vue";
 import SubBannerTrack from "~/components/products/partials/subBannerTrack.vue";
+import subMenuTrack from "~/components/products/partials/subMenuTrack.vue";
 export default {
   components: {
     subVisualSection,
@@ -35,6 +37,7 @@ export default {
     tailSection,
     trackComponent,
     SubBannerTrack,
+    subMenuTrack,
   },
   data() {
     return {

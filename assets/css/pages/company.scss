@@ -116,25 +116,37 @@ html:lang(en) {
 }
 
 .insight-section {
-  position: relative;
+
+
+  display: flex;
+
+
   //@include area-flex(720px);
   //@include clearfix();
   margin-bottom: 52px;
   //@include default-text(#222, 24px);
 
+  justify-content: center;
+
   dt {
-    float: left;
+
+    //  float: left;
+
     width: 160px;
     //  font-family: $noto;
 
+
     &.title {
-      // color: $point;
+      color: cornflowerblue;
+      font-size: 20px;
+      font-weight: bold;
     }
   }
 
   dd {
-    float: left;
-    width: calc(100% - 160px);
+
+    //  float: left;
+    width: 700px;
 
     .title {
       margin-bottom: 12px;

@@ -9,15 +9,14 @@
           />
         </i>
         <p>VIRNECT Make</p>
-        <h2>XR 콘텐츠 제작 All-In-One솔루션</h2>
+        <h2> {{$t("productsText.makeSubTitle.title")}}</h2>
         <span class="subExplanation">
-          VIRNECT Make는 쉽고 빠르게 현장의 설비 운영/작업 절차 등 운영에 필요한
-          모든 정보와 지식을 XR 콘텐츠로 제작 가능한 도구입니다.
+          {{$t("productsText.makeSubTitle.contents")}}
         </span>
         <span>
           <button>
             <a href="#">
-              <p>자세히 보기</p>
+              <p>{{$t("productsText.makeSubButton.know")}}</p>
               <p>
                 <img
                   src="https://velog.velcdn.com/images/kyj0206/post/ede40cab-2b1a-47ff-a338-ad93d68b93f4/image.png"
@@ -27,7 +26,7 @@
             </a>
           </button>
           <button>
-            <a href="#"> 데모신청 </a>
+            <a href="#">{{$t("productsText.makeSubButton.free")}}</a>
           </button>
         </span>
       </span>

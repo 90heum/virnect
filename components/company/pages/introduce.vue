@@ -27,7 +27,7 @@
       :contents="$t('companyText.summaryText.summaryTitle.contents')"
     ></heading-module>
 
-    <dl class="mission insight-section">
+    <dl class="insight-section">
       <dt class="title">
         {{ $t("companyText.summaryText.missionText.title") }}
       </dt>

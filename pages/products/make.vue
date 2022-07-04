@@ -1,5 +1,6 @@
 <template>
   <section class="products-section">
+    <SubMenuMake />
     <!-- <sub-visual-section
       :image="visualText.image"
       :category="visualText.category"
@@ -28,6 +29,8 @@ import snbSection from "../../layouts/modules/Snb.vue";
 import tailSection from "../../layouts/common/Tail.vue";
 import makeComponent from "../../components/products/pages/Make.vue";
 import SubBannerMake from "~/components/products/partials/subBanner.vue";
+import SubMenuMake from "~/components/products/partials/subMenuMake.vue";
+
 export default {
   components: {
     subVisualSection,
@@ -35,6 +38,7 @@ export default {
     tailSection,
     makeComponent,
     SubBannerMake,
+    SubMenuMake,
   },
   data() {
     return {

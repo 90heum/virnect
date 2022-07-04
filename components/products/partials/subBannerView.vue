@@ -9,15 +9,14 @@
           />
         </i>
         <p>VIRNECT View</p>
-        <h2>XR 정보 및 데이터 시각화 솔루션</h2>
+        <h2>{{$t("productsText.viewSubTitle.title")}}</h2>
         <span class="subExplanation">
-          VIRNECT View를 통해 작업 매뉴얼, 안전 가이드 등의 업무 정보와 IoT 센서
-          및 SCADA 등 데이터 정보를 현장에서 바로 확인할 수 있습니다.
+          {{$t("productsText.viewSubTitle.contents")}}
         </span>
         <span>
           <button>
             <a href="#">
-              <p>자세히 보기</p>
+              <p>{{$t("productsText.viewSubButton.know")}}</p>
               <p>
                 <img
                   src="https://velog.velcdn.com/images/kyj0206/post/ede40cab-2b1a-47ff-a338-ad93d68b93f4/image.png"
@@ -27,7 +26,7 @@
             </a>
           </button>
           <button>
-            <a href="#"> 데모신청 </a>
+            <a href="#"> {{$t("productsText.viewSubButton.free")}} </a>
           </button>
         </span>
       </span>
