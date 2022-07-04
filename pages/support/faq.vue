@@ -22,7 +22,8 @@
                 <aside-menu :asideMenuList="asideMenuList"
                             :chooseType="chooseType"/>
                 <faq-contents :contentList="contentList"
-                              :pagingData="pagingData"/>
+                              :pagingData="pagingData"
+                              :movePage="movePage"/>
             </div>
             </div>    
         </div>
@@ -44,7 +45,14 @@ export default {
             typeList: [],
             asideMenuList: [],
             contentList: [],
-            pagingData: {},
+            pagingData: {
+                currentPage: 1,
+                currentSize: 20,
+                totalPage: 1,
+                totalElements: 1,
+                startPage: 1,
+                endPage: 1
+            }
         }
     },
     components: {
@@ -54,6 +62,12 @@ export default {
         HeadBanner
     },
     methods: {
+        movePage (currentPage) {
+            this.pagingData = {...this.pagingData, currentPage: currentPage};
+            console.log(currentPage)
+            this.chooseType(this.isType, true);
+
+        },
         async chooseCategory (e) {
             if (this.isCategory === e) return;
             this.isCategory = e;
@@ -63,32 +77,29 @@ export default {
                                                                                 category: this.isCategory,
                                                                                 type: null,
                                                                                 device: null,
-                                                                                pageRequest: {
-                                                                                    page: 1,
-                                                                                    size: 20,
-                                                                                    sort: "updated_at,DESC"
-                                                                                }
+                                                                                page: 1,
+                                                                                size: this.pagingData.currentSize,
+                                                                                sort: "updated_at,DESC"
                                                                             }})]);
             const dataJson = await data;
             this.asideMenuList = dataJson[0].data.typeList;
             this.contentList = dataJson[1].data.supportFaqDTOList;
             this.pagingData = dataJson[1].data.pageMetadataResponse;
+            this.isType = 0;
             } catch (e) {console.error(e)}
         },
 
-        async chooseType (e) {
-            if (this.isType === e) return;
+        async chooseType (e, isPaging = false) {
             this.isType = e;
+            if (!isPaging) this.pagingData = {...this.pagingData, currentPage: 1 };
             try {
                  const data = this.$axios.$get("admin/support/faq", {params: {
                                                                     category: this.isCategory,
-                                                                    type: this.isType,
+                                                                    type: e === 0 ? null : e,
                                                                     device: null,
-                                                                    pageRequest: {
-                                                                        page: 1,
-                                                                        size: 20,
-                                                                        sort: "updated_at,DESC"
-                                                                    }
+                                                                    page: this.pagingData.currentPage,
+                                                                    size: this.pagingData.currentSize,
+                                                                    sort: "updated_at,DESC"
                                                                 }});
                 const dataJson = await data;
                 this.contentList = dataJson.data.supportFaqDTOList;
@@ -111,6 +122,7 @@ export default {
                                           }
                                       }})])
             const dataJson = await data;
+            // console.log(dataJson[2].data.pageMetadataResponse);
             return {
                 typeList: dataJson[0].data.categoryList, 
                 asideMenuList: dataJson[1].data.typeList, 

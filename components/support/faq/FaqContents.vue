@@ -5,7 +5,7 @@
        <div class="FAQListInnerWrap"
             v-for="(data, idx) of contentList"
             :key="idx"
-            @click="chooseIsDetail(data.id)">
+            @click="chooseDetail(data.id)">
             <ul>
                 <li><p>{{$i18n.localeProperties.code === "ko" ? data.typeName : data.typeNameEn}}</p></li>
                 <li>
@@ -26,7 +26,8 @@
             </div>
         </div>
 
-       <common-paging :pagingData="pagingData"/>
+       <common-paging :pagingData="pagingData"
+                      :movePage="movePage"/>
     </span>
     </div>
 </template>
@@ -40,7 +41,8 @@ export default {
     },
     props: {
         contentList: Array,
-        pagingData: Object
+        pagingData: Object,
+        movePage: Function
     },
     data() {
         return {
@@ -49,7 +51,7 @@ export default {
         }
     },
     methods: {
-        chooseIsDetail(e) {
+        chooseDetail(e) {
             this.isDetail = this.isDetail === e ? null : e;
             this.requestData(this.isDetail);
         },

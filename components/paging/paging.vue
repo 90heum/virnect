@@ -5,7 +5,7 @@
             <!-- pre -->
             <span>
                 <!-- 제일 처음 -->
-                <p>  
+                <p @click="movePage(1)">  
                     <!-- 기본 -->
                     <img class="Normal" src="https://velog.velcdn.com/images/kyj0206/post/f0d76ded-a6ba-4133-8cfe-69acd5426cc8/image.png"
                         alt="preFirst">
@@ -13,7 +13,7 @@
                     <img class="Hover" src="https://velog.velcdn.com/images/kyj0206/post/0536892f-39c4-4587-99e1-ae4984d419a6/image.png" alt="preFirstHover">
                 </p>
                 <!-- 바로 이전 -->
-                <p>
+                <p @click="movePage(pagingData.currentPage <= 1 ? 1 : (pagingData.currentPage - 1))">
                     <!-- 기본 -->
                     <img class="Normal" src="https://velog.velcdn.com/images/kyj0206/post/3c675953-cc21-4d10-9392-f04cd794d895/image.png"
                         alt="pre">
@@ -23,19 +23,17 @@
             </span>
             <!-- 페이징 넘버 -->
             <span>
-                <ul class="pasingNum">
-                    <li pasing="1" class="pasingAct">1</li>
-                    <li pasing="2">2</li>
-                    <li pasing="3">3</li>
-                    <li pasing="4">4</li>
-                    <li pasing="5">5</li>
-                    <li pasing="6">6</li>
+                <ul class="pagingNum">
+                    <li v-for="(data, idx) in pagingData.endPage"
+                        :key="idx"
+                        :class="`${pagingData.currentPage === (pagingData.startPage + idx) ? 'pasingAct' : ''}`"
+                        @click="movePage(pagingData.startPage+idx)">{{(pagingData.startPage + idx)}}</li>
                 </ul>
             </span>
             <!--  next -->
             <span>
                 <!-- 바로 다음 -->
-                <p>
+                <p @click="movePage(pagingData.currentPage >= pagingData.totalPage ? pagingData.totalPage : (pagingData.currentPage + 1))">
                     <!-- 기본 -->
                     <img class="Normal" src="https://velog.velcdn.com/images/kyj0206/post/0d43d965-df34-410a-b559-c7adf2ddd7f7/image.png"
                         alt="next">
@@ -43,7 +41,7 @@
                     <img class="Hover" src="https://velog.velcdn.com/images/kyj0206/post/9dd6c55e-325a-4c58-96e8-8021f7de6359/image.png" alt="nextHover">
                 </p>
                 <!-- 제일 마지막 -->
-                <p>
+                <p @click="movePage(pagingData.totalPage)">
                     <!-- 기본 -->
                     <img class="Normal" src="https://velog.velcdn.com/images/kyj0206/post/5f43827b-683e-42c1-a5e6-9f3385241036/image.png"
                         alt="nextLast">
@@ -58,9 +56,9 @@
 <script>
 export default {
     props: {
-        pagingData: Object
+        pagingData: Object,
+        movePage: Function
     }
-
 }
 </script>
 
