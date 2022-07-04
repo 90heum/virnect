@@ -392,7 +392,6 @@ header {
                 background: #fff;
                 box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.15);
                 border: solid 1px #121212;
-                padding: 15px 20px;
 
                 &.languageWrapActive {
                     display: block;
@@ -400,6 +399,7 @@ header {
 
                 span {
                     display: block;
+                    padding: 15px 20px;
 
                     &:hover a {
                         color: #0a51b7;
@@ -407,12 +407,9 @@ header {
 
                     &:first-child {
                         border-bottom: 1px solid #e6e8eb;
-                        padding-bottom: 12px;
                     }
 
-                    &:last-child {
-                        padding-top: 12px;
-                    }
+                    &:last-child {}
 
                     a {
                         white-space: nowrap;
@@ -1193,6 +1190,11 @@ header {
                         &:hover {
                             color: #0a51b7;
                         }
+
+                        &:active {
+                            color: #0a51b7;
+                        }
+
                     }
 
                     ul {
@@ -1304,12 +1306,14 @@ header {
                 .hamSubBottomMenu {
                     position: absolute;
                     bottom: 0;
+                    right: 0;
                     /* display: none; */
-                    max-width: 175px;
+                    max-width: 205px;
                     width: 100%;
                     box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.15);
                     border: solid 1px #0a51b7;
                     background-color: #fff;
+                    padding: 0;
 
                     &.menuHamSubOn {
                         display: block;
@@ -1391,6 +1395,7 @@ header {
             }
 
             .languageWrap {
+                cursor: pointer;
                 max-width: 95px;
                 width: auto;
                 /* display: none; */
@@ -1401,7 +1406,6 @@ header {
                 background: #fff;
                 box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.15);
                 border: solid 1px #121212;
-                padding: 15px 20px;
 
                 &.languageWrapActive {
                     display: block;
@@ -1409,6 +1413,7 @@ header {
 
                 span {
                     display: block;
+                    padding: 15px 20px;
 
                     &:hover {
                         color: #0a51b7;
@@ -1416,12 +1421,9 @@ header {
 
                     &:first-child {
                         border-bottom: 1px solid #e6e8eb;
-                        padding-bottom: 12px;
                     }
 
-                    &:last-child {
-                        padding-top: 12px;
-                    }
+                    &:last-child {}
 
                     a {
                         white-space: nowrap;

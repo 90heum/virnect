@@ -22,19 +22,19 @@ export default {
   data() {
     return {
       activeIdx: 0,
-    }
+    };
   },
   methods: {
     slideDown(idx) {
-      if (this.activeIdx == idx) return (this.activeIdx = null)
-      else return (this.activeIdx = idx)
+      if (this.activeIdx == idx) return (this.activeIdx = null);
+      else return (this.activeIdx = idx);
     },
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>
-@import '~assets/css/mixin.scss';
+@import "~assets/css/mixin.scss";
 .function-part {
   // 기능소개 6개
   @include area-flex(1200px);
@@ -48,7 +48,7 @@ export default {
 
   dl {
     background-position-x: calc(80%);
-    width: calc(100% / 4);
+    width: calc(100% / 3);
     min-height: 320px;
     padding: 26px 30px 28px;
     text-align: left;
@@ -88,7 +88,7 @@ export default {
         .title {
           margin-bottom: 13px;
           color: $point;
-          background-image: url('~assets/images/pages/products/ic-remove@2x.png');
+          background-image: url("~assets/images/pages/products/ic-remove@2x.png");
         }
         .contents {
           display: block;
@@ -101,7 +101,7 @@ export default {
       padding-right: 20px;
       color: #222;
       font-size: 16px;
-      background-image: url('~assets/images/pages/products/ic-add@2x.png');
+      background-image: url("~assets/images/pages/products/ic-add@2x.png");
       background-repeat: no-repeat;
       background-position: right;
       background-size: 20px;

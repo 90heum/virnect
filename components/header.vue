@@ -47,11 +47,10 @@
               @mouseleave="[(gnb2 = false), originalGnbColor2()]"
               v-bind:style="gnbStyle2"
             >
-              <nuxt-link
+              <nuxt-link 
                 to="/products/remote"
-                class="navTab container2"
-                v-bind:style="gnbTextStyle2"
-              >
+                class="navTab container2" 
+                v-bind:style="gnbTextStyle2">
                 Products
                 <i>
                   <img
@@ -456,7 +455,8 @@
               <span>
                 <ul>
                   <li>
-                    <nuxt-link to="/support/notice"
+                    <nuxt-link
+                      to="/support/notice"
                       ><span>{{
                         $t(`supportText.menuList.productNotice.title`)
                       }}</span></nuxt-link

@@ -4,8 +4,10 @@
     <ul class="hamSubMenu">
       <li class="hamUseCase">
         <span class="hamUseCaseTit">
-          <a href="#"> Value </a>
-          <ul class="hamUseCaseMenu" v-if="isSub">
+          <nuxt-link to="/solutions/energy_resource" v-bind:style="hamTitStyle">
+            Value
+          </nuxt-link>
+          <ul class="hamUseCaseMenu" v-if="isSub" v-show="open">
             <li>
               <a href="#"> 인프라/자원 </a>
             </li>
@@ -23,7 +25,11 @@
             </li>
           </ul>
         </span>
-        <span class="hamMenuToggle" @click="[showUse(true)]">
+        <span
+          class="hamMenuToggle"
+          @click="[showUse(), changeHamTit(), toggle()]"
+          v-click-outside="hide"
+        >
           <img
             class="hamSubMenuOpen"
             src="https://velog.velcdn.com/images/kyj0206/post/77d76d78-4bc7-4e93-afa3-23eff596d40a/image.png"
@@ -33,13 +39,14 @@
             class="hamSubMenuClose"
             src="https://velog.velcdn.com/images/kyj0206/post/1ada69e3-933d-498a-a77f-ddb3de372ae8/image.png"
             alt="메뉴 닫기 아이콘"
+            v-if="isSub"
           />
         </span>
       </li>
       <li class="hamProducts">
         <span class="hamProductsTit">
-          <a href="#"> Products </a>
-          <ul class="hamProductsMenu" v-if="isSub2">
+          <nuxt-link to="/products/remote"> Products </nuxt-link>
+          <ul class="hamProductsMenu" v-if="isSub2" v-show="open2">
             <li>
               <a href="#"> VIRNECT Remote </a>
             </li>
@@ -60,7 +67,11 @@
             </li>
           </ul>
         </span>
-        <span class="hamMenuToggle" @click="[showUse2(true)]">
+        <span
+          class="hamMenuToggle"
+          @click="[showUse2(true), toggle2()]"
+          v-click-outside="hide2"
+        >
           <img
             class="hamSubMenuOpen"
             src="https://velog.velcdn.com/images/kyj0206/post/77d76d78-4bc7-4e93-afa3-23eff596d40a/image.png"
@@ -76,7 +87,7 @@
       <li class="hamSupport">
         <span class="hamSupportTit">
           <a href="#"> Support </a>
-          <ul class="hamSupportMenu" v-if="isSub3">
+          <ul class="hamSupportMenu" v-if="isSub3" v-show="open3">
             <li>
               <a href="#"> Product Notice </a>
             </li>
@@ -91,7 +102,11 @@
             </li>
           </ul>
         </span>
-        <span class="hamMenuToggle" @click="[showUse3(true)]">
+        <span
+          class="hamMenuToggle"
+          @click="[showUse3(true), toggle3()]"
+          v-click-outside="hide3"
+        >
           <img
             class="hamSubMenuOpen"
             src="https://velog.velcdn.com/images/kyj0206/post/77d76d78-4bc7-4e93-afa3-23eff596d40a/image.png"
@@ -107,7 +122,7 @@
       <li class="hamNews">
         <span class="hamNewsTit">
           <a href="#"> News </a>
-          <ul class="hamNewsMenu" v-if="isSub4">
+          <ul class="hamNewsMenu" v-if="isSub4" v-show="open4">
             <li>
               <a href="#"> News & Press </a>
             </li>
@@ -119,7 +134,11 @@
             </li>
           </ul>
         </span>
-        <span class="hamMenuToggle" @click="[showUse4(true)]">
+        <span
+          class="hamMenuToggle"
+          @click="[showUse4(true), toggle4()]"
+          v-click-outside="hide4"
+        >
           <img
             class="hamSubMenuOpen"
             src="https://velog.velcdn.com/images/kyj0206/post/77d76d78-4bc7-4e93-afa3-23eff596d40a/image.png"
@@ -134,8 +153,8 @@
       </li>
       <li class="hamCompany">
         <span class="hamCompanyTit">
-          <a href="#"> Company </a>
-          <ul class="hamCompanyMenu" v-if="isSub5">
+          <nuxt-link to="/company/about"> Company </nuxt-link>
+          <ul class="hamCompanyMenu" v-if="isSub5" v-show="open5">
             <li>
               <a href="#"> About VIRNECT </a>
             </li>
@@ -147,7 +166,11 @@
             </li>
           </ul>
         </span>
-        <span class="hamMenuToggle" @click="[showUse5(true)]">
+        <span
+          class="hamMenuToggle"
+          @click="[showUse5(true), toggle5()]"
+          v-click-outside="hide5"
+        >
           <img
             class="hamSubMenuOpen"
             src="https://velog.velcdn.com/images/kyj0206/post/77d76d78-4bc7-4e93-afa3-23eff596d40a/image.png"
@@ -182,7 +205,9 @@
         </a>
         <ul class="hamSubBottomMenu" v-if="isBottomMenu">
           <li class="option">
-            <a href="#">
+            <a
+              href="https://console.virnect.com/?continue=https%3A%2F%2Fvirnect.com%2F"
+            >
               <p>서비스 로그인</p>
               <i>
                 <img
@@ -199,7 +224,7 @@
             </a>
           </li>
           <li class="option">
-            <a href="#">
+            <a href="https://download.virnect.com/remote">
               <p>다운로드 센터 2.0</p>
               <i>
                 <img
@@ -216,7 +241,7 @@
             </a>
           </li>
           <li class="option">
-            <a href="#">
+            <a href="https://workstation.virnect.com/start">
               <p>Workstation 2.0</p>
               <i>
                 <img
@@ -233,7 +258,7 @@
             </a>
           </li>
           <li class="option">
-            <a href="#">
+            <a href="https://remote.virnect.com/home">
               <p>Remote 2.0</p>
               <i>
                 <img
@@ -264,6 +289,7 @@
             v-for="locale in availableLocales"
             :key="locale.code"
             @click.prevent.stop="$i18n.setLocale(locale.code)"
+            @click="langlang()"
           >
             <a>{{ locale.name }}</a>
           </span>
@@ -274,7 +300,7 @@
 </template>
 
 <script>
-//import vClickOutside from 'v-click-outside'
+import ClickOutside from "vue-click-outside";
 
 export default {
   /* directives: {
@@ -282,6 +308,11 @@ export default {
   },
   components: {
   }, */
+  computed: {
+    availableLocales() {
+      return this.$i18n.locales;
+    },
+  },
   props: {
     isMenu: Boolean,
     availableLocales: Array,
@@ -297,8 +328,46 @@ export default {
     isBottomMenu: false,
     isWeb: true,
     showEarth: false,
+    isMenu: false,
+    hamTitStyle: {},
+    open: false,
+    open2: false,
+    open3: false,
+    open4: false,
+    open5: false,
   }),
   methods: {
+    toggle() {
+      this.open = true;
+    },
+    hide() {
+      this.open = false;
+    },
+    toggle2() {
+      this.open2 = true;
+    },
+    hide2() {
+      this.open2 = false;
+    },
+    toggle3() {
+      this.open3 = true;
+    },
+    hide3() {
+      this.open3 = false;
+    },
+    toggle4() {
+      this.open4 = true;
+    },
+    hide4() {
+      this.open4 = false;
+    },
+    toggle5() {
+      this.open5 = true;
+    },
+    hide5() {
+      this.open5 = false;
+    },
+
     showUse() {
       this.isSub = !this.isSub;
     },
@@ -317,6 +386,9 @@ export default {
     test() {
       console.log("test");
       this.$emit("close");
+    },
+    changeHamTit() {
+      this.hamTitStyle.color = "#0a51b7";
     },
     subBottom() {
       this.isBottomMenu = !this.isBottomMenu;
@@ -339,6 +411,12 @@ export default {
                 window.removeEventListener('click', this.onClick);
             } 
         } */
+  },
+  mounted() {
+    this.popupItem = this.$el;
+  },
+  directives: {
+    ClickOutside,
   },
 };
 </script>
