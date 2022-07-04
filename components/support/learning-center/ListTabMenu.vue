@@ -1,6 +1,11 @@
 <template>
+<div>
    <!-- 리스트 탭 -->
-    <div class="LearningCenterTab">
+    <div class="LearningCenterTab ListTabMenuWebWrapper">
+        <div class="LearningCenterMbTab-prev"
+             @click="chooseTabMenu(isTabMenu - 1 < 0 ? categoryList[categoryList.length-1].id : (isTabMenu - 1))">
+            <img src="https://velog.velcdn.com/images/kyj0206/post/ca9d309b-94ce-41db-a002-66a2f0d76ff8/image.png" alt="prebutton">
+        </div>
         <span :class="data.id === isTabMenu ? 'active' : ''"
               v-for="(data, idx) of categoryList"
               :key="idx"
@@ -18,7 +23,12 @@
             </p>
             <p>전체보기</p>
         </span>
+         <div class="LearningCenterMbTab-next"
+              @click="chooseTabMenu(isTabMenu + 1 > (categoryList.length) ? 0 : (isTabMenu + 1))">
+            <img src="https://velog.velcdn.com/images/kyj0206/post/a1bbf083-3da6-413c-9f16-48fc60000827/image.png" alt="nextbutton">
+        </div>
     </div>
+</div>
 </template>
 
 <script>
@@ -32,6 +42,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+ .LearningCenterMbTab-prev, .LearningCenterMbTab-next  { display: none; cursor: pointer; }
     .LearningCenterTab{
         display: flex;
         margin-bottom: 10px;
@@ -74,4 +85,22 @@ export default {
             }
         }
     }
+@media screen and (max-width: 768px) {
+    .LearningCenterTab span { 
+        border: none; 
+        border-bottom: 4px solid #092e6e;
+        display: none;
+    }
+    .LearningCenterTab span.active {
+        background-color: inherit;
+        border: none;
+        display: flex;
+        border-bottom: 4px solid #092e6e;
+        p { color: #616161; }
+    }
+    .LearningCenterMbTab-prev, .LearningCenterMbTab-next  { 
+        display: block;
+        border-bottom: 4px solid #092e6e; 
+    }
+}
 </style>

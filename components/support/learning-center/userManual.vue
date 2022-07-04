@@ -104,6 +104,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/css/pages/support-learning-center.scss";
     .userBox{
         li, ul, a { list-style: none; text-decoration: none; }
         display: flex;
@@ -290,5 +291,8 @@ export default {
                 }
             }
         }
+    }
+    @media screen and (max-width: 768px) {
+      .userBox .userBoxCont>div { width: calc((100% - 30px)/2); }
     }
 </style>

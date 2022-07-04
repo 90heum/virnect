@@ -17,7 +17,9 @@
      <!-- 컨텐츠 -->
         <div class="tabCont">
               <!-- aside -->
-              <aside-menu :typeList="typeList"/>
+              <aside-menu :typeList="typeList"
+                          :chooseTypeMenu="chooseTypeMenu"
+                          :isTypeMenu="isTypeMenu"/>
 
                <!-- 블로그 탭 리스트 -->
                 <span class="LearningCenterList">
@@ -45,13 +47,16 @@ export default {
     data () {
         return {
             isTabMenu: 1,
-
+            isTypeMenu: null
         }
     },
     methods: {
         chooseTabMenu (e) {
             this.isTabMenu = e;
         },
+        chooseTypeMenu (e) {
+            this.isTypeMenu = e;
+        }
     },
     components: {
         HeadBanner,
@@ -75,6 +80,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .LearningCenter{
     li, ul, a { list-style: none; text-decoration: none; }
                 margin: 0 auto;
@@ -91,4 +97,6 @@ export default {
                         width: 100%;
     }
 }
+
+
 </style>

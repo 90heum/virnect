@@ -1,4 +1,5 @@
 <template>
+<div class="surplusWrapper">
    <!-- 탭메뉴 -->
      <span class="LearningCenterAside">
         <span>
@@ -27,17 +28,57 @@
                     alt="LearningCenterTag"></i>
         </span>
     </span>
+
+    <!-- 모바일 어사이드 -->
+        <div class="LearningCenterMbAside select">
+            <div class="selected"
+                 @click="handleToggle()">
+                <div class="selected-icon">
+                    <img src="https://velog.velcdn.com/images/kyj0206/post/0f39f4c6-a786-41ea-b239-84f4997f5712/image.png" alt="다운아이콘">
+                </div>
+                <div class="selected-value">{{isTypeMenu === 0 ? "Video Tutorial" : isTypeMenu ? typeList.find(e => e.id === isTypeMenu).name : "전체"}}</div>
+                <div class="arrow"></div>
+                </div>
+                <ul v-if="isToggle">
+                <li class="option"
+                    @click="chooseTypeMenuAndToggle(null)">전체</li>
+                <li class="option"
+                    @click="chooseTypeMenuAndToggle(typeList[0].id)">{{$i18n.localeProperties.code === "ko" ? typeList[0].name : typeList[0].nameEn}}</li>
+                <li class="option"
+                    @click="chooseTypeMenuAndToggle(0)">Video Tutorial</li>
+                <li class="option"
+                    @click="chooseTypeMenuAndToggle(typeList[3].id)">{{$i18n.localeProperties.code === "ko" ? typeList[3].name : typeList[3].nameEn}}</li>
+                </ul>
+        </div>
+</div>
 </template>
 
 <script>
 export default {
     props: {
-        typeList: Array
+        typeList: Array,
+        chooseTypeMenu: Function,
+        isTypeMenu: Number
+    },
+    data() {
+        return {
+            isToggle: false
+        }
+    },
+    methods: {
+        handleToggle() {
+            this.isToggle = !this.isToggle;
+        },
+        chooseTypeMenuAndToggle (id) {
+            this.isToggle = !this.isToggle;
+            this.chooseTypeMenu(id);
+        }
     }
 }
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/css/pages/support-learning-center.scss";
     .LearningCenterAside{
         display: flex;
         gap: 30px;
@@ -76,6 +117,85 @@ export default {
                     width: 100%;
                 }
             }
+        }
+    }
+
+     // 모바일
+    // 모바일용
+    .LearningCenterMbAside{
+        display: none;
+        max-width: 200px;
+        width: 100%;
+        border: 1px solid #999;
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        color: #121212;
+        ul {
+            max-width: 200px;
+            width: 100%;
+            border: 1px solid #999;
+            position: absolute;
+            background: #fff;
+            border-top: none;
+            margin: 1px 0 0 -1px;
+            cursor: pointer;
+            li {
+                padding: 16.5px 15px;
+                background-color: #f7f8f9;
+                border-bottom: solid 1px #c5c8cf;
+                &:last-child{
+                    border-bottom: none;
+                }
+                &:hover{
+                    background-color: #fff;
+                    color: #0a51b7;
+                }
+            }
+        }
+        .selected {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 15px;
+            .selected-icon{
+                display: flex;
+                align-items: center;
+                img{
+                    max-width: 34px;
+                }
+            }
+            .selected-value {
+                display: block;
+                width: 100%;
+                max-width: 90px;
+            }
+            .arrow {
+                max-width: 19px;
+                width: 100%;
+                height: 19px;
+                background: url("https://velog.velcdn.com/images/kyj0206/post/c30a0983-f07b-4a35-bf95-150eb3f3ab85/image.png") no-repeat;
+                background-size: 100% 100%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px){
+        .LearningCenterMbAside {
+            display: block;
+            transform: translate(0px, -83px);
+            position: absolute;
+        }
+        .LearningCenterMbAside ul { 
+            list-style: none;
+            padding-left: 0px;
+            width: 200px;
+        }
+        .LearningCenterAside { 
+            display: none;
         }
     }
 </style>

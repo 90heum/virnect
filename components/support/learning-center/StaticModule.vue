@@ -31,6 +31,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
     .centerModule{
         padding: 50px 40px;
         width: 100%;
@@ -99,4 +100,13 @@ export default {
             }
         }
     }
+    
+@media screen and (max-width: 650px) {
+    .centerModule {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        padding: 40px;
+    }
+}
 </style>
