@@ -1,31 +1,18 @@
 <template>
    <!-- 리스트 탭 -->
     <div class="LearningCenterTab">
-        <span class="active">
-            <p>
-                <img src="https://velog.velcdn.com/images/kyj0206/post/07e46fe5-174e-4d85-a180-eb0fdfba19ce/image.png" alt="Remote">
-            </p>
-            <p>Remote</p>
+        <span :class="data.id === isTabMenu ? 'active' : ''"
+              v-for="(data, idx) of categoryList"
+              :key="idx"
+              @click="chooseTabMenu(data.id)">
+                <p>
+                    <img :src="data.thumbnail" :alt="data.name" />
+                </p>
+                <p>{{$i18n.localeProperties.code === "ko" ? data.name : data.nameEn}}</p>
         </span>
-        <span>
-            <p>
-                <img src="https://velog.velcdn.com/images/kyj0206/post/b5412054-589d-41d2-870b-c58f6e09f2dc/image.png" alt="Make">
-            </p>
-            <p>Make</p>
-        </span>
-        <span>
-            <p>
-                <img src="https://velog.velcdn.com/images/kyj0206/post/b8c65813-c3fb-453e-8aa4-c1a5a7050e03/image.png" alt="View">
-            </p>
-            <p>View</p>
-        </span>
-        <span>
-            <p>
-                <img src="https://velog.velcdn.com/images/kyj0206/post/11e9d25a-b0fc-4e23-99b5-799d11e6d320/image.png" alt="Workstation">
-            </p>
-            <p>Workstation</p>
-        </span>
-        <span>
+
+        <span @click="chooseTabMenu(0)"
+              :class="isTabMenu === 0 ? 'active' : ''">
             <p>
                 <img src="https://velog.velcdn.com/images/kyj0206/post/90dc6681-fd1c-43de-ba9e-b1557f71b29a/image.png" alt="전체보기">
             </p>
@@ -36,7 +23,11 @@
 
 <script>
 export default {
-
+    props: {
+        categoryList: Array,
+        isTabMenu: Number,
+        chooseTabMenu: Function
+    }
 }
 </script>
 

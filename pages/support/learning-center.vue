@@ -7,7 +7,9 @@
     <!-- 콘텍트 콘텐츠 -->
     <div class="LearningCenter">
 
-    <list-tab-menu />
+    <list-tab-menu :categoryList="categoryList"
+                   :isTabMenu="isTabMenu"
+                   :chooseTabMenu="chooseTabMenu"/>
 
     <!-- 학습센터 고정 모듈 -->
     <static-module />
@@ -15,7 +17,7 @@
      <!-- 컨텐츠 -->
         <div class="tabCont">
               <!-- aside -->
-              <aside-menu />
+              <aside-menu :typeList="typeList"/>
 
                <!-- 블로그 탭 리스트 -->
                 <span class="LearningCenterList">
@@ -40,6 +42,17 @@ import VideoTutoral from "~/components/support/learning-center/videoTutorial.vue
 import VideoRealGuide from "~/components/support/learning-center/videoRealGuide.vue";
 
 export default {
+    data () {
+        return {
+            isTabMenu: 1,
+
+        }
+    },
+    methods: {
+        chooseTabMenu (e) {
+            this.isTabMenu = e;
+        },
+    },
     components: {
         HeadBanner,
         SubMenu,
@@ -49,6 +62,15 @@ export default {
         UserManual,
         VideoTutoral,
         VideoRealGuide
+    },
+    async asyncData ({$axios}) {
+        try {
+            const data = Promise.all([$axios.get("admin/support/learning/category"),
+                                      $axios.get("admin/support/learning/type")]);
+            const dataJson = await data;
+            console.log(dataJson[1].data.data.typeList)
+            return {categoryList: dataJson[0].data.data.categoryList, typeList: dataJson[1].data.data.typeList}
+        } catch (e) {console.error(e)}
     }
 }
 </script>

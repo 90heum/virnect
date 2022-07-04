@@ -7,17 +7,22 @@
                     alt="LearningCenterTag"></i>
         </span>
         <span>
-            <p>User's Manual</p>
+            <p>{{$i18n.localeProperties.code === "ko" ? typeList[0].name : typeList[0].nameEn}}</p>
             <i><img src="https://velog.velcdn.com/images/kyj0206/post/677e0a5b-146e-46a5-a5db-ef2b185febf4/image.png"
                     alt="LearningCenterTag"></i>
         </span>
+
         <span>
-            <p>Video Tutorial</p>
+            <p>{{$i18n.localeProperties.code === "ko" ? "Video Tutorial" : "Video Tutorial"}}</p>
             <i><img src="https://velog.velcdn.com/images/kyj0206/post/677e0a5b-146e-46a5-a5db-ef2b185febf4/image.png"
                     alt="LearningCenterTag"></i>
         </span>
+        <span>{{$i18n.localeProperties.code === "ko" ? typeList[1].name : typeList[1].nameEn}}</span>
+        <span>{{$i18n.localeProperties.code === "ko" ? typeList[2].name : typeList[2].nameEn}}</span>
+
+
         <span>
-            <p>Video Real Guide</p>
+            <p>{{$i18n.localeProperties.code === "ko" ? typeList[3].name : typeList[3].nameEn}}</p>
             <i><img src="https://velog.velcdn.com/images/kyj0206/post/677e0a5b-146e-46a5-a5db-ef2b185febf4/image.png"
                     alt="LearningCenterTag"></i>
         </span>
@@ -26,7 +31,9 @@
 
 <script>
 export default {
-
+    props: {
+        typeList: Array
+    }
 }
 </script>
 
