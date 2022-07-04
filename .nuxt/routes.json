@@ -112,6 +112,13 @@
     "_name": "_4316f983"
   },
   {
+    "name": "support-learning-center",
+    "path": "/support/learning-center",
+    "component": "/Users/hellodigital/virnect/pages/support/learning-center.vue",
+    "chunkName": "pages/support/learning-center",
+    "_name": "_011e49c0"
+  },
+  {
     "name": "support-notice",
     "path": "/support/notice",
     "component": "/Users/hellodigital/virnect/pages/support/notice.vue",

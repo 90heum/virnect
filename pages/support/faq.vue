@@ -137,6 +137,7 @@ export default {
 
 <style lang="scss" scoped>
 .tabCont{
+    >div { width: 100%; }
         display: flex;
         gap: 20px;
         .FAQAside{
