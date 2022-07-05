@@ -2,27 +2,27 @@
 <div class="surplusWrapper">
    <!-- 탭메뉴 -->
      <span class="LearningCenterAside">
-        <span>
+        <span @click="chooseTypeMenuAndToggle(null)">
             <p>전체</p>
             <i><img src="https://velog.velcdn.com/images/kyj0206/post/677e0a5b-146e-46a5-a5db-ef2b185febf4/image.png"
                     alt="LearningCenterTag"></i>
         </span>
-        <span>
+        <span @click="chooseTypeMenuAndToggle(typeList[0].id)">
             <p>{{$i18n.localeProperties.code === "ko" ? typeList[0].name : typeList[0].nameEn}}</p>
             <i><img src="https://velog.velcdn.com/images/kyj0206/post/677e0a5b-146e-46a5-a5db-ef2b185febf4/image.png"
                     alt="LearningCenterTag"></i>
         </span>
 
-        <span>
+        <span @click="chooseTypeMenuAndToggle(0)">
             <p>{{$i18n.localeProperties.code === "ko" ? "Video Tutorial" : "Video Tutorial"}}</p>
             <i><img src="https://velog.velcdn.com/images/kyj0206/post/677e0a5b-146e-46a5-a5db-ef2b185febf4/image.png"
                     alt="LearningCenterTag"></i>
         </span>
-        <span>{{$i18n.localeProperties.code === "ko" ? typeList[1].name : typeList[1].nameEn}}</span>
-        <span>{{$i18n.localeProperties.code === "ko" ? typeList[2].name : typeList[2].nameEn}}</span>
+        <span @click="chooseTypeMenuAndToggle(typeList[1].id)">{{$i18n.localeProperties.code === "ko" ? typeList[1].name : typeList[1].nameEn}}</span>
+        <span @click="chooseTypeMenuAndToggle(typeList[2].id)">{{$i18n.localeProperties.code === "ko" ? typeList[2].name : typeList[2].nameEn}}</span>
 
 
-        <span>
+        <span @click="chooseTypeMenuAndToggle(typeList[3].id)">
             <p>{{$i18n.localeProperties.code === "ko" ? typeList[3].name : typeList[3].nameEn}}</p>
             <i><img src="https://velog.velcdn.com/images/kyj0206/post/677e0a5b-146e-46a5-a5db-ef2b185febf4/image.png"
                     alt="LearningCenterTag"></i>
@@ -41,13 +41,13 @@
                 </div>
                 <ul v-if="isToggle">
                 <li class="option"
-                    @click="chooseTypeMenuAndToggle(null)">전체</li>
+                    @click="chooseTypeMenuAndToggle(null, true)">전체</li>
                 <li class="option"
-                    @click="chooseTypeMenuAndToggle(typeList[0].id)">{{$i18n.localeProperties.code === "ko" ? typeList[0].name : typeList[0].nameEn}}</li>
+                    @click="chooseTypeMenuAndToggle(typeList[0].id, true)">{{$i18n.localeProperties.code === "ko" ? typeList[0].name : typeList[0].nameEn}}</li>
                 <li class="option"
-                    @click="chooseTypeMenuAndToggle(0)">Video Tutorial</li>
+                    @click="chooseTypeMenuAndToggle(0, true)">Video Tutorial</li>
                 <li class="option"
-                    @click="chooseTypeMenuAndToggle(typeList[3].id)">{{$i18n.localeProperties.code === "ko" ? typeList[3].name : typeList[3].nameEn}}</li>
+                    @click="chooseTypeMenuAndToggle(typeList[3].id, true)">{{$i18n.localeProperties.code === "ko" ? typeList[3].name : typeList[3].nameEn}}</li>
                 </ul>
         </div>
 </div>
@@ -69,8 +69,8 @@ export default {
         handleToggle() {
             this.isToggle = !this.isToggle;
         },
-        chooseTypeMenuAndToggle (id) {
-            this.isToggle = !this.isToggle;
+        chooseTypeMenuAndToggle (id, isMobile = false) {
+            if (isMobile) this.isToggle = !this.isToggle;
             this.chooseTypeMenu(id);
         }
     }
@@ -78,7 +78,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~/assets/css/pages/support-learning-center.scss";
+.surplusWrapper {
+            max-width: 180px;
+            width: 100%;
+}
     .LearningCenterAside{
         display: flex;
         gap: 30px;

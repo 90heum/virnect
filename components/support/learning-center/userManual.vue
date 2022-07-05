@@ -1,6 +1,7 @@
 <template>
         <!-- User's Manual -->
-    <div class="userBox">
+    <div class="userBox"
+         v-if="isDetailList === 1 || isDetailList === null">
         <!-- 타이틀 -->
         <span class="userBoxTit">
             <p>User's Manual</p>
@@ -13,9 +14,15 @@
         </span>
         <!-- 컨텐츠박스 -->
         <span class="userBoxCont">
-            <div v-for="(data, idx) of conetentList"
+            <div v-for="(data, idx) of contentList ? contentList.filter((e, idx) => {
+                    if (!isDetailList && idx < 6) {
+                        return e;
+                    } else if (isDetailList) {
+                        return e;
+                    }
+                }) : []"
                 :key="idx">
-                <nuxt-link to="#"> 
+                <nuxt-link :to="`learning-manual-detail?noticeId=${data.id}`"> 
                     <span class="listImg">
                         <img :src="`${data.thumbnail ? data.thumbnail : 'https://velog.velcdn.com/images/kyj0206/post/75a8bf3a-fe84-47e5-aa54-fca6f438b599/image.png'}`" />
                     </span>
@@ -39,14 +46,26 @@
         <span class="mobileMore">
             <button><a href="#">전체보기</a></button>
         </span>
+        
+        <div v-if="isDetailList">
+            <common-paging :pagingData="pagingData"
+                           :movePage="movePage"/>
+        </div>
     </div>
 </template>
 
 <script>
-export default {
-    props: {
-        conetentList: Array,
+import CommonPaging from "~/components/paging/paging.vue";
 
+export default {
+    components: {
+        CommonPaging,
+    },
+    props: {
+        contentList: Array,
+        isDetailList: [Number, Boolean],
+        pagingData: Object,
+        movePage: Function
     },
     methods: {
         getFileDownload(e) {
@@ -56,13 +75,12 @@ export default {
                 fileDownload(res.data, "테스트고양이.jpg");
             })
             .catch(e => console.error(e))
-        }
-    }
+        },
+    },
 }
 </script>
 
 <style lang="scss" scoped>
-@import "~/assets/css/pages/support-learning-center.scss";
     .userBox{
         li, ul, a { list-style: none; text-decoration: none; }
         display: flex;

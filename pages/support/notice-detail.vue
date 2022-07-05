@@ -35,7 +35,7 @@
                             </span>
                         </span>
                         <!-- 블로그 -->
-                        <span class="detailBlog" v-html="`${$i18n.localeProperties.code === 'ko' ? contentData.contents : contentData.contentsEn}`">
+                        <span class="detailBlog" v-html="`${$i18n.localeProperties.code === 'ko' ? contentData.content : contentData.contentEn}`">
                         </span>
 
                         <!-- PreNext -->

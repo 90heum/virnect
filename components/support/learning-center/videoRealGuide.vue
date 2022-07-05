@@ -1,6 +1,7 @@
 <template>
   <!-- Video Real Guide -->
-    <div class="guideBox">
+    <div class="guideBox"
+         v-if="isDetailList === 4 || isDetailList === null">
         <!-- 타이틀 -->
         <span class="guideBoxTit">
             <p>UVideo Real Guide</p>
@@ -13,9 +14,15 @@
         </span>
         <!-- 컨텐츠박스 -->
         <span class="guideBoxCont">
-            <div v-for="(data, idx) of contentList"
+            <div v-for="(data, idx) of contentList ? contentList.filter((e, idx) => {
+                    if (!isDetailList && idx < 3) {
+                        return e;
+                    } else if (isDetailList) {
+                        return e;
+                    }
+                }) : []"
                 :key="idx">
-                <nuxt-link to="#">
+                <nuxt-link :to="`learning-video-detail?noticeId=${data.id}`">
                     <span class="listImg">
                         <img :src="`${data.thumbnail ? data.thumbnail : 'https://velog.velcdn.com/images/kyj0206/post/75a8bf3a-fe84-47e5-aa54-fca6f438b599/image.png'}`" />
                     </span>
@@ -35,13 +42,26 @@
         <span class="mobileMore">
             <button><a href="#">전체보기</a></button>
         </span>
+
+        <div v-if="isDetailList">
+            <common-paging :pagingData="pagingData"
+                           :movePage="movePage"/>
+        </div>
     </div>
 </template>
 
 <script>
+import CommonPaging from "~/components/paging/paging.vue";
+
 export default {
+    components: {
+        CommonPaging,
+    },
     props: {
-        contentList: Array
+        contentList: Array,
+        isDetailList: [Number, Boolean],
+        pagingData: Object,
+        movePage: Function
     }
 }
 </script>

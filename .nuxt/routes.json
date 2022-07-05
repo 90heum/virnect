@@ -119,6 +119,20 @@
     "_name": "_011e49c0"
   },
   {
+    "name": "support-learning-manual-detail",
+    "path": "/support/learning-manual-detail",
+    "component": "/Users/hellodigital/virnect/pages/support/learning-manual-detail.vue",
+    "chunkName": "pages/support/learning-manual-detail",
+    "_name": "_632d4e86"
+  },
+  {
+    "name": "support-learning-video-detail",
+    "path": "/support/learning-video-detail",
+    "component": "/Users/hellodigital/virnect/pages/support/learning-video-detail.vue",
+    "chunkName": "pages/support/learning-video-detail",
+    "_name": "_2467f924"
+  },
+  {
     "name": "support-notice",
     "path": "/support/notice",
     "component": "/Users/hellodigital/virnect/pages/support/notice.vue",
