@@ -128,9 +128,10 @@ html:lang(en) {
 
   justify-content: center;
 
+
   dt {
 
-    //  float: left;
+
 
     width: 160px;
     //  font-family: $noto;
@@ -151,6 +152,23 @@ html:lang(en) {
     .title {
       margin-bottom: 12px;
       font-weight: 500;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .insight-section {
+      align-items: center;
+
+      background-color: red;
+    }
+
+    dt {
+      float: left;
+      background-color: #8b96a8;
+    }
+
+    dd {
+      float: left;
     }
   }
 
@@ -471,6 +489,7 @@ html:lang(en) {
   margin-top: 108px;
 
   dl {
+
     margin-bottom: 44px;
     padding-top: 24px;
     text-align: left;

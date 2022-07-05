@@ -9,14 +9,14 @@
           />
         </i>
         <p>VIRNECT Make</p>
-        <h2> {{$t("productsText.makeSubTitle.title")}}</h2>
+        <h2>{{ $t("productsText.makeSubTitle.title") }}</h2>
         <span class="subExplanation">
-          {{$t("productsText.makeSubTitle.contents")}}
+          {{ $t("productsText.makeSubTitle.contents") }}
         </span>
         <span>
           <button>
             <a href="#">
-              <p>{{$t("productsText.makeSubButton.know")}}</p>
+              <p>{{ $t("productsText.makeSubButton.know") }}</p>
               <p>
                 <img
                   src="https://velog.velcdn.com/images/kyj0206/post/ede40cab-2b1a-47ff-a338-ad93d68b93f4/image.png"
@@ -26,13 +26,15 @@
             </a>
           </button>
           <button>
-            <a href="#">{{$t("productsText.makeSubButton.free")}}</a>
+            <a href="https://pardot.virnect.com/l/929783/2022-06-16/3nplr">{{
+              $t("productsText.makeSubButton.free")
+            }}</a>
           </button>
         </span>
       </span>
       <video autoplay muted>
         <source
-          src="https://player.vimeo.com/external/560735983.hd.mp4?s=e14e93e201c67212624d232508ddcad911d7d617&profile_id=174"
+          src="https://player.vimeo.com/ external/560736136.hd.mp4? s=34d4f2557f02474e88d1c1450bbecf3a e5ebb8cb&profile_id=174"
         />
       </video>
     </div>

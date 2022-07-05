@@ -19,21 +19,7 @@
               v-if="isToggleNum === 1 || isToggleOn"
               @click="handleMenuToggle(1)"
             >
-              <a href="#">
-                <p>
-                  <img
-                    src="https://5878418.fs1.hubspotusercontent-na1.net/hubfs/5878418/sungwoo/icon-product-remote@2x.png"
-                    alt="Remote"
-                  />
-                </p>
-                <p>Remote</p>
-              </a>
-            </li>
-            <li
-              v-if="isToggleNum === 2 || isToggleOn"
-              @click="handleMenuToggle(2)"
-            >
-              <a href="#">
+              <nuxt-link :to="'/products/make'">
                 <p>
                   <img
                     src="https://5878418.fs1.hubspotusercontent-na1.net/hubfs/5878418/sungwoo/icon-product-make@2x.png"
@@ -41,16 +27,30 @@
                   />
                 </p>
                 <p>Make</p>
+              </nuxt-link>
+            </li>
+            <li
+              v-if="isToggleNum === 2 || isToggleOn"
+              @click="handleMenuToggle(2)"
+            >
+              <nuxt-link :to="'/products/remote'">
+                <p>
+                  <img
+                    src="https://5878418.fs1.hubspotusercontent-na1.net/hubfs/5878418/sungwoo/icon-product-remote@2x.png"
+                    alt="Remote"
+                  />
+                </p>
+                <p>Remote</p>
                 <p>
                   <img src="" alt="" />
                 </p>
-              </a>
+              </nuxt-link>
             </li>
             <li
               v-if="isToggleNum === 3 || isToggleOn"
               @click="handleMenuToggle(3)"
             >
-              <a href="#">
+              <nuxt-link :to="'/products/view'">
                 <p>
                   <img
                     src="https://5878418.fs1.hubspotusercontent-na1.net/hubfs/5878418/sungwoo/icon-product-view@2x.png"
@@ -61,13 +61,13 @@
                 <p>
                   <img src="" alt="" />
                 </p>
-              </a>
+              </nuxt-link>
             </li>
             <li
               v-if="isToggleNum === 4 || isToggleOn"
               @click="handleMenuToggle(4)"
             >
-              <a href="#">
+              <nuxt-link :to="'/products/twin'">
                 <p>
                   <img
                     src="https://5878418.fs1.hubspotusercontent-na1.net/hubfs/5878418/sungwoo/icon-product-twin@2x.png"
@@ -78,13 +78,13 @@
                 <p>
                   <img src="" alt="" />
                 </p>
-              </a>
+              </nuxt-link>
             </li>
             <li
               v-if="isToggleNum === 5 || isToggleOn"
               @click="handleMenuToggle(5)"
             >
-              <a href="#">
+              <nuxt-link :to="'/products/track'">
                 <p>
                   <img
                     src="https://5878418.fs1.hubspotusercontent-na1.net/hubfs/5878418/sungwoo/icon-product-track@2x.png"
@@ -95,13 +95,13 @@
                 <p>
                   <img src="" alt="" />
                 </p>
-              </a>
+              </nuxt-link>
             </li>
             <li
               v-if="isToggleNum === 6 || isToggleOn"
               @click="handleMenuToggle(6)"
             >
-              <a href="#">
+              <nuxt-link :to="'/products/ms'">
                 <p>
                   <img
                     src="https://5878418.fs1.hubspotusercontent-na1.net/hubfs/5878418/sungwoo/icon-product-xrdevice.png"
@@ -112,7 +112,7 @@
                 <p>
                   <img src="" alt="" />
                 </p>
-              </a>
+              </nuxt-link>
             </li>
           </ul>
         </span>

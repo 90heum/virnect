@@ -196,6 +196,10 @@
                             .serviceSelect {
                                 display: flex;
                                 align-items: center;
+                                
+                                &:hover {
+                                    background-color: #fff;
+                                }
                                 .select {
                                     cursor: pointer;
                                     max-width: 178px;
@@ -229,7 +233,7 @@
                                         max-width: 178px;
                                         width: 100%;
                                         position: absolute;
-                                        top: 34px;
+                                        top: 33px;
                                         left: -1px;
                                         border: 1px solid #0a51b7;
                                         background: #fff;

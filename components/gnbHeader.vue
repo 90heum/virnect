@@ -36,7 +36,7 @@
         </nav>
         <!-- 데모신청 박스 -->
         <div class="demo">
-          <a href="#"> 데모신청 </a>
+          <a href="https://pardot.virnect.com/l/929783/2022-06-16/3nplr"> 데모신청 </a>
         </div>
         <!-- 서비스선택 박스 -->
         <div class="serviceSelect" @click="showServiceMenu">

@@ -47,10 +47,11 @@
               @mouseleave="[(gnb2 = false), originalGnbColor2()]"
               v-bind:style="gnbStyle2"
             >
-              <nuxt-link 
+              <nuxt-link
                 to="/products/remote"
-                class="navTab container2" 
-                v-bind:style="gnbTextStyle2">
+                class="navTab container2"
+                v-bind:style="gnbTextStyle2"
+              >
                 Products
                 <i>
                   <img
@@ -145,13 +146,15 @@
           </ul>
         </nav>
         <div class="demo">
-          <a href="#"> 데모신청 </a>
+          <a href="https://pardot.virnect.com/l/929783/2022-06-16/3nplr">
+            데모신청
+          </a>
         </div>
         <div
           class="serviceSelect"
-          @click="[showServiceMenu()]"
+          @click="[showServiceMenu(), toggle(), (showEarth = false)]"
+          v-click-outside="serviceHide"
           v-if="isWeb"
-          v-on:click="showEarth = false"
         >
           <div class="select" v-bind:style="gnb6" visible="visible">
             <div class="selected">
@@ -173,7 +176,7 @@
                 />
               </div>
             </div>
-            <ul v-if="isServiceMenu">
+            <ul v-if="isServiceMenu" v-show="serviceOpen">
               <li class="option">
                 <a
                   href="https://console.virnect.com/?continue=https%3A%2F%2Fvirnect.com%2F"
@@ -250,14 +253,21 @@
         </div>
 
         <!-- 언어선택 박스 -->
-        <div class="language" @click="[(lang = true), langlang()]" v-if="isWeb">
+        <div
+          class="language"
+          @click="
+            [(lang = true), langlang(), toggle2(), (isServiceMenu = false)]
+          "
+          v-if="isWeb"
+          v-click-outside="langHide"
+        >
           <i>
             <img
               src="https://velog.velcdn.com/images/kyj0206/post/3904dc78-e6ec-44d2-8bc0-f6e4c0c7c3a0/image.png"
               alt="글로벌이미지"
             />
           </i>
-          <div class="languageWrap" v-if="showEarth">
+          <div class="languageWrap" v-if="showEarth" v-show="langOpen">
             <span
               v-for="locale in availableLocales"
               :key="locale.code"
@@ -455,8 +465,7 @@
               <span>
                 <ul>
                   <li>
-                    <nuxt-link
-                      to="/support/notice"
+                    <nuxt-link to="/support/notice"
                       ><span>{{
                         $t(`supportText.menuList.productNotice.title`)
                       }}</span></nuxt-link
@@ -618,6 +627,7 @@
 <script>
 import SubSolutionMenu from "./modules/SubSolutionMenu.vue";
 import MobileHeader from "../components/Gnb/headerPartial/mobileHeader.vue";
+import ClickOutside from "vue-click-outside";
 
 const navList = [
   { title: "Use Case" },
@@ -655,11 +665,6 @@ export default {
     serviceShow: false,
     gnbTextStyle: {},
     gnbClickStyle: {},
-    toggle1: false,
-    toggle2: false,
-    toggle3: false,
-    toggle4: false,
-    toggle5: false,
     ghost1: false,
     ghost2: false,
     ghost3: false,
@@ -685,6 +690,8 @@ export default {
     isNavMenu: false,
     isWeb: true,
     isMenu: false,
+    serviceOpen: false,
+    langOpen: false,
   }),
   components: {
     SubSolutionMenu,
@@ -693,6 +700,10 @@ export default {
   mounted() {
     if (process.client)
       window.innerWidth > 1025 ? (this.isWeb = true) : (this.isWeb = false);
+    this.popupItem = this.$el;
+  },
+  directives: {
+    ClickOutside,
   },
   created() {
     if (process.client) {
@@ -713,10 +724,21 @@ export default {
     },
     showServiceMenu() {
       this.isServiceMenu = !this.isServiceMenu;
-      this.gnb6.backgroundColor = "#0a51b7";
+      /* this.gnb6.backgroundColor = "#0a51b7"; */
+    },
+    toggle() {
+      this.serviceOpen = true;
+    },
+    serviceHide() {
+      this.serviceOpen = false;
+    },
+    toggle2() {
+      this.langOpen = true;
+    },
+    langHide() {
+      this.langOpen = false;
     },
     changeBorder() {
-      this.gnbStyle1.borderBottomColor = "#fff";
       this.gnbStyle1.backgroundColor = "#121212";
       this.gnbTextStyle1.color = "#fff";
     },
@@ -775,10 +797,10 @@ export default {
       this.gnbClickStyle.color = this.isNavMenu ? {border:'solid 1px #fff'} : {border:'none'}
     }, */
     handleReactiveView() {
-      if (window.innerWidth > 1025 && !this.isWeb) {
+      if (process.client.window.innerWidth > 1025 && !this.isWeb) {
         this.isWeb = true;
         this.isMenu = false;
-      } else if (window.innerWidth < 1025 && this.isWeb) {
+      } else if (process.client.window.innerWidth < 1025 && this.isWeb) {
         this.isWeb = false;
         this.gnbTextStyle.color = "#fff";
         this.gnbStyle.backgroundColor = "#121212";

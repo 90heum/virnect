@@ -13,21 +13,22 @@ export default {
     boldText: String,
     btnText: String,
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>
-@import '~assets/css/pages/products.scss';
+@import "~assets/css/pages/products.scss";
 .roi-part {
   margin-top: 100px;
   padding-top: 100px;
   padding-bottom: 100px;
   text-align: center;
-  background: url('~assets/images/pages/solution/img-solutions-roi.png')
+  background: url("~assets/images/pages/solution/img-solutions-roi.png")
     no-repeat;
   background-size: cover;
   p {
     font-size: 34px;
+    color: black;
   }
   .bold {
     margin-top: 4px;
@@ -43,7 +44,7 @@ export default {
     margin-bottom: 120px;
     padding-top: 50px;
     padding-bottom: 48px;
-    background: url('~assets/images/pages/solution/img-solutions-roi-m.png')
+    background: url("~assets/images/pages/solution/img-solutions-roi-m.png")
       no-repeat;
     background-size: cover;
     p {

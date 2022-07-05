@@ -1,80 +1,73 @@
 {
 	"productsText": {
-		"trackSubTitle" : {
-			"title" : "검출/추적용 XR 개발 엔진",
-			"contents" : "VIRNECT Track은 빠르고 정확하게 객체를 학습, 인식 검출, 추적하는 버넥트 자체 개발 XR 엔진입니다. 버넥트 XR 제품들에 탑재되어 뛰어 난 성능과 운영 퍼포먼스를 제공하고 있습니다."
+		"trackSubTitle": {
+			"title": "검출/추적용 XR 개발 엔진",
+			"contents": "VIRNECT Track은 빠르고 정확하게 객체를 학습, 인식 검출, 추적하는 버넥트 자체 개발 XR 엔진입니다. 버넥트 XR 제품들에 탑재되어 뛰어 난 성능과 운영 퍼포먼스를 제공하고 있습니다."
 		},
-
-		"trackSubButton" : {
-			"know" : "자세히 보기",
-			"free" : "데모신청"
+		"trackSubButton": {
+			"know": "자세히 보기",
+			"free": "데모신청"
 		},
-		"twinSubTitle" : {
-			"title" : "XR 기반 3D 현장 관리 솔루션",
-			"contents" : "VIRNECT Twin은 산업 현장을 가상 모델로 재현하고 이를 실제 데이터와 연동하여, 산업 현장의 운영 상태 및 프로세스를 모니터링할 수 있는 제품입니다"
+		"twinSubTitle": {
+			"title": "XR 기반 3D 현장 관리 솔루션",
+			"contents": "VIRNECT Twin은 산업 현장을 가상 모델로 재현하고 이를 실제 데이터와 연동하여, 산업 현장의 운영 상태 및 프로세스를 모니터링할 수 있는 제품입니다"
 		},
-
-		"twinSubButton" : {
-			"know" : "자세히 보기",
-			"free" : "데모신청"
+		"twinSubButton": {
+			"know": "자세히 보기",
+			"free": "데모신청"
 		},
-		"viewSubTitle" : {
-			"title" : "XR 정보 및 데이터 시각화 솔루션",
-			"contents" : "VIRNECT View를 통해 작업 매뉴얼, 안전 가이드 등의 업무 정보와 IoT 센서 및 SCADA 등 데이터 정보를 현장에서 바로 확인할 수 있습니다."
+		"viewSubTitle": {
+			"title": "XR 정보 및 데이터 시각화 솔루션",
+			"contents": "VIRNECT View를 통해 작업 매뉴얼, 안전 가이드 등의 업무 정보와 IoT 센서 및 SCADA 등 데이터 정보를 현장에서 바로 확인할 수 있습니다."
 		},
-
-		"viewSubButton" : {
-			"know" : "자세히 보기",
-			"free" : "데모신청"
+		"viewSubButton": {
+			"know": "자세히 보기",
+			"free": "데모신청"
 		},
-		"makeSubTitle" : {
-			"title" : "XR 콘텐츠 제작 All-In-One솔루션",
-			"contents" : "VIRNECT Make는 쉽고 빠르게 현장의 설비 운영/작업 절차 등 운영에 필요한 모든 정보와 지식을 XR 콘텐츠로 제작 가능한 도구입니다."
+		"makeSubTitle": {
+			"title": "XR 콘텐츠 제작 All-In-One솔루션",
+			"contents": "VIRNECT Make는 쉽고 빠르게 현장의 설비 운영/작업 절차 등 운영에 필요한 모든 정보와 지식을 XR 콘텐츠로 제작 가능한 도구입니다."
 		},
-
-		"makeSubButton" : {
-			"know" : "자세히 보기",
-			"free" : "데모신청"
+		"makeSubButton": {
+			"know": "자세히 보기",
+			"free": "데모신청"
 		},
-		"remoteSubTitle" : {
-			"title" : "XR 원격 협업 솔루션",
-			"contents" : "VIRNECT Remote는 시/공간 제약 없이 여러 현장을 하나로 연결하여 자유롭게 정보를 공유합니다."
+		"remoteSubTitle": {
+			"title": "XR 원격 협업 솔루션",
+			"contents": "VIRNECT Remote는 시/공간 제약 없이 여러 현장을 하나로 연결하여 자유롭게 정보를 공유합니다."
 		},
-
-		"remoteSubButton" : {
-			"know" : "자세히 보기",
-			"free" : "데모신청"
+		"remoteSubButton": {
+			"know": "자세히 보기",
+			"free": "데모신청"
 		},
-
-		"productPropertyTitle" : {
-			"title" : "제품특징",
-			"contents" : "업계 최고 수준의 기술력을 통한 VIRNECT Remote만의 특징"
-		},	
-	
+		"productPropertyTitle": {
+			"title": "제품특징",
+			"contents": "업계 최고 수준의 기술력을 통한 VIRNECT Remote만의 특징"
+		},
 		"productPropertyText": {
-			"multiple" : "Web/App, Smart Glass, 360º Camera, Robot 등 다양한 구동 환경 제공",
-			"translation" : "설정한 언어로 실시간 통번역",
-			"images" : "네트워크 상태가 불안정해도 고화질 영상 선택 가능",
-			"secured" : "내부망 내 구축을 통한 보안성 확보",
-			"autoStart" : "RealWear 기기 전원을 켜면 Remote 자동 실행 및 빠른 사용",
-			"personalization" : "고객 맞춤형 커스터마이징 기능 탑재 가능"
-		},	
-
+			"multiple": "Web/App, Smart Glass, 360º Camera, Robot 등 다양한 구동 환경 제공",
+			"translation": "설정한 언어로 실시간 통번역",
+			"images": "네트워크 상태가 불안정해도 고화질 영상 선택 가능",
+			"secured": "내부망 내 구축을 통한 보안성 확보",
+			"autoStart": "RealWear 기기 전원을 켜면 Remote 자동 실행 및 빠른 사용",
+			"personalization": "고객 맞춤형 커스터마이징 기능 탑재 가능"
+		},
 		"xrSolutionTitle": {
-			"category" : "AR 다자간 원격 협업",
-			"title" : "XR 원격 협업 솔루션",
-			"contents" : "VIRNECT Remote의 실시간 원격협업 서비스를 통해 산업 현장에 필요한 정보와 이슈를 실시간으로 공유하여 언제 어디서든 업무 대응이 가능합니다. 빠르고 간편하게 협업이 가능하며 기존의 익숙한 업무 환경을 그대로 유지하여 업무의 정확성과 효율성을 높일 수 있습니다."
-		},	
-
+			"category": "제품개요",
+			"title": "XR 원격 협업 솔루션",
+			"contents": "VIRNECT Remote의 실시간 원격협업 서비스를 통해 산업 현장에 필요한 정보와 이슈를 실시간으로 공유하여 언제 어디서든 업무 대응이 가능합니다. 빠르고 간편하게 협업이 가능하며 기존의 익숙한 업무 환경을 그대로 유지하여 업무의 정확성과 효율성을 높일 수 있습니다."
+		},
 		"xrSolutionText": {
-			"TimeCost" : "현지공장 출장 비용, 시간을 획기적으로 줄일 수 있습니다",
-			"Quicky" : "정보를 신속하고 정확하게 전달할 수 있습니다.",
-			"Risks" : "긴급상황 발생 시 외부 전문가들의 신속한 도움을 받을 수 있습니다."
-		},	
-
+			"TimeCost": "현지공장 출장 비용, 시간을 획기적으로 줄일 수 있습니다",
+			"Quicky": "정보를 신속하고 정확하게 전달할 수 있습니다.",
+			"Risks": "긴급상황 발생 시 외부 전문가들의 신속한 도움을 받을 수 있습니다."
+		},
 		"visualText": {
 			"title": "산업 현장을 위해 최적화된 <br class='mobile-hidden'>제품을 만나보세요",
 			"contents": "VIRNECT의 제품은 AR 원천기술 및 <br class='mobile-show'>디지털 트윈 기술을 바탕으로 <br class='mobile-hidden'>​안전하고 효율적인 <br class='mobile-show'>미래 산업 현장을 만들어 갑니다."
+		},
+		"productText": {
+			"title": "AR 및 디지털 트윈 기술을 바탕으로 미래 산업을 만들어 갑니다."
 		},
 		"supportTitle": {
 			"category": "사용 및 지원",
