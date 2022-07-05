@@ -36,12 +36,12 @@
 </template>
 
 <script>
-import introPart from '../partials/IntroducePart.vue'
-import benefitPart from '../partials/BenefitPart'
-import examplePart from '../partials/ExamplePart'
-import bgSlidePart from '../partials/BgSlidePart.vue'
+import introPart from "../partials/IntroducePart.vue";
+import benefitPart from "../partials/BenefitPart";
+import examplePart from "../partials/ExamplePart";
+import bgSlidePart from "../partials/BgSlidePart.vue";
 
-import headingModule from '../../modules/Heading'
+import headingModule from "../../modules/Heading";
 export default {
   components: {
     introPart,
@@ -53,16 +53,16 @@ export default {
   data() {
     return {
       msIntro: {
-        logo: '../images/pages/products/logo-products-virnectxms',
-        youtubeLink: 'eqFqtAJMtYE',
+        logo: "../images/pages/products/logo-products-virnectxms",
+        youtubeLink: "eqFqtAJMtYE",
       },
-      exampleAlign: 'left',
-    }
+      exampleAlign: "left",
+    };
   },
-}
+};
 </script>
 <style lang="scss" scoped>
-@import '~assets/css/pages/products.scss';
+@import "~assets/css/pages/products.scss";
 
 .ms-section .introduce-part /deep/ {
   .logo-img {
