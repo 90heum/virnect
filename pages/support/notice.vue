@@ -11,7 +11,8 @@
                 <div class="noticeWrap">
                     <!-- aside -->
                    <aside-menu :asideData="asideData"
-                               :chooseType="chooseType"/>
+                               :chooseType="chooseType"
+                               :isType="isType"/>
 
                     <!-- 블로그 리스트 -->
                   <notice-contents :pagingData="pagingData"
@@ -92,5 +93,11 @@ export default {
     max-width: 1260px;
     width: 100%;
     padding: 150px 30px;
+ }
+ @media screen and (max-width: 1024px) {
+     .noticeWrap {
+        flex-direction: column;
+        padding: 100px 24px;
+     }
  }
 </style>

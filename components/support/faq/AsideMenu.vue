@@ -1,4 +1,5 @@
 <template>
+<div>
     <!-- aside -->
     <span class="FAQAside">
         <span @click="chooseType(null)">
@@ -12,6 +13,8 @@
                     alt="noticeTag"></i>
         </span>
     </span>
+
+</div>
 </template>
 
 <script>
