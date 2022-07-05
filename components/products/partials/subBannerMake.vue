@@ -4,7 +4,7 @@
       <span>
         <i>
           <img
-            src="https://velog.velcdn.com/images/kyj0206/post/3ab14d47-45c9-4f4c-aaa0-ead413260671/image.png"
+            src="https://velog.velcdn.com/images/akwjdgma/post/2d56ad52-b312-440e-8c66-9d70ac3391e7/image.png"
             alt="VIRNECT Remote"
           />
         </i>
@@ -17,7 +17,7 @@
           <button>
             <a href="#">
               <p>{{ $t("productsText.makeSubButton.know") }}</p>
-              <p>
+              <p class="bb">
                 <img
                   src="https://velog.velcdn.com/images/kyj0206/post/ede40cab-2b1a-47ff-a338-ad93d68b93f4/image.png"
                   alt=""
