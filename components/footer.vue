@@ -19,50 +19,50 @@
         <span class="footerNavWeb">
           <ul>
             <li>
-              <a href="#">Value</a>
+              <nuxt-link to="/solutions/energy_resource">Value</nuxt-link>
               <ul>
-                <li><a href="#">인프라/자원</a></li>
-                <li><a href="#">제조/건설</a></li>
-                <li><a href="#">공공/교육</a></li>
-                <li><a href="#">엔터테인먼트</a></li>
-                <li><a href="#">기타</a></li>
+                <li><nuxt-link to="/solutions/energy_resource">인프라/자원</nuxt-link></li>
+                <li><nuxt-link to="/solutions/oil_chemical_battery">제조/건설</nuxt-link></li>
+                <li><nuxt-link to="/solutions/motor_parts">공공/교육</nuxt-link></li>
+                <li><nuxt-link to="/solutions/airline_railroad">엔터테인먼트</nuxt-link></li>
+                <li><nuxt-link to="/solutions/epc">기타</nuxt-link></li>
               </ul>
             </li>
             <li>
-              <a href="#">Products</a>
+              <nuxt-link to="/products/remote">Products</nuxt-link>
               <ul>
-                <li><a href="#">VIRNECT Remote</a></li>
-                <li><a href="#">VIRNECT Make</a></li>
-                <li><a href="#">VIRNECT View</a></li>
-                <li><a href="#">VIRNECT Twin</a></li>
-                <li><a href="#">VIRNECT Track</a></li>
-                <li><a href="#">XR Devices</a></li>
+                <li><nuxt-link to="/products/remote">VIRNECT Remote</nuxt-link></li>
+                <li><nuxt-link to="/products/make">VIRNECT Make</nuxt-link></li>
+                <li><nuxt-link to="/products/view">VIRNECT View</nuxt-link></li>
+                <li><nuxt-link to="/products/twin">VIRNECT Twin</nuxt-link></li>
+                <li><nuxt-link to="/products/track">VIRNECT Track</nuxt-link></li>
+                <li><nuxt-link to="/products/ms">XR Devices</nuxt-link></li>
               </ul>
             </li>
             <li>
-              <a href="#">Support</a>
+              <nuxt-link to="/support/notice">Support</nuxt-link>
               <ul>
-                <li><a href="#">Notice</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">학습센터</a></li>
-                <li><a href="#">문의하기</a></li>
+                <li><nuxt-link to="/support/notice">Notice</nuxt-link></li>
+                <li><nuxt-link to="/support/faq">FAQ</nuxt-link></li>
+                <li><nuxt-link to="/support/learning-center">학습센터</nuxt-link></li>
+                <li><nuxt-link to="/support/inquiry">문의하기</nuxt-link></li>
               </ul>
             </li>
             <li>
-              <a href="#">News</a>
+              <nuxt-link to="/news/news-press">News</nuxt-link>
               <ul>
-                <li><a href="#">News&press</a></li>
+                <li><nuxt-link to="/news/news-press">News&press</nuxt-link></li>
                 <!-- <li><a href="#">People & Culture</a></li>
                 <li><a href="#">Insight</a></li>
                 <li><a href="#">ESG</a></li> -->
               </ul>
             </li>
             <li>
-              <a href="#">Company</a>
+              <nuxt-link to="/company/about">Company</nuxt-link>
               <ul>
-                <li><a href="#">About VIRNECT</a></li>
-                <li><a href="#">인재채용</a></li>
-                <li><a href="#">IR</a></li>
+                <li><nuxt-link to="/company/about">About VIRNECT</nuxt-link></li>
+                <li><nuxt-link to="/company/talent">인재채용</nuxt-link></li>
+                <li><nuxt-link to="/company/ir">IR</nuxt-link></li>
               </ul>
             </li>
           </ul>
@@ -292,7 +292,7 @@
                   </div>
                 </div>
                 <button>
-                  <a href="#"> 문의하기 </a>
+                  <nuxt-link to="/support/inquiry"> 문의하기 </nuxt-link>
                 </button>
               </span>
               <span class="downLoad">
@@ -448,8 +448,14 @@
                 /></i>
               </div>
               <div class="tabLang" v-if="showEarth">
-                <span>Korean</span>
-                <span>English</span>
+                <span
+                  v-for="locale in availableLocales"
+                  :key="locale.code"
+                  @click.prevent.stop="$i18n.setLocale(locale.code)"
+                  @click="langlang()"
+                >
+                  <a href="#">{{ locale.name }}</a>
+                </span>
               </div>
             </span>
           </div>
