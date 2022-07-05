@@ -1,19 +1,19 @@
 <template>
   <div class="footer">
-      <div class="upButton">
-        <a href="javascript:window.scrollTo(0,0);">
-          <img
-            class="upup"
-            src="https://velog.velcdn.com/images/kyj0206/post/d74f9933-4e13-4838-aa1a-4f7993020afc/image.svg"
-            alt="upButton"
-          />
-          <img
-            class="upHover"
-            src="https://velog.velcdn.com/images/kyj0206/post/fcd53b94-13c9-4499-b141-239c5ac68704/image.png"
-            alt="upButton"
-          />
-        </a>
-      </div>
+    <div class="upButton">
+      <a href="javascript:window.scrollTo(0,0);">
+        <img
+          class="upup"
+          src="https://velog.velcdn.com/images/kyj0206/post/d74f9933-4e13-4838-aa1a-4f7993020afc/image.svg"
+          alt="upButton"
+        />
+        <img
+          class="upHover"
+          src="https://velog.velcdn.com/images/kyj0206/post/fcd53b94-13c9-4499-b141-239c5ac68704/image.png"
+          alt="upButton"
+        />
+      </a>
+    </div>
     <div class="footerWrap">
       <span class="footerTop">
         <span class="footerNavWeb">
@@ -52,9 +52,9 @@
               <a href="#">News</a>
               <ul>
                 <li><a href="#">News&press</a></li>
-                <li><a href="#">People & Culture</a></li>
+                <!-- <li><a href="#">People & Culture</a></li>
                 <li><a href="#">Insight</a></li>
-                <li><a href="#">ESG</a></li>
+                <li><a href="#">ESG</a></li> -->
               </ul>
             </li>
             <li>
@@ -178,11 +178,12 @@
             <span class="infoButton">
               <span class="buttonWrap">
                 <!-- 서비스선택 박스 -->
-                <div class="serviceSelect"
-                    @click="[showServiceMenu(), toggle(), showEarth=false]"
-                    v-click-outside="serviceHide"
-                    v-if="isWeb"
-                    v-bind:style="hamServiceColor"
+                <div
+                  class="serviceSelect"
+                  @click="[showServiceMenu(), toggle(), (showEarth = false)]"
+                  v-click-outside="serviceHide"
+                  v-if="isWeb"
+                  v-bind:style="hamServiceColor"
                 >
                   <div class="select">
                     <div class="selected">
@@ -202,9 +203,7 @@
                         />
                       </div>
                     </div>
-                    <ul v-if="isServiceMenu"
-                        v-show="serviceOpen"
-                    >
+                    <ul v-if="isServiceMenu" v-show="serviceOpen">
                       <li class="option">
                         <a
                           href="https://console.virnect.com/?continue=https%3A%2F%2Fvirnect.com%2F"
@@ -463,7 +462,7 @@
   </div>
 </template>
 <script>
-import ClickOutside from 'vue-click-outside'
+import ClickOutside from "vue-click-outside";
 
 export default {
   computed: {
@@ -481,11 +480,11 @@ export default {
     isWeb: true,
     showEarth: false,
     isServiceMenu: false,
-    hamServiceColor:{},
+    hamServiceColor: {},
     serviceOpen: false,
   }),
   directives: {
-    ClickOutside
+    ClickOutside,
   },
   methods: {
     langlang() {
@@ -493,13 +492,13 @@ export default {
     },
     showServiceMenu() {
       this.isServiceMenu = !this.isServiceMenu;
-      this.hamServiceColor.backgroundColor="#fff";
+      this.hamServiceColor.backgroundColor = "#fff";
     },
-    toggle(){
-      this.serviceOpen = true
+    toggle() {
+      this.serviceOpen = true;
     },
-    serviceHide(){
-      this.serviceOpen = false
+    serviceHide() {
+      this.serviceOpen = false;
     },
     /* showServiceMenu () {
       if (isServiceMenu == true) {
