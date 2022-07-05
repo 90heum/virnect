@@ -9,14 +9,14 @@
           />
         </i>
         <p>VIRNECT Twin</p>
-        <h2>{{$t("productsText.twinSubTitle.title")}}</h2>
+        <h2>{{ $t("productsText.twinSubTitle.title") }}</h2>
         <span class="subExplanation">
-          {{$t("productsText.twinSubTitle.contents")}}
+          {{ $t("productsText.twinSubTitle.contents") }}
         </span>
         <span>
           <button>
             <a href="#">
-              <p>{{$t("productsText.twinSubButton.know")}}</p>
+              <p>{{ $t("productsText.twinSubButton.know") }}</p>
               <p>
                 <img
                   src="https://velog.velcdn.com/images/kyj0206/post/ede40cab-2b1a-47ff-a338-ad93d68b93f4/image.png"
@@ -26,7 +26,9 @@
             </a>
           </button>
           <button>
-            <a href="#"> {{$t("productsText.twinSubButton.free")}} </a>
+            <a href="https://pardot.virnect.com/l/929783/2022-06-16/3nplr">
+              {{ $t("productsText.twinSubButton.free") }}
+            </a>
           </button>
         </span>
       </span>

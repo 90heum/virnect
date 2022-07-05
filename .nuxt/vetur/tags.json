@@ -35,9 +35,6 @@
   "MixinsMixin": {
     "description": "Auto imported from components/mixins/mixin.js"
   },
-  "Paging": {
-    "description": "Auto imported from components/paging/paging.vue"
-  },
   "ModulesBanner": {
     "description": "Auto imported from components/modules/Banner.vue"
   },
@@ -92,6 +89,9 @@
   "ModulesYoutubeFullscreen": {
     "description": "Auto imported from components/modules/YoutubeFullscreen.vue"
   },
+  "Paging": {
+    "description": "Auto imported from components/paging/paging.vue"
+  },
   "SupportSubMenu": {
     "description": "Auto imported from components/support/SubMenu.vue"
   },
@@ -101,11 +101,11 @@
   "GnbCompany": {
     "description": "Auto imported from components/Gnb/Company/index.vue"
   },
-  "GnbFreeTrials": {
-    "description": "Auto imported from components/Gnb/FreeTrials/index.vue"
-  },
   "GnbContact": {
     "description": "Auto imported from components/Gnb/Contact/index.vue"
+  },
+  "GnbFreeTrials": {
+    "description": "Auto imported from components/Gnb/FreeTrials/index.vue"
   },
   "GnbPricing": {
     "description": "Auto imported from components/Gnb/Pricing/index.vue"
