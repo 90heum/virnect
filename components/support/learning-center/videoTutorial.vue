@@ -2,6 +2,7 @@
     <!-- Video Tutorial -->
     <div class="tutorialBox">
         <!-- 타이틀 -->
+        
         <span class="tutorialBoxTit">
             <p>Video Tutorial</p>
             <p>
@@ -13,50 +14,22 @@
         </span>
         <!-- 컨텐츠박스 -->
         <span class="tutorialBoxCont">
-            <div>
-                <a href="#">
+            <div v-for="(data, idx) of conetentList"
+                 :key="idx">
+                <nuxt-link to="#">
                     <span class="listImg">
-                        <img src="https://velog.velcdn.com/images/kyj0206/post/75a8bf3a-fe84-47e5-aa54-fca6f438b599/image.png" alt="디폴트 이미지">
+                        <img :src="`${data.thumbnail ? data.thumbnail : 'https://velog.velcdn.com/images/kyj0206/post/75a8bf3a-fe84-47e5-aa54-fca6f438b599/image.png'}`" />
                     </span>
                     <span class="listInfo">
                         <span>
-                            <h2>1. 콘텐츠 관리</h2>
+                            <h2>{{data.title}}</h2>
                         </span>
                         <span>
-                            <p>Twin</p>
+                            <p v-for="(innerData, idx) of data.categoryName"
+                               :key="idx">{{innerData}}</p>
                         </span>
                     </span>
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <span class="listImg">
-                        <img src="https://velog.velcdn.com/images/kyj0206/post/75a8bf3a-fe84-47e5-aa54-fca6f438b599/image.png" alt="디폴트 이미지">
-                    </span>
-                    <span class="listInfo">
-                        <span>
-                            <h2>2. 콘텐츠 관리</h2>
-                        </span>
-                        <span>
-                            <p>Twin</p>
-                        </span>
-                    </span>
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <span class="listImg">
-                        <img src="https://velog.velcdn.com/images/kyj0206/post/75a8bf3a-fe84-47e5-aa54-fca6f438b599/image.png" alt="디폴트 이미지">
-                    </span>
-                    <span class="listInfo">
-                        <span>
-                            <h2>3. 콘텐츠 관리</h2>
-                        </span>
-                        <span>
-                            <p>Twin</p>
-                        </span>
-                    </span>
-                </a>
+                </nuxt-link>
             </div>
         </span>
         <!-- 모바일용 전체보기 버튼  -->
@@ -68,6 +41,9 @@
 
 <script>
 export default {
+    props: {
+        conetentList: Array
+    }
 }
 </script>
 

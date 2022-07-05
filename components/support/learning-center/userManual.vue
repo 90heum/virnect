@@ -13,81 +13,26 @@
         </span>
         <!-- 컨텐츠박스 -->
         <span class="userBoxCont">
-            <div>
-                <a href="#">
+            <div v-for="(data, idx) of conetentList"
+                :key="idx">
+                <nuxt-link to="#"> 
                     <span class="listImg">
-                        <img src="https://velog.velcdn.com/images/kyj0206/post/75a8bf3a-fe84-47e5-aa54-fca6f438b599/image.png" alt="디폴트 이미지">
+                        <img :src="`${data.thumbnail ? data.thumbnail : 'https://velog.velcdn.com/images/kyj0206/post/75a8bf3a-fe84-47e5-aa54-fca6f438b599/image.png'}`" />
                     </span>
                     <span class="listInfo">
                         <span>
-                            <h2>Mobile 메뉴얼등의 글 제목 노출 영역 최대 2줄 입니다. 추가글 추가글 추가글 추가글 추가글</h2>
+                            <h2>{{data.title}}</h2>
                         </span>
                         <span>
-                            <p>Twin</p>
-                        </span>
-                        <span>
-                            <i><img src="https://velog.velcdn.com/images/kyj0206/post/79bc5130-25fb-429c-9876-c32a6acb590e/image.png" alt="다운로드 아이콘"></i>
-                            <u>다운로드</u>
-                        </span>
-                    </span>
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <span class="listImg">
-                        <img src="https://velog.velcdn.com/images/kyj0206/post/75a8bf3a-fe84-47e5-aa54-fca6f438b599/image.png" alt="디폴트 이미지">
-                    </span>
-                    <span class="listInfo">
-                        <span>
-                            <h2>Mobile 메뉴얼</h2>
-                        </span>
-                        <span>
-                            <p>Twin</p>
+                            <p v-for="(innerData, idx) of data.categoryName"
+                               :key="idx">{{innerData}}</p>
                         </span>
                         <span>
                             <i><img src="https://velog.velcdn.com/images/kyj0206/post/79bc5130-25fb-429c-9876-c32a6acb590e/image.png" alt="다운로드 아이콘"></i>
-                            <u>다운로드</u>
+                            <u @click="getFileDownload()">다운로드</u>
                         </span>
                     </span>
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <span class="listImg">
-                        <img src="https://velog.velcdn.com/images/kyj0206/post/75a8bf3a-fe84-47e5-aa54-fca6f438b599/image.png" alt="디폴트 이미지">
-                    </span>
-                    <span class="listInfo">
-                        <span>
-                            <h2>Mobile 메뉴얼등의 글 제목 노출 영역 최대 2줄 입니다. 추가글 추가글 추가글 추가글 추가글</h2>
-                        </span>
-                        <span>
-                            <p>Twin</p>
-                        </span>
-                        <span>
-                            <i><img src="https://velog.velcdn.com/images/kyj0206/post/79bc5130-25fb-429c-9876-c32a6acb590e/image.png" alt="다운로드 아이콘"></i>
-                            <u>다운로드</u>
-                        </span>
-                    </span>
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <span class="listImg">
-                        <img src="https://velog.velcdn.com/images/kyj0206/post/75a8bf3a-fe84-47e5-aa54-fca6f438b599/image.png" alt="디폴트 이미지">
-                    </span>
-                    <span class="listInfo">
-                        <span>
-                            <h2>Mobile 메뉴얼등의 글 제목 노출 영역 최대 2줄 입니다. 추가글 추가글 추가글 추가글 추가글</h2>
-                        </span>
-                        <span>
-                            <p>Twin</p>
-                        </span>
-                        <span>
-                            <i><img src="https://velog.velcdn.com/images/kyj0206/post/79bc5130-25fb-429c-9876-c32a6acb590e/image.png" alt="다운로드 아이콘"></i>
-                            <u>다운로드</u>
-                        </span>
-                    </span>
-                </a>
+                </nuxt-link>
             </div>
         </span>
         <!-- 모바일용 전체보기 버튼  -->
@@ -99,7 +44,20 @@
 
 <script>
 export default {
+    props: {
+        conetentList: Array,
 
+    },
+    methods: {
+        getFileDownload(e) {
+            this.$axios.get("https://cdn.pixabay.com/photo/2018/01/03/19/17/cat-3059075_960_720.jpg", {responseType: "blob"})
+            .then(res => {
+                const fileDownload = require('js-file-download');
+                fileDownload(res.data, "테스트고양이.jpg");
+            })
+            .catch(e => console.error(e))
+        }
+    }
 }
 </script>
 

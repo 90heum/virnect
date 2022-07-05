@@ -25,6 +25,7 @@
     "@nuxtjs/style-resources": "^1.2.1",
     "dayjs": "^1.8.23",
     "file-loader": "^6.2.0",
+    "js-file-download": "^0.4.12",
     "lodash.debounce": "^4.0.8",
     "node-sass": "^4.14.0",
     "sass-loader": "^10.1.1",
