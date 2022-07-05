@@ -48,7 +48,7 @@
                                     </i>
                                 </li>
                                 <li>
-                                    <nuxt-link :to="`notice-detail?id=${contentData.prevId||id}&type=${type}`">
+                                    <nuxt-link :to="`notice-detail?id=${contentData.prevId||id}&type=${type ? type : ''}`">
                                         {{contentData.prevTitle||"이전 글이 존재하지 않습니다."}}
                                     </nuxt-link>
                                 </li>
@@ -64,7 +64,7 @@
                                     </i>
                                 </li>
                                 <li>
-                                    <nuxt-link :to="`notice-detail?id=${contentData.nextId||id}&type=${type}`">
+                                    <nuxt-link :to="`notice-detail?id=${contentData.nextId||id}&type=${type ? type : ''}`">
                                         {{contentData.nextTitle||"디음 글이 존재하지 않습니다."}}
                                     </nuxt-link>
                                 </li>
@@ -107,14 +107,14 @@ export default {
     methods: {
         async goToPage (id) {
             if(!id) return;
-            const data = await this.$axios.get(`admin/support/notice/${id}?typeId=${this.type}`);
+            const data = await this.$axios.get(`admin/support/notice/${id}?typeId=${this.type ? this.type : ''}`);
             const dataJson = await data;
             if (process.client) window.scrollTo({top: "0px"});
             this.contentData = dataJson.data.data;
         }
     },
     async asyncData ({$axios, route}) {
-        const data = await $axios.get(`admin/support/notice/${route.query.id}?typeId=${route.query.type}`);
+        const data = await $axios.get(`admin/support/notice/${route.query.id}?typeId=${route.query.type ? route.query.type : ''}`);
         const dataJson = await data;
         return {contentData: dataJson.data.data, id: route.query.id, type: route.query.type}
     }
