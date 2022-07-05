@@ -14,7 +14,16 @@
         @mouseenter="active = idx"
       >
         <p v-html="list.text"></p>
-        <img :src="`${isMobile[idx]}.png`" />
+        <!-- <img
+          :src="`http://13.209.200.75:8080/assets/images/pages/solution/logo${[
+            idx,
+          ]}.png`"
+        /> -->
+        <img
+          :src="`http://13.209.200.75:8080/static/assets/images/pages/solution/logo${[
+            idx,
+          ]}.png`"
+        />
       </li>
     </ul>
   </section>
@@ -92,6 +101,7 @@ export default {
       font-size: 17px;
       font-family: $noto;
       line-height: 1.43;
+      color: black;
     }
   }
   img {
