@@ -508,6 +508,7 @@ export default {};
   .companyWrap {
     // 회사 배너
     .companyBanner {
+      margin: 0 auto;
       display: block;
       width: 100%;
       max-width: 2400px;

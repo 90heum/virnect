@@ -16,9 +16,7 @@
             <a href="#">자세히 보기</a>
           </button>
           <button>
-            <a href="https://pardot.virnect.com/l/929783/2022-06-16/3nplr"
-              >데모신청</a
-            >
+            <a href="support/inquiry">데모신청</a>
           </button>
         </span>
         <span class="bannerTitN4">
