@@ -26,7 +26,7 @@
             </a>
           </button>
           <button>
-            <a href="https://pardot.virnect.com/l/929783/2022-06-16/3nplr">{{
+            <a href="/support/inquiry" target="blank">{{
               $t("productsText.makeSubButton.free")
             }}</a>
           </button>

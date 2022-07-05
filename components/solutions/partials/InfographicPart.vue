@@ -3,7 +3,7 @@
     <div class="img-wrap">
       <img :src="image" />
       <!-- <button @click="fancyPop(image)" class="expand-btn" v-if="checkMobile()"> -->
-        <button @click="fancyPop(image)" class="expand-btn">
+      <button @click="fancyPop(image)" class="expand-btn">
         <!-- <img src="~assets/images/pages/solution/ic-search@2x.png" /> -->
       </button>
     </div>
@@ -35,14 +35,11 @@
             v-if="checkMobile()"
             class="expand-btn"
           > -->
-          <button
-            @click="fancyPop(list.image)"
-            class="expand-btn"
-          >
+          <button @click="fancyPop(list.image)" class="expand-btn">
             <!-- <img src="~assets/images/pages/solution/ic-search@2x.png" /> -->
           </button>
           <p class="thumb-text" v-if="slideList[idx].length >= 1">
-            {{ $t('solutionText.exampleTitle.category') }}
+            {{ $t("solutionText.exampleTitle.category") }}
           </p>
           <div class="slide-wrap">
             <div v-if="(arrow[idx] = false)">
@@ -51,21 +48,24 @@
             </div>
             <!-- 1 -->
             <div class="carousel-wrapper">
-              <div v-swiper:mySwiper="solutionGellaryOption" class="solution-slide-image">
-                <div class="swiper-wrapper"
-                     @transitionEnd="getArrowSlide()">
-                  <div v-for="(list, idx) of slideList[idx]" 
-                       :key="idx" 
-                       class="img-wrapper swiper-slide" 
-                       :style="`background-image: url(${list.thumb})`"
+              <div
+                v-swiper:mySwiper="solutionGellaryOption"
+                class="solution-slide-image"
+              >
+                <div class="swiper-wrapper" @transitionEnd="getArrowSlide()">
+                  <div
+                    v-for="(list, idx) of slideList[idx]"
+                    :key="idx"
+                    class="img-wrapper swiper-slide"
+                    :style="`background-image: url(${list.thumb})`"
                   >
-                   <img
-                  class="product-icon"
-                  v-for="(ico, i) of list.iconList"
-                  :src="`${ico}@2x.png`"
-                  :key="i"
-                />
-                <!-- <div @click="fancyPop(list.img)"></div> -->
+                    <img
+                      class="product-icon"
+                      v-for="(ico, i) of list.iconList"
+                      :src="`${ico}@2x.png`"
+                      :key="i"
+                    />
+                    <!-- <div @click="fancyPop(list.img)"></div> -->
                   </div>
                 </div>
               </div>
@@ -73,7 +73,7 @@
             <!-- 2 -->
             <!-- 3 -->
             <!-- 4 -->
-            
+
             <div v-if="(arrow[idx] = false)">
               <button class="next-btn arrow-btn"></button>
               <div class="fade-bg right"></div>
@@ -83,24 +83,26 @@
             <div class="fancy-box" v-if="fancyPopup">
               <div>
                 <button class="popup-close-btn" @click="fancyPop()">
-                  <img src="https://virnect.com/images/common/ic-close@2x.png" />
+                  <img
+                    src="https://virnect.com/images/common/ic-close@2x.png"
+                  />
                 </button>
                 <img :src="showImage" />
               </div>
               <article @click="fancyPop()"></article>
             </div>
           </transition>
-          <button
+          <!-- <button
             class="into"
             v-for="(btn, idx) of btnList[idx]"
             :key="idx"
             @click="
-              $router.push({ name: btn.router })
-              scrollContent(811)
+              $router.push({ name: btn.router });
+              scrollContent(811);
             "
           >
             {{ btn.name }}
-          </button>
+          </button> -->
         </div>
       </li>
     </ul>
@@ -123,27 +125,27 @@ export default {
     return {
       activeIdx: 0,
       fancyPopup: false,
-      showImage: '',
-      direction: 'horizontal',
+      showImage: "",
+      direction: "horizontal",
       solutionGellaryOption: {
-        slidesPerView: 'auto',
+        slidesPerView: "auto",
         spaceBetween: 12,
         pagination: {
-          el: '.swiper-pagination',
+          el: ".swiper-pagination",
           clickable: true,
         },
         navigation: {
-          nextEl: '.next-btn',
-          prevEl: '.prev-btn',
+          nextEl: ".next-btn",
+          prevEl: ".prev-btn",
         },
       },
       arrow: [false, false, false, false],
-    }
+    };
   },
   methods: {
     slideDown(idx) {
-      if (this.activeIdx == idx) return (this.activeIdx = null)
-      else return (this.activeIdx = idx)
+      if (this.activeIdx == idx) return (this.activeIdx = null);
+      else return (this.activeIdx = idx);
       // console.log(idx)
       // window.scrollTo({
       // 	left: 0,
@@ -151,14 +153,14 @@ export default {
       // })
     },
     fancyPop(e) {
-      this.showImage = e
-      this.fancyPopup = !this.fancyPopup
-      document.documentElement.classList.toggle('box')
+      this.showImage = e;
+      this.fancyPopup = !this.fancyPopup;
+      document.documentElement.classList.toggle("box");
     },
     getArrowSlide() {
       for (let i in this.slideList) {
         if (this.slideList[i].length >= 4) {
-          this.arrow[i] = true
+          this.arrow[i] = true;
         }
       }
       // this.$nextTick(() => {
@@ -185,13 +187,13 @@ export default {
     },
   },
   created() {
-    this.getArrowSlide()
+    this.getArrowSlide();
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>
-@import '~assets/css/pages/products.scss';
+@import "~assets/css/pages/products.scss";
 .solution-infographic-part {
   @include area-flex(1160px);
   text-align: center;
@@ -209,7 +211,9 @@ h3 {
   font-family: $noto;
   line-height: 1.88;
 }
-.img-wrapper { margin-right: 12px; }
+.img-wrapper {
+  margin-right: 12px;
+}
 ul {
   margin-top: 108px;
 }
@@ -305,7 +309,7 @@ li {
       border-top: 2px solid $point;
       h4 {
         margin-bottom: 14px;
-        background-image: url('~assets/images/pages/products/ic-remove@2x.png');
+        background-image: url("~assets/images/pages/products/ic-remove@2x.png");
       }
       .text-wrap {
         height: auto;
@@ -318,7 +322,7 @@ li {
       padding-right: 24px;
       padding-left: 30px;
       font-size: 16px;
-      background-image: url('~assets/images/pages/products/ic-add@2x.png');
+      background-image: url("~assets/images/pages/products/ic-add@2x.png");
       background-repeat: no-repeat;
       background-position: right;
       background-size: 20px;
@@ -350,13 +354,13 @@ li {
   }
 }
 .swiper-container {
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    overflow: hidden;
-    list-style: none;
-    padding: 0;
-    z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
 }
 .slide-wrap {
   position: relative;
@@ -425,7 +429,7 @@ li {
           background: rgba(22, 85, 191, 0.9);
           border: 1px solid rgba(255, 255, 255, 0.15);
           transform: translate(-50%, -50%);
-          content: '+';
+          content: "+";
         }
       }
     }

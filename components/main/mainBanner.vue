@@ -16,7 +16,7 @@
             <a href="#">자세히 보기</a>
           </button>
           <button>
-            <a href="support/inquiry">데모신청</a>
+            <a href="support/inquiry" target="blank">데모신청</a>
           </button>
         </span>
         <span class="bannerTitN4">
@@ -29,7 +29,7 @@
               />
             </i>
             <p>
-              070.7733.2025 <a href="#"><u>문의하기</u></a>
+              070.7733.2025 <a href="support/inquiry"><u>문의하기</u></a>
             </p>
           </span>
         </span>

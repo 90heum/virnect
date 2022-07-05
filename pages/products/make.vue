@@ -12,17 +12,17 @@
     <transition name="app-fade" mode="out-in">
       <make-component />
     </transition>
-    <tail-section
+    <!-- <tail-section
       :bg="tailText.bg"
       :mention="$t('productsText.tailText')"
       :blueBtn="tailText.blue"
       :blueRouter="tailText.blueRouter"
       :greyBtn="tailText.grey"
       :greyRouter="tailText.greyRouter"
-    ></tail-section>
+    ></tail-section> -->
+    <CtaModule class="aa" />
   </section>
 </template>
-
 <script>
 import subVisualSection from "../../layouts/common/SubVisual.vue";
 import snbSection from "../../layouts/modules/Snb.vue";
@@ -30,6 +30,7 @@ import tailSection from "../../layouts/common/Tail.vue";
 import makeComponent from "../../components/products/pages/Make.vue";
 import SubBannerMake from "~/components/products/partials/subBannerMake.vue";
 import SubMenuMake from "~/components/products/partials/subMenuMake.vue";
+import CtaModule from "~/components/main/ctaModule.vue";
 
 export default {
   components: {
@@ -39,6 +40,7 @@ export default {
     makeComponent,
     SubBannerMake,
     SubMenuMake,
+    CtaModule,
   },
   data() {
     return {
@@ -63,4 +65,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "~assets/css/pages/products.scss";
+.aa {
+  margin-top: 100px;
+}
 </style>

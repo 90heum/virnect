@@ -12,14 +12,15 @@
     <transition name="app-fade" mode="out-in">
       <twin-component />
     </transition>
-    <tail-section
+    <!-- <tail-section
       :bg="tailText.bg"
       :mention="$t('productsText.tailText')"
       :blueBtn="tailText.blue"
       :blueRouter="tailText.blueRouter"
       :greyBtn="tailText.grey"
       :greyRouter="tailText.greyRouter"
-    ></tail-section>
+    ></tail-section> -->
+    <CtaModule class="aa" />
   </section>
 </template>
 
@@ -30,6 +31,7 @@ import tailSection from "../../layouts/common/Tail.vue";
 import twinComponent from "../../components/products/pages/Twin.vue";
 import SubBannerTwin from "~/components/products/partials/subBannerTwin.vue";
 import subMenuTwin from "~/components/products/partials/subMenuTwin.vue";
+import CtaModule from "~/components/main/ctaModule.vue";
 
 export default {
   components: {
@@ -39,6 +41,7 @@ export default {
     twinComponent,
     SubBannerTwin,
     subMenuTwin,
+    CtaModule,
   },
   data() {
     return {
@@ -63,4 +66,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "~assets/css/pages/products.scss";
+.aa {
+  margin-top: 100px;
+}
 </style>
