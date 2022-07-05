@@ -9,14 +9,14 @@
           />
         </i>
         <p>VIRNECT View</p>
-        <h2>{{$t("productsText.viewSubTitle.title")}}</h2>
+        <h2>{{ $t("productsText.viewSubTitle.title") }}</h2>
         <span class="subExplanation">
-          {{$t("productsText.viewSubTitle.contents")}}
+          {{ $t("productsText.viewSubTitle.contents") }}
         </span>
         <span>
           <button>
             <a href="#">
-              <p>{{$t("productsText.viewSubButton.know")}}</p>
+              <p>{{ $t("productsText.viewSubButton.know") }}</p>
               <p>
                 <img
                   src="https://velog.velcdn.com/images/kyj0206/post/ede40cab-2b1a-47ff-a338-ad93d68b93f4/image.png"
@@ -26,7 +26,9 @@
             </a>
           </button>
           <button>
-            <a href="#"> {{$t("productsText.viewSubButton.free")}} </a>
+            <a href="https://pardot.virnect.com/l/929783/2022-06-16/3nplr">
+              {{ $t("productsText.viewSubButton.free") }}
+            </a>
           </button>
         </span>
       </span>

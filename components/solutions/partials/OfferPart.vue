@@ -8,8 +8,8 @@
         :key="idx"
         :class="{ active: active == idx }"
         @click="
-          $router.push({ name: list.router })
-          scrollReset()
+          $router.push({ name: list.router });
+          scrollReset();
         "
         @mouseenter="active = idx"
       >
@@ -33,11 +33,11 @@ export default {
     return {
       active: 0,
       isMobile: false,
-    }
+    };
   },
   computed: {
     isMobile() {
-      let arr = []
+      let arr = [];
       // for (let val of this.lists) {
       //   if (!this.checkMobile()) {
       //     arr.push(val.image)
@@ -45,14 +45,14 @@ export default {
       //     arr.push(`${val.image}-m@2x`)
       //   }
       // }
-      return arr
+      return arr;
     },
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>
-@import '~assets/css/pages/products.scss';
+@import "~assets/css/pages/products.scss";
 .offer-part {
   margin-top: 180px;
   text-align: center;
@@ -100,7 +100,7 @@ export default {
     bottom: 14px;
     width: 202px;
   }
-  @media (max-width: $mobile) {
+  @media (max-width: 760px) {
     margin-top: 120px;
     .contents {
       font-size: 15px;

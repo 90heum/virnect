@@ -11,31 +11,31 @@
     },
     "solutionText": {
       "solutionTitle": {
-				"title": "전문가의 명확한 문제 해결",
-				"contents": "VIRNECT는 개념증명(Proof of Concept)부터 상용화까지 110 여건의 프로젝트를 완수했습니다.<br class='mobile-hidden'>다양한 산업현장에 대한 경험과 이해를 바탕으로 고객사의 문제 해결을 위한 산업별 맞춤 AR 비즈니스 컨설팅을 진행합니다.<br class='mobile-hidden'>고객과의 긴밀한 컨설팅을 바탕으로 고객 맞춤 솔루션을 제안하고 실행합니다."
+        "title": "전문가의 명확한 문제 해결",
+        "contents": "VIRNECT는 개념증명(Proof of Concept)부터 상용화까지 110 여건의 프로젝트를 완수했습니다.<br class='mobile-hidden'>다양한 산업현장에 대한 경험과 이해를 바탕으로 고객사의 문제 해결을 위한 산업별 맞춤 AR 비즈니스 컨설팅을 진행합니다.<br class='mobile-hidden'>고객과의 긴밀한 컨설팅을 바탕으로 고객 맞춤 솔루션을 제안하고 실행합니다."
       },
       "solutionBenefitLists": [
-				{
-					"title": "에너지/자원​",
-					"contents": "에너지/자원 산업의 광대한 설비에 대해 모니터링과 예방 정비를 <br class='mobile-hidden'>효율화하고, 작업 프로세스를 개선하여 발전 효율과 작업생산성을 향상시킵니다."
-				},
-				{
-					"title": "정유/석유화학/배터리​",
-					"contents": "유기적으로 연결된 각 공정 설비 간의 연관 관계 및 물성 정보 등을 시각화하여 최적의 프로세스 운영과 관리를 가능하게 합니다."
-				},
-				{
-					"title": "자동차/부품",
-					"contents": "시각적인 가이드와 원격 협업을 통해 다양해진 주문 옵션에 <br class='mobile-hidden'>대응하고 현장의 표준 준수 시스템을 강화하여 높은 품질을 달성<br class='mobile-hidden'>할 수 있게 합니다."
-				},
-				{
-					"title": "항공/철도",
-					"contents": "운송 산업의 인프라 계획, 건설, 자산 유지 보수까지 <br class='mobile-hidden'> 각 프로세스를 시각화 및 예측하여 시간과 비용을 절감하고 <br class='mobile-hidden'>운영을 간소화합니다."
-				},
-				{
-					"title": "EPC",
-					"contents": "건물 설계 및 건설을 위한 건축 도면이나 완공 예상 모습을 <br class='mobile-hidden'>현장에서 시각화하여 건설 공사 현장의 시공 점검 및 안전 관리를 효율화합니다."
-				}
-			]
+        {
+          "title": "에너지/자원​",
+          "contents": "에너지/자원 산업의 광대한 설비에 대해 모니터링과 예방 정비를 <br class='mobile-hidden'>효율화하고, 작업 프로세스를 개선하여 발전 효율과 작업생산성을 향상시킵니다."
+        },
+        {
+          "title": "정유/석유화학/배터리​",
+          "contents": "유기적으로 연결된 각 공정 설비 간의 연관 관계 및 물성 정보 등을 시각화하여 최적의 프로세스 운영과 관리를 가능하게 합니다."
+        },
+        {
+          "title": "자동차/부품",
+          "contents": "시각적인 가이드와 원격 협업을 통해 다양해진 주문 옵션에 <br class='mobile-hidden'>대응하고 현장의 표준 준수 시스템을 강화하여 높은 품질을 달성<br class='mobile-hidden'>할 수 있게 합니다."
+        },
+        {
+          "title": "항공/철도",
+          "contents": "운송 산업의 인프라 계획, 건설, 자산 유지 보수까지 <br class='mobile-hidden'> 각 프로세스를 시각화 및 예측하여 시간과 비용을 절감하고 <br class='mobile-hidden'>운영을 간소화합니다."
+        },
+        {
+          "title": "EPC",
+          "contents": "건물 설계 및 건설을 위한 건축 도면이나 완공 예상 모습을 <br class='mobile-hidden'>현장에서 시각화하여 건설 공사 현장의 시공 점검 및 안전 관리를 효율화합니다."
+        }
+      ]
     },
     "productText": {
       "title": "산업 문제를 해결할 <br class='mobile-show'>AR/DT 제품 ",
@@ -69,49 +69,64 @@
         {
           "image": "../images/pages/landing/logo-01",
           "text": "SW시장성지원사업​<br>과학기술정보통신부 장관상​<br>(VIRNECT Remote)"
-        }, {
+        },
+        {
           "image": "../images/pages/landing/logo-01",
           "text": "디지털콘텐츠 산업 공로​<br>과학기술정보통신부 장관 표창"
-        },  {
+        },
+        {
           "image": "../images/pages/landing/logo-02",
           "text": "WIS 2019 혁신상​<br>(VIRNECT Make & View)​"
-        }, {
+        },
+        {
           "image": "../images/pages/landing/logo-03",
           "text": "스마트시티 비즈니스 페어​ ​<br>10대 우수기업 선정​​"
-        }, {
+        },
+        {
           "image": "../images/pages/landing/logo-04",
           "text": "정보통신방송분야 <br>우수성과 창출기업 선정​​"
-        }, {
+        },
+        {
           "image": "../images/pages/landing/logo-05",
           "text": "육군 분석평가단​<br>육군 M&S 국제학술대회<br>감사패​"
-        }, {
+        },
+        {
           "image": "../images/pages/landing/logo-06",
           "text": "스마트팩토리어워드 ​<br>AR부문 기술혁신대상 수상"
-        }, {
+        },
+        {
           "image": "../images/pages/landing/logo-07",
           "text": "서울 VRAR 어워즈 ​<br>AR 부문 수상"
-        }, {
+        },
+        {
           "image": "../images/pages/landing/logo-08",
           "text": "3D융합산업협회​<br>3D 산업 활성화 공로패​​​"
-        }, {
+        },
+        {
           "image": "../images/pages/landing/logo-09",
           "text": "이노베이션 어워드 <br>베스트 콘텐츠 선정"
-        }, {
+        },
+        {
           "image": "../images/pages/landing/logo-10",
           "text": "한국 BIM 학회 <br>2019 정기 학술대회 <br>우수논문발표상"
-        }, {
+        },
+        {
           "image": "../images/pages/landing/logo-11",
           "text": "대한민국 ICT이노베이션 대상 <br>우수기업 특별상​"
-        }, {
+        },
+        {
           "image": "../images/pages/landing/logo-12",
           "text": "조달청 혁진조달 인증 <br>(VIRNECT Remote)​"
-        }, {
+        },
+        {
           "image": "../images/pages/landing/logo-12",
           "text": "조달청 혁진조달 인증 <br>(VIRNECT Make)​"
-        }, {
+        },
+        {
           "image": "../images/pages/landing/logo-13",
           "text": "GS 인증 1등급​<br>(VIRNECT Remote)​"
-        }, {
+        },
+        {
           "image": "../images/pages/landing/logo-13",
           "text": "GS 인증 1등급​<br>(VIRNECT Make & View)"
         }
