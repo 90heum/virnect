@@ -3,7 +3,7 @@
     <p class="title" v-html="title"></p>
     <p class="contents" v-html="contents"></p>
     <ul>
-      <li
+      <!-- <li
         v-for="(list, idx) of lists"
         :key="idx"
         :class="{ active: active == idx }"
@@ -12,13 +12,15 @@
           scrollReset();
         "
         @mouseenter="active = idx"
+      > -->
+      <li
+        v-for="(list, idx) of lists"
+        :key="idx"
+        :class="{ active: active == idx }"
+        @mouseenter="active = idx"
       >
         <p v-html="list.text"></p>
-        <!-- <img
-          :src="`http://13.209.200.75:8080/assets/images/pages/solution/logo${[
-            idx,
-          ]}.png`"
-        /> -->
+
         <img
           :src="`http://13.209.200.75:8080/static/assets/images/pages/solution/logo${[
             idx,
