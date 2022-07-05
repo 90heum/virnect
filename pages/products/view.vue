@@ -28,7 +28,7 @@ import subVisualSection from "../../layouts/common/SubVisual.vue";
 import snbSection from "../../layouts/modules/Snb.vue";
 import tailSection from "../../layouts/common/Tail.vue";
 import viewComponent from "../../components/products/pages/View.vue";
-import SubBannerView from "~/components/products/partials/subBanner.vue";
+import SubBannerView from "~/components/products/partials/subBannerView.vue";
 import subMenuView from "~/components/products/partials/subMenuView.vue";
 export default {
   components: {
