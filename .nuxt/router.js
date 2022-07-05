@@ -4,27 +4,29 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _ca203302 = () => interopDefault(import('../pages/company/about.vue' /* webpackChunkName: "pages/company/about" */))
-const _732d62a7 = () => interopDefault(import('../pages/company/ir.vue' /* webpackChunkName: "pages/company/ir" */))
-const _789d6c2c = () => interopDefault(import('../pages/company/talent.vue' /* webpackChunkName: "pages/company/talent" */))
-const _491047bd = () => interopDefault(import('../pages/products/make.vue' /* webpackChunkName: "pages/products/make" */))
-const _7d18d535 = () => interopDefault(import('../pages/products/ms.vue' /* webpackChunkName: "pages/products/ms" */))
-const _987ac756 = () => interopDefault(import('../pages/products/remote.vue' /* webpackChunkName: "pages/products/remote" */))
-const _88c2d1e8 = () => interopDefault(import('../pages/products/track.vue' /* webpackChunkName: "pages/products/track" */))
-const _add28892 = () => interopDefault(import('../pages/products/twin.vue' /* webpackChunkName: "pages/products/twin" */))
-const _e4256e18 = () => interopDefault(import('../pages/products/view.vue' /* webpackChunkName: "pages/products/view" */))
-const _13c91414 = () => interopDefault(import('../pages/solutions/airline_railroad.vue' /* webpackChunkName: "pages/solutions/airline_railroad" */))
-const _4ff2d474 = () => interopDefault(import('../pages/solutions/energy_resource.vue' /* webpackChunkName: "pages/solutions/energy_resource" */))
-const _2fea2aa7 = () => interopDefault(import('../pages/solutions/epc.vue' /* webpackChunkName: "pages/solutions/epc" */))
-const _14d49625 = () => interopDefault(import('../pages/solutions/motor_parts.vue' /* webpackChunkName: "pages/solutions/motor_parts" */))
-const _02655bae = () => interopDefault(import('../pages/solutions/oil_chemical_battery.vue' /* webpackChunkName: "pages/solutions/oil_chemical_battery" */))
-const _01c5bd4c = () => interopDefault(import('../pages/support/faq.vue' /* webpackChunkName: "pages/support/faq" */))
-const _40d6298b = () => interopDefault(import('../pages/support/inquiry.vue' /* webpackChunkName: "pages/support/inquiry" */))
-const _45238328 = () => interopDefault(import('../pages/support/learning-center.vue' /* webpackChunkName: "pages/support/learning-center" */))
-const _3777a178 = () => interopDefault(import('../pages/support/notice.vue' /* webpackChunkName: "pages/support/notice" */))
-const _4a96d02a = () => interopDefault(import('../pages/support/notice-detail.vue' /* webpackChunkName: "pages/support/notice-detail" */))
-const _54d389f3 = () => interopDefault(import('../pages/company/subCompany/Brand.vue' /* webpackChunkName: "pages/company/subCompany/Brand" */))
-const _4e2f2456 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _74945477 = () => interopDefault(import('../pages/company/about.vue' /* webpackChunkName: "pages/company/about" */))
+const _b98f10a2 = () => interopDefault(import('../pages/company/ir.vue' /* webpackChunkName: "pages/company/ir" */))
+const _1e9a9af2 = () => interopDefault(import('../pages/company/talent.vue' /* webpackChunkName: "pages/company/talent" */))
+const _22b4b5b5 = () => interopDefault(import('../pages/products/make.vue' /* webpackChunkName: "pages/products/make" */))
+const _4e70612d = () => interopDefault(import('../pages/products/ms.vue' /* webpackChunkName: "pages/products/ms" */))
+const _93f92766 = () => interopDefault(import('../pages/products/remote.vue' /* webpackChunkName: "pages/products/remote" */))
+const _1687e814 = () => interopDefault(import('../pages/products/track.vue' /* webpackChunkName: "pages/products/track" */))
+const _fa89aca2 = () => interopDefault(import('../pages/products/twin.vue' /* webpackChunkName: "pages/products/twin" */))
+const _6791b6ec = () => interopDefault(import('../pages/products/view.vue' /* webpackChunkName: "pages/products/view" */))
+const _4259191c = () => interopDefault(import('../pages/solutions/airline_railroad.vue' /* webpackChunkName: "pages/solutions/airline_railroad" */))
+const _a76be328 = () => interopDefault(import('../pages/solutions/energy_resource.vue' /* webpackChunkName: "pages/solutions/energy_resource" */))
+const _098e989f = () => interopDefault(import('../pages/solutions/epc.vue' /* webpackChunkName: "pages/solutions/epc" */))
+const _5ff0e7c6 = () => interopDefault(import('../pages/solutions/motor_parts.vue' /* webpackChunkName: "pages/solutions/motor_parts" */))
+const _a048c694 = () => interopDefault(import('../pages/solutions/oil_chemical_battery.vue' /* webpackChunkName: "pages/solutions/oil_chemical_battery" */))
+const _5f16a55c = () => interopDefault(import('../pages/support/faq.vue' /* webpackChunkName: "pages/support/faq" */))
+const _4316f983 = () => interopDefault(import('../pages/support/inquiry.vue' /* webpackChunkName: "pages/support/inquiry" */))
+const _011e49c0 = () => interopDefault(import('../pages/support/learning-center.vue' /* webpackChunkName: "pages/support/learning-center" */))
+const _632d4e86 = () => interopDefault(import('../pages/support/learning-manual-detail.vue' /* webpackChunkName: "pages/support/learning-manual-detail" */))
+const _2467f924 = () => interopDefault(import('../pages/support/learning-video-detail.vue' /* webpackChunkName: "pages/support/learning-video-detail" */))
+const _3f2d804c = () => interopDefault(import('../pages/support/notice.vue' /* webpackChunkName: "pages/support/notice" */))
+const _05c9c622 = () => interopDefault(import('../pages/support/notice-detail.vue' /* webpackChunkName: "pages/support/notice-detail" */))
+const _379d9e0a = () => interopDefault(import('../pages/company/subCompany/Brand.vue' /* webpackChunkName: "pages/company/subCompany/Brand" */))
+const _a985eb64 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -39,87 +41,95 @@ export const routerOptions = {
 
   routes: [{
     path: "/company/about",
-    component: _ca203302,
+    component: _74945477,
     name: "company-about"
   }, {
     path: "/company/ir",
-    component: _732d62a7,
+    component: _b98f10a2,
     name: "company-ir"
   }, {
     path: "/company/talent",
-    component: _789d6c2c,
+    component: _1e9a9af2,
     name: "company-talent"
   }, {
     path: "/products/make",
-    component: _491047bd,
+    component: _22b4b5b5,
     name: "products-make"
   }, {
     path: "/products/ms",
-    component: _7d18d535,
+    component: _4e70612d,
     name: "products-ms"
   }, {
     path: "/products/remote",
-    component: _987ac756,
+    component: _93f92766,
     name: "products-remote"
   }, {
     path: "/products/track",
-    component: _88c2d1e8,
+    component: _1687e814,
     name: "products-track"
   }, {
     path: "/products/twin",
-    component: _add28892,
+    component: _fa89aca2,
     name: "products-twin"
   }, {
     path: "/products/view",
-    component: _e4256e18,
+    component: _6791b6ec,
     name: "products-view"
   }, {
     path: "/solutions/airline_railroad",
-    component: _13c91414,
+    component: _4259191c,
     name: "solutions-airline_railroad"
   }, {
     path: "/solutions/energy_resource",
-    component: _4ff2d474,
+    component: _a76be328,
     name: "solutions-energy_resource"
   }, {
     path: "/solutions/epc",
-    component: _2fea2aa7,
+    component: _098e989f,
     name: "solutions-epc"
   }, {
     path: "/solutions/motor_parts",
-    component: _14d49625,
+    component: _5ff0e7c6,
     name: "solutions-motor_parts"
   }, {
     path: "/solutions/oil_chemical_battery",
-    component: _02655bae,
+    component: _a048c694,
     name: "solutions-oil_chemical_battery"
   }, {
     path: "/support/faq",
-    component: _01c5bd4c,
+    component: _5f16a55c,
     name: "support-faq"
   }, {
     path: "/support/inquiry",
-    component: _40d6298b,
+    component: _4316f983,
     name: "support-inquiry"
   }, {
     path: "/support/learning-center",
-    component: _45238328,
+    component: _011e49c0,
     name: "support-learning-center"
   }, {
+    path: "/support/learning-manual-detail",
+    component: _632d4e86,
+    name: "support-learning-manual-detail"
+  }, {
+    path: "/support/learning-video-detail",
+    component: _2467f924,
+    name: "support-learning-video-detail"
+  }, {
     path: "/support/notice",
-    component: _3777a178,
+    component: _3f2d804c,
     name: "support-notice"
   }, {
     path: "/support/notice-detail",
-    component: _4a96d02a,
+    component: _05c9c622,
     name: "support-notice-detail"
   }, {
     path: "/company/subCompany/Brand",
-    component: _54d389f3,
+    component: _379d9e0a,
     name: "company-subCompany-Brand"
   }, {
     path: "/",
-    component: _4e2f2456,
+    component: _a985eb64,
     name: "index"
   }],
 

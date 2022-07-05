@@ -65,13 +65,14 @@ export default {
 <style lang="scss" scoped>
  .pageNation{
      li, ul, a { text-decoration: none; list-style: none; }
-     .pasingNum { padding-left: 0px; }
+     .pagingNum { padding-left: 0px; }
         display: flex;
         justify-content: center;
         .pageNationWrap{
             display: flex;
             justify-content: center;
             width: 100%;
+            margin-bottom: 50px;
             span{
                 p{
                     .Normal{

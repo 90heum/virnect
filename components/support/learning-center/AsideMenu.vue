@@ -2,28 +2,30 @@
 <div class="surplusWrapper">
    <!-- 탭메뉴 -->
      <span class="LearningCenterAside">
-        <span>
-            <p>전체</p>
+        <span @click="chooseTypeMenuAndToggle(null)">
+            <p :class="`${isTypeMenu === null ? 'asideActive' : ''}`">{{$i18n.localeProperties.code === "ko" ? "전체" : "All"}}</p>
             <i><img src="https://velog.velcdn.com/images/kyj0206/post/677e0a5b-146e-46a5-a5db-ef2b185febf4/image.png"
                     alt="LearningCenterTag"></i>
         </span>
-        <span>
-            <p>{{$i18n.localeProperties.code === "ko" ? typeList[0].name : typeList[0].nameEn}}</p>
+        <span @click="chooseTypeMenuAndToggle(typeList[0].id)">
+            <p :class="`${isTypeMenu === typeList[0].id ? 'asideActive' : ''}`">{{$i18n.localeProperties.code === "ko" ? typeList[0].name : typeList[0].nameEn}}</p>
             <i><img src="https://velog.velcdn.com/images/kyj0206/post/677e0a5b-146e-46a5-a5db-ef2b185febf4/image.png"
                     alt="LearningCenterTag"></i>
         </span>
 
-        <span>
-            <p>{{$i18n.localeProperties.code === "ko" ? "Video Tutorial" : "Video Tutorial"}}</p>
+        <span @click="chooseTypeMenuAndToggle(0)">
+            <p :class="`${isTypeMenu === 0 ? 'asideActive' : ''}`">{{$i18n.localeProperties.code === "ko" ? "Video Tutorial" : "Video Tutorial"}}</p>
             <i><img src="https://velog.velcdn.com/images/kyj0206/post/677e0a5b-146e-46a5-a5db-ef2b185febf4/image.png"
                     alt="LearningCenterTag"></i>
         </span>
-        <span>{{$i18n.localeProperties.code === "ko" ? typeList[1].name : typeList[1].nameEn}}</span>
-        <span>{{$i18n.localeProperties.code === "ko" ? typeList[2].name : typeList[2].nameEn}}</span>
+        <span @click="chooseTypeMenuAndToggle(typeList[1].id)"
+               :class="`${isTypeMenu === typeList[1].id ? 'asideActive' : ''}`">{{$i18n.localeProperties.code === "ko" ? typeList[1].name : typeList[1].nameEn}}</span>
+        <span @click="chooseTypeMenuAndToggle(typeList[2].id)"
+               :class="`${isTypeMenu === typeList[2].id ? 'asideActive' : ''}`">{{$i18n.localeProperties.code === "ko" ? typeList[2].name : typeList[2].nameEn}}</span>
 
 
-        <span>
-            <p>{{$i18n.localeProperties.code === "ko" ? typeList[3].name : typeList[3].nameEn}}</p>
+        <span @click="chooseTypeMenuAndToggle(typeList[3].id)">
+            <p :class="`${isTypeMenu === typeList[3].id ? 'asideActive' : ''}`">{{$i18n.localeProperties.code === "ko" ? typeList[3].name : typeList[3].nameEn}}</p>
             <i><img src="https://velog.velcdn.com/images/kyj0206/post/677e0a5b-146e-46a5-a5db-ef2b185febf4/image.png"
                     alt="LearningCenterTag"></i>
         </span>
@@ -36,18 +38,18 @@
                 <div class="selected-icon">
                     <img src="https://velog.velcdn.com/images/kyj0206/post/0f39f4c6-a786-41ea-b239-84f4997f5712/image.png" alt="다운아이콘">
                 </div>
-                <div class="selected-value">{{isTypeMenu === 0 ? "Video Tutorial" : isTypeMenu ? typeList.find(e => e.id === isTypeMenu).name : "전체"}}</div>
+                <div class="selected-value">{{isTypeMenu === 0 ? "Video Tutorial" : isTypeMenu ? $i18n.localeProperties.code === "ko" ? typeList.find(e => e.id === isTypeMenu).name : typeList.find(e => e.id === isTypeMenu).nameEn : $i18n.localeProperties.code === "ko" ? "전체" : "All"}}</div>
                 <div class="arrow"></div>
                 </div>
                 <ul v-if="isToggle">
                 <li class="option"
-                    @click="chooseTypeMenuAndToggle(null)">전체</li>
+                    @click="chooseTypeMenuAndToggle(null, true)">{{$i18n.localeProperties.code === "ko" ? "전체" : "All" }}</li>
                 <li class="option"
-                    @click="chooseTypeMenuAndToggle(typeList[0].id)">{{$i18n.localeProperties.code === "ko" ? typeList[0].name : typeList[0].nameEn}}</li>
+                    @click="chooseTypeMenuAndToggle(typeList[0].id, true)">{{$i18n.localeProperties.code === "ko" ? typeList[0].name : typeList[0].nameEn}}</li>
                 <li class="option"
-                    @click="chooseTypeMenuAndToggle(0)">Video Tutorial</li>
+                    @click="chooseTypeMenuAndToggle(0, true)">Video Tutorial</li>
                 <li class="option"
-                    @click="chooseTypeMenuAndToggle(typeList[3].id)">{{$i18n.localeProperties.code === "ko" ? typeList[3].name : typeList[3].nameEn}}</li>
+                    @click="chooseTypeMenuAndToggle(typeList[3].id, true)">{{$i18n.localeProperties.code === "ko" ? typeList[3].name : typeList[3].nameEn}}</li>
                 </ul>
         </div>
 </div>
@@ -69,8 +71,8 @@ export default {
         handleToggle() {
             this.isToggle = !this.isToggle;
         },
-        chooseTypeMenuAndToggle (id) {
-            this.isToggle = !this.isToggle;
+        chooseTypeMenuAndToggle (id, isMobile = false) {
+            if (isMobile) this.isToggle = !this.isToggle;
             this.chooseTypeMenu(id);
         }
     }
@@ -78,7 +80,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~/assets/css/pages/support-learning-center.scss";
+.surplusWrapper {
+            max-width: 180px;
+            width: 100%;
+}
     .LearningCenterAside{
         display: flex;
         gap: 30px;
@@ -86,7 +91,7 @@ export default {
         max-width: 180px;
         width: 100%;
         span{
-            
+            cursor: pointer;
             display: flex;
             align-items: center;
             gap: 10px;
@@ -182,7 +187,11 @@ export default {
             }
         }
     }
-
+    .LearningCenterAside .asideActive {
+        text-decoration: underline;
+        text-underline-position: under;
+        color: #0a51b7;
+    }
     @media screen and (max-width: 768px){
         .LearningCenterMbAside {
             display: block;

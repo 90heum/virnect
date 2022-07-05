@@ -23,9 +23,21 @@
 
                <!-- 블로그 탭 리스트 -->
                 <span class="LearningCenterList">
-                    <user-manual :conetentList="conetentList.manual"/>
-                    <video-tutoral :conetentList="conetentList.tutorial"/>
-                    <video-real-guide :conetentList="conetentList.guide"/>
+                    <user-manual :contentList="contentList.manual||contentList.supportLearningResponseList"
+                                 :isDetailList="isTypeMenu"
+                                 :pagingData="pagingData"
+                                 :movePage="movePage"
+                                 :chooseTypeMenu="chooseTypeMenu"/>
+                    <video-tutoral :contentList="contentList.tutorial||contentList.supportLearningResponseList"
+                                   :isDetailList="isTypeMenu"
+                                   :pagingData="pagingData"
+                                   :movePage="movePage"
+                                   :chooseTypeMenu="chooseTypeMenu"/>
+                    <video-real-guide :contentList="contentList.guide||contentList.supportLearningResponseList"
+                                      :isDetailList="isTypeMenu"
+                                      :pagingData="pagingData"
+                                      :movePage="movePage"
+                                      :chooseTypeMenu="chooseTypeMenu"/>
                 </span>
         </div>
     </div>
@@ -56,16 +68,26 @@ export default {
                 startPage: 1,
                 endPage: 1
             },
-            conetentList: {}
+            contentList: [],
         }
     },
     methods: {
+        movePage (currentPage, isPaging = false) {
+            this.pagingData = {...this.pagingData, currentPage: isPaging ? currentPage : 1};
+            this.requestData();
+        },
         chooseTabMenu (e) {
             this.isTabMenu = e;
-            console.log(this.conetentList);
+            this.requestData();
         },
         chooseTypeMenu (e) {
             this.isTypeMenu = e;
+            this.requestData();
+        },
+        requestData () {
+            this.$axios.get(`admin/support/learning?page=${this.pagingData.currentPage}&size=${this.pagingData.currentSize}&categoryId=${this.isTabMenu === 0 ? '' : this.isTabMenu}&typeId=${this.isTypeMenu === 0 ? 0 : this.isTypeMenu ? this.isTypeMenu : ''}`)
+            .then(res => this.contentList = res.data.data)
+            .catch(e => console.error(e))
         }
     },
     components: {
@@ -87,7 +109,7 @@ export default {
             return {
                 categoryList: dataJson[0].data.data.categoryList, 
                 typeList: dataJson[1].data.data.typeList, 
-                conetentList: dataJson[2].data.data
+                contentList: dataJson[2].data.data
             }
         } catch (e) {console.error(e)}
     }
@@ -113,5 +135,8 @@ export default {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .LearningCenter .tabCont { display: block; }
+}
 
 </style>

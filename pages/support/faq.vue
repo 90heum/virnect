@@ -30,7 +30,8 @@
 
             <div class="tabCont">
                 <aside-menu :asideMenuList="asideMenuList"
-                            :chooseType="chooseType"/>
+                            :chooseType="chooseType"
+                            :isType="isType"/>
                 <faq-contents :contentList="contentList"
                               :pagingData="pagingData"
                               :movePage="movePage"/>
@@ -51,7 +52,7 @@ export default {
     data() {
         return {
             isCategory: 3,
-            isType: 0,
+            isType: null,
             typeList: [],
             asideMenuList: [],
             contentList: [],
@@ -103,7 +104,7 @@ export default {
             this.asideMenuList = dataJson[0].data.typeList;
             this.contentList = dataJson[1].data.supportFaqDTOList;
             this.pagingData = dataJson[1].data.pageMetadataResponse;
-            this.isType = 0;
+            this.isType = null;
             } catch (e) {console.error(e)}
         },
 
@@ -264,6 +265,7 @@ section.contactTab {
     .LearningCenterMbTab-prev, .LearningCenterMbTab-next  { 
         display: block;
     }
+    .tabCont { display: block; }
 }
 
 @media screen and (max-width: 425px) {
