@@ -48,7 +48,7 @@ export default {
 
   dl {
     background-position-x: calc(80%);
-    width: calc(100% / 3);
+    width: calc(100% / 4);
     min-height: 320px;
     padding: 26px 30px 28px;
     text-align: left;

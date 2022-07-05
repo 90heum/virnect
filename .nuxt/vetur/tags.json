@@ -242,6 +242,9 @@
   "ProductsPartialsFunctionPart": {
     "description": "Auto imported from components/products/partials/FunctionPart.vue"
   },
+  "ProductsPartialsFunctionPart2": {
+    "description": "Auto imported from components/products/partials/FunctionPart2.vue"
+  },
   "ProductsPartialsIntroducePart": {
     "description": "Auto imported from components/products/partials/IntroducePart.vue"
   },

@@ -87,6 +87,7 @@ You can directly use them in pages and other components without the need to impo
 - `<ProductsPartialsEffectPart>` | `<products-partials-effect-part>` (components/products/partials/EffectPart.vue)
 - `<ProductsPartialsExamplePart>` | `<products-partials-example-part>` (components/products/partials/ExamplePart.vue)
 - `<ProductsPartialsFunctionPart>` | `<products-partials-function-part>` (components/products/partials/FunctionPart.vue)
+- `<ProductsPartialsFunctionPart2>` | `<products-partials-function-part2>` (components/products/partials/FunctionPart2.vue)
 - `<ProductsPartialsIntroducePart>` | `<products-partials-introduce-part>` (components/products/partials/IntroducePart.vue)
 - `<ProductsPartialsSupportPart>` | `<products-partials-support-part>` (components/products/partials/SupportPart.vue)
 - `<ProductsPartialsXRSolution>` | `<products-partials-x-r-solution>` (components/products/partials/XRSolution.vue)

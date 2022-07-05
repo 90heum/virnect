@@ -79,6 +79,7 @@ export { default as ProductsPartialsBgSlidePart } from '../../components/product
 export { default as ProductsPartialsEffectPart } from '../../components/products/partials/EffectPart.vue'
 export { default as ProductsPartialsExamplePart } from '../../components/products/partials/ExamplePart.vue'
 export { default as ProductsPartialsFunctionPart } from '../../components/products/partials/FunctionPart.vue'
+export { default as ProductsPartialsFunctionPart2 } from '../../components/products/partials/FunctionPart2.vue'
 export { default as ProductsPartialsIntroducePart } from '../../components/products/partials/IntroducePart.vue'
 export { default as ProductsPartialsSupportPart } from '../../components/products/partials/SupportPart.vue'
 export { default as ProductsPartialsXRSolution } from '../../components/products/partials/XRSolution.vue'

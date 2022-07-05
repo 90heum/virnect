@@ -98,7 +98,7 @@
 // import mixin from 'mixins/mixin'
 import introPart from "../partials/IntroducePart";
 import benefitPart from "../partials/BenefitPart";
-import functionPart from "../partials/FunctionPart";
+import functionPart from "../partials/FunctionPart2";
 import effectPart from "../partials/EffectPart";
 import supportPart from "../partials/SupportPart";
 import examplePart from "../partials/ExamplePart";
