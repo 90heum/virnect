@@ -1,21 +1,5 @@
 <template>
- <!-- Test용 메인배너 -->
-    <div class="banner">
-        <!-- <div class="bannerWrap"> -->
-    <!-- Test용 메인배너 -->       
-
-        <!-- 실제 사용 할 모듈구역 시작 -->
-<!-- 테스터 시작 -->
-    <!-- <div class="slider">
-        <div class="slider-inner">
-            <div class="slider-item"
-                 v-for="(data, idx) of ['https://velog.velcdn.com/images/kyj0206/post/01174201-9b39-4b4e-9090-6ebbb4a134d8/image.png', 
-                                        'https://velog.velcdn.com/images/kyj0206/post/01174201-9b39-4b4e-9090-6ebbb4a134d8/image.png']"
-                 :key="idx"><img :src="data" /></div>
-        </div>
-    </div> -->
-
-
+<div class="banner">
 
     <div class="slider-container">
       <div class="slide"
@@ -26,87 +10,13 @@
       </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- <div class="navy-infomation-list-pagination">
-      <div class="pagination-progressive-bar" slot="pagination"></div>
-      <div class="pagination-number-wrap">
-        <button class="top-prev-btn arrow-btn"></button>
-        <i class="praction"
-          ><span>{{ 1 }}</span
-          >/{{ ['https://velog.velcdn.com/images/kyj0206/post/01174201-9b39-4b4e-9090-6ebbb4a134d8/image.png', 
-                'https://velog.velcdn.com/images/kyj0206/post/01174201-9b39-4b4e-9090-6ebbb4a134d8/image.png'].length }}</i
-        >
-        <button class="top-next-btn arrow-btn"></button>
-      </div>
-    </div> -->
-<!-- 테스터 끝-->
-
-
-        <!-- 실제 사용 할 모듈구역 끝 -->
-
-        <!-- </div> -->
-    </div>    
+</div>    
 </template>
 
 <script>
 export default {
     created() {
         if (process.client) {
-            // let slider = document.querySelector(".slider")
-            // let innerSlider = document.querySelector(".slider-inner")
-            // let pressed = false
-            // let startx
-            // let x
-
-            // slider.addEventListener("mousedown", e => {
-            // pressed = true
-            // startx = e.offsetX - innerSlider.offsetLeft
-            // slider.style.cursor = "grabbing"
-            // })
-
-            // slider.addEventListener("mouseenter", () => {
-            // slider.style.cursor = "grab"
-            // })
-
-            // slider.addEventListener("mouseup", () => {
-            // slider.style.cursor = "grab"
-            // })
-
-            // window.addEventListener("mouseup", () => {
-            // pressed = false
-            // })
-
-            // slider.addEventListener("mousemove", e => {
-            // if (!pressed) return
-            // e.preventDefault()
-            // x = e.offsetX
-
-            // innerSlider.style.left = `${x - startx}px`
-            // checkboundary()
-            // })
-
-            // function checkboundary() {
-            // let outer = slider.getBoundingClientRect()
-            // let inner = innerSlider.getBoundingClientRect()
-
-            // if (parseInt(innerSlider.style.left) > 0) {
-            //     innerSlider.style.left = "0px"
-            // } else if (inner.right < outer.right) {
-            //     innerSlider.style.left = `-${inner.width - outer.width}px`
-            // }
-            // }
 
             const slider = document.querySelector('.slider-container'),
             slides = Array.from(document.querySelectorAll('.slide'))
@@ -201,52 +111,9 @@ export default {
         }
     },
     methods: {
-        // getActiveSlide() {
-        //     console.log(this.$el)
-        //     this.exampleActiveIdx = this.$el
-        //         .querySelector(".swiper-slide-active")
-        //         .getAttribute("data-idx");
-        // },
-        // onSwiperRedied(e) {
-        //     console.log("스와이퍼 리다이드", e)
-        // }
     },
      data() {
         return {
-        // exampleActiveIdx: 1,
-        // options: {
-        // slidesPerView: 'auto',
-        // centeredSlides: true,
-        // spaceBetween: '30',
-        // direction: "horizontal",
-        // loop: true,
-        // loopedSlides: 3,
-        // pagination: {
-        //   el: ".pagination-progressive-bar",
-        //   type: "progressbar",
-        // },
-        // navigation: {
-        //   nextEl: ".top-next-btn",
-        //   prevEl: ".top-prev-btn",
-        // },
-        // lazy : {
-        //     initialImageLoaded: true
-        // },
-        // breakpoints: {
-        //   1200: {
-        //     slidesPerView: "auto",
-        //     loop: true,
-        //     mousewheel: false,
-        //     direction: "horizontal",
-        //     spaceBetween: 12,
-        //   },
-        //   480: {
-        //     mousewheel: false,
-        //     direction: "vertical",
-        //     spaceBetween: 12,
-        //   },
-        // },
-    //   },
         }
     }
 }
@@ -262,9 +129,6 @@ export default {
 
     .bannerWrap {
         position: relative;
-        /* width: 100%;
-        height: 300px;
-        padding: 50px 30px; */
 
         // 실제사용 모듈용 css 구역!!!!!!!!!!!!!!
         .bannerMoule {
@@ -308,33 +172,6 @@ export default {
 
     }
 }
-// .slider {
-//   position: absolute;
-//   left: 10%;
-//   width: 80%;
-//   height: 100%;
-//   top: 85%;
-//   max-height: 266px;
-//   overflow: hidden;
-// }
-
-// .slider-inner {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   height: 100%;
-//   width: 200%;
-//   display: grid;
-//   grid-template-columns: repeat(2, 1fr);
-//   gap: 5px;
-//   pointer-events: none;
-// }
-
-// .slider-item {
-//   height: 100%;
-//   img { width: 100%; max-height: 266px; }
-// }
-
 :root {
   --shadow: rgba(0, 0, 0, 0.8)
 }
