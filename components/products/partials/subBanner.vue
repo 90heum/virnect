@@ -7,16 +7,15 @@
                 </i>
                 <p>VIRNECT Remote</p>
                 <h2>
-                    XR 원격 협업 
-                    <p>솔루션</p>
+                    {{$t("productsText.remoteSubTitle.title")}}
                 </h2>
                 <span class="subExplanation">
-                    VIRNECT Remote는 시/공간 제약 없이 여러 현장을 하나로 연결하여 자유롭게 정보를 공유합니다.
+                    {{$t("productsText.remoteSubTitle.contents")}}
                 </span>
                 <span>
                     <button>
                         <a href="#">
-                            <p>자세히 보기</p>
+                            <p>{{$t("productsText.remoteSubButton.know")}}</p>
                             <p>
                                 <img src="https://velog.velcdn.com/images/kyj0206/post/ede40cab-2b1a-47ff-a338-ad93d68b93f4/image.png" alt="">
                             </p>
@@ -24,7 +23,7 @@
                     </button>
                     <button>
                         <a href="#">
-                            데모신청
+                            {{$t("productsText.remoteSubButton.free")}}
                         </a>
                     </button>
                 </span>

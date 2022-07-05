@@ -9,16 +9,14 @@
           />
         </i>
         <p>VIRNECT Twin</p>
-        <h2>XR 기반 3D 현장 관리 솔루션</h2>
+        <h2>{{$t("productsText.twinSubTitle.title")}}</h2>
         <span class="subExplanation">
-          VIRNECT Twin은 산업 현장을 가상 모델로 재현하고 이를 실제 데이터 와
-          연동하여, 산업 현장의 운영 상태 및 프로세스를 모니터링할 수 있는
-          제품입니다
+          {{$t("productsText.twinSubTitle.contents")}}
         </span>
         <span>
           <button>
             <a href="#">
-              <p>자세히 보기</p>
+              <p>{{$t("productsText.twinSubButton.know")}}</p>
               <p>
                 <img
                   src="https://velog.velcdn.com/images/kyj0206/post/ede40cab-2b1a-47ff-a338-ad93d68b93f4/image.png"
@@ -28,7 +26,7 @@
             </a>
           </button>
           <button>
-            <a href="#"> 데모신청 </a>
+            <a href="#"> {{$t("productsText.twinSubButton.free")}} </a>
           </button>
         </span>
       </span>

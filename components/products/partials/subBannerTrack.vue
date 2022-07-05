@@ -9,16 +9,14 @@
           />
         </i>
         <p>VIRNECT Track</p>
-        <h2>검출/추적용 XR 개발 엔진</h2>
+        <h2>{{$t("productsText.twinSubTitle.title")}}</h2>
         <span class="subExplanation">
-          VIRNECT Track은 빠르고 정확하게 객체를 학습, 인식 검출, 추적하는
-          버넥트 자체 개발 XR 엔진입니다. 버넥트 XR 제품들에 탑재되어 뛰어 난
-          성능과 운영 퍼포먼스를 제공하고 있습니다.
+          {{$t("productsText.twinSubTitle.contents")}}
         </span>
         <span>
           <button>
             <a href="#">
-              <p>자세히 보기</p>
+              <p>{{$t("productsText.trackSubButton.know")}}</p>
               <p>
                 <img
                   src="https://velog.velcdn.com/images/kyj0206/post/ede40cab-2b1a-47ff-a338-ad93d68b93f4/image.png"
@@ -28,7 +26,7 @@
             </a>
           </button>
           <button>
-            <a href="#"> 데모신청 </a>
+            <a href="#"> {{$t("productsText.trackSubButton.free")}} </a>
           </button>
         </span>
       </span>

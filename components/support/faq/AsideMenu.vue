@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="surplusFaqWrapper">
     <!-- aside -->
     <span class="FAQAside">
         <span @click="chooseType(null)">
@@ -28,6 +28,7 @@ export default {
 
 
 <style lang="scss" scoped>
+.surplusFaqWrapper { width: 100%; max-width: 180px; }
     .FAQAside{
         display: flex;
         gap: 30px;

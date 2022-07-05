@@ -1,11 +1,80 @@
 {
 	"productsText": {
+		"trackSubTitle" : {
+			"title" : "검출/추적용 XR 개발 엔진",
+			"contents" : "VIRNECT Track은 빠르고 정확하게 객체를 학습, 인식 검출, 추적하는 버넥트 자체 개발 XR 엔진입니다. 버넥트 XR 제품들에 탑재되어 뛰어 난 성능과 운영 퍼포먼스를 제공하고 있습니다."
+		},
+
+		"trackSubButton" : {
+			"know" : "자세히 보기",
+			"free" : "데모신청"
+		},
+		"twinSubTitle" : {
+			"title" : "XR 기반 3D 현장 관리 솔루션",
+			"contents" : "VIRNECT Twin은 산업 현장을 가상 모델로 재현하고 이를 실제 데이터와 연동하여, 산업 현장의 운영 상태 및 프로세스를 모니터링할 수 있는 제품입니다"
+		},
+
+		"twinSubButton" : {
+			"know" : "자세히 보기",
+			"free" : "데모신청"
+		},
+		"viewSubTitle" : {
+			"title" : "XR 정보 및 데이터 시각화 솔루션",
+			"contents" : "VIRNECT View를 통해 작업 매뉴얼, 안전 가이드 등의 업무 정보와 IoT 센서 및 SCADA 등 데이터 정보를 현장에서 바로 확인할 수 있습니다."
+		},
+
+		"viewSubButton" : {
+			"know" : "자세히 보기",
+			"free" : "데모신청"
+		},
+		"makeSubTitle" : {
+			"title" : "XR 콘텐츠 제작 All-In-One솔루션",
+			"contents" : "VIRNECT Make는 쉽고 빠르게 현장의 설비 운영/작업 절차 등 운영에 필요한 모든 정보와 지식을 XR 콘텐츠로 제작 가능한 도구입니다."
+		},
+
+		"makeSubButton" : {
+			"know" : "자세히 보기",
+			"free" : "데모신청"
+		},
+		"remoteSubTitle" : {
+			"title" : "XR 원격 협업 솔루션",
+			"contents" : "VIRNECT Remote는 시/공간 제약 없이 여러 현장을 하나로 연결하여 자유롭게 정보를 공유합니다."
+		},
+
+		"remoteSubButton" : {
+			"know" : "자세히 보기",
+			"free" : "데모신청"
+		},
+
+		"productPropertyTitle" : {
+			"title" : "제품특징",
+			"contents" : "업계 최고 수준의 기술력을 통한 VIRNECT Remote만의 특징"
+		},	
+	
+		"productPropertyText": {
+			"multiple" : "Web/App, Smart Glass, 360º Camera, Robot 등 다양한 구동 환경 제공",
+			"translation" : "설정한 언어로 실시간 통번역",
+			"images" : "네트워크 상태가 불안정해도 고화질 영상 선택 가능",
+			"secured" : "내부망 내 구축을 통한 보안성 확보",
+			"autoStart" : "RealWear 기기 전원을 켜면 Remote 자동 실행 및 빠른 사용",
+			"personalization" : "고객 맞춤형 커스터마이징 기능 탑재 가능"
+		},	
+
+		"xrSolutionTitle": {
+			"category" : "AR 다자간 원격 협업",
+			"title" : "XR 원격 협업 솔루션",
+			"contents" : "VIRNECT Remote의 실시간 원격협업 서비스를 통해 산업 현장에 필요한 정보와 이슈를 실시간으로 공유하여 언제 어디서든 업무 대응이 가능합니다. 빠르고 간편하게 협업이 가능하며 기존의 익숙한 업무 환경을 그대로 유지하여 업무의 정확성과 효율성을 높일 수 있습니다."
+		},	
+
+		"xrSolutionText": {
+			"TimeCost" : "현지공장 출장 비용, 시간을 획기적으로 줄일 수 있습니다",
+			"Quicky" : "정보를 신속하고 정확하게 전달할 수 있습니다.",
+			"Risks" : "긴급상황 발생 시 외부 전문가들의 신속한 도움을 받을 수 있습니다."
+		},	
+
 		"visualText": {
 			"title": "산업 현장을 위해 최적화된 <br class='mobile-hidden'>제품을 만나보세요",
 			"contents": "VIRNECT의 제품은 AR 원천기술 및 <br class='mobile-show'>디지털 트윈 기술을 바탕으로 <br class='mobile-hidden'>​안전하고 효율적인 <br class='mobile-show'>미래 산업 현장을 만들어 갑니다."
-		},
-		"productText": {
-			"title": "AR 및 디지털 트윈 기술을 바탕으로 미래 산업을 만들어 갑니다."
 		},
 		"supportTitle": {
 			"category": "사용 및 지원",
@@ -129,12 +198,12 @@
 			],
 			"bgExampleList": [
 				{
-					"img": "~assets/images/pages/products/logo-recommendation-kaeri.png",
+					"img": "https://virnect.com/images/pages/products/logo-recommendation-kaeri.png",
 					"contents": "버넥트 솔루션은 높은 신뢰성을 요구하는 분야에도 체계적인 <br class='mobile-hidden'>정보관리와 최적의 안전관리 플랫폼을 제시합니다.",
 					"category": " - 한국원자력연구원, 폐기물총관리실 연구원"
 				},
 				{
-					"img": "~assets/images/pages/products/logo-recommendation-kt.png",
+					"img": "https://virnect.com/images/pages/products/logo-recommendation-kt.png",
 					"contents": "높은 신뢰성을 가진 VIRNECT Track의 객체 검출 기능은 <br class='mobile-hidden'>산업현장의 계측 정보를 관리하는 플랫폼을 제공할 수 있습니다.",
 					"category": " - KT Infra 연구소, 김영석"
 				}
@@ -280,32 +349,32 @@
 			],
 			"bgExampleList": [
 				{
-					"img": "~assets/images/pages/products/logo-recommendation-steel",
+					"img": "https://virnect.com/images/pages/products/logo-recommendation-steel",
 					"contents": "버넥트 솔루션은 저희 회사 Smart Factory 플랫폼 발전에 <br class='mobile-hidden'>상당한 기여를 하였습니다.",
 					"category": "- 현대제철"
 				},
 				{
-					"img": "~assets/images/pages/products/logo-recommendation-kaeri",
+					"img": "https://virnect.com/images/pages/products/logo-recommendation-kaeri",
 					"contents": "버넥트 솔루션은 높은 신뢰성을 요구하는 분야에도 체계적인 <br class='mobile-hidden'>정보관리와 최적의 안전관리 플랫폼을 제시합니다.",
 					"category": " - 한국원자력연구원, 폐기물총관리실 연구원"
 				},
 				{
-					"img": "~assets/images/pages/products/logo-recommendation-kumc",
+					"img": "https://virnect.com/images/pages/products/logo-recommendation-kumc",
 					"contents": "버넥트 솔루션을 통해 환자의 안전이 중요한 수술 과정에서 <br class='mobile-hidden'>의료진의 집중도를 높이고 수술의 정확성을 향상할 수 있게 되었습니다.",
 					"category": "- 고려대학교, 성형외과"
 				},
 				{
-					"img": "~assets/images/pages/products/logo-recommendation-end",
+					"img": "https://virnect.com/images/pages/products/logo-recommendation-end",
 					"contents": "버넥트 솔루션은 저의 회사에게 스마트 공장에 대한 미래를 <br class='mobile-hidden'>꿈꾸게 하였습니다.",
 					"category": "- 이앤디일렉트릭㈜"
 				},
 				{
-					"img": "~assets/images/pages/products/logo-recommendation-skcnc",
+					"img": "https://virnect.com/images/pages/products/logo-recommendation-skcnc",
 					"contents": "현장 설비유지보수 업무에 AR솔루션 활용하니 업무 이해도 <br class='mobile-hidden'>빠르고, 작업 효율성도 좋아져서 업무가 쉬워 졌습니다.",
 					"category": "- SK CnC"
 				},
 				{
-					"img": "~assets/images/pages/products/logo-recommendation-seole-m",
+					"img": "https://virnect.com/images/pages/products/logo-recommendation-seole-m",
 					"contents": "글로벌 AR 기업과 비교해도 손색없는 토종 AR 전문기업, 버넥트의 core 솔루션은 <br class='mobile-hidden'>확실한 차별점을 가지고 있습니다. 산업생산성 향상에 필수적인 파트너가 될 것입니다.",
 					"category": "- 서일이앤엠"
 				}
@@ -459,12 +528,12 @@
 			],
 			"bgExampleList": [
 				{
-					"img": "~assets/images/pages/products/logo-recommendation-ibim",
+					"img": "https://virnect.com/images/pages/products/logo-recommendation-ibim",
 					"contents": "증강현실 상에서 각종 구조물의 사전 Digital Mock Up을 구현, 활용으로 <br class='mobile-hidden'>도면의 이해력과 숙련도 향상 및 업무 협의에 큰 도움이 되었습니다.",
 					"category": "- 인프라 BIM"
 				},
 				{
-					"img": "~assets/images/pages/products/logo-recommendation-seole-m",
+					"img": "https://virnect.com/images/pages/products/logo-recommendation-seole-m",
 					"contents": "글로벌 AR 기업과 비교해도 손색없는 토종 AR 전문기업, 버넥트의 core 솔루션은 <br class='mobile-hidden'>확실한 차별점을 가지고 있습니다. 산업생산성 향상에 필수적인 파트너가 될 것입니다.",
 					"category": "- 서일이앤엠"
 				}
@@ -580,56 +649,56 @@
 			"exampleContents": "VIRNECT Remote가 만들어낸 효율과 혁신을 <br>최신 사례와 자료를 통해 확인하세요.",
 			"exampleList": [
 				{
-					"img": "~assets/images/pages/products/remote-usecase-01.png",
+					"img": "https://virnect.com/images/pages/products/remote-usecase-01.png",
 					"title": "철도 차량 교육 훈련 및 정비 관리 지원"
 				},
 				{
-					"img": "~assets/images/pages/products/remote-usecase-02.png",
+					"img": "https://virnect.com/images/pages/products/remote-usecase-02.png",
 					"title": "발전소 설비 점검 및 유지 보수 지원"
 				},
 				{
-					"img": "~assets/images/pages/products/remote-usecase-03.png",
+					"img": "https://virnect.com/images/pages/products/remote-usecase-03.png",
 					"title": "상세하고 정확한 장비 조작 가이드"
 				},
 				{
-					"img": "~assets/images/pages/products/remote-usecase-04.png",
+					"img": "https://virnect.com/images/pages/products/remote-usecase-04.png",
 					"title": "해외 제조 사업장 품질 관리"
 				},
 				{
-					"img": "~assets/images/pages/products/remote-usecase-05.png",
+					"img": "https://virnect.com/images/pages/products/remote-usecase-05.png",
 					"title": "장기/대규모 건설 시공 과정 중 안정적인 커뮤니케이션 지원"
 				},
 				{
-					"img": "~assets/images/pages/products/remote-usecase-06.png",
+					"img": "https://virnect.com/images/pages/products/remote-usecase-06.png",
 					"title": "해외 원격 근무자 대체 도입 지원"
 				},
 				{
-					"img": "~assets/images/pages/products/remote-usecase-07.png",
+					"img": "https://virnect.com/images/pages/products/remote-usecase-07.png",
 					"title": "MICE 행사 진행 시 온라인 도슨트/원격지원"
 				},
 				{
-					"img": "~assets/images/pages/products/remote-usecase-08.png",
+					"img": "https://virnect.com/images/pages/products/remote-usecase-08.png",
 					"title": "건설 플랜트 신축 현장 시운전 원격 지원"
 				}
 			],
 			"bgExampleList": [
 				{
-					"img": "~assets/images/pages/products/logo-recommendation-sds",
+					"img": "https://virnect.com/images/pages/products/logo-recommendation-sds",
 					"contents": "작업자 Inspection에 활용된 버넥트 AR 솔루션은 고객만족도를 <br class='mobile-hidden'>크게 향상시켰습니다.",
 					"category": " - 삼성SDS"
 				},
 				{
-					"img": "~assets/images/pages/products/logo-recommendation-oci",
+					"img": "https://virnect.com/images/pages/products/logo-recommendation-oci",
 					"contents": "설비 유지보수시 시간과 공간의 제약없이 빠르게 협업할 수 있는 <br class='mobile-hidden'>강력한 Tool로 생각됩니다.",
 					"category": "- OCI"
 				},
 				{
-					"img": "~assets/images/pages/products/logo-recommendation-miraecity",
+					"img": "https://virnect.com/images/pages/products/logo-recommendation-miraecity",
 					"contents": "교량 등 시설물 안전점검에 적용 후 현장과 오피스 간 실시간 <br class='mobile-hidden'>교식으로 점검자의 효율이 올라가고 있습니다.",
 					"category": "- 미래시티"
 				},
 				{
-					"img": "~assets/images/pages/products/logo-recommendation-lgchem",
+					"img": "https://virnect.com/images/pages/products/logo-recommendation-lgchem",
 					"contents": "해외 생산 사이트를 가지고 있는 입장에서 버넥트 리모트가 <br class='mobile-hidden'>실제 업무 수행에 많은 도움이 되고 있습니다.",
 					"category": "- LG 화학"
 				}
@@ -752,12 +821,12 @@
 			],
 			"bgExampleList": [
 				{
-					"img": "~assets/images/pages/products/logo-recommendation-kaeri",
+					"img": "https://virnect.com/images/pages/products/logo-recommendation-kaeri",
 					"contents": "버넥트 솔루션은 높은 신뢰성을 요구하는 분야에도 체계적인 <br class='mobile-hidden'>정보관리와 최적의 안전관리 플랫폼을 제시합니다.",
 					"category": " - 한국원자력연구원, 폐기물총관리실 연구원"
 				},
 				{
-					"img": "~assets/images/pages/products/logo-recommendation-doosan",
+					"img": "https://virnect.com/images/pages/products/logo-recommendation-doosan",
 					"contents": "버넥트 솔루션 도입은 발전산업 현장의 생산성 향상과 <br class='mobile-hidden'>정보공유를 용이하게 지원합니다.",
 					"category": "- 두산중공업, 기술혁신연구원 에너지/환경기술개발팀"
 				}
@@ -918,17 +987,17 @@
 			"exampleContents": "VIRNECT와 MS HOLOLENS2가 만들어낸 효율과 <br>혁신을 최신 사례와 자료를 통해 확인하세요.",
 			"exampleList": [
 				{
-					"img": "~assets/images/pages/products/view-usecase-13.png",
+					"img": "https://virnect.com/images/pages/products/view-usecase-13.png",
 					"title": "홀로그램을 통한 원격협업",
 					"video": "PtrgXMpQKSA"
 				},
 				{
-					"img": "~assets/images/pages/products/ms-usecase-01.png",
+					"img": "https://virnect.com/images/pages/products/ms-usecase-01.png",
 					"title": "실감콘텐츠로 소비자 경험 극대화",
 					"video": "SYqlPO4qwKI"
 				},
 				{
-					"img": "~assets/images/pages/products/ms-usecase-02.png",
+					"img": "https://virnect.com/images/pages/products/ms-usecase-02.png",
 					"title": "BIM 데이터 시각화로 설비 정보 확인",
 					"video": "7OslP66pvZw"
 				}

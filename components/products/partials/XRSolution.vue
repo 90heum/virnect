@@ -3,16 +3,14 @@
     <div class="overView">
       <div class="overViewWrap">
         <span class="overViewTit">
-          <p>제품개요</p>
-          <h2>XR 원격 협업 솔루션</h2>
+          <p>
+            {{$t("productsText.xrSolutionTitle.category")}}
+          </p>
+          <h2>
+            {{$t("productsText.xrSolutionTitle.title")}}
+          </h2>
           <span>
-            VIRNECT Remote의 실시간 원격협업 서비스를 통해 산업 현장에 필요한
-            정보와 이슈를 실시간으로 공유하여 언제 어디서든 업무 대응이
-            가능합니다.
-            <p>
-              빠르고 간편하게 협업이 가능하며 기존의 익숙한 업무 환경을 그대로
-              유지하여 업무의 정확성과 효율성을 높일 수 있습니다.
-            </p>
+            {{$t("productsText.xrSolutionTitle.contents")}}
           </span>
         </span>
         <span class="overViewCont">
@@ -23,8 +21,7 @@
                 alt="Save Time and Cost"
             /></i>
             <p>Save Time and Cost</p>
-            <p>현지공장 출장 비용, 시간을</p>
-            <p>획기적으로 줄일 수 있습니다.</p>
+            <p>{{$t("productsText.xrSolutionText.TimeCost")}}</p>
           </span>
           <span>
             <i
@@ -33,8 +30,7 @@
                 alt="Inform Quicky and ccurately"
             /></i>
             <p>Inform Quicky and ccurately</p>
-            <p>정보를 신속하고 정확하게</p>
-            <p>전달할 수 있습니다.</p>
+            <p>{{$t("productsText.xrSolutionText.Quicky")}}</p>
           </span>
           <span>
             <i
@@ -43,8 +39,7 @@
                 alt="Reduce Industry Risks"
             /></i>
             <p>Reduce Industry Risks</p>
-            <p>긴급상황 발생 시 외부 전문가들의</p>
-            <p>신속한 도움을 받을 수 있습니다.</p>
+            <p>{{$t("productsText.xrSolutionText.Risks")}}</p>
           </span>
         </span>
       </div>

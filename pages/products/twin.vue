@@ -1,5 +1,6 @@
 <template>
   <section class="products-section">
+    <subMenuTwin />
     <SubBannerTwin />
     <!-- <sub-visual-section
       :image="visualText.image"
@@ -28,6 +29,8 @@ import snbSection from "../../layouts/modules/Snb.vue";
 import tailSection from "../../layouts/common/Tail.vue";
 import twinComponent from "../../components/products/pages/Twin.vue";
 import SubBannerTwin from "~/components/products/partials/subBannerTwin.vue";
+import subMenuTwin from "~/components/products/partials/subMenuTwin.vue";
+
 export default {
   components: {
     subVisualSection,
@@ -35,6 +38,7 @@ export default {
     tailSection,
     twinComponent,
     SubBannerTwin,
+    subMenuTwin,
   },
   data() {
     return {

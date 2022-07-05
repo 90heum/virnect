@@ -1,5 +1,6 @@
 <template>
   <section class="products-section">
+    <subMenuMs />
     <sub-visual-section
       :image="visualText.image"
       :category="visualText.category"
@@ -26,12 +27,14 @@ import subVisualSection from "../../layouts/common/SubVisual.vue";
 import snbSection from "../../layouts/modules/Snb.vue";
 import tailSection from "../../layouts/common/Tail.vue";
 import msComponent from "../../components/products/pages/MS.vue";
+import subMenuMs from "~/components/products/partials/subMenuMs.vue";
 export default {
   components: {
     subVisualSection,
     snbSection,
     tailSection,
     msComponent,
+    subMenuMs,
   },
   data() {
     return {

@@ -6,8 +6,8 @@
       :title="$t('solutionText.visualText.title')"
       :contents="$t('solutionText.visualText.contents')"
     ></sub-visual-section>
-    <snb-section :snbArr="$t('gnb[0].array')"></snb-section>
-
+    <!-- //<snb-section :snbArr="$t('gnb[0].array')"></snb-section> -->
+    <SubMenuEpc />
     <transition name="app-fade" mode="out-in">
       <epc-component />
     </transition>
@@ -27,12 +27,15 @@ import subVisualSection from "../../layouts/common/SubVisual.vue";
 import snbSection from "../../components/modules/Snb.vue";
 import tailSection from "../../layouts/common/Tail.vue";
 import epcComponent from "../../components/solutions/pages/EPC.vue";
+import SubMenuEpc from "~/components/solutions/partials/subMenuEpc.vue";
+
 export default {
   components: {
     subVisualSection,
     snbSection,
     tailSection,
     epcComponent,
+    SubMenuEpc,
   },
   data() {
     return {

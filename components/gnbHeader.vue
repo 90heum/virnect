@@ -251,7 +251,7 @@
               <span>
                 <ul>
                   <li>
-                    <a href="#"><span>Product Notice</span></a>
+                    <nuxt-link to=“/support/notice”><span>Product Notice</span></nuxt-link>
                   </li>
                   <li>
                     <a href="#"><u>-릴리즈 노트</u></a>
@@ -259,18 +259,12 @@
                   <li>
                     <a href="#"><u>-안내</u></a>
                   </li>
-                  <li>
-                    <a href="#"><u>-점검</u></a>
-                  </li>
-                  <li>
-                    <a href="#"><u>-장애</u></a>
-                  </li>
                 </ul>
               </span>
               <span>
                 <ul>
                   <li>
-                    <a href="#"><span>FAQ</span></a>
+                    <nuxt-link to=“/support/faq”><span>FAQ</span></nuxt-link>
                   </li>
                   <div class="FAQWrap">
                     <li>
@@ -297,7 +291,7 @@
               <span>
                 <ul>
                   <li>
-                    <a href="#"><span>학습센터</span></a>
+                    <nuxt-link to=“/support/center”><span>학습센터</span></nuxt-link>
                   </li>
                   <li>
                     <a href="#"><u>-VIRNECT Remote</u></a>
@@ -313,7 +307,7 @@
               <span>
                 <ul>
                   <li>
-                    <a href="#"><span>문의하기</span></a>
+                    <nuxt-link to=“/support/inquiry”><span>문의하기</span></nuxt-link>
                   </li>
                 </ul>
               </span>

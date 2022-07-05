@@ -20,11 +20,10 @@
             <li
               @mouseover="[(gnb1 = true), changeGnbColor()]"
               @mouseleave="[(gnb1 = false), originalGnbColor()]"
-              @click="changeBorder()"
               v-bind:style="gnbStyle1"
             >
               <nuxt-link
-                to="{path:}"
+                to="/solutions/energy_resource"
                 class="navTab container1"
                 v-bind:style="gnbTextStyle1"
               >
@@ -46,10 +45,12 @@
             <li
               @mouseover="[(gnb2 = true), changeGnbColor2()]"
               @mouseleave="[(gnb2 = false), originalGnbColor2()]"
-              @click="changeBorder2()"
               v-bind:style="gnbStyle2"
             >
-              <a class="navTab container2" v-bind:style="gnbTextStyle2">
+              <nuxt-link 
+                to="/products/remote"
+                class="navTab container2" 
+                v-bind:style="gnbTextStyle2">
                 Products
                 <i>
                   <img
@@ -63,7 +64,7 @@
                     alt="업아이콘"
                   />
                 </i>
-              </a>
+              </nuxt-link>
             </li>
             <li
               @mouseover="[(gnb3 = true), changeGnbColor3()]"
@@ -121,8 +122,8 @@
               @mouseleave="[(gnb5 = false), originalGnbColor5()]"
               v-bind:style="gnbStyle5"
             >
-              <a
-                href="#"
+              <nuxt-link
+                to="/company/about"
                 class="navTab container5"
                 v-bind:style="gnbTextStyle5"
               >
@@ -139,7 +140,7 @@
                     alt="업아이콘"
                   />
                 </i>
-              </a>
+              </nuxt-link>
             </li>
           </ul>
         </nav>
@@ -455,7 +456,7 @@
                 <ul>
                   <li>
                     <nuxt-link
-                      :to="$t(`supportText.menuList.productNotice.url`)"
+                      to="/support/notice"
                       ><span>{{
                         $t(`supportText.menuList.productNotice.title`)
                       }}</span></nuxt-link
@@ -477,7 +478,7 @@
               <span>
                 <ul>
                   <li>
-                    <nuxt-link :to="$t(`supportText.menuList.faq.url`)"
+                    <nuxt-link to="/support/faq"
                       ><span>{{
                         $t(`supportText.menuList.faq.title`)
                       }}</span></nuxt-link
@@ -499,7 +500,7 @@
               <span>
                 <ul>
                   <li>
-                    <a href="#">학습센터</a>
+                    <nuxt-link to="/support/center">학습센터</nuxt-link>
                   </li>
                   <li
                     v-for="(list, idx) of $t('gnb[1].array').filter(
@@ -519,7 +520,7 @@
               <span>
                 <ul>
                   <li>
-                    <a href="#">문의하기</a>
+                    <nuxt-link to="/support/inquiry">문의하기</nuxt-link>
                   </li>
                 </ul>
               </span>

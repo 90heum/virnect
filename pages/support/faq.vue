@@ -12,10 +12,20 @@
             <div class="FAQWrap">
             <!-- 리스트 탭 -->
             <div class="FAQTab">
+                <div class="LearningCenterMbTab-prev"
+                     @click="changeTabNextAndPrevMenu(typeList.findIndex(e => e.id === isCategory), 'prev')">
+                    <img src="https://velog.velcdn.com/images/kyj0206/post/ca9d309b-94ce-41db-a002-66a2f0d76ff8/image.png" alt="prebutton">
+                </div>
+
                 <span v-for="(data, idx) of typeList" 
                       :class="`${isCategory === (data.id) ? 'active' : ''}`"
                       :key="idx"
                       @click="chooseCategory(data.id)">{{$i18n.localeProperties.code === "ko" ? data.name : data.nameEn}}</span>
+                
+                <div class="LearningCenterMbTab-next"
+                     @click="changeTabNextAndPrevMenu(typeList.findIndex(e => e.id === isCategory), 'next')">
+                    <img src="https://velog.velcdn.com/images/kyj0206/post/a1bbf083-3da6-413c-9f16-48fc60000827/image.png" alt="nextbutton">
+                </div>
             </div>
 
             <div class="tabCont">
@@ -62,13 +72,22 @@ export default {
         HeadBanner
     },
     methods: {
+        changeTabNextAndPrevMenu(idx, action) {
+            if (action === "next") {
+                const targetIdx = idx >= (this.typeList.length-1) ? 0 : idx + 1;
+                this.isCategory = this.typeList[targetIdx].id;
+            } else {
+                const targetIdx = idx <= 0 ? (this.typeList.length-1) : idx - 1;
+                this.isCategory = this.typeList[targetIdx].id;
+            }
+            this.chooseCategory(this.isCategory);
+        },
         movePage (currentPage) {
             this.pagingData = {...this.pagingData, currentPage: currentPage};
             this.chooseType(this.isType, true);
 
         },
         async chooseCategory (e) {
-            if (this.isCategory === e) return;
             this.isCategory = e;
             try{
                 const data = Promise.all([this.$axios.$get(`admin/support/faq/type?categoryId=${this.isCategory}`), 
@@ -216,6 +235,8 @@ section.contactTab {
     width: 100%;
     padding: 150px 30px;
 }
+
+.LearningCenterMbTab-prev, .LearningCenterMbTab-next  { display: none; cursor: pointer; }
 @media screen and (max-width: 1024px) {
 
 }
@@ -223,6 +244,25 @@ section.contactTab {
 @media screen and (max-width: 768px) {
     .contactBanner .ContactBannerInner span p{
         display: inline;
+    }
+    .FAQTab {
+        border-bottom: 4px solid #092e6e;
+        display: flex;
+    }
+    .FAQTab>span { 
+        display: none;
+        border: none; 
+        justify-content: center;
+    }
+    .contactTab .FAQTab>span.active {
+        display: flex;
+        background-color: inherit;
+        align-items: center;
+        color: #092e6e;
+        border: none;
+    }
+    .LearningCenterMbTab-prev, .LearningCenterMbTab-next  { 
+        display: block;
     }
 }
 
