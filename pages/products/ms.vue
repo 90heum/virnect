@@ -3,9 +3,8 @@
     <subMenuMs />
     <sub-visual-section
       :image="visualText.image"
-      :category="visualText.category"
-      :title="$t('productsText.visualText.title')"
-      :contents="$t('productsText.visualText.contents')"
+      :category="'XR Devices'"
+      :title="$t('companyText.msText.title')"
     ></sub-visual-section>
     <snb-section :snbArr="$t('gnb[1].array')"></snb-section>
     <transition name="app-fade" mode="out-in">

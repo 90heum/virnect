@@ -1,5 +1,8 @@
 {
 	"companyText": {
+		"msText": {
+			"title": "다양한XR (eXtended Reality) 디바이스를 통해 </br> 버넥트확장현실(XR) 솔루션과 완벽한 퍼포먼스를 경험하세요."
+		},
 		"visualText": {
 			"title": "버넥트 소개",
 			"contents": "AR 기술기업 VIRNECT는 현장의 유용한 정보를 현실에 가상으로 연결하여<br class='mobile-hidden'>고객이 어디에서나 필요한 정보를 제공받을 수 있도록 하는 것을 목표로 합니다."
