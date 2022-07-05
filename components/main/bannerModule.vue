@@ -125,6 +125,7 @@ export default {
     width: 100%;
     position: absolute;
     top: 80%;
+    overflow: hidden;
     /* background-color: #000; */
 
     .bannerWrap {
