@@ -2,14 +2,14 @@
 <div class="surplusNoticeWrapper">
     <span class="noticeAside">
         <span @click="chooseType(null)">
-            <p>전체</p>
+            <p :class="`${isType === null ? 'asideActive' : ''}`">전체</p>
             <i><img src="https://velog.velcdn.com/images/kyj0206/post/677e0a5b-146e-46a5-a5db-ef2b185febf4/image.png"
                     alt="noticeTag"></i>
         </span>
         <span v-for="(data, idx) of asideData"
               :key="idx"
               @click="chooseType(data.id)">
-            <p>{{$i18n.localeProperties.code === "ko" ? data.name : data.nameEn}}</p>
+            <p :class="`${isType === data.id ? 'asideActive' : ''}`">{{$i18n.localeProperties.code === "ko" ? data.name : data.nameEn}}</p>
             <i><img src="https://velog.velcdn.com/images/kyj0206/post/677e0a5b-146e-46a5-a5db-ef2b185febf4/image.png"
                     alt="noticeTag"></i>
         </span>
@@ -162,6 +162,13 @@ export default {
             }
         }
     }
+
+    .noticeAside .asideActive {
+        text-decoration: underline;
+        text-underline-position: under;
+        color: #0a51b7;
+    }
+
     @media screen and (max-width: 1024px) {
         .noticeMbAside { display: block; width: 200px; }
         .noticeMbAside ul { list-style: none; padding-left: 0px; }

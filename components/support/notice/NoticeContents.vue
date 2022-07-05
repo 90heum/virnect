@@ -10,7 +10,7 @@
             :key="idx">
             <li>{{$i18n.localeProperties.code === "ko" ? data.typeName : data.typeNameEn}}</li>
             <li>
-                <nuxt-link :to="`notice-detail?id=${data.id}`">{{$i18n.localeProperties.code === "ko" ? data.title : data.titleEng}}</nuxt-link>
+                <nuxt-link :to="`notice-detail?id=${data.id}&type=${isType === null ? '' : isType}`">{{$i18n.localeProperties.code === "ko" ? data.title : data.titleEng}}</nuxt-link>
             </li>
             <li>{{$dayjs(data.createdDate).format("YYYY-MM-DD")}}</li>
         </ul>
@@ -33,7 +33,8 @@ export default {
     props: {
         pagingData: Object,
         contentData: Array,
-        movePage: Function
+        movePage: Function,
+        isType: Number
     }
 }
 </script>

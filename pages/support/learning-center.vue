@@ -26,15 +26,18 @@
                     <user-manual :contentList="contentList.manual||contentList.supportLearningResponseList"
                                  :isDetailList="isTypeMenu"
                                  :pagingData="pagingData"
-                                 :movePage="movePage"/>
+                                 :movePage="movePage"
+                                 :chooseTypeMenu="chooseTypeMenu"/>
                     <video-tutoral :contentList="contentList.tutorial||contentList.supportLearningResponseList"
                                    :isDetailList="isTypeMenu"
                                    :pagingData="pagingData"
-                                   :movePage="movePage"/>
+                                   :movePage="movePage"
+                                   :chooseTypeMenu="chooseTypeMenu"/>
                     <video-real-guide :contentList="contentList.guide||contentList.supportLearningResponseList"
                                       :isDetailList="isTypeMenu"
                                       :pagingData="pagingData"
-                                      :movePage="movePage"/>
+                                      :movePage="movePage"
+                                      :chooseTypeMenu="chooseTypeMenu"/>
                 </span>
         </div>
     </div>
@@ -132,5 +135,8 @@ export default {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .LearningCenter .tabCont { display: block; }
+}
 
 </style>

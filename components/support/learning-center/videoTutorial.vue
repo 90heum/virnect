@@ -6,7 +6,7 @@
         
         <span class="tutorialBoxTit">
             <p>Video Tutorial</p>
-            <p>
+            <p @click="chooseTypeMenu(0)">
                 전체보기
                 <i>
                     <img src="https://velog.velcdn.com/images/kyj0206/post/bf391c7f-fbc8-466f-af3a-9f6ca4433529/image.png" alt="more">
@@ -31,7 +31,7 @@
                         <span>
                             <h2>{{data.title}}</h2>
                         </span>
-                        <span>
+                        <span class="tagWrapper">
                             <p v-for="(innerData, idx) of data.categoryName"
                                :key="idx">{{innerData}}</p>
                         </span>
@@ -62,7 +62,8 @@ export default {
         contentList: Array,
         isDetailList: [Number, Boolean],
         pagingData: Object,
-        movePage: Function
+        movePage: Function,
+        chooseTypeMenu: Function
     }
 }
 </script>
@@ -118,7 +119,7 @@ export default {
         .tutorialBoxCont{
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            // justify-content: space-between;
             margin-bottom: 70px;
             >div{
                 margin-right: 15px;
@@ -176,15 +177,16 @@ export default {
                                         letter-spacing: -0.25px;
                                         color: #121212;
                                         margin-bottom: 12px;
+                                        height: 56px;
                                     }
                                 }
                                 &:nth-child(2){
-                                    max-width: 60px;
-                                    max-height: 24px;
-                                    padding: 6px 10px;
-                                    border-radius: 12px;
-                                    border: solid 1px #3f97d3;
-                                    background-color: #fff;
+                                    // max-width: 60px;
+                                    // max-height: 24px;
+                                    // padding: 6px 10px;
+                                    // border-radius: 12px;
+                                    // border: solid 1px #3f97d3;
+                                    // background-color: #fff;
                                     p{
                                         font-size: 12px;
                                         font-weight: bold;
@@ -194,6 +196,7 @@ export default {
                                         letter-spacing: normal;
                                         text-align: center;
                                         color: #3f97d3;
+                                        margin-right: 5px;
                                     }
                                 }
                             }
@@ -224,7 +227,26 @@ export default {
             }
         }
     }
+    .tagWrapper {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        height: 24px;
+        p {
+            max-width: 60px;
+            max-height: 24px;
+            padding: 6px 10px;
+            border-radius: 12px;
+            border: solid 1px #3f97d3;
+            background-color: #fff;
+            display: inline-block;
+        }
+    }
     @media screen and (max-width: 768px) {
       .tutorialBox .tutorialBoxCont>div { width: calc((100% - 30px)/2); }
+      .tutorialBox .tutorialBoxCont > div:nth-child(3){
+        margin-right: 15px;
+        margin-bottom: 15px;
+      }
     }
 </style>

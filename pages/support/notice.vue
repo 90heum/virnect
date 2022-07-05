@@ -17,7 +17,8 @@
                     <!-- 블로그 리스트 -->
                   <notice-contents :pagingData="pagingData"
                                    :contentData="contentData"
-                                   :movePage="movePage"/>
+                                   :movePage="movePage"
+                                   :isType="isType"/>
                 </div>
             </div>
     </div>

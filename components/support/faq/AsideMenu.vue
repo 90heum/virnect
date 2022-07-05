@@ -3,17 +3,36 @@
     <!-- aside -->
     <span class="FAQAside">
         <span @click="chooseType(null)">
-            <p>전체</p>
+            <p :class="`${isType === null ? 'asideActive' : ''}`">전체</p>
         </span>
         <span v-for="(data, idx) of asideMenuList"
               :key="idx"
               @click="chooseType(data.id)">
-            <p>{{data.name}}</p>
+            <p :class="`${isType === data.id ? 'asideActive' : ''}`">{{data.name}}</p>
             <i><img src="https://velog.velcdn.com/images/kyj0206/post/677e0a5b-146e-46a5-a5db-ef2b185febf4/image.png"
                     alt="noticeTag"></i>
         </span>
     </span>
 
+     <!-- 모바일 어사이드 -->
+    <div class="FAQMbAside select"
+         @click="() => isToggle = !isToggle">
+        <div class="selected">
+            <div class="selected-icon">
+                <img src="https://velog.velcdn.com/images/kyj0206/post/0f39f4c6-a786-41ea-b239-84f4997f5712/image.png" alt="다운아이콘">
+            </div>
+            <div class="selected-value">{{isType ? asideMenuList[asideMenuList.findIndex(e => e.id === isType)].name : "전체"}}</div>
+            <div class="arrow"></div>
+            </div>
+            <ul v-if="isToggle">
+            <li class="option"
+                @click="chooseType(null)">전체</li>
+            <li class="option"
+                v-for="(data, idx) of asideMenuList"
+                :key="idx"
+                @click="chooseType(data.id)">{{data.name}}</li>
+            </ul>
+    </div>
 </div>
 </template>
 
@@ -21,7 +40,19 @@
 export default {
     props: {
         asideMenuList: Array,
-        chooseType: Function
+        chooseType: Function,
+        isType: Number,
+    },
+    data() {
+        return {
+            isToggle: false
+        }
+    },
+    methods: {
+        handleMobileTab (e) {
+            this.isToggle = !this.isToggle;
+            chooseType(e);
+        }
     }
 }
 </script>
@@ -66,6 +97,80 @@ export default {
                     width: 100%;
                 }
             }
+        }
+    }
+        // 모바일용
+    .FAQMbAside{
+        display: none;
+        max-width: 200px;
+        width: 200px;
+        border: 1px solid #999;
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        color: #121212;
+        ul {
+            max-width: 200px;
+            width: 100%;
+            border: 1px solid #999;
+            position: absolute;
+            background: #fff;
+            border-top: none;
+            margin: 1px 0 0 -1px;
+            cursor: pointer;
+            li {
+                padding: 16.5px 15px;
+                background-color: #f7f8f9;
+                border-bottom: solid 1px #c5c8cf;
+                &:last-child{
+                    border-bottom: none;
+                }
+                &:hover{
+                    background-color: #fff;
+                    color: #0a51b7;
+                }
+            }
+        }
+        .selected {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 15px;
+            .selected-icon{
+                display: flex;
+                align-items: center;
+                img{
+                    max-width: 34px;
+                }
+            }
+            .selected-value {
+                display: block;
+                width: 100%;
+                max-width: 90px;
+            }
+            .arrow {
+                max-width: 19px;
+                width: 100%;
+                height: 19px;
+                background: url("https://velog.velcdn.com/images/kyj0206/post/c30a0983-f07b-4a35-bf95-150eb3f3ab85/image.png") no-repeat;
+                background-size: 100% 100%;
+            }
+        }
+    }
+    .FAQAside .asideActive {
+        text-decoration: underline;
+        text-underline-position: under;
+        color: #0a51b7;
+    }
+    @media screen and (max-width: 768px) {
+        .FAQAside { display: none; }
+        .FAQMbAside { display: block; }
+        .FAQMbAside ul { 
+            list-style: none;
+            padding-left: 0px;
         }
     }
 </style>
