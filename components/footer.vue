@@ -179,8 +179,10 @@
               <span class="buttonWrap">
                 <!-- 서비스선택 박스 -->
                 <div class="serviceSelect"
-                    @click="showServiceMenu()"
+                    @click="[showServiceMenu(), toggle(), showEarth=false]"
+                    v-click-outside="serviceHide"
                     v-if="isWeb"
+                    v-bind:style="hamServiceColor"
                 >
                   <div class="select">
                     <div class="selected">
@@ -200,7 +202,9 @@
                         />
                       </div>
                     </div>
-                    <ul v-if="isServiceMenu">
+                    <ul v-if="isServiceMenu"
+                        v-show="serviceOpen"
+                    >
                       <li class="option">
                         <a
                           href="https://console.virnect.com/?continue=https%3A%2F%2Fvirnect.com%2F"
@@ -459,21 +463,43 @@
   </div>
 </template>
 <script>
+import ClickOutside from 'vue-click-outside'
+
 export default {
+  computed: {
+    availableLocales() {
+      return this.$i18n.locales;
+    },
+    data() {
+      return {
+        visible: false,
+      };
+    },
+  },
   data: () => ({
     lang: false,
     isWeb: true,
     showEarth: false,
     isServiceMenu: false,
-    select:{},
+    hamServiceColor:{},
+    serviceOpen: false,
   }),
+  directives: {
+    ClickOutside
+  },
   methods: {
     langlang() {
       this.showEarth = !this.showEarth;
     },
     showServiceMenu() {
       this.isServiceMenu = !this.isServiceMenu;
-      this.select.backgroundColor="#0a51b7";
+      this.hamServiceColor.backgroundColor="#fff";
+    },
+    toggle(){
+      this.serviceOpen = true
+    },
+    serviceHide(){
+      this.serviceOpen = false
     },
     /* showServiceMenu () {
       if (isServiceMenu == true) {

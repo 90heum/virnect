@@ -38,6 +38,8 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
+li {list-style: none;}
+a {text-decoration: none;}
 
 .button--green {
   display: inline-block;

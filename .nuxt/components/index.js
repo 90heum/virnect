@@ -32,8 +32,8 @@ export { default as ModulesYoutubeFullscreen } from '../../components/modules/Yo
 export { default as SupportSubMenu } from '../../components/support/SubMenu.vue'
 export { default as SupportHeadBanner } from '../../components/support/headBanner.vue'
 export { default as GnbCompany } from '../../components/Gnb/Company/index.vue'
-export { default as GnbContact } from '../../components/Gnb/Contact/index.vue'
 export { default as GnbFreeTrials } from '../../components/Gnb/FreeTrials/index.vue'
+export { default as GnbContact } from '../../components/Gnb/Contact/index.vue'
 export { default as GnbPricing } from '../../components/Gnb/Pricing/index.vue'
 export { default as GnbProducts } from '../../components/Gnb/Products/index.vue'
 export { default as GnbSolution } from '../../components/Gnb/Solution/index.vue'
@@ -69,11 +69,6 @@ export { default as ProductsPartialsSubMenuProduct } from '../../components/prod
 export { default as ProductsPartialsSubMenuTrack } from '../../components/products/partials/subMenuTrack.vue'
 export { default as ProductsPartialsSubMenuTwin } from '../../components/products/partials/subMenuTwin.vue'
 export { default as ProductsPartialsSubMenuView } from '../../components/products/partials/subMenuView.vue'
-export { default as SupportFaqAsideMenu } from '../../components/support/faq/AsideMenu.vue'
-export { default as SupportFaqContents } from '../../components/support/faq/FaqContents.vue'
-export { default as SupportFaqGoogleMap } from '../../components/support/faq/GoogleMap.vue'
-export { default as SupportNoticeAsideMenu } from '../../components/support/notice/AsideMenu.vue'
-export { default as SupportNoticeContents } from '../../components/support/notice/NoticeContents.vue'
 export { default as SolutionsPagesAirline } from '../../components/solutions/pages/Airline.vue'
 export { default as SolutionsPagesEPC } from '../../components/solutions/pages/EPC.vue'
 export { default as SolutionsPagesEnergy } from '../../components/solutions/pages/Energy.vue'
@@ -89,6 +84,11 @@ export { default as SolutionsPartialsSubMenuAirLine } from '../../components/sol
 export { default as SolutionsPartialsSubMenuEpc } from '../../components/solutions/partials/subMenuEpc.vue'
 export { default as SolutionsPartialsSubMenuMotor } from '../../components/solutions/partials/subMenuMotor.vue'
 export { default as SolutionsPartialsSubMenuOil } from '../../components/solutions/partials/subMenuOil.vue'
+export { default as SupportFaqAsideMenu } from '../../components/support/faq/AsideMenu.vue'
+export { default as SupportFaqContents } from '../../components/support/faq/FaqContents.vue'
+export { default as SupportFaqGoogleMap } from '../../components/support/faq/GoogleMap.vue'
+export { default as SupportNoticeAsideMenu } from '../../components/support/notice/AsideMenu.vue'
+export { default as SupportNoticeContents } from '../../components/support/notice/NoticeContents.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

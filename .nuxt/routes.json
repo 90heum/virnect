@@ -3,133 +3,114 @@
     "name": "company-about",
     "path": "/company/about",
     "component": "/Users/majeongheum/virnect/pages/company/about.vue",
-    "chunkName": "pages/company/about",
-    "_name": "_ca203302"
+    "chunkName": "pages/company/about"
   },
   {
     "name": "company-ir",
     "path": "/company/ir",
     "component": "/Users/majeongheum/virnect/pages/company/ir.vue",
-    "chunkName": "pages/company/ir",
-    "_name": "_732d62a7"
+    "chunkName": "pages/company/ir"
   },
   {
     "name": "company-talent",
     "path": "/company/talent",
     "component": "/Users/majeongheum/virnect/pages/company/talent.vue",
-    "chunkName": "pages/company/talent",
-    "_name": "_789d6c2c"
+    "chunkName": "pages/company/talent"
   },
   {
     "name": "products-make",
     "path": "/products/make",
     "component": "/Users/majeongheum/virnect/pages/products/make.vue",
-    "chunkName": "pages/products/make",
-    "_name": "_491047bd"
+    "chunkName": "pages/products/make"
   },
   {
     "name": "products-ms",
     "path": "/products/ms",
     "component": "/Users/majeongheum/virnect/pages/products/ms.vue",
-    "chunkName": "pages/products/ms",
-    "_name": "_7d18d535"
+    "chunkName": "pages/products/ms"
   },
   {
     "name": "products-remote",
     "path": "/products/remote",
     "component": "/Users/majeongheum/virnect/pages/products/remote.vue",
-    "chunkName": "pages/products/remote",
-    "_name": "_987ac756"
+    "chunkName": "pages/products/remote"
   },
   {
     "name": "products-track",
     "path": "/products/track",
     "component": "/Users/majeongheum/virnect/pages/products/track.vue",
-    "chunkName": "pages/products/track",
-    "_name": "_88c2d1e8"
+    "chunkName": "pages/products/track"
   },
   {
     "name": "products-twin",
     "path": "/products/twin",
     "component": "/Users/majeongheum/virnect/pages/products/twin.vue",
-    "chunkName": "pages/products/twin",
-    "_name": "_add28892"
+    "chunkName": "pages/products/twin"
   },
   {
     "name": "products-view",
     "path": "/products/view",
     "component": "/Users/majeongheum/virnect/pages/products/view.vue",
-    "chunkName": "pages/products/view",
-    "_name": "_e4256e18"
+    "chunkName": "pages/products/view"
   },
   {
     "name": "solutions-airline_railroad",
     "path": "/solutions/airline_railroad",
     "component": "/Users/majeongheum/virnect/pages/solutions/airline_railroad.vue",
-    "chunkName": "pages/solutions/airline_railroad",
-    "_name": "_13c91414"
+    "chunkName": "pages/solutions/airline_railroad"
   },
   {
     "name": "solutions-energy_resource",
     "path": "/solutions/energy_resource",
     "component": "/Users/majeongheum/virnect/pages/solutions/energy_resource.vue",
-    "chunkName": "pages/solutions/energy_resource",
-    "_name": "_4ff2d474"
+    "chunkName": "pages/solutions/energy_resource"
   },
   {
     "name": "solutions-epc",
     "path": "/solutions/epc",
     "component": "/Users/majeongheum/virnect/pages/solutions/epc.vue",
-    "chunkName": "pages/solutions/epc",
-    "_name": "_2fea2aa7"
+    "chunkName": "pages/solutions/epc"
   },
   {
     "name": "solutions-motor_parts",
     "path": "/solutions/motor_parts",
     "component": "/Users/majeongheum/virnect/pages/solutions/motor_parts.vue",
-    "chunkName": "pages/solutions/motor_parts",
-    "_name": "_14d49625"
+    "chunkName": "pages/solutions/motor_parts"
   },
   {
     "name": "solutions-oil_chemical_battery",
     "path": "/solutions/oil_chemical_battery",
     "component": "/Users/majeongheum/virnect/pages/solutions/oil_chemical_battery.vue",
-    "chunkName": "pages/solutions/oil_chemical_battery",
-    "_name": "_02655bae"
+    "chunkName": "pages/solutions/oil_chemical_battery"
   },
   {
     "name": "support-faq",
     "path": "/support/faq",
     "component": "/Users/majeongheum/virnect/pages/support/faq.vue",
-    "chunkName": "pages/support/faq",
-    "_name": "_01c5bd4c"
+    "chunkName": "pages/support/faq"
   },
   {
     "name": "support-inquiry",
     "path": "/support/inquiry",
     "component": "/Users/majeongheum/virnect/pages/support/inquiry.vue",
-    "chunkName": "pages/support/inquiry",
-    "_name": "_40d6298b"
+    "chunkName": "pages/support/inquiry"
   },
   {
     "name": "support-notice",
     "path": "/support/notice",
     "component": "/Users/majeongheum/virnect/pages/support/notice.vue",
-    "chunkName": "pages/support/notice",
-    "_name": "_3777a178"
+    "chunkName": "pages/support/notice"
   },
   {
     "name": "company-subCompany-Brand",
     "path": "/company/subCompany/Brand",
     "component": "/Users/majeongheum/virnect/pages/company/subCompany/Brand.vue",
-    "chunkName": "pages/company/subCompany/Brand",
-    "_name": "_54d389f3"
+    "chunkName": "pages/company/subCompany/Brand"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/majeongheum/virnect/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_4e2f2456"
+    "chunkName": "pages/index"
   }
 ]
