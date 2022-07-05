@@ -3,12 +3,12 @@
     <!-- aside -->
     <span class="FAQAside">
         <span @click="chooseType(null)">
-            <p :class="`${isType === null ? 'asideActive' : ''}`">전체</p>
+            <p :class="`${isType === null ? 'asideActive' : ''}`">{{$i18n.localeProperties.code === "ko" ? "전체" : "All"}}</p>
         </span>
         <span v-for="(data, idx) of asideMenuList"
               :key="idx"
               @click="chooseType(data.id)">
-            <p :class="`${isType === data.id ? 'asideActive' : ''}`">{{data.name}}</p>
+            <p :class="`${isType === data.id ? 'asideActive' : ''}`">{{$i18n.localeProperties.code === "ko" ? data.name : data.nameEn}}</p>
             <i><img src="https://velog.velcdn.com/images/kyj0206/post/677e0a5b-146e-46a5-a5db-ef2b185febf4/image.png"
                     alt="noticeTag"></i>
         </span>
@@ -21,16 +21,16 @@
             <div class="selected-icon">
                 <img src="https://velog.velcdn.com/images/kyj0206/post/0f39f4c6-a786-41ea-b239-84f4997f5712/image.png" alt="다운아이콘">
             </div>
-            <div class="selected-value">{{isType ? asideMenuList[asideMenuList.findIndex(e => e.id === isType)].name : "전체"}}</div>
+            <div class="selected-value">{{isType ? $i18n.localeProperties.code === "ko" ? asideMenuList[asideMenuList.findIndex(e => e.id === isType)].name : asideMenuList[asideMenuList.findIndex(e => e.id === isType)].nameEn : $i18n.localeProperties.code === "ko" ? "전체" : "All"}}</div>
             <div class="arrow"></div>
             </div>
             <ul v-if="isToggle">
             <li class="option"
-                @click="chooseType(null)">전체</li>
+                @click="chooseType(null)">{{$i18n.localeProperties.code === "ko" ? "전체" : "All" }}</li>
             <li class="option"
                 v-for="(data, idx) of asideMenuList"
                 :key="idx"
-                @click="chooseType(data.id)">{{data.name}}</li>
+                @click="chooseType(data.id)">{{$i18n.localeProperties.code === "ko" ? data.name : data.nameEn}}</li>
             </ul>
     </div>
 </div>

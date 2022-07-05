@@ -3,7 +3,7 @@
    <!-- 탭메뉴 -->
      <span class="LearningCenterAside">
         <span @click="chooseTypeMenuAndToggle(null)">
-            <p :class="`${isTypeMenu === null ? 'asideActive' : ''}`">전체</p>
+            <p :class="`${isTypeMenu === null ? 'asideActive' : ''}`">{{$i18n.localeProperties.code === "ko" ? "전체" : "All"}}</p>
             <i><img src="https://velog.velcdn.com/images/kyj0206/post/677e0a5b-146e-46a5-a5db-ef2b185febf4/image.png"
                     alt="LearningCenterTag"></i>
         </span>
@@ -38,12 +38,12 @@
                 <div class="selected-icon">
                     <img src="https://velog.velcdn.com/images/kyj0206/post/0f39f4c6-a786-41ea-b239-84f4997f5712/image.png" alt="다운아이콘">
                 </div>
-                <div class="selected-value">{{isTypeMenu === 0 ? "Video Tutorial" : isTypeMenu ? typeList.find(e => e.id === isTypeMenu).name : "전체"}}</div>
+                <div class="selected-value">{{isTypeMenu === 0 ? "Video Tutorial" : isTypeMenu ? $i18n.localeProperties.code === "ko" ? typeList.find(e => e.id === isTypeMenu).name : typeList.find(e => e.id === isTypeMenu).nameEn : $i18n.localeProperties.code === "ko" ? "전체" : "All"}}</div>
                 <div class="arrow"></div>
                 </div>
                 <ul v-if="isToggle">
                 <li class="option"
-                    @click="chooseTypeMenuAndToggle(null, true)">전체</li>
+                    @click="chooseTypeMenuAndToggle(null, true)">{{$i18n.localeProperties.code === "ko" ? "전체" : "All" }}</li>
                 <li class="option"
                     @click="chooseTypeMenuAndToggle(typeList[0].id, true)">{{$i18n.localeProperties.code === "ko" ? typeList[0].name : typeList[0].nameEn}}</li>
                 <li class="option"

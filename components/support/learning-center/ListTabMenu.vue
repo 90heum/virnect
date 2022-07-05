@@ -21,7 +21,7 @@
             <p>
                 <img src="https://velog.velcdn.com/images/kyj0206/post/90dc6681-fd1c-43de-ba9e-b1557f71b29a/image.png" alt="전체보기">
             </p>
-            <p>전체보기</p>
+            <p>{{$i18n.localeProperties.code === "ko" ? "전체보기" : "All"}}</p>
         </span>
          <div class="LearningCenterMbTab-next"
               @click="chooseTabMenu(isTabMenu + 1 > (categoryList.length) ? 0 : (isTabMenu + 1))">

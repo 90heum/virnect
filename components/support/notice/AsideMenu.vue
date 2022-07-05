@@ -2,7 +2,7 @@
 <div class="surplusNoticeWrapper">
     <span class="noticeAside">
         <span @click="chooseType(null)">
-            <p :class="`${isType === null ? 'asideActive' : ''}`">전체</p>
+            <p :class="`${isType === null ? 'asideActive' : ''}`">{{$i18n.localeProperties.code === "ko" ? "전체" : "All"}}</p>
             <i><img src="https://velog.velcdn.com/images/kyj0206/post/677e0a5b-146e-46a5-a5db-ef2b185febf4/image.png"
                     alt="noticeTag"></i>
         </span>
@@ -22,12 +22,12 @@
             <div class="selected-icon">
                 <img src="https://velog.velcdn.com/images/kyj0206/post/0f39f4c6-a786-41ea-b239-84f4997f5712/image.png" alt="다운아이콘">
             </div>
-            <div class="selected-value">{{isType ? asideData.find(e => e.id === isType).name : "전체"}}</div>
+            <div class="selected-value">{{isType ? $i18n.localeProperties.code === "ko" ? asideData.find(e => e.id === isType).name : asideData.find(e => e.id === isType).nameEn : $i18n.localeProperties.code === "ko" ? "전체" : "All"}}</div>
             <div class="arrow"></div>
         </div>
         <ul v-if="isToggle">
             <li class="option"
-                @click="handleTypeAndToggle(null)">전체</li>
+                @click="handleTypeAndToggle(null)">{{$i18n.localeProperties.code === "ko" ? "전체" : "All"}}</li>
             <li v-for="(data, idx) of asideData"
                 :key="idx"
                 @click="handleTypeAndToggle(data.id)">{{$i18n.localeProperties.code === "ko" ? data.name : data.nameEn}}</li>

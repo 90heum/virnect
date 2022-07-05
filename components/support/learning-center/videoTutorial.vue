@@ -7,7 +7,7 @@
         <span class="tutorialBoxTit">
             <p>Video Tutorial</p>
             <p @click="chooseTypeMenu(0)">
-                전체보기
+                {{ $i18n.localeProperties.code === "ko" ? "전체보기" : "All"}}
                 <i>
                     <img src="https://velog.velcdn.com/images/kyj0206/post/bf391c7f-fbc8-466f-af3a-9f6ca4433529/image.png" alt="more">
                 </i>
@@ -29,7 +29,7 @@
                     </span>
                     <span class="listInfo">
                         <span>
-                            <h2>{{data.title}}</h2>
+                            <h2>{{$i18n.localeProperties.code === "ko" ? data.title : data.titleEn}}</h2>
                         </span>
                         <span class="tagWrapper">
                             <p v-for="(innerData, idx) of data.categoryName"
@@ -41,7 +41,7 @@
         </span>
         <!-- 모바일용 전체보기 버튼  -->
         <span class="mobileMore">
-            <button><a href="#">전체보기</a></button>
+            <button><a href="#">{{$i18n.localeProperties.code === "ko" ? "전체보기" : "All"}}</a></button>
         </span>
 
         <div v-if="isDetailList || isDetailList === 0">
