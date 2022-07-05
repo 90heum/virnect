@@ -1,5 +1,5 @@
 <template>
-  <section
+  <!-- <section
     id="tailSection"
     class="tail-section dark"
     :style="`background-image : url(require(${bg}))`"
@@ -25,6 +25,33 @@
     >
       {{ greyBtn }}
     </button>
+  </section> -->
+  <section>
+    <div class="ValueCtaModule">
+      <div class="ValueCtaCont">
+        <span>
+          <h2>산업 문제의 XR/DT 해답. VIRNECT가 알려드립니다.</h2>
+          <p>다양한 산업에서 활용되 있는 사례를 직접 확인하세요.</p>
+          <span>
+            <p>추가 문의가 있으신가요?</p>
+            <span>
+              <span>
+                <i
+                  ><img
+                    src="https://velog.velcdn.com/images/kyj0206/post/960b5c80-72dc-4243-b474-b7f6a0e2d73f/image.png"
+                    alt="추가문의 연락처"
+                /></i>
+                <p>070.7733.2025</p>
+                <u>문의하기</u>
+              </span>
+              <button>
+                <a href="#"> VIRNECT Value 바로가기 </a>
+              </button>
+            </span>
+          </span>
+        </span>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -48,9 +75,9 @@ export default {
     //   else return `${this.bg}-m@2x`
     // },
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>
-@import '~assets/css/global/tail.scss';
+@import "~/assets/css/modules/ValueCtaModule.scss";
 </style>
