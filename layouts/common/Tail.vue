@@ -42,10 +42,14 @@
                     alt="추가문의 연락처"
                 /></i>
                 <p>070.7733.2025</p>
-                <u>문의하기</u>
+                <a class="bb" href="/support/inquiry" target="blank"
+                  >문의하기</a
+                >
               </span>
               <button>
-                <a href="#"> VIRNECT Value 바로가기 </a>
+                <nuxt-link to="/solutions/energy_resource">
+                  VIRNECT Value 바로가기
+                </nuxt-link>
               </button>
             </span>
           </span>
@@ -80,4 +84,10 @@ export default {
 
 <style lang="scss" scoped>
 @import "~/assets/css/modules/ValueCtaModule.scss";
+a.bb {
+  font: none;
+  text-decoration: none;
+  color: white;
+  padding-bottom: 2px;
+}
 </style>
