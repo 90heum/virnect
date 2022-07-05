@@ -121,7 +121,7 @@
             </button>
             <button>
               <a href="https://pardot.virnect.com/l/929783/2022-06-16/3nplr">
-                데모신청
+                문의하기
               </a>
             </button>
           </span>
@@ -166,7 +166,7 @@
             </button>
             <button>
               <a href="https://pardot.virnect.com/l/929783/2022-06-16/3nplr">
-                데모신청
+                문의하기
               </a>
             </button>
           </span>

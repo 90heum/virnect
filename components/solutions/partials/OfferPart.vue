@@ -20,7 +20,6 @@
         @mouseenter="active = idx"
       >
         <p v-html="list.text"></p>
-
         <img
           :src="`http://13.209.200.75:8080/static/assets/images/pages/solution/logo${[
             idx,
@@ -50,7 +49,7 @@
             </span>
             <ul class="proModuleContBox">
               <li>
-                <a href="#">
+                <nuxt-link to="/products/remote">
                   <span>
                     <i>
                       <img
@@ -66,10 +65,10 @@
                     </i>
                   </span>
                   <p>XR 원격 협업 솔루션</p>
-                </a>
+                </nuxt-link>
               </li>
               <li>
-                <a href="#">
+                <nuxt-link to="/products/make">
                   <span>
                     <i>
                       <img
@@ -85,10 +84,10 @@
                     </i>
                   </span>
                   <p>XR 콘텐츠 제작 All-In-One 솔루션</p>
-                </a>
+                </nuxt-link>
               </li>
               <li>
-                <a href="#">
+                <nuxt-link to="/products/view">
                   <span>
                     <i>
                       <img
@@ -104,7 +103,7 @@
                     </i>
                   </span>
                   <p>XR 정보 및 데이터 시각화 솔루션</p>
-                </a>
+                </nuxt-link>
               </li>
             </ul>
           </span>
@@ -116,7 +115,7 @@
             </span>
             <ul class="proModuleContBox">
               <li>
-                <a href="#">
+                <nuxt-link to="/products/twin">
                   <span>
                     <i>
                       <img
@@ -132,10 +131,10 @@
                     </i>
                   </span>
                   <p>XR 기반 3D 현장 관리 솔루션</p>
-                </a>
+                </nuxt-link>
               </li>
               <li>
-                <a href="#">
+                <nuxt-link to="/products/track">
                   <span>
                     <i>
                       <img
@@ -151,10 +150,10 @@
                     </i>
                   </span>
                   <p>검출/추적용 XR 개발 엔진</p>
-                </a>
+                </nuxt-link>
               </li>
               <li>
-                <a href="#">
+                <nuxt-link to="/products/ms">
                   <span>
                     <i>
                       <img
@@ -169,7 +168,7 @@
                       />
                     </i>
                   </span>
-                </a>
+                </nuxt-link>
               </li>
             </ul>
           </span>
