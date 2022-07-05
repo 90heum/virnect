@@ -1,15 +1,18 @@
 <template>
   <section>
-    <p>talent</p>
+    <Recruit />
   </section>
 </template>
 
 <script>
 import subVisualSection from "../../layouts/common/SubVisual.vue";
 
+import Recruit from "~/components/company/pages/Recruit.vue";
+
 export default {
   components: {
     subVisualSection,
+    Recruit,
   },
 };
 </script>
