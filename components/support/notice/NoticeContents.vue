@@ -6,79 +6,19 @@
             <li>등록일</li>
         </ul>
 
-        <ul>
-            <li>안내</li>
+        <ul v-for="(data, idx) of contentData"
+            :key="idx">
+            <li>{{$i18n.localeProperties.code === "ko" ? data.typeName : data.typeNameEn}}</li>
             <li>
-                <a href="#">VIRNECT View Hololens 1.1.0_2022.5.26 릴리즈 노트</a>
+                <nuxt-link :to="`notice-detail?id=${data.id}`">{{$i18n.localeProperties.code === "ko" ? data.title : data.titleEng}}</nuxt-link>
             </li>
-            <li>2022-5-24</li>
-        </ul>
-        <ul>
-            <li>안내</li>
-            <li>
-                <a href="#">VIRNECT View Hololens 1.1.0_2022.5.26 릴리즈 노트</a>
-            </li>
-            <li>2022-5-24</li>
-        </ul>
-        <ul>
-            <li>안내</li>
-            <li>
-                <a href="#">VIRNECT View Hololens 1.1.0_2022.5.26 릴리즈 노트</a>
-            </li>
-            <li>2022-5-24</li>
-        </ul>
-        <ul>
-            <li>안내</li>
-            <li>
-                <a href="#">VIRNECT View Hololens 1.1.0_2022.5.26 릴리즈 노트</a>
-            </li>
-            <li>2022-5-24</li>
-        </ul>
-        <ul>
-            <li>안내</li>
-            <li>
-                <a href="#">VIRNECT View Hololens 1.1.0_2022.5.26 릴리즈 노트</a>
-            </li>
-            <li>2022-5-24</li>
-        </ul>
-        <ul>
-            <li>안내</li>
-            <li>
-                <a href="#">VIRNECT View Hololens 1.1.0_2022.5.26 릴리즈 노트</a>
-            </li>
-            <li>2022-5-24</li>
-        </ul>
-        <ul>
-            <li>안내</li>
-            <li>
-                <a href="#">VIRNECT View Hololens 1.1.0_2022.5.26 릴리즈 노트</a>
-            </li>
-            <li>2022-5-24</li>
-        </ul>
-        <ul>
-            <li>안내</li>
-            <li>
-                <a href="#">VIRNECT View Hololens 1.1.0_2022.5.26 릴리즈 노트</a>
-            </li>
-            <li>2022-5-24</li>
-        </ul>
-        <ul>
-            <li>안내</li>
-            <li>
-                <a href="#">VIRNECT View Hololens 1.1.0_2022.5.26 릴리즈 노트</a>
-            </li>
-            <li>2022-5-24</li>
-        </ul>
-        <ul>
-            <li>안내</li>
-            <li>
-                <a href="#">VIRNECT View Hololens 1.1.0_2022.5.26 릴리즈 노트</a>
-            </li>
-            <li>2022-5-24</li>
+            <li>{{$dayjs(data.createdDate).format("YYYY-MM-DD")}}</li>
         </ul>
         
+        
         <!-- 페이지네이션 -->
-        <common-paging :pagingData="pagingData"/>
+        <common-paging :pagingData="pagingData"
+                       :movePage="movePage"/>
 
     </span>  
 </template>
@@ -89,6 +29,11 @@ import CommonPaging from "~/components/paging/paging.vue";
 export default {
     components: {
         CommonPaging
+    },
+    props: {
+        pagingData: Object,
+        contentData: Array,
+        movePage: Function
     }
 }
 </script>

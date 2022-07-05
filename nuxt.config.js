@@ -37,6 +37,7 @@ export default {
   buildModules: [
   ],
   modules: [
+    ['@nuxtjs/dayjs'],
     [ '@nuxtjs/proxy'],
     ['@nuxtjs/axios'],
     // Doc: https://http.nuxtjs.org
@@ -75,5 +76,6 @@ export default {
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    
   }
 }

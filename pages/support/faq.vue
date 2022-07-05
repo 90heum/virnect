@@ -12,17 +12,28 @@
             <div class="FAQWrap">
             <!-- 리스트 탭 -->
             <div class="FAQTab">
+                <div class="LearningCenterMbTab-prev"
+                     @click="changeTabNextAndPrevMenu(typeList.findIndex(e => e.id === isCategory), 'prev')">
+                    <img src="https://velog.velcdn.com/images/kyj0206/post/ca9d309b-94ce-41db-a002-66a2f0d76ff8/image.png" alt="prebutton">
+                </div>
+
                 <span v-for="(data, idx) of typeList" 
                       :class="`${isCategory === (data.id) ? 'active' : ''}`"
                       :key="idx"
                       @click="chooseCategory(data.id)">{{$i18n.localeProperties.code === "ko" ? data.name : data.nameEn}}</span>
+                
+                <div class="LearningCenterMbTab-next"
+                     @click="changeTabNextAndPrevMenu(typeList.findIndex(e => e.id === isCategory), 'next')">
+                    <img src="https://velog.velcdn.com/images/kyj0206/post/a1bbf083-3da6-413c-9f16-48fc60000827/image.png" alt="nextbutton">
+                </div>
             </div>
 
             <div class="tabCont">
                 <aside-menu :asideMenuList="asideMenuList"
                             :chooseType="chooseType"/>
                 <faq-contents :contentList="contentList"
-                              :pagingData="pagingData"/>
+                              :pagingData="pagingData"
+                              :movePage="movePage"/>
             </div>
             </div>    
         </div>
@@ -44,7 +55,14 @@ export default {
             typeList: [],
             asideMenuList: [],
             contentList: [],
-            pagingData: {},
+            pagingData: {
+                currentPage: 1,
+                currentSize: 20,
+                totalPage: 1,
+                totalElements: 1,
+                startPage: 1,
+                endPage: 1
+            }
         }
     },
     components: {
@@ -54,8 +72,22 @@ export default {
         HeadBanner
     },
     methods: {
+        changeTabNextAndPrevMenu(idx, action) {
+            if (action === "next") {
+                const targetIdx = idx >= (this.typeList.length-1) ? 0 : idx + 1;
+                this.isCategory = this.typeList[targetIdx].id;
+            } else {
+                const targetIdx = idx <= 0 ? (this.typeList.length-1) : idx - 1;
+                this.isCategory = this.typeList[targetIdx].id;
+            }
+            this.chooseCategory(this.isCategory);
+        },
+        movePage (currentPage) {
+            this.pagingData = {...this.pagingData, currentPage: currentPage};
+            this.chooseType(this.isType, true);
+
+        },
         async chooseCategory (e) {
-            if (this.isCategory === e) return;
             this.isCategory = e;
             try{
                 const data = Promise.all([this.$axios.$get(`admin/support/faq/type?categoryId=${this.isCategory}`), 
@@ -63,32 +95,29 @@ export default {
                                                                                 category: this.isCategory,
                                                                                 type: null,
                                                                                 device: null,
-                                                                                pageRequest: {
-                                                                                    page: 1,
-                                                                                    size: 20,
-                                                                                    sort: "updated_at,DESC"
-                                                                                }
+                                                                                page: 1,
+                                                                                size: this.pagingData.currentSize,
+                                                                                sort: "updated_at,DESC"
                                                                             }})]);
             const dataJson = await data;
             this.asideMenuList = dataJson[0].data.typeList;
             this.contentList = dataJson[1].data.supportFaqDTOList;
             this.pagingData = dataJson[1].data.pageMetadataResponse;
+            this.isType = 0;
             } catch (e) {console.error(e)}
         },
 
-        async chooseType (e) {
-            if (this.isType === e) return;
+        async chooseType (e, isPaging = false) {
             this.isType = e;
+            if (!isPaging) this.pagingData = {...this.pagingData, currentPage: 1 };
             try {
                  const data = this.$axios.$get("admin/support/faq", {params: {
                                                                     category: this.isCategory,
-                                                                    type: this.isType,
+                                                                    type: e === 0 ? null : e,
                                                                     device: null,
-                                                                    pageRequest: {
-                                                                        page: 1,
-                                                                        size: 20,
-                                                                        sort: "updated_at,DESC"
-                                                                    }
+                                                                    page: this.pagingData.currentPage,
+                                                                    size: this.pagingData.currentSize,
+                                                                    sort: "updated_at,DESC"
                                                                 }});
                 const dataJson = await data;
                 this.contentList = dataJson.data.supportFaqDTOList;
@@ -125,6 +154,7 @@ export default {
 
 <style lang="scss" scoped>
 .tabCont{
+    // >div { width: 100%; }
         display: flex;
         gap: 20px;
         .FAQAside{
@@ -205,6 +235,8 @@ section.contactTab {
     width: 100%;
     padding: 150px 30px;
 }
+
+.LearningCenterMbTab-prev, .LearningCenterMbTab-next  { display: none; cursor: pointer; }
 @media screen and (max-width: 1024px) {
 
 }
@@ -212,6 +244,25 @@ section.contactTab {
 @media screen and (max-width: 768px) {
     .contactBanner .ContactBannerInner span p{
         display: inline;
+    }
+    .FAQTab {
+        border-bottom: 4px solid #092e6e;
+        display: flex;
+    }
+    .FAQTab>span { 
+        display: none;
+        border: none; 
+        justify-content: center;
+    }
+    .contactTab .FAQTab>span.active {
+        display: flex;
+        background-color: inherit;
+        align-items: center;
+        color: #092e6e;
+        border: none;
+    }
+    .LearningCenterMbTab-prev, .LearningCenterMbTab-next  { 
+        display: block;
     }
 }
 

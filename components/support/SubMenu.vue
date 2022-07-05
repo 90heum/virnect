@@ -8,8 +8,8 @@
             <li data-tab="2" :class="`${isActive === 'faq' ? 'contactTabActive' : ''}`">
                 <p><nuxt-link to="faq">FAQ</nuxt-link></p>
             </li>
-            <li data-tab="3" :class="isActive">
-                <p><nuxt-link to="center">학습센터</nuxt-link></p>
+            <li data-tab="3" :class="`${isActive === 'learning-center' ? 'contactTabActive' : ''}`">
+                <p><nuxt-link to="learning-center">학습센터</nuxt-link></p>
             </li>
             <li data-tab="4" :class="`${isActive === 'inquiry' ? 'contactTabActive' : ''}`">
                 <p><nuxt-link to="inquiry">문의하기</nuxt-link></p>
