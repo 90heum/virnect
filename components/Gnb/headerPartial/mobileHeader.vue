@@ -4,7 +4,7 @@
     <ul class="hamSubMenu">
       <li class="hamUseCase">
         <span class="hamUseCaseTit" @click="[hamMenuPage(), showMenu(false)]">
-          <nuxt-link to="/solutions/energy_resource"> Value </nuxt-link>
+          <a href="/solutions/energy_resource" @click="supertest()"> Value </a>
           <ul class="hamUseCaseMenu" v-if="isSub" v-show="open">
             <li @click="supertest()">
               <a href="/solutions/energy_resource"> 인프라/자원 </a>
@@ -43,7 +43,7 @@
       </li>
       <li class="hamProducts">
         <span class="hamProductsTit">
-          <nuxt-link to="/products/remote"> Products </nuxt-link>
+          <a href="/products/remote" @click="supertest()"> Products </a>
           <ul class="hamProductsMenu" v-if="isSub2" v-show="open2">
             <li @click="supertest()">
               <a href="/products/remote"> VIRNECT Remote </a>
@@ -84,7 +84,7 @@
       </li>
       <li class="hamSupport">
         <span class="hamSupportTit">
-          <a href="#"> Support </a>
+          <a href="/support/notice" @click="supertest()"> Support </a>
           <ul class="hamSupportMenu" v-if="isSub3" v-show="open3">
             <li @click="supertest()">
               <a href="/support/notice"> Product Notice </a>
@@ -119,7 +119,7 @@
       </li>
       <li class="hamNews">
         <span class="hamNewsTit">
-          <a href="#"> News </a>
+          <a href="#" @click="supertest()"> News </a>
           <ul class="hamNewsMenu" v-if="isSub4" v-show="open4">
             <li>
               <a href="#"> News & Press </a>
@@ -151,7 +151,7 @@
       </li>
       <li class="hamCompany">
         <span class="hamCompanyTit">
-          <nuxt-link to="/company/about"> Company </nuxt-link>
+          <a href="/company/about" @click="supertest()"> Company </a>
           <ul class="hamCompanyMenu" v-if="isSub5" v-show="open5">
             <li @click="supertest()">
               <a href="/company/about"> About VIRNECT </a>
