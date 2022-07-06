@@ -150,7 +150,7 @@
           </ul>
         </nav>
         <div class="demo">
-          <a href="#"> 데모신청 </a>
+          <nuxt-link to="/support/inquiry"> 데모신청 </nuxt-link>
         </div>
         <div
           class="serviceSelect"
@@ -438,10 +438,10 @@
           </span>
           <div class="BtnWrap">
             <button>
-              <a href="#"> 지금 사용해보기 </a>
+              <nuxt-link to="/support/inquiry"> 지금 사용해보기 </nuxt-link>
             </button>
             <button>
-              <a href="#"> 문의하기 </a>
+              <nuxt-link to="/support/inquiry"> 문의하기 </nuxt-link>
             </button>
           </div>
         </span>
