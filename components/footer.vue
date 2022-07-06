@@ -21,21 +21,39 @@
             <li>
               <nuxt-link to="/solutions/energy_resource">Value</nuxt-link>
               <ul>
-                <li><nuxt-link to="/solutions/energy_resource">인프라/자원</nuxt-link></li>
-                <li><nuxt-link to="/solutions/oil_chemical_battery">제조/건설</nuxt-link></li>
-                <li><nuxt-link to="/solutions/motor_parts">공공/교육</nuxt-link></li>
-                <li><nuxt-link to="/solutions/airline_railroad">엔터테인먼트</nuxt-link></li>
+                <li>
+                  <nuxt-link to="/solutions/energy_resource"
+                    >인프라/자원</nuxt-link
+                  >
+                </li>
+                <li>
+                  <nuxt-link to="/solutions/oil_chemical_battery"
+                    >제조/건설</nuxt-link
+                  >
+                </li>
+                <li>
+                  <nuxt-link to="/solutions/motor_parts">공공/교육</nuxt-link>
+                </li>
+                <li>
+                  <nuxt-link to="/solutions/airline_railroad"
+                    >엔터테인먼트</nuxt-link
+                  >
+                </li>
                 <li><nuxt-link to="/solutions/epc">기타</nuxt-link></li>
               </ul>
             </li>
             <li>
               <nuxt-link to="/products/remote">Products</nuxt-link>
               <ul>
-                <li><nuxt-link to="/products/remote">VIRNECT Remote</nuxt-link></li>
+                <li>
+                  <nuxt-link to="/products/remote">VIRNECT Remote</nuxt-link>
+                </li>
                 <li><nuxt-link to="/products/make">VIRNECT Make</nuxt-link></li>
                 <li><nuxt-link to="/products/view">VIRNECT View</nuxt-link></li>
                 <li><nuxt-link to="/products/twin">VIRNECT Twin</nuxt-link></li>
-                <li><nuxt-link to="/products/track">VIRNECT Track</nuxt-link></li>
+                <li>
+                  <nuxt-link to="/products/track">VIRNECT Track</nuxt-link>
+                </li>
                 <li><nuxt-link to="/products/ms">XR Devices</nuxt-link></li>
               </ul>
             </li>
@@ -44,7 +62,9 @@
               <ul>
                 <li><nuxt-link to="/support/notice">Notice</nuxt-link></li>
                 <li><nuxt-link to="/support/faq">FAQ</nuxt-link></li>
-                <li><nuxt-link to="/support/learning-center">학습센터</nuxt-link></li>
+                <li>
+                  <nuxt-link to="/support/learning-center">학습센터</nuxt-link>
+                </li>
                 <li><nuxt-link to="/support/inquiry">문의하기</nuxt-link></li>
               </ul>
             </li>
@@ -60,7 +80,9 @@
             <li>
               <nuxt-link to="/company/about">Company</nuxt-link>
               <ul>
-                <li><nuxt-link to="/company/about">About VIRNECT</nuxt-link></li>
+                <li>
+                  <nuxt-link to="/company/about">About VIRNECT</nuxt-link>
+                </li>
                 <li><nuxt-link to="/company/talent">인재채용</nuxt-link></li>
                 <li><nuxt-link to="/company/ir">IR</nuxt-link></li>
               </ul>
@@ -76,7 +98,7 @@
           </span>
           <ul>
             <li>
-              <a href="#">
+              <a href="/products/remote">
                 <i
                   ><img
                     src="https://velog.velcdn.com/images/kyj0206/post/1594992e-d94f-480e-98f0-9f68662b9570/image.png"
@@ -91,7 +113,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="/products/make">
                 <i
                   ><img
                     src="https://velog.velcdn.com/images/kyj0206/post/6bd22ee2-8bfe-4266-a733-fa30444c86c4/image.png"
@@ -106,7 +128,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="/products/view">
                 <i
                   ><img
                     src="https://velog.velcdn.com/images/kyj0206/post/eaee1485-ad71-4cb5-9bc4-334007dea716/image.png"
@@ -121,7 +143,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="/products/twin">
                 <i
                   ><img
                     src="https://velog.velcdn.com/images/kyj0206/post/737f774b-0624-4e69-8d03-d54d4eca271e/image.png"
@@ -136,7 +158,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="/products/track">
                 <i
                   ><img
                     src="https://velog.velcdn.com/images/kyj0206/post/503bf3bb-8bb4-4dcf-87bd-ab561d3a374f/image.png"
