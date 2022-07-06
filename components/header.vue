@@ -20,7 +20,6 @@
             <li
               @mouseover="[(gnb1 = true), changeGnbColor()]"
               @mouseleave="[(gnb1 = false), originalGnbColor()]"
-              v-bind:style="gnbStyle1"
               @click="[(gnb1=false)]"
             >
               <nuxt-link
@@ -47,14 +46,11 @@
               @mouseover="[(gnb2 = true), changeGnbColor2()]"
               @mouseleave="[(gnb2 = false), originalGnbColor2()]"
               @click="[(gnb2 = false)]"
-              v-bind:style="gnbStyle2"
             >
               <nuxt-link 
                 to="/products/remote"
                 class="navTab container2"
               >
-                class="navTab container2" 
-                v-bind:style="gnbTextStyle2">
                 Products
                 <i>
                   <img
@@ -74,9 +70,6 @@
               @mouseover="[(gnb3 = true), changeGnbColor3()]"
               @mouseleave="[(gnb3 = false), (e) => originalGnbColor3(e)]"
               @click="changeBorder()"
-              @mouseleave="[(gnb3 = false), originalGnbColor3()]"
-              @click="[(gnb3 = false)]"
-              v-bind:style="gnbStyle3"
             >
               <nuxt-link
                 to="/support/notice"
@@ -101,7 +94,6 @@
               @mouseover="[(gnb4 = true), changeGnbColor4()]"
               @mouseleave="[(gnb4 = false), originalGnbColor4()]"
               @click="[(gnb4 = false)]"
-              v-bind:style="gnbStyle4"
             >
               <a
                 href="#"
@@ -126,7 +118,6 @@
               @mouseover="[(gnb5 = true), changeGnbColor5()]"
               @mouseleave="[(gnb5 = false), originalGnbColor5()]"
               @click="[(gnb5 = false)]"
-              v-bind:style="gnbStyle5"
             >
               <nuxt-link
                 to="/company/about"
