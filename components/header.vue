@@ -20,12 +20,10 @@
             <li
               @mouseover="[(gnb1 = true), changeGnbColor()]"
               @mouseleave="[(gnb1 = false), originalGnbColor()]"
-              v-bind:style="gnbStyle1"
             >
               <nuxt-link
                 to="/solutions/energy_resource"
                 class="navTab container1"
-                v-bind:style="gnbTextStyle1"
               >
                 Value
                 <i>
@@ -45,12 +43,10 @@
             <li
               @mouseover="[(gnb2 = true), changeGnbColor2()]"
               @mouseleave="[(gnb2 = false), originalGnbColor2()]"
-              v-bind:style="gnbStyle2"
             >
               <nuxt-link
                 to="/products/remote"
                 class="navTab container2"
-                v-bind:style="gnbTextStyle2"
               >
                 Products
                 <i>
@@ -69,14 +65,12 @@
             </li>
             <li
               @mouseover="[(gnb3 = true), changeGnbColor3()]"
-              @mouseleave="[(gnb3 = false), originalGnbColor3()]"
+              @mouseleave="[(gnb3 = false), (e) => originalGnbColor3(e)]"
               @click="changeBorder()"
-              v-bind:style="gnbStyle3"
             >
               <a
                 href="#"
                 class="navTab container3"
-                v-bind:style="gnbTextStyle3"
               >
                 Support
                 <i>
@@ -96,12 +90,10 @@
             <li
               @mouseover="[(gnb4 = true), changeGnbColor4()]"
               @mouseleave="[(gnb4 = false), originalGnbColor4()]"
-              v-bind:style="gnbStyle4"
             >
               <a
                 href="#"
                 class="navTab container4"
-                v-bind:style="gnbTextStyle4"
               >
                 News
                 <i>
@@ -121,12 +113,10 @@
             <li
               @mouseover="[(gnb5 = true), changeGnbColor5()]"
               @mouseleave="[(gnb5 = false), originalGnbColor5()]"
-              v-bind:style="gnbStyle5"
             >
               <nuxt-link
                 to="/company/about"
                 class="navTab container5"
-                v-bind:style="gnbTextStyle5"
               >
                 Company
                 <i>
@@ -772,7 +762,8 @@ export default {
       this.gnbStyle3.backgroundColor = "#fff";
       this.gnbTextStyle3.color = "#0a51b7";
     },
-    originalGnbColor3: function () {
+    originalGnbColor3: function (e) {
+      console.log(e)
       this.gnbStyle3.backgroundColor = "#121212";
       this.gnbTextStyle3.color = "#fff";
     },
