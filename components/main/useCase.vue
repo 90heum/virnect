@@ -41,7 +41,7 @@
           </span>
           <!-- 에너지/지원 호버 -->
           <span class="energyHover">
-            <a href="#">
+            <nuxt-link to="/solutions/energy_resource">
               <span>
                 <p>인프라/자원</p>
                 <i>
@@ -62,7 +62,7 @@
                   alt="에너지/자원 이미지"
                 />
               </span>
-            </a>
+            </nuxt-link>
           </span>
         </div>
 
@@ -87,7 +87,7 @@
           </span>
           <!-- 정유/화학/배터리 호버 -->
           <span class="oilHover">
-            <a href="#">
+            <nuxt-link to="/solutions/oil_chemical_battery">
               <span>
                 <p>제조/건설</p>
                 <i>
@@ -107,7 +107,7 @@
                   alt="정유/화학/배터리 이미지"
                 />
               </span>
-            </a>
+            </nuxt-link>
           </span>
         </div>
 
@@ -132,7 +132,7 @@
           </span>
           <!-- 자동차/부품 호버 -->
           <span class="partsHover">
-            <a href="#">
+            <nuxt-link to="/solutions/motor_parts">
               <span>
                 <p>공공/교육</p>
                 <i>
@@ -153,7 +153,7 @@
                   alt="자동차/부품 이미지"
                 />
               </span>
-            </a>
+            </nuxt-link>
           </span>
         </div>
 
@@ -178,7 +178,7 @@
           </span>
           <!-- 항공/철도 호버 -->
           <span class="airLineHover">
-            <a href="#">
+            <nuxt-link to="/solutions/airline_railroad">
               <span>
                 <p>엔터테인먼트</p>
                 <i>
@@ -199,7 +199,7 @@
                   alt="항공/철도 이미지"
                 />
               </span>
-            </a>
+            </nuxt-link>
           </span>
         </div>
 
@@ -224,7 +224,7 @@
           </span>
           <!-- EPC 호버 -->
           <span class="epcHover">
-            <a href="#">
+            <nuxt-link to="/solutions/epc">
               <span>
                 <p>기타</p>
                 <i>
@@ -245,7 +245,7 @@
                   alt="EPC 이미지"
                 />
               </span>
-            </a>
+            </nuxt-link>
           </span>
         </div>
       </div>

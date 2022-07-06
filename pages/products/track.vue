@@ -1,7 +1,7 @@
 <template>
   <section class="products-section">
     <subMenuTrack />
-    <SubBannerTrack />
+    <SubBannerTrack class="bb" />
     <!-- <sub-visual-section
       :image="visualText.image"
       :category="visualText.category"
@@ -12,14 +12,16 @@
     <transition name="app-fade" mode="out-in">
       <track-component />
     </transition>
-    <tail-section
+    <!-- <tail-section
       :bg="tailText.bg"
       :mention="$t('productsText.tailText')"
       :blueBtn="tailText.blue"
       :blueRouter="tailText.blueRouter"
       :greyBtn="tailText.grey"
       :greyRouter="tailText.greyRouter"
-    ></tail-section>
+    ></tail-section> -->
+
+    <tailSection class="aa" />
   </section>
 </template>
 
@@ -30,6 +32,8 @@ import tailSection from "../../layouts/common/Tail.vue";
 import trackComponent from "../../components/products/pages/Track.vue";
 import SubBannerTrack from "~/components/products/partials/subBannerTrack.vue";
 import subMenuTrack from "~/components/products/partials/subMenuTrack.vue";
+import CtaModule from "~/components/main/ctaModule.vue";
+
 export default {
   components: {
     subVisualSection,
@@ -38,6 +42,7 @@ export default {
     trackComponent,
     SubBannerTrack,
     subMenuTrack,
+    CtaModule,
   },
   data() {
     return {
@@ -62,4 +67,10 @@ export default {
 
 <style lang="scss" scoped>
 @import "~assets/css/pages/products.scss";
+.aa {
+  margin-top: 100px;
+}
+.bb {
+  margin: 0 auto;
+}
 </style>

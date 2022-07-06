@@ -8,7 +8,7 @@
       :contents="$t('productsText.visualText.contents')"
     ></sub-visual-section> -->
     <!-- <snb-section :snbArr="$t('gnb[1].array')"></snb-section> -->
-    <sub-banner />
+    <sub-banner class="aa" />
 
     <!-- 제품개요 -->
     <xr-solution />
@@ -28,9 +28,9 @@
       :greyRouter="tailText.greyRouter"
     ></tail-section>
      -->
-    <bottom-banner-remote />
+    <!-- <bottom-banner-remote /> -->
 
-    <cta-module />
+    <tailSection class="bb" />
   </section>
 </template>
 
@@ -84,4 +84,10 @@ export default {
 
 <style lang="scss" scoped>
 @import "~assets/css/pages/products.scss";
+.aa {
+  margin: 0 auto;
+}
+.bb {
+  margin-top: 100px;
+}
 </style>

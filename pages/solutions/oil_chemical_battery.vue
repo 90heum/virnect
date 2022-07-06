@@ -11,14 +11,15 @@
     <transition name="app-fade" mode="out-in">
       <oil-component />
     </transition>
-    <tail-section
+    <!-- <tail-section
       :bg="tailText.bg"
       :mention="$t('solutionText.tailText')"
       :blueBtn="tailText.blue"
       :blueRouter="tailText.blueRouter"
       :greyBtn="tailText.grey"
       :greyRouter="tailText.greyRouter"
-    ></tail-section>
+    ></tail-section> -->
+    <CtaModule />
   </section>
 </template>
 
@@ -28,6 +29,7 @@ import snbSection from "../../components/modules/Snb.vue";
 import tailSection from "../../layouts/common/Tail.vue";
 import oilComponent from "../../components/solutions/pages/Oil.vue";
 import SubMenuOil from "~/components/solutions/partials/subMenuOil.vue";
+import CtaModule from "~/components/main/ctaModule.vue";
 export default {
   components: {
     subVisualSection,
@@ -35,6 +37,7 @@ export default {
     tailSection,
     oilComponent,
     SubMenuOil,
+    CtaModule,
   },
   data() {
     return {

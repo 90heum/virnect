@@ -1,68 +1,90 @@
 <template>
   <div class="footer">
-      <div class="upButton">
-        <a href="javascript:window.scrollTo(0,0);">
-          <img
-            class="upup"
-            src="https://velog.velcdn.com/images/kyj0206/post/d74f9933-4e13-4838-aa1a-4f7993020afc/image.svg"
-            alt="upButton"
-          />
-          <img
-            class="upHover"
-            src="https://velog.velcdn.com/images/kyj0206/post/fcd53b94-13c9-4499-b141-239c5ac68704/image.png"
-            alt="upButton"
-          />
-        </a>
-      </div>
+    <div class="upButton">
+      <a href="javascript:window.scrollTo(0,0);">
+        <img
+          class="upup"
+          src="https://velog.velcdn.com/images/kyj0206/post/d74f9933-4e13-4838-aa1a-4f7993020afc/image.svg"
+          alt="upButton"
+        />
+        <img
+          class="upHover"
+          src="https://velog.velcdn.com/images/kyj0206/post/fcd53b94-13c9-4499-b141-239c5ac68704/image.png"
+          alt="upButton"
+        />
+      </a>
+    </div>
     <div class="footerWrap">
       <span class="footerTop">
         <span class="footerNavWeb">
           <ul>
             <li>
-              <a href="#">Value</a>
+              <nuxt-link to="/solutions/energy_resource">Value</nuxt-link>
               <ul>
-                <li><a href="#">인프라/자원</a></li>
-                <li><a href="#">제조/건설</a></li>
-                <li><a href="#">공공/교육</a></li>
-                <li><a href="#">엔터테인먼트</a></li>
-                <li><a href="#">기타</a></li>
+                <li>
+                  <nuxt-link to="/solutions/energy_resource"
+                    >인프라/자원</nuxt-link
+                  >
+                </li>
+                <li>
+                  <nuxt-link to="/solutions/oil_chemical_battery"
+                    >제조/건설</nuxt-link
+                  >
+                </li>
+                <li>
+                  <nuxt-link to="/solutions/motor_parts">공공/교육</nuxt-link>
+                </li>
+                <li>
+                  <nuxt-link to="/solutions/airline_railroad"
+                    >엔터테인먼트</nuxt-link
+                  >
+                </li>
+                <li><nuxt-link to="/solutions/epc">기타</nuxt-link></li>
               </ul>
             </li>
             <li>
-              <a href="#">Products</a>
+              <nuxt-link to="/products/remote">Products</nuxt-link>
               <ul>
-                <li><a href="#">VIRNECT Remote</a></li>
-                <li><a href="#">VIRNECT Make</a></li>
-                <li><a href="#">VIRNECT View</a></li>
-                <li><a href="#">VIRNECT Twin</a></li>
-                <li><a href="#">VIRNECT Track</a></li>
-                <li><a href="#">XR Devices</a></li>
+                <li>
+                  <nuxt-link to="/products/remote">VIRNECT Remote</nuxt-link>
+                </li>
+                <li><nuxt-link to="/products/make">VIRNECT Make</nuxt-link></li>
+                <li><nuxt-link to="/products/view">VIRNECT View</nuxt-link></li>
+                <li><nuxt-link to="/products/twin">VIRNECT Twin</nuxt-link></li>
+                <li>
+                  <nuxt-link to="/products/track">VIRNECT Track</nuxt-link>
+                </li>
+                <li><nuxt-link to="/products/ms">XR Devices</nuxt-link></li>
               </ul>
             </li>
             <li>
-              <a href="#">Support</a>
+              <nuxt-link to="/support/notice">Support</nuxt-link>
               <ul>
-                <li><a href="#">Notice</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">학습센터</a></li>
-                <li><a href="#">문의하기</a></li>
+                <li><nuxt-link to="/support/notice">Notice</nuxt-link></li>
+                <li><nuxt-link to="/support/faq">FAQ</nuxt-link></li>
+                <li>
+                  <nuxt-link to="/support/learning-center">학습센터</nuxt-link>
+                </li>
+                <li><nuxt-link to="/support/inquiry">문의하기</nuxt-link></li>
               </ul>
             </li>
             <li>
-              <a href="#">News</a>
+              <nuxt-link to="/news/news-press">News</nuxt-link>
               <ul>
-                <li><a href="#">News&press</a></li>
-                <li><a href="#">People & Culture</a></li>
+                <li><nuxt-link to="/news/news-press">News&press</nuxt-link></li>
+                <!-- <li><a href="#">People & Culture</a></li>
                 <li><a href="#">Insight</a></li>
-                <li><a href="#">ESG</a></li>
+                <li><a href="#">ESG</a></li> -->
               </ul>
             </li>
             <li>
-              <a href="#">Company</a>
+              <nuxt-link to="/company/about">Company</nuxt-link>
               <ul>
-                <li><a href="#">About VIRNECT</a></li>
-                <li><a href="#">인재채용</a></li>
-                <li><a href="#">IR</a></li>
+                <li>
+                  <nuxt-link to="/company/about">About VIRNECT</nuxt-link>
+                </li>
+                <li><nuxt-link to="/company/talent">인재채용</nuxt-link></li>
+                <li><nuxt-link to="/company/ir">IR</nuxt-link></li>
               </ul>
             </li>
           </ul>
@@ -76,7 +98,7 @@
           </span>
           <ul>
             <li>
-              <a href="#">
+              <a href="/products/remote">
                 <i
                   ><img
                     src="https://velog.velcdn.com/images/kyj0206/post/1594992e-d94f-480e-98f0-9f68662b9570/image.png"
@@ -91,7 +113,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="/products/make">
                 <i
                   ><img
                     src="https://velog.velcdn.com/images/kyj0206/post/6bd22ee2-8bfe-4266-a733-fa30444c86c4/image.png"
@@ -106,7 +128,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="/products/view">
                 <i
                   ><img
                     src="https://velog.velcdn.com/images/kyj0206/post/eaee1485-ad71-4cb5-9bc4-334007dea716/image.png"
@@ -121,7 +143,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="/products/twin">
                 <i
                   ><img
                     src="https://velog.velcdn.com/images/kyj0206/post/737f774b-0624-4e69-8d03-d54d4eca271e/image.png"
@@ -136,7 +158,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="/products/track">
                 <i
                   ><img
                     src="https://velog.velcdn.com/images/kyj0206/post/503bf3bb-8bb4-4dcf-87bd-ab561d3a374f/image.png"
@@ -178,11 +200,12 @@
             <span class="infoButton">
               <span class="buttonWrap">
                 <!-- 서비스선택 박스 -->
-                <div class="serviceSelect"
-                    @click="[showServiceMenu(), toggle(), showEarth=false]"
-                    v-click-outside="serviceHide"
-                    v-if="isWeb"
-                    v-bind:style="hamServiceColor"
+                <div
+                  class="serviceSelect"
+                  @click="[showServiceMenu(), toggle(), (showEarth = false)]"
+                  v-click-outside="serviceHide"
+                  v-if="isWeb"
+                  v-bind:style="hamServiceColor"
                 >
                   <div class="select">
                     <div class="selected">
@@ -202,9 +225,7 @@
                         />
                       </div>
                     </div>
-                    <ul v-if="isServiceMenu"
-                        v-show="serviceOpen"
-                    >
+                    <ul v-if="isServiceMenu" v-show="serviceOpen">
                       <li class="option">
                         <a
                           href="https://console.virnect.com/?continue=https%3A%2F%2Fvirnect.com%2F"
@@ -293,7 +314,7 @@
                   </div>
                 </div>
                 <button>
-                  <a href="#"> 문의하기 </a>
+                  <nuxt-link to="/support/inquiry"> 문의하기 </nuxt-link>
                 </button>
               </span>
               <span class="downLoad">
@@ -449,8 +470,14 @@
                 /></i>
               </div>
               <div class="tabLang" v-if="showEarth">
-                <span>Korean</span>
-                <span>English</span>
+                <span
+                  v-for="locale in availableLocales"
+                  :key="locale.code"
+                  @click.prevent.stop="$i18n.setLocale(locale.code)"
+                  @click="langlang()"
+                >
+                  <a href="#">{{ locale.name }}</a>
+                </span>
               </div>
             </span>
           </div>
@@ -463,7 +490,7 @@
   </div>
 </template>
 <script>
-import ClickOutside from 'vue-click-outside'
+import ClickOutside from "vue-click-outside";
 
 export default {
   computed: {
@@ -481,11 +508,11 @@ export default {
     isWeb: true,
     showEarth: false,
     isServiceMenu: false,
-    hamServiceColor:{},
+    hamServiceColor: {},
     serviceOpen: false,
   }),
   directives: {
-    ClickOutside
+    ClickOutside,
   },
   methods: {
     langlang() {
@@ -493,13 +520,13 @@ export default {
     },
     showServiceMenu() {
       this.isServiceMenu = !this.isServiceMenu;
-      this.hamServiceColor.backgroundColor="#fff";
+      this.hamServiceColor.backgroundColor = "#fff";
     },
-    toggle(){
-      this.serviceOpen = true
+    toggle() {
+      this.serviceOpen = true;
     },
-    serviceHide(){
-      this.serviceOpen = false
+    serviceHide() {
+      this.serviceOpen = false;
     },
     /* showServiceMenu () {
       if (isServiceMenu == true) {

@@ -117,12 +117,10 @@
           </span>
           <span>
             <button>
-              <a href="#"> 자세히 보기 </a>
+              <nuxt-link to="/products/remote"> 자세히 보기 </nuxt-link>
             </button>
             <button>
-              <a href="https://pardot.virnect.com/l/929783/2022-06-16/3nplr">
-                데모신청
-              </a>
+              <a href="support/inquiry" target="blank"> 데모신청 </a>
             </button>
           </span>
           <span>
@@ -132,7 +130,7 @@
                 alt="다운로드이미지"
               />
             </i>
-            <p><u>Make 제품 소개서 다운로드(PDF)</u></p>
+            <p><u>Remote 제품 소개서 다운로드(PDF)</u></p>
           </span>
         </span>
         <span class="moduleBottomCont">
@@ -162,12 +160,10 @@
           </span>
           <span>
             <button>
-              <a href="#"> 자세히 보기 </a>
+              <nuxt-link to="/products/make"> 자세히 보기 </nuxt-link>
             </button>
             <button>
-              <a href="https://pardot.virnect.com/l/929783/2022-06-16/3nplr">
-                데모신청
-              </a>
+              <a href="support/inquiry" target="blank"> 데모신청 </a>
             </button>
           </span>
           <span>
@@ -178,7 +174,7 @@
                   alt="다운로드이미지"
                 />
               </i>
-              <p><u>Remote 제품 소개서 다운로드(PDF)</u></p>
+              <p><u>Make 제품 소개서 다운로드(PDF)</u></p>
             </a>
           </span>
         </span>
@@ -205,12 +201,10 @@
           </span>
           <span>
             <button>
-              <a href="#"> 자세히 보기 </a>
+              <nuxt-link to="/products/view"> 자세히 보기 </nuxt-link>
             </button>
             <button>
-              <a href="https://pardot.virnect.com/l/929783/2022-06-16/3nplr">
-                데모신청
-              </a>
+              <a href="support/inquiry" target="blank"> 데모신청 </a>
             </button>
           </span>
           <span>
@@ -246,12 +240,10 @@
           </span>
           <span>
             <button>
-              <a href="#"> 자세히 보기 </a>
+              <nuxt-link to="/products/twin"> 자세히 보기 </nuxt-link>
             </button>
             <button>
-              <a href="https://pardot.virnect.com/l/929783/2022-06-16/3nplr">
-                데모신청
-              </a>
+              <a href="support/inquiry" target="blank"> 데모신청 </a>
             </button>
           </span>
           <span>
@@ -294,12 +286,10 @@
           </span>
           <span>
             <button>
-              <a href="#"> 자세히 보기 </a>
+              <nuxt-link to="/products/track"> 자세히 보기 </nuxt-link>
             </button>
             <button>
-              <a href="https://pardot.virnect.com/l/929783/2022-06-16/3nplr">
-                데모신청
-              </a>
+              <a href="support/inquiry" target="blank"> 데모신청 </a>
             </button>
           </span>
           <span>

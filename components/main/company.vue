@@ -57,7 +57,7 @@
         <!-- 회사소개 모듈 -->
         <span class="companyVirnect">
           <div class="virnectModule1">
-            <a href="#">
+            <nuxt-link to="/company/about">
               <img
                 src="https://velog.velcdn.com/images/kyj0206/post/048484e3-41b2-4f43-a14c-7a451594343c/image.jpg"
                 alt="VIRNECT 회사소개"
@@ -71,10 +71,10 @@
                   />
                 </span>
               </div>
-            </a>
+            </nuxt-link>
           </div>
           <div class="virnectModule2">
-            <a href="#">
+            <nuxt-link to="/company/talent">
               <img
                 src="https://velog.velcdn.com/images/kyj0206/post/163bcddf-ccbd-444b-b2d7-57eaea06b375/image.jpg"
                 alt="인재채용"
@@ -88,7 +88,7 @@
                   />
                 </span>
               </div>
-            </a>
+            </nuxt-link>
           </div>
           <div class="virnectModule3">
             <a href="#">

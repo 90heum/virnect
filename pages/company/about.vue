@@ -6,12 +6,12 @@
       :category="visualText.category"
       :title="
         $route.name === 'company-about'
-          ? $t('virtualConnect.title')
+          ? $t('companyText.visualText.title')
           : $t('companyText.visualText.title')
       "
       :contents="
         $route.name === 'company-about'
-          ? $t('virtualConnect.visualContents')
+          ? $t('companyText.visualText.contents')
           : $t('companyText.visualText.contents')
       "
     ></sub-visual-section>

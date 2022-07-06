@@ -4,7 +4,7 @@
       <span>
         <i>
           <img
-            src="https://velog.velcdn.com/images/kyj0206/post/3ab14d47-45c9-4f4c-aaa0-ead413260671/image.png"
+            src="https://velog.velcdn.com/images/akwjdgma/post/902a9c35-21a6-4e74-9d59-745cdd5e8a00/image.png"
             alt="VIRNECT Remote"
           />
         </i>
@@ -26,7 +26,7 @@
             </a>
           </button>
           <button>
-            <a href="https://pardot.virnect.com/l/929783/2022-06-16/3nplr">
+            <a href="/support/inquiry" target="blank">
               {{ $t("productsText.twinSubButton.free") }}
             </a>
           </button>

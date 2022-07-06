@@ -4,13 +4,13 @@
       <div class="overViewWrap">
         <span class="overViewTit">
           <p>
-            {{$t("productsText.xrSolutionTitle.category")}}
+            {{ $t("productsText.xrSolutionTitle.category") }}
           </p>
           <h2>
-            {{$t("productsText.xrSolutionTitle.title")}}
+            {{ $t("productsText.xrSolutionTitle.title") }}
           </h2>
           <span>
-            {{$t("productsText.xrSolutionTitle.contents")}}
+            {{ $t("productsText.xrSolutionTitle.contents") }}
           </span>
         </span>
         <span class="overViewCont">
@@ -21,7 +21,7 @@
                 alt="Save Time and Cost"
             /></i>
             <p>Save Time and Cost</p>
-            <p>{{$t("productsText.xrSolutionText.TimeCost")}}</p>
+            <p>{{ $t("productsText.xrSolutionText.TimeCost") }}</p>
           </span>
           <span>
             <i
@@ -30,7 +30,7 @@
                 alt="Inform Quicky and ccurately"
             /></i>
             <p>Inform Quicky and ccurately</p>
-            <p>{{$t("productsText.xrSolutionText.Quicky")}}</p>
+            <p>{{ $t("productsText.xrSolutionText.Quicky") }}</p>
           </span>
           <span>
             <i
@@ -39,7 +39,7 @@
                 alt="Reduce Industry Risks"
             /></i>
             <p>Reduce Industry Risks</p>
-            <p>{{$t("productsText.xrSolutionText.Risks")}}</p>
+            <p>{{ $t("productsText.xrSolutionText.Risks") }}</p>
           </span>
         </span>
       </div>

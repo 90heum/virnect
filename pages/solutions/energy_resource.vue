@@ -12,14 +12,15 @@
     <transition name="app-fade" mode="out-in">
       <energy-component />
     </transition>
-    <tail-section
+    <!-- <tail-section
       :bg="tailText.bg"
       :mention="$t('solutionText.tailText')"
       :blueBtn="tailText.blue"
       :blueRouter="tailText.blueRouter"
       :greyBtn="tailText.grey"
       :greyRouter="tailText.greyRouter"
-    ></tail-section>
+    ></tail-section> -->
+    <CtaModule />
   </section>
 </template>
 
@@ -29,6 +30,7 @@ import snbSection from "../../components/modules/Snb.vue";
 import tailSection from "../../layouts/common/Tail.vue";
 import energyComponent from "../../components/solutions/pages/Energy.vue";
 import SubMenu from "../../components/solutions/partials/subMenu.vue";
+import CtaModule from "~/components/main/ctaModule.vue";
 
 export default {
   components: {
@@ -37,6 +39,7 @@ export default {
     tailSection,
     energyComponent,
     SubMenu,
+    CtaModule,
   },
   data() {
     return {

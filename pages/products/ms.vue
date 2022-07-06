@@ -3,22 +3,22 @@
     <subMenuMs />
     <sub-visual-section
       :image="visualText.image"
-      :category="visualText.category"
-      :title="$t('productsText.visualText.title')"
-      :contents="$t('productsText.visualText.contents')"
+      :category="'XR Devices'"
+      :title="$t('companyText.msText.title')"
     ></sub-visual-section>
     <snb-section :snbArr="$t('gnb[1].array')"></snb-section>
     <transition name="app-fade" mode="out-in">
       <ms-component />
     </transition>
-    <tail-section
+    <!-- <tail-section
       :bg="tailText.bg"
       :mention="$t('productsText.tailText')"
       :blueBtn="tailText.blue"
       :blueRouter="tailText.blueRouter"
       :greyBtn="tailText.grey"
       :greyRouter="tailText.greyRouter"
-    ></tail-section>
+    ></tail-section> -->
+    <tailSection class="aa" />
   </section>
 </template>
 
@@ -28,6 +28,7 @@ import snbSection from "../../layouts/modules/Snb.vue";
 import tailSection from "../../layouts/common/Tail.vue";
 import msComponent from "../../components/products/pages/MS.vue";
 import subMenuMs from "~/components/products/partials/subMenuMs.vue";
+import CtaModule from "~/components/main/ctaModule.vue";
 export default {
   components: {
     subVisualSection,
@@ -35,6 +36,7 @@ export default {
     tailSection,
     msComponent,
     subMenuMs,
+    CtaModule,
   },
   data() {
     return {
@@ -59,4 +61,10 @@ export default {
 
 <style lang="scss" scoped>
 @import "~assets/css/pages/products.scss";
+.aa {
+  margin-top: 100px;
+}
+.bb {
+  margin: 0 auto;
+}
 </style>

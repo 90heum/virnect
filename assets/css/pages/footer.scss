@@ -53,13 +53,11 @@
                     padding: 73px 30px 60px;
                     >li{
                         width: 25%;
-                        &:hover{
-                            >a{
+                            >a:hover{
                                 color: #0a51b7;
                                 text-decoration: underline;
                                 text-underline-position: under;
                             }
-                        }
                         >a{
                             display: block;
                             font-size: 18px;
@@ -667,9 +665,11 @@
                                     line-height: normal;
                                     letter-spacing: normal;
                                     text-align: center;
-                                    color: #121212;
-                                    &:hover{
-                                        color: #0a51b7;
+                                    a{
+                                        color: #121212;
+                                        &:hover{
+                                            color: #0a51b7;
+                                        }
                                     }
                                     &:first-child{
                                         padding: 16px 20px 12px;

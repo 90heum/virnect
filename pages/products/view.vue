@@ -1,7 +1,7 @@
 <template>
   <section class="products-section">
     <subMenuView />
-    <sub-banner-view />
+    <sub-banner-view class="bb" />
     <!-- <sub-visual-section
       :image="visualText.image"
       :category="visualText.category"
@@ -12,14 +12,15 @@
     <transition name="app-fade" mode="out-in">
       <view-component />
     </transition>
-    <tail-section
+    <!-- <tail-section
       :bg="tailText.bg"
       :mention="$t('productsText.tailText')"
       :blueBtn="tailText.blue"
       :blueRouter="tailText.blueRouter"
       :greyBtn="tailText.grey"
       :greyRouter="tailText.greyRouter"
-    ></tail-section>
+    ></tail-section> -->
+    <tailSection class="aa" />
   </section>
 </template>
 
@@ -28,8 +29,9 @@ import subVisualSection from "../../layouts/common/SubVisual.vue";
 import snbSection from "../../layouts/modules/Snb.vue";
 import tailSection from "../../layouts/common/Tail.vue";
 import viewComponent from "../../components/products/pages/View.vue";
-import SubBannerView from "~/components/products/partials/subBanner.vue";
+import SubBannerView from "~/components/products/partials/subBannerView.vue";
 import subMenuView from "~/components/products/partials/subMenuView.vue";
+import CtaModule from "~/components/main/ctaModule.vue";
 export default {
   components: {
     subVisualSection,
@@ -38,6 +40,7 @@ export default {
     viewComponent,
     SubBannerView,
     subMenuView,
+    CtaModule,
   },
   data() {
     return {
@@ -62,4 +65,10 @@ export default {
 
 <style lang="scss" scoped>
 @import "~assets/css/pages/products.scss";
+.aa {
+  margin-top: 100px;
+}
+.bb {
+  margin: 0 auto;
+}
 </style>

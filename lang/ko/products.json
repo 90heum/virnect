@@ -6,7 +6,7 @@
 		},
 		"trackSubButton": {
 			"know": "자세히 보기",
-			"free": "데모신청"
+			"free": "문의하기"
 		},
 		"twinSubTitle": {
 			"title": "XR 기반 3D 현장 관리 솔루션",
@@ -14,7 +14,7 @@
 		},
 		"twinSubButton": {
 			"know": "자세히 보기",
-			"free": "데모신청"
+			"free": "문의하기"
 		},
 		"viewSubTitle": {
 			"title": "XR 정보 및 데이터 시각화 솔루션",
@@ -22,7 +22,7 @@
 		},
 		"viewSubButton": {
 			"know": "자세히 보기",
-			"free": "데모신청"
+			"free": "문의하기"
 		},
 		"makeSubTitle": {
 			"title": "XR 콘텐츠 제작 All-In-One솔루션",
@@ -30,7 +30,7 @@
 		},
 		"makeSubButton": {
 			"know": "자세히 보기",
-			"free": "데모신청"
+			"free": "문의하기"
 		},
 		"remoteSubTitle": {
 			"title": "XR 원격 협업 솔루션",
@@ -38,7 +38,7 @@
 		},
 		"remoteSubButton": {
 			"know": "자세히 보기",
-			"free": "데모신청"
+			"free": "문의하기"
 		},
 		"productPropertyTitle": {
 			"title": "제품특징",
@@ -53,7 +53,7 @@
 			"personalization": "고객 맞춤형 커스터마이징 기능 탑재 가능"
 		},
 		"xrSolutionTitle": {
-			"category": "제품개요",
+			"category": "제품 개요",
 			"title": "XR 원격 협업 솔루션",
 			"contents": "VIRNECT Remote의 실시간 원격협업 서비스를 통해 산업 현장에 필요한 정보와 이슈를 실시간으로 공유하여 언제 어디서든 업무 대응이 가능합니다. 빠르고 간편하게 협업이 가능하며 기존의 익숙한 업무 환경을 그대로 유지하여 업무의 정확성과 효율성을 높일 수 있습니다."
 		},
@@ -534,7 +534,7 @@
 		},
 		"remoteText": {
 			"introText": {
-				"category": "AR 다자간 원격 협업",
+				"category": "제품 개요",
 				"title": "여러 현장을 하나로 연결하고 자유롭게 <br class='mobile-hidden'>정보를 공유합니다",
 				"contents": "VIRNECT Remote의 실시간 원격협업 서비스를 통해 산업 현장에 필요한 정보와 이슈를​ 실시간으로 공유하여 언제 어디서든 업무 대응이 가능합니다.​ <br>빠르고 간편하게 협업이 가능하며 ​기존의 익숙한 업무 환경을 그대로 유지하여 업무의 정확성과 효율성을 높일 수 있습니다."
 			},

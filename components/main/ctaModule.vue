@@ -5,12 +5,10 @@
       <p>준비된 기술 컨설턴트가 직접 도움을 드립니다.</p>
       <span>
         <button>
-          <a href="https://pardot.virnect.com/l/929783/2022-06-16/3nplr">
-            데모신청
-          </a>
+          <a href="/support/inquiry" target="blank"> 데모신청 </a>
         </button>
         <button>
-          <a href="#"> 도입문의 </a>
+          <a href="/support/inquiry" target="blank"> 도입문의 </a>
         </button>
       </span>
     </div>

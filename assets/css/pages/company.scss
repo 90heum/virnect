@@ -1,5 +1,12 @@
 @charset "utf-8";
 
+@media screen and (max-width: 1200px) {
+  .insight-section {
+    display: grid;
+    justify-content: center;
+  }
+}
+
 .recruit-section {
   overflow: hidden;
   padding-bottom: 380px;
@@ -155,25 +162,16 @@ html:lang(en) {
     }
   }
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1200px) {
     .insight-section {
-      align-items: center;
-
-      background-color: red;
-    }
-
-    dt {
-      float: left;
-      background-color: #8b96a8;
-    }
-
-    dd {
-      float: left;
+      display: grid;
+      justify-content: center;
     }
   }
 
+
+
   @media (max-width: 768px) {
-    margin-bottom: 44px;
 
     .title {
       margin-bottom: 8px;
@@ -489,7 +487,6 @@ html:lang(en) {
   margin-top: 108px;
 
   dl {
-
     margin-bottom: 44px;
     padding-top: 24px;
     text-align: left;
