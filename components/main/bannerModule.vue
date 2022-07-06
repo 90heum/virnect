@@ -220,8 +220,20 @@ export default {
   transform: scale(0.9);
   box-shadow: 5px 5px 40px -1px var(--shadow);
 }
-
+@media screen and (min-width: 1104px) and (max-width: 1115px) {
+   .banner {  top: 85%; }
+}
+@media screen and (max-width: 1103px) {
+    .banner {  top: 93%; }
+}
+@media screen and (max-width: 1076px) {
+    .banner {  top: 98%; }
+}
+@media screen and (max-width: 1024px) {
+    .banner {  top: 147%; }
+}
 @media screen and(max-width:768px) {
+    .banner {  top: 133%; }
     .banner .bannerWrap .bannerMoule .banner1024{
         display: none;
     }
@@ -235,5 +247,16 @@ export default {
         transform: translate(-50%, 60%);
     }
 }
-
+@media screen and (max-width: 745px) {
+    .banner {  top: 129%; }
+}
+@media screen and (max-width: 665px) {
+    .banner {  top: 126%; }
+}
+@media screen and (max-width: 617px) {
+    .banner {  top: 120%; }
+}
+@media screen and (max-width: 550px) {
+    .banner {  top: 112%; }
+}
 </style>
