@@ -14,6 +14,13 @@
     "_name": "_b98f10a2"
   },
   {
+    "name": "company-ir-detail",
+    "path": "/company/ir-detail",
+    "component": "/Users/hellodigital/virnect/pages/company/ir-detail.vue",
+    "chunkName": "pages/company/ir-detail",
+    "_name": "_50df495f"
+  },
+  {
     "name": "company-talent",
     "path": "/company/talent",
     "component": "/Users/hellodigital/virnect/pages/company/talent.vue",
@@ -159,13 +166,6 @@
     "component": "/Users/hellodigital/virnect/pages/support/notice-detail.vue",
     "chunkName": "pages/support/notice-detail",
     "_name": "_05c9c622"
-  },
-  {
-    "name": "support-test",
-    "path": "/support/test",
-    "component": "/Users/hellodigital/virnect/pages/support/test.vue",
-    "chunkName": "pages/support/test",
-    "_name": "_71a46ff4"
   },
   {
     "name": "company-subCompany-Brand",

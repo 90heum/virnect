@@ -6,6 +6,7 @@ import scrollBehavior from './router.scrollBehavior.js'
 
 const _74945477 = () => interopDefault(import('../pages/company/about.vue' /* webpackChunkName: "pages/company/about" */))
 const _b98f10a2 = () => interopDefault(import('../pages/company/ir.vue' /* webpackChunkName: "pages/company/ir" */))
+const _50df495f = () => interopDefault(import('../pages/company/ir-detail.vue' /* webpackChunkName: "pages/company/ir-detail" */))
 const _1e9a9af2 = () => interopDefault(import('../pages/company/talent.vue' /* webpackChunkName: "pages/company/talent" */))
 const _4d57fc09 = () => interopDefault(import('../pages/news/detail.vue' /* webpackChunkName: "pages/news/detail" */))
 const _005fdd71 = () => interopDefault(import('../pages/news/main.vue' /* webpackChunkName: "pages/news/main" */))
@@ -27,7 +28,6 @@ const _632d4e86 = () => interopDefault(import('../pages/support/learning-manual-
 const _2467f924 = () => interopDefault(import('../pages/support/learning-video-detail.vue' /* webpackChunkName: "pages/support/learning-video-detail" */))
 const _3f2d804c = () => interopDefault(import('../pages/support/notice.vue' /* webpackChunkName: "pages/support/notice" */))
 const _05c9c622 = () => interopDefault(import('../pages/support/notice-detail.vue' /* webpackChunkName: "pages/support/notice-detail" */))
-const _71a46ff4 = () => interopDefault(import('../pages/support/test.vue' /* webpackChunkName: "pages/support/test" */))
 const _379d9e0a = () => interopDefault(import('../pages/company/subCompany/Brand.vue' /* webpackChunkName: "pages/company/subCompany/Brand" */))
 const _a985eb64 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -50,6 +50,10 @@ export const routerOptions = {
     path: "/company/ir",
     component: _b98f10a2,
     name: "company-ir"
+  }, {
+    path: "/company/ir-detail",
+    component: _50df495f,
+    name: "company-ir-detail"
   }, {
     path: "/company/talent",
     component: _1e9a9af2,
@@ -134,10 +138,6 @@ export const routerOptions = {
     path: "/support/notice-detail",
     component: _05c9c622,
     name: "support-notice-detail"
-  }, {
-    path: "/support/test",
-    component: _71a46ff4,
-    name: "support-test"
   }, {
     path: "/company/subCompany/Brand",
     component: _379d9e0a,
