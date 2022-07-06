@@ -30,7 +30,7 @@
      -->
     <bottom-banner-remote />
 
-    <cta-module />
+    <tailSection />
   </section>
 </template>
 

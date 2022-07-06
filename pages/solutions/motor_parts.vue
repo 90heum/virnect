@@ -12,14 +12,15 @@
     <transition name="app-fade" mode="out-in">
       <motor-component />
     </transition>
-    <tail-section
+    <!-- <tail-section
       :bg="tailText.bg"
       :mention="$t('solutionText.tailText')"
       :blueBtn="tailText.blue"
       :blueRouter="tailText.blueRouter"
       :greyBtn="tailText.grey"
       :greyRouter="tailText.greyRouter"
-    ></tail-section>
+    ></tail-section> -->
+    <CtaModule />
   </section>
 </template>
 
@@ -29,6 +30,7 @@ import snbSection from "../../components/modules/Snb.vue";
 import tailSection from "../../layouts/common/Tail.vue";
 import motorComponent from "../../components/solutions/pages/Motor.vue";
 import SubMenuMotor from "~/components/solutions/partials/subMenuMotor.vue";
+import CtaModule from "~/components/main/ctaModule.vue";
 
 export default {
   components: {
@@ -37,6 +39,7 @@ export default {
     tailSection,
     motorComponent,
     SubMenuMotor,
+    CtaModule,
   },
   data() {
     return {

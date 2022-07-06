@@ -31,7 +31,7 @@
       <div class="productModuleWrap">
         <div class="proModuleTit">
           <h2>VIRNECT Product</h2>
-          <span>
+          <!-- <span>
             <a href="#">
               <p>자세히보기</p>
               <i
@@ -40,7 +40,7 @@
                   alt="자세히보기"
               /></i>
             </a>
-          </span>
+          </span> -->
         </div>
         <div class="proModuleCont">
           <span class="proModuleCont1">

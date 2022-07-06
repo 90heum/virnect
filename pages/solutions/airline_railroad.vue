@@ -11,14 +11,15 @@
     <transition name="app-fade" mode="out-in">
       <air-line-component />
     </transition>
-    <tail-section
+    <!-- <tail-section
       :bg="tailText.bg"
       :mention="$t('solutionText.tailText')"
       :blueBtn="tailText.blue"
       :blueRouter="tailText.blueRouter"
       :greyBtn="tailText.grey"
       :greyRouter="tailText.greyRouter"
-    ></tail-section>
+    ></tail-section> -->
+    <CtaModule />
   </section>
 </template>
 
@@ -28,6 +29,7 @@ import snbSection from "../../components/modules/Snb.vue";
 import tailSection from "../../layouts/common/Tail.vue";
 import airLineComponent from "../../components/solutions/pages/Airline.vue";
 import SubMenuAir from "~/components/solutions/partials/subMenuAirLine.vue";
+import CtaModule from "~/components/main/ctaModule.vue";
 export default {
   components: {
     subVisualSection,
@@ -35,6 +37,7 @@ export default {
     tailSection,
     airLineComponent,
     SubMenuAir,
+    CtaModule,
   },
   data() {
     return {

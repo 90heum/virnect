@@ -11,14 +11,15 @@
     <transition name="app-fade" mode="out-in">
       <epc-component />
     </transition>
-    <tail-section
+    <!-- <tail-section
       :bg="tailText.bg"
       :mention="$t('solutionText.tailText')"
       :blueBtn="tailText.blue"
       :blueRouter="tailText.blueRouter"
       :greyBtn="tailText.grey"
       :greyRouter="tailText.greyRouter"
-    ></tail-section>
+    ></tail-section> -->
+    <CtaModule />
   </section>
 </template>
 
@@ -28,6 +29,7 @@ import snbSection from "../../components/modules/Snb.vue";
 import tailSection from "../../layouts/common/Tail.vue";
 import epcComponent from "../../components/solutions/pages/EPC.vue";
 import SubMenuEpc from "~/components/solutions/partials/subMenuEpc.vue";
+import CtaModule from "~/components/main/ctaModule.vue";
 
 export default {
   components: {
@@ -36,6 +38,7 @@ export default {
     tailSection,
     epcComponent,
     SubMenuEpc,
+    CtaModule,
   },
   data() {
     return {

@@ -18,7 +18,7 @@
       :greyBtn="tailText.grey"
       :greyRouter="tailText.greyRouter"
     ></tail-section> -->
-    <CtaModule class="aa" />
+    <tailSection class="aa" />
   </section>
 </template>
 
