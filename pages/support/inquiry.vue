@@ -23,78 +23,29 @@
                 <span :class="`${chosenMenu ? 'contactTabActive3' : ''}`" tap-content="1">
                     <h2>무엇을 도와드릴까요?</h2>
                     <p>아래 문의 유형을 선택하시고, 내용을 작성해주시면 신속하게 답변 드리겠습니다.</p>
-                    <div class="formWrap">
-                        <!-- //NOTE - 폼삽입 구역 -->
-                        <!-- <form>
-                            <span>
-                                <label required>문의 유형</label>
-                                <p>
-                                    <input type="checkbox" name="part" value="Inquiry"> 제품 문의
-                                    <input type="checkbox" name="part" value="experience"> 체험관 방문
-                                    <input type="checkbox" name="part" value="seminar_application"> 찾아오는 세미나 신청
-                                    <input type="checkbox" name="part" value="experience_application"> 체험 사용 신청
-                                    <input type="checkbox" name="part" value="education_inquiry"> 교육 문의
-                                    <input type="checkbox" name="part" value="recruitment_inquiry"> 채용 문의
-                                    <input type="checkbox" name="part" value="affiliate"> 마케팅/제휴
-                                    <input type="checkbox" name="part" value="etc"> 기타
-                                </p>
-                                
-                            </span>
-                            <span>
-                                <label required>고객 정보</label>
-                                <p>
-                                    <input type="text" name="gender" placeholder="고객명"> 
-                                    <input type="text" name="gender" placeholder="기업/기관"> 
-                                    <input type="text" name="gender" placeholder="부서"> 
-                                    <input type="text" name="gender" placeholder="직책"> 
-                                    <input type="text" name="gender" placeholder="이메일"> 
-                                    <input type="text" name="gender" placeholder="전화번호"> 
-                                </p>
-                            </span>
-                            <span>
-                                <label required>산업군</label>
-                                <p>
-                                    <select name="industry">
-                                        <option label="산업군을 선택해주세요.">
-                                        <option label="산업군을 선택해주세요.">
-                                    </select>
-                                </p>
-                            </span>
-                            <span>
-                                <label required>현재 직면한 문제는 무엇입니까?</label>
-                                <p>
-                                    <select name="Problem">
-                                        <option label="답변을 선택해주세요.">
-                                        <option label="답변을 선택해주세요.">
-                                    </select>
-                                </p>
-                            </span>
-                            <span>
-                                <label required>어떠한 업무를 개선하고 싶으신가요?</label>
-                                <p>
-                                    <select name="Improving">
-                                        <option label="답변을 선택해주세요.">
-                                        <option label="답변을 선택해주세요.">
-                                    </select>
-                                </p>
-                            </span>
-                            <span>
-                                <label required>AR에 대한 사용 경험이 있으신가요?</label>
-                                <p>
-                                    <select name="AR_experience">
-                                        <option label="답변을 선택해주세요.">
-                                        <option label="답변을 선택해주세요.">
-                                    </select>
-                                </p>
-                            </span>
-                        </form> -->
-                    </div>
-                    <div class="inquiryButton">
-                        <button>
-                            <a href="#">
-                                문의하기
-                            </a>
-                        </button>
+                    <span class="formTab">
+                        <ul>
+                            <li :class="`${isTab === 1 ? 'active' : ''}`"
+                                @click="chooseTab(1)">데모신청</li>
+                            <li :class="`${isTab === 2 ? 'active' : ''}`"
+                                @click="chooseTab(2)">구매문의</li>
+                            <li :class="`${isTab === 3 ? 'active' : ''}`"
+                                @click="chooseTab(3)">제품문의</li>
+                            <li :class="`${isTab === 4 ? 'active' : ''}`"
+                                @click="chooseTab(4)">기타</li>
+                        </ul>
+                    </span>
+                      <div class="formWrap">
+                                <!-- //NOTE - 폼삽입 구역 START-->
+                                <!-- 데모신청 -->
+                                <iframe class="iframeForm" v-if="isTab === 1" id="iframe1" src="https://pardot.virnect.com/l/929783/2022-06-16/3nplr" style="padding-bottom: 49px; position: absolute; border: 0; display:block; width:100%; height: 100%"></iframe>
+                                <!-- 구매문의 -->
+                                <iframe class="iframeForm" v-if="isTab === 2" id="iframe2" src="https://pardot.virnect.com/l/929783/2022-06-15/3l686" style="padding-bottom: 49px; position: absolute; border: 0; display:block; width:100%; height: 100%"></iframe>
+                                <!-- 제품문의 -->
+                                <iframe class="iframeForm" v-if="isTab === 3" id="iframe3" src="https://pardot.virnect.com/l/929783/2022-06-14/3kzcp" style="padding-bottom: 49px; position: absolute; border: 0; display:block; width:100%; height: 100%"></iframe>
+                                <!-- 기타 -->
+                                <iframe class="iframeForm" v-if="isTab === 4" id="iframe4" src="https://pardot.virnect.com/l/929783/2022-06-16/3npmk" style="padding-bottom: 49px; position: absolute; border: 0; display:block; width:100%; height: 100%"></iframe>
+                                <!-- //NOTE - 폼삽입 구역 END -->
                     </div>
                 </span>
 
@@ -178,12 +129,16 @@ export default {
     },
     data() {
         return {
-            chosenMenu: true
+            chosenMenu: true,
+            isTab: 1
         }
     },
     methods: {
         chooseMenu (e) {
             this.chosenMenu = e;
+        },
+        chooseTab(e) {
+            this.isTab = e;
         }
     }
 }
@@ -472,6 +427,37 @@ export default {
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+
+
+
+    .formWrap{
+        min-height: 1400px;
+        position: relative;
+        display: block;
+        padding: 49px 0 100%;
+        border-top: solid 2px #999;
+        margin-bottom: 150px;
+    }
+     .formTab{
+        width: 100%;
+        ul{
+            display: flex;
+            li{
+                width: 25%;
+                padding: 30px 10px;
+                font-size: 14px;
+                font-weight: bold;
+                line-height: 1;
+                letter-spacing: normal;
+                text-align: center;
+                color: #9a9da3;
+                &.active,
+                &:hover{
+                    color: #121212;
                 }
             }
         }

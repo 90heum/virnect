@@ -29,33 +29,27 @@
               </span>
             </div>
           </span>
-          <div class="companyBannerCont">
-            <span>
-              <img
-                src="https://velog.velcdn.com/images/kyj0206/post/295148e7-24fd-4611-af87-d2f0f95f576a/image.jpg"
-                alt="Smart future"
-              />
-              <p>Smart future</p>
-              <p>효율적인 업무와 효과적인 학습환경</p>
-            </span>
-            <span>
-              <img
-                src="https://velog.velcdn.com/images/kyj0206/post/ed9983b2-ceeb-4258-b543-0a29f40fda60/image.jpg"
-                alt="Safe future"
-              />
-              <p>Safe future</p>
-              <p>안전한 작업환경과 현장실습</p>
-            </span>
-            <span>
-              <img
-                src="https://velog.velcdn.com/images/kyj0206/post/ca545369-1a3e-4ce7-993c-3a5830ea7bec/image.jpg"
-                alt="Low-carbon future"
-              />
-              <p>Low-carbon future</p>
-              <p>원격 협업 및 가상 경험을 통한 출장 및 장비 비용 절감</p>
-            </span>
+            
+            <div class="banner">
+            <div class="CompanyBottomBanner">
+              <div class="CompanyBottomBannerSlider-container">
+                <div class="CompanyBottomBannerSlide"
+                    v-for="(data, idx) of bottomBannerData"
+                    :key="idx">
+                  <span>
+                    <img class="CompanyBottomBannerSlideImg"
+                      :src="data.src"
+                      :alt="data.alt"
+                    />
+                    <p class="CompanyBottomBannerSlideTitle">{{data.title}}</p>
+                    <p class="CompanyBottomBannerSlideContent">{{data.content}}</p>
+                  </span>
+                </div>
+              </div>
+            </div>    
+            </div>
+
           </div>
-        </div>
       </span>
 
       <!-- 버넥트 뉴스 모듈 -->
@@ -193,312 +187,182 @@
       </span>
 
       <!-- 인증 및 수상 모듈 -->
-      <span class="companyAwards">
-        <div class="awardsWrap">
-          <div>
-            <p>인증 및 수상</p>
-          </div>
-          <div class="awardsSlider">
-            <span class="SliderList">
-              <span>
-                <img
-                  src="https://velog.velcdn.com/images/kyj0206/post/ef5b1c81-cebd-4c4f-bdbd-071be7253b3c/image.jpg"
-                  alt="정보통신산업진흥원장상"
-                />
+              <span class="companyAwards">
+                <div class="awardsWrap">
+                  <div>
+                    <p>인증 및 수상</p>
+                  </div>
+                  <div class="awardsSlider">
+                    
+                     <img src="~/assets/images/pages/right@2x.png" class="prevBtn"
+                           @click="() => {
+                            if (awardIdx.start <= 0) return;
+                            awardIdx.start = (Number(awardIdx.start) - 6);
+                            awardIdx.end = (Number(awardIdx.end) - 6);
+                         }"/>
+                    <span class="SliderList"
+                          v-for="(data, idx) of award.filter((e, idx) => {
+                            if (idx >= awardIdx.start && idx < awardIdx.end) { return e; } 
+                          })"
+                          :key="idx">
+                      <span>
+                        <img
+                          :src="data.src"
+                          :alt="data.alt"
+                          class="CompanyBottomBannerAwardSlideImg"
+                        />
+                      </span>
+                      <span>
+                        <p>{{data.title}}</p>
+                        <p>{{data.host}}</p>
+                        <p>{{data.info}}</p>
+                      </span>
+                    </span>
+                    <img src="~/assets/images/pages/left@2x.png" class="nextBtn"
+                         @click="() => {
+                           if (awardIdx.end >= (award.length-1)) return;
+                           awardIdx.start = (Number(awardIdx.start) + 6);
+                           awardIdx.end = (Number(awardIdx.end) + 6);
+                         }"/>
+                  </div>
+                </div>
               </span>
-              <span>
-                <p>한국가상증강현실산업협회</p>
-                <p>(KoVRA) 주관</p>
-                <p>정보통신산업진흥원장상</p>
-              </span>
-            </span>
-
-            <span class="SliderList">
-              <span>
-                <img
-                  src="https://velog.velcdn.com/images/kyj0206/post/c6cd8ab2-cedc-48ea-9004-89adc4143d70/image.jpg"
-                  alt="IT World Award"
-                />
-              </span>
-              <span>
-                <p>Best IT Company of</p>
-                <p>the Year(XR Solution),</p>
-                <p>IT World Award</p>
-              </span>
-            </span>
-
-            <span class="SliderList">
-              <span>
-                <img
-                  src="https://velog.velcdn.com/images/kyj0206/post/0389734f-1e81-489c-be4a-1a101100c59b/image.jpg"
-                  alt="정보통신산업진흥원장상"
-                />
-              </span>
-              <span>
-                <p>디지털콘텐츠 산업 공로</p>
-                <p>과학기술정보통신부</p>
-                <p>장관 표창</p>
-              </span>
-            </span>
-
-            <span class="SliderList">
-              <span>
-                <img
-                  src="https://velog.velcdn.com/images/kyj0206/post/f4d9fa70-ed6d-4d4a-a516-45400b3bb7cf/image.jpg"
-                  alt="우수기업 특별상"
-                />
-              </span>
-              <span>
-                <p>대한민국</p>
-                <p>ICT이노베이션 대상</p>
-                <p>우수기업 특별상</p>
-              </span>
-            </span>
-
-            <span class="SliderList">
-              <span>
-                <img
-                  src="https://velog.velcdn.com/images/kyj0206/post/c78df319-8498-4625-b8bb-884cbe6ccbff/image.jpg"
-                  alt="10대 우수기업 선정"
-                />
-              </span>
-              <span>
-                <p>스마트시티</p>
-                <p>비즈니스 페어</p>
-                <p>10대 우수기업 선정</p>
-              </span>
-            </span>
-
-            <span class="SliderList">
-              <span>
-                <img
-                  src="https://velog.velcdn.com/images/kyj0206/post/42214ad9-bbfc-46bd-86b9-da77a01e6c74/image.jpg"
-                  alt="AR 부문 수상"
-                />
-              </span>
-              <span>
-                <p>서울 VRAR 어워즈</p>
-                <p>AR 부문 수상</p>
-              </span>
-            </span>
-            <!--     
-                        <span class="SliderList">
-                            <span>
-                                <img src="https://velog.velcdn.com/images/kyj0206/post/061e68fb-52c4-46b9-bc38-51c92252c262/image.jpg" alt="기술혁신대상 수상">
-                            </span>
-                            <span>                              
-                                <p>스마트팩토리어워드AR부문 기술</p>
-                                <p>혁신대상 수상</p>
-                            </span>
-                        </span>
-
-                        <span class="SliderList">
-                            <span>
-                                <img src="https://velog.velcdn.com/images/kyj0206/post/300fc267-c639-454e-849c-ba54950ad9cf/image.jpg" alt="K-Global 300 기업 선정">
-                            </span>
-                            <span>
-                                <p>정보통신산업진흥원</p>
-                                <p>K-Global 300 기업 선정</p>
-                            </span>
-                        </span>
-    
-                        <span class="SliderList">
-                            <span>
-                                <img src="https://velog.velcdn.com/images/kyj0206/post/7b99022e-cc94-41de-a6fd-465f6735d75f/image.jpg" alt="WIS 2019 혁신상">
-                            </span>
-                            <span>
-                                <p>WIS 2019 혁신상</p>
-                                <p>(VIRNECT Make</p>
-                                <p>& View)</p>
-                            </span>
-                        </span>
-    
-                        <span class="SliderList">
-                            <span>
-                                <img src="https://velog.velcdn.com/images/kyj0206/post/38f152c6-02d7-44cf-8183-fc7a2133eff6/image.jpg" alt="Best Content 부문 혁신상">
-                            </span>
-                            <span>
-                                <p>2019 한국전자전</p>
-                                <p>Best Content 부문 혁신상</p>
-                                <p>(VIRNECT Remote)</p>
-                            </span>
-                        </span>
-    
-                        <span class="SliderList">
-                            <span>
-                                <img src="https://velog.velcdn.com/images/kyj0206/post/b55f569a-35f1-4644-b026-78605d5254a8/image.jpg" alt="장관상(VIRNECT Remote)">
-                            </span>
-                            <span>
-                                <p>SW시장성지원사업</p>
-                                <p>과학기술정보통신부</p>
-                                <p>장관상(VIRNECT Remote)</p>
-                            </span>
-                        </span>
-    
-                        <span class="SliderList">
-                            <span>
-                                <img src="https://velog.velcdn.com/images/kyj0206/post/3195e665-8aa9-4eb2-9d88-0f580670e16e/image.jpg" alt="공모전 최우수상">
-                            </span>
-                            <span>
-                                <p>2017 KT 5G 서비스</p>
-                                <p>공모전 최우수상</p>
-                                <p>(VIRNECT Remote)</p>
-                            </span>
-                        </span>
-    
-                        <span class="SliderList">
-                            <span>
-                                <img src="https://velog.velcdn.com/images/kyj0206/post/2b771693-b2d2-4f03-b763-c7c2359ac547/image.jpg" alt="특별상 수상">
-                            </span>
-                            <span>
-                                <p>스위스 제네바</p>
-                                <p>국제발명전시회</p>
-                                <p>특별상 수상</p>
-                            </span>
-                        </span>
-    
-                        <span class="SliderList">
-                            <span>
-                                <img src="https://velog.velcdn.com/images/kyj0206/post/2b771693-b2d2-4f03-b763-c7c2359ac547/image.jpg" alt="금상 수상">
-                            </span>
-                            <span>
-                                <p>스위스 제네바</p>
-                                <p>국제발명전시회</p>
-                                <p>금상 수상</p>
-                            </span>
-                        </span>
-    
-                        <span class="SliderList">
-                            <span>
-                                <img src="https://velog.velcdn.com/images/kyj0206/post/f55374a6-a957-450f-a36a-4925963c5c82/image.webp" alt="멤버십 가입 협력사">
-                            </span>
-                            <span>
-                                <p>스마트제조혁신센터</p>
-                                <p>멤버십 가입 협력사</p>
-                            </span>
-                        </span>
-    
-                        <span class="SliderList">
-                            <span>
-                                <img src="https://velog.velcdn.com/images/kyj0206/post/b9c97bee-7d05-4149-a77a-0ca73b949402/image.jpg" alt="감사패">
-                            </span>
-                            <span>
-                                <p>육군 M&S.국제학술대회</p>
-                                <p>& 국방ICT 성과전시회</p>
-                                <p>감사패</p>
-                            </span>
-                        </span>
-    
-                        <span class="SliderList">
-                            <span>
-                                <img src="https://velog.velcdn.com/images/kyj0206/post/25d08350-7ca6-43c5-afb1-3b41c9373eb7/image.jpg" alt="산업 발전 공로패">
-                            </span>
-                            <span>
-                                <p>3D융합산업협회</p>
-                                <p>산업 발전 공로패</p>
-                            </span>
-                        </span>
-    
-                        <span class="SliderList">
-                            <span>
-                                <img src="https://velog.velcdn.com/images/kyj0206/post/3e0d3f7b-a625-4046-8de7-bafbafdb2387/image.jpg" alt="우수논문상">
-                            </span>
-                            <span>
-                                <p>한국BIM학회</p>
-                                <p>우수논문상</p>
-                            </span>
-                        </span>
-    
-                        <span class="SliderList">
-                            <span>
-                                <img src="https://velog.velcdn.com/images/kyj0206/post/e9e3555b-2bf2-4731-9c3c-4846f333751d/image.jpg" alt="정보통신분야 우수성과 창출 기업">
-                            </span>
-                            <span>
-                                <p>한국방송통신전파진흥원</p>
-                                <p>정보통신분야 우수성과 창출 기업</p>
-                            </span>
-                        </span>
-    
-                        <span class="SliderList">
-                            <span>
-                                <img src="https://velog.velcdn.com/images/kyj0206/post/84712519-9c36-4c9c-a4ea-02698b920c2f/image.jpg" alt="스타트업 네스트 선정">
-                            </span>
-                            <span>
-                                <p>신용보증기금</p>
-                                <p>스타트업 네스트 선정</p>
-                            </span>
-                        </span>
-    
-                        <span class="SliderList">
-                            <span>
-                                <img src="https://velog.velcdn.com/images/kyj0206/post/f4da5661-0efe-4501-ae85-ca298155e23a/image.jpg" alt="SS등급 선정">
-                            </span>
-                            <span>
-                                <p>고용노동부</p>
-                                <p>근무혁신우수기업</p>
-                                <p>SS등급 선정</p>
-                            </span>
-                        </span>
-    
-                        <span class="SliderList">
-                            <span>
-                                <img src="https://velog.velcdn.com/images/kyj0206/post/f4da5661-0efe-4501-ae85-ca298155e23a/image.jpg" alt="3년 연속 선정">
-                            </span>
-                            <span>
-                                <p>고용노동부</p>
-                                <p>청년친화강소기업</p>
-                                <p>3년 연속 선정</p>
-                            </span>
-                        </span>
-    
-                        <span class="SliderList">
-                            <span>
-                                <img src="https://velog.velcdn.com/images/kyj0206/post/b63814ac-6a5e-4769-a545-a9c644eac137/image.jpg" alt="가족친화기업 선정">
-                            </span>
-                            <span>
-                                <p>여성가족부</p>
-                                <p>가족친화기업 선정</p>
-                            </span>
-                        </span>
-    
-                        <span class="SliderList">
-                            <span>
-                                <img src="https://velog.velcdn.com/images/kyj0206/post/954ac0cb-487f-4fb6-95ee-5660887e6412/image.jpg" alt="워라밸 실천기업 선정">
-                            </span>
-                            <span>
-                                <p>고용노동부</p>
-                                <p>워라밸 실천기업 선정</p>
-                            </span>
-                        </span>
-    
-                        <span class="SliderList">
-                            <span>
-                                <img src="https://velog.velcdn.com/images/kyj0206/post/35ef732c-139d-443a-998c-7dcccb6a7b5c/image.jpg" alt="직무발명우수기업 선정">
-                            </span>
-                            <span>
-                                <p>특허청</p>
-                                <p>직무발명우수기업 선정</p>
-                            </span>
-                        </span>
-    
-                        <span class="SliderList">
-                            <span>
-                                <img src="https://velog.velcdn.com/images/kyj0206/post/cb0afb03-76d0-47b7-b095-47a8db365f4d/image.jpg" alt="일자리 특별상">
-                            </span>
-                            <span>
-                                <p>도전! K-스타트업</p>
-                                <p>일자리 특별상</p>
-                            </span>
-                        </span> -->
-          </div>
-        </div>
-      </span>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import { awardData } from "~/components/dummy/award.js";
+export default {
+  methods: {
+  },
+  data() {
+    return {
+      awardIdx: {
+        start: 0,
+        end: 6
+      },
+      award: awardData,
+      bottomBannerData: [
+        {
+          src:"https://velog.velcdn.com/images/kyj0206/post/295148e7-24fd-4611-af87-d2f0f95f576a/image.jpg",
+          alt:"Smart future",
+          title: "Smart future",
+          content: "효율적인 업무와 효과적인 학습환경"
+        },
+        {
+          src:"https://velog.velcdn.com/images/kyj0206/post/295148e7-24fd-4611-af87-d2f0f95f576a/image.jpg",
+          alt:"Smart future",
+          title: "Smart future",
+          content: "효율적인 업무와 효과적인 학습환경"
+        },
+        {
+          src:"https://velog.velcdn.com/images/kyj0206/post/ed9983b2-ceeb-4258-b543-0a29f40fda60/image.jpg",
+          alt:"Safe future",
+          title: "Safe future",
+          content: "안전한 작업환경과 현장실습"
+        },
+        {
+          src:"https://velog.velcdn.com/images/kyj0206/post/ca545369-1a3e-4ce7-993c-3a5830ea7bec/image.jpg",
+          alt:"Low-carbon future",
+          title: "Low-carbon future",
+          content: "원격 협업 및 가상 경험을 통한 출장 및 장비 비용 절감"
+        }
+      ]
+    }
+  },
+  created() {
+        if (process.client) {
+
+            const slider = document.querySelector('.CompanyBottomBannerSlider-container'),
+            slides = Array.from(document.querySelectorAll('.CompanyBottomBannerSlide'))
+
+            let isDragging = false,
+            startPos = 0,
+            currentTranslate = 0,
+            prevTranslate = 0,
+            animationID,
+            currentIndex = 0
+
+            slides.forEach((slide, index) => {
+            const slideImage = slide.querySelector('.CompanyBottomBannerSlideImg')
+            // disable default image drag
+            slideImage.addEventListener('dragstart', (e) => e.preventDefault())
+            // touch events
+            slide.addEventListener('touchstart', touchStart(index))
+            slide.addEventListener('touchend', touchEnd)
+            slide.addEventListener('touchmove', touchMove)
+            // mouse events
+            slide.addEventListener('mousedown', touchStart(index))
+            slide.addEventListener('mouseup', touchEnd)
+            slide.addEventListener('mousemove', touchMove)
+            slide.addEventListener('mouseleave', touchEnd)
+            })
+
+            // make responsive to viewport changes
+            window.addEventListener('resize', setPositionByIndex)
+
+            // prevent menu popup on long press
+            window.oncontextmenu = function (event) {
+            event.preventDefault()
+            event.stopPropagation()
+            return false
+            }
+
+            function getPositionX(event) {
+            return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX
+            }
+
+            function touchStart(index) {
+            return function (event) {
+                currentIndex = index
+                startPos = getPositionX(event)
+                isDragging = true
+                animationID = requestAnimationFrame(animation)
+                slider.classList.add('CompanyGrabbing')
+            }
+            }
+
+            function touchMove(event) {
+            if (isDragging) {
+                const currentPosition = getPositionX(event)
+                currentTranslate = prevTranslate + currentPosition - startPos
+            }
+            }
+
+            function touchEnd() {
+            cancelAnimationFrame(animationID)
+            isDragging = false
+            const movedBy = currentTranslate - prevTranslate
+
+            // if moved enough negative then snap to next slide if there is one
+            if (movedBy < -100 && currentIndex < slides.length - 1) currentIndex += 1
+
+            // if moved enough positive then snap to previous slide if there is one
+            if (movedBy > 100 && currentIndex > 0) currentIndex -= 1
+
+            setPositionByIndex()
+
+            slider.classList.remove('CompanyGrabbing')
+            }
+
+            function animation() {
+            setSliderPosition()
+            if (isDragging) requestAnimationFrame(animation)
+            }
+
+            function setPositionByIndex() {
+            currentTranslate = currentIndex * -window.innerWidth
+            prevTranslate = currentTranslate
+            setSliderPosition()
+            }
+
+            function setSliderPosition() {
+            slider.style.transform = `translateX(${currentTranslate}px)`
+            }
+        }
+   }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -590,7 +454,7 @@ export default {};
           }
         }
         .companyBannerCont {
-          display: flex;
+          display: block;
           gap: 140px;
           height: 100%;
           span {
@@ -861,6 +725,7 @@ export default {};
         padding: 69px 30px 100px;
         div > .SliderList {
           font-size: 10px;
+          span:nth-child(2) { height: 36px; }
         }
         div {
           &:first-child {
@@ -876,7 +741,7 @@ export default {};
             flex-wrap: wrap;
             gap: 40px;
             .SliderList {
-              width: calc(100% / 6 - 40px);
+              width: calc(100% / 7 - 40px);
               span {
                 position: relative;
                 max-width: 160px;
@@ -900,14 +765,6 @@ export default {};
                   display: block;
                   text-align: center;
                   margin-top: 24px;
-                  p {
-                    &:first-child {
-                    }
-                    &:nth-child(2) {
-                    }
-                    &:last-child {
-                    }
-                  }
                 }
               }
             }
@@ -1132,7 +989,8 @@ export default {};
     max-width: none;
   }
 }
-
+.prevBtn, .nextBtn { width: 42px; height: 24px; cursor: pointer; }
+.awardsSlider { display: flex; align-items: center; }
 @media screen and(max-width: 735px) {
   .company .companyWrap .companyBanner .companyBannerInner {
     gap: 99px;
@@ -1251,4 +1109,121 @@ export default {};
     min-width: 377px;
   }
 }
+.CompanyBottomBanner {
+    width: 100%;
+    overflow: hidden;
+    top: 0px;
+    /* background-color: #000; */
+
+    .bannerWrap {
+        position: relative;
+
+        // 실제사용 모듈용 css 구역!!!!!!!!!!!!!!
+        .bannerMoule {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 35%);
+            padding: 0 30px;
+
+            .banner1024 {
+                display: block;
+                max-width: 1200px;
+                width: 100%;
+                margin: 0 auto;
+                a {
+                    display: block;
+
+                    img {
+                      width: 100%;
+                    }
+                }
+            }
+
+            .banner768 {
+                display: none;
+
+                a {
+                    display: block;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        // 실제사용 모듈용 css 구역 여기까지!!!!!!!!!!!
+
+
+
+    }
+}
+:root {
+  --shadow: rgba(0, 0, 0, 0.8)
+}
+.CompanyBottomBannerSlide { 
+    margin-right: 15px;
+    max-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 1rem;
+    img {
+      width: 100%;
+      max-width: 660px;
+    }
+}
+.CompanyBottomBanner .CompanyBottomBannerSlider-container {
+  display: inline-flex;
+  overflow: hidden;
+  scrollbar-width: none;
+  transform: translateX(0);
+  will-change: transform;
+  transition: transform 0.3s ease-out;
+  cursor: grab;
+}
+
+
+@media(min-width: 1200px){
+  .CompanyBottomBanner .slide {
+    padding: 3rem;
+  }
+}
+
+.CompanyBottomBanner .slide img{
+  max-width: 100%;
+  width: 80%;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 5px 5px 50px -1px var(--shadow);
+  border-radius: 4px;
+  user-select: none;
+}
+
+.CompanyBottomBanner .CompanyGrabbing {
+  cursor: grabbing;
+}
+
+.CompanyBottomBanner .CompanyGrabbing .slide img{
+  transform: scale(0.9);
+  box-shadow: 5px 5px 40px -1px var(--shadow);
+}
+
+@media screen and(max-width:768px) {
+    .CompanyBottomBanner .banner .bannerWrap .bannerMoule .banner1024{
+        display: none;
+    }
+
+    .CompanyBottomBanner .banner .bannerWrap .bannerMoule .banner768{
+        display: block;
+    }
+
+    .CompanyBottomBanner .banner .bannerWrap .bannerMoule{
+        padding: 0 24px;
+        transform: translate(-50%, 60%);
+    }
+}
+
 </style>

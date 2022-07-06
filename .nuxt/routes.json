@@ -14,11 +14,32 @@
     "_name": "_732d62a7"
   },
   {
+    "name": "company-ir-detail",
+    "path": "/company/ir-detail",
+    "component": "/Users/hellodigital/virnect/pages/company/ir-detail.vue",
+    "chunkName": "pages/company/ir-detail",
+    "_name": "_50df495f"
+  },
+  {
     "name": "company-talent",
     "path": "/company/talent",
     "component": "/Users/majeongheum/virnect/pages/company/talent.vue",
     "chunkName": "pages/company/talent",
     "_name": "_789d6c2c"
+  },
+  {
+    "name": "news-detail",
+    "path": "/news/detail",
+    "component": "/Users/hellodigital/virnect/pages/news/detail.vue",
+    "chunkName": "pages/news/detail",
+    "_name": "_4d57fc09"
+  },
+  {
+    "name": "news-main",
+    "path": "/news/main",
+    "component": "/Users/hellodigital/virnect/pages/news/main.vue",
+    "chunkName": "pages/news/main",
+    "_name": "_005fdd71"
   },
   {
     "name": "products-make",

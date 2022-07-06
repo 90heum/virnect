@@ -26,7 +26,6 @@
               <nuxt-link
                 to="/solutions/energy_resource"
                 class="navTab container1"
-                v-bind:style="gnbTextStyle1"
               >
                 Value
                 <i>
@@ -52,6 +51,8 @@
             >
               <nuxt-link 
                 to="/products/remote"
+                class="navTab container2"
+              >
                 class="navTab container2" 
                 v-bind:style="gnbTextStyle2">
                 Products
@@ -71,6 +72,8 @@
             </li>
             <li
               @mouseover="[(gnb3 = true), changeGnbColor3()]"
+              @mouseleave="[(gnb3 = false), (e) => originalGnbColor3(e)]"
+              @click="changeBorder()"
               @mouseleave="[(gnb3 = false), originalGnbColor3()]"
               @click="[(gnb3 = false)]"
               v-bind:style="gnbStyle3"
@@ -78,7 +81,6 @@
               <nuxt-link
                 to="/support/notice"
                 class="navTab container3"
-                v-bind:style="gnbTextStyle3"
               >
                 Support
                 <i>
@@ -104,7 +106,6 @@
               <a
                 href="#"
                 class="navTab container4"
-                v-bind:style="gnbTextStyle4"
               >
                 News
                 <i>
@@ -130,7 +131,6 @@
               <nuxt-link
                 to="/company/about"
                 class="navTab container5"
-                v-bind:style="gnbTextStyle5"
               >
                 Company
                 <i>
@@ -828,7 +828,8 @@ export default {
       this.gnbStyle3.backgroundColor = "#fff";
       this.gnbTextStyle3.color = "#0a51b7";
     },
-    originalGnbColor3: function () {
+    originalGnbColor3: function (e) {
+      console.log(e)
       this.gnbStyle3.backgroundColor = "#121212";
       this.gnbTextStyle3.color = "#fff";
     },
