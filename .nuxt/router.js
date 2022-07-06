@@ -7,6 +7,8 @@ import scrollBehavior from './router.scrollBehavior.js'
 const _74945477 = () => interopDefault(import('../pages/company/about.vue' /* webpackChunkName: "pages/company/about" */))
 const _b98f10a2 = () => interopDefault(import('../pages/company/ir.vue' /* webpackChunkName: "pages/company/ir" */))
 const _1e9a9af2 = () => interopDefault(import('../pages/company/talent.vue' /* webpackChunkName: "pages/company/talent" */))
+const _4d57fc09 = () => interopDefault(import('../pages/news/detail.vue' /* webpackChunkName: "pages/news/detail" */))
+const _005fdd71 = () => interopDefault(import('../pages/news/main.vue' /* webpackChunkName: "pages/news/main" */))
 const _22b4b5b5 = () => interopDefault(import('../pages/products/make.vue' /* webpackChunkName: "pages/products/make" */))
 const _4e70612d = () => interopDefault(import('../pages/products/ms.vue' /* webpackChunkName: "pages/products/ms" */))
 const _93f92766 = () => interopDefault(import('../pages/products/remote.vue' /* webpackChunkName: "pages/products/remote" */))
@@ -52,6 +54,14 @@ export const routerOptions = {
     path: "/company/talent",
     component: _1e9a9af2,
     name: "company-talent"
+  }, {
+    path: "/news/detail",
+    component: _4d57fc09,
+    name: "news-detail"
+  }, {
+    path: "/news/main",
+    component: _005fdd71,
+    name: "news-main"
   }, {
     path: "/products/make",
     component: _22b4b5b5,

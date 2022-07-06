@@ -21,6 +21,20 @@
     "_name": "_1e9a9af2"
   },
   {
+    "name": "news-detail",
+    "path": "/news/detail",
+    "component": "/Users/hellodigital/virnect/pages/news/detail.vue",
+    "chunkName": "pages/news/detail",
+    "_name": "_4d57fc09"
+  },
+  {
+    "name": "news-main",
+    "path": "/news/main",
+    "component": "/Users/hellodigital/virnect/pages/news/main.vue",
+    "chunkName": "pages/news/main",
+    "_name": "_005fdd71"
+  },
+  {
     "name": "products-make",
     "path": "/products/make",
     "component": "/Users/hellodigital/virnect/pages/products/make.vue",
