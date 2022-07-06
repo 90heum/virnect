@@ -56,9 +56,6 @@
   "PolicySubMenuTerms": {
     "description": "Auto imported from components/policy/subMenuTerms.vue"
   },
-  "Paging": {
-    "description": "Auto imported from components/paging/paging.vue"
-  },
   "ModulesBanner": {
     "description": "Auto imported from components/modules/Banner.vue"
   },
@@ -112,6 +109,9 @@
   },
   "ModulesYoutubeFullscreen": {
     "description": "Auto imported from components/modules/YoutubeFullscreen.vue"
+  },
+  "Paging": {
+    "description": "Auto imported from components/paging/paging.vue"
   },
   "SupportSubMenu": {
     "description": "Auto imported from components/support/SubMenu.vue"
