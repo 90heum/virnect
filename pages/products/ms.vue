@@ -64,4 +64,7 @@ export default {
 .aa {
   margin-top: 100px;
 }
+.bb {
+  margin: 0 auto;
+}
 </style>

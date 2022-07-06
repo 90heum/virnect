@@ -28,9 +28,9 @@
       :greyRouter="tailText.greyRouter"
     ></tail-section>
      -->
-    <bottom-banner-remote />
+    <!-- <bottom-banner-remote /> -->
 
-    <tailSection />
+    <tailSection class="bb" />
   </section>
 </template>
 
@@ -86,5 +86,8 @@ export default {
 @import "~assets/css/pages/products.scss";
 .aa {
   margin: 0 auto;
+}
+.bb {
+  margin-top: 100px;
 }
 </style>
