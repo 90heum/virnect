@@ -19,12 +19,13 @@
           <ul>
             <li
               @mouseover="[(gnb1 = true), changeGnbColor()]"
-              @mouseleave="[(gnb1 = false), originalGnbColor()]"
+              @mouseleave="[gnb1 = false, originalGnbColor()]"
               @click="[(gnb1=false)]"
             >
               <nuxt-link
                 to="/solutions/energy_resource"
-                class="navTab container1"
+                :class="`navTab container1 ${gnb1 ? 'gnbActive' : ''}`"
+                v-bind:style="gnbStyleBorder.gnbStyle1 ? commonGnbStyle : {}"
               >
                 Value
                 <i>
@@ -32,12 +33,13 @@
                     class="downIcon1"
                     src="https://velog.velcdn.com/images/kyj0206/post/5933ac65-99ad-42c7-a624-4158514e9df8/image.png"
                     alt="다운아이콘"
+                    v-show="!gnb1"
                   />
-                  <img
+                  <img 
                     class="upIcon1"
                     src="https://velog.velcdn.com/images/kyj0206/post/098c0636-bb17-46f5-91c2-f255ae31982a/image.png"
                     alt="업아이콘"
-                    v-show="upIcon"
+                    v-show="gnb1"
                   />
                 </i>
               </nuxt-link>
@@ -49,7 +51,8 @@
             >
               <nuxt-link 
                 to="/products/remote"
-                class="navTab container2"
+                :class="`navTab container2 ${gnb2 ? 'gnbActive' : ''}`"
+                v-bind:style="gnbStyleBorder.gnbStyle2 ? commonGnbStyle : {}"
               >
                 Products
                 <i>
@@ -57,11 +60,13 @@
                     class="downIcon2"
                     src="https://velog.velcdn.com/images/kyj0206/post/5933ac65-99ad-42c7-a624-4158514e9df8/image.png"
                     alt="다운아이콘"
+                    v-show="!gnb2"
                   />
                   <img
                     class="upIcon2"
                     src="https://velog.velcdn.com/images/kyj0206/post/098c0636-bb17-46f5-91c2-f255ae31982a/image.png"
                     alt="업아이콘"
+                    v-if="gnb2"
                   />
                 </i>
               </nuxt-link>
@@ -73,7 +78,8 @@
             >
               <nuxt-link
                 to="/support/notice"
-                class="navTab container3"
+                :class="`navTab container3 ${gnb3 ? 'gnbActive' : ''}`"
+                v-bind:style="gnbStyleBorder.gnbStyle3 ? commonGnbStyle : {}"
               >
                 Support
                 <i>
@@ -81,11 +87,13 @@
                     class="downIcon3"
                     src="https://velog.velcdn.com/images/kyj0206/post/5933ac65-99ad-42c7-a624-4158514e9df8/image.png"
                     alt="다운아이콘"
+                    v-if="!gnb3"
                   />
                   <img
                     class="upIcon3"
                     src="https://velog.velcdn.com/images/kyj0206/post/098c0636-bb17-46f5-91c2-f255ae31982a/image.png"
                     alt="업아이콘"
+                    v-if="gnb3"
                   />
                 </i>
               </nuxt-link>
@@ -95,9 +103,10 @@
               @mouseleave="[(gnb4 = false), originalGnbColor4()]"
               @click="[(gnb4 = false)]"
             >
-              <a
-                href="#"
-                class="navTab container4"
+              <nuxt-link
+                to="/news/main"
+                :class="`navTab container4 ${gnb4 ? 'gnbActive' : ''}`"
+                v-bind:style="gnbStyleBorder.gnbStyle4 ? commonGnbStyle : {}"
               >
                 News
                 <i>
@@ -105,14 +114,16 @@
                     class="downIcon4"
                     src="https://velog.velcdn.com/images/kyj0206/post/5933ac65-99ad-42c7-a624-4158514e9df8/image.png"
                     alt="다운아이콘"
+                    v-if="!gnb4"
                   />
                   <img
                     class="upIcon4"
                     src="https://velog.velcdn.com/images/kyj0206/post/098c0636-bb17-46f5-91c2-f255ae31982a/image.png"
                     alt="업아이콘"
+                    v-if="gnb4"
                   />
                 </i>
-              </a>
+              </nuxt-link>
             </li>
             <li
               @mouseover="[(gnb5 = true), changeGnbColor5()]"
@@ -121,7 +132,8 @@
             >
               <nuxt-link
                 to="/company/about"
-                class="navTab container5"
+                :class="`navTab container5 ${gnb5 ? 'gnbActive' : ''}`"
+                v-bind:style="gnbStyleBorder.gnbStyle5 ? commonGnbStyle : {}"
               >
                 Company
                 <i>
@@ -129,11 +141,13 @@
                     class="downIcon5"
                     src="https://velog.velcdn.com/images/kyj0206/post/5933ac65-99ad-42c7-a624-4158514e9df8/image.png"
                     alt="다운아이콘"
+                    v-if="!gnb5"
                   />
                   <img
                     class="upIcon5"
                     src="https://velog.velcdn.com/images/kyj0206/post/098c0636-bb17-46f5-91c2-f255ae31982a/image.png"
                     alt="업아이콘"
+                    v-if="gnb5"
                   />
                 </i>
               </nuxt-link>
@@ -672,6 +686,12 @@ export default {
     ghostService: false,
     gnbTextStyle1: {},
     gnb6: {},
+    gnbStyleBorder: {},
+    commonGnbStyle: {
+      color: "#fff",
+      backgroundColor: "#121212",
+      borderBottom: "1px solid #fff"
+    },
     gnbStyle1: {},
     gnbStyle2: {},
     gnbStyle3: {},
@@ -714,26 +734,20 @@ export default {
     const company = 'company';
     const fullPath = this.$route.fullPath;
 
+  if (process.client) {
     if(fullPath.includes(solutions)){
-      this.changeBorder()
+      console.log("햐햐")
+      this.changeBorder(1)
+    } else if(fullPath.includes(products)){
+      this.changeBorder(2)
+    } else if(fullPath.includes(support)){
+      this.changeBorder(3)
+    } else if(fullPath.includes(news)){
+      this.changeBorder(4)
+    } else if(fullPath.includes(company)){
+      this.changeBorder(5)
     }
-    if(fullPath.includes(products)){
-      this.changeBorder2()
-    }
-    if(fullPath.includes(support)){
-      this.changeBorder3()
-    }
-    if(fullPath.includes(news)){
-      this.changeBorder4()
-    }
-    if(fullPath.includes(company)){
-      this.changeBorder5()
-    }
-    
-    
-
-
-
+  }
     if (process.client) {
       window.addEventListener("resize", this.handleReactiveView);
     }
@@ -769,30 +783,9 @@ export default {
     langHide(){
       this.langOpen = false
     },
-    changeBorder() {
-      this.gnbStyle1.borderBottomColor = "#fff";
-      this.gnbStyle1.backgroundColor = "#121212";
-      this.gnbTextStyle1.color = "#fff";
-    },
-    changeBorder2() {
-      this.gnbStyle2.borderBottomColor = "#fff";
-      this.gnbStyle2.backgroundColor = "#121212";
-      this.gnbTextStyle2.color = "#fff";
-    },
-    changeBorder3() {
-      this.gnbStyle3.borderBottomColor = "#fff";
-      this.gnbStyle3.backgroundColor = "#121212";
-      this.gnbTextStyle3.color = "#fff";
-    },
-    changeBorder4() {
-      this.gnbStyle4.borderBottomColor = "#fff";
-      this.gnbStyle4.backgroundColor = "#121212";
-      this.gnbTextStyle1.color = "#fff";
-    },
-    changeBorder5() {
-      this.gnbStyle5.borderBottomColor = "#fff";
-      this.gnbStyle5.backgroundColor = "#121212";
-      this.gnbTextStyle1.color = "#fff";
+    changeBorder(e) {
+      this.gnbStyleBorder = {[`gnbStyle${e}`]: true}
+      console.log(this.gnbStyleBorder[`gnbStyle${e}`], "e 확인 : ",e, this.commonGnbStyle)
     },
     originalBorder() {
       this.gnbStyle1.borderBottomColor = "#121212";
@@ -820,7 +813,6 @@ export default {
       this.gnbTextStyle3.color = "#0a51b7";
     },
     originalGnbColor3: function (e) {
-      console.log(e)
       this.gnbStyle3.backgroundColor = "#121212";
       this.gnbTextStyle3.color = "#fff";
     },
@@ -872,6 +864,10 @@ header {
   top: 0;
   width: 100%;
   z-index: 10000;
+  a.gnbActive {
+    color: #0a51b7!important;
+    background-color: #fff!important;
+}
 }
 * {
   padding: 0;
