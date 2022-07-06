@@ -16,6 +16,7 @@
       "
     ></sub-visual-section>
     <SubMenu />
+    <AboutSub/>
     <transition name="app-fade" mode="out-in">
       <indroduce-component />
     </transition>
@@ -47,6 +48,7 @@ import tailSection from "~/layouts/common/Tail";
 import SubMenu from "../../components/company/partials/subMenu.vue";
 import indroduceComponent from "../../components/company/pages/introduce.vue";
 import companyValue from "../../components/company/pages/companyValue.vue";
+import AboutSub from "./aboutSub.vue";
 
 export default {
   components: {
@@ -55,8 +57,9 @@ export default {
     tailSection,
     indroduceComponent,
     SubMenu,
-    companyValue
-  },
+    companyValue,
+    AboutSub
+},
   data() {
     return {
       visualText: {

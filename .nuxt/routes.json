@@ -7,6 +7,13 @@
     "_name": "_ca203302"
   },
   {
+    "name": "company-aboutSub",
+    "path": "/company/aboutSub",
+    "component": "/Users/majeongheum/virnect/pages/company/aboutSub.vue",
+    "chunkName": "pages/company/aboutSub",
+    "_name": "_5432511e"
+  },
+  {
     "name": "company-ir",
     "path": "/company/ir",
     "component": "/Users/majeongheum/virnect/pages/company/ir.vue",

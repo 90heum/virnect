@@ -1,7 +1,7 @@
 <template>
 <div>
   <sub-visual-section />
-
+  <subMenuIr />
    <div class="companyWrap">
         <span class="companyList">
             <ul>
@@ -30,6 +30,7 @@
 <script>
 import subVisualSection from "../../layouts/common/SubVisual.vue";
 import CommonPaging from "~/components/paging/paging.vue";
+import subMenuIr from "../../components/company/partials/subMenuIr.vue";
 
 export default {
   data() {
@@ -58,7 +59,8 @@ export default {
   },
   components: {
     subVisualSection,
-    CommonPaging
+    CommonPaging,
+    subMenuIr
   },
   async asyncData({$axios}) {
     try {
@@ -253,14 +255,12 @@ export default {
         }
     }
 }
-
 @media screen and (max-width: 1024px) {
     .companyWrap{
         flex-direction: column;
         padding: 100px 24px;
     }
 }
-
 @media screen and (max-width: 650px) {
     .companyWrap .companyList > ul:first-child li:nth-child(2),
     .companyWrap .companyList > ul li:nth-child(2){
@@ -273,7 +273,6 @@ export default {
         display: none;
     }
 }
-
 @media screen and (max-width: 425px) {
     .companyWrap .companyList > ul li:first-child{
         padding-left: 24px;
