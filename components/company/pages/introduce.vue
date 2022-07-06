@@ -81,6 +81,7 @@
           </span>
         </div>
       </section>
+      <company-awards />
       <section class="aboutHistory">
         <div class="aboutHistoryInner">
           <span class="aboutHistoryTit">
@@ -388,12 +389,15 @@
 import subVisualSection from "~/layouts/common/SubVisual.vue";
 import snbSection from "~/components/modules/Snb";
 import headingModule from "../../modules/Heading";
+import companyAwards from "~/components/main/companyAwards.vue";
+
 export default {
   components: {
     subVisualSection,
     snbSection,
     headingModule,
-  },
+    companyAwards
+},
 };
 </script>
 <style lang="scss" scoped>

@@ -17,16 +17,16 @@
 			"free": "문의하기"
 		},
 		"viewSubTitle": {
-			"title": "XR 정보 및 데이터 시각화 솔루션",
-			"contents": "VIRNECT View를 통해 작업 매뉴얼, 안전 가이드 등의 업무 정보와 IoT 센서 및 SCADA 등 데이터 정보를 현장에서 바로 확인할 수 있습니다."
+			"title": "확장현실(XR) 콘텐츠 시각화 솔루션",
+			"contents": "VIRNECT View는 확장현실(XR) 정보 및 데이터 시각화 솔루션입니다. 상용회된 기 기로 작업 매뉴얼, 안전 가이드 등의 업무 정보와 운영 데이터를 현장에서 바로 확인할 수 있으며, 신속한 의사 결정과 빠른 대응이 가 능합니다."
 		},
 		"viewSubButton": {
 			"know": "자세히 보기",
 			"free": "문의하기"
 		},
 		"makeSubTitle": {
-			"title": "XR 콘텐츠 제작 All-In-One솔루션",
-			"contents": "VIRNECT Make는 쉽고 빠르게 현장의 설비 운영/작업 절차 등 운영에 필요한 모든 정보와 지식을 XR 콘텐츠로 제작 가능한 도구입니다."
+			"title": "확장현실(XR) 콘텐츠 제작 솔루션",
+			"contents": "VIRNECT Make는 XR 콘텐츠로 제작 도구로, 비전문가도 마우스 클릭으로 XR 콘 텐츠 제작이 가능합니다. 또한 문자, 사진, 비디오, 3D 모델은 물론 기존 작업 문서, 설비 도면 등을 그대로 제 작에 빠르게 활용할 수 있습니다."
 		},
 		"makeSubButton": {
 			"know": "자세히 보기",
@@ -205,8 +205,8 @@
 		"viewText": {
 			"introText": {
 				"category": "제품개요",
-				"title": "XR 정보 및 데이터 시각화 솔루션",
-				"contents": "VIRNECT View를 통해 작업 매뉴얼, 안전 가이드 등의 업무 정보와 IoT 센서 및 SCADA 등 데이터 정보를 현장에서 바로 확인할 수 있습니다."
+				"title": "확장현실(XR) 콘텐츠 시각화 솔루션",
+				"contents": "VIRNECT View는 확장현실(XR) 정보 및 데이터 시각화 솔루션입니다. 상용회된 기 기로 작업 매뉴얼, 안전 가이드 등의 업무 정보와 운영 데이터를 현장에서 바로 확인할 수 있으며, 신속한 의사 결정과 빠른 대응이 가능합니다."
 			},
 			"benefitLists": [
 				{
