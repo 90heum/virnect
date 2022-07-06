@@ -24,7 +24,7 @@
                 <span class="contHead">
                     <span>
                         <h2>
-                            {{contentList.title}}
+                            {{$i18n.localeProperties.code === "ko" ? contentList.title : contentList.titleEn}}
                         </h2>
                         <p>
                             User’s Manual
@@ -36,22 +36,19 @@
                 </span>
                 <!-- 블로그 -->
                 <span class="detailBlog"
-                      v-html="contentList.content">
+                      v-html="$i18n.localeProperties.code === 'ko' ? contentList.content : contentList.contentEn">
                 </span>
                 <!-- 첨부파일 다운로드 -->
                 <div class="downloadFile">
                     <span class="downloadFileWrap">
                         <span class="downloadFileTit">첨부파일 다운로드</span>
                         <span class="downloadFileCont">
-                            <span>
-                                <i><img src="https://velog.velcdn.com/images/kyj0206/post/acd53d6c-61d6-47f2-8747-f260c7d434f3/image.png" alt="다운로드 아이콘"></i>
-                                <u>Kor-VIRNECT-Manual_PDFVersion.pdf</u>
-                                <p>[257kb]</p>
-                            </span>
-                            <span>
-                                <i><img src="https://velog.velcdn.com/images/kyj0206/post/acd53d6c-61d6-47f2-8747-f260c7d434f3/image.png" alt="다운로드 아이콘"></i>
-                                <u>Kor-VIRNECT-Manual_PDF2.pdf</u>
-                                <p>[257kb]</p>
+                            <span v-for="(data, idx) of contentList.supportLearningFilesResponse"
+                                  :key="idx"
+                                  @click="requestFile(idx, contentList.id, (`${$i18n.localeProperties.code === 'ko' ? data.name : data.nameEn}.${data.extension}`) )">
+                                <i><img src="https://velog.velcdn.com/images/kyj0206/post/acd53d6c-61d6-47f2-8747-f260c7d434f3/image.png" alt="다운로드 아이콘"/></i>
+                                <u>{{data.name + "." + data.extension}}</u>
+                                <!-- <p>[257kb]</p> -->
                             </span>
                         </span>
                     </span>
@@ -60,34 +57,34 @@
                 <span class="PreNext">
                     <ul @click="goToPage(contentList.prevId)">
                         <li>
-                            <p>이전글</p>
+                            <p>{{$i18n.localeProperties.code === "ko" ? "이전글" : "Prev"}}</p>
                             <i>
                                 <img src="https://velog.velcdn.com/images/kyj0206/post/7bd599f7-7fb2-40a0-9289-25db6e412a37/image.png" alt="이전글 아이콘">
                             </i>
                         </li>
                         <li>
-                            <nuxt-link :to="`learning-manual-detail?noticeId=${contentList.prevId}`">
-                                {{contentList.prevTitle}}
+                            <nuxt-link :to="`learning-manual-detail?Id=${contentList.prevId ? contentList.prevId : contentList.id}&typeId=${1}`">
+                                {{contentList.prevTitle ? contentList.prevTitle : "이전글이 존재하지 않습니다."}}
                             </nuxt-link>
                         </li>
                         <li>
-                            {{$dayjs(contentList.prevCreatedDate).format("YYYY-MM-DD")}}
+                            {{contentList.prevCreatedDate ? $dayjs(contentList.prevCreatedDate).format("YYYY-MM-DD") : ''}}
                         </li>
                     </ul>
                     <ul @click="goToPage(contentList.nextId)">
                         <li>
-                            <p>다음글</p>
+                            <p>{{$i18n.localeProperties.code === "ko" ? "다음글" : "Next"}}</p>
                             <i>
                                 <img src="https://velog.velcdn.com/images/kyj0206/post/3d9cc89c-e518-415b-8b40-01ae30b6ae60/image.png" alt="다음글 아이콘">
                             </i>
                         </li>
                         <li>
-                            <nuxt-link :to="`learning-manual-detail?noticeId=${contentList.nextId}`">
-                                {{contentList.nextTitle}}
+                            <nuxt-link :to="`learning-manual-detail?Id=${contentList.nextId ? contentList.nextId : contentList.id}&typeId=${1}`">
+                                {{contentList.nextTitle ? $i18n.localeProperties.code === "ko" ? contentList.nextTitle : contentList.nextTitleEn : "다음글이 존재하지 않습니다."}}
                             </nuxt-link>
                         </li>
                         <li>
-                            {{$dayjs(contentList.nextCreatedDate).format("YYYY-MM-DD")}}
+                            {{contentList.nextCreatedDate ? $dayjs(contentList.nextCreatedDate).format("YYYY-MM-DD") : ''}}
                         </li>
                     </ul>
                 </span>
@@ -116,17 +113,24 @@ export default {
     methods: {
         async goToPage (id) {
             if(!id) return;
-            const data = await this.$axios.get(`admin/support/notice/${id}`);
+            const data = await this.$axios.get(`admin/support/learning/${id}?typeId=${this.$route.query.typeId}`);
             const dataJson = await data;
             if (process.client) window.scrollTo({top: "0px"});
             this.contentList = dataJson.data.data;
+        },
+        requestFile (idx, id, fileName) {
+            this.$axios.get(`admin/support/learning/download/${id}?idx=${idx}`, {responseType: "blob"})
+                       .then(res => {
+                           const fileDownload = require("js-file-download");
+                           fileDownload(res.data, fileName);
+                        })
+                       .catch(e => console.error(e))
         }
     },
     async asyncData ({$axios, route}) {
         try {
-            const data = await $axios.get(`admin/support/notice/${route.query.noticeId}`);
+            const data = await $axios.get(`admin/support/learning/${route.query.Id}?typeId=${route.query.typeId}`);
             const dataJson = await data;
-            console.log(dataJson.data.data)
             return {contentList: dataJson.data.data}
         } catch(e) {console.error(e)}
     }

@@ -22,7 +22,7 @@
                     }
                 }) : []"
                 :key="idx">
-                <nuxt-link :to="`learning-manual-detail?noticeId=${data.id}`"> 
+                <nuxt-link :to="`learning-manual-detail?Id=${data.id}&typeId=${1}`"> 
                     <span class="listImg">
                         <img :src="`${data.thumbnail ? data.thumbnail : 'https://velog.velcdn.com/images/kyj0206/post/75a8bf3a-fe84-47e5-aa54-fca6f438b599/image.png'}`" />
                     </span>
@@ -34,12 +34,12 @@
                             <p v-for="(innerData, idx) of data.categoryName"
                                :key="idx">{{innerData}}</p>
                         </span>
-                        <span>
-                            <i><img src="https://velog.velcdn.com/images/kyj0206/post/79bc5130-25fb-429c-9876-c32a6acb590e/image.png" alt="다운로드 아이콘"></i>
-                            <u @click="getFileDownload()">{{$i18n.localeProperties.code === "ko" ? "다운로드" : "download"}}</u>
-                        </span>
                     </span>
                 </nuxt-link>
+                 <span>
+                    <i><img src="https://velog.velcdn.com/images/kyj0206/post/79bc5130-25fb-429c-9876-c32a6acb590e/image.png" alt="다운로드 아이콘"></i>
+                    <u @click="getFileDownload(data.id)">{{$i18n.localeProperties.code === "ko" ? "다운로드" : "download"}}</u>
+                </span>
             </div>
         </span>
         <!-- 모바일용 전체보기 버튼  -->
@@ -70,10 +70,10 @@ export default {
     },
     methods: {
         getFileDownload(e) {
-            this.$axios.get("https://cdn.pixabay.com/photo/2018/01/03/19/17/cat-3059075_960_720.jpg", {responseType: "blob"})
+            this.$axios.get(`admin/support/learning/zip/${e ? e : ''}?lan=${this.$i18n.localeProperties.code === 'ko' ? 'ko' : 'en'}`, {responseType: "blob"})
             .then(res => {
                 const fileDownload = require('js-file-download');
-                fileDownload(res.data, "테스트고양이.jpg");
+                fileDownload(res.data, "virnect.zip");
             })
             .catch(e => console.error(e))
         },
