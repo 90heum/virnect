@@ -1,7 +1,7 @@
 <template>
   <section class="products-section">
     <subMenuTrack />
-    <SubBannerTrack />
+    <SubBannerTrack class="bb" />
     <!-- <sub-visual-section
       :image="visualText.image"
       :category="visualText.category"
@@ -69,5 +69,8 @@ export default {
 @import "~assets/css/pages/products.scss";
 .aa {
   margin-top: 100px;
+}
+.bb {
+  margin: 0 auto;
 }
 </style>

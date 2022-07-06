@@ -7,7 +7,7 @@
       :title="$t('productsText.visualText.title')"
       :contents="$t('productsText.visualText.contents')"
     ></sub-visual-section> -->
-    <sub-banner-make />
+    <sub-banner-make class="bb" />
     <!-- <snb-section :snbArr="$t('gnb[1].array')"></snb-section> -->
     <transition name="app-fade" mode="out-in">
       <make-component />
@@ -67,5 +67,8 @@ export default {
 @import "~assets/css/pages/products.scss";
 .aa {
   margin-top: 100px;
+}
+.bb {
+  margin: 0 auto;
 }
 </style>
