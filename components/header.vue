@@ -20,7 +20,7 @@
             <li
               @mouseover="[(gnb1 = true), changeGnbColor()]"
               @mouseleave="[gnb1 = false, originalGnbColor()]"
-              @click="[(gnb1=false)]"
+              @click="[(gnb1=false), gnbStyleBorder = {gnbStyle1:true}]"
             >
               <nuxt-link
                 to="/solutions/energy_resource"
@@ -47,7 +47,7 @@
             <li
               @mouseover="[(gnb2 = true), changeGnbColor2()]"
               @mouseleave="[(gnb2 = false), originalGnbColor2()]"
-              @click="[(gnb2 = false)]"
+              @click="[(gnb2 = false), gnbStyleBorder = {gnbStyle2:true}]"
             >
               <nuxt-link 
                 to="/products/remote"
@@ -74,7 +74,7 @@
             <li
               @mouseover="[(gnb3 = true), changeGnbColor3()]"
               @mouseleave="[(gnb3 = false), (e) => originalGnbColor3(e)]"
-              @click="changeBorder()"
+              @click="[(gnb3 = false), gnbStyleBorder = {gnbStyle3:true}]"
             >
               <nuxt-link
                 to="/support/notice"
@@ -101,7 +101,7 @@
             <li
               @mouseover="[(gnb4 = true), changeGnbColor4()]"
               @mouseleave="[(gnb4 = false), originalGnbColor4()]"
-              @click="[(gnb4 = false)]"
+              @click="[(gnb4 = false), gnbStyleBorder = {gnbStyle4:true}]"
             >
               <nuxt-link
                 to="/news/main"
@@ -128,7 +128,7 @@
             <li
               @mouseover="[(gnb5 = true), changeGnbColor5()]"
               @mouseleave="[(gnb5 = false), originalGnbColor5()]"
-              @click="[(gnb5 = false)]"
+              @click="[(gnb5 = false), gnbStyleBorder = {gnbStyle5:true}]"
             >
               <nuxt-link
                 to="/company/about"
@@ -327,7 +327,7 @@
             <sub-solution-menu
               :snbArr="$t('gnb[0].array')"
               :name="`subNavSolutionsMenu`"
-              @click="[(gnb1=false), originalGnbColor()]"
+              @click="[(gnb1=false), originalGnbColor(), gnbStyleBorder = {gnbStyle1:true}]"
             />
           </span>
         </div>
@@ -387,7 +387,7 @@
                     })
                   "
                   :name="`subNavProductsMenus`"
-                  @click="[(gnb2=false), originalGnbColor2()]"
+                  @click="[(gnb2=false), originalGnbColor2(), gnbStyleBorder = {gnbStyle2:true}]"
                 />
               </span>
               <span>
@@ -402,7 +402,7 @@
                     })
                   "
                   :name="`subNavProductsMenus`"
-                  @click="[(gnb2=false), originalGnbColor2()]"
+                  @click="[(gnb2=false), originalGnbColor2(), gnbStyleBorder = {gnbStyle2:true}]"
                 />
               </span>
             </div>
@@ -473,7 +473,7 @@
             <div class="subNavSupportMenu">
               <span>
                 <ul>
-                  <li @click="[(gnb3=false), originalGnbColor3()]"
+                  <li @click="[(gnb3=false), originalGnbColor3(), gnbStyleBorder = {gnbStyle3:true}]"
                   >
                     <nuxt-link
                       to="/support/notice"
@@ -487,7 +487,7 @@
                       `supportText.menuList.productNotice.list`
                     )"
                     :key="idx"
-                    @click="changeGnbColor(`list3`)"
+                    @click="[changeGnbColor(`list3`),gnbStyleBorder = {gnbStyle3:true}]"
                   >
                     <nuxt-link :to="list.url"
                       ><u>-{{ list.title }}</u></nuxt-link
@@ -497,7 +497,7 @@
               </span>
               <span>
                 <ul>
-                  <li @click="[(gnb3=false), originalGnbColor3()]">
+                  <li @click="[(gnb3=false), originalGnbColor3(), gnbStyleBorder = {gnbStyle3:true}]">
                     <nuxt-link to="/support/faq"
                       ><span>{{
                         $t(`supportText.menuList.faq.title`)
@@ -508,7 +508,7 @@
                     <li
                       v-for="(list, idx) of $t(`supportText.menuList.faq.list`)"
                       :key="idx"
-                      @click="changeGnbColor(`list3`)"
+                      @click="[changeGnbColor(`list3`), gnbStyleBorder = {gnbStyle3:true}]"
                     >
                       <nuxt-link :to="list.url"
                         ><u>-{{ list.title }}</u></nuxt-link
@@ -519,7 +519,7 @@
               </span>
               <span>
                 <ul>
-                  <li @click="[(gnb3=false), originalGnbColor3()]">
+                  <li @click="[(gnb3=false), originalGnbColor3(), gnbStyleBorder = {gnbStyle3:true}]">
                     <nuxt-link to="/support/learning-center">학습센터</nuxt-link>
                   </li>
                   <li
@@ -539,7 +539,7 @@
               </span>
               <span>
                 <ul>
-                  <li @click="[(gnb3=false), originalGnbColor3()]">
+                  <li @click="[(gnb3=false), originalGnbColor3(), gnbStyleBorder = {gnbStyle3:true}]">
                     <nuxt-link to="/support/inquiry">문의하기</nuxt-link>
                   </li>
                 </ul>
@@ -575,7 +575,7 @@
               <span
                 v-for="(list, idx) of $t(`newsRoom.menuList`)"
                 :key="idx"
-                @click="[(gnb4=false), originalGnbColor4()]"
+                @click="[(gnb4=false), originalGnbColor4(), gnbStyleBorder = {gnbStyle4:true}]"
               >
                 <nuxt-link :to="list.url">{{ list.title }}</nuxt-link>
               </span>
@@ -610,7 +610,7 @@
               <span
                 v-for="(list, idx) of $t(`newCompany.menuList`)"
                 :key="idx"
-                @click="[(gnb5=false), originalGnbColor5()]"
+                @click="[(gnb5=false), originalGnbColor5(), gnbStyleBorder = {gnbStyle5:true}]"
               >
                 <nuxt-link :to="list.url">{{ list.title }}</nuxt-link>
               </span>
