@@ -16,7 +16,7 @@
       "
     ></sub-visual-section>
     <SubMenu />
-    <AboutSub/>
+    <AboutSub />
     <transition name="app-fade" mode="out-in">
       <indroduce-component />
     </transition>
@@ -58,8 +58,8 @@ export default {
     indroduceComponent,
     SubMenu,
     companyValue,
-    AboutSub
-},
+    AboutSub,
+  },
   data() {
     return {
       visualText: {

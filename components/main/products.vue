@@ -338,7 +338,7 @@ export default {
   max-width: 2400px;
   width: 100%;
   display: flex;
-  padding: 140px 0;
+  padding-top: 350px;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
