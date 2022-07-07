@@ -58,8 +58,8 @@ import VideoRealGuide from "~/components/support/learning-center/videoRealGuide.
 export default {
     data () {
         return {
-            isTabMenu: 1,
-            isTypeMenu: null,
+            isTabMenu: Number(this.$route.query.category) || 1,
+            isTypeMenu: Number(this.$route.query.type) === 0 ? Number(this.$route.query.type) : Number(this.$route.query.type) || null,
             pagingData: {
                 currentPage: 1,
                 currentSize: 20,
@@ -77,10 +77,13 @@ export default {
             this.requestData();
         },
         chooseTabMenu (e) {
+            this.$router.push(`?category=${e ? e : ''}`)
             this.isTabMenu = e;
+            this.isTypeMenu = null;
             this.requestData();
         },
         chooseTypeMenu (e) {
+            this.$router.push(`?category=${this.isTabMenu === 0 || !this.isTabMenu ? '' : this.isTabMenu}&type=${e === 0 ? 0 : e ? e: ''}`)
             this.isTypeMenu = e;
             this.requestData();
         },
@@ -100,11 +103,13 @@ export default {
         VideoTutoral,
         VideoRealGuide
     },
-    async asyncData ({$axios}) {
+    async asyncData ({$axios, route}) {
+        const routeCategory = route.query.category || 1;
+        const routeType = route.query.type || null;
         try {
             const data = Promise.all([$axios.get("admin/support/learning/category"),
                                       $axios.get("admin/support/learning/type"),
-                                      $axios.get(`admin/support/learning?categoryId=1&page=1&size=${20}`)]);
+                                      $axios.get(`admin/support/learning?categoryId=${routeCategory}&typeId=${routeType === 0 ? 0 : routeType ? routeType : ''}&page=1&size=${20}`)]);
             const dataJson = await data;
             return {
                 categoryList: dataJson[0].data.data.categoryList, 
