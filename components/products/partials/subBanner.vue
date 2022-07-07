@@ -45,16 +45,22 @@
 
 <script>
 export default {
-  created(){
-    setTimeout(()=>{
-      if(process.client)document.querySelector('#xrSolutionId').scrollIntoView({behavior: 'smooth'});
-    },500);
+  created() {
+    setTimeout(() => {
+      if (process.client)
+        document
+          .querySelector("#xrSolutionId")
+          .scrollIntoView({ behavior: "smooth" });
+    }, 500);
   },
   methods: {
-    more(){
-      if(process.client)document.querySelector('#xrSolutionId').scrollIntoView({behavior: 'smooth'});
-    }
-  }
+    more() {
+      if (process.client)
+        document
+          .querySelector("#xrSolutionId")
+          .scrollIntoView({ behavior: "smooth" });
+    },
+  },
 };
 </script>
 

@@ -30,11 +30,11 @@
       <section class="aboutVirnect">
         <div class="aboutVirnectInner">
           <span class="aboutVirnectTit">
-           <!-- {{ $t("productsText.remoteSubTitle.title") }}  -->
+            <!-- {{ $t("productsText.remoteSubTitle.title") }}  -->
 
-            <h2>{{ $t("aboutVirnectContent.title") }}</h2>
+            <h2>{{ $t("aboutVirnectTitle.title") }}</h2>
             <span>
-              {{ $t("aboutVirnectContent.content") }}
+              {{ $t("aboutVirnectTitle.content") }}
             </span>
           </span>
           <span class="aboutVirnectCont">
@@ -48,7 +48,7 @@
               <li>
                 <span> Vision </span>
                 <span>
-                 {{ $t("aboutVirnectContent.vision") }}
+                  {{ $t("aboutVirnectContent.vision") }}
                 </span>
               </li>
             </ul>
@@ -86,10 +86,14 @@
           </span>
           <span class="aboutHistoryCont">
             <ul class="aboutHistoryContTab">
-              <li :class="HistoryTab === (idx+1) ? 'active' : ''"
-                  @click="handleHisrotyTab(idx+1)"
-                  v-for="(data, idx) of yearsData"
-                  :key="idx">{{data.years}}</li>
+              <li
+                :class="HistoryTab === idx + 1 ? 'active' : ''"
+                @click="handleHisrotyTab(idx + 1)"
+                v-for="(data, idx) of yearsData"
+                :key="idx"
+              >
+                {{ data.years }}
+              </li>
             </ul>
             <ul class="aboutHistoryContCont" id="2021" v-if="HistoryTab === 1">
               <li class="HisLeft">
@@ -164,7 +168,11 @@
                 </ul>
               </li>
             </ul>
-            <ul class="aboutHistoryContCont" id="2017~2018" v-if="HistoryTab === 4">
+            <ul
+              class="aboutHistoryContCont"
+              id="2017~2018"
+              v-if="HistoryTab === 4"
+            >
               <li class="HisLeft">
                 <div>
                   <span>{{ $t("aboutHistory2017_2018.title") }}</span>
@@ -218,12 +226,24 @@
           </span>
           <span class="customersCont">
             <ul class="customerContTab">
-              <li :class="CustomerTab === 1 ? 'active' : ''"
-                  @click="handleCustomerTab(1)">공공</li>
-              <li :class="CustomerTab === 2 ? 'active' : ''"
-                  @click="handleCustomerTab(2)">민간</li>
-              <li :class="CustomerTab === 3 ? 'active' : ''"
-                  @click="handleCustomerTab(3)">교육</li>
+              <li
+                :class="CustomerTab === 1 ? 'active' : ''"
+                @click="handleCustomerTab(1)"
+              >
+                공공
+              </li>
+              <li
+                :class="CustomerTab === 2 ? 'active' : ''"
+                @click="handleCustomerTab(2)"
+              >
+                민간
+              </li>
+              <li
+                :class="CustomerTab === 3 ? 'active' : ''"
+                @click="handleCustomerTab(3)"
+              >
+                교육
+              </li>
             </ul>
             <ul class="customerContCont">
               <li>
@@ -392,43 +412,43 @@ import companyAwards from "~/components/main/companyAwards.vue";
 
 const historyData = [
   {
-    years: "2021"
+    years: "2021",
   },
   {
-    years: "2020"
+    years: "2020",
   },
   {
-    years: "2019"
+    years: "2019",
   },
   {
-    years: "2017 ~ 2018"
+    years: "2017 ~ 2018",
   },
   {
-    years: "2016"
+    years: "2016",
   },
-]
+];
 export default {
   components: {
     subVisualSection,
     snbSection,
     headingModule,
-    companyAwards
-},
-data() {
-  return {
-    CustomerTab: 1,
-    HistoryTab: 1,
-    yearsData: historyData
-  }
-},
-methods: {
-  handleCustomerTab (e) {
-    this.CustomerTab = e;
+    companyAwards,
   },
-  handleHisrotyTab (e) {
-    this.HistoryTab = e;
-  }
-}
+  data() {
+    return {
+      CustomerTab: 1,
+      HistoryTab: 1,
+      yearsData: historyData,
+    };
+  },
+  methods: {
+    handleCustomerTab(e) {
+      this.CustomerTab = e;
+    },
+    handleHisrotyTab(e) {
+      this.HistoryTab = e;
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>
