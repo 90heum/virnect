@@ -310,11 +310,10 @@
 import ClickOutside from "vue-click-outside";
 
 export default {
-  /* directives: {
-    clickOutside: vClickOutside.directive
-  },
-  components: {
-  }, */
+  // directives: {
+  //   clickOutside: vClickOutside.directive,
+  // },
+  components: {},
   computed: {
     availableLocales() {
       return this.$i18n.locales;

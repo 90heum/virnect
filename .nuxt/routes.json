@@ -7,6 +7,13 @@
     "_name": "_74945477"
   },
   {
+    "name": "company-aboutSub",
+    "path": "/company/aboutSub",
+    "component": "/Users/hellodigital/virnect/pages/company/aboutSub.vue",
+    "chunkName": "pages/company/aboutSub",
+    "_name": "_1bc00679"
+  },
+  {
     "name": "company-ir",
     "path": "/company/ir",
     "component": "/Users/hellodigital/virnect/pages/company/ir.vue",
@@ -40,6 +47,27 @@
     "component": "/Users/hellodigital/virnect/pages/news/main.vue",
     "chunkName": "pages/news/main",
     "_name": "_005fdd71"
+  },
+  {
+    "name": "policy-Payment",
+    "path": "/policy/Payment",
+    "component": "/Users/hellodigital/virnect/pages/policy/Payment.vue",
+    "chunkName": "pages/policy/Payment",
+    "_name": "_2870ce86"
+  },
+  {
+    "name": "policy-Policy",
+    "path": "/policy/Policy",
+    "component": "/Users/hellodigital/virnect/pages/policy/Policy.vue",
+    "chunkName": "pages/policy/Policy",
+    "_name": "_7a0067cb"
+  },
+  {
+    "name": "policy-Terms",
+    "path": "/policy/Terms",
+    "component": "/Users/hellodigital/virnect/pages/policy/Terms.vue",
+    "chunkName": "pages/policy/Terms",
+    "_name": "_54fd7904"
   },
   {
     "name": "products-make",

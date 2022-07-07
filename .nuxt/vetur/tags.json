@@ -20,6 +20,9 @@
   "MainCompany": {
     "description": "Auto imported from components/main/company.vue"
   },
+  "MainCompanyAwards": {
+    "description": "Auto imported from components/main/companyAwards.vue"
+  },
   "MainCtaModule": {
     "description": "Auto imported from components/main/ctaModule.vue"
   },
@@ -38,20 +41,23 @@
   "MainUseCase": {
     "description": "Auto imported from components/main/useCase.vue"
   },
-  "MixinsMixin": {
-    "description": "Auto imported from components/mixins/mixin.js"
-  },
   "NewsCommonBaner": {
     "description": "Auto imported from components/news/CommonBaner.vue"
   },
+  "PolicySubMenuPayment": {
+    "description": "Auto imported from components/policy/subMenuPayment.vue"
+  },
+  "PolicySubMenuPolicy": {
+    "description": "Auto imported from components/policy/subMenuPolicy.vue"
+  },
+  "PolicySubMenuTerms": {
+    "description": "Auto imported from components/policy/subMenuTerms.vue"
+  },
+  "MixinsMixin": {
+    "description": "Auto imported from components/mixins/mixin.js"
+  },
   "Paging": {
     "description": "Auto imported from components/paging/paging.vue"
-  },
-  "SupportSubMenu": {
-    "description": "Auto imported from components/support/SubMenu.vue"
-  },
-  "SupportHeadBanner": {
-    "description": "Auto imported from components/support/headBanner.vue"
   },
   "ModulesBanner": {
     "description": "Auto imported from components/modules/Banner.vue"
@@ -107,6 +113,33 @@
   "ModulesYoutubeFullscreen": {
     "description": "Auto imported from components/modules/YoutubeFullscreen.vue"
   },
+  "SupportSubMenu": {
+    "description": "Auto imported from components/support/SubMenu.vue"
+  },
+  "SupportHeadBanner": {
+    "description": "Auto imported from components/support/headBanner.vue"
+  },
+  "CompanyPagesRecruit": {
+    "description": "Auto imported from components/company/pages/Recruit.vue"
+  },
+  "CompanyPagesBrand": {
+    "description": "Auto imported from components/company/pages/brand.vue"
+  },
+  "CompanyValue": {
+    "description": "Auto imported from components/company/pages/companyValue.vue"
+  },
+  "CompanyPagesIntroduce": {
+    "description": "Auto imported from components/company/pages/introduce.vue"
+  },
+  "CompanyPartialsSubMenu": {
+    "description": "Auto imported from components/company/partials/subMenu.vue"
+  },
+  "CompanyPartialsSubMenuBrand": {
+    "description": "Auto imported from components/company/partials/subMenuBrand.vue"
+  },
+  "CompanyPartialsSubMenuIr": {
+    "description": "Auto imported from components/company/partials/subMenuIr.vue"
+  },
   "GnbCompany": {
     "description": "Auto imported from components/Gnb/Company/index.vue"
   },
@@ -128,21 +161,6 @@
   "GnbHeaderPartialMobileHeader": {
     "description": "Auto imported from components/Gnb/headerPartial/mobileHeader.vue"
   },
-  "CompanyPagesRecruit": {
-    "description": "Auto imported from components/company/pages/Recruit.vue"
-  },
-  "CompanyPagesBrand": {
-    "description": "Auto imported from components/company/pages/brand.vue"
-  },
-  "CompanyPagesIntroduce": {
-    "description": "Auto imported from components/company/pages/introduce.vue"
-  },
-  "CompanyPartialsSubMenu": {
-    "description": "Auto imported from components/company/partials/subMenu.vue"
-  },
-  "CompanyPartialsSubMenuBrand": {
-    "description": "Auto imported from components/company/partials/subMenuBrand.vue"
-  },
   "ProductsPagesMS": {
     "description": "Auto imported from components/products/pages/MS.vue"
   },
@@ -160,6 +178,21 @@
   },
   "ProductsPagesView": {
     "description": "Auto imported from components/products/pages/View.vue"
+  },
+  "SolutionsPagesAirline": {
+    "description": "Auto imported from components/solutions/pages/Airline.vue"
+  },
+  "SolutionsPagesEPC": {
+    "description": "Auto imported from components/solutions/pages/EPC.vue"
+  },
+  "SolutionsPagesEnergy": {
+    "description": "Auto imported from components/solutions/pages/Energy.vue"
+  },
+  "SolutionsPagesMotor": {
+    "description": "Auto imported from components/solutions/pages/Motor.vue"
+  },
+  "SolutionsPagesOil": {
+    "description": "Auto imported from components/solutions/pages/Oil.vue"
   },
   "ProductsPartialsBenefitPart": {
     "description": "Auto imported from components/products/partials/BenefitPart.vue"
@@ -226,21 +259,6 @@
   },
   "ProductsPartialsSubMenuView": {
     "description": "Auto imported from components/products/partials/subMenuView.vue"
-  },
-  "SolutionsPagesAirline": {
-    "description": "Auto imported from components/solutions/pages/Airline.vue"
-  },
-  "SolutionsPagesEPC": {
-    "description": "Auto imported from components/solutions/pages/EPC.vue"
-  },
-  "SolutionsPagesEnergy": {
-    "description": "Auto imported from components/solutions/pages/Energy.vue"
-  },
-  "SolutionsPagesMotor": {
-    "description": "Auto imported from components/solutions/pages/Motor.vue"
-  },
-  "SolutionsPagesOil": {
-    "description": "Auto imported from components/solutions/pages/Oil.vue"
   },
   "SolutionsPartialsBgNormalPart": {
     "description": "Auto imported from components/solutions/partials/BgNormalPart.vue"

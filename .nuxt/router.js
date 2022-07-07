@@ -5,11 +5,15 @@ import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
 const _74945477 = () => interopDefault(import('../pages/company/about.vue' /* webpackChunkName: "pages/company/about" */))
+const _1bc00679 = () => interopDefault(import('../pages/company/aboutSub.vue' /* webpackChunkName: "pages/company/aboutSub" */))
 const _b98f10a2 = () => interopDefault(import('../pages/company/ir.vue' /* webpackChunkName: "pages/company/ir" */))
 const _50df495f = () => interopDefault(import('../pages/company/ir-detail.vue' /* webpackChunkName: "pages/company/ir-detail" */))
 const _1e9a9af2 = () => interopDefault(import('../pages/company/talent.vue' /* webpackChunkName: "pages/company/talent" */))
 const _4d57fc09 = () => interopDefault(import('../pages/news/detail.vue' /* webpackChunkName: "pages/news/detail" */))
 const _005fdd71 = () => interopDefault(import('../pages/news/main.vue' /* webpackChunkName: "pages/news/main" */))
+const _2870ce86 = () => interopDefault(import('../pages/policy/Payment.vue' /* webpackChunkName: "pages/policy/Payment" */))
+const _7a0067cb = () => interopDefault(import('../pages/policy/Policy.vue' /* webpackChunkName: "pages/policy/Policy" */))
+const _54fd7904 = () => interopDefault(import('../pages/policy/Terms.vue' /* webpackChunkName: "pages/policy/Terms" */))
 const _22b4b5b5 = () => interopDefault(import('../pages/products/make.vue' /* webpackChunkName: "pages/products/make" */))
 const _4e70612d = () => interopDefault(import('../pages/products/ms.vue' /* webpackChunkName: "pages/products/ms" */))
 const _93f92766 = () => interopDefault(import('../pages/products/remote.vue' /* webpackChunkName: "pages/products/remote" */))
@@ -47,6 +51,10 @@ export const routerOptions = {
     component: _74945477,
     name: "company-about"
   }, {
+    path: "/company/aboutSub",
+    component: _1bc00679,
+    name: "company-aboutSub"
+  }, {
     path: "/company/ir",
     component: _b98f10a2,
     name: "company-ir"
@@ -66,6 +74,18 @@ export const routerOptions = {
     path: "/news/main",
     component: _005fdd71,
     name: "news-main"
+  }, {
+    path: "/policy/Payment",
+    component: _2870ce86,
+    name: "policy-Payment"
+  }, {
+    path: "/policy/Policy",
+    component: _7a0067cb,
+    name: "policy-Policy"
+  }, {
+    path: "/policy/Terms",
+    component: _54fd7904,
+    name: "policy-Terms"
   }, {
     path: "/products/make",
     component: _22b4b5b5,

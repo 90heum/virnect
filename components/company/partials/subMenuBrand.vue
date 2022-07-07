@@ -2,10 +2,13 @@
   <div class="SubMenuUse">
     <ul class="SubMenuNav">
       <li>
-        <nuxt-link to="/company/about"> 소개 </nuxt-link>
+        <nuxt-link to="/company/about">About VIRNECT</nuxt-link>
       </li>
       <li class="SubUseNavActive">
-        <nuxt-link to="/company/subCompany/Brand"> 브랜드 </nuxt-link>
+        <nuxt-link to="/company/talent">인재채용</nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/company/ir"> IR </nuxt-link>
       </li>
     </ul>
   </div>
@@ -18,6 +21,7 @@ export default {};
 <style lang="scss" scoped>
 .SubMenuUse {
   max-width: 2400px;
+  margin-top: 80px;
   background-color: #e6e8eb;
   .SubMenuNav {
     position: relative;

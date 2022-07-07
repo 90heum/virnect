@@ -16,8 +16,8 @@
           {{ $t("productsText.remoteSubTitle.contents") }}
         </span>
         <span>
-          <button>
-            <a href="#">
+          <button @click="more()">
+            <a>
               <p>{{ $t("productsText.remoteSubButton.know") }}</p>
               <p>
                 <img
@@ -44,7 +44,18 @@
 </template>
 
 <script>
-export default {};
+export default {
+  created(){
+    setTimeout(()=>{
+      if(process.client)document.querySelector('#xrSolutionId').scrollIntoView({behavior: 'smooth'});
+    },500);
+  },
+  methods: {
+    more(){
+      if(process.client)document.querySelector('#xrSolutionId').scrollIntoView({behavior: 'smooth'});
+    }
+  }
+};
 </script>
 
 <style lang="scss" scoped>
@@ -135,6 +146,7 @@ export default {};
                 gap: 20px;
                 padding: 10px 16px;
                 color: #121212;
+                cursor: pointer;
                 p {
                   font-size: 16px;
                   font-weight: bold;

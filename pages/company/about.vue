@@ -15,8 +15,8 @@
           : $t('companyText.visualText.contents')
       "
     ></sub-visual-section>
-
     <SubMenu />
+    <AboutSub/>
     <transition name="app-fade" mode="out-in">
       <indroduce-component />
     </transition>
@@ -29,6 +29,7 @@
     <transition name="app-fade" mode="out-in">
       <router-view></router-view>
     </transition>
+    <companyValue />
     <tail-section
       :bg="tailText.bg"
       :mention="$t('companyText.tailText')"
@@ -46,6 +47,9 @@ import snbSection from "~/components/modules/Snb";
 import tailSection from "~/layouts/common/Tail";
 import SubMenu from "../../components/company/partials/subMenu.vue";
 import indroduceComponent from "../../components/company/pages/introduce.vue";
+import companyValue from "../../components/company/pages/companyValue.vue";
+import AboutSub from "./aboutSub.vue";
+
 export default {
   components: {
     subVisualSection,
@@ -53,7 +57,9 @@ export default {
     tailSection,
     indroduceComponent,
     SubMenu,
-  },
+    companyValue,
+    AboutSub
+},
   data() {
     return {
       visualText: {

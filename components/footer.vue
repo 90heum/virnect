@@ -372,19 +372,13 @@
         <div class="footerBottomInner">
           <div class="bottomInnerLeft">
             <span>
+              <u><nuxt-link to="/policy/Terms">서비스 이용약관</nuxt-link></u>
               <u
-                ><a href="https://virnect.com/terms" target="_blank"
-                  >서비스 이용약관</a
-                ></u
+                ><nuxt-link to="/policy/Policy">개인정보 처리방침</nuxt-link></u
               >
               <u
-                ><a href="https://virnect.com/policy" target="_blank"
-                  >개인정보 처리방침</a
-                ></u
-              >
-              <u
-                ><a href="https://virnect.com/payment" target="_blank"
-                  >유료상품 이용약관</a
+                ><nuxt-link to="/policy/Payment"
+                  >유료상품 이용약관</nuxt-link
                 ></u
               >
             </span>
