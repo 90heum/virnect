@@ -188,6 +188,9 @@
   "ProductsPagesMake": {
     "description": "Auto imported from components/products/pages/Make.vue"
   },
+  "ProductsPagesPmain": {
+    "description": "Auto imported from components/products/pages/Pmain.vue"
+  },
   "ProductsPagesRemote": {
     "description": "Auto imported from components/products/pages/Remote.vue"
   },

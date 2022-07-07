@@ -61,6 +61,7 @@ export { default as CompanyPartialsSubMenuBrand } from '../../components/company
 export { default as CompanyPartialsSubMenuIr } from '../../components/company/partials/subMenuIr.vue'
 export { default as ProductsPagesMS } from '../../components/products/pages/MS.vue'
 export { default as ProductsPagesMake } from '../../components/products/pages/Make.vue'
+export { default as ProductsPagesPmain } from '../../components/products/pages/Pmain.vue'
 export { default as ProductsPagesRemote } from '../../components/products/pages/Remote.vue'
 export { default as ProductsPagesTrack } from '../../components/products/pages/Track.vue'
 export { default as ProductsPagesTwin } from '../../components/products/pages/Twin.vue'

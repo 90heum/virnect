@@ -69,6 +69,7 @@ You can directly use them in pages and other components without the need to impo
 - `<CompanyPartialsSubMenuIr>` | `<company-partials-sub-menu-ir>` (components/company/partials/subMenuIr.vue)
 - `<ProductsPagesMS>` | `<products-pages-m-s>` (components/products/pages/MS.vue)
 - `<ProductsPagesMake>` | `<products-pages-make>` (components/products/pages/Make.vue)
+- `<ProductsPagesPmain>` | `<products-pages-pmain>` (components/products/pages/Pmain.vue)
 - `<ProductsPagesRemote>` | `<products-pages-remote>` (components/products/pages/Remote.vue)
 - `<ProductsPagesTrack>` | `<products-pages-track>` (components/products/pages/Track.vue)
 - `<ProductsPagesTwin>` | `<products-pages-twin>` (components/products/pages/Twin.vue)
