@@ -90,13 +90,12 @@
           </span>
           <span class="aboutHistoryCont">
             <ul class="aboutHistoryContTab">
-              <li class="active">2021</li>
-              <li>2020</li>
-              <li>2019</li>
-              <li>2017~2018</li>
-              <li>2016</li>
+              <li :class="HistoryTab === (idx+1) ? 'active' : ''"
+                  @click="handleHisrotyTab(idx+1)"
+                  v-for="(data, idx) of yearsData"
+                  :key="idx">{{data.years}}</li>
             </ul>
-            <ul class="aboutHistoryContCont" id="2021">
+            <ul class="aboutHistoryContCont" id="2021" v-if="HistoryTab === 1">
               <li class="HisLeft">
                 <div>
                   <span>산업용 XR 리더 입지</span>
@@ -122,7 +121,7 @@
                 </ul>
               </li>
             </ul>
-            <!-- <ul class="aboutHistoryContCont" id="2020">
+            <ul class="aboutHistoryContCont" id="2020" v-if="HistoryTab === 2">
               <li class="HisLeft">
                 <div>
                   <span>통합솔루션 출시</span>
@@ -147,7 +146,7 @@
                 </ul>
               </li>
             </ul>
-            <ul class="aboutHistoryContCont" id="2019">
+            <ul class="aboutHistoryContCont" id="2019" v-if="HistoryTab === 3">
               <li class="HisLeft">
                 <div>
                   <span>시리즈 A 투자 유치</span>
@@ -169,7 +168,7 @@
                 </ul>
               </li>
             </ul>
-            <ul class="aboutHistoryContCont" id="2017~2018">
+            <ul class="aboutHistoryContCont" id="2017~2018" v-if="HistoryTab === 4">
               <li class="HisLeft">
                 <div>
                   <span>기업용 SW 시장 진출</span>
@@ -193,7 +192,7 @@
                 </ul>
               </li>
             </ul>
-            <ul class="aboutHistoryContCont" id="2016">
+            <ul class="aboutHistoryContCont" id="2016" v-if="HistoryTab === 5">
               <li class="HisLeft">
                 <div>
                   <span>주식회사 VIRNECT 설립</span>
@@ -210,7 +209,7 @@
                   <li>• SEEREAL Viewer 출시</li>
                 </ul>
               </li>
-            </ul>  -->
+            </ul>
           </span>
         </div>
       </section>
@@ -222,9 +221,12 @@
           </span>
           <span class="customersCont">
             <ul class="customerContTab">
-              <li class="active">공공</li>
-              <li>민간</li>
-              <li>교육</li>
+              <li :class="CustomerTab === 1 ? 'active' : ''"
+                  @click="handleCustomerTab(1)">공공</li>
+              <li :class="CustomerTab === 2 ? 'active' : ''"
+                  @click="handleCustomerTab(2)">민간</li>
+              <li :class="CustomerTab === 3 ? 'active' : ''"
+                  @click="handleCustomerTab(3)">교육</li>
             </ul>
             <ul class="customerContCont">
               <li>
@@ -391,6 +393,23 @@ import snbSection from "~/components/modules/Snb";
 import headingModule from "../../modules/Heading";
 import companyAwards from "~/components/main/companyAwards.vue";
 
+const historyData = [
+  {
+    years: "2021"
+  },
+  {
+    years: "2020"
+  },
+  {
+    years: "2019"
+  },
+  {
+    years: "2017 ~ 2018"
+  },
+  {
+    years: "2016"
+  },
+]
 export default {
   components: {
     subVisualSection,
@@ -398,6 +417,21 @@ export default {
     headingModule,
     companyAwards
 },
+data() {
+  return {
+    CustomerTab: 1,
+    HistoryTab: 1,
+    yearsData: historyData
+  }
+},
+methods: {
+  handleCustomerTab (e) {
+    this.CustomerTab = e;
+  },
+  handleHisrotyTab (e) {
+    this.HistoryTab = e;
+  }
+}
 };
 </script>
 <style lang="scss" scoped>

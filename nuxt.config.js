@@ -37,6 +37,7 @@ export default {
   buildModules: [
   ],
   modules: [
+    ['nuxt-agile'],
     ['@nuxtjs/dayjs'],
     ['@nuxtjs/proxy'],
     ['@nuxtjs/axios'],
