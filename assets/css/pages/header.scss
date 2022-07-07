@@ -1161,6 +1161,7 @@ header {
         background: #fff;
         position: relative;
         height: 100vh;
+        overflow-y: scroll;
 
         .hamSubMenu {
             padding: 30px 24px;
@@ -1172,6 +1173,7 @@ header {
                 border-bottom: solid 1px #c5c8cf;
 
                 a {
+                    cursor: pointer;
                     &:hover {
                         color: inherit;
                     }

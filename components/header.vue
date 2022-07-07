@@ -776,6 +776,7 @@ export default {
     },
     serviceHide(){
       this.serviceOpen = false
+      this.isServiceMenu = false
     },
     toggle2(){
       this.langOpen = true
@@ -840,6 +841,7 @@ export default {
       if (window.innerWidth > 1025 && !this.isWeb) {
         this.isWeb = true;
         this.isMenu = false;
+        
       } else if (window.innerWidth < 1025 && this.isWeb) {
         this.isWeb = false;
         this.gnbTextStyle.color = "#fff";
@@ -849,6 +851,11 @@ export default {
     },
     showMenu(e) {
       this.isMenu = e;
+      if(this.isMenu === true){
+          document.querySelector("html").style.overflow='hidden';
+        } else {
+          document.querySelector("html").style.overflow='scroll';
+        }
     },
   },
 };
