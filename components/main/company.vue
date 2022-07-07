@@ -30,6 +30,7 @@
             </div>
           </span>
             
+            <client-only>
             <div class="banner">
             <div class="CompanyBottomBanner">
               <div class="CompanyBottomBannerSlider-container">
@@ -48,7 +49,7 @@
               </div>
             </div>    
             </div>
-
+            </client-only>
           </div>
       </span>
 
@@ -271,7 +272,7 @@ export default {
       ]
     }
   },
-  created() {
+  updated() {
         if (process.client) {
 
             const slider = document.querySelector('.CompanyBottomBannerSlider-container'),

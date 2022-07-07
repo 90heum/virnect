@@ -1,113 +1,44 @@
 <template>
 <div class="banner">
-
-    <div class="slider-container">
-      <div class="slide"
-           v-for="(data, idx) of ['https://velog.velcdn.com/images/kyj0206/post/01174201-9b39-4b4e-9090-6ebbb4a134d8/image.png', 
+<client-only>
+    <agile :autoplay-speed="5000"
+           :autoplay=true
+           :nav-buttons=false>
+        <div class="slide"
+             v-for="(data, idx) of ['https://velog.velcdn.com/images/kyj0206/post/01174201-9b39-4b4e-9090-6ebbb4a134d8/image.png', 
                                         'https://velog.velcdn.com/images/kyj0206/post/01174201-9b39-4b4e-9090-6ebbb4a134d8/image.png']"
-           :key="idx">
-        <img :src="data"/>
-      </div>
-    </div>
-
+             :key="idx">
+            <img :src="data"/>
+        </div>
+    </agile>
+</client-only>
 </div>    
 </template>
 
 <script>
 export default {
+    updated() {
+        if (process.client) {
+            // 버튼 위치 지정 자바스크립트
+            const buttonTarget = document.querySelectorAll(".banner .agile__dot button");
+            const parentButtonTarget = document.querySelector(".agile__dots");
+            
+            parentButtonTarget.style.position = "absolute";
+            parentButtonTarget.style.top = "-2px";
+            parentButtonTarget.style.right = "11%";
+            buttonTarget.forEach((e, idx) => {
+                e.style.width = "15px";
+                e.style.height = "15px";
+                e.style.margin = "0 5px";
+                e.style.borderRadius = "50%";
+                // e.style.border = "none";
+                e.style.backgroundColor = "#f7f8f9";
+            })
+        }
+    },
     created() {
         if (process.client) {
-
-            const slider = document.querySelector('.slider-container'),
-            slides = Array.from(document.querySelectorAll('.slide'))
-
-            let isDragging = false,
-            startPos = 0,
-            currentTranslate = 0,
-            prevTranslate = 0,
-            animationID,
-            currentIndex = 0
-
-            slides.forEach((slide, index) => {
-            const slideImage = slide.querySelector('img')
-            // disable default image drag
-            slideImage.addEventListener('dragstart', (e) => e.preventDefault())
-            // touch events
-            slide.addEventListener('touchstart', touchStart(index))
-            slide.addEventListener('touchend', touchEnd)
-            slide.addEventListener('touchmove', touchMove)
-            // mouse events
-            slide.addEventListener('mousedown', touchStart(index))
-            slide.addEventListener('mouseup', touchEnd)
-            slide.addEventListener('mousemove', touchMove)
-            slide.addEventListener('mouseleave', touchEnd)
-            })
-
-            // make responsive to viewport changes
-            window.addEventListener('resize', setPositionByIndex)
-
-            // prevent menu popup on long press
-            window.oncontextmenu = function (event) {
-            event.preventDefault()
-            event.stopPropagation()
-            return false
-            }
-
-            function getPositionX(event) {
-            return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX
-            }
-
-            function touchStart(index) {
-            return function (event) {
-                currentIndex = index
-                startPos = getPositionX(event)
-                isDragging = true
-                animationID = requestAnimationFrame(animation)
-                slider.classList.add('grabbing')
-            }
-            }
-
-            function touchMove(event) {
-            if (isDragging) {
-                const currentPosition = getPositionX(event)
-                currentTranslate = prevTranslate + currentPosition - startPos
-            }
-            }
-
-            function touchEnd() {
-            cancelAnimationFrame(animationID)
-            isDragging = false
-            const movedBy = currentTranslate - prevTranslate
-
-            // if moved enough negative then snap to next slide if there is one
-            if (movedBy < -100 && currentIndex < slides.length - 1) currentIndex += 1
-
-            // if moved enough positive then snap to previous slide if there is one
-            if (movedBy > 100 && currentIndex > 0) currentIndex -= 1
-
-            setPositionByIndex()
-
-            slider.classList.remove('grabbing')
-            }
-
-            function animation() {
-            setSliderPosition()
-            if (isDragging) requestAnimationFrame(animation)
-            }
-
-            function setPositionByIndex() {
-            currentTranslate = currentIndex * -window.innerWidth
-            prevTranslate = currentTranslate
-            setSliderPosition()
-            }
-
-            function setSliderPosition() {
-            slider.style.transform = `translateX(${currentTranslate}px)`
-            }
-
-
-
-
+            
         }
     },
     methods: {
@@ -139,40 +70,21 @@ export default {
             left: 50%;
             transform: translate(-50%, 35%);
             padding: 0 30px;
-
-            .banner1024 {
-                display: block;
-                max-width: 1200px;
-                width: 100%;
-                margin: 0 auto;
-                a {
-                    display: block;
-
-                    img {
-                        width: 100%;
-                    }
-                }
-            }
-
-            .banner768 {
-                display: none;
-
-                a {
-                    display: block;
-
-                    img {
-                        width: 100%;
-                    }
-                }
-            }
         }
-
-        // 실제사용 모듈용 css 구역 여기까지!!!!!!!!!!!
-
-
-
     }
 }
+.banner > .agile--ssr .agile__actions
+  ul li button {
+    width: 10px;
+    height: 10px;
+    margin: 0 8px;
+    border-radius: 7px;
+    background-color: #f7f8f9;
+
+    
+}
+
+
 :root {
   --shadow: rgba(0, 0, 0, 0.8)
 }
@@ -198,9 +110,6 @@ export default {
 }
 
 @media(min-width: 1200px){
-  .slide {
-    padding: 3rem;
-  }
 }
 
 .slide img{
@@ -220,6 +129,7 @@ export default {
   transform: scale(0.9);
   box-shadow: 5px 5px 40px -1px var(--shadow);
 }
+
 @media screen and (min-width: 1104px) and (max-width: 1115px) {
    .banner {  top: 85%; }
 }

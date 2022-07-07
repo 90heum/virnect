@@ -22,6 +22,7 @@
     </div>
     <!-- <button class="grey-btn light">{{ greyBtn }}</button> -->
     <!-- <button class="blue-btn light">{{blueBtn}}</button> -->
+    <client-only>
     <swiper
       :options="effectOptions"
       class="effectlist-wrap"
@@ -34,6 +35,7 @@
       </swiper-slide>
     </swiper>
     <ul class="pagination effect" slot="pagination" v-if="isMobile"></ul>
+    </client-only>
   </section>
 </template>
 
@@ -55,6 +57,8 @@ export default {
       isMobile: false,
       activeIndex: "0",
       effectOptions: {
+        breakpoints: {
+        },
         loop: true,
         pagination: {
           el: ".pagination.effect",
@@ -214,5 +218,15 @@ export default {
   button {
     @include default-btn(220px);
   }
+}
+@media screen and (max-width: 1200px) {
+    .carousel-wrapper li.swiper-pagination-bullet {
+      margin-right: 10px!important;
+    }
+    .carousel-wrapper .pagination {
+      display: flex!important;
+      width: 100%!important;
+      justify-content: center!important;
+    }
 }
 </style>
