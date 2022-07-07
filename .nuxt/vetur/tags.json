@@ -47,6 +47,9 @@
   "NewsCommonBaner": {
     "description": "Auto imported from components/news/CommonBaner.vue"
   },
+  "Paging": {
+    "description": "Auto imported from components/paging/paging.vue"
+  },
   "ModulesBanner": {
     "description": "Auto imported from components/modules/Banner.vue"
   },
@@ -110,14 +113,32 @@
   "PolicySubMenuTerms": {
     "description": "Auto imported from components/policy/subMenuTerms.vue"
   },
-  "Paging": {
-    "description": "Auto imported from components/paging/paging.vue"
-  },
   "SupportSubMenu": {
     "description": "Auto imported from components/support/SubMenu.vue"
   },
+  "SupportFaq": {
+    "description": "Auto imported from components/support/faq.vue"
+  },
+  "SupportFaqBanner": {
+    "description": "Auto imported from components/support/faqBanner.vue"
+  },
   "SupportHeadBanner": {
     "description": "Auto imported from components/support/headBanner.vue"
+  },
+  "SupportInquiry": {
+    "description": "Auto imported from components/support/inquiry.vue"
+  },
+  "SupportInquiryBanner": {
+    "description": "Auto imported from components/support/inquiryBanner.vue"
+  },
+  "SupportLearnBanner": {
+    "description": "Auto imported from components/support/learnBanner.vue"
+  },
+  "SupportLearningCenter": {
+    "description": "Auto imported from components/support/learning-center.vue"
+  },
+  "SupportNotice": {
+    "description": "Auto imported from components/support/notice.vue"
   },
   "GnbCompany": {
     "description": "Auto imported from components/Gnb/Company/index.vue"
@@ -199,6 +220,9 @@
   },
   "ProductsPartialsIntroducePart": {
     "description": "Auto imported from components/products/partials/IntroducePart.vue"
+  },
+  "ProductsMainBanner": {
+    "description": "Auto imported from components/products/partials/ProductsMainBanner.vue"
   },
   "ProductsPartialsSupportPart": {
     "description": "Auto imported from components/products/partials/SupportPart.vue"
@@ -299,12 +323,6 @@
   "SupportFaqGoogleMap": {
     "description": "Auto imported from components/support/faq/GoogleMap.vue"
   },
-  "SupportNoticeAsideMenu": {
-    "description": "Auto imported from components/support/notice/AsideMenu.vue"
-  },
-  "SupportNoticeContents": {
-    "description": "Auto imported from components/support/notice/NoticeContents.vue"
-  },
   "SupportLearningCenterAsideMenu": {
     "description": "Auto imported from components/support/learning-center/AsideMenu.vue"
   },
@@ -322,5 +340,11 @@
   },
   "SupportLearningCenterVideoTutorial": {
     "description": "Auto imported from components/support/learning-center/videoTutorial.vue"
+  },
+  "SupportNoticeAsideMenu": {
+    "description": "Auto imported from components/support/notice/AsideMenu.vue"
+  },
+  "SupportNoticeContents": {
+    "description": "Auto imported from components/support/notice/NoticeContents.vue"
   }
 }

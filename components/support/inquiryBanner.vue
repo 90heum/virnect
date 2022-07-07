@@ -3,10 +3,10 @@
       <div class="contactBanner">
         <div class="ContactBannerInner">
             <p>SUPPORT</p>
-            <h2>Products Notice</h2>
+            <h2>Contact Us</h2>
             <span>
-               제품 및 서비스 이용을 위한 주요 안내를 
-                <p>확인해보세요</p>    
+                버넥트의 준비된 기술 컨설턴트가 직접 도움을 드립니다.
+                <p>항상 고객 중심으로 생각하며, 고객과 함께 성장해 나가겠습니다.</p>    
             </span>
         </div>
     </div>

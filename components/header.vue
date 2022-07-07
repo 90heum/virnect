@@ -50,7 +50,7 @@
               @click="[(gnb2 = false), gnbStyleBorder = {gnbStyle2:true}]"
             >
               <nuxt-link 
-                to="/products/remote"
+                to="/products/productsMain"
                 :class="`navTab container2 ${gnb2 ? 'gnbActive' : ''}`"
                 v-bind:style="gnbStyleBorder.gnbStyle2 ? commonGnbStyle : {}"
               >
@@ -690,7 +690,7 @@ export default {
     commonGnbStyle: {
       color: "#fff",
       backgroundColor: "#121212",
-      borderBottom: "4px solid #fff"
+      borderBottom: "1px solid #fff"
     },
     gnbStyle1: {},
     gnbStyle2: {},

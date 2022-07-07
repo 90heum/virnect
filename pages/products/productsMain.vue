@@ -1,7 +1,16 @@
-<template></template>
+<template>
+  <section>
+    <productsMainBanner />
+  </section>
+</template>
 <script>
-// import { defineComponent } from '@vue/composition-api'
+import productsMainBanner from "~/components/products/partials/ProductsMainBanner";
+
+export default {
+  components: {
+    productsMainBanner,
+  },
+};
 </script>
-<style scoped>
-/* @import "~assets/css/pages/products.scss"; */
+<style  scoped>
 </style>

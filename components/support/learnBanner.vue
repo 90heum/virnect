@@ -3,9 +3,9 @@
       <div class="contactBanner">
         <div class="ContactBannerInner">
             <p>SUPPORT</p>
-            <h2>Products Notice</h2>
+            <h2>학습센터</h2>
             <span>
-               제품 및 서비스 이용을 위한 주요 안내를 
+               제품 사용을 위한 튜토리얼, 매뉴얼, 유용한 팁 등을
                 <p>확인해보세요</p>    
             </span>
         </div>
