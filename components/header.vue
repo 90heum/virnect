@@ -690,7 +690,7 @@ export default {
     commonGnbStyle: {
       color: "#fff",
       backgroundColor: "#121212",
-      borderBottom: "1px solid #fff"
+      borderBottom: "4px solid #fff"
     },
     gnbStyle1: {},
     gnbStyle2: {},
