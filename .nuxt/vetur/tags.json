@@ -59,6 +59,18 @@
   "Paging": {
     "description": "Auto imported from components/paging/paging.vue"
   },
+  "PolicySubMenuPayment": {
+    "description": "Auto imported from components/policy/subMenuPayment.vue"
+  },
+  "PolicySubMenuPolicy": {
+    "description": "Auto imported from components/policy/subMenuPolicy.vue"
+  },
+  "PolicySubMenuTerms": {
+    "description": "Auto imported from components/policy/subMenuTerms.vue"
+  },
+  "Paging": {
+    "description": "Auto imported from components/paging/paging.vue"
+  },
   "ModulesBanner": {
     "description": "Auto imported from components/modules/Banner.vue"
   },
