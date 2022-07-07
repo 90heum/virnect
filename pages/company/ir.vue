@@ -1,6 +1,12 @@
 <template>
 <div>
-  <sub-visual-section />
+    <sub-visual-section
+    class="sm"
+    :image="'https://velog.velcdn.com/images/kyj0206/post/826e3755-e1d4-4466-bf63-273cc3b52c9c/image.png'"
+    :category="visualText.category"
+    :title="$t('companyText.visualText.title')"
+    :contents="$t('companyText.visualText.contents')"
+    ></sub-visual-section>
   <subMenuIr />
    <div class="companyWrap">
         <span class="companyList">
@@ -43,7 +49,11 @@ export default {
                 startPage: 1,
                 endPage: 1
         },
-        irData: []
+        irData: [],
+        visualText: {
+        image: "../images/pages/company/img-company-top",
+        category: "Company",
+    },
     }
   },
   methods: {

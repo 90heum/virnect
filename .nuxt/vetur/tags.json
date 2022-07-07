@@ -41,8 +41,14 @@
   "MainUseCase": {
     "description": "Auto imported from components/main/useCase.vue"
   },
+  "MixinsMixin": {
+    "description": "Auto imported from components/mixins/mixin.js"
+  },
   "NewsCommonBaner": {
     "description": "Auto imported from components/news/CommonBaner.vue"
+  },
+  "Paging": {
+    "description": "Auto imported from components/paging/paging.vue"
   },
   "PolicySubMenuPayment": {
     "description": "Auto imported from components/policy/subMenuPayment.vue"
@@ -52,12 +58,6 @@
   },
   "PolicySubMenuTerms": {
     "description": "Auto imported from components/policy/subMenuTerms.vue"
-  },
-  "MixinsMixin": {
-    "description": "Auto imported from components/mixins/mixin.js"
-  },
-  "Paging": {
-    "description": "Auto imported from components/paging/paging.vue"
   },
   "ModulesBanner": {
     "description": "Auto imported from components/modules/Banner.vue"
@@ -119,27 +119,6 @@
   "SupportHeadBanner": {
     "description": "Auto imported from components/support/headBanner.vue"
   },
-  "CompanyPagesRecruit": {
-    "description": "Auto imported from components/company/pages/Recruit.vue"
-  },
-  "CompanyPagesBrand": {
-    "description": "Auto imported from components/company/pages/brand.vue"
-  },
-  "CompanyValue": {
-    "description": "Auto imported from components/company/pages/companyValue.vue"
-  },
-  "CompanyPagesIntroduce": {
-    "description": "Auto imported from components/company/pages/introduce.vue"
-  },
-  "CompanyPartialsSubMenu": {
-    "description": "Auto imported from components/company/partials/subMenu.vue"
-  },
-  "CompanyPartialsSubMenuBrand": {
-    "description": "Auto imported from components/company/partials/subMenuBrand.vue"
-  },
-  "CompanyPartialsSubMenuIr": {
-    "description": "Auto imported from components/company/partials/subMenuIr.vue"
-  },
   "GnbCompany": {
     "description": "Auto imported from components/Gnb/Company/index.vue"
   },
@@ -160,6 +139,27 @@
   },
   "GnbHeaderPartialMobileHeader": {
     "description": "Auto imported from components/Gnb/headerPartial/mobileHeader.vue"
+  },
+  "CompanyPagesRecruit": {
+    "description": "Auto imported from components/company/pages/Recruit.vue"
+  },
+  "CompanyPagesBrand": {
+    "description": "Auto imported from components/company/pages/brand.vue"
+  },
+  "CompanyValue": {
+    "description": "Auto imported from components/company/pages/companyValue.vue"
+  },
+  "CompanyPagesIntroduce": {
+    "description": "Auto imported from components/company/pages/introduce.vue"
+  },
+  "CompanyPartialsSubMenu": {
+    "description": "Auto imported from components/company/partials/subMenu.vue"
+  },
+  "CompanyPartialsSubMenuBrand": {
+    "description": "Auto imported from components/company/partials/subMenuBrand.vue"
+  },
+  "CompanyPartialsSubMenuIr": {
+    "description": "Auto imported from components/company/partials/subMenuIr.vue"
   },
   "ProductsPagesMS": {
     "description": "Auto imported from components/products/pages/MS.vue"
