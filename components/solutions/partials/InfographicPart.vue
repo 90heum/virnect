@@ -194,6 +194,12 @@ export default {
 
 <style lang="scss" scoped>
 @import "~assets/css/pages/products.scss";
+img {
+  width: 100%;
+}
+p {
+  color: #292c30;
+}
 .solution-infographic-part {
   @include area-flex(1160px);
   text-align: center;

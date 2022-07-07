@@ -27,14 +27,14 @@
       :contents="$t('solutionText.oilText.infographicText.contents')"
     ></heading-module>
 
-    <infographic-part
+    <infographicPart
       :image="$t('solutionText.oilText.infographicText.image')"
       :infographicArr="
         $t('solutionText.oilText.infographicText.infographicList')
       "
       :slideList="solutionGellary"
       :btnList="infographicBtn"
-    ></infographic-part>
+    ></infographicPart>
 
     <roi-part
       :text="$t('solutionText.roiText.text')"
@@ -43,7 +43,6 @@
     <bg-slide-part
       :bgExampleArr="$t('solutionText.oilText.bgExampleList')"
     ></bg-slide-part>
-
     <offer-part
       :title="$t('solutionText.offerText.title')"
       :contents="$t('solutionText.offerText.contents')"
@@ -55,7 +54,7 @@
 <script>
 import issuePart from "../partials/IssuePart";
 import bgNormalPart from "../partials/BgNormalPart";
-import infographicPart from "../partials/InfographicPart";
+import infographicPart from "~/components/solutions/partials/InfographicPart";
 import roiPart from "../partials/RoiPart";
 import offerPart from "../partials/OfferPart";
 import bgSlidePart from "../../products/partials/BgSlidePart";
