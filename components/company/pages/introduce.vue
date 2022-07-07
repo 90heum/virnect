@@ -30,13 +30,11 @@
       <section class="aboutVirnect">
         <div class="aboutVirnectInner">
           <span class="aboutVirnectTit">
-            <h2>버넥트는 국내 최고의 산업용 XR 솔루션 전문 기업입니다.</h2>
+           <!-- {{ $t("productsText.remoteSubTitle.title") }}  -->
+
+            <h2>{{ $t("aboutVirnectContent.title") }}</h2>
             <span>
-              고객의 입장에서 현장의 문제를 분석하여 최고의 솔루션을 제공합니다.
-              <p>
-                항상 고객 중심으로 생각하며, 고객과 함께 XR 솔루션의 혁신을
-                만들어 나가고 있습니다.
-              </p>
+              {{ $t("aboutVirnectContent.content") }}
             </span>
           </span>
           <span class="aboutVirnectCont">
@@ -44,38 +42,36 @@
               <li>
                 <span> Mission </span>
                 <span>
-                  사람/로봇, 시간/공간, 정보/지식/지혜를
-                  <p>서로 연결하여 새로운 가치 창출</p>
+                  {{ $t("aboutVirnectContent.mission") }}
                 </span>
               </li>
               <li>
                 <span> Vision </span>
                 <span>
-                  글로벌 No.1 XR 플랫폼 기업 -
-                  <p>생활 전반에 XR 기술이 스며들게 한다</p>
+                 {{ $t("aboutVirnectContent.vision") }}
                 </span>
               </li>
             </ul>
             <ul class="no2Cont">
               <li>
-                <p>설립연도</p>
-                <span>2016년</span>
+                <p>{{ $t("no2Content.year") }}</p>
+                <span>{{ $t("no2Content.yearValue") }}</span>
               </li>
               <li>
-                <p>임직원</p>
-                <span>150명 +</span>
+                <p>{{ $t("no2Content.employee") }}</p>
+                <span>{{ $t("no2Content.employeeValue") }} +</span>
               </li>
               <li>
-                <p>지적재산권</p>
-                <span>95건 +</span>
+                <p>{{ $t("no2Content.property") }}</p>
+                <span>{{ $t("no2Content.propertyValue") }}</span>
               </li>
               <li>
-                <p>XR 프로젝트 수행</p>
-                <span>130건 +</span>
+                <p>{{ $t("no2Content.project") }}</p>
+                <span>{{ $t("no2Content.projectValue") }}</span>
               </li>
               <li>
-                <p>인증 및 수상</p>
-                <span>40건 +</span>
+                <p>{{ $t("no2Content.awards") }}</p>
+                <span>{{ $t("no2Content.awardsValue") }}</span>
               </li>
             </ul>
           </span>
@@ -85,8 +81,8 @@
       <section class="aboutHistory">
         <div class="aboutHistoryInner">
           <span class="aboutHistoryTit">
-            <h2>연혁</h2>
-            <p>고객과 함께 성장해온 버넥트는 더 큰 성장으로 나아가겠습니다.</p>
+            <h2>{{ $t("aboutHistoryTitle.title") }}</h2>
+            <p>{{ $t("aboutHistoryTitle.content") }}</p>
           </span>
           <span class="aboutHistoryCont">
             <ul class="aboutHistoryContTab">
@@ -98,8 +94,8 @@
             <ul class="aboutHistoryContCont" id="2021" v-if="HistoryTab === 1">
               <li class="HisLeft">
                 <div>
-                  <span>산업용 XR 리더 입지</span>
-                  <p>(글로벌 진출을 위한 발판 마련)</p>
+                  <span>{{ $t("aboutHistory2021.title") }}</span>
+                  <p>{{ $t("aboutHistory2021.content") }}</p>
                 </div>
                 <i>
                   <img
@@ -110,22 +106,22 @@
               </li>
               <li class="HisRight">
                 <ul>
-                  <li>• 시리즈 B 투자 유치 (300억)</li>
-                  <li>• VIRNECT Track Beta 출시</li>
-                  <li>• 제 1회 VIRTUAL CONNECT 개최</li>
-                  <li>• 7개사 비즈니스 파트너십 체결</li>
-                  <li>• 페루 Proximity와 파트너십 체결 및 수출</li>
-                  <li>• 국내 특허 15건, 해외 특허 2건 등록</li>
-                  <li>• 국내외 저작권 등록 20건</li>
-                  <li>• ESG팀 설립 및 활동 진행</li>
+                  <li>{{ $t("aboutHistory2021.list1") }}</li>
+                  <li>{{ $t("aboutHistory2021.list2") }}</li>
+                  <li>{{ $t("aboutHistory2021.list3") }}</li>
+                  <li>{{ $t("aboutHistory2021.list4") }}</li>
+                  <li>{{ $t("aboutHistory2021.list5") }}</li>
+                  <li>{{ $t("aboutHistory2021.list6") }}</li>
+                  <li>{{ $t("aboutHistory2021.list7") }}</li>
+                  <li>{{ $t("aboutHistory2021.list8") }}</li>
                 </ul>
               </li>
             </ul>
             <ul class="aboutHistoryContCont" id="2020" v-if="HistoryTab === 2">
               <li class="HisLeft">
                 <div>
-                  <span>통합솔루션 출시</span>
-                  <p>(아기유니콘 선정)</p>
+                  <span>{{ $t("aboutHistory2020.title") }}</span>
+                  <p>{{ $t("aboutHistory2020.content") }}</p>
                 </div>
                 <i>
                   <img
@@ -136,21 +132,21 @@
               </li>
               <li class="HisRight">
                 <ul>
-                  <li>• 통합솔루션 출시(AR 솔루션 v2.0)</li>
-                  <li>• VIRNECT Twin 출시</li>
-                  <li>• 비엔나 리서치 센터 설립</li>
-                  <li>• 버넥트 익스피리언스 센터 개관</li>
-                  <li>• 해외 특허 등록 (5건)</li>
-                  <li>• 디지털 뉴딜 민관 협력 MOU 체결</li>
-                  <li>• 생산성 본부, 삼성 멀티미디어 캠퍼스 교육</li>
+                  <li>{{ $t("aboutHistory2020.list1") }}</li>
+                  <li>{{ $t("aboutHistory2020.list2") }}</li>
+                  <li>{{ $t("aboutHistory2020.list3") }}</li>
+                  <li>{{ $t("aboutHistory2020.list4") }}</li>
+                  <li>{{ $t("aboutHistory2020.list5") }}</li>
+                  <li>{{ $t("aboutHistory2020.list6") }}</li>
+                  <li>{{ $t("aboutHistory2020.list7") }}</li>
                 </ul>
               </li>
             </ul>
             <ul class="aboutHistoryContCont" id="2019" v-if="HistoryTab === 3">
               <li class="HisLeft">
                 <div>
-                  <span>시리즈 A 투자 유치</span>
-                  <p>(다양한 분야로의 사업 확장)</p>
+                  <span>{{ $t("aboutHistory2019.title") }}</span>
+                  <p>{{ $t("aboutHistory2019.content") }}</p>
                 </div>
                 <i>
                   <img
@@ -161,18 +157,18 @@
               </li>
               <li class="HisRight">
                 <ul>
-                  <li>• VIRNECT Make 출시</li>
-                  <li>• 시리즈 A 투자 유치 (90억)</li>
-                  <li>• 현대HDS 외 5개사 MOU 체결</li>
-                  <li>• Realwear 스마트글라스 공급사 등록</li>
+                  <li>{{ $t("aboutHistory2019.list1") }}</li>
+                  <li>{{ $t("aboutHistory2019.list2") }}</li>
+                  <li>{{ $t("aboutHistory2019.list3") }}</li>
+                  <li>{{ $t("aboutHistory2019.list4") }}</li>
                 </ul>
               </li>
             </ul>
             <ul class="aboutHistoryContCont" id="2017~2018" v-if="HistoryTab === 4">
               <li class="HisLeft">
                 <div>
-                  <span>기업용 SW 시장 진출</span>
-                  <p>(2년 연속 매출 2배 성장)</p>
+                  <span>{{ $t("aboutHistory2017_2018.title") }}</span>
+                  <p>{{ $t("aboutHistory2017_2018.content") }}</p>
                 </div>
                 <i>
                   <img
@@ -183,19 +179,19 @@
               </li>
               <li class="HisRight">
                 <ul>
-                  <li>• VIRNECT Remote 출시(17’)</li>
-                  <li>• VIRNECT View 출시(18’)</li>
-                  <li>• 기업 부설 연구소 설립</li>
-                  <li>• 엡손 스마트글라스 기술지원업체 선정</li>
-                  <li>• KAIST ARRC 파트너십 체결</li>
-                  <li>• 스마트공장추진단 협력사 등록</li>
+                  <li>{{ $t("aboutHistory2017_2018.list1") }}</li>
+                  <li>{{ $t("aboutHistory2017_2018.list2") }}</li>
+                  <li>{{ $t("aboutHistory2017_2018.list3") }}</li>
+                  <li>{{ $t("aboutHistory2017_2018.list4") }}</li>
+                  <li>{{ $t("aboutHistory2017_2018.list5") }}</li>
+                  <li>{{ $t("aboutHistory2017_2018.list6") }}</li>
                 </ul>
               </li>
             </ul>
             <ul class="aboutHistoryContCont" id="2016" v-if="HistoryTab === 5">
               <li class="HisLeft">
                 <div>
-                  <span>주식회사 VIRNECT 설립</span>
+                  <span>{{ $t("aboutHistory2016.title") }}</span>
                 </div>
                 <i>
                   <img
@@ -206,7 +202,8 @@
               </li>
               <li class="HisRight">
                 <ul>
-                  <li>• SEEREAL Viewer 출시</li>
+                  <li>{{ $t("aboutHistory2016.list1") }}</li>
+                  <li>{{ $t("aboutHistory2016.list2") }}</li>
                 </ul>
               </li>
             </ul>
@@ -217,7 +214,7 @@
         <div class="customersInner">
           <span class="customersTit">
             <h2>CUSTOMERS</h2>
-            <p>버넥트는 항상 고객의 가치를 최우선으로 합니다.</p>
+            <p>{{ $t("customersContent.content") }}</p>
           </span>
           <span class="customersCont">
             <ul class="customerContTab">

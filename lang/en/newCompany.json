@@ -15,5 +15,73 @@
                 "url": ""
             }
         ]
+    },
+
+    "aboutVirnectTitle": {
+        "title" : "버넥트는 국내 최고의 산업용 XR 솔루션 전문 기업입니다.<영문 없음>",
+        "content" : "VIRNECT is a leading industrial XR solution company. We connect critical data from industrial sites through virtual reality. We enable our customers to access the information they need from anywhere through XR services. We create value by linking people/robots, time/space, information/knowledge/wisdom, and we are striving to grow into the global No.1 XR platform company for a world where XR technology is used in all aspects of life."
+    },
+
+    "aboutVirnectContent": {
+        "mission" : "Create a Smart, Convenient, and Sustainable Low-Carbon Future By connecting reality/virtuality, people/robots, time/space, and information/knowledge/wisdom.",
+        "vision" : "Global No.1 XR Platform Company A world where XR technology permeate every aspect of our life"
+    },
+
+    "no2Content": {
+        "year" : "Established in",
+        "yearValue" : "2016",
+        "employee" : "A team of",
+        "employeeValue" : "150+ people",
+        "property" : "Intellectual Property Rights Registered",
+        "propertyValue" : "95+ cases",
+        "project" : "successful XR projects",
+        "projectValue" : "130+ cases",
+        "awards" : "Certificates and awards",
+        "awardsValue" : "40건+ cases"
+    },
+
+    "aboutHistoryTitle": {
+        "title": "연혁",
+        "content": "고객과 함께 성장해온 버넥트는 더 큰 성장으로 나아가겠습니다."
+    },
+
+
+    "aboutHistory2021": {
+        "title": "Industrial XR leader",
+        "list1": "• Raised USD 30 million in Series B funding",
+        "list2": "• Launched VIRNECT Track",
+        "list3": "• Received the Korea Metaverse Award & IT World Award (XR Solution Category)"
+    },
+
+    "aboutHistory2020": {
+        "title": "Overseas markets",
+        "list1": "• Launched VIRNECT Twin",
+        "list2": "• Established the VIRNECT Vienna Research Center"
+    },
+
+    "aboutHistory2019": {
+        "title": "Series A funding",
+        "list1": "• Obtained GS certification Level 1",
+        "list2": "• Received 8 awards including one from the Minister of Science and ICT of Korea",
+        "list3": "• Raised USD 9 million in Series A funding"
+    },
+
+    "aboutHistory2017_2018": {
+        "title": "Domestic market / Solution development ",
+        "list1": "• Launched VIRNECT Remote(17’)",
+        "list2": "• Won 1st place in KT 5G competition(17’)",
+        "list3": "• Launched SEEREAL Viewer",
+        "list4": "• Achieved the Special & Gold Awards at International Exhibition of Inventions Geneva"
+    },
+
+    "aboutHistory2016": {
+        "title": "Established",
+        "list1": "• Launched SEEREAL Viewer",
+        "list2": "• Achieved the Special & Gold Awards at International Exhibition of Inventions Geneva"
+    },
+
+    "customersContent": {
+        "content": "Growing together by putting our customers first"
     }
+
 }
