@@ -6,7 +6,7 @@
             <li>등록일</li>
         </ul>
 
-        <ul v-for="(data, idx) of contentData"
+        <ul v-for="(data, idx) of contentData || []"
             :key="idx">
             <li>{{$i18n.localeProperties.code === "ko" ? data.typeName : data.typeNameEn}}</li>
             <li>
@@ -34,7 +34,7 @@ export default {
         pagingData: Object,
         contentData: Array,
         movePage: Function,
-        isType: Number
+        isType: [Number, Boolean]
     }
 }
 </script>
