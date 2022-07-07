@@ -84,6 +84,13 @@
     "_name": "_4e70612d"
   },
   {
+    "name": "products-productsMain",
+    "path": "/products/productsMain",
+    "component": "/Users/hellodigital/virnect/pages/products/productsMain.vue",
+    "chunkName": "pages/products/productsMain",
+    "_name": "_4a526af8"
+  },
+  {
     "name": "products-remote",
     "path": "/products/remote",
     "component": "/Users/hellodigital/virnect/pages/products/remote.vue",

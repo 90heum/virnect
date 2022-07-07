@@ -34,12 +34,14 @@
 export default {
   created(){
      setTimeout(() => {
-      if(process.client)document.querySelector('.SubMenuUse').scrollIntoView({behavior: 'smooth'}); 
+      /* if(process.client)document.querySelector('.SubMenuUse').scrollIntoView({behavior: 'smooth'});  */
    },500); 
   },
   methods: {
     subScroll(){
-      if(process.client)document.querySelector('.SubMenuUse').scrollIntoView({behavior: 'smooth'});
+      if(process.client){
+        document.querySelector('.SubMenuUse').scrollIntoView({behavior: 'smooth'});
+      }
     }
   }
 };

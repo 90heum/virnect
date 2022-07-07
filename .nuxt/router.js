@@ -16,6 +16,7 @@ const _7a0067cb = () => interopDefault(import('../pages/policy/Policy.vue' /* we
 const _54fd7904 = () => interopDefault(import('../pages/policy/Terms.vue' /* webpackChunkName: "pages/policy/Terms" */))
 const _22b4b5b5 = () => interopDefault(import('../pages/products/make.vue' /* webpackChunkName: "pages/products/make" */))
 const _4e70612d = () => interopDefault(import('../pages/products/ms.vue' /* webpackChunkName: "pages/products/ms" */))
+const _4a526af8 = () => interopDefault(import('../pages/products/productsMain.vue' /* webpackChunkName: "pages/products/productsMain" */))
 const _93f92766 = () => interopDefault(import('../pages/products/remote.vue' /* webpackChunkName: "pages/products/remote" */))
 const _1687e814 = () => interopDefault(import('../pages/products/track.vue' /* webpackChunkName: "pages/products/track" */))
 const _fa89aca2 = () => interopDefault(import('../pages/products/twin.vue' /* webpackChunkName: "pages/products/twin" */))
@@ -94,6 +95,10 @@ export const routerOptions = {
     path: "/products/ms",
     component: _4e70612d,
     name: "products-ms"
+  }, {
+    path: "/products/productsMain",
+    component: _4a526af8,
+    name: "products-productsMain"
   }, {
     path: "/products/remote",
     component: _93f92766,

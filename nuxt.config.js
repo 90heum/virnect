@@ -1,5 +1,5 @@
 export default {
-  server: {host: "0.0.0.0", port: 3000},
+  server: { host: "0.0.0.0", port: 3000 },
   target: 'server',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -39,7 +39,7 @@ export default {
   modules: [
     ['nuxt-agile'],
     ['@nuxtjs/dayjs'],
-    [ '@nuxtjs/proxy'],
+    ['@nuxtjs/proxy'],
     ['@nuxtjs/axios'],
     // Doc: https://http.nuxtjs.org
     [
@@ -55,11 +55,13 @@ export default {
         locales: [
           {
             code: "en",
+            iso: "en",
             name: "English",
             file: "en/index.js"
           },
           {
             code: "ko",
+            iso: "ko",
             name: "korean",
             file: "ko/index.js"
           }
@@ -77,6 +79,6 @@ export default {
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    
+
   }
 }
