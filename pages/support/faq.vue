@@ -17,7 +17,7 @@
                     <img src="https://velog.velcdn.com/images/kyj0206/post/ca9d309b-94ce-41db-a002-66a2f0d76ff8/image.png" alt="prebutton">
                 </div>
 
-                <span v-for="(data, idx) of typeList" 
+                <span v-for="(data, idx) of typeList || []" 
                       :class="`${isCategory === (data.id) ? 'active' : ''}`"
                       :key="idx"
                       @click="chooseCategory(data.id)">{{$i18n.localeProperties.code === "ko" ? data.name : data.nameEn}}</span>
@@ -51,8 +51,8 @@ import FaqContents from "~/components/support/faq/FaqContents.vue";
 export default {
     data() {
         return {
-            isCategory: 3,
-            isType: null,
+            isCategory: Number(this.$route.query.categoryId) || 3,
+            isType: Number(this.$route.query.typeId) || null,
             typeList: [],
             asideMenuList: [],
             contentList: [],
@@ -86,9 +86,9 @@ export default {
         movePage (currentPage) {
             this.pagingData = {...this.pagingData, currentPage: currentPage};
             this.chooseType(this.isType, true);
-
         },
         async chooseCategory (e) {
+            this.$router.push(`?categoryId=${e}`)
             this.isCategory = e;
             try{
                 const data = Promise.all([this.$axios.$get(`admin/support/faq/type?categoryId=${this.isCategory}`), 
@@ -109,6 +109,7 @@ export default {
         },
 
         async chooseType (e, isPaging = false) {
+            this.$router.push(`?typeId=${e ? e : ''}${this.isCategory ? '&categoryId=' + this.isCategory : ''}`);
             this.isType = e;
             if (!isPaging) this.pagingData = {...this.pagingData, currentPage: 1 };
             try {
@@ -126,13 +127,15 @@ export default {
             } catch(e) { console.error(e) };
         }
     },
-    async asyncData ({$axios}) {
+    async asyncData ({$axios, route}) {
+        const routePath = route.query.typeId ? route.query.typeId : '';
+        const routeCategory = route.query.categoryId ? route.query.categoryId : 3;
         try{
             const data = Promise.all([$axios.$get("admin/support/faq/category"), 
-                                      $axios.$get("admin/support/faq/type?categoryId=3"), 
+                                      $axios.$get(`admin/support/faq/type?categoryId=${routeCategory}`), 
                                       $axios.$get("admin/support/faq", {params: {
-                                          category: 3,
-                                          type: null,
+                                          category: routeCategory,
+                                          type: routePath,
                                           device: null,
                                           pageRequest: {
                                               page: 1,
@@ -145,7 +148,7 @@ export default {
                 typeList: dataJson[0].data.categoryList, 
                 asideMenuList: dataJson[1].data.typeList, 
                 contentList: dataJson[2].data.supportFaqDTOList,
-                pagingData: dataJson[2].data.pageMetadataResponse
+                pagingData: dataJson[2].data.pageMetadataResponse,
             };
         } catch (e) {console.error(e)}
             

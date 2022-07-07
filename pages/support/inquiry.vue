@@ -25,8 +25,8 @@
                     <p>아래 문의 유형을 선택하시고, 내용을 작성해주시면 신속하게 답변 드리겠습니다.</p>
                     <span class="formTab">
                         <ul>
-                            <li :class="`${isTab === 1 ? 'active' : ''}`"
-                                @click="chooseTab(1)">데모신청</li>
+                            <!-- <li :class="`${isTab === 1 ? 'active' : ''}`"
+                                @click="chooseTab(1)">데모신청</li> -->
                             <li :class="`${isTab === 2 ? 'active' : ''}`"
                                 @click="chooseTab(2)">구매문의</li>
                             <li :class="`${isTab === 3 ? 'active' : ''}`"
@@ -130,7 +130,7 @@ export default {
     data() {
         return {
             chosenMenu: true,
-            isTab: 1
+            isTab: 2
         }
     },
     methods: {
@@ -447,7 +447,8 @@ export default {
         ul{
             display: flex;
             li{
-                width: 25%;
+                // width: 25%;
+                flex: 1;
                 padding: 30px 10px;
                 font-size: 14px;
                 font-weight: bold;

@@ -6,7 +6,7 @@
       :category="'XR Devices'"
       :title="$t('companyText.msText.title')"
     ></sub-visual-section>
-    <snb-section :snbArr="$t('gnb[1].array')"></snb-section>
+    <!-- <snb-section :snbArr="$t('gnb[1].array')"></snb-section> -->
     <transition name="app-fade" mode="out-in">
       <ms-component />
     </transition>

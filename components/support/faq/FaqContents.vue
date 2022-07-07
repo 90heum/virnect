@@ -3,7 +3,7 @@
 <div>
     <span class="FAQList">
        <div class="FAQListInnerWrap"
-            v-for="(data, idx) of contentList"
+            v-for="(data, idx) of contentList||[]"
             :key="idx"
             @click="chooseDetail(data.id)">
             <ul>
