@@ -2,7 +2,7 @@
   <section class="effect-part dark" :id="`${id}`">
     <div class="heading-wrap">
       <p class="category">{{ category }}</p>
-      <p class="title" v-html="title"></p>
+      <h2 class="title" v-html="title"></h2>
       <p class="contents" v-html="contents"></p>
     </div>
     <div
@@ -23,18 +23,18 @@
     <!-- <button class="grey-btn light">{{ greyBtn }}</button> -->
     <!-- <button class="blue-btn light">{{blueBtn}}</button> -->
     <client-only>
-    <swiper
-      :options="effectOptions"
-      class="effectlist-wrap"
-      v-if="isMobile"
-      :style="`background-image : url(require(${bg}))`"
-    >
-      <swiper-slide v-for="(list, idx) of effectArr" :key="idx">
-        <p class="title">{{ list.title }}</p>
-        <p class="contents" v-html="list.contents"></p>
-      </swiper-slide>
-    </swiper>
-    <ul class="pagination effect" slot="pagination" v-if="isMobile"></ul>
+      <swiper
+        :options="effectOptions"
+        class="effectlist-wrap"
+        v-if="isMobile"
+        :style="`background-image : url(require(${bg}))`"
+      >
+        <swiper-slide v-for="(list, idx) of effectArr" :key="idx">
+          <p class="title">{{ list.title }}</p>
+          <p class="contents" v-html="list.contents"></p>
+        </swiper-slide>
+      </swiper>
+      <ul class="pagination effect" slot="pagination" v-if="isMobile"></ul>
     </client-only>
   </section>
 </template>
@@ -57,8 +57,7 @@ export default {
       isMobile: false,
       activeIndex: "0",
       effectOptions: {
-        breakpoints: {
-        },
+        breakpoints: {},
         loop: true,
         pagination: {
           el: ".pagination.effect",
@@ -89,6 +88,12 @@ export default {
 <style lang="scss" scoped>
 @import "~assets/css/mixin.scss";
 .effect-part {
+  h2 {
+    font-size: 44px;
+  }
+  p {
+    font-size: 16px;
+  }
   position: relative;
   margin-top: 258px;
   text-align: center;
@@ -220,13 +225,13 @@ export default {
   }
 }
 @media screen and (max-width: 1200px) {
-    .carousel-wrapper li.swiper-pagination-bullet {
-      margin-right: 10px!important;
-    }
-    .carousel-wrapper .pagination {
-      display: flex!important;
-      width: 100%!important;
-      justify-content: center!important;
-    }
+  .carousel-wrapper li.swiper-pagination-bullet {
+    margin-right: 10px !important;
+  }
+  .carousel-wrapper .pagination {
+    display: flex !important;
+    width: 100% !important;
+    justify-content: center !important;
+  }
 }
 </style>

@@ -129,7 +129,7 @@ export default {
           "https://player.vimeo.com/external/560736136.hd.mp4?s=34d4f2557f02474e88d1c1450bbecf3ae5ebb8cb&profile_id=174",
       },
       functionIconImage:
-        "../images/pages/products/img-products-make-function-0",
+        "~assets/images/pages/products/img-products-remote-function-0",
       effectBG: "../images/pages/products/img-make-effect",
       supportTitle: {
         align: "left",
