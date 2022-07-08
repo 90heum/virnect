@@ -48,6 +48,7 @@ header {
                     li {
                         width: 20%;
 
+
                         a {
                             white-space: nowrap;
                             display: flex;
@@ -81,8 +82,7 @@ header {
                                         display: block;
                                     }
 
-                                    .downIcon1 {
-                                    }
+                                    .downIcon1 {}
 
                                     .subNavProducts {
                                         display: block;
@@ -582,9 +582,10 @@ header {
                     letter-spacing: normal;
                     color: #9a9da3;
                     margin-bottom: 30px;
-                    
+
                     a {
                         color: #9a9da3;
+
                         u {
                             color: #9a9da3;
                         }
@@ -1173,6 +1174,7 @@ header {
 
                 a {
                     cursor: pointer;
+
                     &:hover {
                         color: inherit;
                     }

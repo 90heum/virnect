@@ -1,7 +1,7 @@
 <template>
   <div>
       <!-- 헤더 -->
-      <head-banner />
+      <inquiry-banner/>
 
     <!-- 콘텍트 콘텐츠 -->
     <section class="contactTab">
@@ -25,8 +25,8 @@
                     <p>아래 문의 유형을 선택하시고, 내용을 작성해주시면 신속하게 답변 드리겠습니다.</p>
                     <span class="formTab">
                         <ul>
-                            <!-- <li :class="`${isTab === 1 ? 'active' : ''}`"
-                                @click="chooseTab(1)">데모신청</li> -->
+                            <li :class="`${isTab === 1 ? 'active' : ''}`"
+                                @click="chooseTab(1)">데모신청</li>
                             <li :class="`${isTab === 2 ? 'active' : ''}`"
                                 @click="chooseTab(2)">구매문의</li>
                             <li :class="`${isTab === 3 ? 'active' : ''}`"
@@ -118,19 +118,19 @@
 
 <script>
 import SubMenu from "~/components/support/SubMenu.vue";
-import HeadBanner from '~/components/support/headBanner.vue';
 import GoogleMap from "~/components/support/faq/GoogleMap.vue";
+import InquiryBanner from "../../components/support/inquiryBanner.vue";
 
 export default {
     components: {
-        SubMenu,
-        HeadBanner,
-        GoogleMap
-    },
+    SubMenu,
+    GoogleMap,
+    InquiryBanner
+},
     data() {
         return {
             chosenMenu: true,
-            isTab: 2
+            isTab: 1
         }
     },
     methods: {
@@ -447,8 +447,7 @@ export default {
         ul{
             display: flex;
             li{
-                // width: 25%;
-                flex: 1;
+                width: 25%;
                 padding: 30px 10px;
                 font-size: 14px;
                 font-weight: bold;
