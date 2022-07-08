@@ -55,11 +55,24 @@ import UserManual from "~/components/support/learning-center/userManual.vue";
 import VideoTutoral from "~/components/support/learning-center/videoTutorial.vue";
 import VideoRealGuide from "~/components/support/learning-center/videoRealGuide.vue";
 
-export default {
+export default { 
+    watch: {
+        '$route' (to, from) {
+            // this.chooseTabMenu(Number(this.$route.query.category) || 1)
+            this.isTabMenu = Number(this.$route.query.category) || 1;
+            this.isTypeMenu = Number(this.$route.query.type)||null;
+            this.requestData();
+        }
+    },
+    updated() {
+        console.log(Number(this.$route.query.category));
+    },
     data () {
         return {
             isTabMenu: Number(this.$route.query.category) || 1,
-            isTypeMenu: Number(this.$route.query.type) === 0 ? Number(this.$route.query.type) : Number(this.$route.query.type) || null,
+            isTypeMenu: Number(this.$route.query.type)||null,
+            // isTabMenu: 1,
+            // isTypeMenu: 1,
             pagingData: {
                 currentPage: 1,
                 currentSize: 20,
@@ -78,17 +91,17 @@ export default {
         },
         chooseTabMenu (e) {
             this.$router.push(`?category=${e ? e : ''}`)
-            this.isTabMenu = e;
-            this.isTypeMenu = null;
-            this.requestData();
+            // this.isTabMenu = e;
+            // this.isTypeMenu = null;
+            // this.requestData();
         },
         chooseTypeMenu (e) {
-            this.$router.push(`?category=${this.isTabMenu === 0 || !this.isTabMenu ? '' : this.isTabMenu}&type=${e === 0 ? 0 : e ? e: ''}`)
-            this.isTypeMenu = e;
-            this.requestData();
+            this.$router.push(`?category=${this.isTabMenu ? this.isTabMenu : ''}&type=${e || ''}`)
+            // this.isTypeMenu = e;
+            // this.requestData();
         },
         requestData () {
-            this.$axios.get(`admin/support/learning?page=${this.pagingData.currentPage}&size=${this.pagingData.currentSize}&categoryId=${this.isTabMenu === 0 ? '' : this.isTabMenu}&typeId=${this.isTypeMenu === 0 ? 0 : this.isTypeMenu ? this.isTypeMenu : ''}`)
+            this.$axios.get(`admin/support/learning?page=${this.pagingData.currentPage}&size=${this.pagingData.currentSize}&categoryId=${this.isTabMenu ? this.isTabMenu : ''}&typeId=${this.isTypeMenu ? this.isTypeMenu === 5 ? 0 : this.isTypeMenu : ''}`)
             .then(res => this.contentList = res.data.data)
             .catch(e => console.error(e))
         }
@@ -104,12 +117,13 @@ export default {
         VideoRealGuide
     },
     async asyncData ({$axios, route}) {
-        const routeCategory = route.query.category || 1;
-        const routeType = route.query.type || null;
+        const routeCategory = Number(route.query.category) || 1;
+        const routeType = Number(route.query.type)||null;
+        console.log(routeType, routeCategory, ">> : " , routeType ? routeType === 5 ? 0 : routeType : '')
         try {
             const data = Promise.all([$axios.get("admin/support/learning/category"),
                                       $axios.get("admin/support/learning/type"),
-                                      $axios.get(`admin/support/learning?categoryId=${routeCategory}&typeId=${routeType === 0 ? 0 : routeType ? routeType : ''}&page=1&size=${20}`)]);
+                                      $axios.get(`admin/support/learning?categoryId=${routeCategory}&typeId=${routeType ? routeType === 5 ? 0 : routeType : ''}&page=1&size=${20}`)]);
             const dataJson = await data;
             return {
                 categoryList: dataJson[0].data.data.categoryList, 

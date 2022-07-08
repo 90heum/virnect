@@ -1,12 +1,12 @@
 <template>
     <!-- Video Tutorial -->
     <div class="tutorialBox"
-         v-if="isDetailList === 0 || isDetailList === null || isDetailList === 2 || isDetailList === 3">
+         v-if="isDetailList === 5 || isDetailList === null || isDetailList === 2 || isDetailList === 3">
         <!-- 타이틀 -->
         
         <span class="tutorialBoxTit">
             <p>Video Tutorial</p>
-            <p @click="chooseTypeMenu(0)">
+            <p @click="chooseTypeMenu(5)">
                 {{ $i18n.localeProperties.code === "ko" ? "전체보기" : "All"}}
                 <i>
                     <img src="https://velog.velcdn.com/images/kyj0206/post/bf391c7f-fbc8-466f-af3a-9f6ca4433529/image.png" alt="more">
@@ -15,7 +15,7 @@
         </span>
         <!-- 컨텐츠박스 -->
         <span class="tutorialBoxCont">
-            <div v-for="(data, idx) of contentList ? contentList.filter((e, idx) => {
+            <div v-for="(data, idx) of contentList.length > 0 ? contentList.filter((e, idx) => {
                     if (!isDetailList && idx < 3) {
                         return e;
                     } else if (isDetailList) {
@@ -23,7 +23,7 @@
                     }
                 }) : []"
                  :key="idx">
-                <nuxt-link :to="`learning-video-detail?noticeId=${data.id}`">
+                <nuxt-link :to="`learning-video-detail?category=${data.id}`">
                     <span class="listImg">
                         <img :src="`${data.thumbnail ? data.thumbnail : 'https://velog.velcdn.com/images/kyj0206/post/75a8bf3a-fe84-47e5-aa54-fca6f438b599/image.png'}`" />
                     </span>
@@ -44,7 +44,7 @@
             <button><a href="#">{{$i18n.localeProperties.code === "ko" ? "전체보기" : "All"}}</a></button>
         </span>
 
-        <div v-if="isDetailList || isDetailList === 0">
+        <div v-if="isDetailList || isDetailList === 5">
             <common-paging :pagingData="pagingData"
                            :movePage="movePage"/>
         </div>
@@ -60,7 +60,7 @@ export default {
     },
     props: {
         contentList: Array,
-        isDetailList: [Number, Boolean],
+        isDetailList: Number,
         pagingData: Object,
         movePage: Function,
         chooseTypeMenu: Function

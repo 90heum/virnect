@@ -14,7 +14,7 @@
         </span>
         <!-- 컨텐츠박스 -->
         <span class="guideBoxCont">
-            <div v-for="(data, idx) of contentList ? contentList.filter((e, idx) => {
+            <div v-for="(data, idx) of contentList.length > 0 ? contentList.filter((e, idx) => {
                     if (!isDetailList && idx < 3) {
                         return e;
                     } else if (isDetailList) {
@@ -22,7 +22,7 @@
                     }
                 }) : []"
                 :key="idx">
-                <nuxt-link :to="`learning-video-detail?noticeId=${data.id}`">
+                <nuxt-link :to="`learning-video-detail?category=${data.id}`">
                     <span class="listImg">
                         <img :src="`${data.thumbnail ? data.thumbnail : 'https://velog.velcdn.com/images/kyj0206/post/75a8bf3a-fe84-47e5-aa54-fca6f438b599/image.png'}`" />
                     </span>
@@ -59,7 +59,7 @@ export default {
     },
     props: {
         contentList: Array,
-        isDetailList: [Number, Boolean],
+        isDetailList: Number,
         pagingData: Object,
         movePage: Function,
         chooseTypeMenu: Function

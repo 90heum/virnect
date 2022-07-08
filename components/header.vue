@@ -489,7 +489,7 @@
                     :key="idx"
                     @click="[changeGnbColor(`list3`),gnbStyleBorder = {gnbStyle3:true}]"
                   >
-                    <nuxt-link :to="list.url"
+                    <nuxt-link :to="`/support/notice?type=${list.url}`"
                       ><u>-{{ list.title }}</u></nuxt-link
                     >
                   </li>
@@ -510,7 +510,7 @@
                       :key="idx"
                       @click="[changeGnbColor(`list3`), gnbStyleBorder = {gnbStyle3:true}]"
                     >
-                      <nuxt-link :to="list.url"
+                      <nuxt-link :to="`/support/faq?category=${list.url}`"
                         ><u>-{{ list.title }}</u></nuxt-link
                       >
                     </li>
@@ -523,7 +523,7 @@
                     <nuxt-link to="/support/learning-center">학습센터</nuxt-link>
                   </li>
                   <li
-                    v-for="(list, idx) of $t('gnb[1].array').filter(
+                    v-for="(list, idx) of $t('supportText.menuList.learningCenter.list').filter(
                       (e, idx) => {
                         if (idx < 3) return e;
                       }
@@ -531,8 +531,8 @@
                     :key="idx"
                     @click="changeGnbColor(`list3`)"
                   >
-                    <nuxt-link :to="list.to">
-                      <u>{{ list.text }}</u>
+                    <nuxt-link :to="`/support/learning-center?category=${list.url}`">
+                      <u>{{ list.title }}</u>
                     </nuxt-link>
                   </li>
                 </ul>

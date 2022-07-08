@@ -49,7 +49,7 @@
                 <span class="tutorialBoxCont">
                     <div v-for="(data, idx) of contentList"
                          :key="idx">
-                        <nuxt-link :to="`detail?id=${data.id}&typeId=${isType ? isType : ''}`">
+                        <nuxt-link :to="`detail?id=${data.id}&type=${isType ? isType : ''}`">
                             <span class="listImg">
                                 <img :src="`${data.thumbnail ? data.thumbnail : 'https://velog.velcdn.com/images/kyj0206/post/75a8bf3a-fe84-47e5-aa54-fca6f438b599/image.png'}`" alt="디폴트 이미지">
                             </span>
@@ -103,7 +103,7 @@ export default {
       async handleIsType (e, isPaging = false) {
         this.isType = e;
         if (!isPaging) this.pagingData = {...this.pagingData, currentPage: 1 };
-        await this.$axios.get(`admin/news?page=${this.pagingData.currentPage}&size=${this.pagingData.currentSize}&typeId=${this.isType ? this.isType : ''}`)
+        await this.$axios.get(`admin/news?page=${this.pagingData.currentPage}&size=${this.pagingData.currentSize}&type=${this.isType ? this.isType : ''}`)
                           .then(res => {
                             this.contentList = res.data.data.newsBoardResponseList;
                           })

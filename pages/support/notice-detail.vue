@@ -48,7 +48,7 @@
                                     </i>
                                 </li>
                                 <li>
-                                    <nuxt-link :to="`notice-detail?id=${contentData.prevId||id}&type=${type ? type : ''}`">
+                                    <nuxt-link :to="`notice-detail?id=${contentData.prevId||id}&typeId=${type ? type : ''}`">
                                         {{contentData.prevTitle||"이전 글이 존재하지 않습니다."}}
                                     </nuxt-link>
                                 </li>
@@ -64,7 +64,7 @@
                                     </i>
                                 </li>
                                 <li>
-                                    <nuxt-link :to="`notice-detail?id=${contentData.nextId||id}&type=${type ? type : ''}`">
+                                    <nuxt-link :to="`notice-detail?id=${contentData.nextId||id}&typeId=${type ? type : ''}`">
                                         {{contentData.nextTitle||"디음 글이 존재하지 않습니다."}}
                                     </nuxt-link>
                                 </li>

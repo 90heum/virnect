@@ -32,6 +32,11 @@ import AsideMenu from "~/components/support/notice/AsideMenu.vue";
 import NoticeContents from "~/components/support/notice/NoticeContents.vue";
 
 export default {
+    watch: {
+        '$route' (to, from) {
+            this.chooseType(Number(this.$route.query.type) || null)
+        }
+    },
     components: {
         HeadBanner,
         SubMenu,

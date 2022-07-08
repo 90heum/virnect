@@ -49,10 +49,16 @@ import AsideMenu from "~/components/support/faq/AsideMenu.vue";
 import FaqContents from "~/components/support/faq/FaqContents.vue";
 
 export default {
+    watch: {
+        '$route' (to, from) {
+            // this.chooseCategory(Number(this.$route.query.category) || null)
+            this.isType = Number(this.$route.query.type)||null;
+        }
+    },
     data() {
         return {
-            isCategory: Number(this.$route.query.categoryId) || 3,
-            isType: Number(this.$route.query.typeId) || null,
+            isCategory: Number(this.$route.query.category) || 3,
+            isType: Number(this.$route.query.type) || null,
             typeList: [],
             asideMenuList: [],
             contentList: [],
@@ -88,7 +94,7 @@ export default {
             this.chooseType(this.isType, true);
         },
         async chooseCategory (e) {
-            this.$router.push(`?categoryId=${e}`)
+            this.$router.push(`?category=${e}`)
             this.isCategory = e;
             try{
                 const data = Promise.all([this.$axios.$get(`admin/support/faq/type?categoryId=${this.isCategory}`), 
@@ -109,7 +115,7 @@ export default {
         },
 
         async chooseType (e, isPaging = false) {
-            this.$router.push(`?typeId=${e ? e : ''}${this.isCategory ? '&categoryId=' + this.isCategory : ''}`);
+            this.$router.push(`?type=${e ? e : ''}${this.isCategory ? '&category=' + this.isCategory : ''}`);
             this.isType = e;
             if (!isPaging) this.pagingData = {...this.pagingData, currentPage: 1 };
             try {
@@ -128,8 +134,8 @@ export default {
         }
     },
     async asyncData ({$axios, route}) {
-        const routePath = route.query.typeId ? route.query.typeId : '';
-        const routeCategory = route.query.categoryId ? route.query.categoryId : 3;
+        const routePath = route.query.type ? route.query.type : '';
+        const routeCategory = route.query.category ? route.query.category : 3;
         try{
             const data = Promise.all([$axios.$get("admin/support/faq/category"), 
                                       $axios.$get(`admin/support/faq/type?categoryId=${routeCategory}`), 
