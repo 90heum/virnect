@@ -48,6 +48,7 @@ header {
                     li {
                         width: 20%;
 
+
                         a {
                             white-space: nowrap;
                             display: flex;
@@ -80,7 +81,6 @@ header {
                                     .upIcon1 {
                                         display: block;
                                     }
-
 
 
                                     .subNavProducts {
@@ -568,9 +568,10 @@ header {
                     letter-spacing: normal;
                     color: #9a9da3;
                     margin-bottom: 30px;
-                    
+
                     a {
                         color: #9a9da3;
+
                         u {
                             color: #9a9da3;
                         }
@@ -1157,6 +1158,8 @@ header {
                 border-bottom: solid 1px #c5c8cf;
 
                 a {
+                    cursor: pointer;
+
                     &:hover {
                         color: inherit;
                     }

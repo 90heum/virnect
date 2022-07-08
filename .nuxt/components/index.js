@@ -18,6 +18,10 @@ export { default as PolicySubMenuPayment } from '../../components/policy/subMenu
 export { default as PolicySubMenuPolicy } from '../../components/policy/subMenuPolicy.vue'
 export { default as PolicySubMenuTerms } from '../../components/policy/subMenuTerms.vue'
 export { default as Paging } from '../../components/paging/paging.vue'
+export { default as NewsCommonBaner } from '../../components/news/CommonBaner.vue'
+export { default as PolicySubMenuPayment } from '../../components/policy/subMenuPayment.vue'
+export { default as PolicySubMenuPolicy } from '../../components/policy/subMenuPolicy.vue'
+export { default as PolicySubMenuTerms } from '../../components/policy/subMenuTerms.vue'
 export { default as ModulesBanner } from '../../components/modules/Banner.vue'
 export { default as ModulesBoard } from '../../components/modules/Board.vue'
 export { default as ModulesBoardView } from '../../components/modules/BoardView.vue'
@@ -109,14 +113,14 @@ export { default as SolutionsPagesOil } from '../../components/solutions/pages/O
 export { default as SupportFaqAsideMenu } from '../../components/support/faq/AsideMenu.vue'
 export { default as SupportFaqContents } from '../../components/support/faq/FaqContents.vue'
 export { default as SupportFaqGoogleMap } from '../../components/support/faq/GoogleMap.vue'
+export { default as SupportNoticeAsideMenu } from '../../components/support/notice/AsideMenu.vue'
+export { default as SupportNoticeContents } from '../../components/support/notice/NoticeContents.vue'
 export { default as SupportLearningCenterAsideMenu } from '../../components/support/learning-center/AsideMenu.vue'
 export { default as SupportLearningCenterListTabMenu } from '../../components/support/learning-center/ListTabMenu.vue'
 export { default as SupportLearningCenterStaticModule } from '../../components/support/learning-center/StaticModule.vue'
 export { default as SupportLearningCenterUserManual } from '../../components/support/learning-center/userManual.vue'
 export { default as SupportLearningCenterVideoRealGuide } from '../../components/support/learning-center/videoRealGuide.vue'
 export { default as SupportLearningCenterVideoTutorial } from '../../components/support/learning-center/videoTutorial.vue'
-export { default as SupportNoticeAsideMenu } from '../../components/support/notice/AsideMenu.vue'
-export { default as SupportNoticeContents } from '../../components/support/notice/NoticeContents.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
