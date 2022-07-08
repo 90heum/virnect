@@ -19,10 +19,16 @@
       </span>
       <span class="talentCont">
         <button>
-          <a href="#"> 채용정보 자세히 보기 </a>
+          <a
+            href="https://virnect.notion.site/70deb7e4870c45b29bb3fccf9103af57"
+            target="_blank"
+          >
+            채용정보 자세히 보기
+          </a>
         </button>
       </span>
     </div>
+    <ctaModule />
   </section>
 </template>
 
@@ -30,12 +36,14 @@
 import Recruit from "~/components/company/pages/Recruit.vue";
 import subMenuBrand from "../../components/company/partials/subMenuBrand.vue";
 import subVisualSection from "~/layouts/common/SubVisual.vue";
+import ctaModule from "~/components/main/ctaModule.vue";
 
 export default {
   components: {
     Recruit,
     subMenuBrand,
     subVisualSection,
+    ctaModule,
   },
 };
 </script>

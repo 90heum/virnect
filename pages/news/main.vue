@@ -80,28 +80,50 @@
         </div>
         <!-- 블로그 탭 리스트 -->
         <span class="newsPressList">
-            <!-- Video Tutorial -->
-            <div class="tutorialBox">
-                <!-- 컨텐츠박스 -->
-                <span class="tutorialBoxCont">
-                    <div v-for="(data, idx) of contentList"
-                         :key="idx">
-                        <nuxt-link :to="`detail?id=${data.id}&type=${isType ? isType : ''}`">
-                            <span class="listImg">
-                                <img :src="`${data.thumbnail ? data.thumbnail : 'https://velog.velcdn.com/images/kyj0206/post/75a8bf3a-fe84-47e5-aa54-fca6f438b599/image.png'}`" alt="디폴트 이미지">
-                            </span>
-                            <span class="listInfo">
-                                <span>
-                                    <h2>{{$i18n.localeProperties.code === "ko" ? data.title : data.titleEn}}</h2>
-                                </span>
-                                <span>
-                                    <p>{{$i18n.localeProperties.code === "ko" ? data.typeName: data.typeNameEn}}</p>
-                                </span>
-                                <span class="ddayDiv">{{$dayjs(data.createdDate).format("YYYY-MM-DD")}}</span>
-                            </span>
-                        </nuxt-link>
-                    </div>
-                </span>
+          <!-- Video Tutorial -->
+          <div class="tutorialBox">
+            <!-- 컨텐츠박스 -->
+            <span class="tutorialBoxCont">
+              <div v-for="(data, idx) of contentList" :key="idx">
+                <nuxt-link
+                  :to="`detail?id=${data.id}&type=${isType ? isType : ''}`"
+                >
+                  <span class="listImg">
+                    <img
+                      :src="`${
+                        data.thumbnail
+                          ? data.thumbnail
+                          : 'https://velog.velcdn.com/images/kyj0206/post/75a8bf3a-fe84-47e5-aa54-fca6f438b599/image.png'
+                      }`"
+                      alt="디폴트 이미지"
+                    />
+                  </span>
+                  <span class="listInfo">
+                    <span>
+                      <h2>
+                        {{
+                          $i18n.localeProperties.code === "ko"
+                            ? data.title
+                            : data.titleEn
+                        }}
+                      </h2>
+                    </span>
+                    <span>
+                      <p>
+                        {{
+                          $i18n.localeProperties.code === "ko"
+                            ? data.typeName
+                            : data.typeNameEn
+                        }}
+                      </p>
+                    </span>
+                    <span class="ddayDiv">{{
+                      $dayjs(data.createdDate).format("YYYY-MM-DD")
+                    }}</span>
+                  </span>
+                </nuxt-link>
+              </div>
+            </span>
 
             <common-paging :pagingData="pagingData" :movePage="movePage" />
           </div>
@@ -116,54 +138,94 @@ import CommonBanner from "~/components/news/CommonBaner.vue";
 import CommonPaging from "~/components/paging/paging.vue";
 
 export default {
-    data() {
-      return {
-        isType: null,
-        isToggle: false,
-        pagingData: {
-            currentPage: 1,
-            currentSize: 20,
-            totalPage: 1,
-            totalElements: 1,
-            startPage: 1,
-            endPage: 1
-        },
-        contentList: []
-      }
-    },
-    components: {
-        CommonBanner,
-        CommonPaging
-    },
+  data() {
+    return {
+      isType: null,
+      isToggle: false,
+      pagingData: {
+        currentPage: 1,
+        currentSize: 20,
+        totalPage: 1,
+        totalElements: 1,
+        startPage: 1,
+        endPage: 1,
+      },
+      contentList: [],
+    };
+  },
+  components: {
+    CommonBanner,
+    CommonPaging,
+  },
   methods: {
-  async handleIsType (e, isPaging = false) {
-        this.isType = e;
-        if (!isPaging) this.pagingData = {...this.pagingData, currentPage: 1 };
-        await this.$axios.get(`admin/news?page=${this.pagingData.currentPage}&size=${this.pagingData.currentSize}&type=${this.isType ? this.isType : ''}`)
-                          .then(res => {
-                            this.contentList = res.data.data.newsBoardResponseList;
-                          })
-                          .catch(e => console.error(e))
+    async handleIsType(e, isPaging = false) {
+      this.isType = e;
+      if (!isPaging) this.pagingData = { ...this.pagingData, currentPage: 1 };
+      await this.$axios
+        .get(
+          `admin/news?page=${this.pagingData.currentPage}&size=${
+            this.pagingData.currentSize
+          }&type=${this.isType ? this.isType : ""}`
+        )
+        .then((res) => {
+          this.contentList = res.data.data.newsBoardResponseList;
+        })
+        .catch((e) => console.error(e));
+      // movePage(currentPage) {
+      //   this.pagingData = { ...this.pagingData, currentPage: currentPage };
+      //   this.handleIsType(this.isType, true);
+      // },
+    },
     movePage(currentPage) {
       this.pagingData = { ...this.pagingData, currentPage: currentPage };
       this.handleIsType(this.isType, true);
     },
+    async asyncData({ $$axios }) {
+      try {
+        const data = Promise.all([
+          $axios.get(`admin/news/type`),
+          $axios.get(`admin/news?page=1&size=${20}`),
+        ]);
+        const dataJson = await data;
+        return {
+          typeList: dataJson[0].data.data.newsTypeResponseList,
+          contentList: dataJson[1].data.data.newsBoardResponseList,
+        };
+      } catch (e) {
+        console.error(e);
+      }
+    },
   },
-  async asyncData({ $axios }) {
-    try {
-      const data = Promise.all([
-        $axios.get(`admin/news/type`),
-        $axios.get(`admin/news?page=1&size=${20}`),
-      ]);
-      const dataJson = await data;
-      return {
-        typeList: dataJson[0].data.data.newsTypeResponseList,
-        contentList: dataJson[1].data.data.newsBoardResponseList,
-      };
-    } catch (e) {
-      console.error(e);
-    }
-  },
+  // methods: {
+  // async handleIsType (e, isPaging = false) {
+  //       this.isType = e;
+  //       if (!isPaging) this.pagingData = {...this.pagingData, currentPage: 1 };
+  //       await this.$axios.get(`admin/news?page=${this.pagingData.currentPage}&size=${this.pagingData.currentSize}&type=${this.isType ? this.isType : ''}`)
+  //                         .then(res => {
+  //                           this.contentList = res.data.data.newsBoardResponseList;
+  //                         })
+  //                         .catch(e => console.error(e))
+  //   // movePage(currentPage) {
+  //   //   this.pagingData = { ...this.pagingData, currentPage: currentPage };
+  //   //   this.handleIsType(this.isType, true);
+  //   // },
+  // },
+
+  // async asyncData({ $axios }) {
+  //   try {
+  //     const data = Promise.all([
+  //       $axios.get(`admin/news/type`),
+  //       $axios.get(`admin/news?page=1&size=${20}`),
+  //     ]);
+  //     const dataJson = await data;
+  //     return {
+  //       typeList: dataJson[0].data.data.newsTypeResponseList,
+  //       contentList: dataJson[1].data.data.newsBoardResponseList,
+  //     };
+  //   } catch (e) {
+  //     console.error(e);
+  //   }
+  // },
 };
 </script>
 

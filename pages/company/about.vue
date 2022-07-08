@@ -30,14 +30,15 @@
       <router-view></router-view>
     </transition>
     <companyValue />
-    <tail-section
+    <!-- <tail-section
       :bg="tailText.bg"
       :mention="$t('companyText.tailText')"
       :blueBtn="tailText.blue"
       :blueRouter="tailText.blueRouter"
       :greyBtn="tailText.grey"
       :greyRouter="tailText.greyRouter"
-    ></tail-section>
+    ></tail-section> -->
+    <ctxModule />
   </section>
 </template>
 
@@ -49,6 +50,7 @@ import SubMenu from "../../components/company/partials/subMenu.vue";
 import indroduceComponent from "../../components/company/pages/introduce.vue";
 import companyValue from "../../components/company/pages/companyValue.vue";
 import AboutSub from "./aboutSub.vue";
+import ctxModule from "~/components/main/ctaModule.vue";
 
 export default {
   components: {
@@ -59,6 +61,7 @@ export default {
     SubMenu,
     companyValue,
     AboutSub,
+    ctxModule,
   },
   data() {
     return {

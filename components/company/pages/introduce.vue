@@ -27,7 +27,6 @@
       :contents="$t('companyText.summaryText.summaryTitle.contents')"
     ></heading-module> -->
 
-
     <div class="aboutVirnect">
       <section class="aboutVirnect">
         <div class="aboutVirnectInner">
@@ -436,9 +435,9 @@ export default {
     snbSection,
     headingModule,
     companyAwards,
-    SubVisual
-},
+    SubVisual,
   },
+
   data() {
     return {
       CustomerTab: 1,

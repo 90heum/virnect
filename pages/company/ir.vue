@@ -1,35 +1,36 @@
 <template>
-<div>
+  <div>
     <sub-visual-section
-    class="sm"
-    :image="'https://velog.velcdn.com/images/kyj0206/post/826e3755-e1d4-4466-bf63-273cc3b52c9c/image.png'"
-    :category="visualText.category"
-    :title="$t('companyText.visualText.title')"
-    :contents="$t('companyText.visualText.contents')"
+      class="sm"
+      :image="'https://velog.velcdn.com/images/kyj0206/post/826e3755-e1d4-4466-bf63-273cc3b52c9c/image.png'"
+      :category="visualText.category"
+      :title="$t('companyText.visualText.title')"
+      :contents="$t('companyText.visualText.contents')"
     ></sub-visual-section>
-  <subMenuIr />
-   <div class="companyWrap">
-        <span class="companyList">
-            <ul>
-                <li>번호</li>
-                <li>제목</li>
-                <li>등록일</li>
-            </ul>
-    
-            <ul v-for="(data,idx) of irData"
-                :key="idx">
-                <li>{{data.id}}</li>
-                <li>
-                    <nuxt-link :to="`ir-detail?id=${data.id}`">{{data.title}}</nuxt-link>
-                </li>
-                <li>{{$dayjs(data.createdDate).format("YYYY-MM-DD")}}</li>
-            </ul>
-            
-            <!-- 페이지네이션 -->
-            <common-paging :movePage="movePage"
-                           :pagingData="pagingData"/>
-        </span>
+    <subMenuIr />
+    <div class="companyWrap">
+      <span class="companyList">
+        <ul>
+          <li>번호</li>
+          <li>제목</li>
+          <li>등록일</li>
+        </ul>
+
+        <ul v-for="(data, idx) of irData" :key="idx">
+          <li>{{ data.id }}</li>
+          <li>
+            <nuxt-link :to="`ir-detail?id=${data.id}`">{{
+              data.title
+            }}</nuxt-link>
+          </li>
+          <li>{{ $dayjs(data.createdDate).format("YYYY-MM-DD") }}</li>
+        </ul>
+
+        <!-- 페이지네이션 -->
+        <common-paging :movePage="movePage" :pagingData="pagingData" />
+      </span>
     </div>
+    <contactModule />
   </div>
 </template>
 
@@ -37,24 +38,25 @@
 import subVisualSection from "../../layouts/common/SubVisual.vue";
 import CommonPaging from "~/components/paging/paging.vue";
 import subMenuIr from "../../components/company/partials/subMenuIr.vue";
+import contactModule from "~/components/company/partials/contactModule.vue";
 
 export default {
   data() {
     return {
-       pagingData: {
-                currentPage: 1,
-                currentSize: 20,
-                totalPage: 1,
-                totalElements: 1,
-                startPage: 1,
-                endPage: 1
-        },
-        irData: [],
-        visualText: {
+      pagingData: {
+        currentPage: 1,
+        currentSize: 20,
+        totalPage: 1,
+        totalElements: 1,
+        startPage: 1,
+        endPage: 1,
+      },
+      irData: [],
+      visualText: {
         image: "../images/pages/company/img-company-top",
         category: "Company",
-    },
-    }
+      },
+    };
   },
   methods: {
     async movePage(currentPage) {
@@ -74,6 +76,7 @@ export default {
     subVisualSection,
     CommonPaging,
     subMenuIr,
+    contactModule,
   },
   async asyncData({ $axios }) {
     try {
