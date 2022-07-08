@@ -1,29 +1,19 @@
 <template>
   <div class="SubMenuUse">
     <ul class="SubMenuNav">
-      <li class="SubUseNavActive subMenu"
-          @click="subScroll()"
-      >
+      <li class="SubUseNavActive subMenu" @click="subScroll()">
         <nuxt-link to="/solutions/energy_resource"> 인프라/자원 </nuxt-link>
       </li>
-      <li class="subMenu"
-          @click="subScroll()"
-      >
+      <li class="subMenu" @click="subScroll()">
         <nuxt-link to="/solutions/oil_chemical_battery"> 제조/건설 </nuxt-link>
       </li>
-      <li class="subMenu"
-          @click="subScroll()"
-      >
+      <li class="subMenu" @click="subScroll()">
         <nuxt-link to="/solutions/motor_parts"> 공공/교육 </nuxt-link>
       </li>
-      <li class="subMenu"
-          @click="subScroll()"
-      >
+      <li class="subMenu" @click="subScroll()">
         <nuxt-link to="/solutions/airline_railroad"> 엔터테인먼트 </nuxt-link>
       </li>
-      <li class="subMenu"
-          @click="subScroll()"
-      >
+      <li class="subMenu" @click="subScroll()">
         <nuxt-link to="/solutions/epc"> 기타 </nuxt-link>
       </li>
     </ul>
@@ -32,24 +22,25 @@
 
 <script>
 export default {
-  created(){
-     setTimeout(() => {
+  created() {
+    setTimeout(() => {
       /* if(process.client)document.querySelector('.SubMenuUse').scrollIntoView({behavior: 'smooth'});  */
-   },500); 
+    }, 500);
   },
   methods: {
-    subScroll(){
-      if(process.client){
-        document.querySelector('.SubMenuUse').scrollIntoView({behavior: 'smooth'});
+    subScroll() {
+      if (process.client) {
+        document
+          .querySelector(".SubMenuUse")
+          .scrollIntoView({ behavior: "smooth" });
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 .SubMenuUse {
-  max-width: 2400px;
   background-color: #e6e8eb;
   .SubMenuNav {
     position: relative;
