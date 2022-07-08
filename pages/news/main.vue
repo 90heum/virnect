@@ -165,7 +165,7 @@ export default {
         .get(
           `admin/news?page=${this.pagingData.currentPage}&size=${
             this.pagingData.currentSize
-          }&type=${this.isType ? this.isType : ""}`
+          }&typeId=${this.isType ? this.isType : ""}`
         )
         .then((res) => {
           this.contentList = res.data.data.newsBoardResponseList;
@@ -180,7 +180,8 @@ export default {
       this.pagingData = { ...this.pagingData, currentPage: currentPage };
       this.handleIsType(this.isType, true);
     },
-    async asyncData({ $$axios }) {
+  },
+  async asyncData({ $axios }) {
       try {
         const data = Promise.all([
           $axios.get(`admin/news/type`),
@@ -195,7 +196,6 @@ export default {
         console.error(e);
       }
     },
-  },
   // methods: {
   // async handleIsType (e, isPaging = false) {
   //       this.isType = e;
