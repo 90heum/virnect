@@ -155,7 +155,7 @@
           </ul>
         </nav>
         <div class="demo">
-          <nuxt-link to="/support/inquiry"> 데모신청 </nuxt-link>
+          <nuxt-link to="/support/demo"> 데모신청 </nuxt-link>
         </div>
         <div
           class="serviceSelect"

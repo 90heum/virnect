@@ -26,6 +26,7 @@ const _a76be328 = () => interopDefault(import('../pages/solutions/energy_resourc
 const _098e989f = () => interopDefault(import('../pages/solutions/epc.vue' /* webpackChunkName: "pages/solutions/epc" */))
 const _5ff0e7c6 = () => interopDefault(import('../pages/solutions/motor_parts.vue' /* webpackChunkName: "pages/solutions/motor_parts" */))
 const _a048c694 = () => interopDefault(import('../pages/solutions/oil_chemical_battery.vue' /* webpackChunkName: "pages/solutions/oil_chemical_battery" */))
+const _3e9770d7 = () => interopDefault(import('../pages/support/demo.vue' /* webpackChunkName: "pages/support/demo" */))
 const _5f16a55c = () => interopDefault(import('../pages/support/faq.vue' /* webpackChunkName: "pages/support/faq" */))
 const _4316f983 = () => interopDefault(import('../pages/support/inquiry.vue' /* webpackChunkName: "pages/support/inquiry" */))
 const _011e49c0 = () => interopDefault(import('../pages/support/learning-center.vue' /* webpackChunkName: "pages/support/learning-center" */))
@@ -135,6 +136,10 @@ export const routerOptions = {
     path: "/solutions/oil_chemical_battery",
     component: _a048c694,
     name: "solutions-oil_chemical_battery"
+  }, {
+    path: "/support/demo",
+    component: _3e9770d7,
+    name: "support-demo"
   }, {
     path: "/support/faq",
     component: _5f16a55c,
