@@ -8,11 +8,11 @@
   "Header": {
     "description": "Auto imported from components/header.vue"
   },
-  "DummyAward": {
-    "description": "Auto imported from components/dummy/award.js"
-  },
   "ApiAxios": {
     "description": "Auto imported from components/api/axios.js"
+  },
+  "DummyAward": {
+    "description": "Auto imported from components/dummy/award.js"
   },
   "MainBannerModule": {
     "description": "Auto imported from components/main/bannerModule.vue"
@@ -98,11 +98,11 @@
   "ModulesYoutubeFullscreen": {
     "description": "Auto imported from components/modules/YoutubeFullscreen.vue"
   },
-  "NewsCommonBaner": {
-    "description": "Auto imported from components/news/CommonBaner.vue"
-  },
   "Paging": {
     "description": "Auto imported from components/paging/paging.vue"
+  },
+  "NewsCommonBaner": {
+    "description": "Auto imported from components/news/CommonBaner.vue"
   },
   "PolicySubMenuPayment": {
     "description": "Auto imported from components/policy/subMenuPayment.vue"
