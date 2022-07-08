@@ -1,5 +1,6 @@
 @charset 'utf-8';
-$noto: "NotoSansKR", "Noto Sans";
+$noto: "Pretendard",
+"Pretendard";
 $poppins: "Poppins";
 $roboto: "Roboto";
 $mont: "Montserrat";
@@ -91,6 +92,7 @@ $short: 568px;
   position: relative;
   margin-right: 60px;
   margin-left: 60px;
+
   @media (max-width: $tablet) {
     width: auto;
     margin-right: 24px;
@@ -106,12 +108,15 @@ $short: 568px;
   font-size: 15px;
   font-family: $noto;
   text-transform: uppercase;
+
   &.blue-btn {
     background-color: rgba(16, 73, 167, 0.6);
   }
+
   &.grey-btn {
     background-color: rgba(130, 140, 158, 0.4);
   }
+
   &.light {
     &.blue-btn {
       position: relative;
@@ -125,44 +130,49 @@ $short: 568px;
         right: 60px;
         width: 16px;
         height: 16px;
-        background: url("~assets/images/common/ic-chevron-right@2x.png")
-          no-repeat center;
+        background: url("~assets/images/common/ic-chevron-right@2x.png") no-repeat center;
         background-size: 20px;
         transform: translateY(-50%);
         content: "";
       }
+
       &:hover {
         background-color: #3268c2;
       }
+
       &:active {
         background-color: #1655bf;
       }
     }
+
     &.grey-btn {
       position: relative;
       padding-right: 20px;
       color: #fff;
       background-color: #828c9e;
+
       &:after {
         position: absolute;
         top: 50%;
         right: 60px;
         width: 16px;
         height: 16px;
-        background: url("~assets/images/common/ic-chevron-right@2x.png")
-          no-repeat center;
+        background: url("~assets/images/common/ic-chevron-right@2x.png") no-repeat center;
         background-size: 20px;
         transform: translateY(-50%);
         content: "";
       }
+
       &:hover {
         background-color: #8e97a6;
       }
+
       &:active {
         background-color: #747d8e;
       }
     }
   }
+
   @media (max-width: $mobile) {
     height: 42px;
     font-size: 13px;
@@ -180,6 +190,7 @@ $short: 568px;
   color: #5c6373;
   font-weight: 500;
   border: 1px solid #ced3dc;
+
   &:after {
     position: absolute;
     top: 51%;
@@ -191,24 +202,28 @@ $short: 568px;
     transform: translateY(-50%);
     content: "";
   }
+
   @media (min-width: $mobile) {
     &:hover {
       color: #fff;
       background: #5c6373;
+
       &:after {
-        background: url("~assets/images/common/ic-link-hover@2x.png") no-repeat
-          center;
+        background: url("~assets/images/common/ic-link-hover@2x.png") no-repeat center;
         background-size: 16px;
       }
     }
   }
+
   &:active {
     background: #404551;
   }
+
   @media (max-width: $mobile) {
     height: 44px;
     padding-right: 36px;
     padding-left: 16px;
+
     &:after {
       right: 14px;
     }
@@ -224,6 +239,7 @@ $short: 568px;
     font-family: $poppins, $noto;
     line-height: 1.56;
   }
+
   .title {
     margin-bottom: 16px;
     color: $titleColor;
@@ -232,6 +248,7 @@ $short: 568px;
     font-family: $noto;
     line-height: 1.41;
   }
+
   .contents {
     font-weight: 500;
     font-size: 16px;
@@ -243,9 +260,11 @@ $short: 568px;
     .category {
       font-size: 14px;
     }
+
     .title {
       font-size: 26px;
     }
+
     .contents {
       font-size: 15px;
     }
@@ -273,6 +292,7 @@ $short: 568px;
   background-image: linear-gradient(324deg, #6700ff, #004dff);
   border-radius: 50%;
   transform: translate(-50%, -50%);
+
   img {
     display: inline-block;
     width: 32px;
@@ -285,15 +305,18 @@ $short: 568px;
       padding-top: 2px;
       padding-left: 8px;
     }
+
     width: 80px;
     height: 80px;
   }
+
   @media (max-width: $mobile) {
     img {
       width: 13px;
       padding-top: 5px;
       padding-left: 5px;
     }
+
     width: 50px;
     height: 50px;
   }
@@ -355,13 +378,14 @@ $short: 568px;
       transition-delay: 150ms;
       content: "";
     }
+
     @media (max-width: $mobile) {
       margin-right: 4px;
     }
   }
 
   input[type="checkbox"]:checked {
-    & ~ .checkbox {
+    &~.checkbox {
       &:before {
         width: 7px;
         transition-delay: 0ms;
