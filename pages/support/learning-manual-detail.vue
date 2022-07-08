@@ -63,7 +63,7 @@
                             </i>
                         </li>
                         <li>
-                            <nuxt-link :to="`learning-manual-detail?Id=${contentList.prevId ? contentList.prevId : contentList.id}&typeId=${1}`">
+                            <nuxt-link :to="`learning-manual-detail?Id=${contentList.prevId ? contentList.prevId : contentList.id}&type=${1}`">
                                 {{contentList.prevTitle ? contentList.prevTitle : "이전글이 존재하지 않습니다."}}
                             </nuxt-link>
                         </li>
@@ -79,7 +79,7 @@
                             </i>
                         </li>
                         <li>
-                            <nuxt-link :to="`learning-manual-detail?Id=${contentList.nextId ? contentList.nextId : contentList.id}&typeId=${1}`">
+                            <nuxt-link :to="`learning-manual-detail?Id=${contentList.nextId ? contentList.nextId : contentList.id}&type=${1}`">
                                 {{contentList.nextTitle ? $i18n.localeProperties.code === "ko" ? contentList.nextTitle : contentList.nextTitleEn : "다음글이 존재하지 않습니다."}}
                             </nuxt-link>
                         </li>
@@ -113,7 +113,7 @@ export default {
     methods: {
         async goToPage (id) {
             if(!id) return;
-            const data = await this.$axios.get(`admin/support/learning/${id}?typeId=${this.$route.query.typeId}`);
+            const data = await this.$axios.get(`admin/support/learning/${id}?type=${this.$route.query.type}`);
             const dataJson = await data;
             if (process.client) window.scrollTo({top: "0px"});
             this.contentList = dataJson.data.data;
@@ -129,7 +129,7 @@ export default {
     },
     async asyncData ({$axios, route}) {
         try {
-            const data = await $axios.get(`admin/support/learning/${route.query.Id}?typeId=${route.query.typeId}`);
+            const data = await $axios.get(`admin/support/learning/${route.query.caregory}?type=${route.query.type}`);
             const dataJson = await data;
             return {contentList: dataJson.data.data}
         } catch(e) {console.error(e)}

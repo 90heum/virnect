@@ -2,9 +2,9 @@
   {
     "name": "company-about",
     "path": "/company/about",
-    "component": "/Users/majeongheum/virnect/pages/company/about.vue",
+    "component": "/Users/hellodigital/virnect/pages/company/about.vue",
     "chunkName": "pages/company/about",
-    "_name": "_ca203302"
+    "_name": "_74945477"
   },
   {
     "name": "company-aboutSub",

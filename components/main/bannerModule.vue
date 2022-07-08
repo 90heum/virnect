@@ -31,7 +31,6 @@ export default {
                 e.style.height = "15px";
                 e.style.margin = "0 5px";
                 e.style.borderRadius = "50%";
-                // e.style.border = "none";
                 e.style.backgroundColor = "#f7f8f9";
             })
         }

@@ -12,11 +12,11 @@
             [
               {
                 "title": "릴리즈 노트",
-                "url": ""
+                "url": "2"
               },
               {
                 "title": "안내",
-                "url": ""
+                "url": "1"
               },
               {
                 "title": "점검",
@@ -35,30 +35,53 @@
           [
             {
               "title": "회원",
-              "url": ""
+              "url": "1"
             },
             {
               "title": "제품",
-              "url": ""
+              "url": "3"
             },
             {
               "title": "결제",
-              "url": ""
+              "url": "4"
             },
             {
               "title": "서비스",
-              "url": ""
+              "url": "2"
             },
             {
               "title": "기기",
-              "url": ""
+              "url": "6"
             },
             {
               "title": "기타",
-              "url": ""
+              "url": "5"
             }
           ]
-      }
+      },
+      "learningCenter": {
+        "title": "학습센터",
+        "url": "",
+        "list":
+          [
+            {
+              "title": "Remote",
+              "url": "1"
+            },
+            {
+              "title": "Make",
+              "url": "2"
+            },
+            {
+              "title": "View",
+              "url": "3"
+            },
+            {
+              "title": "Workstation",
+              "url": "4"
+            }
+          ]
+        }
     }
   }
 }

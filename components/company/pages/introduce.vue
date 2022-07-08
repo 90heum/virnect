@@ -26,6 +26,8 @@
       :title="$t('companyText.summaryText.summaryTitle.title')"
       :contents="$t('companyText.summaryText.summaryTitle.contents')"
     ></heading-module> -->
+
+
     <div class="aboutVirnect">
       <section class="aboutVirnect">
         <div class="aboutVirnectInner">
@@ -409,6 +411,7 @@ import subVisualSection from "~/layouts/common/SubVisual.vue";
 import snbSection from "~/components/modules/Snb";
 import headingModule from "../../modules/Heading";
 import companyAwards from "~/components/main/companyAwards.vue";
+import SubVisual from "~/layouts/common/SubVisual.vue";
 
 const historyData = [
   {
@@ -433,6 +436,8 @@ export default {
     snbSection,
     headingModule,
     companyAwards,
+    SubVisual
+},
   },
   data() {
     return {

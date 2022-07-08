@@ -107,14 +107,14 @@ export default {
     methods: {
         async goToPage (id) {
             if(!id) return;
-            const data = await this.$axios.get(`admin/news/${id}?typeId=${this.type ? this.type : ''}`);
+            const data = await this.$axios.get(`admin/news/${id}?type=${this.type ? this.type : ''}`);
             const dataJson = await data;
             if (process.client) window.scrollTo({top: "0px"});
             this.contentData = dataJson.data.data;
         }
     },
     async asyncData ({$axios, route}) {
-        const data = await $axios.get(`admin/news/${route.query.id}?typeId=${route.query.type ? route.query.type : ''}`);
+        const data = await $axios.get(`admin/news/${route.query.id}?type=${route.query.type ? route.query.type : ''}`);
         const dataJson = await data;
         return {contentData: dataJson.data.data, id: route.query.id, type: route.query.type}
     }

@@ -13,8 +13,8 @@
                     alt="LearningCenterTag"></i>
         </span>
 
-        <span @click="chooseTypeMenuAndToggle(0)">
-            <p :class="`${isTypeMenu === 0 ? 'asideActive' : ''}`">{{$i18n.localeProperties.code === "ko" ? "Video Tutorial" : "Video Tutorial"}}</p>
+        <span @click="chooseTypeMenuAndToggle(5)">
+            <p :class="`${isTypeMenu === 5 ? 'asideActive' : ''}`">{{$i18n.localeProperties.code === "ko" ? "Video Tutorial" : "Video Tutorial"}}</p>
             <i><img src="https://velog.velcdn.com/images/kyj0206/post/677e0a5b-146e-46a5-a5db-ef2b185febf4/image.png"
                     alt="LearningCenterTag"></i>
         </span>
@@ -38,7 +38,7 @@
                 <div class="selected-icon">
                     <img src="https://velog.velcdn.com/images/kyj0206/post/0f39f4c6-a786-41ea-b239-84f4997f5712/image.png" alt="다운아이콘">
                 </div>
-                <div class="selected-value">{{isTypeMenu === 0 ? "Video Tutorial" : isTypeMenu ? $i18n.localeProperties.code === "ko" ? typeList.find(e => e.id === isTypeMenu).name : typeList.find(e => e.id === isTypeMenu).nameEn : $i18n.localeProperties.code === "ko" ? "전체" : "All"}}</div>
+                <div class="selected-value">{{isTypeMenu === 5 ? "Video Tutorial" : isTypeMenu  ? $i18n.localeProperties.code === "ko" ? typeList.find(e => e.id === isTypeMenu).name : typeList.find(e => e.id === isTypeMenu).nameEn : $i18n.localeProperties.code === "ko" ? "전체" : "All"}}</div>
                 <div class="arrow"></div>
                 </div>
                 <ul v-if="isToggle">
@@ -47,7 +47,7 @@
                 <li class="option"
                     @click="chooseTypeMenuAndToggle(typeList[0].id, true)">{{$i18n.localeProperties.code === "ko" ? typeList[0].name : typeList[0].nameEn}}</li>
                 <li class="option"
-                    @click="chooseTypeMenuAndToggle(0, true)">Video Tutorial</li>
+                    @click="chooseTypeMenuAndToggle(5, true)">Video Tutorial</li>
                 <li class="option"
                     @click="chooseTypeMenuAndToggle(typeList[3].id, true)">{{$i18n.localeProperties.code === "ko" ? typeList[3].name : typeList[3].nameEn}}</li>
                 </ul>

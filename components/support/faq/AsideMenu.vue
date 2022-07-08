@@ -41,7 +41,7 @@ export default {
     props: {
         asideMenuList: Array,
         chooseType: Function,
-        isType: Number,
+        isType: [Number, Boolean],
     },
     data() {
         return {
@@ -51,8 +51,8 @@ export default {
     methods: {
         handleMobileTab (e) {
             this.isToggle = !this.isToggle;
-            chooseType(e);
-        }
+            this.chooseType(e);
+        },
     }
 }
 </script>

@@ -32,6 +32,11 @@ import AsideMenu from "~/components/support/notice/AsideMenu.vue";
 import NoticeContents from "~/components/support/notice/NoticeContents.vue";
 
 export default {
+    watch: {
+        '$route' (to, from) {
+            this.chooseType(Number(this.$route.query.type) || null)
+        }
+    },
     components: {
         HeadBanner,
         SubMenu,
@@ -50,17 +55,17 @@ export default {
             },
             asideData: [],
             contentData: [],
-            isType: null
+            isType: Number(this.$route.query.type) || null
         }
     },
     methods: {
         movePage (currentPage) {
             this.pagingData = {...this.pagingData, currentPage: currentPage};
             this.chooseType(this.isType, true);
-
         },
         async chooseType (e, isPaging = false) {
             this.isType = e;
+            this.$router.push(`?type=${e ? e : ''}`)
             if (!isPaging) this.pagingData = {...this.pagingData, currentPage: 1 };
             try {
                 const data = await this.$axios.get(`admin/support/notice?page=${this.pagingData.currentPage}&size=${this.pagingData.currentSize}${this.isType ? '&type=' + this.isType : ''}`);
@@ -68,17 +73,17 @@ export default {
                 this.contentData = dataJson.data.data.supportNoticeResponseList;
                 this.pagingData = dataJson.data.data.pageMetadataResponse;
             } catch(e) {console.error(e)}
-
         },
     },
-    async asyncData ({$axios}) {
+    async asyncData ({$axios, route}) {
+        const routeType = route.query.type ? route.query.type : null;
         try {
-            const data = Promise.all([$axios.get("admin/support/notice/type"), $axios.get(`admin/support/notice?page=1&size=${20}`)]);
+            const data = Promise.all([$axios.get("admin/support/notice/type"), $axios.get(`admin/support/notice?page=1&size=${20}${routeType ? "&type=" + routeType : ''}`)]);
             const dataJson = await data;
             return {
                 asideData: dataJson[0].data.data.noticeType,
                 contentData: dataJson[1].data.data.supportNoticeResponseList,
-                pagingData: dataJson[1].data.data.pageMetadataResponse
+                pagingData: dataJson[1].data.data.pageMetadataResponse,
         };
         } catch (e) {console.error(e)}
     }

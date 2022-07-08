@@ -314,7 +314,7 @@
     <div
       class="subNavi subNavSolutions"
       v-show="gnb1"
-      @mouseover="[(gnb1 = true), (upIcon=true), changeGnbColor()]"
+      @mouseover="[(gnb1 = true), (upIcon=true)]"
       @mouseleave="[(gnb1 = false), originalGnbColor()]"
     >
       <div class="subNavSolutionsInner">
@@ -489,7 +489,7 @@
                     :key="idx"
                     @click="[changeGnbColor(`list3`),gnbStyleBorder = {gnbStyle3:true}]"
                   >
-                    <nuxt-link :to="list.url"
+                    <nuxt-link :to="`/support/notice?type=${list.url}`"
                       ><u>-{{ list.title }}</u></nuxt-link
                     >
                   </li>
@@ -510,7 +510,7 @@
                       :key="idx"
                       @click="[changeGnbColor(`list3`), gnbStyleBorder = {gnbStyle3:true}]"
                     >
-                      <nuxt-link :to="list.url"
+                      <nuxt-link :to="`/support/faq?category=${list.url}`"
                         ><u>-{{ list.title }}</u></nuxt-link
                       >
                     </li>
@@ -523,7 +523,7 @@
                     <nuxt-link to="/support/learning-center">학습센터</nuxt-link>
                   </li>
                   <li
-                    v-for="(list, idx) of $t('gnb[1].array').filter(
+                    v-for="(list, idx) of $t('supportText.menuList.learningCenter.list').filter(
                       (e, idx) => {
                         if (idx < 3) return e;
                       }
@@ -531,8 +531,8 @@
                     :key="idx"
                     @click="changeGnbColor(`list3`)"
                   >
-                    <nuxt-link :to="list.to">
-                      <u>{{ list.text }}</u>
+                    <nuxt-link :to="`/support/learning-center?category=${list.url}`">
+                      <u>{{ list.title }}</u>
                     </nuxt-link>
                   </li>
                 </ul>
@@ -725,29 +725,7 @@ export default {
     ClickOutside
   },
   created() {
-    console.log(this.$route)
-
-    const solutions = 'solutions';
-    const products = 'products';
-    const support = 'support';
-    const news = 'news';
-    const company = 'company';
-    const fullPath = this.$route.fullPath;
-
-  if (process.client) {
-    if(fullPath.includes(solutions)){
-      console.log("햐햐")
-      this.changeBorder(1)
-    } else if(fullPath.includes(products)){
-      this.changeBorder(2)
-    } else if(fullPath.includes(support)){
-      this.changeBorder(3)
-    } else if(fullPath.includes(news)){
-      this.changeBorder(4)
-    } else if(fullPath.includes(company)){
-      this.changeBorder(5)
-    }
-  }
+    this.changeMenuBorder();
     if (process.client) {
       window.addEventListener("resize", this.handleReactiveView);
     }
@@ -757,10 +735,39 @@ export default {
       window.removeEventListener("resize", this.handleReactiveView);
     // window.removeEventListener('scroll', this.hasScrolled)
   },
+  watch: {
+    '$route' (to, from) {
+      this.changeMenuBorder();
+    }
+  },
   methods: {
     /* handleClickButton(){
       this.visible = !this.visible
     }, */
+    changeMenuBorder () {
+        const solutions = 'solutions';
+        const products = 'products';
+        const support = 'support';
+        const news = 'news';
+        const company = 'company';
+        const fullPath = this.$route.fullPath;
+
+      if (process.client) {
+        if(fullPath.includes(solutions)){
+          this.changeBorder(1)
+        } else if(fullPath.includes(products)){
+          this.changeBorder(2)
+        } else if(fullPath.includes(support)){
+          this.changeBorder(3)
+        } else if(fullPath.includes(news)){
+          this.changeBorder(4)
+        } else if(fullPath.includes(company)){
+          this.changeBorder(5)
+        } else {
+          this.gnbStyleBorder = {};
+        }
+      }
+    },
     langlang() {
       this.showEarth = !this.showEarth;
     },
@@ -786,7 +793,6 @@ export default {
     },
     changeBorder(e) {
       this.gnbStyleBorder = {[`gnbStyle${e}`]: true}
-      console.log(this.gnbStyleBorder[`gnbStyle${e}`], "e 확인 : ",e, this.commonGnbStyle)
     },
     originalBorder() {
       this.gnbStyle1.borderBottomColor = "#121212";

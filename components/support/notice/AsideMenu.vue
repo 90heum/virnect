@@ -6,7 +6,7 @@
             <i><img src="https://velog.velcdn.com/images/kyj0206/post/677e0a5b-146e-46a5-a5db-ef2b185febf4/image.png"
                     alt="noticeTag"></i>
         </span>
-        <span v-for="(data, idx) of asideData"
+        <span v-for="(data, idx) of asideData || []"
               :key="idx"
               @click="chooseType(data.id)">
             <p :class="`${isType === data.id ? 'asideActive' : ''}`">{{$i18n.localeProperties.code === "ko" ? data.name : data.nameEn}}</p>
@@ -41,7 +41,7 @@ export default {
     props: {
         asideData: Array,
         chooseType: Function,
-        isType: Number
+        isType: [Number, Boolean]
     },
     data() {
         return {
