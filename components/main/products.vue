@@ -372,7 +372,7 @@ export default {
   max-width: 2400px;
   width: 100%;
   display: flex;
-  padding-top: 350px;
+  padding-top: 376px;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
@@ -384,7 +384,7 @@ export default {
     .moduleTopTit {
       display: block;
       max-width: 1200px;
-      margin-bottom: 73px;
+      margin-bottom: 94px;
       > p {
         font-size: 18px;
         font-weight: bold;
@@ -430,6 +430,7 @@ export default {
         justify-content: center;
         border-radius: 8px;
         background-color: #f7f8f9;
+        padding: 0;
         li {
           border-right: 1px solid #c5c8cf;
           display: flex;
