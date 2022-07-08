@@ -403,7 +403,7 @@ export default {
   justify-content: center;
   padding: 1rem;
   img {
-    max-height: 230px;
+    max-height: 306px;
   }
 }
 

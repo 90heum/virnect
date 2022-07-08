@@ -1022,7 +1022,7 @@ export default {
 .prevBtn,
 .nextBtn {
   width: 42px;
-  height: 24px;
+  height: 42x;
   cursor: pointer;
 }
 .awardsSlider {

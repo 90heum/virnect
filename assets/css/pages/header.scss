@@ -48,6 +48,7 @@ header {
                     li {
                         width: 20%;
 
+
                         a {
                             white-space: nowrap;
                             display: flex;
@@ -81,7 +82,11 @@ header {
                                         display: block;
                                     }
 
+<<<<<<< HEAD
 
+=======
+                                    .downIcon1 {}
+>>>>>>> 50a91a829979fc3f00c7ab9b63f2a2aaae7a6b15
 
                                     .subNavProducts {
                                         display: block;
@@ -568,9 +573,10 @@ header {
                     letter-spacing: normal;
                     color: #9a9da3;
                     margin-bottom: 30px;
-                    
+
                     a {
                         color: #9a9da3;
+
                         u {
                             color: #9a9da3;
                         }
@@ -1157,6 +1163,11 @@ header {
                 border-bottom: solid 1px #c5c8cf;
 
                 a {
+<<<<<<< HEAD
+=======
+                    cursor: pointer;
+
+>>>>>>> 50a91a829979fc3f00c7ab9b63f2a2aaae7a6b15
                     &:hover {
                         color: inherit;
                     }

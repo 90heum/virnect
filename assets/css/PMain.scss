@@ -1,5 +1,3 @@
-// @import url(./common.css);
-
 .productsSubMain {
   display: flex;
   flex-direction: column;
@@ -17,17 +15,17 @@
   margin: 0 auto;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div {
+.productsSubMain .proSubMainList .proSubMainListInner>div {
   display: flex;
   flex-direction: column;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span {
+.productsSubMain .proSubMainList .proSubMainListInner>div span {
   display: flex;
   flex-direction: column;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubRemote {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubRemote {
   position: relative;
   background-image: url("https://velog.velcdn.com/images/kyj0206/post/c94c1e19-fc9f-426e-93bd-728125f7b67e/image.png");
   background-size: auto 100%;
@@ -37,35 +35,36 @@
   width: 100%;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubRemote .subRemoteInner {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubRemote .subRemoteInner {
   position: absolute;
   width: 100%;
   right: 0;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubRemote .subRemoteInner>span {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubRemote .subRemoteInner>span {
   padding: 50px;
   display: flex;
   justify-content: center;
   border: solid 1px #c5c8cf;
   background-color: #f7f8f9;
   height: 538px;
+  max-width: 544px;
   min-width: 544px;
   margin-left: auto;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubRemote .subRemoteInner>span i {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubRemote .subRemoteInner>span i {
   display: flex;
   justify-content: center;
   margin-bottom: 14px;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubRemote .subRemoteInner>span i img {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubRemote .subRemoteInner>span i img {
   max-width: 101px;
   width: 100%;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubRemote .subRemoteInner>span .popTit {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubRemote .subRemoteInner>span .popTit {
   font-size: 14px;
   font-weight: bold;
   font-stretch: normal;
@@ -77,7 +76,7 @@
   margin-bottom: 65px;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubRemote .subRemoteInner>span span {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubRemote .subRemoteInner>span span {
   font-size: 34px;
   font-weight: bold;
   font-stretch: normal;
@@ -89,7 +88,7 @@
   margin-bottom: 19px;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubRemote .subRemoteInner>span .popInfo {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubRemote .subRemoteInner>span .popInfo {
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -99,9 +98,17 @@
   text-align: center;
   color: #121212;
   margin-bottom: 65px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /* ellipsis line */
+  -webkit-box-orient: vertical;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubRemote .subRemoteInner>span .popInfo p {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubRemote .subRemoteInner>span .popInfo p {
+  display: inline;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -112,7 +119,7 @@
   color: #121212;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubRemote .subRemoteInner>span button {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubRemote .subRemoteInner>span button {
   display: flex;
   margin: 0 auto;
   max-width: 160px;
@@ -121,7 +128,7 @@
   background-color: #121212;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubRemote .subRemoteInner>span button a {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubRemote .subRemoteInner>span button a {
   padding: 14px 40px;
   font-size: 18px;
   font-weight: bold;
@@ -133,14 +140,15 @@
   color: #fff;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubRemote .subRemoteInner::after {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubRemote .subRemoteInner::after {
   content: "";
+  display: block;
   width: 100%;
   opacity: 0.7;
   border: solid 1px #f7f8f9;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubMake {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubMake {
   position: relative;
   background-image: url("https://velog.velcdn.com/images/kyj0206/post/4aab2e2e-82cb-486a-b1c1-f5a05b2ec804/image.png");
   background-size: auto 100%;
@@ -153,14 +161,14 @@
   margin-bottom: 90px;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubMake .subMakeInner {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubMake .subMakeInner {
   position: absolute;
   width: 100%;
   right: 0;
   bottom: 0;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubMake .subMakeInner>span {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubMake .subMakeInner>span {
   padding: 50px;
   display: flex;
   justify-content: center;
@@ -168,21 +176,22 @@
   background-color: #f7f8f9;
   height: 538px;
   min-width: 544px;
+  max-width: 544px;
   margin-right: auto;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubMake .subMakeInner>span i {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubMake .subMakeInner>span i {
   display: flex;
   justify-content: center;
   margin-bottom: 14px;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubMake .subMakeInner>span i img {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubMake .subMakeInner>span i img {
   max-width: 101px;
   width: 100%;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubMake .subMakeInner>span .popTit {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubMake .subMakeInner>span .popTit {
   font-size: 14px;
   font-weight: bold;
   font-stretch: normal;
@@ -194,7 +203,7 @@
   margin-bottom: 27px;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubMake .subMakeInner>span span {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubMake .subMakeInner>span span {
   font-size: 34px;
   font-weight: bold;
   font-stretch: normal;
@@ -206,7 +215,7 @@
   margin-bottom: 19px;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubMake .subMakeInner>span .popInfo {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubMake .subMakeInner>span .popInfo {
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -216,9 +225,17 @@
   text-align: center;
   color: #121212;
   margin-bottom: 35px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /* ellipsis line */
+  -webkit-box-orient: vertical;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubMake .subMakeInner>span .popInfo p {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubMake .subMakeInner>span .popInfo p {
+  display: inline;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -229,7 +246,7 @@
   color: #121212;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubMake .subMakeInner>span button {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubMake .subMakeInner>span button {
   display: flex;
   margin: 0 auto;
   max-width: 160px;
@@ -238,7 +255,7 @@
   background-color: #121212;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubMake .subMakeInner>span button a {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubMake .subMakeInner>span button a {
   padding: 14px 40px;
   font-size: 18px;
   font-weight: bold;
@@ -250,14 +267,15 @@
   color: #fff;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubMake .subMakeInner::before {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubMake .subMakeInner::before {
   content: "";
+  display: block;
   width: 100%;
   opacity: 0.7;
   border: solid 1px #f7f8f9;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubView {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubView {
   position: relative;
   background-image: url("https://velog.velcdn.com/images/kyj0206/post/34f1e9d7-90f6-471c-84b5-680c755679f9/image.png");
   background-size: auto 100%;
@@ -267,14 +285,14 @@
   width: 100%;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubView .subViewInner {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubView .subViewInner {
   position: absolute;
   width: 100%;
   right: 0;
   bottom: 0;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubView .subViewInner>span {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubView .subViewInner>span {
   padding: 50px;
   display: flex;
   justify-content: center;
@@ -282,21 +300,22 @@
   background-color: #f7f8f9;
   height: 538px;
   min-width: 544px;
+  max-width: 544px;
   margin-left: auto;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubView .subViewInner>span i {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubView .subViewInner>span i {
   display: flex;
   justify-content: center;
   margin-bottom: 14px;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubView .subViewInner>span i img {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubView .subViewInner>span i img {
   max-width: 101px;
   width: 100%;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubView .subViewInner>span .popTit {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubView .subViewInner>span .popTit {
   font-size: 14px;
   font-weight: bold;
   font-stretch: normal;
@@ -308,7 +327,7 @@
   margin-bottom: 27px;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubView .subViewInner>span span {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubView .subViewInner>span span {
   font-size: 34px;
   font-weight: bold;
   font-stretch: normal;
@@ -320,7 +339,7 @@
   margin-bottom: 19px;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubView .subViewInner>span .popInfo {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubView .subViewInner>span .popInfo {
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -330,9 +349,17 @@
   text-align: center;
   color: #121212;
   margin-bottom: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /* ellipsis line */
+  -webkit-box-orient: vertical;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubView .subViewInner>span .popInfo p {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubView .subViewInner>span .popInfo p {
+  display: inline;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -343,7 +370,7 @@
   color: #121212;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubView .subViewInner>span button {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubView .subViewInner>span button {
   display: flex;
   margin: 0 auto;
   max-width: 160px;
@@ -352,7 +379,7 @@
   background-color: #121212;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubView .subViewInner>span button a {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubView .subViewInner>span button a {
   padding: 14px 40px;
   font-size: 18px;
   font-weight: bold;
@@ -364,8 +391,9 @@
   color: #fff;
 }
 
-.productsSubMain .proSubMainList .proSubMainListInner div span.proSubView .subViewInner::before {
+.productsSubMain .proSubMainList .proSubMainListInner>div span.proSubView .subViewInner::before {
   content: "";
+  display: block;
   width: 100%;
   opacity: 0.7;
   border: solid 1px #f7f8f9;
@@ -380,7 +408,7 @@
   background-image: url("https://velog.velcdn.com/images/kyj0206/post/f2524d29-e573-4c03-a66a-53f83c9df436/image.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
   height: 920px;
 }
 
@@ -481,9 +509,17 @@
   text-align: center;
   color: #121212;
   margin-bottom: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /* ellipsis line */
+  -webkit-box-orient: vertical;
 }
 
 .productsSubMain .xrBanner .xrBannerInner .xrBannerWrap .xrBannerCont>span .popInfo p {
+  display: inline;
   font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
@@ -519,19 +555,14 @@
   margin-bottom: 41px;
 }
 
-@media screen and (max-width: 1148px) {
-  .productsSubMain .xrBanner .xrBannerInner .xrBannerWrap {
-    padding: 150px 0;
-  }
-}
-
-@media screen and (max-width: 1088px) {
+@media screen and (max-width: 1150px) {
   .productsSubMain .xrBanner .xrBannerInner .xrBannerWrap .xrBannerTit h2 {
     padding: 28px 40px;
   }
 
   .productsSubMain .xrBanner .xrBannerInner .xrBannerWrap .xrBannerCont>span {
-    min-width: 512px;
+    min-width: 0;
+    width: 50%;
   }
 }
 
@@ -584,12 +615,16 @@
     font-size: 28px;
   }
 
+  .productsSubMain .xrBanner .xrBannerInner .xrBannerWrap .xrBannerCont>span .popInfo p,
   .productsSubMain .xrBanner .xrBannerInner .xrBannerWrap .xrBannerCont>span .popInfo {
     font-size: 14px;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .productsSubMain .proSubMainList {
+    padding: 80px 0 0;
+  }
 
   .productsSubMain .proSubMainList .proSubMainListInner div span.proSubView .subViewInner>span,
   .productsSubMain .proSubMainList .proSubMainListInner div span.proSubMake .subMakeInner>span,
@@ -597,6 +632,11 @@
     min-width: 384px;
     height: 432px;
     padding: 0;
+  }
+
+  .productsSubMain .xrBanner .xrBannerInner .xrBannerWrap .xrBannerCont>span {
+    height: 432px;
+    width: 100%;
   }
 
   .productsSubMain .proSubMainList .proSubMainListInner div span.proSubMake,
@@ -624,6 +664,7 @@
     color: #0a51b7;
   }
 
+  .productsSubMain .xrBanner .xrBannerInner .xrBannerWrap .xrBannerCont>span .popInfo p,
   .productsSubMain .proSubMainList .proSubMainListInner div span.proSubRemote .subRemoteInner>span .popInfo,
   .productsSubMain .proSubMainList .proSubMainListInner div span.proSubRemote .subRemoteInner>span .popInfo p,
   .productsSubMain .proSubMainList .proSubMainListInner div span.proSubMake .subMakeInner>span .popInfo,
@@ -639,9 +680,132 @@
     text-align: center;
     color: #121212;
   }
+
+  .productsSubMain .xrBanner .xrBannerInner {
+    height: 432px;
+  }
+
+  .productsSubMain .xrBanner {
+    height: 950px;
+  }
+
+  .productsSubMain .xrBanner .xrBannerInner .xrBannerWrap {
+    padding: 115px 0 0;
+  }
+
+  .productsSubMain .xrBanner .xrBannerInner .xrBannerWrap .xrBannerTit h2 {
+    padding: 0 0 0 40px;
+  }
+
+  .productsSubMain .xrBanner .xrBannerInner .xrBannerWrap .xrBannerTit {
+    margin-bottom: 95px;
+  }
+
+  .productsSubMain .xrBanner .xrBannerInner .xrBannerWrap .xrBannerTit h2 {
+    font-size: 38px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.47;
+    letter-spacing: -0.48px;
+    color: #fff;
+  }
+
+  .productsSubMain .xrBanner .xrBannerInner .xrBannerWrap .xrBannerCont>span i img {
+    max-width: 60px;
+  }
+
+  .productsSubMain .xrBanner .xrBannerInner .xrBannerWrap .xrBannerCont>span {
+    padding: 0 40px;
+    justify-content: center;
+  }
+
+  .productsSubMain .xrBanner .xrBannerInner .xrBannerWrap .xrBannerTit h2 p {
+    font-size: 38px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.47;
+    letter-spacing: -0.48px;
+    color: #fff;
+  }
 }
 
-@media screen and (max-width: 384px) {
+@media screen and (max-width: 735px) {
+  .productsSubMain .xrBanner .xrBannerInner .xrBannerWrap .xrBannerCont>span {
+    max-width: none;
+  }
+
+  .productsSubMain .xrBanner .xrBannerInner {
+    height: 260px;
+  }
+
+  .productsSubMain .xrBanner .xrBannerInner .xrBannerWrap {
+    padding: 50px 0 0;
+  }
+
+  .productsSubMain .xrBanner .xrBannerInner .xrBannerWrap .xrBannerTit h2 {
+    font-size: 26px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: -0.33px;
+    color: #fff;
+  }
+
+  .productsSubMain .xrBanner .xrBannerInner .xrBannerWrap .xrBannerCont {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .productsSubMain .xrBanner {
+    height: 1165px;
+  }
+
+  .productsSubMain .xrBanner .xrBannerInner .xrBannerWrap .xrBannerTit {
+    margin-bottom: 50px;
+  }
+
+  .productsSubMain .proSubMainList .proSubMainListInner div span.proSubView .subViewInner>span,
+  .productsSubMain .proSubMainList .proSubMainListInner div span.proSubMake .subMakeInner>span,
+  .productsSubMain .proSubMainList .proSubMainListInner div span.proSubRemote .subRemoteInner>span {
+    max-width: none;
+    width: 100%;
+  }
+
+  .productsSubMain .proSubMainList .proSubMainListInner div span.proSubRemote .subRemoteInner,
+  .productsSubMain .proSubMainList .proSubMainListInner div span.proSubMake .subMakeInner,
+  .productsSubMain .proSubMainList .proSubMainListInner div span.proSubView .subViewInner {
+    top: 170px;
+    height: 432px;
+  }
+
+  .productsSubMain .proSubMainList .proSubMainListInner div span.proSubMake,
+  .productsSubMain .proSubMainList .proSubMainListInner div span.proSubView,
+  .productsSubMain .proSubMainList .proSubMainListInner div span.proSubRemote {
+    width: 100%;
+    height: 170px;
+    background-size: cover;
+    background-position: top;
+    margin-bottom: 432px;
+  }
+
+  .productsSubMain .xrBanner .xrBannerInner .xrBannerWrap .xrBannerTit h2 p {
+    font-size: 26px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: -0.33px;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .proSubMainList {
+    padding: 40px 0 0;
+  }
 
   .productsSubMain .proSubMainList .proSubMainListInner div span.proSubView .subViewInner>span,
   .productsSubMain .proSubMainList .proSubMainListInner div span.proSubMake .subMakeInner>span,
@@ -649,20 +813,5 @@
     min-width: 0;
     padding: 0 10px;
     width: 100%;
-  }
-
-  .productsSubMain .proSubMainList .proSubMainListInner div span.proSubRemote .subRemoteInner>span .popInfo,
-  .productsSubMain .proSubMainList .proSubMainListInner div span.proSubRemote .subRemoteInner>span .popInfo p,
-  .productsSubMain .proSubMainList .proSubMainListInner div span.proSubMake .subMakeInner>span .popInfo,
-  .productsSubMain .proSubMainList .proSubMainListInner div span.proSubMake .subMakeInner>span .popInfo p,
-  .productsSubMain .proSubMainList .proSubMainListInner div span.proSubView .subViewInner>span .popInfo,
-  .productsSubMain .proSubMainList .proSubMainListInner div span.proSubView .subViewInner>span .popInfo p {
-    display: inline;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    width: 100%;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
   }
 }

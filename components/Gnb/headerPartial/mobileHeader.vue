@@ -2,8 +2,7 @@
   <!-- 햄버거 서브메뉴 박스 -->
   <div class="hamSubBox" v-if="isMenu">
     <ul class="hamSubMenu">
-      <li class="hamUseCase" @click="[changeHamTit()]"
-          >
+      <li class="hamUseCase" @click="[changeHamTit()]">
         <span class="hamUseCaseTit">
           <a @click="showPage('/solutions/energy_resource')"> Value </a>
           <ul class="hamUseCaseMenu" v-if="isSub">
@@ -24,10 +23,7 @@
             </li>
           </ul>
         </span>
-        <span
-          class="hamMenuToggle"
-           @click="showUse()"
-        >
+        <span class="hamMenuToggle" @click="showUse()">
           <img
             class="hamSubMenuOpen"
             src="https://velog.velcdn.com/images/kyj0206/post/77d76d78-4bc7-4e93-afa3-23eff596d40a/image.png"
@@ -65,10 +61,7 @@
             </li>
           </ul>
         </span>
-        <span
-          class="hamMenuToggle"
-          @click="[showUse2()]"
-        >
+        <span class="hamMenuToggle" @click="[showUse2()]">
           <img
             class="hamSubMenuOpen"
             src="https://velog.velcdn.com/images/kyj0206/post/77d76d78-4bc7-4e93-afa3-23eff596d40a/image.png"
@@ -99,10 +92,7 @@
             </li>
           </ul>
         </span>
-        <span
-          class="hamMenuToggle"
-          @click="[showUse3()]"
-        >
+        <span class="hamMenuToggle" @click="[showUse3()]">
           <img
             class="hamSubMenuOpen"
             src="https://velog.velcdn.com/images/kyj0206/post/77d76d78-4bc7-4e93-afa3-23eff596d40a/image.png"
@@ -130,10 +120,7 @@
             </li>
           </ul>
         </span>
-        <span
-          class="hamMenuToggle"
-          @click="[showUse4(true)]"
-        >
+        <span class="hamMenuToggle" @click="[showUse4(true)]">
           <img
             class="hamSubMenuOpen"
             src="https://velog.velcdn.com/images/kyj0206/post/77d76d78-4bc7-4e93-afa3-23eff596d40a/image.png"
@@ -161,10 +148,7 @@
             </li>
           </ul>
         </span>
-        <span
-          class="hamMenuToggle"
-          @click="[showUse5(true)]"
-        >
+        <span class="hamMenuToggle" @click="[showUse5(true)]">
           <img
             class="hamSubMenuOpen"
             src="https://velog.velcdn.com/images/kyj0206/post/77d76d78-4bc7-4e93-afa3-23eff596d40a/image.png"
@@ -181,7 +165,7 @@
     <div class="hamSubBottom">
       <button
         class="bottomButton"
-        @click="[subBottom(), toggle6(), showEarth=false]"
+        @click="[subBottom(), toggle6(), (showEarth = false)]"
         v-if="isWeb"
         v-click-outside="hamServiceHide"
       >
@@ -292,8 +276,8 @@
           <span
             v-for="locale in availableLocales"
             :key="locale.code"
-            @click="[supertest()]"
-             @click.prevent.stop="$i18n.setLocale(locale.code)"
+            @click.prevent.stop="$i18n.setLocale(locale.code)"
+            @click="[langlang(), supertest()]"
           >
             <a>{{ locale.name }}</a>
           </span>
@@ -307,7 +291,6 @@
 import ClickOutside from "vue-click-outside";
 
 const hamUse = {};
-
 
 export default {
   /* created(){
@@ -348,7 +331,7 @@ export default {
     open4: false,
     open5: false,
     hamServiceOpen: false,
-    mobileMenu: null
+    mobileMenu: null,
     /* subOpen: false, */
   }),
   methods: {
@@ -396,18 +379,28 @@ export default {
       this.isBottomMenu = false;
     },
     showPage(e) {
-      console.log(e, this.mobileMenu)
-      if(e === this.mobileMenu) {
+      console.log(e, this.mobileMenu);
+      if (e === this.mobileMenu) {
         this.mobileMenu = null;
-        this.$router.push(e) 
-        this.isMenu = false
+        this.$router.push(e);
+        this.isMenu = false;
       } else {
         this.mobileMenu = e;
-        if(e === '/solutions/energy_resource'){this.isSub = !this.isSub;}
-        if(e === '/products/remote'){this.isSub2 = !this.isSub2;}
-        if(e === '/support/notice'){this.isSub3 = !this.isSub3;} 
-        if(e === '/news/main'){this.isSub4 = !this.isSub4;} 
-        if(e === '/company/about'){this.isSub5 = !this.isSub5;} 
+        if (e === "/solutions/energy_resource") {
+          this.isSub = !this.isSub;
+        }
+        if (e === "/products/remote") {
+          this.isSub2 = !this.isSub2;
+        }
+        if (e === "/support/notice") {
+          this.isSub3 = !this.isSub3;
+        }
+        if (e === "/news/main") {
+          this.isSub4 = !this.isSub4;
+        }
+        if (e === "/company/about") {
+          this.isSub5 = !this.isSub5;
+        }
       }
     },
     showUse() {
@@ -437,7 +430,6 @@ export default {
     },
     langlang() {
       this.showEarth = !this.showEarth;
-      this.isMenu = !this.isMenu;
     },
     supertest() {
       this.isMenu = false;
