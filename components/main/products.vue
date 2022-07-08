@@ -99,9 +99,10 @@
       </span>
       <div :class="`moduleBottomWrapRemote`" v-if="category === 1">
         <span class="moduleBottomTitRemote">
-          <p>VIRNECT Remote</p>
-          <h2>XR 원격 협업 솔루션</h2>
-          <span>
+          <div>
+            <p>VIRNECT Remote</p>
+            <h2>XR 원격 협업 솔루션</h2>
+                      <span>
             <p>
               VIRNECT Remote의 실시간 원격협업 서비스를 통해 산업 현장에 필요한
               정보와
@@ -115,15 +116,18 @@
             </p>
             <p>업무의 정확성과 효율성을 높일 수 있습니다.</p>
           </span>
-          <span>
-            <button>
-              <nuxt-link to="/products/remote"> 자세히 보기 </nuxt-link>
-            </button>
-            <button>
-              <a href="support/inquiry" target="blank"> 데모신청 </a>
-            </button>
-          </span>
-          <span>
+          </div>
+
+          <div>
+            <span>
+              <button>
+                <nuxt-link to="/products/remote"> 자세히 보기 </nuxt-link>
+              </button>
+              <button>
+                <a href="support/inquiry" target="blank"> 데모신청 </a>
+              </button>
+            </span>
+                      <span>
             <i>
               <img
                 src="https://velog.velcdn.com/images/kyj0206/post/7f7bb43e-b114-4733-b9f6-060e25b8ee49/image.png"
@@ -132,6 +136,8 @@
             </i>
             <p><u>Remote 제품 소개서 다운로드(PDF)</u></p>
           </span>
+          </div>
+
         </span>
         <span class="moduleBottomCont">
           <img
@@ -145,9 +151,10 @@
         v-if="category === 2"
       >
         <span class="moduleBottomTitMake">
+          <div>
           <p>VIRNECT Make</p>
           <h2>확장현실(XR) 콘텐츠 제작 솔루션</h2>
-          <span>
+                    <span>
             <p>
               VIRNECT Make는 XR 콘텐츠로 제작 도구로, 비전문가도 마우스 클릭으로 XR 콘 텐츠 제작이 가능합니다.
 또한 문자, 사진, 비디오, 3D 모델은 물론 기존 작업 문서, 설비 도면 등을 그대로 제 작에 빠르게 활용할 수 있습니다.
@@ -156,6 +163,10 @@
               안전하고 효율적인 업무 생태계를 기업에서 직접 만들고 관리합니다.
             </p>
           </span>
+          </div>
+          
+
+          <div>
           <span>
             <button>
               <nuxt-link to="/products/make"> 자세히 보기 </nuxt-link>
@@ -164,7 +175,7 @@
               <a href="support/inquiry" target="blank"> 데모신청 </a>
             </button>
           </span>
-          <span>
+                    <span>
             <a href="#">
               <i>
                 <img
@@ -175,6 +186,9 @@
               <p><u>Make 제품 소개서 다운로드(PDF)</u></p>
             </a>
           </span>
+          </div>
+
+
         </span>
         <span class="moduleBottomCont">
           <img
@@ -188,15 +202,20 @@
         v-if="category === 3"
       >
         <span class="moduleBottomTitView">
+          <div>
           <p>VIRNECT View</p>
           <h2>확장현실(XR) 콘텐츠 시각화 솔루션</h2>
-          <span>
+                    <span>
             <p>VIRNECT View는 확장현실(XR) 정보 및 데이터 시각화 솔루션입니다. </p>
             <p>
               상용회된 기 기로 작업 매뉴얼, 안전 가이드 등의 업무 정보와
               운영 데이터를 현장에서 바로 확인할 수 있으며, 신속한 의사 결정과 빠른 대응이 가 능합니다.
             </p>
           </span>
+          </div>
+
+
+          <div>
           <span>
             <button>
               <nuxt-link to="/products/view"> 자세히 보기 </nuxt-link>
@@ -214,6 +233,8 @@
             </i>
             <p><u>View 제품 소개서 다운로드(PDF)</u></p>
           </span>
+          </div>
+
         </span>
         <span class="moduleBottomCont">
           <img
@@ -227,6 +248,7 @@
         v-if="category === 4"
       >
         <span class="moduleBottomTitTwin">
+          <div>
           <p>VIRNECT Twin</p>
           <h2>XR 기반 3D 현장 관리 솔루션</h2>
           <span>
@@ -236,6 +258,9 @@
               제품입니다.
             </p>
           </span>
+          </div>
+
+          <div style="height:92px">
           <span>
             <button>
               <nuxt-link to="/products/twin"> 자세히 보기 </nuxt-link>
@@ -244,7 +269,7 @@
               <a href="support/inquiry" target="blank"> 데모신청 </a>
             </button>
           </span>
-          <span>
+          <!-- <span>
             <i>
               <img
                 src="https://velog.velcdn.com/images/kyj0206/post/7f7bb43e-b114-4733-b9f6-060e25b8ee49/image.png"
@@ -252,7 +277,9 @@
               />
             </i>
             <p><u>Twin 제품 소개서 다운로드(PDF)</u></p>
-          </span>
+          </span> -->
+          </div>
+
         </span>
         <span class="moduleBottomCont">
           <img
@@ -266,17 +293,27 @@
         v-if="category === 5"
       >
         <span class="moduleBottomTitTrack">
+          <div>
           <p>VIRNECT Track</p>
-          <h2>검출/추적용 XR 개발 엔진</h2>
-          <span>
+          <h2>XR 원격 협업 솔루션</h2>
+                    <span>
             <p>
-              VIRNECT Track은 빠르고 정확하게 객체를 학습, 인식 검출, 추적하는 버넥트 
-              자체 개발 XR 엔진입니다.
+              VIRNECT Remote의 실시간 원격협업 서비스를 통해 산업 현장에 필요한
+              정보와
             </p>
             <p>
-              버넥트 XR 제품들에 탑재되어 뛰어난 성능과 운영 퍼포먼스를 제공하고 있습니다.
+              이슈를​ 실시간으로 공유하여 언제 어디서든 업무 대응이 가능합니다.​
             </p>
+            <p>
+              쉽고 빠르게 협업이 가능하며 ​기존의 익숙한 업무 환경을 그대로
+              유지하여
+            </p>
+            <p>업무의 정확성과 효율성을 높일 수 있습니다.</p>
           </span>
+          </div>
+
+
+          <div style="height:92px">
           <span>
             <button>
               <nuxt-link to="/products/track"> 자세히 보기 </nuxt-link>
@@ -285,7 +322,7 @@
               <a href="support/inquiry" target="blank"> 데모신청 </a>
             </button>
           </span>
-          <span>
+          <!-- <span>
             <i>
               <img
                 src="https://velog.velcdn.com/images/kyj0206/post/7f7bb43e-b114-4733-b9f6-060e25b8ee49/image.png"
@@ -293,7 +330,9 @@
               />
             </i>
             <p><u>Track 제품 소개서 다운로드(PDF)</u></p>
-          </span>
+          </span> -->
+          </div>
+
         </span>
         <span class="moduleBottomCont">
           <img
@@ -520,36 +559,91 @@ export default {
       &.bottomContActive {
         display: flex;
       }
+      .moduleBottomTitMake{
+        div{
+          &:last-child{
+            span{
+              &:last-child{
+                a{
+                  display: flex;
+                  align-items: center;
+                  gap: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+
       .moduleBottomTitMake,
       .moduleBottomTitView,
       .moduleBottomTitTwin,
       .moduleBottomTitTrack,
       .moduleBottomTitRemote {
         width: 50%;
-        > p {
-          font-size: 18px;
-          font-weight: 500;
-          font-stretch: normal;
-          font-style: normal;
-          line-height: normal;
-          letter-spacing: -0.23px;
-          color: #0a51b7;
-          margin-bottom: 13px;
-        }
-        h2 {
-          font-size: 32px;
-          font-weight: bold;
-          font-stretch: normal;
-          font-style: normal;
-          line-height: normal;
-          letter-spacing: -0.4px;
-          color: #121212;
-          margin-bottom: 40px;
-        }
-        span {
-          display: block;
-          text-align: left;
-
+        max-height: 384.22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        div{
+          &:first-child{
+          >p {
+            font-size: 18px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: -0.23px;
+            color: #0a51b7;
+            margin-bottom: 13px;
+          }
+          h2 {
+            font-size: 32px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: -0.4px;
+            color: #121212;
+            margin-bottom: 40px;
+          }
+          >span{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          line-height: 1.75;
+          }
+          }
+          &:last-child{
+          span{
+            display: flex;
+            gap: 12px;
+            margin-bottom: 25px;
+                      &:last-child{
+            display: flex;
+            align-items: center;
+            margin: 0;
+            i {
+                display: flex;
+                align-items: center;
+              img {
+                max-width: 22px;
+              }
+            }
+            p {
+              u {
+                font-size: 14px;
+                font-weight: 500;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.36;
+                letter-spacing: -0.18px;
+                color: #092e6e;
+                padding-bottom: 5px;
+              }
+            }
+          
+          }
           &:nth-child(3) {
             margin-bottom: 76.5px;
             p {
@@ -592,11 +686,6 @@ export default {
               }
             }
           }
-
-          &:nth-child(4) {
-            display: flex;
-            gap: 12px;
-            margin-bottom: 25px;
             button {
               &:first-child {
                 border: solid 1px #979797;
@@ -632,28 +721,9 @@ export default {
               }
             }
           }
-          &:last-child {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            i {
-              img {
-                max-width: 22px;
-              }
-            }
-            p {
-              u {
-                font-size: 14px;
-                font-weight: 500;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: 1.36;
-                letter-spacing: -0.18px;
-                color: #092e6e;
-              }
-            }
           }
         }
+
       }
       .moduleBottomCont {
         width: 50%;
@@ -667,6 +737,7 @@ export default {
     }
   }
 }
+
 
 @media screen and (max-width: 1000px) {
   .productsModule .moduleBottom .moduleBottomWrapTrack.bottomContActive,
