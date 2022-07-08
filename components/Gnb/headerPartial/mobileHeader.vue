@@ -25,16 +25,29 @@
         </span>
         <span class="hamMenuToggle" @click="showUse()">
           <img
+            v-if="isShowing"
+            :src="isOpen"
+            alt="일정접기"
+            @click="isShowing = !isShowing"
+          />
+          <img
+            v-else
+            :src="isClose"
+            alt="일정접기"
+            @click="isShowing = !isShowing"
+          />
+          <!-- <img
             class="hamSubMenuOpen"
             src="https://velog.velcdn.com/images/kyj0206/post/77d76d78-4bc7-4e93-afa3-23eff596d40a/image.png"
             alt="메뉴 열기 아이콘"
+            
           />
           <img
             class="hamSubMenuClose"
             src="https://velog.velcdn.com/images/kyj0206/post/1ada69e3-933d-498a-a77f-ddb3de372ae8/image.png"
             alt="메뉴 닫기 아이콘"
             v-if="isSub"
-          />
+          /> -->
         </span>
       </li>
       <li class="hamProducts">
@@ -63,14 +76,16 @@
         </span>
         <span class="hamMenuToggle" @click="[showUse2()]">
           <img
-            class="hamSubMenuOpen"
-            src="https://velog.velcdn.com/images/kyj0206/post/77d76d78-4bc7-4e93-afa3-23eff596d40a/image.png"
-            alt="메뉴 열기 아이콘"
+            v-if="isShowing2"
+            :src="isOpen"
+            alt="일정접기"
+            @click="isShowing2 = !isShowing2"
           />
           <img
-            class="hamSubMenuClose"
-            src="https://velog.velcdn.com/images/kyj0206/post/1ada69e3-933d-498a-a77f-ddb3de372ae8/image.png"
-            alt="메뉴 닫기 아이콘"
+            v-else
+            :src="isClose"
+            alt="일정접기"
+            @click="isShowing2 = !isShowing2"
           />
         </span>
       </li>
@@ -94,14 +109,16 @@
         </span>
         <span class="hamMenuToggle" @click="[showUse3()]">
           <img
-            class="hamSubMenuOpen"
-            src="https://velog.velcdn.com/images/kyj0206/post/77d76d78-4bc7-4e93-afa3-23eff596d40a/image.png"
-            alt="메뉴 열기 아이콘"
+            v-if="isShowing3"
+            :src="isOpen"
+            alt="일정접기"
+            @click="isShowing3 = !isShowing3"
           />
           <img
-            class="hamSubMenuClose"
-            src="https://velog.velcdn.com/images/kyj0206/post/1ada69e3-933d-498a-a77f-ddb3de372ae8/image.png"
-            alt="메뉴 닫기 아이콘"
+            v-else
+            :src="isClose"
+            alt="일정접기"
+            @click="isShowing3 = !isShowing3"
           />
         </span>
       </li>
@@ -122,14 +139,16 @@
         </span>
         <span class="hamMenuToggle" @click="[showUse4(true)]">
           <img
-            class="hamSubMenuOpen"
-            src="https://velog.velcdn.com/images/kyj0206/post/77d76d78-4bc7-4e93-afa3-23eff596d40a/image.png"
-            alt="메뉴 열기 아이콘"
+            v-if="isShowing4"
+            :src="isOpen"
+            alt="일정접기"
+            @click="isShowing4 = !isShowing4"
           />
           <img
-            class="hamSubMenuClose"
-            src="https://velog.velcdn.com/images/kyj0206/post/1ada69e3-933d-498a-a77f-ddb3de372ae8/image.png"
-            alt="메뉴 닫기 아이콘"
+            v-else
+            :src="isClose"
+            alt="일정접기"
+            @click="isShowing4 = !isShowing4"
           />
         </span>
       </li>
@@ -150,14 +169,16 @@
         </span>
         <span class="hamMenuToggle" @click="[showUse5(true)]">
           <img
-            class="hamSubMenuOpen"
-            src="https://velog.velcdn.com/images/kyj0206/post/77d76d78-4bc7-4e93-afa3-23eff596d40a/image.png"
-            alt="메뉴 열기 아이콘"
+            v-if="isShowing5"
+            :src="isOpen"
+            alt="일정접기"
+            @click="isShowing5 = !isShowing5"
           />
           <img
-            class="hamSubMenuClose"
-            src="https://velog.velcdn.com/images/kyj0206/post/1ada69e3-933d-498a-a77f-ddb3de372ae8/image.png"
-            alt="메뉴 닫기 아이콘"
+            v-else
+            :src="isClose"
+            alt="일정접기"
+            @click="isShowing5 = !isShowing5"
           />
         </span>
       </li>
@@ -277,7 +298,7 @@
             v-for="locale in availableLocales"
             :key="locale.code"
             @click.prevent.stop="$i18n.setLocale(locale.code)"
-            @click="[langlang(), supertest()]"
+            @click="[langlang()]"
           >
             <a>{{ locale.name }}</a>
           </span>
@@ -332,6 +353,14 @@ export default {
     open5: false,
     hamServiceOpen: false,
     mobileMenu: null,
+    isShowing: true,
+    isShowing2: true,
+    isShowing3: true,
+    isShowing4: true,
+    isShowing5: true,
+    isOpen: require("~/assets/images/common/icon-menu-more.png"),
+    isClose: require("~/assets/images/common/icon-menu-close.png"),
+    socStyle: {},
     /* subOpen: false, */
   }),
   methods: {
