@@ -24,11 +24,11 @@ export default {
   props: {
     benefitArr: Array,
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>
-@import '~assets/css/mixin.scss';
+@import "~assets/css/mixin.scss";
 .benefit-part {
   // 장점 4개
   @include area-flex(1200px);

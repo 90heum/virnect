@@ -29,28 +29,35 @@
               </span>
             </div>
           </span>
-            
-            <client-only>
+
+          <client-only>
             <div class="banner">
-            <div class="CompanyBottomBanner">
-              <div class="CompanyBottomBannerSlider-container">
-                <div class="CompanyBottomBannerSlide"
+              <div class="CompanyBottomBanner">
+                <div class="CompanyBottomBannerSlider-container">
+                  <div
+                    class="CompanyBottomBannerSlide"
                     v-for="(data, idx) of bottomBannerData"
-                    :key="idx">
-                  <span>
-                    <img class="CompanyBottomBannerSlideImg"
-                      :src="data.src"
-                      :alt="data.alt"
-                    />
-                    <p class="CompanyBottomBannerSlideTitle">{{data.title}}</p>
-                    <p class="CompanyBottomBannerSlideContent">{{data.content}}</p>
-                  </span>
+                    :key="idx"
+                  >
+                    <span>
+                      <img
+                        class="CompanyBottomBannerSlideImg"
+                        :src="data.src"
+                        :alt="data.alt"
+                      />
+                      <p class="CompanyBottomBannerSlideTitle">
+                        {{ data.title }}
+                      </p>
+                      <p class="CompanyBottomBannerSlideContent">
+                        {{ data.content }}
+                      </p>
+                    </span>
+                  </div>
                 </div>
               </div>
-            </div>    
             </div>
-            </client-only>
-          </div>
+          </client-only>
+        </div>
       </span>
 
       <!-- 버넥트 뉴스 모듈 -->
@@ -188,46 +195,59 @@
       </span>
 
       <!-- 인증 및 수상 모듈 -->
-              <span class="companyAwards">
-                <div class="awardsWrap">
-                  <div>
-                    <p>인증 및 수상</p>
-                  </div>
-                  <div class="awardsSlider">
-                    
-                     <img src="~/assets/images/pages/right@2x.png" class="prevBtn"
-                           @click="() => {
-                            if (awardIdx.start <= 0) return;
-                            awardIdx.start = (Number(awardIdx.start) - 6);
-                            awardIdx.end = (Number(awardIdx.end) - 6);
-                         }"/>
-                    <span class="SliderList"
-                          v-for="(data, idx) of award.filter((e, idx) => {
-                            if (idx >= awardIdx.start && idx < awardIdx.end) { return e; } 
-                          })"
-                          :key="idx">
-                      <span>
-                        <img
-                          :src="data.src"
-                          :alt="data.alt"
-                          class="CompanyBottomBannerAwardSlideImg"
-                        />
-                      </span>
-                      <span>
-                        <p>{{data.title}}</p>
-                        <p>{{data.host}}</p>
-                        <p>{{data.info}}</p>
-                      </span>
-                    </span>
-                    <img src="~/assets/images/pages/left@2x.png" class="nextBtn"
-                         @click="() => {
-                           if (awardIdx.end >= (award.length-1)) return;
-                           awardIdx.start = (Number(awardIdx.start) + 6);
-                           awardIdx.end = (Number(awardIdx.end) + 6);
-                         }"/>
-                  </div>
-                </div>
+      <span class="companyAwards">
+        <div class="awardsWrap">
+          <div>
+            <p>인증 및 수상</p>
+          </div>
+          <div class="awardsSlider">
+            <img
+              src="~/assets/images/pages/right@2x.png"
+              class="prevBtn"
+              @click="
+                () => {
+                  if (awardIdx.start <= 0) return;
+                  awardIdx.start = Number(awardIdx.start) - 6;
+                  awardIdx.end = Number(awardIdx.end) - 6;
+                }
+              "
+            />
+            <span
+              class="SliderList"
+              v-for="(data, idx) of award.filter((e, idx) => {
+                if (idx >= awardIdx.start && idx < awardIdx.end) {
+                  return e;
+                }
+              })"
+              :key="idx"
+            >
+              <span>
+                <img
+                  :src="data.src"
+                  :alt="data.alt"
+                  class="CompanyBottomBannerAwardSlideImg"
+                />
               </span>
+              <span>
+                <p>{{ data.title }}</p>
+                <p>{{ data.host }}</p>
+                <p>{{ data.info }}</p>
+              </span>
+            </span>
+            <img
+              src="~/assets/images/pages/left@2x.png"
+              class="nextBtn"
+              @click="
+                () => {
+                  if (awardIdx.end >= award.length - 1) return;
+                  awardIdx.start = Number(awardIdx.start) + 6;
+                  awardIdx.end = Number(awardIdx.end) + 6;
+                }
+              "
+            />
+          </div>
+        </div>
+      </span>
     </div>
   </div>
 </template>
@@ -235,135 +255,140 @@
 <script>
 import { awardData } from "~/components/dummy/award.js";
 export default {
-  methods: {
-  },
+  methods: {},
   data() {
     return {
       awardIdx: {
         start: 0,
-        end: 6
+        end: 6,
       },
       award: awardData,
       bottomBannerData: [
         {
-          src:"https://velog.velcdn.com/images/kyj0206/post/295148e7-24fd-4611-af87-d2f0f95f576a/image.jpg",
-          alt:"Smart future",
+          src: "https://velog.velcdn.com/images/kyj0206/post/295148e7-24fd-4611-af87-d2f0f95f576a/image.jpg",
+          alt: "Smart future",
           title: "Smart future",
-          content: "효율적인 업무와 효과적인 학습환경"
+          content: "효율적인 업무와 효과적인 학습환경",
         },
         {
-          src:"https://velog.velcdn.com/images/kyj0206/post/295148e7-24fd-4611-af87-d2f0f95f576a/image.jpg",
-          alt:"Smart future",
+          src: "https://velog.velcdn.com/images/kyj0206/post/295148e7-24fd-4611-af87-d2f0f95f576a/image.jpg",
+          alt: "Smart future",
           title: "Smart future",
-          content: "효율적인 업무와 효과적인 학습환경"
+          content: "효율적인 업무와 효과적인 학습환경",
         },
         {
-          src:"https://velog.velcdn.com/images/kyj0206/post/ed9983b2-ceeb-4258-b543-0a29f40fda60/image.jpg",
-          alt:"Safe future",
+          src: "https://velog.velcdn.com/images/kyj0206/post/ed9983b2-ceeb-4258-b543-0a29f40fda60/image.jpg",
+          alt: "Safe future",
           title: "Safe future",
-          content: "안전한 작업환경과 현장실습"
+          content: "안전한 작업환경과 현장실습",
         },
         {
-          src:"https://velog.velcdn.com/images/kyj0206/post/ca545369-1a3e-4ce7-993c-3a5830ea7bec/image.jpg",
-          alt:"Low-carbon future",
+          src: "https://velog.velcdn.com/images/kyj0206/post/ca545369-1a3e-4ce7-993c-3a5830ea7bec/image.jpg",
+          alt: "Low-carbon future",
           title: "Low-carbon future",
-          content: "원격 협업 및 가상 경험을 통한 출장 및 장비 비용 절감"
-        }
-      ]
-    }
+          content: "원격 협업 및 가상 경험을 통한 출장 및 장비 비용 절감",
+        },
+      ],
+    };
   },
   updated() {
-        if (process.client) {
+    if (process.client) {
+      const slider = document.querySelector(
+          ".CompanyBottomBannerSlider-container"
+        ),
+        slides = Array.from(
+          document.querySelectorAll(".CompanyBottomBannerSlide")
+        );
 
-            const slider = document.querySelector('.CompanyBottomBannerSlider-container'),
-            slides = Array.from(document.querySelectorAll('.CompanyBottomBannerSlide'))
+      let isDragging = false,
+        startPos = 0,
+        currentTranslate = 0,
+        prevTranslate = 0,
+        animationID,
+        currentIndex = 0;
 
-            let isDragging = false,
-            startPos = 0,
-            currentTranslate = 0,
-            prevTranslate = 0,
-            animationID,
-            currentIndex = 0
+      slides.forEach((slide, index) => {
+        const slideImage = slide.querySelector(".CompanyBottomBannerSlideImg");
+        // disable default image drag
+        slideImage.addEventListener("dragstart", (e) => e.preventDefault());
+        // touch events
+        slide.addEventListener("touchstart", touchStart(index));
+        slide.addEventListener("touchend", touchEnd);
+        slide.addEventListener("touchmove", touchMove);
+        // mouse events
+        slide.addEventListener("mousedown", touchStart(index));
+        slide.addEventListener("mouseup", touchEnd);
+        slide.addEventListener("mousemove", touchMove);
+        slide.addEventListener("mouseleave", touchEnd);
+      });
 
-            slides.forEach((slide, index) => {
-            const slideImage = slide.querySelector('.CompanyBottomBannerSlideImg')
-            // disable default image drag
-            slideImage.addEventListener('dragstart', (e) => e.preventDefault())
-            // touch events
-            slide.addEventListener('touchstart', touchStart(index))
-            slide.addEventListener('touchend', touchEnd)
-            slide.addEventListener('touchmove', touchMove)
-            // mouse events
-            slide.addEventListener('mousedown', touchStart(index))
-            slide.addEventListener('mouseup', touchEnd)
-            slide.addEventListener('mousemove', touchMove)
-            slide.addEventListener('mouseleave', touchEnd)
-            })
+      // make responsive to viewport changes
+      window.addEventListener("resize", setPositionByIndex);
 
-            // make responsive to viewport changes
-            window.addEventListener('resize', setPositionByIndex)
+      // prevent menu popup on long press
+      window.oncontextmenu = function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        return false;
+      };
 
-            // prevent menu popup on long press
-            window.oncontextmenu = function (event) {
-            event.preventDefault()
-            event.stopPropagation()
-            return false
-            }
+      function getPositionX(event) {
+        return event.type.includes("mouse")
+          ? event.pageX
+          : event.touches[0].clientX;
+      }
 
-            function getPositionX(event) {
-            return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX
-            }
+      function touchStart(index) {
+        return function (event) {
+          currentIndex = index;
+          startPos = getPositionX(event);
+          isDragging = true;
+          animationID = requestAnimationFrame(animation);
+          slider.classList.add("CompanyGrabbing");
+        };
+      }
 
-            function touchStart(index) {
-            return function (event) {
-                currentIndex = index
-                startPos = getPositionX(event)
-                isDragging = true
-                animationID = requestAnimationFrame(animation)
-                slider.classList.add('CompanyGrabbing')
-            }
-            }
-
-            function touchMove(event) {
-            if (isDragging) {
-                const currentPosition = getPositionX(event)
-                currentTranslate = prevTranslate + currentPosition - startPos
-            }
-            }
-
-            function touchEnd() {
-            cancelAnimationFrame(animationID)
-            isDragging = false
-            const movedBy = currentTranslate - prevTranslate
-
-            // if moved enough negative then snap to next slide if there is one
-            if (movedBy < -100 && currentIndex < slides.length - 1) currentIndex += 1
-
-            // if moved enough positive then snap to previous slide if there is one
-            if (movedBy > 100 && currentIndex > 0) currentIndex -= 1
-
-            setPositionByIndex()
-
-            slider.classList.remove('CompanyGrabbing')
-            }
-
-            function animation() {
-            setSliderPosition()
-            if (isDragging) requestAnimationFrame(animation)
-            }
-
-            function setPositionByIndex() {
-            currentTranslate = currentIndex * -window.innerWidth
-            prevTranslate = currentTranslate
-            setSliderPosition()
-            }
-
-            function setSliderPosition() {
-            slider.style.transform = `translateX(${currentTranslate}px)`
-            }
+      function touchMove(event) {
+        if (isDragging) {
+          const currentPosition = getPositionX(event);
+          currentTranslate = prevTranslate + currentPosition - startPos;
         }
-   }
-}
+      }
+
+      function touchEnd() {
+        cancelAnimationFrame(animationID);
+        isDragging = false;
+        const movedBy = currentTranslate - prevTranslate;
+
+        // if moved enough negative then snap to next slide if there is one
+        if (movedBy < -100 && currentIndex < slides.length - 1)
+          currentIndex += 1;
+
+        // if moved enough positive then snap to previous slide if there is one
+        if (movedBy > 100 && currentIndex > 0) currentIndex -= 1;
+
+        setPositionByIndex();
+
+        slider.classList.remove("CompanyGrabbing");
+      }
+
+      function animation() {
+        setSliderPosition();
+        if (isDragging) requestAnimationFrame(animation);
+      }
+
+      function setPositionByIndex() {
+        currentTranslate = currentIndex * -window.innerWidth;
+        prevTranslate = currentTranslate;
+        setSliderPosition();
+      }
+
+      function setSliderPosition() {
+        slider.style.transform = `translateX(${currentTranslate}px)`;
+      }
+    }
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -373,23 +398,25 @@ export default {
   .companyWrap {
     // 회사 배너
     .companyBanner {
-      margin: 0 auto;
       display: block;
       width: 100%;
-      max-width: 2400px;
+      margin: 0 auto;
       height: 1010px;
       overflow: hidden;
       background-image: url("https://velog.velcdn.com/images/kyj0206/post/06ebae19-89fa-4331-a600-f572bc8273d6/image.jpg");
-      background-size: auto 100%;
+      background-size: cover;
       background-repeat: no-repeat;
       object-fit: cover;
       .companyBannerInner {
-        gap: 362px;
+        gap: 200px;
         height: 440px;
         box-sizing: border-box;
         align-items: center;
         display: flex;
         transform: translate(17%, 55%);
+        max-width: 2400px;
+
+        margin: 0 auto;
         width: 100%;
         color: #fff;
         .companyBannerTit {
@@ -726,7 +753,9 @@ export default {
         padding: 69px 30px 100px;
         div > .SliderList {
           font-size: 10px;
-          span:nth-child(2) { height: 36px; }
+          span:nth-child(2) {
+            height: 36px;
+          }
         }
         div {
           &:first-child {
@@ -990,8 +1019,16 @@ export default {
     max-width: none;
   }
 }
-.prevBtn, .nextBtn { width: 42px; height: 24px; cursor: pointer; }
-.awardsSlider { display: flex; align-items: center; }
+.prevBtn,
+.nextBtn {
+  width: 42px;
+  height: 24px;
+  cursor: pointer;
+}
+.awardsSlider {
+  display: flex;
+  align-items: center;
+}
 @media screen and(max-width: 735px) {
   .company .companyWrap .companyBanner .companyBannerInner {
     gap: 99px;
@@ -1111,71 +1148,68 @@ export default {
   }
 }
 .CompanyBottomBanner {
-    width: 100%;
-    overflow: hidden;
-    top: 0px;
-    /* background-color: #000; */
+  width: 100%;
+  overflow: hidden;
+  top: 0px;
+  /* background-color: #000; */
 
-    .bannerWrap {
-        position: relative;
+  .bannerWrap {
+    position: relative;
 
-        // 실제사용 모듈용 css 구역!!!!!!!!!!!!!!
-        .bannerMoule {
+    // 실제사용 모듈용 css 구역!!!!!!!!!!!!!!
+    .bannerMoule {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 35%);
+      padding: 0 30px;
+
+      .banner1024 {
+        display: block;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        a {
+          display: block;
+
+          img {
             width: 100%;
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translate(-50%, 35%);
-            padding: 0 30px;
-
-            .banner1024 {
-                display: block;
-                max-width: 1200px;
-                width: 100%;
-                margin: 0 auto;
-                a {
-                    display: block;
-
-                    img {
-                      width: 100%;
-                    }
-                }
-            }
-
-            .banner768 {
-                display: none;
-
-                a {
-                    display: block;
-
-                    img {
-                        width: 100%;
-                    }
-                }
-            }
+          }
         }
+      }
 
-        // 실제사용 모듈용 css 구역 여기까지!!!!!!!!!!!
+      .banner768 {
+        display: none;
 
+        a {
+          display: block;
 
-
+          img {
+            width: 100%;
+          }
+        }
+      }
     }
+
+    // 실제사용 모듈용 css 구역 여기까지!!!!!!!!!!!
+  }
 }
 :root {
-  --shadow: rgba(0, 0, 0, 0.8)
+  --shadow: rgba(0, 0, 0, 0.8);
 }
-.CompanyBottomBannerSlide { 
-    margin-right: 15px;
-    max-height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    padding: 1rem;
-    img {
-      width: 100%;
-      max-width: 660px;
-    }
+.CompanyBottomBannerSlide {
+  margin-right: 15px;
+  max-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 1rem;
+  img {
+    width: 100%;
+    max-width: 660px;
+  }
 }
 .CompanyBottomBanner .CompanyBottomBannerSlider-container {
   display: inline-flex;
@@ -1187,14 +1221,13 @@ export default {
   cursor: grab;
 }
 
-
-@media(min-width: 1200px){
+@media (min-width: 1200px) {
   .CompanyBottomBanner .slide {
     padding: 3rem;
   }
 }
 
-.CompanyBottomBanner .slide img{
+.CompanyBottomBanner .slide img {
   max-width: 100%;
   width: 80%;
   transition: transform 0.3s ease-in-out;
@@ -1207,24 +1240,23 @@ export default {
   cursor: grabbing;
 }
 
-.CompanyBottomBanner .CompanyGrabbing .slide img{
+.CompanyBottomBanner .CompanyGrabbing .slide img {
   transform: scale(0.9);
   box-shadow: 5px 5px 40px -1px var(--shadow);
 }
 
 @media screen and(max-width:768px) {
-    .CompanyBottomBanner .banner .bannerWrap .bannerMoule .banner1024{
-        display: none;
-    }
+  .CompanyBottomBanner .banner .bannerWrap .bannerMoule .banner1024 {
+    display: none;
+  }
 
-    .CompanyBottomBanner .banner .bannerWrap .bannerMoule .banner768{
-        display: block;
-    }
+  .CompanyBottomBanner .banner .bannerWrap .bannerMoule .banner768 {
+    display: block;
+  }
 
-    .CompanyBottomBanner .banner .bannerWrap .bannerMoule{
-        padding: 0 24px;
-        transform: translate(-50%, 60%);
-    }
+  .CompanyBottomBanner .banner .bannerWrap .bannerMoule {
+    padding: 0 24px;
+    transform: translate(-50%, 60%);
+  }
 }
-
 </style>

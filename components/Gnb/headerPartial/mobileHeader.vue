@@ -2,10 +2,11 @@
   <!-- 햄버거 서브메뉴 박스 -->
   <div class="hamSubBox" v-if="isMenu">
     <ul class="hamSubMenu">
-      <li class="hamUseCase">
-        <span class="hamUseCaseTit" @click="[hamMenuPage(), showMenu(false)]">
-          <a href="/solutions/energy_resource" @click="supertest()"> Value </a>
-          <ul class="hamUseCaseMenu" v-if="isSub" v-show="open">
+      <li class="hamUseCase" @click="[changeHamTit()]"
+          >
+        <span class="hamUseCaseTit">
+          <a @click="showPage('/solutions/energy_resource')"> Value </a>
+          <ul class="hamUseCaseMenu" v-if="isSub">
             <li @click="supertest()">
               <a href="/solutions/energy_resource"> 인프라/자원 </a>
             </li>
@@ -25,8 +26,7 @@
         </span>
         <span
           class="hamMenuToggle"
-          @click="[showUse(), changeHamTit(), toggle()]"
-          v-click-outside="hide"
+           @click="showUse()"
         >
           <img
             class="hamSubMenuOpen"
@@ -43,8 +43,8 @@
       </li>
       <li class="hamProducts">
         <span class="hamProductsTit">
-          <a href="/products/remote" @click="supertest()"> Products </a>
-          <ul class="hamProductsMenu" v-if="isSub2" v-show="open2">
+          <a @click="showPage('/products/remote')"> Products </a>
+          <ul class="hamProductsMenu" v-if="isSub2">
             <li @click="supertest()">
               <a href="/products/remote"> VIRNECT Remote </a>
             </li>
@@ -67,8 +67,7 @@
         </span>
         <span
           class="hamMenuToggle"
-          @click="[showUse2(true), toggle2()]"
-          v-click-outside="hide2"
+          @click="[showUse2()]"
         >
           <img
             class="hamSubMenuOpen"
@@ -84,8 +83,8 @@
       </li>
       <li class="hamSupport">
         <span class="hamSupportTit">
-          <a href="/support/notice" @click="supertest()"> Support </a>
-          <ul class="hamSupportMenu" v-if="isSub3" v-show="open3">
+          <a @click="showPage('/support/notice')"> Support </a>
+          <ul class="hamSupportMenu" v-if="isSub3">
             <li @click="supertest()">
               <a href="/support/notice"> Product Notice </a>
             </li>
@@ -102,8 +101,7 @@
         </span>
         <span
           class="hamMenuToggle"
-          @click="[showUse3(true), toggle3()]"
-          v-click-outside="hide3"
+          @click="[showUse3()]"
         >
           <img
             class="hamSubMenuOpen"
@@ -119,8 +117,8 @@
       </li>
       <li class="hamNews">
         <span class="hamNewsTit">
-          <a href="#" @click="supertest()"> News </a>
-          <ul class="hamNewsMenu" v-if="isSub4" v-show="open4">
+          <a @click="showPage('/news/main')"> News </a>
+          <ul class="hamNewsMenu" v-if="isSub4">
             <li>
               <a href="#"> News & Press </a>
             </li>
@@ -134,8 +132,7 @@
         </span>
         <span
           class="hamMenuToggle"
-          @click="[showUse4(true), toggle4()]"
-          v-click-outside="hide4"
+          @click="[showUse4(true)]"
         >
           <img
             class="hamSubMenuOpen"
@@ -151,8 +148,8 @@
       </li>
       <li class="hamCompany">
         <span class="hamCompanyTit">
-          <a href="/company/about" @click="supertest()"> Company </a>
-          <ul class="hamCompanyMenu" v-if="isSub5" v-show="open5">
+          <a @click="showPage('/company/about')"> Company </a>
+          <ul class="hamCompanyMenu" v-if="isSub5">
             <li @click="supertest()">
               <a href="/company/about"> About VIRNECT </a>
             </li>
@@ -166,8 +163,7 @@
         </span>
         <span
           class="hamMenuToggle"
-          @click="[showUse5(true), toggle5()]"
-          v-click-outside="hide5"
+          @click="[showUse5(true)]"
         >
           <img
             class="hamSubMenuOpen"
@@ -185,7 +181,7 @@
     <div class="hamSubBottom">
       <button
         class="bottomButton"
-        @click="[subBottom(), toggle6()]"
+        @click="[subBottom(), toggle6(), showEarth=false]"
         v-if="isWeb"
         v-click-outside="hamServiceHide"
       >
@@ -214,6 +210,7 @@
           <li class="option">
             <a
               href="https://console.virnect.com/?continue=https%3A%2F%2Fvirnect.com%2F"
+              target="_blank"
             >
               <p>서비스 로그인</p>
               <i>
@@ -231,7 +228,7 @@
             </a>
           </li>
           <li class="option">
-            <a href="https://download.virnect.com/remote">
+            <a href="https://download.virnect.com/remote" target="_blank">
               <p>다운로드 센터 2.0</p>
               <i>
                 <img
@@ -248,7 +245,7 @@
             </a>
           </li>
           <li class="option">
-            <a href="https://workstation.virnect.com/start">
+            <a href="https://workstation.virnect.com/start" target="_blank">
               <p>Workstation 2.0</p>
               <i>
                 <img
@@ -265,7 +262,7 @@
             </a>
           </li>
           <li class="option">
-            <a href="https://remote.virnect.com/home">
+            <a href="https://remote.virnect.com/home" target="_blank">
               <p>Remote 2.0</p>
               <i>
                 <img
@@ -291,12 +288,12 @@
           />
         </a>
         <!-- 언어선택 박스 -->
-        <div class="languageWrap" v-if="showEarth">
+        <div class="languageWrap" v-if="showEarth" @click="langHide()">
           <span
             v-for="locale in availableLocales"
             :key="locale.code"
-            @click.prevent.stop="$i18n.setLocale(locale.code)"
-            @click="langlang()"
+            @click="[supertest()]"
+             @click.prevent.stop="$i18n.setLocale(locale.code)"
           >
             <a>{{ locale.name }}</a>
           </span>
@@ -309,11 +306,20 @@
 <script>
 import ClickOutside from "vue-click-outside";
 
+const hamUse = {};
+
+
 export default {
-  // directives: {
-  //   clickOutside: vClickOutside.directive,
-  // },
-  components: {},
+  /* created(){
+    function ff (e) {
+    this.hamUse = { [e] : true or false }
+    }
+  }, */
+  /* directives: {
+    clickOutside: vClickOutside.directive
+  },
+  components: {
+  }, */
   computed: {
     availableLocales() {
       return this.$i18n.locales;
@@ -342,6 +348,7 @@ export default {
     open4: false,
     open5: false,
     hamServiceOpen: false,
+    mobileMenu: null
     /* subOpen: false, */
   }),
   methods: {
@@ -386,8 +393,23 @@ export default {
     },
     hamServiceHide() {
       this.hamServiceOpen = false;
+      this.isBottomMenu = false;
     },
-
+    showPage(e) {
+      console.log(e, this.mobileMenu)
+      if(e === this.mobileMenu) {
+        this.mobileMenu = null;
+        this.$router.push(e) 
+        this.isMenu = false
+      } else {
+        this.mobileMenu = e;
+        if(e === '/solutions/energy_resource'){this.isSub = !this.isSub;}
+        if(e === '/products/remote'){this.isSub2 = !this.isSub2;}
+        if(e === '/support/notice'){this.isSub3 = !this.isSub3;} 
+        if(e === '/news/main'){this.isSub4 = !this.isSub4;} 
+        if(e === '/company/about'){this.isSub5 = !this.isSub5;} 
+      }
+    },
     showUse() {
       this.isSub = !this.isSub;
     },
@@ -415,6 +437,7 @@ export default {
     },
     langlang() {
       this.showEarth = !this.showEarth;
+      this.isMenu = !this.isMenu;
     },
     supertest() {
       this.isMenu = false;

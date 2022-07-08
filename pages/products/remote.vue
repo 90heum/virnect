@@ -41,7 +41,7 @@ import tailSection from "../../layouts/common/Tail.vue";
 import remoteComponent from "../../components/products/pages/Remote.vue";
 import SubBanner from "~/components/products/partials/subBanner.vue";
 import XrSolution from "~/components/products/partials/XRSolution.vue";
-import XRSolution from "~/components/products/partials/XRSolution.vue";
+// import XRSolution from "~/components/products/partials/XRSolution.vue";
 import ProductProperty from "~/components/products/partials/productProperty.vue";
 import BottomBannerRemote from "~/components/products/partials/bottomBannerRemote.vue";
 import CtaModule from "~/components/main/ctaModule.vue";
@@ -55,7 +55,7 @@ export default {
     remoteComponent,
     SubBanner,
     XrSolution,
-    XRSolution,
+    // XRSolution,
     ProductProperty,
     BottomBannerRemote,
     CtaModule,

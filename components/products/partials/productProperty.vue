@@ -3,9 +3,9 @@
     <div class="features">
       <div class="featuresWrap">
         <span class="featuresTit">
-          <p>{{$t("productsText.productPropertyTitle.title")}}</p>
+          <p>{{ $t("productsText.productPropertyTitle.title") }}</p>
           <h2>
-            {{$t("productsText.productPropertyTitle.contents")}}
+            {{ $t("productsText.productPropertyTitle.contents") }}
           </h2>
           <ul>
             <li>
@@ -15,7 +15,7 @@
                   alt="리스트1"
               /></i>
               <p>
-                {{$t("productsText.productPropertyText.multiple")}}
+                {{ $t("productsText.productPropertyText.multiple") }}
               </p>
             </li>
             <li>
@@ -25,8 +25,8 @@
                   alt="리스트2"
               /></i>
               <p>
-                {{$t("productsText.productPropertyText.translation")}}
-                </p>
+                {{ $t("productsText.productPropertyText.translation") }}
+              </p>
             </li>
             <li>
               <i
@@ -35,7 +35,7 @@
                   alt="리스트3"
               /></i>
               <p>
-                {{$t("productsText.productPropertyText.images")}}
+                {{ $t("productsText.productPropertyText.images") }}
               </p>
             </li>
             <li>
@@ -45,7 +45,7 @@
                   alt="리스트4"
               /></i>
               <p>
-                {{$t("productsText.productPropertyText.secured")}}
+                {{ $t("productsText.productPropertyText.secured") }}
               </p>
             </li>
             <li>
@@ -55,7 +55,7 @@
                   alt="리스트5"
               /></i>
               <p>
-                {{$t("productsText.productPropertyText.autoStart")}}
+                {{ $t("productsText.productPropertyText.autoStart") }}
               </p>
             </li>
             <li>
@@ -65,7 +65,7 @@
                   alt="리스트6"
               /></i>
               <p>
-                {{$t("productsText.productPropertyText.personalization")}}
+                {{ $t("productsText.productPropertyText.personalization") }}
               </p>
             </li>
           </ul>
@@ -151,7 +151,7 @@ export default {
 }
 .features .featuresWrap .featuresTit ul li {
   gap: 10px;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;

@@ -34,7 +34,7 @@
       </span>
       <video autoplay muted>
         <source
-          src="https://player.vimeo.com/ external/427961630.hd.mp4? s=eec1985e7a7433cb42d2ae0127ba956 bc8ae024a&profile_id=175"
+          src="https://player.vimeo.com/external/427961630.hd.mp4?s=eec1985e7a7433cb42d2ae0127ba956bc8ae024a&profile_id=175"
         />
       </video>
     </div>
@@ -50,13 +50,13 @@ export default {};
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 2400px;
+
   width: 100%;
   min-height: 875px;
   background-image: url("https://velog.velcdn.com/images/kyj0206/post/6a090db9-cd30-42a5-95f5-1dc04c915ab1/image.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
   .SubProductsWrap {
     p,
     a,

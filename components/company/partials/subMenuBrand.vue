@@ -20,8 +20,8 @@ export default {};
 
 <style lang="scss" scoped>
 .SubMenuUse {
-  max-width: 2400px;
-  margin-top: 80px;
+  margin: 0 auto;
+
   background-color: #e6e8eb;
   .SubMenuNav {
     position: relative;

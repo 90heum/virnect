@@ -50,7 +50,7 @@
             <ul class="proModuleContBox">
               <li>
                 <nuxt-link to="/products/remote">
-                  <span>
+                  <span class="imgPull">
                     <i>
                       <img
                         class="contBoxNormal"

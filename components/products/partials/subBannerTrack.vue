@@ -32,11 +32,16 @@
           </button>
         </span>
       </span>
-      <video autoplay muted>
+      <img
+        class="ddaa"
+        src="https://velog.velcdn.com/images/akwjdgma/post/de444ebf-469c-4c9b-81b7-93716f16b478/image.png"
+        alt=""
+      />
+      <!-- <video autoplay muted>
         <source
           src="https://player.vimeo.com/external/560735983.hd.mp4?s=e14e93e201c67212624d232508ddcad911d7d617&profile_id=174"
         />
-      </video>
+      </video> -->
     </div>
   </div>
 </template>
@@ -46,17 +51,22 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+.ddaa {
+  max-width: 951px;
+  width: 100%;
+  min-width: auto;
+}
 .SubProductsBannerRemote {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 2400px;
+
   width: 100%;
   min-height: 875px;
   background-image: url("https://velog.velcdn.com/images/kyj0206/post/6a090db9-cd30-42a5-95f5-1dc04c915ab1/image.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
   .SubProductsWrap {
     p,
     a,

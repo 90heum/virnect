@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
 <div class="banner">
 <client-only>
     <agile :autoplay-speed="5000"
@@ -168,4 +168,4 @@ export default {
 @media screen and (max-width: 550px) {
     .banner {  top: 112%; }
 }
-</style>
+</style> -->

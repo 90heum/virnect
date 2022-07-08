@@ -5,7 +5,7 @@
     :class="{ 'align-left': align == 'left' }"
   >
     <p class="category" v-if="category">{{ category }}</p>
-    <p class="title" v-html="title"></p>
+    <h2 class="title" v-html="title"></h2>
     <p class="contents" v-if="contents" v-html="contents"></p>
     <button class="circle-arrow-btn" v-if="btnText" @click="filterEvent()">
       {{ btnText }}
@@ -30,20 +30,26 @@ export default {
   methods: {
     filterEvent() {
       if (this.btnRoute) {
-        this.$router.push({ name: this.btnRoute })
-        this.scrollReset()
+        this.$router.push({ name: this.btnRoute });
+        this.scrollReset();
       }
       if (this.btnPopup) {
-        this.$emit('popupToggle')
+        this.$emit("popupToggle");
       }
     },
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>
-@import '~assets/css/mixin.scss';
+@import "~assets/css/mixin.scss";
 #headingModule {
+  h2 {
+    font-size: 44px;
+  }
+  p {
+    font-size: 16px;
+  }
   @include area-flex(1200px);
   padding-top: 180px;
   padding-bottom: 60px;

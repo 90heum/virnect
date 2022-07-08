@@ -52,13 +52,13 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-@import "~assets/css/common.scss";
+// @import "~assets/css/common.scss";
 @import "~assets/css/reset.scss";
 .xrSolutionWrapper {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: cemter;
+  align-items: center;
 }
 
 .overView {
@@ -76,7 +76,7 @@ export default {};
   text-align: center;
 }
 .overView .overViewWrap .overViewTit > p {
-  font-size: 1.8rem;
+  font-size: 18px;
   font-weight: bold;
   letter-spacing: -0.23px;
   text-align: center;
@@ -84,7 +84,7 @@ export default {};
   margin-bottom: 16px;
 }
 .overView .overViewWrap .overViewTit h2 {
-  font-size: 4.4rem;
+  font-size: 44px;
   font-weight: bold;
   line-height: 1.4;
   letter-spacing: -0.55px;
@@ -94,7 +94,7 @@ export default {};
 }
 .overView .overViewWrap .overViewTit span {
   display: block;
-  font-size: 1.6rem;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.75;
   letter-spacing: normal;
@@ -103,7 +103,7 @@ export default {};
   margin-bottom: 45px;
 }
 .overView .overViewWrap .overViewTit span p {
-  font-size: 1.6rem;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.75;
   letter-spacing: normal;
@@ -139,7 +139,7 @@ export default {};
 }
 .overView .overViewWrap .overViewCont span p:nth-child(3),
 .overView .overViewWrap .overViewCont span p:last-child {
-  font-size: 1.6rem;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.75;
   letter-spacing: normal;

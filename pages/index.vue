@@ -3,7 +3,7 @@
   <div>
     <main-banner class="mainBanner" />
 
-    <banner-module />
+    <!-- <banner-module /> -->
 
     <product-component />
 
@@ -19,7 +19,7 @@
 
 <script>
 import MainBanner from "~/components/main/mainBanner.vue";
-import BannerModule from "~/components/main/bannerModule.vue";
+/* import BannerModule from "~/components/main/bannerModule.vue"; */
 import UseCase from "~/components/main/useCase.vue";
 import CompanyComponent from "~/components/main/company.vue";
 import SupportComponent from "~/components/products/partials/SupportPart.vue";
@@ -33,7 +33,7 @@ export default {
   },
   components: {
     MainBanner,
-    BannerModule,
+    /*  BannerModule, */
     UseCase,
     CompanyComponent,
     SupportComponent,

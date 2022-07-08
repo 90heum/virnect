@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
-    <div class="upButton">
-      <a href="javascript:window.scrollTo(0,0);">
+    <div class="upButton" @click="scrollToTop">
+      <a>
         <img
           class="upup"
           src="https://velog.velcdn.com/images/kyj0206/post/d74f9933-4e13-4838-aa1a-4f7993020afc/image.svg"
@@ -509,6 +509,9 @@ export default {
     ClickOutside,
   },
   methods: {
+    scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    },
     langlang() {
       this.showEarth = !this.showEarth;
     },

@@ -50,7 +50,7 @@
               @click="[(gnb2 = false), gnbStyleBorder = {gnbStyle2:true}]"
             >
               <nuxt-link 
-                to="/products/remote"
+                to="/products/productsMain"
                 :class="`navTab container2 ${gnb2 ? 'gnbActive' : ''}`"
                 v-bind:style="gnbStyleBorder.gnbStyle2 ? commonGnbStyle : {}"
               >
@@ -690,7 +690,7 @@ export default {
     commonGnbStyle: {
       color: "#fff",
       backgroundColor: "#121212",
-      borderBottom: "4px solid #fff"
+      borderBottom: "1px solid #fff"
     },
     gnbStyle1: {},
     gnbStyle2: {},
@@ -783,6 +783,7 @@ export default {
     },
     serviceHide(){
       this.serviceOpen = false
+      this.isServiceMenu = false
     },
     toggle2(){
       this.langOpen = true
@@ -846,6 +847,7 @@ export default {
       if (window.innerWidth > 1025 && !this.isWeb) {
         this.isWeb = true;
         this.isMenu = false;
+        
       } else if (window.innerWidth < 1025 && this.isWeb) {
         this.isWeb = false;
         this.gnbTextStyle.color = "#fff";
@@ -855,6 +857,11 @@ export default {
     },
     showMenu(e) {
       this.isMenu = e;
+      if(this.isMenu === true){
+          document.querySelector("html").style.overflow='hidden';
+        } else {
+          document.querySelector("html").style.overflow='scroll';
+        }
     },
   },
 };

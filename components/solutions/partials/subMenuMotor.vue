@@ -22,22 +22,24 @@
 
 <script>
 export default {
-  created(){
-     setTimeout(() => {
+  created() {
+    setTimeout(() => {
       /* if(process.client)document.querySelector('.SubMenuUse').scrollIntoView({behavior: 'smooth'});  */
-   },500); 
+    }, 500);
   },
   methods: {
-    subScroll(){
-      if(process.client)document.querySelector('.SubMenuUse').scrollIntoView({behavior: 'smooth'});
-    }
-  }
+    subScroll() {
+      if (process.client)
+        document
+          .querySelector(".SubMenuUse")
+          .scrollIntoView({ behavior: "smooth" });
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 .SubMenuUse {
-  max-width: 2400px;
   background-color: #e6e8eb;
   .SubMenuNav {
     position: relative;
