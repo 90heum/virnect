@@ -155,7 +155,7 @@
           </ul>
         </nav>
         <div class="demo">
-          <nuxt-link to="/support/inquiry"> 데모신청 </nuxt-link>
+          <nuxt-link to="/support/demo"> 데모신청 </nuxt-link>
         </div>
         <div
           class="serviceSelect"
@@ -527,7 +527,7 @@
                     </nuxt-link>
                   </li>
                   <li
-                    v-for="(list, idx) of $t('gnb[1].array').filter(
+                    v-for="(list, idx) of $t('supportText.menuList.Leaning Center.list').filter(
                       (e, idx) => {
                         if (idx < 3) return e;
                       }
@@ -535,8 +535,8 @@
                     :key="idx"
                     @click="changeGnbColor(`list3`)"
                   >
-                    <nuxt-link :to="list.to">
-                      <u>{{ list.text }}</u>
+                    <nuxt-link :to="list.url">
+                      <u>{{ list.title }}</u>
                     </nuxt-link>
                   </li>
                 </ul>
@@ -698,7 +698,7 @@ export default {
     commonGnbStyle: {
       color: "#fff",
       backgroundColor: "#121212",
-      borderBottom: "1px solid #fff"
+      borderBottom: "3px solid #fff"
     },
     gnbStyle1: {},
     gnbStyle2: {},
@@ -725,6 +725,7 @@ export default {
     MobileHeader,
   },
   mounted() {
+    this.handleGnbMenuBorderBottm();
     if (process.client)
       window.innerWidth > 1025 ? (this.isWeb = true) : (this.isWeb = false);
     this.popupItem = this.$el
@@ -733,29 +734,6 @@ export default {
     ClickOutside
   },
   created() {
-    console.log(this.$route)
-
-    const solutions = 'solutions';
-    const products = 'products';
-    const support = 'support';
-    const news = 'news';
-    const company = 'company';
-    const fullPath = this.$route.fullPath;
-
-  if (process.client) {
-    if(fullPath.includes(solutions)){
-      console.log("햐햐")
-      this.changeBorder(1)
-    } else if(fullPath.includes(products)){
-      this.changeBorder(2)
-    } else if(fullPath.includes(support)){
-      this.changeBorder(3)
-    } else if(fullPath.includes(news)){
-      this.changeBorder(4)
-    } else if(fullPath.includes(company)){
-      this.changeBorder(5)
-    }
-  }
     if (process.client) {
       window.addEventListener("resize", this.handleReactiveView);
     }
@@ -765,10 +743,39 @@ export default {
       window.removeEventListener("resize", this.handleReactiveView);
     // window.removeEventListener('scroll', this.hasScrolled)
   },
+  watch: {
+    '$route' () {
+      this.handleGnbMenuBorderBottm();
+    }
+  },
   methods: {
     /* handleClickButton(){
       this.visible = !this.visible
     }, */
+    handleGnbMenuBorderBottm () {
+       const solutions = 'solutions';
+        const products = 'products';
+        const support = 'support';
+        const news = 'news';
+        const company = 'company';
+        const fullPath = this.$route.fullPath;
+
+      if (process.client) {
+        if(fullPath.includes(solutions)){
+          this.changeBorder(1)
+        } else if(fullPath.includes(products)){
+          this.changeBorder(2)
+        } else if(fullPath.includes(support)){
+          this.changeBorder(3)
+        } else if(fullPath.includes(news)){
+          this.changeBorder(4)
+        } else if(fullPath.includes(company)){
+          this.changeBorder(5)
+        } else {
+          this.gnbStyleBorder = {};
+        }
+      }
+    },
     langlang() {
       this.showEarth = !this.showEarth;
     },
@@ -794,7 +801,6 @@ export default {
     },
     changeBorder(e) {
       this.gnbStyleBorder = {[`gnbStyle${e}`]: true}
-      console.log(this.gnbStyleBorder[`gnbStyle${e}`], "e 확인 : ",e, this.commonGnbStyle)
     },
     originalBorder() {
       this.gnbStyle1.borderBottomColor = "#121212";

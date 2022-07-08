@@ -82,8 +82,6 @@ header {
                                         display: block;
                                     }
 
-                                    .downIcon1 {}
-
                                     .subNavProducts {
                                         display: block;
                                     }
@@ -98,9 +96,6 @@ header {
                                         display: block;
                                     }
 
-                                    .downIcon2 {
-                                        // display: none;
-                                    }
                                 }
                             }
 
@@ -113,10 +108,6 @@ header {
                                     .upIcon3 {
                                         display: block;
                                     }
-
-                                    .downIcon3 {
-                                        display: none;
-                                    }
                                 }
                             }
 
@@ -126,9 +117,6 @@ header {
                                         display: block;
                                     }
 
-                                    .downIcon4 {
-                                        display: none;
-                                    }
                                 }
                             }
 
@@ -138,9 +126,6 @@ header {
                                         display: block;
                                     }
 
-                                    .downIcon5 {
-                                        display: none;
-                                    }
                                 }
                             }
                         }
@@ -164,7 +149,7 @@ header {
                                     display: block;
 
                                     &.navActive {
-                                        // display: none;
+                                        display: none;
                                     }
                                 }
 
@@ -1161,7 +1146,6 @@ header {
         background: #fff;
         position: relative;
         height: 100vh;
-        overflow-y: scroll;
 
         .hamSubMenu {
             padding: 30px 24px;
