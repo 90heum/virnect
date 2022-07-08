@@ -355,7 +355,7 @@ export default {
   width: 100%;
   z-index: 1;
   position: absolute;
-  top: 80%;
+  top: 90%;
   overflow: hidden;
   /* background-color: #000; */
 

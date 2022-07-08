@@ -167,8 +167,11 @@ export default {
 .features .featuresWrap .featuresTit ul li i img {
   width: 16px;
 }
-.features .featuresWrap .featuresTit ul li p {
-  display: block;
+.features .featuresWrap .featuresTit ul li  {
+  p {display: block;}
+  &:first-child {
+    p{line-height: 1.4;}
+  }
 }
 .features .featuresWrap .featuresCont {
   width: 50%;

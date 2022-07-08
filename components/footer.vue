@@ -4,7 +4,7 @@
       <a>
         <img
           class="upup"
-          src="https://velog.velcdn.com/images/kyj0206/post/d74f9933-4e13-4838-aa1a-4f7993020afc/image.svg"
+          src="../assets/images/common/topbut@2x.png"
           alt="upButton"
         />
         <img
@@ -362,8 +362,8 @@
               <p>VIRNECT가 전하는 최신 Digital Insight를 만나보세요</p>
             </span>
             <span>
-              <input type="text" placeholder="email을 입력하세요" />
-              <button><a href="#">구독</a></button>
+              <!-- <input type="text" placeholder="email을 입력하세요" /> -->
+              <button><a href="#">지금 구독하세요</a></button>
             </span>
           </span>
         </span>

@@ -20,7 +20,7 @@
                     <p>연결하여 자유롭게 정보를 공유합니다.</p>
                   </span>
                   <button>
-                    <a href="#">자세히보기</a>
+                    <a href="">자세히보기</a>
                   </button>
                 </span>
               </div>

@@ -1,19 +1,19 @@
 <template>
   <div class="SubMenuUse">
     <ul class="SubMenuNav">
-      <li class="SubUseNavActive subMenu" @click="subScroll()">
+      <li class="SubUseNavActive subMenu">
         <nuxt-link to="/solutions/energy_resource"> 인프라/자원 </nuxt-link>
       </li>
-      <li class="subMenu" @click="subScroll()">
+      <li class="subMenu">
         <nuxt-link to="/solutions/oil_chemical_battery"> 제조/건설 </nuxt-link>
       </li>
-      <li class="subMenu" @click="subScroll()">
+      <li class="subMenu">
         <nuxt-link to="/solutions/motor_parts"> 공공/교육 </nuxt-link>
       </li>
-      <li class="subMenu" @click="subScroll()">
+      <li class="subMenu">
         <nuxt-link to="/solutions/airline_railroad"> 엔터테인먼트 </nuxt-link>
       </li>
-      <li class="subMenu" @click="subScroll()">
+      <li class="subMenu">
         <nuxt-link to="/solutions/epc"> 기타 </nuxt-link>
       </li>
     </ul>
@@ -24,9 +24,15 @@
 export default {
   created() {
     setTimeout(() => {
-      /* if(process.client)document.querySelector('.SubMenuUse').scrollIntoView({behavior: 'smooth'});  */
+      /* if(process.client)document.querySelector('.SubMenuUse').scrollIntoView({behavior: 'smooth'}); */
     }, 500);
   },
+   watch: {
+        '$route' (to, from) {
+          console.log("asdasdasdasd")
+            subScroll();
+        }
+    },
   methods: {
     subScroll() {
       if (process.client) {

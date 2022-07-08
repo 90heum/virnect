@@ -794,7 +794,9 @@ export default {
                   width: 100%;
                   display: block;
                   text-align: center;
-                  margin-top: 24px;
+                  font-size: 12px;
+                  margin: 14px 19px 0 15px;
+                  color: #9b9da3;
                 }
               }
             }
@@ -1024,6 +1026,7 @@ export default {
   width: 42px;
   height: 42x;
   cursor: pointer;
+  margin-left: 23px;
 }
 .awardsSlider {
   display: flex;
