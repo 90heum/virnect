@@ -12,11 +12,11 @@
             [
               {
                 "title": "릴리즈 노트",
-                "url": ""
+                "url": "/support/notice?type=2"
               },
               {
                 "title": "안내",
-                "url": ""
+                "url": "/support/notice?type=1"
               }
             ]
         },
