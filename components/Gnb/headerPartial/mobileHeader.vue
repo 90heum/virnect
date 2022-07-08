@@ -274,9 +274,9 @@
         <!-- 언어선택 박스 -->
         <div class="languageWrap" v-if="showEarth" @click="langHide()">
           <span
+            @click="supertest()"
             v-for="locale in availableLocales"
             :key="locale.code"
-            @click="[supertest()]"
             @click.prevent.stop="$i18n.setLocale(locale.code)"
           >
             <a>{{ locale.name }}</a>
