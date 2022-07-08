@@ -12,11 +12,11 @@
           [
             {
               "title": "릴리즈 노트",
-              "url": "2"
+              "url": ""
             },
             {
               "title": "안내",
-              "url": "1"
+              "url": ""
             }
           ]
       },
@@ -27,53 +27,53 @@
         [
           {
             "title": "회원",
-            "url": "1"
+            "url": ""
           },
           {
             "title": "제품",
-            "url": "3"
+            "url": ""
           },
           {
             "title": "결제",
-            "url": "4"
+            "url": ""
           },
           {
             "title": "서비스",
-            "url": "2"
+            "url": ""
           },
           {
             "title": "기기",
-            "url": "6"
+            "url": ""
           },
           {
             "title": "기타",
-            "url": "5"
+            "url": ""
           }
         ]
       },
-      "learningCenter": {
+      "Leaning Center": {
         "title": "학습센터",
         "url": "",
         "list":
           [
             {
-              "title": "Remote",
-              "url": "1"
+              "title": "VIRNECT Remote",
+              "url": ""
             },
             {
-              "title": "Make",
-              "url": "2"
+              "title": "VIRNECT Make",
+              "url": ""
             },
             {
-              "title": "View",
-              "url": "3"
-            },
-            {
-              "title": "Workstation",
-              "url": "4"
+              "title": "VIRNECT View",
+              "url": ""
             }
           ]
-        }
+      },
+      "Inquiries": {
+        "title": "문의하기",
+        "url": ""
+      }
     }
   }
 }
