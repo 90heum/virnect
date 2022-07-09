@@ -21,7 +21,6 @@
                           <client-only>
                             <div class="carousel-wrapper">
                                 <div v-swiper:mySwiper="options" 
-                                     :key="cacheKey"
                                      @readey="onSwiperRedied"
                                      @click-slide="onSwiperClickSlide"
                                      @slide-change-transition="onSwiperSlideChangeTransitionStart">
@@ -34,7 +33,10 @@
                                         <p>{{data.title}}</p>
                                     </div>
                                 </div>
-                                <div class="swiper-pagination swiper-pagination-bullets"></div>
+                                <div class="swiper-pagination swiper-pagination-bullets">
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
                                 </div>
                             </div>
                         </client-only>
@@ -79,6 +81,11 @@ export default {
                 spaceBetween: 13,
                 centeredSlides: true,
                 pagination: {
+                    // el: ".swiper-pagination"
+                },
+                navigation: {
+                nextEl: ".swiper-button-prev",
+                prevEl: ".swiper-button-next",
                 },
                 breakpoints: {
                     1024: {
@@ -234,6 +241,18 @@ export default {
     .moduleApplyBgBottom{
         background-color: #0a51b7;
         height: 246px;
+    }
+    .ApplyInner {
+        .swiper-button-prev, .swiper-button-next {
+            bottom: 100px;
+            top: auto;
+        }
+        .swiper-button-prev {
+            background-image: url(~/assets/images/pages/right@2x.png);
+        }
+        .swiper-button-next {
+            background-image: url(~/assets/images/pages/left@2x.png);
+        }
     }
     .ApplyInner .ApplySlider {
         .swiper-slide {
