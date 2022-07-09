@@ -2,9 +2,19 @@
   <!-- 햄버거 서브메뉴 박스 -->
   <div class="hamSubBox" v-if="isMenu">
     <ul class="hamSubMenu">
-      <li class="hamUseCase" @click="[changeHamTit()]">
+      <li class="hamUseCase">
         <span class="hamUseCaseTit">
-          <a @click="showPage('/solutions/energy_resource')"> Value </a>
+          <a
+            @click="
+              showPage('/solutions/energy_resource'),
+                happykey(),
+                clickBlue(),
+                (masterkey = true)
+            "
+            v-bind:style="blueStyle"
+          >
+            Value
+          </a>
           <ul class="hamUseCaseMenu" v-if="isSub">
             <li @click="supertest()">
               <a href="/solutions/energy_resource"> 인프라/자원 </a>
@@ -23,19 +33,19 @@
             </li>
           </ul>
         </span>
-        <span class="hamMenuToggle" @click="showUse()">
+        <span
+          class="hamMenuToggle"
+          @click="showUse(), clickBlue(), masterClick()"
+          v-bind="masterkey"
+        >
           <img
             v-if="isShowing"
             :src="isOpen"
             alt="일정접기"
-            @click="isShowing = !isShowing"
+            @click="happykey()"
           />
-          <img
-            v-else
-            :src="isClose"
-            alt="일정접기"
-            @click="isShowing = !isShowing"
-          />
+          <img v-else :src="isClose" alt="일정접기" @click="happykey()" />
+
           <!-- <img
             class="hamSubMenuOpen"
             src="https://velog.velcdn.com/images/kyj0206/post/77d76d78-4bc7-4e93-afa3-23eff596d40a/image.png"
@@ -360,10 +370,27 @@ export default {
     isShowing5: true,
     isOpen: require("~/assets/images/common/icon-menu-more.png"),
     isClose: require("~/assets/images/common/icon-menu-close.png"),
-    socStyle: {},
+    blueStyle: {},
+    masterkey: false,
     /* subOpen: false, */
   }),
   methods: {
+    // clickblue, masterClick 로직으로 텍스트 값도 변경하게 만듬.
+    clickBlue() {
+      if (this.masterkey == false) {
+        this.blueStyle.color = "#0a51b7";
+      }
+      if (this.masterkey == true) {
+        this.blueStyle.color = "#000000";
+      }
+    },
+    masterClick() {
+      this.masterkey = !this.masterkey;
+    },
+    happykey() {
+      this.isShowing = !this.isShowing;
+    },
+
     subPage() {
       this.subOpen = true;
     },
