@@ -19,7 +19,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['swiper/dist/css/swiper.css'],
+  css: ['swiper/dist/css/swiper.css', 'nuxt-video-player/src/assets/css/main.css'],
   buildModules: ['@nuxtjs/style-resources', '@nuxt/image'],
   styleResources: {
     less: '~/assets/css/*.scss'

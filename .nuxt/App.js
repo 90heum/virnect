@@ -8,6 +8,8 @@ import NuxtBuildIndicator from './components/nuxt-build-indicator'
 
 import '../node_modules/swiper/dist/css/swiper.css'
 
+import '../node_modules/nuxt-video-player/src/assets/css/main.css'
+
 import _04a999c7 from '../layouts/common/Main.vue'
 import _301b735c from '../layouts/common/SubVisual.vue'
 import _04acc85e from '../layouts/common/Tail.vue'

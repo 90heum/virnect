@@ -24,81 +24,60 @@
                 <span class="contHead">
                     <span>
                         <h2>
-                            VIRNECT View Hololens 1.1.0_2022.5.26 릴리즈 노트
+                            {{$i18n.localeProperties.code === 'ko' ? contentData.title : contentData.titleEn}}
                         </h2>
                         <p>
-                            릴리즈 노트
+                            {{$i18n.localeProperties.code === 'ko' ? "릴리즈 노트" : "릴리즈 노트"}}
                         </p>
                     </span>
                     <span>
-                        <p>2022-5-24</p>
+                        <p>{{$dayjs(contentData.createdDate).format("YYYY-MM-DD")}}</p>
                     </span>
                 </span>
                 <!-- 비디오 영상 시작 -->
                 <!-- 이미지 삽입 예시 진행 이후 동영상으로 대체 해야 함 -->
                 <div class="videoIn">
-                    <img src="https://velog.velcdn.com/images/kyj0206/post/70a6af2e-4b16-4902-a86b-3fb50fed935e/image.png" alt="비디오예시">
+                    <video-player :src="`${contentData.videoUrl ? contentData.videoUrl : ''}`" 
+                                  alt="비디오예시" 
+                                  :allow="true"
+                                  :muted="true"/>
                 </div>
                 <!-- 비디오 영상 끝 -->
                 <!-- 블로그 -->
-                <span class="detailBlog">
-                    <h1>
-                        H1 스타일 제목글<br>
-                        H1 스타일 제목글
-                    </h1>
-                    <h2>
-                        H2 스타일 제목글<br>
-                        H2 스타일 제목글
-                    </h2>
-                    <h3>
-                        H3 스타일 제목글<br>
-                        H3 스타일 제목글
-                    </h3>
-                    <h4>
-                        H4 스타일 제목글<br>
-                        H4 스타일 제목글
-                    </h4>
-                    <p>
-                        본문 글 스타일 입니다. 본문 글 스타일 입니다. 본문 글 스타일 입니다. 본문 글 스타일 입니다.<br>
-                        본문 글 스타일 입니다. 본문 글 스타일 입니다. 본문 글 스타일 입니다. 본문 글 스타일 입니다.<br>
-                        본문 글 스타일 입니다. 본문 글 스타일 입니다.<br> 
-                        <br>
-                        본문 글 스타일 입니다. 본문 글 스타일 입니다.<br> 
-                        본문 글 스타일 입니다. 본문 글 스타일 입니다.<br>
-                    </p>
-                </span>
+                <span class="detailBlog"
+                      v-html="$i18n.localeProperties.code === 'ko' ? contentData.content : contentData.contentEn"></span>
                 <!-- PreNext -->
                 <span class="PreNext">
                     <ul>
                         <li>
-                            <p>이전글</p>
+                            <p>{{$i18n.localeProperties.code === 'ko' ? "이전글" : "Prev"}}</p>
                             <i>
                                 <img src="https://velog.velcdn.com/images/kyj0206/post/7bd599f7-7fb2-40a0-9289-25db6e412a37/image.png" alt="이전글 아이콘">
                             </i>
                         </li>
                         <li>
-                            <a href="#">
-                                VIRNECT View Hololens 1.1.0_2022.5.26 릴리즈 노트
-                            </a>
+                            <nuxt-link :to="`?category=${$route.query.category}&type=${contentData.prevId ? contentData.prevId : contentData.id}`">
+                                {{contentData.prevTitle ? $i18n.localeProperties.code === 'ko' ? contentData.prevTitle : contentData.prevTitleEn : "이전 글이 존재하지 않습니다."}}
+                            </nuxt-link>
                         </li>
                         <li>
-                            2022-5-24
+                            {{contentData.prevCreatedDate ? $dayjs(contentData.prevCreatedDate).format("YYYY-MM-DD") : ''}}
                         </li>
                     </ul>
                     <ul>
                         <li>
-                            <p>다음글</p>
+                            <p>{{$i18n.localeProperties.code === 'ko' ? "다음글" : "Next"}}</p>
                             <i>
                                 <img src="https://velog.velcdn.com/images/kyj0206/post/3d9cc89c-e518-415b-8b40-01ae30b6ae60/image.png" alt="다음글 아이콘">
                             </i>
                         </li>
                         <li>
-                            <a href="#">
-                                VIRNECT View Hololens 1.1.0_2022.5.26 릴리즈 노트
-                            </a>
+                            <nuxt-link :to="`?category=${$route.query.category}&type=${contentData.nextId ? contentData.nextId : contentData.id}`">
+                                {{contentData.nextTitle ? $i18n.localeProperties.code === 'ko' ? contentData.nextTitle : contentData.nextTitleEn : "다음 글이 존재하지 않습니다."}}
+                            </nuxt-link>
                         </li>
                         <li>
-                            2022-5-24
+                            {{contentData.nextCreatedDate ? $dayjs(contentData.nextCreatedDate).format("YYYY-MM-DD") : ''}}
                         </li>
                     </ul>
                 </span>
@@ -118,11 +97,20 @@
 <script>
 import HeadBanner from "~/components/support/headBanner.vue";
 import SubMenu from "~/components/support/SubMenu.vue";
-
+import VideoPlayer from 'nuxt-video-player';
 export default {
     components: {
         HeadBanner,
-        SubMenu
+        SubMenu,
+        VideoPlayer
+    },
+    async asyncData ({$axios, route}) {
+        try {
+            const data = await $axios.get(`admin/support/learning/${route.query.category}?typeId=${route.query.type}`);
+            const dataJson = await data;
+            console.log(dataJson.data.data);
+            return {contentData: dataJson.data.data};
+        } catch (e) {console.error(e)}
     }
 }
 </script>

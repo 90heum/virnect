@@ -22,7 +22,7 @@
                     }
                 }) : []"
                 :key="idx">
-                <nuxt-link :to="`learning-video-detail?category=${data.id}`">
+                <nuxt-link :to="`learning-video-detail?category=${data.id}&type=${data.typeId}`">
                     <span class="listImg">
                         <img :src="`${data.thumbnail ? data.thumbnail : 'https://velog.velcdn.com/images/kyj0206/post/75a8bf3a-fe84-47e5-aa54-fca6f438b599/image.png'}`" />
                     </span>
@@ -63,7 +63,7 @@ export default {
         pagingData: Object,
         movePage: Function,
         chooseTypeMenu: Function
-    }
+    },
 }
 </script>
 
