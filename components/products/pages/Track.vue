@@ -53,18 +53,24 @@
             :contents="$t('productsText.arsdkText.exampleContents')"
           ></heading-module>
 
-          <div class="divide-contents-section example">
+          <new-module :bannerData="$t('productsText.arsdkText.exampleList')"
+                      :title="`Track이`"/>
+          <!-- <div class="divide-contents-section example">
             <example-part
               :exampleArr="$t('productsText.arsdkText.exampleList')"
             ></example-part>
-          </div>
+          </div> -->
         </div>
       </section>
     </div>
 
-    <bg-slide-part
+    <!-- <bg-slide-part
       :bgExampleArr="$t('productsText.arsdkText.bgExampleList')"
-    ></bg-slide-part>
+    ></bg-slide-part> -->
+        <new-bg-slide
+      :bannerData="$t('productsText.arsdkText.bgExampleList')"
+      :title="`Track이`"
+    ></new-bg-slide>
   </section>
 </template>
 
@@ -76,6 +82,8 @@ import effectPart from "../partials/EffectPart";
 import supportPart from "../partials/SupportPart";
 import examplePart from "../partials/ExamplePart";
 import bgSlidePart from "../partials/BgSlidePart";
+import NewModule from "~/components/products/partials/newModule.vue";
+import NewBgSlide from "~/components/products/partials/NewBgSlide.vue";
 
 import headingModule from "../../modules/Heading";
 export default {
@@ -88,6 +96,8 @@ export default {
     examplePart,
     bgSlidePart,
     headingModule,
+    NewModule,
+    NewBgSlide
   },
   data() {
     return {

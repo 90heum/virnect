@@ -11,7 +11,7 @@
                       </h2>
                   </span>
                   <span>
-                      VIRNECT Remote가 만들어낸 효율과 혁신을 
+                      VIRNECT {{title}} 만들어낸 효율과 혁신을 
                       <p>최신 사례와 자료를 통해 확인하세요.</p>
                   </span>
               </div>
@@ -28,7 +28,7 @@
                                 <div class="swiper-wrapper">
                                     <div v-for="(data, idx) of bannerData" :key="idx" class="img-warpper swiper-slide">
                                         <i>
-                                            <img :src="data.src" :alt="data.src" />
+                                            <img :src="data.src||data.img" :alt="data.alt" />
                                         </i>
                                         <p>{{data.title}}</p>
                                     </div>
@@ -91,81 +91,44 @@ export default {
                     1024: {
                         slidesPerView: "auto",
                         centeredSlides: true,
+                        slidesGroup: "2"
                     },
-                    768: {
+                    650: {
                         slidesPerView: "1"
                     }
                 }
             },
-              bannerData: [
-                  {
-                      src: "https://velog.velcdn.com/images/kyj0206/post/50d63145-9f5d-4634-8450-14fe2928485b/image.png",
-                      alt: "삼성SDS",
-                      title: "철도 차량 교육 훈련 및 정비 관리 지원",
-                      
-                  },
-                  {
-                      src: "https://velog.velcdn.com/images/kyj0206/post/6723d6c9-eae0-48c5-bc36-9eafb8580414/image.png",
-                      alt: "미래시티",
-                      title: "발전소 설비 점검 및 유지보수 지원",
-                      
-                  },
-                  {
-                      src: "https://velog.velcdn.com/images/kyj0206/post/99aab915-de88-4603-bb61-28416693be39/image.png",
-                      alt: "미래시티",
-                      title: "상세하고 정확한 장비 조작 가이드",
-                      
-                  },
-                  {
-                      src: "https://velog.velcdn.com/images/kyj0206/post/623662f6-c25b-4475-b2bf-cea6e3e3747f/image.png",
-                      alt: "미래시티",
-                      title: "해외 제조 사업장 품질 관리",
-                      
-                  },
-                  {
-                      src: "https://velog.velcdn.com/images/kyj0206/post/991c2d52-58d1-4b89-9da5-9a1eb9e32c1f/image.png",
-                      alt: "미래시티",
-                      title: "상세하고 정확한 장비 조작 가이드",
-                      
-                  },
-                  {
-                      src: "https://velog.velcdn.com/images/kyj0206/post/991c2d52-58d1-4b89-9da5-9a1eb9e32c1f/image.png",
-                      alt: "미래시티",
-                      title: "장기/대규모 건설 시공 과정 중 안정적인 커뮤니케이션 지원",
-                      
-                  },
-                  {
-                      src: "https://velog.velcdn.com/images/kyj0206/post/11b70aeb-659a-4d2e-bf63-09bc7a5cbd44/image.png",
-                      alt: "미래시티",
-                      title: "해외 원격 근무자 대체 도입 지원",
-                      
-                  },
-                  {
-                      src: "https://velog.velcdn.com/images/kyj0206/post/8f37e236-8ad8-457c-b207-938aa560e182/image.png",
-                      alt: "미래시티",
-                      title: "MICE 행사 진행 시 온라인 도슨트/원격지원",
-                      
-                  },
-                  {
-                      src: "https://velog.velcdn.com/images/kyj0206/post/3b2fa29f-317c-4dc1-8ead-04cd75ef93bf/image.png",
-                      alt: "미래시티",
-                      title: "건설 플랜트 신축 현장 시운전 원격 지원",
-                      
-                  },
-                  {
-                      src: "https://velog.velcdn.com/images/kyj0206/post/50d63145-9f5d-4634-8450-14fe2928485b/image.png",
-                      alt: "미래시티",
-                      title: "철도 차량 교육 훈련 및 정비 관리 지원",
-                      
-                  },
-  
-                  ]
           }
+      },
+      props: {
+          bannerData: Array,
+          title: String
       }
 }
 </script>
 
 <style lang="scss" scoped>
+@import "~/assets/css/mixin.scss";
+.example-wrap {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 46px;
+    height: 164px;
+    background: #202937;
+    content: "";
+  }
+
+  @media (max-width: $mobile) {
+    &:before {
+      bottom: 46px;
+      height: 164px;
+    }
+  }
+}
 .moduleApply{
     max-width: 100%;
     .moduleApplyBgTop{
@@ -258,6 +221,10 @@ export default {
         .swiper-slide {
             min-width: 33%;
             max-width: 33%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
         }
         .swiper-slide img {
             width: 85%;
@@ -322,18 +289,18 @@ export default {
 
 }
 @media screen and (max-width: 768px) {
+
+}
+@media screen and(max-width: 650px) {
+    .moduleApply .moduleApplyBgTop{
+        padding-top: 49.5px;
+    }
     .moduleApply .ApplyInner .ApplySlider {
         .swiper-slide {
             min-width: 100%;
             max-width: 100%;
         }
     }
-}
-@media screen and(max-width: 650px) {
-    .moduleApply .moduleApplyBgTop{
-        padding-top: 49.5px;
-    }
-
     .moduleApply .moduleApplyBgTop .moduleApplyTit{
         margin-bottom: 20px;
         flex-direction: column;

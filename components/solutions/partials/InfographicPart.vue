@@ -1,5 +1,6 @@
 <template>
   <section class="solution-infographic-part">
+    <client-only>
     <div class="img-wrap">
       <img :src="image" />
       <!-- <button @click="fancyPop(image)" class="expand-btn" v-if="checkMobile()"> -->
@@ -46,7 +47,7 @@
               <button class="prev-btn arrow-btn"></button>
               <div class="fade-bg left"></div>
             </div>
-            <!-- 1 -->
+            <!-- 1 --> 
             <div class="carousel-wrapper">
               <div
                 v-swiper:mySwiper="solutionGellaryOption"
@@ -106,6 +107,7 @@
         </div>
       </li>
     </ul>
+    </client-only>
   </section>
 </template>
 

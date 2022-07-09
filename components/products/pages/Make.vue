@@ -79,18 +79,24 @@
             :contents="$t('productsText.makeText.exampleContents')"
           ></heading-module>
 
-          <div class="divide-contents-section example">
+          <!-- <div class="divide-contents-section example">
             <example-part
               :exampleArr="$t('productsText.makeText.exampleList')"
             ></example-part>
-          </div>
+          </div> -->
+          <new-module :bannerData="$t('productsText.makeText.exampleList')"
+                      :title="`Make가`"/>
         </div>
       </section>
     </div>
 
-    <bg-slide-part
+    <!-- <bg-slide-part
       :bgExampleArr="$t('productsText.makeText.bgExampleList')"
-    ></bg-slide-part>
+    ></bg-slide-part> -->
+    <new-bg-slide
+      :bannerData="$t('productsText.makeText.bgExampleList')"
+      :title="`Make가`"
+    ></new-bg-slide>
   </section>
 </template>
 
@@ -103,6 +109,8 @@ import effectPart from "../partials/EffectPart";
 import supportPart from "../partials/SupportPart";
 import examplePart from "../partials/ExamplePart";
 import bgSlidePart from "../partials/BgSlidePart";
+import NewModule from "~/components/products/partials/newModule.vue";
+import NewBgSlide from "~/components/products/partials/NewBgSlide.vue";
 
 import headingModule from "../../modules/Heading";
 export default {
@@ -116,6 +124,9 @@ export default {
     examplePart,
     bgSlidePart,
     headingModule,
+    NewModule,
+    NewBgSlide,
+
   },
   data() {
     return {

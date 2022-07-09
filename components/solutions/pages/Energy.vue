@@ -51,17 +51,23 @@
             :contents="$t('solutionText.exampleTitle.contents')"
           ></heading-module>
 
-          <div class="divide-contents-section example">
+          <!-- <div class="divide-contents-section example">
             <example-part
               :exampleArr="$t('solutionText.energyText.exampleList')"
             ></example-part>
-          </div>
+          </div> -->
+        <new-module :bannerData="$t('solutionText.energyText.exampleList')"
+            :title="`Twin이`"/>
         </div>
       </section>
     </div>
-    <bg-slide-part
+    <!-- <bg-slide-part
       :bgExampleArr="$t('solutionText.energyText.bgExampleList')"
-    ></bg-slide-part>
+    ></bg-slide-part> -->
+        <new-bg-slide
+      :bannerData="$t('solutionText.energyText.bgExampleList')"
+      :title="`Twin이`"
+    ></new-bg-slide>
 
     <offer-part
       :title="$t('solutionText.offerText.title')"
@@ -80,6 +86,8 @@ import offerPart from "../partials/OfferPart";
 
 import examplePart from "../../products/partials/ExamplePart.vue";
 import bgSlidePart from "../../products/partials/BgSlidePart.vue";
+import NewModule from "~/components/products/partials/newModule.vue";
+import NewBgSlide from "~/components/products/partials/NewBgSlide.vue";
 
 import headingModule from "../../modules/Heading";
 export default {
@@ -92,6 +100,8 @@ export default {
     examplePart,
     bgSlidePart,
     headingModule,
+    NewModule,
+    NewBgSlide,
   },
   data() {
     return {

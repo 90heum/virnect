@@ -173,19 +173,19 @@
 			"exampleContents": "View our latest cases on the innovation <br class='mobile-hidden'>and efficiency created by VIRNECT Track.",
 			"exampleList": [
 				{
-					"img": "https://virnect.com/images/pages/products/arsdk-usecase-01.png",
+					"src": "https://virnect.com/images/pages/products/arsdk-usecase-01.png",
 					"title": "Cooperative development with a Korean mobile carrier"
 				},
 				{
-					"img": "https://virnect.com/images/pages/products/arsdk-usecase-02.png",
+					"src": "https://virnect.com/images/pages/products/arsdk-usecase-02.png",
 					"title": "Real-time recognition of HMI screen"
 				},
 				{
-					"img": "https://virnect.com/images/pages/products/arsdk-usecase-03.png",
+					"src": "https://virnect.com/images/pages/products/arsdk-usecase-03.png",
 					"title": "Real-time recognition of analog measuring instrument"
 				},
 				{
-					"img": "https://virnect.com/images/pages/products/arsdk-usecase-04.png",
+					"src": "https://virnect.com/images/pages/products/arsdk-usecase-04.png",
 					"title": "Detection and tracing of smart welding device"
 				}
 			],
@@ -476,55 +476,55 @@
 			"exampleContents": "View our latest cases on the innovation <br class='mobile-hidden'>and efficiency created by VIRNECT Make.",
 			"exampleList": [
 				{
-					"img": "https://virnect.com/images/pages/products/make-usecase-01.png",
+					"src": "https://virnect.com/images/pages/products/make-usecase-01.png",
 					"title": "Authoring of AR content for internal data collection of factories and linking of collected data"
 				},
 				{
-					"img": "https://virnect.com/images/pages/products/make-usecase-02.png",
+					"src": "https://virnect.com/images/pages/products/make-usecase-02.png",
 					"title": "Authoring of AR content for facility data through interlocking internal systems"
 				},
 				{
-					"img": "https://virnect.com/images/pages/products/make-usecase-03.png",
+					"src": "https://virnect.com/images/pages/products/make-usecase-03.png",
 					"title": "Authoring of AR content for reporting work issues and connecting smart tools"
 				},
 				{
-					"img": "https://virnect.com/images/pages/products/make-usecase-04.png",
+					"src": "https://virnect.com/images/pages/products/make-usecase-04.png",
 					"title": "Authoring of AR content for connecting real-time production line information"
 				},
 				{
-					"img": "https://virnect.com/images/pages/products/make-usecase-05.png",
+					"src": "https://virnect.com/images/pages/products/make-usecase-05.png",
 					"title": "Creation of electronic document type AR content for reporting work results"
 				},
 				{
-					"img": "https://virnect.com/images/pages/products/make-usecase-13.png",
+					"src": "https://virnect.com/images/pages/products/make-usecase-13.png",
 					"title": "Creation of promotional AR content manuals for purchase of new cars"
 				},
 				{
-					"img": "https://virnect.com/images/pages/products/make-usecase-07.png",
+					"src": "https://virnect.com/images/pages/products/make-usecase-07.png",
 					"title": "Authoring of AR content for exhibitions"
 				},
 				{
-					"img": "https://virnect.com/images/pages/products/make-usecase-08.png",
+					"src": "https://virnect.com/images/pages/products/make-usecase-08.png",
 					"title": "Authoring of AR content for construction site supervision using BIM data"
 				},
 				{
-					"img": "https://virnect.com/images/pages/products/make-usecase-09.png",
+					"src": "https://virnect.com/images/pages/products/make-usecase-09.png",
 					"title": "Authoring of AR content for education evaluation and reporting of evaluation data"
 				},
 				{
-					"img": "https://virnect.com/images/pages/solution/make-usecase-10.png",
+					"src": "https://virnect.com/images/pages/solution/make-usecase-10.png",
 					"title": "Creating Electric Vehicle Self-Maintenance Manual"
 				},
 				{
-					"img": "https://virnect.com/images/pages/solution/make-usecase-11.png",
+					"src": "https://virnect.com/images/pages/solution/make-usecase-11.png",
 					"title": "Creating promotional content for virtual vehicle experience"
 				},
 				{
-					"img": "https://virnect.com/images/pages/solution/view-usecase-11.png",
+					"src": "https://virnect.com/images/pages/solution/view-usecase-11.png",
 					"title": "Creating AR/VR education content for schools, companies, and educational institutions"
 				},
 				{
-					"img": "https://virnect.com/images/pages/solution/make-usecase-13.png",
+					"src": "https://virnect.com/images/pages/solution/make-usecase-13.png",
 					"title": "Converting models and creating AR content"
 				}
 			],
@@ -801,15 +801,15 @@
 			"exampleContents": "View our latest cases on the innovation <br class='mobile-hidden'>and efficiency created by VIRNECT Twin.",
 			"exampleList": [
 				{
-					"img": "https://virnect.com/images/pages/products/twin-usecase-01.png",
+					"src": "https://virnect.com/images/pages/products/twin-usecase-01.png",
 					"title": "3D visualization of the gas industry"
 				},
 				{
-					"img": "https://virnect.com/images/pages/products/twin-usecase-02.png",
+					"src": "https://virnect.com/images/pages/products/twin-usecase-02.png",
 					"title": "Worker behavior analysis and prediction of accidents"
 				},
 				{
-					"img": "https://virnect.com/images/pages/products/view-usecase-09.png",
+					"src": "https://virnect.com/images/pages/products/view-usecase-09.png",
 					"title": "Real-time monitoring of GIS facility status"
 				}
 			],

@@ -67,11 +67,14 @@
         </div>
       </section>
     </div> -->
-
-    <bg-slide-part
-      :bgExampleArr="$t('productsText.remoteText.bgExampleList')"
-      :id="remoteBgExampleArrId"
-    ></bg-slide-part>
+    <div class="example-style">
+      <new-module :bannerData="bannerData"
+                  :title="`Remote가`"/>
+    </div>
+    <new-bg-slide
+      :bannerData="$t('productsText.remoteText.bgExampleList')"
+      :title="`Remote가`"
+    ></new-bg-slide>
   </section>
 </template>
 
@@ -83,7 +86,72 @@ import effectPart from "../partials/EffectPart.vue";
 import supportPart from "../partials/SupportPart";
 import examplePart from "../partials/ExamplePart";
 import bgSlidePart from "../partials/BgSlidePart.vue";
+import NewModule from "~/components/products/partials/newModule.vue";
+import NewBgSlide from "~/components/products/partials/NewBgSlide.vue";
 
+const bannerData = [
+                  {
+                      src: "https://velog.velcdn.com/images/kyj0206/post/50d63145-9f5d-4634-8450-14fe2928485b/image.png",
+                      alt: "삼성SDS",
+                      title: "철도 차량 교육 훈련 및 정비 관리 지원",
+                      
+                  },
+                  {
+                      src: "https://velog.velcdn.com/images/kyj0206/post/6723d6c9-eae0-48c5-bc36-9eafb8580414/image.png",
+                      alt: "미래시티",
+                      title: "발전소 설비 점검 및 유지보수 지원",
+                      
+                  },
+                  {
+                      src: "https://velog.velcdn.com/images/kyj0206/post/99aab915-de88-4603-bb61-28416693be39/image.png",
+                      alt: "미래시티",
+                      title: "상세하고 정확한 장비 조작 가이드",
+                      
+                  },
+                  {
+                      src: "https://velog.velcdn.com/images/kyj0206/post/623662f6-c25b-4475-b2bf-cea6e3e3747f/image.png",
+                      alt: "미래시티",
+                      title: "해외 제조 사업장 품질 관리",
+                      
+                  },
+                  {
+                      src: "https://velog.velcdn.com/images/kyj0206/post/991c2d52-58d1-4b89-9da5-9a1eb9e32c1f/image.png",
+                      alt: "미래시티",
+                      title: "상세하고 정확한 장비 조작 가이드",
+                      
+                  },
+                  {
+                      src: "https://velog.velcdn.com/images/kyj0206/post/991c2d52-58d1-4b89-9da5-9a1eb9e32c1f/image.png",
+                      alt: "미래시티",
+                      title: "장기/대규모 건설 시공 과정 중 안정적인 커뮤니케이션 지원",
+                      
+                  },
+                  {
+                      src: "https://velog.velcdn.com/images/kyj0206/post/11b70aeb-659a-4d2e-bf63-09bc7a5cbd44/image.png",
+                      alt: "미래시티",
+                      title: "해외 원격 근무자 대체 도입 지원",
+                      
+                  },
+                  {
+                      src: "https://velog.velcdn.com/images/kyj0206/post/8f37e236-8ad8-457c-b207-938aa560e182/image.png",
+                      alt: "미래시티",
+                      title: "MICE 행사 진행 시 온라인 도슨트/원격지원",
+                      
+                  },
+                  {
+                      src: "https://velog.velcdn.com/images/kyj0206/post/3b2fa29f-317c-4dc1-8ead-04cd75ef93bf/image.png",
+                      alt: "미래시티",
+                      title: "건설 플랜트 신축 현장 시운전 원격 지원",
+                      
+                  },
+                  {
+                      src: "https://velog.velcdn.com/images/kyj0206/post/50d63145-9f5d-4634-8450-14fe2928485b/image.png",
+                      alt: "미래시티",
+                      title: "철도 차량 교육 훈련 및 정비 관리 지원",
+                      
+                  },
+  
+                  ]
 import headingModule from "../../modules/Heading";
 export default {
   components: {
@@ -95,9 +163,12 @@ export default {
     examplePart,
     bgSlidePart,
     headingModule,
+    NewModule,
+    NewBgSlide,
   },
   data() {
     return {
+      bannerData,
       remoteIntro: {
         logo: "../images/pages/products/logo-products-bi-remote",
         // img: '../images/pages/products/img-products-remote',

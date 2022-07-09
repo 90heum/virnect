@@ -108,7 +108,6 @@ export default {
         try {
             const data = await $axios.get(`admin/support/learning/${route.query.category}?typeId=${route.query.type}`);
             const dataJson = await data;
-            console.log(dataJson.data.data);
             return {contentData: dataJson.data.data};
         } catch (e) {console.error(e)}
     }

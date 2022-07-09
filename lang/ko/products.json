@@ -179,19 +179,19 @@
 			"exampleContents": "VIRNECT Track이 만들어낸 효율과 혁신을 <br>최신 사례와 자료를 통해 확인하세요.",
 			"exampleList": [
 				{
-					"img": "https://virnect.com/images/pages/products/arsdk-usecase-01.png",
+					"src": "https://virnect.com/images/pages/products/arsdk-usecase-01.png",
 					"title": "5G 안테나(기지국) 자세 측정<br>(KT와 협력 개발)"
 				},
 				{
-					"img": "https://virnect.com/images/pages/products/arsdk-usecase-02.png",
+					"src": "https://virnect.com/images/pages/products/arsdk-usecase-02.png",
 					"title": "HMI 화면 실시간 인식"
 				},
 				{
-					"img": "https://virnect.com/images/pages/products/arsdk-usecase-03.png",
+					"src": "https://virnect.com/images/pages/products/arsdk-usecase-03.png",
 					"title": "아날로그 계측기 실시간 인식"
 				},
 				{
-					"img": "https://virnect.com/images/pages/products/arsdk-usecase-04.png",
+					"src": "https://virnect.com/images/pages/products/arsdk-usecase-04.png",
 					"title": "스마트 용접 기기 검출 및 추적"
 				}
 			],
@@ -485,55 +485,55 @@
 			"exampleContents": "VIRNECT Make가 만들어낸 효율과 혁신을 <br>최신 사례와 자료를 통해 확인하세요.",
 			"exampleList": [
 				{
-					"img": "https://virnect.com/images/pages/products/make-usecase-01.png",
+					"src": "https://virnect.com/images/pages/products/make-usecase-01.png",
 					"title": "공장 내부 데이터 수집 및 수집 데이터 연동 <br>XR 콘텐츠 작 "
 				},
 				{
-					"img": "https://virnect.com/images/pages/products/make-usecase-02.png",
+					"src": "https://virnect.com/images/pages/products/make-usecase-02.png",
 					"title": "내부 시스템 연동을 통한 설비 데이터 XR 콘텐츠 제작"
 				},
 				{
-					"img": "https://virnect.com/images/pages/products/make-usecase-03.png",
+					"src": "https://virnect.com/images/pages/products/make-usecase-03.png",
 					"title": "작업 이슈 보고 및 스마트툴 연동 XR 콘텐츠 제작"
 				},
 				{
-					"img": "https://virnect.com/images/pages/products/make-usecase-04.png",
+					"src": "https://virnect.com/images/pages/products/make-usecase-04.png",
 					"title": "제조라인 실시간 생산 물량 정보 연동 XR 콘텐츠 제작"
 				},
 				{
-					"img": "https://virnect.com/images/pages/products/make-usecase-05.png",
+					"src": "https://virnect.com/images/pages/products/make-usecase-05.png",
 					"title": "작업 결과 보고 전자 문서형 XR 콘텐츠 제작"
 				},
 				{
-					"img": "https://virnect.com/images/pages/products/make-usecase-13.png",
+					"src": "https://virnect.com/images/pages/products/make-usecase-13.png",
 					"title": "신차 구매 홍보용 XR 콘텐츠 매뉴얼 제작"
 				},
 				{
-					"img": "https://virnect.com/images/pages/products/make-usecase-07.png",
+					"src": "https://virnect.com/images/pages/products/make-usecase-07.png",
 					"title": "박람회 전시 XR 콘텐츠 제작"
 				},
 				{
-					"img": "https://virnect.com/images/pages/products/make-usecase-08.png",
+					"src": "https://virnect.com/images/pages/products/make-usecase-08.png",
 					"title": "BIM 데이터 활용 건설 현장 감리용 XR 콘텐츠저작"
 				},
 				{
-					"img": "https://virnect.com/images/pages/products/make-usecase-09.png",
+					"src": "https://virnect.com/images/pages/products/make-usecase-09.png",
 					"title": "교육 평가 및 평가 데이터 보고 XR 콘텐츠 제작"
 				},
 				{
-					"img": "https://virnect.com/images/pages/solution/make-usecase-10.png",
+					"src": "https://virnect.com/images/pages/solution/make-usecase-10.png",
 					"title": "전기차 자가 정비 매뉴얼 제작"
 				},
 				{
-					"img": "https://virnect.com/images/pages/solution/make-usecase-11.png",
+					"src": "https://virnect.com/images/pages/solution/make-usecase-11.png",
 					"title": "자동차 가상체험 홍보 콘텐츠 제작"
 				},
 				{
-					"img": "https://virnect.com/images/pages/solution/view-usecase-12.png",
+					"src": "https://virnect.com/images/pages/solution/view-usecase-12.png",
 					"title": "학교 및 기업, 교육기관 대상 XR 교육 콘텐츠 제작"
 				},
 				{
-					"img": "https://virnect.com/images/pages/solution/make-usecase-13.png",
+					"src": "https://virnect.com/images/pages/solution/make-usecase-13.png",
 					"title": "모델 컨버팅 및 XR 콘텐츠 제작"
 				}
 			],
@@ -824,15 +824,15 @@
 			"exampleContents": "VIRNECT Twin이 만들어낸 효율과 혁신을 <br>최신 사례와 자료를 통해 확인하세요.",
 			"exampleList": [
 				{
-					"img": "https://virnect.com/images/pages/products/view-usecase-09.png",
+					"src": "https://virnect.com/images/pages/products/view-usecase-09.png",
 					"title": "가스산업 3차원 시각화"
 				},
 				{
-					"img": "https://virnect.com/images/pages/products/twin-usecase-02.png",
+					"src": "https://virnect.com/images/pages/products/twin-usecase-02.png",
 					"title": "작업자 행동 분석 및 안전사고 예측"
 				},
 				{
-					"img": "https://virnect.com/images/pages/products/view-usecase-09.png",
+					"src": "https://virnect.com/images/pages/products/view-usecase-09.png",
 					"title": "GIS 설비 상태 실시간 확인"
 				}
 			],
