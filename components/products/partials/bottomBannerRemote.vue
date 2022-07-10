@@ -114,7 +114,7 @@ export default {};
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 90px 0px;
+  // padding: 90px 0px;
   background: #f7f8f9;
 }
 .ModuleInsight {
