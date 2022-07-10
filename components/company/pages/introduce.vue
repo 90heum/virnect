@@ -212,7 +212,7 @@
               <li class="HisRight">
                 <ul>
                   <li>{{ $t("aboutHistory2016.list1") }}</li>
-                  <li>{{ $t("aboutHistory2016.list2") }}</li>
+                  <!-- <li>{{ $t("aboutHistory2016.list2") }}</li> -->
                 </ul>
               </li>
             </ul>

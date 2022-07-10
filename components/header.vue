@@ -163,7 +163,7 @@
           v-click-outside="serviceHide"
           v-if="isWeb"
         >
-          <div class="select" v-bind:style="gnb6" visible="visible">
+          <div class="select" v-bind:style="gnb6">
             <div class="selected">
               <div class="selected-value"><a>VIRNECT Service</a></div>
               <div class="arrow">
@@ -398,7 +398,7 @@
                 <sub-solution-menu
                   :snbArr="
                     $t('gnb[2].array').filter((e, idx) => {
-                      if (idx < 2) return e;
+                      if (idx < 3) return e;
                     })
                   "
                   :name="`subNavProductsMenus`"

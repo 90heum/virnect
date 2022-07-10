@@ -4,7 +4,7 @@
       <a>
         <img
           class="upup"
-          src="https://velog.velcdn.com/images/kyj0206/post/d74f9933-4e13-4838-aa1a-4f7993020afc/image.svg"
+          src="../assets/images/common/topbut@2x.png"
           alt="upButton"
         />
         <img
@@ -71,7 +71,9 @@
             <li>
               <nuxt-link to="/news/news-press">News</nuxt-link>
               <ul>
-                <li><nuxt-link to="/news/news-press">News&press</nuxt-link></li>
+                <li>
+                  <nuxt-link to="/news/news-press">News & press</nuxt-link>
+                </li>
                 <!-- <li><a href="#">People & Culture</a></li>
                 <li><a href="#">Insight</a></li>
                 <li><a href="#">ESG</a></li> -->
@@ -205,11 +207,12 @@
                   @click="[showServiceMenu(), toggle(), (showEarth = false)]"
                   v-click-outside="serviceHide"
                   v-if="isWeb"
-                  v-bind:style="hamServiceColor"
                 >
-                  <div class="select">
+                  <div class="select" v-bind:style="showStyle">
                     <div class="selected">
-                      <div class="selected-value"><a>VIRNECT Service</a></div>
+                      <div class="selected-value" v-bind:style="showText">
+                        <a>VIRNECT Service</a>
+                      </div>
                       <div class="arrow">
                         <img
                           class="downIcon6"
@@ -362,8 +365,8 @@
               <p>VIRNECT가 전하는 최신 Digital Insight를 만나보세요</p>
             </span>
             <span>
-              <input type="text" placeholder="email을 입력하세요" />
-              <button><a href="#">구독</a></button>
+              <!-- <input type="text" placeholder="email을 입력하세요" /> -->
+              <button><a href="#">지금 구독하세요</a></button>
             </span>
           </span>
         </span>
@@ -502,8 +505,9 @@ export default {
     isWeb: true,
     showEarth: false,
     isServiceMenu: false,
-    hamServiceColor: {},
     serviceOpen: false,
+    showStyle: {},
+    showText: {},
   }),
   directives: {
     ClickOutside,
@@ -517,13 +521,15 @@ export default {
     },
     showServiceMenu() {
       this.isServiceMenu = !this.isServiceMenu;
-      this.hamServiceColor.backgroundColor = "#fff";
+      /* this.showStyle.backgroundColor = "#fff";
+      this.showText.color = "#000"; */
     },
     toggle() {
       this.serviceOpen = true;
     },
     serviceHide() {
       this.serviceOpen = false;
+      this.isServiceMenu = false;
     },
     /* showServiceMenu () {
       if (isServiceMenu == true) {

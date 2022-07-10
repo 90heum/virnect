@@ -1,3 +1,5 @@
+@import url('~/assets/css/reset.scss');
+
 .el-dialog {
   position: fixed;
   bottom: 0;
@@ -10,9 +12,11 @@
   max-width: 300px;
   padding: 0;
   background: none;
+
   div {
     word-break: break-all;
   }
+
   .popper__arrow {
     display: none;
   }

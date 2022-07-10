@@ -64,7 +64,7 @@ export default {
     },
     props: {
         title: Object,
-        effectList: Object,
+        effectList: Array,
         moduleData: Array
     },
     methods: {

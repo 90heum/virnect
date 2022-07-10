@@ -63,8 +63,7 @@
         </div>
       </section>
     </div> -->
-
-    <new-effect-part :title="title"
+  <new-effect-part :title="title"
                      :effectList="effectList.view"
                      :moduleData="moduleData.view"/>
   </section>

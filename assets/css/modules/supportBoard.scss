@@ -1,4 +1,5 @@
 @import "./board.scss";
+@import url('~/assets/css/reset.scss');
 
 h3 {
   margin-top: 145px;
@@ -29,18 +30,22 @@ h3 {
     text-align: center;
     border-right: 1px solid #e0e4eb;
     opacity: 0.55;
+
     &.active {
       color: #fff;
       background: $deepBlue;
       opacity: 1;
+
       button {
         color: #fff;
       }
     }
+
     &:last-child {
       border: 0;
     }
   }
+
   button {
     width: 100%;
   }
@@ -54,6 +59,7 @@ h3 {
     font-size: 26px;
     border: 0;
   }
+
   .filter-wrap {
     margin-top: 34px;
     padding: 0;
@@ -62,9 +68,11 @@ h3 {
     border-right: 0;
     border-left: 0;
   }
+
   .category-filters {
     overflow-x: scroll;
     white-space: nowrap;
+
     li {
       width: 98px;
     }
@@ -74,8 +82,10 @@ h3 {
 // Table
 .board-module {
   margin: 54px auto 184px;
+
   table {
     border-top: solid 1px #d7dde6;
+
     th {
       padding-top: 8px;
       padding-bottom: 8px;
@@ -83,11 +93,13 @@ h3 {
       font-size: 14px;
       background: #f1f5f9;
     }
+
     td {
       color: $deepBlue;
       font-weight: 500;
       font-size: 15px;
       border-color: #e0e4eb;
+
       &:active,
       &:focus {
         background-color: transparent;
@@ -97,21 +109,23 @@ h3 {
         -webkit-tap-highlight-color: transparent;
       }
     }
+
     .status {
       text-align: center;
     }
+
     td.category {
       width: 13%;
       opacity: 0.75;
     }
+
     .notice-title {
       width: 70%;
     }
 
     td.answer {
       padding-left: 48px;
-      background: url("~assets/images/common/ic-subdirectory-arrow-right.svg")
-        no-repeat 16px center;
+      background: url("~assets/images/common/ic-subdirectory-arrow-right.svg") no-repeat 16px center;
     }
 
     .content {
@@ -123,6 +137,7 @@ h3 {
       width: 12%;
       opacity: 0.75;
     }
+
     .status span {
       display: inline-block;
       padding: 6px 14px 8px;
@@ -131,11 +146,13 @@ h3 {
       border-radius: 18px;
       opacity: 0.75;
     }
+
     .status .done {
       background: #e6e9ee;
       border: 0;
       opacity: 1;
     }
+
     .product-type {
       margin-left: 12px;
       padding: 5px 12px;
@@ -144,11 +161,14 @@ h3 {
       border-radius: 3px;
     }
   }
+
   @media (max-width: $mobile) {
     margin-top: 20px;
     margin-bottom: 120px;
+
     table .content {
       padding: 24px 8px 40px;
+
       div {
         font-size: 14px;
       }
@@ -158,38 +178,44 @@ h3 {
       padding-top: 6px;
       padding-bottom: 12px;
       padding-left: 36px;
-      background: url("~assets/images/common/ic-subdirectory-arrow-right.svg")
-        no-repeat 8px center;
+      background: url("~assets/images/common/ic-subdirectory-arrow-right.svg") no-repeat 8px center;
     }
   }
 }
 
 .board-mobile {
   width: 100%;
+
   li {
     border-bottom: 1px solid #d7dde6;
   }
+
   button {
     width: 100%;
     padding: 12px 0;
   }
+
   p {
     color: #0d2a58;
     font-weight: 500;
     text-align: left;
   }
+
   .title {
     margin-bottom: 4px;
     font-size: 15px;
   }
+
   span {
     font-size: 12px;
     opacity: 0.75;
   }
+
   .category {
     position: relative;
     margin-right: 6px;
     padding-right: 9px;
+
     &:after {
       position: absolute;
       top: 1px;

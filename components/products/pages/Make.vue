@@ -71,7 +71,7 @@
 
     <!-- <div class="example-wrap">
       <section class="divide-section">
-        <div class="example-style">
+       <div class="example-style">
           <heading-module
             :align="exampleAlign"
             :category="$t('productsText.exampleTitle.category')"
@@ -87,6 +87,7 @@
           <new-module :bannerData="$t('productsText.makeText.exampleList')"
                       :title="`Make가`"/>
         </div>
+        </div> 
       </section>
     </div> -->
 

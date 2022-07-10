@@ -71,6 +71,9 @@
       </span>
     </div>
     <div class="banner">
+      <span class="Whats-New">
+        What’s New
+      </span>
       <client-only>
         <agile :autoplay-speed="5000" :autoplay="true" :nav-buttons="false">
           <div
@@ -101,7 +104,7 @@ export default {
 
       parentButtonTarget.style.position = "absolute";
       parentButtonTarget.style.top = "-2px";
-      parentButtonTarget.style.right = "11%";
+      parentButtonTarget.style.right = "25%";
       buttonTarget.forEach((e, idx) => {
         e.style.width = "15px";
         e.style.height = "15px";
@@ -355,10 +358,20 @@ export default {
   width: 100%;
   z-index: 1;
   position: absolute;
-  top: 80%;
+  top: 90%;
   overflow: hidden;
   /* background-color: #000; */
-
+  .Whats-New {
+  width: 90px;
+  height: 39px;
+  margin-left: 600px;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: -0.2px;
+  color: #fff;
+  }
   .bannerWrap {
     position: relative;
 
@@ -404,15 +417,18 @@ export default {
   padding: 1rem;
   img {
     max-height: 306px;
+    width: 1200px;
   }
 }
 
 @media (min-width: 1200px) {
+   .Whats-New {
+    margin-left: 2%;
+   }
 }
 
 .slide img {
   max-width: 100%;
-  width: 80%;
   transition: transform 0.3s ease-in-out;
   box-shadow: 5px 5px 50px -1px var(--shadow);
   border-radius: 4px;
@@ -444,6 +460,10 @@ export default {
   }
 }
 @media screen and (max-width: 1024px) {
+  .slide img {width: 964px; height: 246px;}
+  .banner{
+    .Whats-New { margin-left: 30px;}
+  }
   /*  .banner {  top: 147%; } */
 }
 @media screen and(max-width:768px) {
@@ -536,6 +556,7 @@ export default {
     padding: 128px 34px 110px;
     max-height: none;
   }
+  .slide img {width: 720px; height: 184px;}
 
   .mainBanner .mainBannerInner .mainBannerCont img {
     min-width: auto;
@@ -566,6 +587,7 @@ export default {
 }
 
 @media screen and(max-width: 425px) {
+  .slide img {width: 377px; height: 96px;}
   .mainBanner .mainBannerInner .mainBannerTit .bannerTitN1 {
     font-size: 22px;
   }

@@ -1,3 +1,5 @@
+@import '~/assets/css/reset.scss';
+
 .productsSubMain {
   display: flex;
   flex-direction: column;
@@ -48,8 +50,8 @@
   border: solid 1px #c5c8cf;
   background-color: #f7f8f9;
   height: 538px;
-  max-width: 544px;
-  min-width: 544px;
+  max-width: 512px;
+  min-width: 512px;
   margin-left: auto;
 }
 
@@ -175,8 +177,8 @@
   border: solid 1px #c5c8cf;
   background-color: #f7f8f9;
   height: 538px;
-  min-width: 544px;
-  max-width: 544px;
+  min-width: 512px;
+  max-width: 512px;
   margin-right: auto;
 }
 
@@ -299,8 +301,8 @@
   border: solid 1px #c5c8cf;
   background-color: #f7f8f9;
   height: 538px;
-  min-width: 544px;
-  max-width: 544px;
+  min-width: 512px;
+  max-width: 512px;
   margin-left: auto;
 }
 
@@ -458,8 +460,8 @@
   border: solid 1px #c5c8cf;
   background-color: #f7f8f9;
   height: 538px;
-  min-width: 544px;
-  max-width: 544px;
+  min-width: 512px;
+  max-width: 512px;
   width: 100%;
   box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.2);
 }
@@ -571,7 +573,7 @@
   .productsSubMain .proSubMainList .proSubMainListInner div span.proSubView .subViewInner>span,
   .productsSubMain .proSubMainList .proSubMainListInner div span.proSubMake .subMakeInner>span,
   .productsSubMain .proSubMainList .proSubMainListInner div span.proSubRemote .subRemoteInner>span {
-    min-width: 512px;
+    min-width: 50%;
   }
 
   .productsSubMain .proSubMainList .proSubMainListInner div span.proSubView,
@@ -629,7 +631,7 @@
   .productsSubMain .proSubMainList .proSubMainListInner div span.proSubView .subViewInner>span,
   .productsSubMain .proSubMainList .proSubMainListInner div span.proSubMake .subMakeInner>span,
   .productsSubMain .proSubMainList .proSubMainListInner div span.proSubRemote .subRemoteInner>span {
-    min-width: 384px;
+    width: 50%;
     height: 432px;
     padding: 0;
   }
@@ -799,6 +801,20 @@
     line-height: 1.54;
     letter-spacing: -0.33px;
     color: #fff;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  // .productsSubMain {
+  //   min-width: 600px;
+  //   width: 100vw;
+  // }
+
+  body {
+    min-width: 600px;
+    width: 100vw;
+
   }
 }
 

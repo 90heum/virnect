@@ -1,9 +1,11 @@
 @charset "utf-8";
+@import url('~/assets/css/reset.scss');
 
 .el-message-box {
   margin-top: 36px;
   padding-bottom: 0;
   vertical-align: top;
+
   @media (max-width: $mobile) {
     width: auto;
     margin-right: 24px;
@@ -14,12 +16,15 @@
 .el-message-box__title {
   font-weight: 500;
 }
+
 .el-message-box__header {
   padding-bottom: 6px;
+
   &btn {
     display: none;
   }
 }
+
 .el-message-box__content {
   padding-top: 6px;
   font-weight: 500;
@@ -27,6 +32,7 @@
 
 .el-message-box__btns {
   padding: 20px 24px 24px;
+
   .el-button--small {
     height: 36px;
     margin-top: 0;
@@ -35,6 +41,7 @@
     border-color: #f0f1f5;
     border-radius: 3px;
   }
+
   button:nth-child(2) {
     background-color: #1468e2;
     border-color: #1468e2;
@@ -108,27 +115,34 @@
     color: #fff;
   }
 }
+
 .el-dialog {
+
   // max-width: 420px;
   &__header {
     padding: 20px 30px;
     border-bottom: 1px solid #eaedf3;
   }
+
   &__body {
     padding: 20px 30px;
     font-weight: 500;
   }
+
   &__title {
     color: $baseColor;
     font-weight: bold;
   }
 }
+
 .el-dialog__header {
   display: none;
 }
+
 .el-dialog__headerbtn {
   right: 24px;
 }
+
 .el-icon-close:before {
   color: #0b1f48;
   font-weight: bold;

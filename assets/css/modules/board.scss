@@ -1,10 +1,12 @@
 @charset "utf-8";
 @import "../mixin.scss";
+@import url('~/assets/css/reset.scss');
 
 .board-module {
   @include area-flex(1200px);
   margin-top: 130px;
   margin-bottom: 300px;
+
   @media (max-width: $mobile) {
     margin-top: 72px;
     margin-bottom: 140px;
@@ -17,12 +19,14 @@ table {
   font-family: $noto;
   border-top: 2px solid $baseColor;
   border-bottom: 1px solid #d4d9e1;
+
   th {
     padding: 20px 24px;
     font-weight: 500;
     font-size: 18px;
     text-align: left;
   }
+
   td {
     padding: 20px 24px;
     color: #000;
@@ -30,27 +34,35 @@ table {
     border-top: 1px solid #d4d9e1;
     cursor: pointer;
   }
+
   .num {
     width: 10%;
   }
+
   .middle {
     width: 20%;
   }
+
   .small {
     width: 5%;
   }
+
   .title {
     width: 62%;
   }
+
   .date {
     width: 13%;
   }
+
   @media (max-width: $mobile) {
     border-top-width: 1px;
+
     th {
       padding: 15px 0;
       font-size: 14px;
     }
+
     td {
       padding: 15px 0;
       font-size: 13px;
@@ -58,12 +70,15 @@ table {
       // white-space: nowrap;
       // overflow: hidden;
     }
+
     .num {
       width: 14%;
     }
+
     .middle {
       width: 28%;
     }
+
     .title {
       max-width: 180px;
       padding: 15px 8px;
@@ -71,6 +86,7 @@ table {
       word-break: break-all;
       // white-space: nowrap;
     }
+
     .date {
       padding: 15px 8px;
       white-space: nowrap;
@@ -87,10 +103,12 @@ table {
   margin-top: 100px;
   text-align: center;
   $size: 34px;
+
   .btn {
     background-position: center;
     background-size: 24px;
     border: 1px solid #ced3dc;
+
     // &.first-btn {
     //     margin-right: 12px;
     //     background-image: url("~assets/images/common/icon-arrow-first.png");
@@ -99,10 +117,12 @@ table {
       margin-right: 24px;
       background-image: url("~assets/images/common/ic-keyboard-arrow-prev@2x.png");
     }
+
     &.next-btn {
       margin-left: 24px;
       background-image: url("~assets/images/common/ic-keyboard-arrow-next@2x.png");
     }
+
     // &.last-btn {
     //     margin-left: 12px;
     //     background-image: url("~assets/images/common/icon-arrow-last.png");
@@ -114,9 +134,11 @@ table {
     display: inline-block;
     vertical-align: top;
   }
+
   li {
     width: $size;
     height: $size;
+
     &:hover,
     &.active {
       button {
@@ -125,6 +147,7 @@ table {
       }
     }
   }
+
   button {
     width: $size;
     height: $size;
@@ -148,6 +171,7 @@ table {
         right: 50px;
         left: 70px;
       }
+
       height: 50px;
       color: #5c6373;
       font-weight: 500;
@@ -159,19 +183,24 @@ table {
       border: 1px solid #ced3dc;
     }
   }
+
   @media (max-width: $tablet) {
     padding-top: 40px;
     padding-bottom: 60px;
+
     .align-center {
       padding-top: 30px;
       padding-bottom: 80px;
+
       button {
         // width: 136px;
         height: 46px;
+
         padding: {
           right: 24px;
           left: 52px;
         }
+
         font-size: 12px;
         font-size: 14px;
         background-position: 32px 17px;
@@ -202,6 +231,7 @@ table {
       height: 24px;
       cursor: pointer;
     }
+
     padding-top: $dateBottom;
     font-weight: 500;
     font-size: 32px;
@@ -222,11 +252,13 @@ table {
   @media (max-width: $mobile) {
     margin-bottom: 20px;
     padding-bottom: 0;
+
     .category {
       margin-bottom: 10px;
       padding-bottom: 0;
       font-size: 16px;
     }
+
     .title {
       display: flex;
       justify-content: space-between;
@@ -234,12 +266,14 @@ table {
       padding-top: 12px;
       font-size: 18px;
       border-top: 1px solid #000;
+
       .download-icon {
         display: inline !important;
         width: 24px;
         height: 24px;
       }
     }
+
     .date {
       position: absolute;
       right: 0;
@@ -256,6 +290,7 @@ table {
 
   .thumbnail-img {
     text-align: center;
+
     img {
       max-width: 900px;
       margin-bottom: 40px;
@@ -279,10 +314,12 @@ table {
     margin-bottom: 20px;
     font-weight: 500;
     font-size: 16px;
+
     p {
       margin-bottom: 8px;
       color: $point;
     }
+
     a {
       color: #000;
       text-decoration: underline;
@@ -291,13 +328,16 @@ table {
 
   @media (max-width: $tablet) {
     margin: 0;
+
     &.area-flex-inner {
       padding: 0;
       padding-bottom: 30px;
     }
+
     .thumbnail-img {
       min-height: 108px;
       margin-bottom: 20px;
+
       img {
         width: 100%;
         margin: 0;
@@ -307,13 +347,16 @@ table {
     .view-body-text {
       font-size: 14px;
     }
+
     .right-align {
       text-align: right;
     }
+
     .source-wrap {
       margin-top: 52px;
       margin-bottom: 80px;
       font-size: 14px;
+
       p {
         margin-bottom: 4px;
       }
@@ -373,12 +416,14 @@ table {
       font-weight: 500;
       vertical-align: top;
     }
+
     .direction {
       font-size: 18px;
       background-repeat: no-repeat;
       background-position: right;
       background-size: 24px;
     }
+
     .title {
       position: relative;
       width: 79%;
@@ -388,6 +433,7 @@ table {
       white-space: nowrap;
       text-overflow: ellipsis;
     }
+
     .date {
       color: #858a90;
       font-weight: normal;
@@ -395,23 +441,29 @@ table {
       font-family: $poppins;
     }
   }
+
   @media (max-width: $tablet) {
     margin-top: 70px;
+
     &.closer {
       margin-top: 0;
     }
+
     button {
       p {
         padding: 14px 8px;
         vertical-align: top;
       }
+
       .direction {
         padding-right: 24px;
         font-size: 14px;
       }
+
       .date {
         display: none;
       }
+
       .title {
         width: 82%;
         padding-left: 20px;
@@ -422,6 +474,7 @@ table {
     }
   }
 }
+
 .view-download {
   & .link {
     color: #31313b;
@@ -431,6 +484,7 @@ table {
     line-height: 1.25;
     text-decoration: underline;
   }
+
   display: flex;
   align-items: center;
   height: 72px;

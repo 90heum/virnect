@@ -253,7 +253,7 @@ export default {
     max-width: 1260px;
     width: 100%;
     display: flex;
-    padding: 150px 30px 226px;
+    padding: 150px 30px;
     flex-direction: column;
     margin: 0 auto;
     .useCaseTit {

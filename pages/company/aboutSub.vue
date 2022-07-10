@@ -20,7 +20,11 @@
 
             <span class="contContMenu">
                 <span :class="`${chosenMenu ? 'contactTabActive3' : ''}`" tap-content="1">
-                    <About/>
+                    <!-- <About/> -->
+                    <transition name="app-fade" mode="out-in">
+                        <indroduce-component />
+                        <companyValue/>
+                    </transition>
                 </span>
 
 
@@ -40,7 +44,10 @@
 <script>
 import About from './about.vue';
 import Brand from './subCompany/Brand.vue';
+import indroduceComponent from "../../components/company/pages/introduce.vue";
 import brandComponent from '../../components/company/pages/brand.vue'
+import companyValue from '../../components/company/pages/companyValue.vue';
+
 export default {
     data() {
         return {
@@ -52,7 +59,7 @@ export default {
             this.chosenMenu = e;
         }
     },
-    components: { About, Brand, brandComponent }
+    components: { About, Brand, brandComponent, indroduceComponent, companyValue }
 }
 </script>
 
@@ -73,10 +80,10 @@ export default {
             margin: 0 auto;
             max-width: 1260px;
             width: 100%;
-            padding: 150px 30px;
+            padding: 151px 30px;
             >ul{
                     display: flex;
-                    margin-bottom: 110px;
+                    margin-bottom: 100px;
                     li{
                         padding: 13px 0;
                         cursor: pointer;

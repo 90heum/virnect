@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url('~/assets/css/reset.scss');
 
 button {
   border: 0;
@@ -6,6 +7,7 @@ button {
 
 .dark {
   color: #fff;
+
   button,
   a {
     color: #fff;
@@ -15,6 +17,7 @@ button {
 .header-section {
   &.sticky-pushup {
     top: -100px;
+
     .hover-box {
       display: none;
     }
@@ -31,31 +34,32 @@ button {
 
 .swiper-container-3d {
   .swiper-slide-shadow-right {
-    background-image: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 1) 40%
-    );
+    background-image: linear-gradient(to right,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 1) 40%);
   }
+
   .swiper-slide-shadow-left {
-    background-image: linear-gradient(
-      to left,
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 1) 40%
-    );
+    background-image: linear-gradient(to left,
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 1) 40%);
   }
 }
+
 .swiper-pagination-bullet {
   width: auto;
   height: auto;
   background: none;
   border-radius: 0;
+
   svg,
   path {
     opacity: 0.8;
     fill: #fff;
   }
+
   &-active {
+
     svg,
     path {
       // fill: #aecdff;
@@ -63,10 +67,12 @@ button {
     }
   }
 }
+
 .bg-part {
   .pagination li {
     width: 100%;
     padding: 4px 0;
+
     @media (max-width: $mobile) {
       display: inline-block;
       width: auto;
@@ -74,29 +80,37 @@ button {
     }
   }
 }
+
 @media (max-width: $mobile) {
+
   .awards-section,
   .effect-part,
   .line-divide-list {
     margin-bottom: 32px;
     padding-bottom: 48px;
+
     .pagination {
       position: absolute;
       bottom: 0;
       left: 50%;
       transform: translateX(-50%);
+
       li {
         margin: 0 8px;
       }
     }
+
     .swiper-pagination-bullet {
       opacity: 1;
+
       svg,
       path {
         opacity: 1;
         fill: #d4dae1;
       }
+
       &-active {
+
         svg,
         path {
           fill: $point;
@@ -112,6 +126,7 @@ button {
       margin-bottom: 4px;
     }
   }
+
   #headingModule {
     .circle-arrow-btn {
       margin-top: 16px;
@@ -125,6 +140,7 @@ button {
       margin-bottom: 4px;
     }
   }
+
   #headingModule {
     .circle-arrow-btn {
       margin-top: 16px;
@@ -143,13 +159,15 @@ button {
 
 @media (max-width: $mobile) {
   .products-section {
-    .effect-part + .divide-section,
-    .laptop-mockup + .divide-section {
+
+    .effect-part+.divide-section,
+    .laptop-mockup+.divide-section {
       #headingModule {
         text-align: center;
       }
     }
   }
+
   .virnect-potential {
     #headingModule {
       text-align: left;
@@ -160,12 +178,14 @@ button {
 strong {
   font-weight: bold;
 }
+
 // 메인 렌딩 비주얼 페이지네이션
 .visual-pagination {
   width: 200px;
   margin-top: 60px;
   font-weight: 600;
   font-size: 16px;
+
   li {
     position: relative;
     width: 50%;
@@ -173,6 +193,7 @@ strong {
     background: none;
     border-radius: 0;
     opacity: 1;
+
     &:after {
       position: absolute;
       top: 50%;
@@ -182,14 +203,17 @@ strong {
       background: rgba(255, 255, 225, 0.3);
       content: "";
     }
+
     &:last-child {
       text-align: right;
+
       &:after {
         right: auto;
         left: 0;
       }
     }
   }
+
   .swiper-pagination-bullet-active {
     &:after {
       background: #fff;
@@ -216,6 +240,7 @@ strong {
   font-size: 0;
   text-align: center;
   border-bottom: 1px solid #eaedf3;
+
   li {
     position: relative;
     display: inline-block;
@@ -227,6 +252,7 @@ strong {
     background: none;
     border-radius: 0;
     opacity: 1;
+
     &.swiper-pagination-bullet-active {
       &:after {
         position: absolute;
@@ -239,6 +265,7 @@ strong {
       }
     }
   }
+
   @media (max-width: $mobile) {
     margin-bottom: 24px;
     padding: 0 10px;
@@ -246,9 +273,11 @@ strong {
     overflow-y: hidden;
     white-space: nowrap;
     text-align: left;
+
     li {
       padding: 0 8px 15px 6px;
       opacity: 0.25;
+
       &.swiper-pagination-bullet-active {
         opacity: 1;
       }
@@ -268,6 +297,7 @@ html:lang(en) {
     span {
       font-size: 16px;
     }
+
     i {
       display: block;
       color: #222;
@@ -284,16 +314,19 @@ html:lang(en) {
         font-size: 24px;
         font-family: $noto;
       }
+
       .title {
         font-size: 52px;
         font-family: $noto;
       }
+
       .contents {
         font-size: 20px;
       }
     }
   }
 }
+
 @media (max-width: $mobile) {
   .coupon-section {
     .sub-visual-section {
@@ -334,6 +367,7 @@ html:lang(en) {
     span {
       font-size: 16px;
     }
+
     i {
       display: block;
       color: #222;
@@ -341,14 +375,17 @@ html:lang(en) {
     }
   }
 }
+
 .dropdown-wrap {
   margin-right: 28px;
 }
+
 .el-checkbox.dropdown {
   display: flex;
   align-items: center;
   padding: 4px 0;
   white-space: nowrap;
+
   .el-checkbox__label {
     overflow: hidden;
   }

@@ -51,7 +51,14 @@
           "text": "VIRNECT View",
           "page": "view",
           "to": "/products/view"
-        },
+        }
+      ]
+    },
+    {
+      "text": "Products",
+      "page": "twin",
+      "to": "/products/twin",
+      "array": [
         {
           "text": "VIRNECT Twin",
           "page": "twin",
@@ -63,9 +70,9 @@
           "to": "/products/track"
         },
         {
-          "text": "VIRNECT X MS",
-          "page": "ms",
-          "to": "/products/ms"
+          "text": "",
+          "page": "",
+          "to": ""
         }
       ]
     },
