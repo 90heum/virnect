@@ -639,7 +639,7 @@
         </span>
       </div>
     </div>
-    <mobile-header :isMenu="isMenu" :availableLocales="availableLocales" />
+    <mobile-header :isMenu="isMenu" :availableLocales="availableLocales" :showMenu="showMenu"/>
   </header>
 </template>
 

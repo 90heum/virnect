@@ -104,15 +104,6 @@
   "Paging": {
     "description": "Auto imported from components/paging/paging.vue"
   },
-  "ProductsNewBgPartData": {
-    "description": "Auto imported from components/products/NewBgPartData.js"
-  },
-  "ProductsNewEffectPartData": {
-    "description": "Auto imported from components/products/newEffectPartData.js"
-  },
-  "ProductsNewModuleData": {
-    "description": "Auto imported from components/products/newModuleData.js"
-  },
   "PolicySubMenuPayment": {
     "description": "Auto imported from components/policy/subMenuPayment.vue"
   },
@@ -121,6 +112,15 @@
   },
   "PolicySubMenuTerms": {
     "description": "Auto imported from components/policy/subMenuTerms.vue"
+  },
+  "ProductsNewBgPartData": {
+    "description": "Auto imported from components/products/NewBgPartData.js"
+  },
+  "ProductsNewEffectPartData": {
+    "description": "Auto imported from components/products/newEffectPartData.js"
+  },
+  "ProductsNewModuleData": {
+    "description": "Auto imported from components/products/newModuleData.js"
   },
   "SupportSubMenu": {
     "description": "Auto imported from components/support/SubMenu.vue"
