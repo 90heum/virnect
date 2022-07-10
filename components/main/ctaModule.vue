@@ -87,6 +87,9 @@ export default {};
     font-size: 36px;
     line-height: 1.28;
   }
+  .CtaModule {
+    padding-left: 24px;
+  }
 
   .CtaModule .CtaCont p {
     font-size: 18px;
@@ -95,7 +98,6 @@ export default {};
 
 @media screen and (max-width: 475px) {
   .CtaModule {
-    padding: 0;
   }
   .CtaModule .CtaCont {
     padding: 0 24px;
