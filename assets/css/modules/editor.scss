@@ -1,4 +1,6 @@
 @charset "utf-8";
+@import url('~/assets/css/reset.scss');
+
 .view-body-text {
   pre {
     margin-top: 5px;
@@ -9,6 +11,7 @@
     font-family: "굴림", Menlo, Monaco, Consolas, monospace;
     line-height: 1.15;
     white-space: pre-wrap;
+
     &.ql-syntax {
       overflow: visible;
       color: #f8f8f2;
@@ -47,6 +50,7 @@
     margin-inline-end: 0px;
     padding-inline-start: 40px;
   }
+
   ol {
     list-style-type: decimal;
     margin-block-start: 1em;
@@ -66,15 +70,19 @@
   h1 {
     font-size: 2rem;
   }
+
   h2 {
     font-size: 1.5rem;
   }
+
   h3 {
     font-size: 1.17em;
   }
+
   h5 {
     font-size: 0.83em;
   }
+
   h6 {
     font-size: 0.67em;
   }

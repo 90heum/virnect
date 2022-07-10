@@ -1,9 +1,9 @@
-<template>
-  <div>
+<template >
+  <body>
     <Header />
     <nuxt />
     <Footer />
-  </div>
+  </body>
 </template>
 
 <script>
@@ -72,6 +72,18 @@ a {
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
+}
+
+@media screen and (max-width: 600px) {
+  /* .productsSubMain {
+     min-width: 600px;
+     width: 100vw;
+   } */
+
+  body {
+    min-width: 600px;
+    width: 100vw;
+  }
 }
 </style>
 
