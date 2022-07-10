@@ -1,9 +1,11 @@
 <template >
+<section>
   <body>
     <Header />
     <nuxt />
     <Footer />
   </body>
+  <section/>
 </template>
 
 <script>
