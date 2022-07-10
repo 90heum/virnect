@@ -71,6 +71,9 @@
       </span>
     </div>
     <div class="banner">
+      <span class="Whats-New">
+        What’s New
+      </span>
       <client-only>
         <agile :autoplay-speed="5000" :autoplay="true" :nav-buttons="false">
           <div
@@ -101,7 +104,7 @@ export default {
 
       parentButtonTarget.style.position = "absolute";
       parentButtonTarget.style.top = "-2px";
-      parentButtonTarget.style.right = "11%";
+      parentButtonTarget.style.right = "25%";
       buttonTarget.forEach((e, idx) => {
         e.style.width = "15px";
         e.style.height = "15px";
@@ -358,7 +361,17 @@ export default {
   top: 90%;
   overflow: hidden;
   /* background-color: #000; */
-
+  .Whats-New {
+  width: 90px;
+  height: 39px;
+  margin-left: 25%;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: -0.2px;
+  color: #fff;
+  }
   .bannerWrap {
     position: relative;
 
@@ -408,11 +421,14 @@ export default {
 }
 
 @media (min-width: 1200px) {
+   .Whats-New {
+    margin-left: 2%;
+   }
 }
 
 .slide img {
   max-width: 100%;
-  width: 80%;
+  width: 1200px;
   transition: transform 0.3s ease-in-out;
   box-shadow: 5px 5px 50px -1px var(--shadow);
   border-radius: 4px;

@@ -400,6 +400,7 @@
             </ul>
           </span>
         </div>
+        <companyValue />
       </section>
     </div>
   </section>
@@ -411,6 +412,7 @@ import snbSection from "~/components/modules/Snb";
 import headingModule from "../../modules/Heading";
 import companyAwards from "~/components/main/companyAwards.vue";
 import SubVisual from "~/layouts/common/SubVisual.vue";
+import companyValue from "~/components/company/pages/companyValue.vue";
 
 const historyData = [
   {
@@ -436,6 +438,7 @@ export default {
     headingModule,
     companyAwards,
     SubVisual,
+    companyValue,
   },
 
   data() {

@@ -486,6 +486,7 @@ export default {
         min-height: 70px;
         height: 100%;
         li {
+          cursor: pointer;
           min-height: 70px;
           width: 20%;
           height: 100%;

@@ -56,6 +56,7 @@ export default {};
       display: flex;
       gap: 12px;
       button {
+        border: none;
         a {
           height: 100%;
           line-height: 1.5;
