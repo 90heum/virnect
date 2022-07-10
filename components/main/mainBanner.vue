@@ -70,16 +70,33 @@
         </span>
       </span>
     </div>
-    <div class="banner">
-      <span class="Whats-New">
-        What’s New
+    <!-- 배너삽입 -->
+    <div class="bannerMoule">
+      <span class="banner1024">
+        <a href="#">
+          <img
+            src="https://velog.velcdn.com/images/kyj0206/post/01174201-9b39-4b4e-9090-6ebbb4a134d8/image.png"
+            alt="배너모듈"
+          />
+        </a>
       </span>
+      <span class="banner768">
+        <a href="#">
+          <img
+            src="https://velog.velcdn.com/images/kyj0206/post/43101697-a301-433b-867b-d64841ce7553/image.png"
+            alt="배너모듈"
+          />
+        </a>
+      </span>
+    </div>
+    <!-- 배너삽입 -->
+    <!-- <div class="banner">
+      <span class="Whats-New"> What’s New </span>
       <client-only>
         <agile :autoplay-speed="5000" :autoplay="true" :nav-buttons="false">
           <div
             class="slide"
             v-for="(data, idx) of [
-              'https://velog.velcdn.com/images/kyj0206/post/01174201-9b39-4b4e-9090-6ebbb4a134d8/image.png',
               'https://velog.velcdn.com/images/kyj0206/post/01174201-9b39-4b4e-9090-6ebbb4a134d8/image.png',
             ]"
             :key="idx"
@@ -88,7 +105,7 @@
           </div>
         </agile>
       </client-only>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -100,18 +117,20 @@ export default {
       const buttonTarget = document.querySelectorAll(
         ".banner .agile__dot button"
       );
+
       const parentButtonTarget = document.querySelector(".agile__dots");
 
       parentButtonTarget.style.position = "absolute";
       parentButtonTarget.style.top = "-2px";
       parentButtonTarget.style.right = "25%";
       buttonTarget.forEach((e, idx) => {
-        e.style.width = "15px";
-        e.style.height = "15px";
+        e.style.width = "13px";
+        e.style.height = "13px";
         e.style.margin = "0 5px";
+        // e.style.border = "0px";
         e.style.borderRadius = "50%";
-        // e.style.border = "none";
-        e.style.backgroundColor = "#f7f8f9";
+        e.style.border = "none";
+        e.style.backgroundColor = "#ffffff75";
       });
     }
   },
@@ -358,19 +377,20 @@ export default {
   width: 100%;
   z-index: 1;
   position: absolute;
+  left: 0px;
   top: 90%;
   overflow: hidden;
   /* background-color: #000; */
   .Whats-New {
-  width: 90px;
-  height: 39px;
-  margin-left: 600px;
-  font-size: 16px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: -0.2px;
-  color: #fff;
+    width: 90px;
+    height: 39px;
+    margin-left: 600px;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: -0.2px;
+    color: #fff;
   }
   .bannerWrap {
     position: relative;
@@ -422,9 +442,9 @@ export default {
 }
 
 @media (min-width: 1200px) {
-   .Whats-New {
+  .Whats-New {
     margin-left: 2%;
-   }
+  }
 }
 
 .slide img {
@@ -460,9 +480,14 @@ export default {
   }
 }
 @media screen and (max-width: 1024px) {
-  .slide img {width: 964px; height: 246px;}
-  .banner{
-    .Whats-New { margin-left: 30px;}
+  .slide img {
+    width: 964px;
+    height: 246px;
+  }
+  .banner {
+    .Whats-New {
+      margin-left: 30px;
+    }
   }
   /*  .banner {  top: 147%; } */
 }
@@ -512,9 +537,13 @@ export default {
   .mainBanner .mainBannerInner .mainBannerTit {
     text-align: center;
   }
+  .mainBanner .mainBannerInner .mainBannerCont img {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 
   .mainBanner {
-    padding: 150px 30px 119px;
+    padding: 150px 30px 219px;
     max-height: none;
   }
 
@@ -553,19 +582,27 @@ export default {
 
 @media screen and(max-width: 768px) {
   .mainBanner {
-    padding: 128px 34px 110px;
+    padding: 128px 34px 100px;
     max-height: none;
   }
-  .slide img {width: 720px; height: 184px;}
+  .slide img {
+    width: 720px;
+    height: auto;
+  }
+  .mainBanner .mainBannerInner {
+    padding-top: 100px;
+  }
 
   .mainBanner .mainBannerInner .mainBannerCont img {
     min-width: auto;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 
 @media screen and(max-width: 767px) {
   .mainBanner {
-    padding: 104px 24px 100px;
+    padding: 104px 24px 200px;
     max-height: none;
   }
 
@@ -587,7 +624,10 @@ export default {
 }
 
 @media screen and(max-width: 425px) {
-  .slide img {width: 377px; height: 96px;}
+  .slide img {
+    width: 377px;
+    height: 96px;
+  }
   .mainBanner .mainBannerInner .mainBannerTit .bannerTitN1 {
     font-size: 22px;
   }
@@ -598,6 +638,65 @@ export default {
 
   .mainBanner .mainBannerInner .mainBannerTitMb .bannerTitMb2 {
     justify-content: center;
+  }
+}
+
+// 임시
+.banner {
+  width: 100%;
+  background-color: #000;
+  z-index: 10000;
+}
+.banner .bannerWrap {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  padding: 50px 30px;
+}
+
+.bannerMoule {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 76%);
+  padding: 0 30px;
+  z-index: 999;
+}
+.bannerMoule .banner1024 {
+  display: block;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.bannerMoule .banner1024 a {
+  display: block;
+}
+.bannerMoule .banner1024 a img {
+  width: 100%;
+}
+.bannerMoule .banner768 {
+  display: none;
+}
+.bannerMoule .banner768 a {
+  display: block;
+}
+.bannerMoule .banner768 a img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .bannerMoule .banner1024 {
+    display: none;
+  }
+
+  .bannerMoule .banner768 {
+    display: block;
+  }
+
+  .bannerMoule {
+    padding: 0 24px;
+    transform: translate(-50%, 60%);
   }
 }
 </style>
