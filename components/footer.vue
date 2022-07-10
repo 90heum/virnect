@@ -71,7 +71,9 @@
             <li>
               <nuxt-link to="/news/news-press">News</nuxt-link>
               <ul>
-                <li><nuxt-link to="/news/news-press">News&press</nuxt-link></li>
+                <li>
+                  <nuxt-link to="/news/news-press">News & press</nuxt-link>
+                </li>
                 <!-- <li><a href="#">People & Culture</a></li>
                 <li><a href="#">Insight</a></li>
                 <li><a href="#">ESG</a></li> -->
@@ -208,7 +210,9 @@
                 >
                   <div class="select" v-bind:style="showStyle">
                     <div class="selected">
-                      <div class="selected-value" v-bind:style="showText"><a>VIRNECT Service</a></div>
+                      <div class="selected-value" v-bind:style="showText">
+                        <a>VIRNECT Service</a>
+                      </div>
                       <div class="arrow">
                         <img
                           class="downIcon6"
@@ -503,7 +507,7 @@ export default {
     isServiceMenu: false,
     serviceOpen: false,
     showStyle: {},
-    showText: {}
+    showText: {},
   }),
   directives: {
     ClickOutside,
@@ -521,11 +525,11 @@ export default {
       this.showText.color = "#000"; */
     },
     toggle() {
-      this.serviceOpen = true
+      this.serviceOpen = true;
     },
     serviceHide() {
-      this.serviceOpen = false
-      this.isServiceMenu = false
+      this.serviceOpen = false;
+      this.isServiceMenu = false;
     },
     /* showServiceMenu () {
       if (isServiceMenu == true) {
