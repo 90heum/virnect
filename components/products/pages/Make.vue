@@ -96,14 +96,21 @@
     <!-- <bg-slide-part
       :bgExampleArr="$t('productsText.makeText.bgExampleList')"
     ></bg-slide-part> -->
-    <new-effect-part :title="title"
-                     :effectList="effectList.make"
-                     :moduleData="moduleData.make"/>
+    <new-effect-part
+      :title="title"
+      :effectList="effectList.make"
+      :moduleData="moduleData.make"
+    />
+    <new-bg-slide
+      :bannerData="moduleData.view"
+      :title="`Remote가`"
+    ></new-bg-slide>
   </section>
 </template>
 
 <script>
 // import mixin from 'mixins/mixin'
+
 import introPart from "../partials/IntroducePart";
 import benefitPart from "../partials/BenefitPart";
 import functionPart from "../partials/FunctionPart2";
@@ -115,7 +122,7 @@ import NewModule from "~/components/products/partials/newModule.vue";
 import NewBgSlide from "~/components/products/partials/NewBgSlide.vue";
 import NewEffectPart from "~/components/products/partials/NewEffectPart.vue";
 import headingModule from "../../modules/Heading";
-import { filedData , moduleData } from "~/components/products/newModuleData.js";
+import { filedData, moduleData } from "~/components/products/newModuleData.js";
 import { title, effectList } from "~/components/products/newEffectPartData.js";
 
 export default {

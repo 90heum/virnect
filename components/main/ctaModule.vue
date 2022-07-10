@@ -82,6 +82,11 @@ export default {};
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .CtaModule .CtaCont {
+    padding: 0 90px;
+  }
+}
 @media screen and (max-width: 768px) {
   .CtaModule .CtaCont h2 {
     font-size: 36px;

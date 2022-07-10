@@ -20,7 +20,7 @@
                     <p>연결하여 자유롭게 정보를 공유합니다.</p>
                   </span>
                   <button>
-                    <a href="">자세히보기</a>
+                    <a href="/products/remote">자세히보기</a>
                   </button>
                 </span>
               </div>
@@ -45,7 +45,7 @@
                     제작 가능한 도구입니다.
                   </span>
                   <button>
-                    <a href="#">자세히보기</a>
+                    <a href="/products/make">자세히보기</a>
                   </button>
                 </span>
               </div>
@@ -70,7 +70,7 @@
                     바로 확인할 수 있습니다.
                   </span>
                   <button>
-                    <a href="#">자세히보기</a>
+                    <a href="/products/view">자세히보기</a>
                   </button>
                 </span>
               </div>
@@ -108,7 +108,7 @@
                   프로세스를 모니터링할 수 있는 제품입니다.
                 </span>
                 <button>
-                  <a href="#">자세히보기</a>
+                  <a href="/products/twin">자세히보기</a>
                 </button>
               </span>
               <span>
@@ -127,7 +127,7 @@
                   <p>운영 퍼포먼스를 제공하고 있습니다.</p>
                 </span>
                 <button>
-                  <a href="#">자세히보기</a>
+                  <a href="/products/track">자세히보기</a>
                 </button>
               </span>
             </span>

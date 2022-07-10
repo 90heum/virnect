@@ -1,22 +1,22 @@
 <template>
   <div class="footer">
-    <div class="upButton" @click="scrollToTop">
-      <a>
-        <img
-          class="upup"
-          src="../assets/images/common/topbut@2x.png"
-          alt="upButton"
-        />
-        <img
-          class="upHover"
-          src="https://velog.velcdn.com/images/kyj0206/post/fcd53b94-13c9-4499-b141-239c5ac68704/image.png"
-          alt="upButton"
-        />
-      </a>
-    </div>
     <div class="footerWrap">
       <span class="footerTop">
         <span class="footerNavWeb">
+          <div class="upButton" @click="scrollToTop">
+            <a>
+              <img
+                class="upup"
+                src="../assets/images/common/topbut@2x.png"
+                alt="upButton"
+              />
+              <img
+                class="upHover"
+                src="https://velog.velcdn.com/images/kyj0206/post/fcd53b94-13c9-4499-b141-239c5ac68704/image.png"
+                alt="upButton"
+              />
+            </a>
+          </div>
           <ul>
             <li>
               <nuxt-link to="/solutions/energy_resource">Value</nuxt-link>

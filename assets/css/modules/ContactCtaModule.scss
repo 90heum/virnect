@@ -34,6 +34,7 @@
   color: #fff;
   margin-bottom: 11px;
   line-height: 1.28;
+  font-weight: 700;
 }
 
 .ContactCtaModule .ContactCtaCont span:first-child p {
@@ -52,7 +53,7 @@
   line-height: 1.5;
   display: block;
   padding: 19.5px 49.15px;
-  font-size: 1.8rem;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -65,6 +66,8 @@
 }
 
 @media screen and (max-width: 1024px) {
+
+
   .ContactCtaModule .ContactCtaCont {
     flex-direction: column;
     justify-content: center;

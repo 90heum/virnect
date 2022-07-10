@@ -49,6 +49,8 @@ export default {
   }
   p {
     font-size: 16px;
+    padding-left: 12%;
+    padding-right: 12%;
   }
   @include area-flex(1200px);
   padding-top: 114px;

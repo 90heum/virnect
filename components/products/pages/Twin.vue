@@ -19,8 +19,12 @@
       :functionArr="$t('productsText.twinText.functionLists')"
       :iconImage="functionIconImage"
     ></function-part>
+<<<<<<< HEAD
     <span id="functionPart"/>
 <!-- 
+=======
+    <!-- 
+>>>>>>> 033d08b4a43f1f2cee1ad2cb8b1084886833b375
     <effect-part
       :bg="effectBG"
       :category="$t('productsText.twinText.effectHeading.category')"
@@ -68,12 +72,15 @@
       </section>
     </div> -->
 
-    <new-effect-part :title="title"
-                     :effectList="effectList.twin"
-                     :moduleData="moduleData.twin"/>
-    <!-- <bg-slide-part
-      :bgExampleArr="$t('productsText.twinText.bgExampleList')"
-    ></bg-slide-part> -->
+    <new-effect-part
+      :title="title"
+      :effectList="effectList.twin"
+      :moduleData="moduleData.twin"
+    />
+    <new-bg-slide
+      :bannerData="moduleData.view"
+      :title="`Remote가`"
+    ></new-bg-slide>
   </section>
 </template>
 
@@ -88,10 +95,9 @@ import bgSlidePart from "../partials/BgSlidePart";
 import NewModule from "~/components/products/partials/newModule.vue";
 import NewBgSlide from "~/components/products/partials/NewBgSlide.vue";
 
-
 import headingModule from "../../modules/Heading";
 import NewEffectPart from "~/components/products/partials/NewEffectPart.vue";
-import { filedData , moduleData } from "~/components/products/newModuleData.js";
+import { filedData, moduleData } from "~/components/products/newModuleData.js";
 import { title, effectList } from "~/components/products/newEffectPartData.js";
 
 export default {
@@ -110,10 +116,10 @@ export default {
   },
   data() {
     return {
-    title,
-    effectList,
-    filedData,
-    moduleData,
+      title,
+      effectList,
+      filedData,
+      moduleData,
       twinIntro: {
         logo: "../images/pages/products/logo-products-bi-twin",
         // img: '../images/pages/products/img-products-twin',

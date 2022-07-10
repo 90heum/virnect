@@ -1,19 +1,19 @@
 <template>
   <div class="SubMenuUse">
     <ul class="SubMenuNav">
-      <li @click="subScroll()">
+      <li>
         <nuxt-link to="/solutions/energy_resource"> 인프라/자원 </nuxt-link>
       </li>
-      <li @click="subScroll()">
+      <li>
         <nuxt-link to="/solutions/oil_chemical_battery"> 제조/건설 </nuxt-link>
       </li>
-      <li @click="subScroll()">
+      <li>
         <nuxt-link to="/solutions/motor_parts"> 공공/교육 </nuxt-link>
       </li>
-      <li class="SubUseNavActive" @click="subScroll()">
+      <li class="SubUseNavActive">
         <nuxt-link to="/solutions/airline_railroad"> 엔터테인먼트 </nuxt-link>
       </li>
-      <li @click="subScroll()">
+      <li>
         <nuxt-link to="/solutions/epc"> 기타 </nuxt-link>
       </li>
     </ul>

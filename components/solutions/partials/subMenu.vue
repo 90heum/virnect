@@ -1,5 +1,5 @@
 <template>
-  <div class="SubMenuUse">
+  <div id="menu_re" class="SubMenuUse">
     <ul class="SubMenuNav">
       <li class="SubUseNavActive subMenu">
         <nuxt-link to="/solutions/energy_resource"> 인프라/자원 </nuxt-link>
@@ -27,12 +27,12 @@ export default {
       /* if(process.client)document.querySelector('.SubMenuUse').scrollIntoView({behavior: 'smooth'}); */
     }, 500);
   },
-   watch: {
-        '$route' (to, from) {
-          console.log("asdasdasdasd")
-            subScroll();
-        }
+  watch: {
+    $route(to, from) {
+      console.log("asdasdasdasd");
+      subScroll();
     },
+  },
   methods: {
     subScroll() {
       if (process.client) {

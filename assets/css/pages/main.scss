@@ -1,9 +1,9 @@
-
 // .banner 는 사용 안함 테스트용 껍데기
 /* 배너라인 */
 .banner {
     width: 100%;
     background-color: #000;
+
 
     .bannerWrap {
         position: relative;
@@ -25,6 +25,7 @@
                 max-width: 1200px;
                 width: 100%;
                 margin: 0 auto;
+
                 a {
                     display: block;
 
@@ -55,15 +56,15 @@
 }
 
 @media screen and(max-width:768px) {
-    .banner .bannerWrap .bannerMoule .banner1024{
+    .banner .bannerWrap .bannerMoule .banner1024 {
         display: none;
     }
 
-    .banner .bannerWrap .bannerMoule .banner768{
+    .banner .bannerWrap .bannerMoule .banner768 {
         display: block;
     }
 
-    .banner .bannerWrap .bannerMoule{
+    .banner .bannerWrap .bannerMoule {
         padding: 0 24px;
         transform: translate(-50%, 60%);
     }

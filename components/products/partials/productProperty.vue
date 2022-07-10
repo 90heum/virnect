@@ -1,9 +1,11 @@
 <template>
-  <div class="productPropertyWrapper" id="productPropertyId">
+  <div class="productPropertyWrapper">
     <div class="features">
       <div class="featuresWrap">
         <span class="featuresTit">
-          <p>{{ $t("productsText.productPropertyTitle.title") }}</p>
+          <p>
+            {{ $t("productsText.productPropertyTitle.title") }}
+          </p>
           <h2>
             {{ $t("productsText.productPropertyTitle.contents") }}
           </h2>
@@ -79,6 +81,7 @@
       </div>
     </div>
   </div>
+</template>
 </template>
 
 <script>

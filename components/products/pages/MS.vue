@@ -32,6 +32,11 @@
     <bg-slide-part
       :bgExampleArr="$t('productsText.msText.bgExampleList')"
     ></bg-slide-part>
+    <!-- 나중에 -->
+    <!-- <new-bg-slide
+      :bannerData="moduleData.view"
+      :title="`Remote가`"
+    ></new-bg-slide> -->
   </section>
 </template>
 
@@ -40,6 +45,7 @@ import introPart from "../partials/IntroducePart.vue";
 import benefitPart from "../partials/BenefitPart";
 import examplePart from "../partials/ExamplePart";
 import bgSlidePart from "../partials/BgSlidePart.vue";
+import newbgslide from "~/components/products/partials/NewBgSlide.vue";
 
 import headingModule from "../../modules/Heading";
 export default {
@@ -49,6 +55,7 @@ export default {
     examplePart,
     bgSlidePart,
     headingModule,
+    newbgslide,
   },
   data() {
     return {

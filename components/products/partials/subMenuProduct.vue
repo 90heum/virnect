@@ -122,7 +122,11 @@
               <a :class="`${navActive === 1 ? 'SubSubActive' : ''}`" href="#xrSolutionId" id="a01" @click="() => navActive = 1">제품개요</a>
             </li>
             <li>
+<<<<<<< HEAD
               <a :class="`${navActive === 2 ? 'SubSubActive' : ''}`" href="#productPropertyId" id="a02" @click="() => navActive = 2">제품특징</a>
+=======
+              <a href="#overViewConn" id="a02">제품특징</a>
+>>>>>>> 033d08b4a43f1f2cee1ad2cb8b1084886833b375
             </li>
             <li>
               <a :class="`${navActive === 3 ? 'SubSubActive' : ''}`" href="#headingModuleBottom" id="a03" @click="() => navActive = 3">기능소개</a>
@@ -171,7 +175,7 @@ export default {
   background-color: #f7f8f9;
   box-shadow: 4px 0 10px 0 rgba(0, 0, 0, 0.2);
   width: 100%;
-  height: 60px;
+  height: 56px;
   .SubMenuWrap {
     position: relative;
     display: flex;
@@ -203,9 +207,9 @@ export default {
           border-left: solid 1px #e6e8eb;
           border-right: solid 1px #e6e8eb;
           border-bottom: 1px solid #c5c8cf;
-          min-width: 196px;
+          min-width: 202px;
           &:hover {
-            border: solid 1px #0a51b7;
+            // border: solid 1px #0a51b7;
             background-color: #fff;
           }
           &.MenuSubActive {

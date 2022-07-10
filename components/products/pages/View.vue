@@ -66,9 +66,15 @@
         </div>
       </section>
     </div> -->
-  <new-effect-part :title="title"
-                     :effectList="effectList.view"
-                     :moduleData="moduleData.view"/>
+    <new-effect-part
+      :title="title"
+      :effectList="effectList.view"
+      :moduleData="moduleData.view"
+    />
+    <new-bg-slide
+      :bannerData="moduleData.view"
+      :title="`Remote가`"
+    ></new-bg-slide>
   </section>
 </template>
 
@@ -83,7 +89,7 @@ import bgSlidePart from "../partials/BgSlidePart";
 import NewModule from "~/components/products/partials/newModule.vue";
 import NewBgSlide from "~/components/products/partials/NewBgSlide.vue";
 import NewEffectPart from "~/components/products/partials/NewEffectPart.vue";
-import { filedData , moduleData } from "~/components/products/newModuleData.js";
+import { filedData, moduleData } from "~/components/products/newModuleData.js";
 import { title, effectList } from "~/components/products/newEffectPartData.js";
 import headingModule from "../../modules/Heading";
 
