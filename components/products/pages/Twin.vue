@@ -43,7 +43,7 @@
       </div>
     </section> -->
 
-    <div class="example-wrap">
+    <!-- <div class="example-wrap">
       <section class="divide-section">
         <div class="example-style">
           <heading-module
@@ -60,7 +60,7 @@
           </div>
         </div>
       </section>
-    </div>
+    </div> -->
 
     <bg-slide-part
       :bgExampleArr="$t('productsText.twinText.bgExampleList')"
