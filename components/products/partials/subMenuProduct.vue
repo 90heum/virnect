@@ -122,7 +122,7 @@
               <a class="SubSubActive" href="#xrSolutionId" id="a01">제품개요</a>
             </li>
             <li>
-              <a href="#productPropertyId" id="a02">제품특징</a>
+              <a href="#productPropertyWrapper" id="a02">제품특징</a>
             </li>
             <li>
               <a href="#headingModule" id="a03">기능소개</a>

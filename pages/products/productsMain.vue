@@ -3,7 +3,7 @@
     <productsMainBanner />
     <Pmain />
     <companyValue />
-    <bannerRemote />
+    <!-- <bannerRemote /> -->
     <ctaModule />
   </section>
 </template>
