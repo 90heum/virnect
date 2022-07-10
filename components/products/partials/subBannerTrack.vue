@@ -55,6 +55,7 @@ export default {};
   max-width: 951px;
   width: 100%;
   min-width: auto;
+  border: solid 2px #bfdcff;
 }
 .SubProductsBannerRemote {
   display: flex;
@@ -113,7 +114,7 @@ export default {};
         }
       }
       span {
-        font-size: 24px;
+        font-size: 20px;
         line-height: 1.58;
         letter-spacing: -0.3px;
         color: #fff;

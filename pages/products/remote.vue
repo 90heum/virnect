@@ -88,6 +88,7 @@ export default {
 @import "~assets/css/pages/products.scss";
 .aa {
   margin: 0 auto;
+  padding-top: 60px;
 }
 .bb {
   margin-top: 100px;

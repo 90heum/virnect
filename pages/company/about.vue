@@ -17,14 +17,26 @@
     ></sub-visual-section>
     <SubMenu />
     <AboutSub />
-    <transition name="app-fade" mode="out-in">
-      <indroduce-component />
-    </transition>
-
     <!-- <transition name="app-fade" mode="out-in">
-      <router-view></router-view>
+      <indroduce-component />
     </transition> -->
-
+    <!-- <snb-section
+      v-if="$route.name === 'company-about'"
+      :snbArr="
+        $t('gnb[4].array[0].depth').filter((d) => d.page !== 'company-about')
+      "
+    ></snb-section> -->
+    <transition name="app-fade" mode="out-in">
+      <router-view></router-view>
+    </transition>
+    <!-- <tail-section
+      :bg="tailText.bg"
+      :mention="$t('companyText.tailText')"
+      :blueBtn="tailText.blue"
+      :blueRouter="tailText.blueRouter"
+      :greyBtn="tailText.grey"
+      :greyRouter="tailText.greyRouter"
+    ></tail-section> -->
     <ctxModule />
   </section>
 </template>
@@ -34,7 +46,6 @@ import subVisualSection from "~/layouts/common/SubVisual.vue";
 import snbSection from "~/components/modules/Snb";
 import tailSection from "~/layouts/common/Tail";
 import SubMenu from "../../components/company/partials/subMenu.vue";
-import indroduceComponent from "../../components/company/pages/introduce.vue";
 import AboutSub from "./aboutSub.vue";
 import ctxModule from "~/components/main/ctaModule.vue";
 
@@ -43,9 +54,7 @@ export default {
     subVisualSection,
     snbSection,
     tailSection,
-    indroduceComponent,
     SubMenu,
-
     AboutSub,
     ctxModule,
   },

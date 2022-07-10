@@ -1,13 +1,11 @@
 //@import url(./common.css);
-@import url('~/assets/css/reset.scss');
-
 .aboutVirnect {
   width: 100%;
 }
 
 .aboutVirnect .aboutVirnect {
   max-width: 1200px;
-  padding: 100px 30px;
+  padding: 0 30px;
   width: 100%;
   margin: 0 auto;
 }
@@ -274,6 +272,7 @@
 
 .aboutVirnect .aboutHistory .aboutHistoryInner .aboutHistoryCont .aboutHistoryContTab li {
   flex: 1;
+  cursor: pointer;
   font-size: 24px;
   font-weight: bold;
   font-stretch: normal;
@@ -402,6 +401,7 @@
 }
 
 .aboutVirnect .customers .customersInner .customersCont .customerContTab li {
+  cursor: pointer;
   flex: 1;
   font-size: 24px;
   font-weight: bold;

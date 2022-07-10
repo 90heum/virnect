@@ -34,11 +34,14 @@
           </button>
         </span>
       </span>
-      <video autoplay muted>
-        <source
-          src="https://player.vimeo.com/external/560735983.hd.mp4?s=e14e93e201c67212624d232508ddcad911d7d617&profile_id=174"
-        />
-      </video>
+      <div class="video_cont">
+        <img src="../../../assets/images/common/mov-bg-default@2x.png" alt="배경">
+        <video autoplay muted style="object-fit:cover">
+          <source
+            src="https://player.vimeo.com/external/560735983.hd.mp4?s=e14e93e201c67212624d232508ddcad911d7d617&profile_id=174"
+          />
+        </video>
+      </div>
     </div>
   </div>
 </template>
@@ -66,7 +69,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 150px;
+  margin-top: 140px;
   width: 100%;
   min-height: 875px;
   background-image: url("https://velog.velcdn.com/images/kyj0206/post/6a090db9-cd30-42a5-95f5-1dc04c915ab1/image.jpg");
@@ -74,6 +77,7 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   .SubProductsWrap {
+
     p,
     a,
     span,
@@ -119,7 +123,7 @@ export default {
         }
       }
       span {
-        font-size: 24px;
+        font-size: 20px;
         line-height: 1.58;
         letter-spacing: -0.3px;
         color: #fff;
@@ -191,11 +195,25 @@ export default {
         }
       }
     }
-    video {
+    .video_cont{
+      position: relative;
       max-width: 951px;
       width: 100%;
-      min-width: auto;
       border: solid 2px #bfdcff;
+      img{
+        max-width: 951px;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+      video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 951px;
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 }

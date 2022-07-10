@@ -32,11 +32,14 @@
           </button>
         </span>
       </span>
-      <video autoplay muted>
-        <source
-          src="https://player.vimeo.com/external/427962056.hd.mp4?s=4c405dbd984c474798385f7ccc95c1b38de0e7db&profile_id=174"
-        />
-      </video>
+      <div class="video_cont">
+        <img src="../../../assets/images/common/mov-bg-default@2x.png" alt="배경">
+        <video autoplay muted style="object-fit:cover">
+          <source
+            src="https://player.vimeo.com/external/427962056.hd.mp4?s=4c405dbd984c474798385f7ccc95c1b38de0e7db&profile_id=174"
+          />
+        </video>
+      </div>
     </div>
   </div>
 </template>
@@ -103,7 +106,7 @@ export default {};
         }
       }
       span {
-        font-size: 24px;
+        font-size: 20px;
         line-height: 1.58;
         letter-spacing: -0.3px;
         color: #fff;
@@ -174,11 +177,25 @@ export default {};
         }
       }
     }
-    video {
+    .video_cont{
+      position: relative;
       max-width: 951px;
       width: 100%;
-      min-width: auto;
       border: solid 2px #bfdcff;
+      img{
+        max-width: 951px;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+      video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 951px;
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 }
@@ -232,7 +249,7 @@ export default {};
         }
       }
       span {
-        font-size: 24px;
+        font-size: 20px;
         line-height: 1.58;
         letter-spacing: -0.3px;
         color: #fff;
@@ -360,7 +377,7 @@ export default {};
         }
       }
       span {
-        font-size: 24px;
+        font-size: 20px;
         line-height: 1.58;
         letter-spacing: -0.3px;
         color: #fff;

@@ -473,8 +473,9 @@
                                 padding: 7px 10px;
                             }
                             button{
+                                width: 178px;
                                 background: #121212;
-                                padding: 7px 38px;
+                                padding: 7px 0;
                                 opacity: 0.9;
                                 border: solid 1px #9a9da3;
                                 box-sizing: border-box;
@@ -484,7 +485,7 @@
                                         color: #fff;
                                     }
                                 }
-                                a{
+                                a{  display: block;
                                     white-space: nowrap;
                                     font-size: 16px;
                                     font-weight: 500;

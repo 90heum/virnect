@@ -106,6 +106,7 @@ export default {
             }
         }
         >ul{
+            padding: 0;
             display: flex;
             align-items: center;
             gap: 10px;
@@ -134,8 +135,7 @@ export default {
                         border-radius: 12px;
                         border: solid 1px #3f97d3;
                         background-color: #fff;
-                        max-width: 67px;
-                        padding: 6px 20px 7px;
+                        padding: 6px 12px 7px;
                         width: 100%;
                         max-height: 24px;
                         height: 100%;

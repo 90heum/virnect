@@ -667,6 +667,7 @@ header {
                             line-height: 1.38;
                             letter-spacing: -0.16px;
                             color: #0a51b7;
+                            white-space: nowrap;
 
                             p {
                                 padding-bottom: 10px;
@@ -1512,11 +1513,10 @@ header .headerInner .navWrap nav ul li a.navActive+header .subNavi {
     }
 }
 
-@media screen and(max-width: 600px) {
+@media screen and(max-width: 425px) {
     header .headerInner {
-        min-width: 600px;
+        max-width: 425px;
         padding: 0 24px;
-        width: 100vw;
     }
 
     header .subNav {

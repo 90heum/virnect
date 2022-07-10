@@ -119,7 +119,7 @@
             </span>
           </div>
 
-          <div>
+          <div style="padding-top:52px">
             <span>
               <button>
                 <nuxt-link to="/products/remote"> 자세히 보기 </nuxt-link>
@@ -167,7 +167,7 @@
             </span>
           </div>
 
-          <div>
+          <div style="padding-top:52px">
             <span>
               <button>
                 <nuxt-link to="/products/make"> 자세히 보기 </nuxt-link>
@@ -216,7 +216,7 @@
             </span>
           </div>
 
-          <div>
+          <div style="padding-top:52px">
             <span>
               <button>
                 <nuxt-link to="/products/view"> 자세히 보기 </nuxt-link>
@@ -260,7 +260,7 @@
             </span>
           </div>
 
-          <div style="height: 92px">
+          <div style="height: 92px; padding-top: 52px;" >
             <span>
               <button>
                 <nuxt-link to="/products/twin"> 자세히 보기 </nuxt-link>
@@ -312,7 +312,7 @@
             </span>
           </div>
 
-          <div style="height: 92px">
+          <div style="height: 92px; padding-top: 52px;" >
             <span>
               <button>
                 <nuxt-link to="/products/track"> 자세히 보기 </nuxt-link>
@@ -786,5 +786,14 @@ export default {
   .productsModule .moduleBottom {
     min-height: 1000px;
   }
+}
+@media screen and (max-width: 425px){
+  .moduleBottomWrapTrack,
+    .moduleBottomWrapTwin,
+    .moduleBottomWrapView,
+    .moduleBottomWrapMake,
+    .moduleBottomWrapRemote{
+      flex-direction: column;
+    }
 }
 </style>
