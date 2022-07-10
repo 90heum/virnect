@@ -110,7 +110,7 @@ export default {
   max-width: 100%;
   .moduleApplyBgTop {
     background-color: #fff;
-    height: 581px;
+    height: 560px;
     // padding: 100px 24px 0;
     //margin-top: 20px;
     .moduleApplyTit {
@@ -266,7 +266,7 @@ export default {
   }
 
   .moduleApply .moduleApplyBgTop {
-    height: 572px;
+    height: 560px;
   }
 }
 @media screen and (max-width: 1090px) {
@@ -301,7 +301,7 @@ export default {
     }
   }
   .moduleApply .moduleApplyBgTop .ApplyInner {
-    margin-top: 100px;
+    // margin-top: 100px;
     .swiper-button-prev,
     .swiper-button-next {
       bottom: 100px;
@@ -368,7 +368,7 @@ export default {
     padding-bottom: 150px;
   }
   .moduleApply .moduleApplyBgTop {
-    padding-top: 49.5px;
+    //padding-top: 49.5px;
   }
   .moduleApply .moduleApplyBgTop .moduleApplyTit {
     margin-bottom: 20px;
@@ -439,12 +439,15 @@ export default {
 
   .moduleApply .moduleApplyBgTop .ApplyInner {
     height: auto;
-    margin: 50px 0 0;
+    margin: 0 0 0;
     padding-bottom: 130px;
   }
 }
 
 @media screen and(max-width: 430px) {
+  .moduleApply .moduleApplyBgTop {
+    height: 410px;
+  }
   .moduleApply .ApplyInner .ApplySlider {
     .swiper-slide p {
       font-size: 20px;

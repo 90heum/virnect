@@ -122,7 +122,7 @@
               <a class="SubSubActive" href="#xrSolutionId" id="a01">제품개요</a>
             </li>
             <li>
-              <a href="#productPropertyWrapper" id="a02">제품특징</a>
+              <a href="#overViewConn" id="a02">제품특징</a>
             </li>
             <li>
               <a href="#headingModule" id="a03">기능소개</a>
@@ -170,7 +170,7 @@ export default {
   background-color: #f7f8f9;
   box-shadow: 4px 0 10px 0 rgba(0, 0, 0, 0.2);
   width: 100%;
-  height: 60px;
+  height: 56px;
   .SubMenuWrap {
     position: relative;
     display: flex;
@@ -202,9 +202,9 @@ export default {
           border-left: solid 1px #e6e8eb;
           border-right: solid 1px #e6e8eb;
           border-bottom: 1px solid #c5c8cf;
-          min-width: 196px;
+          min-width: 202px;
           &:hover {
-            border: solid 1px #0a51b7;
+            // border: solid 1px #0a51b7;
             background-color: #fff;
           }
           &.MenuSubActive {

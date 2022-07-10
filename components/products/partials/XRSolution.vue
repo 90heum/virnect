@@ -39,7 +39,9 @@
                 alt="Reduce Industry Risks"
             /></i>
             <p>Reduce Industry Risks</p>
-            <p>{{ $t("productsText.xrSolutionText.Risks") }}</p>
+            <p id="overViewConn">
+              {{ $t("productsText.xrSolutionText.Risks") }}
+            </p>
           </span>
         </span>
       </div>

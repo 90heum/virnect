@@ -28,7 +28,8 @@
     ></tail-section>
      -->
     <!-- <bottom-banner-remote /> -->
-    <tailSection class="bb" />
+    <!-- <tailSection class="bb" /> -->
+    <CtaModule />
   </section>
 </template>
 
@@ -84,9 +85,9 @@ export default {
 @import "~assets/css/pages/products.scss";
 .aa {
   margin: 0 auto;
-  padding-top: 60px;
+  //padding-top: 60px;
 }
 .bb {
-  margin-top: 100px;
+  //margin-top: 100px;
 }
 </style>

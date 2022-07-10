@@ -64,7 +64,7 @@
     <!-- <bg-slide-part
       :bgExampleArr="$t('solutionText.energyText.bgExampleList')"
     ></bg-slide-part> -->
-        <new-bg-slide
+    <new-bg-slide
       :bannerData="moduleData.energy"
       :title="`Twin이`"
     ></new-bg-slide>
@@ -91,7 +91,7 @@ import NewBgSlide from "~/components/products/partials/NewBgSlide.vue";
 
 import headingModule from "../../modules/Heading";
 
-import {filedData, moduleData} from "~/components/products/NewBgPartData.js";
+import { filedData, moduleData } from "~/components/products/NewBgPartData.js";
 
 export default {
   components: {

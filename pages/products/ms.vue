@@ -18,7 +18,8 @@
       :greyBtn="tailText.grey"
       :greyRouter="tailText.greyRouter"
     ></tail-section> -->
-    <tailSection class="aa" />
+    <!-- <tailSection class="aa" /> -->
+    <CtaModule />
   </section>
 </template>
 
@@ -62,7 +63,7 @@ export default {
 <style lang="scss" scoped>
 @import "~assets/css/pages/products.scss";
 .aa {
-  margin-top: 100px;
+  //margin-top: 100px;
 }
 .bb {
   margin: 0 auto;
