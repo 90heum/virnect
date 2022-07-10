@@ -66,7 +66,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 140px;
+  margin-top: 150px;
   width: 100%;
   min-height: 875px;
   background-image: url("https://velog.velcdn.com/images/kyj0206/post/6a090db9-cd30-42a5-95f5-1dc04c915ab1/image.jpg");

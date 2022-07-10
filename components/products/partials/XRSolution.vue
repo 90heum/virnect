@@ -64,9 +64,11 @@ export default {};
 .overView {
   max-width: 2400px;
   width: 100%;
+  padding-right: 60px;
 }
 .overView .overViewWrap {
   margin: 0 auto;
+
   max-width: 1200px;
   width: 100%;
   padding: 150px 30px;
@@ -154,5 +156,10 @@ export default {};
 }
 .overView .overViewWrap .overViewCont span:last-child {
   width: 33.3%;
+}
+@media screen and (max-width: 768px) {
+  .overView {
+    padding-right: 60px;
+  }
 }
 </style>

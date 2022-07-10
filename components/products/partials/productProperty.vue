@@ -167,10 +167,14 @@ export default {
 .features .featuresWrap .featuresTit ul li i img {
   width: 16px;
 }
-.features .featuresWrap .featuresTit ul li  {
-  p {display: block;}
+.features .featuresWrap .featuresTit ul li {
+  p {
+    display: block;
+  }
   &:first-child {
-    p{line-height: 1.4;}
+    p {
+      line-height: 1.4;
+    }
   }
 }
 .features .featuresWrap .featuresCont {
@@ -179,5 +183,29 @@ export default {
 .features .featuresWrap .featuresCont img {
   max-width: 525px;
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .features .featuresWrap .featuresTit > p {
+    text-align: center;
+  }
+  .features .featuresWrap .featuresTit h2 {
+    text-align: center;
+  }
+  .featuresTit ul {
+    margin-bottom: 40px;
+  }
+  .featuresTit li {
+    margin: 0 auto;
+  }
+  .featuresTit li p {
+    text-align: center;
+  }
+
+  .features .featuresWrap {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 </style>
