@@ -51,7 +51,7 @@ export default {
     font-size: 16px;
   }
   @include area-flex(1200px);
-  padding-top: 150px;
+  padding-top: 114px;
   padding-bottom: 60px;
   text-align: center;
   &.align-left {

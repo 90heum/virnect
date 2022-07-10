@@ -364,7 +364,7 @@ export default {
   .Whats-New {
   width: 90px;
   height: 39px;
-  margin-left: 25%;
+  margin-left: 600px;
   font-size: 16px;
   font-weight: bold;
   font-stretch: normal;
@@ -417,6 +417,7 @@ export default {
   padding: 1rem;
   img {
     max-height: 306px;
+    width: 1200px;
   }
 }
 
@@ -428,7 +429,6 @@ export default {
 
 .slide img {
   max-width: 100%;
-  width: 1200px;
   transition: transform 0.3s ease-in-out;
   box-shadow: 5px 5px 50px -1px var(--shadow);
   border-radius: 4px;
@@ -460,6 +460,10 @@ export default {
   }
 }
 @media screen and (max-width: 1024px) {
+  .slide img {width: 964px; height: 246px;}
+  .banner{
+    .Whats-New { margin-left: 30px;}
+  }
   /*  .banner {  top: 147%; } */
 }
 @media screen and(max-width:768px) {
@@ -552,6 +556,7 @@ export default {
     padding: 128px 34px 110px;
     max-height: none;
   }
+  .slide img {width: 720px; height: 184px;}
 
   .mainBanner .mainBannerInner .mainBannerCont img {
     min-width: auto;
@@ -582,6 +587,7 @@ export default {
 }
 
 @media screen and(max-width: 425px) {
+  .slide img {width: 377px; height: 96px;}
   .mainBanner .mainBannerInner .mainBannerTit .bannerTitN1 {
     font-size: 22px;
   }
