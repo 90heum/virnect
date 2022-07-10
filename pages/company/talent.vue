@@ -21,7 +21,7 @@
         <button>
           <a
             href="https://virnect.notion.site/70deb7e4870c45b29bb3fccf9103af57"
-            target="_blank"
+            target="blank"
           >
             채용정보 자세히 보기
           </a>

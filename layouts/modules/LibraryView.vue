@@ -38,7 +38,7 @@
             class="download-row"
           >
             <!-- left -->
-            <a class="left" :href="data" target="_blank">
+            <a class="left" :href="data" target="blank">
               <p>{{ i + 1 }}. {{ setFileName(data) }}</p>
             </a>
 

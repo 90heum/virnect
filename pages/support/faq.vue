@@ -39,6 +39,16 @@
             </div>    
         </div>
     </div>
+
+    
+    <support-tail 
+      :bg="tailText.bg"
+      :mention="$t('productsText.tailText')"
+      :blueBtn="tailText.blue"
+      :blueRouter="tailText.blueRouter"
+      :greyBtn="tailText.grey"
+      :greyRouter="tailText.greyRouter"
+      />
 </div>
 </template>
 
@@ -47,10 +57,25 @@ import SubMenu from "~/components/support/SubMenu.vue";
 import AsideMenu from "~/components/support/faq/AsideMenu.vue";
 import FaqContents from "~/components/support/faq/FaqContents.vue";
 import FaqBanner from "../../components/support/faqBanner.vue";
+import SupportTail from "~/layouts/common/Tail.vue";
 
 export default {
     data() {
         return {
+             visualText: {
+        // 상단 비주얼 텍스트
+        image:
+          "https://image.virnect.com/images/pages/products/img-products-main.png",
+        category: "Products",
+      },
+      tailText: {
+        // 막줄 꼬리 텍스트
+        bg: "assets/images/pages/products/img-products-banner.png",
+        blue: "SOLUTIONS",
+        blueRouter: "energy_resource",
+        grey: "Contact",
+        greyRouter: "inquiry",
+      },
             isCategory: 3,
             isType: null,
             typeList: [],
@@ -67,6 +92,7 @@ export default {
         }
     },
     components: {
+    SupportTail,
     SubMenu,
     AsideMenu,
     FaqContents,

@@ -29,7 +29,7 @@
               <p v-html="banner.place" class="place"></p>
               <p v-html="banner.noti" class="noti"></p>
             </button>
-            <a class="area-flex" :href="banner.isTabUrl" target="_blank" v-else>
+            <a class="area-flex" :href="banner.isTabUrl" target="blank" v-else>
               <span class="category" v-html="banner.category"></span>
               <span v-html="banner.title" class="txt"></span>
               <span v-html="banner.content" class="txt"></span>

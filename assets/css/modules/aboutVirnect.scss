@@ -441,6 +441,10 @@
   width: 100%;
 }
 
+.aboutVirnect .aboutVirnect {
+  padding: 100px 24px;
+}
+
 @media screen and (max-width: 1024px) {
   .aboutVirnect .customers .customersInner .customersCont .customerContCont li {
     width: calc((100% - 40px) / 5);

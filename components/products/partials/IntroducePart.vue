@@ -5,14 +5,14 @@
       :href="introSource.intoBtn"
       v-if="introSource.intoBtn && !introSource.site"
       class="visit-btn"
-      target="_blank"
+      target="blank"
       >{{ introSource.btnText }}</a
     >
     <div v-if="introSource.site" class="btn-multi">
-      <a :href="introSource.site" class="visit-btn" target="_blank">{{
+      <a :href="introSource.site" class="visit-btn" target="blank">{{
         $t('global.productsInto')
       }}</a>
-      <a :href="introSource.intoBtn" class="visit-btn" target="_blank">{{
+      <a :href="introSource.intoBtn" class="visit-btn" target="blank">{{
         $t('global.downloadIntoBtn')
       }}</a>
     </div>

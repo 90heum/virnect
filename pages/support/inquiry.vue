@@ -25,8 +25,8 @@
                     <p>아래 문의 유형을 선택하시고, 내용을 작성해주시면 신속하게 답변 드리겠습니다.</p>
                     <span class="formTab">
                         <ul>
-                            <li :class="`${isTab === 1 ? 'active' : ''}`"
-                                @click="chooseTab(1)">데모신청</li>
+                            <!-- <li :class="`${isTab === 1 ? 'active' : ''}`"
+                                @click="chooseTab(1)">데모신청</li> -->
                             <li :class="`${isTab === 2 ? 'active' : ''}`"
                                 @click="chooseTab(2)">구매문의</li>
                             <li :class="`${isTab === 3 ? 'active' : ''}`"
@@ -113,6 +113,14 @@
         </span>
     </div>
     </section>
+            <support-tail 
+      :bg="tailText.bg"
+      :mention="$t('productsText.tailText')"
+      :blueBtn="tailText.blue"
+      :blueRouter="tailText.blueRouter"
+      :greyBtn="tailText.grey"
+      :greyRouter="tailText.greyRouter"
+      />
   </div>
 </template>
 
@@ -120,17 +128,33 @@
 import SubMenu from "~/components/support/SubMenu.vue";
 import GoogleMap from "~/components/support/faq/GoogleMap.vue";
 import InquiryBanner from "../../components/support/inquiryBanner.vue";
+import SupportTail from "~/layouts/common/Tail.vue";
 
 export default {
     components: {
     SubMenu,
     GoogleMap,
-    InquiryBanner
+    InquiryBanner,
+    SupportTail
 },
     data() {
         return {
+              visualText: {
+        // 상단 비주얼 텍스트
+        image:
+          "https://image.virnect.com/images/pages/products/img-products-main.png",
+        category: "Products",
+      },
+      tailText: {
+        // 막줄 꼬리 텍스트
+        bg: "assets/images/pages/products/img-products-banner.png",
+        blue: "SOLUTIONS",
+        blueRouter: "energy_resource",
+        grey: "Contact",
+        greyRouter: "inquiry",
+      },
             chosenMenu: true,
-            isTab: 1
+            isTab: 2
         }
     },
     methods: {
@@ -447,7 +471,7 @@ export default {
         ul{
             display: flex;
             li{
-                width: 25%;
+                width: 33%;
                 padding: 30px 10px;
                 font-size: 14px;
                 font-weight: bold;

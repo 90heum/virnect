@@ -193,7 +193,7 @@
           <li class="option">
             <a
               href="https://console.virnect.com/?continue=https%3A%2F%2Fvirnect.com%2F"
-              target="_blank"
+              target="blank"
             >
               <p>서비스 로그인</p>
               <i>
@@ -211,7 +211,7 @@
             </a>
           </li>
           <li class="option">
-            <a href="https://download.virnect.com/remote" target="_blank">
+            <a href="https://download.virnect.com/remote" target="blank">
               <p>다운로드 센터 2.0</p>
               <i>
                 <img
@@ -228,7 +228,7 @@
             </a>
           </li>
           <li class="option">
-            <a href="https://workstation.virnect.com/start" target="_blank">
+            <a href="https://workstation.virnect.com/start" target="blank">
               <p>Workstation 2.0</p>
               <i>
                 <img
@@ -245,7 +245,7 @@
             </a>
           </li>
           <li class="option">
-            <a href="https://remote.virnect.com/home" target="_blank">
+            <a href="https://remote.virnect.com/home" target="blank">
               <p>Remote 2.0</p>
               <i>
                 <img

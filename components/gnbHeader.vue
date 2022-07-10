@@ -36,7 +36,7 @@
         </nav>
         <!-- 데모신청 박스 -->
         <div class="demo">
-          <a href="https://pardot.virnect.com/l/929783/2022-06-16/3nplr"> 데모신청 </a>
+          <a href="/support/demo" target="blank"> 데모신청 </a>
         </div>
         <!-- 서비스선택 박스 -->
         <div class="serviceSelect" @click="showServiceMenu">
@@ -215,13 +215,13 @@
             <p>대표전화 : 070-7733-2025</p>
             <p>
               구매 및 제휴 문의 :
-              <a href="mailto:" contact@virnect.com target="_blank">
+              <a href="mailto:" contact@virnect.com target="blank">
                 <u>contact@virnect.com</u>
               </a>
             </p>
             <p>
               제품 사용 및 기술 지원 :
-              <a href="mailto:" support@virnect.com target="_blank">
+              <a href="mailto:" support@virnect.com target="blank">
                 <u>support@virnect.com</u>
               </a>
             </p>
