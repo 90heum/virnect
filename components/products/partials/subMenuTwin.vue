@@ -117,34 +117,25 @@
             </li>
           </ul>
         </span>
-        <span class="MenuSubSub">
-          <ul>
-            <li>
-              <a class="SubSubActive" href="#xrSolutionId" id="a01">제품개요</a>
-            </li>
-            <li>
-              <a href="#productPropertyId" id="a02">제품특징</a>
-            </li>
-            <li>
-              <a href="#headingModule" id="a03">기능소개</a>
-            </li>
-            <li>
-              <a href="#remoteEffectPartId" id="a04">도입효과</a>
-            </li>
-          </ul>
-        </span>
+
+        <sub-menu-nav />
+        
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import SubMenuNav from "~/components/products/partials/navi.vue";
 export default {
   data() {
     return {
       isToggleNum: 1,
       isToggleOn: false,
     };
+  },
+  components: {
+    SubMenuNav
   },
   methods: {
     handleMenuToggle(e) {
@@ -243,41 +234,6 @@ export default {
         }
       }
     }
-    .MenuSubSub {
-      ul {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        li {
-          border-right: 1px solid #c5c8cf;
-          &:last-child {
-            border-right: none;
-          }
-          a {
-            font-size: 14px;
-            font-weight: bold;
-            line-height: 1;
-            letter-spacing: -0.26px;
-            color: #616161;
-            margin: 0 20px;
-            &:hover,
-            &.SubSubActive {
-              color: #121212;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 720px) {
-  .SubMenu .SubMenuWrap .MenuSubSub ul {
-    display: none;
-  }
-
-  .SubMenu .SubMenuWrap .MenuSub ul {
-    width: 100%;
   }
 }
 </style>

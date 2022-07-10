@@ -116,28 +116,16 @@
             </li>
           </ul>
         </span>
-        <span class="MenuSubSub">
-          <ul>
-            <li>
-              <a class="SubSubActive" href="#xrSolutionId" id="a01">제품개요</a>
-            </li>
-            <li>
-              <a href="#productPropertyId" id="a02">제품특징</a>
-            </li>
-            <li>
-              <a href="#headingModule" id="a03">기능소개</a>
-            </li>
-            <li>
-              <a href="#remoteEffectPartId" id="a04">도입효과</a>
-            </li>
-          </ul>
-        </span>
+       
+        <sub-menu-nav />
+        
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import SubMenuNav from "~/components/products/partials/navi.vue";
 export default {
   data() {
     return {
@@ -150,6 +138,9 @@ export default {
       this.isToggleOn = !this.isToggleOn;
       if (e) this.isToggleNum = e;
     },
+  },
+  components: {
+    SubMenuNav
   },
 };
 </script>

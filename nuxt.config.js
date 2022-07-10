@@ -3,6 +3,9 @@ export default {
   target: 'server',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
+    script: [
+      {type: 'text/javascript', src: 'jquery.js'}
+    ],
     title: 'virnect-ssr',
     htmlAttrs: {
       lang: 'en'
@@ -80,8 +83,6 @@ export default {
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    transpile: [
-      "gsap"
-    ]
+    transpile: ["gsap-trial"]
   }
 }

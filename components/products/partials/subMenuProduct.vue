@@ -125,10 +125,10 @@
               <a href="#productPropertyId" id="a02">제품특징</a>
             </li>
             <li>
-              <a href="#headingModule" id="a03">기능소개</a>
+              <a href="#headingModuleBottom" id="a03">기능소개</a>
             </li>
             <li>
-              <a href="#remoteEffectPartId" id="a04">도입효과</a>
+              <a href="#functionPart" id="a04">도입효과</a>
             </li>
           </ul>
         </span>
