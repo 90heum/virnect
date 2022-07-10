@@ -85,7 +85,7 @@ export default {
             this.requestData();
         },
         requestData () {
-            this.$axios.get(`admin/support/learning?page=${this.pagingData.currentPage}&size=${this.pagingData.currentSize}&categoryId=${this.isTabMenu === 0 ? '' : this.isTabMenu}&typeId=${this.isTypeMenu === 0 ? 0 : this.isTypeMenu ? this.isTypeMenu : ''}`)
+            this.$axios.get(`admin/support/learning?page=${this.pagingData.currentPage}&size=${this.pagingData.currentSize}&categoryId=${this.isTabMenu === 0 ? '' : this.isTabMenu}&typeId=${this.isTypeMenu === 5 ? 0 : this.isTypeMenu ? this.isTypeMenu : ''}`)
             .then(res => this.contentList = res.data.data)
             .catch(e => console.error(e))
         }

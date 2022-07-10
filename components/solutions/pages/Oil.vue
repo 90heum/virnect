@@ -40,9 +40,13 @@
       :text="$t('solutionText.roiText.text')"
       :boldText="$t('solutionText.roiText.boldText')"
     ></roi-part>
-    <bg-slide-part
+    <!-- <bg-slide-part
       :bgExampleArr="$t('solutionText.oilText.bgExampleList')"
-    ></bg-slide-part>
+    ></bg-slide-part> -->
+        <new-bg-slide
+      :bannerData="moduleData.oil"
+      :title="`Twin이`"
+    ></new-bg-slide>
     <offer-part
       :title="$t('solutionText.offerText.title')"
       :contents="$t('solutionText.offerText.contents')"
@@ -59,6 +63,8 @@ import roiPart from "../partials/RoiPart";
 import offerPart from "../partials/OfferPart";
 import bgSlidePart from "../../products/partials/BgSlidePart";
 import headingModule from "../../modules/Heading";
+import NewBgSlide from "~/components/products/partials/NewBgSlide.vue";
+import {filedData, moduleData} from "~/components/products/NewBgPartData.js";
 export default {
   components: {
     issuePart,
@@ -68,9 +74,12 @@ export default {
     offerPart,
     bgSlidePart,
     headingModule,
+    NewBgSlide,
   },
   data() {
     return {
+      filedData,
+      moduleData,
       issueBg: "../images/pages/solution/img-solution-chemical-top",
       infographicBtn: [
         [

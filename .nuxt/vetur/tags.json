@@ -44,12 +44,6 @@
   "MixinsMixin": {
     "description": "Auto imported from components/mixins/mixin.js"
   },
-  "Paging": {
-    "description": "Auto imported from components/paging/paging.vue"
-  },
-  "NewsCommonBaner": {
-    "description": "Auto imported from components/news/CommonBaner.vue"
-  },
   "ModulesBanner": {
     "description": "Auto imported from components/modules/Banner.vue"
   },
@@ -104,14 +98,20 @@
   "ModulesYoutubeFullscreen": {
     "description": "Auto imported from components/modules/YoutubeFullscreen.vue"
   },
-  "PolicySubMenuPayment": {
-    "description": "Auto imported from components/policy/subMenuPayment.vue"
+  "NewsCommonBaner": {
+    "description": "Auto imported from components/news/CommonBaner.vue"
   },
-  "PolicySubMenuPolicy": {
-    "description": "Auto imported from components/policy/subMenuPolicy.vue"
+  "Paging": {
+    "description": "Auto imported from components/paging/paging.vue"
   },
-  "PolicySubMenuTerms": {
-    "description": "Auto imported from components/policy/subMenuTerms.vue"
+  "ProductsNewBgPartData": {
+    "description": "Auto imported from components/products/NewBgPartData.js"
+  },
+  "ProductsNewEffectPartData": {
+    "description": "Auto imported from components/products/newEffectPartData.js"
+  },
+  "ProductsNewModuleData": {
+    "description": "Auto imported from components/products/newModuleData.js"
   },
   "SupportSubMenu": {
     "description": "Auto imported from components/support/SubMenu.vue"
@@ -139,6 +139,15 @@
   },
   "SupportNotice": {
     "description": "Auto imported from components/support/notice.vue"
+  },
+  "PolicySubMenuPayment": {
+    "description": "Auto imported from components/policy/subMenuPayment.vue"
+  },
+  "PolicySubMenuPolicy": {
+    "description": "Auto imported from components/policy/subMenuPolicy.vue"
+  },
+  "PolicySubMenuTerms": {
+    "description": "Auto imported from components/policy/subMenuTerms.vue"
   },
   "GnbCompany": {
     "description": "Auto imported from components/Gnb/Company/index.vue"
@@ -272,6 +281,12 @@
   "ProductsPartialsIntroducePart": {
     "description": "Auto imported from components/products/partials/IntroducePart.vue"
   },
+  "ProductsPartialsNewBgSlide": {
+    "description": "Auto imported from components/products/partials/NewBgSlide.vue"
+  },
+  "ProductsPartialsNewEffectPart": {
+    "description": "Auto imported from components/products/partials/NewEffectPart.vue"
+  },
   "ProductsMainBanner": {
     "description": "Auto imported from components/products/partials/ProductsMainBanner.vue"
   },
@@ -323,15 +338,6 @@
   "ProductsPartialsSubMenuView": {
     "description": "Auto imported from components/products/partials/subMenuView.vue"
   },
-  "SupportFaqAsideMenu": {
-    "description": "Auto imported from components/support/faq/AsideMenu.vue"
-  },
-  "SupportFaqContents": {
-    "description": "Auto imported from components/support/faq/FaqContents.vue"
-  },
-  "SupportFaqGoogleMap": {
-    "description": "Auto imported from components/support/faq/GoogleMap.vue"
-  },
   "SupportLearningCenterAsideMenu": {
     "description": "Auto imported from components/support/learning-center/AsideMenu.vue"
   },
@@ -355,5 +361,14 @@
   },
   "SupportNoticeContents": {
     "description": "Auto imported from components/support/notice/NoticeContents.vue"
+  },
+  "SupportFaqAsideMenu": {
+    "description": "Auto imported from components/support/faq/AsideMenu.vue"
+  },
+  "SupportFaqContents": {
+    "description": "Auto imported from components/support/faq/FaqContents.vue"
+  },
+  "SupportFaqGoogleMap": {
+    "description": "Auto imported from components/support/faq/GoogleMap.vue"
   }
 }

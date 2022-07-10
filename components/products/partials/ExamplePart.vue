@@ -149,7 +149,7 @@ $width: 534px;
   box-sizing: content-box;
 }
 .swiper-slide {
-  width: $width;
+  width: $width!important;
   margin-right: 30px;
 }
 .img-wrap {
@@ -193,7 +193,7 @@ $width: 534px;
 
 @media (max-width: $mobile) {
   .swiper-slide {
-    width: 93%;
+    width: 100%!important;
   }
   .img-wrap {
     width: 100%;

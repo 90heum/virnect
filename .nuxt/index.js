@@ -20,6 +20,7 @@ import nuxt_plugin_pluginmain_31620ff9 from 'nuxt_plugin_pluginmain_31620ff9' //
 import nuxt_plugin_axios_261f10e0 from 'nuxt_plugin_axios_261f10e0' // Source: ./axios.js (mode: 'all')
 import nuxt_plugin_dayjsplugin_55dc8166 from 'nuxt_plugin_dayjsplugin_55dc8166' // Source: ./dayjs-plugin.js (mode: 'all')
 import nuxt_plugin_nuxtagile_9d325c54 from 'nuxt_plugin_nuxtagile_9d325c54' // Source: ./nuxt-agile.js (mode: 'client')
+import nuxt_plugin_gsapModule_d13b607e from 'nuxt_plugin_gsapModule_d13b607e' // Source: ./gsapModule.js (mode: 'all')
 import nuxt_plugin_vueawesomeswiper_57bca9f0 from 'nuxt_plugin_vueawesomeswiper_57bca9f0' // Source: ../plugins/vue-awesome-swiper.js (mode: 'client')
 
 // Component: <ClientOnly>
@@ -243,6 +244,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (process.client && typeof nuxt_plugin_nuxtagile_9d325c54 === 'function') {
     await nuxt_plugin_nuxtagile_9d325c54(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_gsapModule_d13b607e === 'function') {
+    await nuxt_plugin_gsapModule_d13b607e(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_vueawesomeswiper_57bca9f0 === 'function') {

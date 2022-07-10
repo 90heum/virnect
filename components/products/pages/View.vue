@@ -18,7 +18,7 @@
       :iconImage="functionIconImage"
     ></function-part>
 
-    <effect-part
+    <!-- <effect-part
       :bg="effectBG"
       :category="$t('productsText.viewText.effectHeading.category')"
       :title="$t('productsText.viewText.effectHeading.title')"
@@ -26,7 +26,7 @@
       :effectArr="$t('productsText.viewText.effectList')"
       :greyBtn="$t('global.demoText')"
       :blueBtn="$t('global.ROIText')"
-    ></effect-part>
+    ></effect-part> -->
 
     <!-- <section class="divide-section">
       <heading-module
@@ -58,13 +58,14 @@
               :exampleArr="$t('productsText.viewText.exampleList')"
             ></example-part>
           </div>
+          <new-module :bannerData="$t('productsText.viewText.exampleList')"
+                      :title="`View가`"/>
         </div>
       </section>
     </div> -->
-
-    <bg-slide-part
-      :bgExampleArr="$t('productsText.viewText.bgExampleList')"
-    ></bg-slide-part>
+  <new-effect-part :title="title"
+                     :effectList="effectList.view"
+                     :moduleData="moduleData.view"/>
   </section>
 </template>
 
@@ -76,8 +77,13 @@ import effectPart from "../partials/EffectPart";
 import supportPart from "../partials/SupportPart";
 import examplePart from "../partials/ExamplePart";
 import bgSlidePart from "../partials/BgSlidePart";
-
+import NewModule from "~/components/products/partials/newModule.vue";
+import NewBgSlide from "~/components/products/partials/NewBgSlide.vue";
+import NewEffectPart from "~/components/products/partials/NewEffectPart.vue";
+import { filedData , moduleData } from "~/components/products/newModuleData.js";
+import { title, effectList } from "~/components/products/newEffectPartData.js";
 import headingModule from "../../modules/Heading";
+
 export default {
   components: {
     introPart,
@@ -88,9 +94,16 @@ export default {
     examplePart,
     bgSlidePart,
     headingModule,
+    NewModule,
+    NewBgSlide,
+    NewEffectPart,
   },
   data() {
     return {
+      title,
+      effectList,
+      filedData,
+      moduleData,
       viewIntro: {
         logo: "../images/pages/products/logo-products-bi-view",
         // img: '../images/pages/products/img-products-view',

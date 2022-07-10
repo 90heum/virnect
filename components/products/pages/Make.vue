@@ -19,7 +19,7 @@
       :iconImage="functionIconImage"
     ></function-part>
 
-    <effect-part
+    <!-- <effect-part
       :bg="effectBG"
       :category="$t('productsText.makeText.effectHeading.category')"
       :title="$t('productsText.makeText.effectHeading.title')"
@@ -27,7 +27,7 @@
       :effectArr="$t('productsText.makeText.effectList')"
       :greyBtn="$t('global.demoText')"
       :blueBtn="$t('global.ROIText')"
-    ></effect-part>
+    ></effect-part> -->
 
     <div class="laptop-mockup" v-if="false">
       <article>
@@ -84,13 +84,19 @@
               :exampleArr="$t('productsText.makeText.exampleList')"
             ></example-part>
           </div>
+          <new-module :bannerData="$t('productsText.makeText.exampleList')"
+                      :title="`Make가`"/>
+        </div>
         </div> 
       </section>
     </div> -->
 
-    <bg-slide-part
+    <!-- <bg-slide-part
       :bgExampleArr="$t('productsText.makeText.bgExampleList')"
-    ></bg-slide-part>
+    ></bg-slide-part> -->
+    <new-effect-part :title="title"
+                     :effectList="effectList.make"
+                     :moduleData="moduleData.make"/>
   </section>
 </template>
 
@@ -103,8 +109,13 @@ import effectPart from "../partials/EffectPart";
 import supportPart from "../partials/SupportPart";
 import examplePart from "../partials/ExamplePart";
 import bgSlidePart from "../partials/BgSlidePart";
-
+import NewModule from "~/components/products/partials/newModule.vue";
+import NewBgSlide from "~/components/products/partials/NewBgSlide.vue";
+import NewEffectPart from "~/components/products/partials/NewEffectPart.vue";
 import headingModule from "../../modules/Heading";
+import { filedData , moduleData } from "~/components/products/newModuleData.js";
+import { title, effectList } from "~/components/products/newEffectPartData.js";
+
 export default {
   // mixins: [mixin],
   components: {
@@ -116,9 +127,16 @@ export default {
     examplePart,
     bgSlidePart,
     headingModule,
+    NewModule,
+    NewBgSlide,
+    NewEffectPart,
   },
   data() {
     return {
+      title,
+      effectList,
+      filedData,
+      moduleData,
       isMobile: false,
       makeIntro: {
         logo: "../images/pages/products/logo-products-bi-make",

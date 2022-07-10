@@ -16,9 +16,8 @@
     <product-property />
     <!-- 기능소개 -->
     <sub-menu />
-    <transition name="app-fade" mode="out-in">
-      <remote-component />
-    </transition>
+
+    <remote-component />
     <!-- <tail-section
       :bg="tailText.bg"
       :mention="$t('productsText.tailText')"
@@ -29,7 +28,6 @@
     ></tail-section>
      -->
     <!-- <bottom-banner-remote /> -->
-    <new-module />
     <tailSection class="bb" />
   </section>
 </template>
@@ -46,7 +44,6 @@ import ProductProperty from "~/components/products/partials/productProperty.vue"
 import BottomBannerRemote from "~/components/products/partials/bottomBannerRemote.vue";
 import CtaModule from "~/components/main/ctaModule.vue";
 import SubMenuProduct from "~/components/products/partials/subMenuProduct.vue";
-import NewModule from "~/components/products/partials/newModule.vue";
 
 export default {
   components: {
@@ -61,7 +58,6 @@ export default {
     BottomBannerRemote,
     CtaModule,
     SubMenuProduct,
-    NewModule,
   },
   data() {
     return {

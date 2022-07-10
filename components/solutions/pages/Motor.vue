@@ -39,7 +39,7 @@
       :boldText="$t('solutionText.roiText.boldText')"
     ></roi-part>
 
-    <div class="example-wrap">
+    <!-- <div class="example-wrap">
       <section class="divide-section">
         <div class="example-style">
           <heading-module
@@ -54,13 +54,18 @@
               :exampleArr="$t('solutionText.motorText.exampleList')"
             ></example-part>
           </div>
+          <new-module :bannerData="$t('solutionText.motorText.exampleList')"
+            :title="`Twin이`"/>
         </div>
       </section>
-    </div>
-    <bg-slide-part
+    </div> -->
+    <!-- <bg-slide-part
       :bgExampleArr="$t('solutionText.motorText.bgExampleList')"
-    ></bg-slide-part>
-
+    ></bg-slide-part> -->
+        <new-bg-slide
+      :bannerData="moduleData.motor"
+      :title="`Twin이`"
+    ></new-bg-slide>
     <offer-part
       :title="$t('solutionText.offerText.title')"
       :contents="$t('solutionText.offerText.contents')"
@@ -79,7 +84,11 @@ import offerPart from "../partials/OfferPart";
 import examplePart from "../../products/partials/ExamplePart";
 import bgSlidePart from "../../products/partials/BgSlidePart";
 
+import NewModule from "~/components/products/partials/newModule.vue";
+import NewBgSlide from "~/components/products/partials/NewBgSlide.vue";
+
 import headingModule from "../../modules/Heading";
+import {filedData, moduleData} from "~/components/products/NewBgPartData.js";
 export default {
   components: {
     issuePart,
@@ -90,9 +99,13 @@ export default {
     examplePart,
     bgSlidePart,
     headingModule,
+    NewModule,
+    NewBgSlide
   },
   data() {
     return {
+      filedData,
+      moduleData,
       issueBg: "../images/pages/solution/img-solution-motor-top",
       infographicBtn: [
         [

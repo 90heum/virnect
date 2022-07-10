@@ -19,7 +19,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: ['swiper/dist/css/swiper.css', 'nuxt-video-player/src/assets/css/main.css'],
   buildModules: ['@nuxtjs/style-resources', '@nuxt/image'],
   styleResources: {
     less: '~/assets/css/*.scss'
@@ -37,6 +37,7 @@ export default {
   buildModules: [
   ],
   modules: [
+    ['nuxt-gsap-module'],
     ['nuxt-agile'],
     ['@nuxtjs/dayjs'],
     ['@nuxtjs/proxy'],
@@ -79,6 +80,8 @@ export default {
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-
+    transpile: [
+      "gsap"
+    ]
   }
 }
