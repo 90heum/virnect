@@ -34,6 +34,7 @@ const _20f317b5 = () => interopDefault(import('../pages/support/learning-manual-
 const _64128576 = () => interopDefault(import('../pages/support/learning-video-detail.vue' /* webpackChunkName: "pages/support/learning-video-detail" */))
 const _3777a178 = () => interopDefault(import('../pages/support/notice.vue' /* webpackChunkName: "pages/support/notice" */))
 const _4a96d02a = () => interopDefault(import('../pages/support/notice-detail.vue' /* webpackChunkName: "pages/support/notice-detail" */))
+const _9592d694 = () => interopDefault(import('../pages/support/supportSubMain.vue' /* webpackChunkName: "pages/support/supportSubMain" */))
 const _54d389f3 = () => interopDefault(import('../pages/company/subCompany/Brand.vue' /* webpackChunkName: "pages/company/subCompany/Brand" */))
 const _4e2f2456 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -168,6 +169,10 @@ export const routerOptions = {
     path: "/support/notice-detail",
     component: _4a96d02a,
     name: "support-notice-detail"
+  }, {
+    path: "/support/supportSubMain",
+    component: _9592d694,
+    name: "support-supportSubMain"
   }, {
     path: "/company/subCompany/Brand",
     component: _54d389f3,

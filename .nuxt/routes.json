@@ -210,6 +210,13 @@
     "_name": "_4a96d02a"
   },
   {
+    "name": "support-supportSubMain",
+    "path": "/support/supportSubMain",
+    "component": "/Users/majeongheum/virnect/pages/support/supportSubMain.vue",
+    "chunkName": "pages/support/supportSubMain",
+    "_name": "_9592d694"
+  },
+  {
     "name": "company-subCompany-Brand",
     "path": "/company/subCompany/Brand",
     "component": "/Users/majeongheum/virnect/pages/company/subCompany/Brand.vue",

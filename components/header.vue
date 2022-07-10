@@ -19,8 +19,8 @@
           <ul>
             <li
               @mouseover="[(gnb1 = true), changeGnbColor()]"
-              @mouseleave="[gnb1 = false, originalGnbColor()]"
-              @click="[(gnb1=false), gnbStyleBorder = {gnbStyle1:true}]"
+              @mouseleave="[(gnb1 = false), originalGnbColor()]"
+              @click="[(gnb1 = false), (gnbStyleBorder = { gnbStyle1: true })]"
             >
               <nuxt-link
                 to="/solutions/energy_resource"
@@ -35,7 +35,7 @@
                     alt="다운아이콘"
                     v-show="!gnb1"
                   />
-                  <img 
+                  <img
                     class="upIcon1"
                     src="https://velog.velcdn.com/images/kyj0206/post/098c0636-bb17-46f5-91c2-f255ae31982a/image.png"
                     alt="업아이콘"
@@ -47,9 +47,9 @@
             <li
               @mouseover="[(gnb2 = true), changeGnbColor2()]"
               @mouseleave="[(gnb2 = false), originalGnbColor2()]"
-              @click="[(gnb2 = false), gnbStyleBorder = {gnbStyle2:true}]"
+              @click="[(gnb2 = false), (gnbStyleBorder = { gnbStyle2: true })]"
             >
-              <nuxt-link 
+              <nuxt-link
                 to="/products/productsMain"
                 :class="`navTab container2 ${gnb2 ? 'gnbActive' : ''}`"
                 v-bind:style="gnbStyleBorder.gnbStyle2 ? commonGnbStyle : {}"
@@ -74,10 +74,10 @@
             <li
               @mouseover="[(gnb3 = true), changeGnbColor3()]"
               @mouseleave="[(gnb3 = false), (e) => originalGnbColor3(e)]"
-              @click="[(gnb3 = false), gnbStyleBorder = {gnbStyle3:true}]"
+              @click="[(gnb3 = false), (gnbStyleBorder = { gnbStyle3: true })]"
             >
               <nuxt-link
-                to="/support/notice"
+                to="/support/supportSubMain"
                 :class="`navTab container3 ${gnb3 ? 'gnbActive' : ''}`"
                 v-bind:style="gnbStyleBorder.gnbStyle3 ? commonGnbStyle : {}"
               >
@@ -101,7 +101,7 @@
             <li
               @mouseover="[(gnb4 = true), changeGnbColor4()]"
               @mouseleave="[(gnb4 = false), originalGnbColor4()]"
-              @click="[(gnb4 = false), gnbStyleBorder = {gnbStyle4:true}]"
+              @click="[(gnb4 = false), (gnbStyleBorder = { gnbStyle4: true })]"
             >
               <nuxt-link
                 to="/news/main"
@@ -128,7 +128,7 @@
             <li
               @mouseover="[(gnb5 = true), changeGnbColor5()]"
               @mouseleave="[(gnb5 = false), originalGnbColor5()]"
-              @click="[(gnb5 = false), gnbStyleBorder = {gnbStyle5:true}]"
+              @click="[(gnb5 = false), (gnbStyleBorder = { gnbStyle5: true })]"
             >
               <nuxt-link
                 to="/company/about"
@@ -159,7 +159,7 @@
         </div>
         <div
           class="serviceSelect"
-          @click="[showServiceMenu(),toggle(), showEarth=false]"
+          @click="[showServiceMenu(), toggle(), (showEarth = false)]"
           v-click-outside="serviceHide"
           v-if="isWeb"
         >
@@ -183,9 +183,7 @@
                 />
               </div>
             </div>
-            <ul v-if="isServiceMenu"
-                v-show="serviceOpen"
-            >
+            <ul v-if="isServiceMenu" v-show="serviceOpen">
               <li class="option">
                 <a
                   href="https://console.virnect.com/?continue=https%3A%2F%2Fvirnect.com%2F"
@@ -262,10 +260,13 @@
         </div>
 
         <!-- 언어선택 박스 -->
-        <div class="language" 
-            @click="[(lang = true), langlang(), toggle2(), isServiceMenu=false]" 
-            v-if="isWeb"
-            v-click-outside="langHide"
+        <div
+          class="language"
+          @click="
+            [(lang = true), langlang(), toggle2(), (isServiceMenu = false)]
+          "
+          v-if="isWeb"
+          v-click-outside="langHide"
         >
           <i>
             <img
@@ -273,10 +274,7 @@
               alt="글로벌이미지"
             />
           </i>
-          <div class="languageWrap" 
-               v-if="showEarth"
-               v-show="langOpen"
-          >
+          <div class="languageWrap" v-if="showEarth" v-show="langOpen">
             <span
               v-for="locale in availableLocales"
               :key="locale.code"
@@ -314,7 +312,7 @@
     <div
       class="subNavi subNavSolutions"
       v-show="gnb1"
-      @mouseover="[(gnb1 = true), (upIcon=true), changeGnbColor()]"
+      @mouseover="[(gnb1 = true), (upIcon = true), changeGnbColor()]"
       @mouseleave="[(gnb1 = false), originalGnbColor()]"
     >
       <div class="subNavSolutionsInner">
@@ -327,7 +325,13 @@
             <sub-solution-menu
               :snbArr="$t('gnb[0].array')"
               :name="`subNavSolutionsMenu`"
-              @click="[(gnb1=false), originalGnbColor(), gnbStyleBorder = {gnbStyle1:true}]"
+              @click="
+                [
+                  (gnb1 = false),
+                  originalGnbColor(),
+                  (gnbStyleBorder = { gnbStyle1: true }),
+                ]
+              "
             />
           </span>
         </div>
@@ -387,7 +391,13 @@
                     })
                   "
                   :name="`subNavProductsMenus`"
-                  @click="[(gnb2=false), originalGnbColor2(), gnbStyleBorder = {gnbStyle2:true}]"
+                  @click="
+                    [
+                      (gnb2 = false),
+                      originalGnbColor2(),
+                      (gnbStyleBorder = { gnbStyle2: true }),
+                    ]
+                  "
                 />
               </span>
               <span>
@@ -402,7 +412,13 @@
                     })
                   "
                   :name="`subNavProductsMenus`"
-                  @click="[(gnb2=false), originalGnbColor2(), gnbStyleBorder = {gnbStyle2:true}]"
+                  @click="
+                    [
+                      (gnb2 = false),
+                      originalGnbColor2(),
+                      (gnbStyleBorder = { gnbStyle2: true }),
+                    ]
+                  "
                 />
               </span>
             </div>
@@ -473,10 +489,16 @@
             <div class="subNavSupportMenu">
               <span>
                 <ul>
-                  <li @click="[(gnb3=false), originalGnbColor3(), gnbStyleBorder = {gnbStyle3:true}]"
+                  <li
+                    @click="
+                      [
+                        (gnb3 = false),
+                        originalGnbColor3(),
+                        (gnbStyleBorder = { gnbStyle3: true }),
+                      ]
+                    "
                   >
-                    <nuxt-link
-                      to="/support/notice"
+                    <nuxt-link to="/support/notice"
                       ><span>{{
                         $t(`supportText.menuList.productNotice.title`)
                       }}</span></nuxt-link
@@ -487,7 +509,12 @@
                       `supportText.menuList.productNotice.list`
                     )"
                     :key="idx"
-                    @click="[changeGnbColor(`list3`),gnbStyleBorder = {gnbStyle3:true}]"
+                    @click="
+                      [
+                        changeGnbColor(`list3`),
+                        (gnbStyleBorder = { gnbStyle3: true }),
+                      ]
+                    "
                   >
                     <nuxt-link :to="list.url"
                       ><u>-{{ list.title }}</u></nuxt-link
@@ -497,7 +524,15 @@
               </span>
               <span>
                 <ul>
-                  <li @click="[(gnb3=false), originalGnbColor3(), gnbStyleBorder = {gnbStyle3:true}]">
+                  <li
+                    @click="
+                      [
+                        (gnb3 = false),
+                        originalGnbColor3(),
+                        (gnbStyleBorder = { gnbStyle3: true }),
+                      ]
+                    "
+                  >
                     <nuxt-link to="/support/faq"
                       ><span>{{
                         $t(`supportText.menuList.faq.title`)
@@ -508,7 +543,12 @@
                     <li
                       v-for="(list, idx) of $t(`supportText.menuList.faq.list`)"
                       :key="idx"
-                      @click="[changeGnbColor(`list3`), gnbStyleBorder = {gnbStyle3:true}]"
+                      @click="
+                        [
+                          changeGnbColor(`list3`),
+                          (gnbStyleBorder = { gnbStyle3: true }),
+                        ]
+                      "
                     >
                       <nuxt-link :to="list.url"
                         ><u>-{{ list.title }}</u></nuxt-link
@@ -519,7 +559,15 @@
               </span>
               <span>
                 <ul>
-                  <li @click="[(gnb3=false), originalGnbColor3(), gnbStyleBorder = {gnbStyle3:true}]">
+                  <li
+                    @click="
+                      [
+                        (gnb3 = false),
+                        originalGnbColor3(),
+                        (gnbStyleBorder = { gnbStyle3: true }),
+                      ]
+                    "
+                  >
                     <nuxt-link to="/support/learning-center">
                       <span>{{
                         $t(`supportText.menuList.Leaning Center.title`)
@@ -527,11 +575,11 @@
                     </nuxt-link>
                   </li>
                   <li
-                    v-for="(list, idx) of $t('supportText.menuList.Leaning Center.list').filter(
-                      (e, idx) => {
-                        if (idx < 3) return e;
-                      }
-                    )"
+                    v-for="(list, idx) of $t(
+                      'supportText.menuList.Leaning Center.list'
+                    ).filter((e, idx) => {
+                      if (idx < 3) return e;
+                    })"
                     :key="idx"
                     @click="changeGnbColor(`list3`)"
                   >
@@ -543,7 +591,15 @@
               </span>
               <span>
                 <ul>
-                  <li @click="[(gnb3=false), originalGnbColor3(), gnbStyleBorder = {gnbStyle3:true}]">
+                  <li
+                    @click="
+                      [
+                        (gnb3 = false),
+                        originalGnbColor3(),
+                        (gnbStyleBorder = { gnbStyle3: true }),
+                      ]
+                    "
+                  >
                     <nuxt-link to="/support/inquiry">
                       <span>{{
                         $t(`supportText.menuList.Inquiries.title`)
@@ -583,7 +639,13 @@
               <span
                 v-for="(list, idx) of $t(`newsRoom.menuList`)"
                 :key="idx"
-                @click="[(gnb4=false), originalGnbColor4(), gnbStyleBorder = {gnbStyle4:true}]"
+                @click="
+                  [
+                    (gnb4 = false),
+                    originalGnbColor4(),
+                    (gnbStyleBorder = { gnbStyle4: true }),
+                  ]
+                "
               >
                 <nuxt-link :to="list.url">{{ list.title }}</nuxt-link>
               </span>
@@ -618,7 +680,13 @@
               <span
                 v-for="(list, idx) of $t(`newCompany.menuList`)"
                 :key="idx"
-                @click="[(gnb5=false), originalGnbColor5(), gnbStyleBorder = {gnbStyle5:true}]"
+                @click="
+                  [
+                    (gnb5 = false),
+                    originalGnbColor5(),
+                    (gnbStyleBorder = { gnbStyle5: true }),
+                  ]
+                "
               >
                 <nuxt-link :to="list.url">{{ list.title }}</nuxt-link>
               </span>
@@ -646,8 +714,7 @@
 <script>
 import SubSolutionMenu from "./modules/SubSolutionMenu.vue";
 import MobileHeader from "../components/Gnb/headerPartial/mobileHeader.vue";
-import ClickOutside from 'vue-click-outside'
-
+import ClickOutside from "vue-click-outside";
 
 const navList = [
   { title: "Value" },
@@ -698,7 +765,7 @@ export default {
     commonGnbStyle: {
       color: "#fff",
       backgroundColor: "#121212",
-      borderBottom: "3px solid #fff"
+      borderBottom: "3px solid #fff",
     },
     gnbStyle1: {},
     gnbStyle2: {},
@@ -728,10 +795,10 @@ export default {
     this.handleGnbMenuBorderBottm();
     if (process.client)
       window.innerWidth > 1025 ? (this.isWeb = true) : (this.isWeb = false);
-    this.popupItem = this.$el
+    this.popupItem = this.$el;
   },
   directives: {
-    ClickOutside
+    ClickOutside,
   },
   created() {
     if (process.client) {
@@ -744,33 +811,33 @@ export default {
     // window.removeEventListener('scroll', this.hasScrolled)
   },
   watch: {
-    '$route' () {
+    $route() {
       this.handleGnbMenuBorderBottm();
-    }
+    },
   },
   methods: {
     /* handleClickButton(){
       this.visible = !this.visible
     }, */
-    handleGnbMenuBorderBottm () {
-       const solutions = 'solutions';
-        const products = 'products';
-        const support = 'support';
-        const news = 'news';
-        const company = 'company';
-        const fullPath = this.$route.fullPath;
+    handleGnbMenuBorderBottm() {
+      const solutions = "solutions";
+      const products = "products";
+      const support = "support";
+      const news = "news";
+      const company = "company";
+      const fullPath = this.$route.fullPath;
 
       if (process.client) {
-        if(fullPath.includes(solutions)){
-          this.changeBorder(1)
-        } else if(fullPath.includes(products)){
-          this.changeBorder(2)
-        } else if(fullPath.includes(support)){
-          this.changeBorder(3)
-        } else if(fullPath.includes(news)){
-          this.changeBorder(4)
-        } else if(fullPath.includes(company)){
-          this.changeBorder(5)
+        if (fullPath.includes(solutions)) {
+          this.changeBorder(1);
+        } else if (fullPath.includes(products)) {
+          this.changeBorder(2);
+        } else if (fullPath.includes(support)) {
+          this.changeBorder(3);
+        } else if (fullPath.includes(news)) {
+          this.changeBorder(4);
+        } else if (fullPath.includes(company)) {
+          this.changeBorder(5);
         } else {
           this.gnbStyleBorder = {};
         }
@@ -786,21 +853,21 @@ export default {
     showUpIcon() {
       this.upIcon = !this.upIcon;
     },
-    toggle(){
-      this.serviceOpen = true
+    toggle() {
+      this.serviceOpen = true;
     },
-    serviceHide(){
-      this.serviceOpen = false
-      this.isServiceMenu = false
+    serviceHide() {
+      this.serviceOpen = false;
+      this.isServiceMenu = false;
     },
-    toggle2(){
-      this.langOpen = true
+    toggle2() {
+      this.langOpen = true;
     },
-    langHide(){
-      this.langOpen = false
+    langHide() {
+      this.langOpen = false;
     },
     changeBorder(e) {
-      this.gnbStyleBorder = {[`gnbStyle${e}`]: true}
+      this.gnbStyleBorder = { [`gnbStyle${e}`]: true };
     },
     originalBorder() {
       this.gnbStyle1.borderBottomColor = "#121212";
@@ -855,7 +922,6 @@ export default {
       if (window.innerWidth > 1025 && !this.isWeb) {
         this.isWeb = true;
         this.isMenu = false;
-        
       } else if (window.innerWidth < 1025 && this.isWeb) {
         this.isWeb = false;
         this.gnbTextStyle.color = "#fff";
@@ -865,11 +931,11 @@ export default {
     },
     showMenu(e) {
       this.isMenu = e;
-      if(this.isMenu === true){
-          document.querySelector("html").style.overflow='hidden';
-        } else {
-          document.querySelector("html").style.overflow='scroll';
-        }
+      if (this.isMenu === true) {
+        document.querySelector("html").style.overflow = "hidden";
+      } else {
+        document.querySelector("html").style.overflow = "scroll";
+      }
     },
   },
 };
@@ -886,9 +952,9 @@ header {
   width: 100%;
   z-index: 10000;
   a.gnbActive {
-    color: #0a51b7!important;
-    background-color: #fff!important;
-}
+    color: #0a51b7 !important;
+    background-color: #fff !important;
+  }
 }
 * {
   padding: 0;
