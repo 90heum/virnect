@@ -358,3 +358,11 @@ sub {
 input[type=text]::-ms-clear {
   display: none;
 }
+
+
+@media screen and (max-width: 600px) {
+  body{
+      width: 100vw;
+      min-width: 600px;
+  }
+}

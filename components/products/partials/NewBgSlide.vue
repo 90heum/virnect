@@ -2,7 +2,7 @@
     <client-only>
          <div class="moduleApply">
           <div class="moduleApplyBgTop">
-              <div class="moduleApplyTit">
+              <!-- <div class="moduleApplyTit">
                   <span>
                       <p>적용 사례</p>
                       <h2>
@@ -14,7 +14,7 @@
                       VIRNECT {{title}} 만들어낸 효율과 혁신을 
                       <p>최신 사례와 자료를 통해 확인하세요.</p>
                   </span>
-              </div>
+              </div> -->
               <div class="ApplyInner">
                   <div class="ApplySlider">
                       <!-- <div class="ApplySliderInner"> -->
@@ -27,9 +27,9 @@
 
                                 <div class="swiper-wrapper">
                                     <div v-for="(data, idx) of bannerData" :key="idx" class="img-warpper swiper-slide">
-                                        <i><img :src="`${imgList[idx]}`" /></i>
-                                        <p class="contents" v-html="data.contents"></p>
-                                        <p class="category">{{data.category}}</p>
+                                        <i><img :src="`${data.logo}`" /></i>
+                                        <p class="contents">{{data.title}}</p>
+                                        <p class="category">{{data.company}}</p>
                                     </div>
                                 </div>
                                 <div class="swiper-pagination swiper-pagination-bullets">
@@ -72,14 +72,13 @@ export default {
             console.log("click", idx, realIdx)
         }
     },
+    updated () {
+        console.log(this.bannerData)
+    },
       data() {
           return {
-                imgList: ['https://virnect.com/images/pages/products/logo-recommendation-sds.png',
-                    'https://virnect.com/images/pages/products/logo-recommendation-oci.png',
-                    'https://virnect.com/images/pages/products/logo-recommendation-miraecity.png',
-                    'https://virnect.com/images/pages/products/logo-recommendation-lgchem.png'],
                 options: {
-                slidesPerView: "1",
+                slidesPerView: "auto",
                 loop: true,
                 spaceBetween: 13,
                 centeredSlides: true,
@@ -91,12 +90,6 @@ export default {
                 prevEl: ".swiper-button-next",
                 },
                 breakpoints: {
-                    1024: {
-                        slidesPerView: "1",
-                    },
-                    650: {
-                        slidesPerView: "1"
-                    }
                 }
             },
           }
@@ -114,8 +107,8 @@ export default {
     .moduleApplyBgTop{
         background-color: #fff;
         height: 581px;
-        padding: 100px 24px 0;
-
+        // padding: 100px 24px 0;
+        margin-top: 20px;
         .moduleApplyTit{
             display: flex;
             justify-content: space-between;
@@ -186,15 +179,18 @@ export default {
         height: 246px;
     }
     .ApplyInner {
+        .swiper-container { height: 560px; }
         .swiper-button-prev, .swiper-button-next {
             bottom: 100px;
-            top: -190px;
+            top: -250px;
         }
         .swiper-button-prev {
-            background-image: url(~/assets/images/pages/right@2x.png);
+            background-image: url(https://velog.velcdn.com/images/kyj0206/post/da614e72-c0b7-4100-b9ec-e347da4ef52f/image.png);
+            background-size: cover;
         }
         .swiper-button-next {
-            background-image: url(~/assets/images/pages/left@2x.png);
+            background-image: url(https://velog.velcdn.com/images/kyj0206/post/7e1793ec-273a-4cb7-9c7f-6312de2f0e1d/image.png);
+            background-size: cover;
         }
     }
     .ApplyInner .ApplySlider {
@@ -207,6 +203,8 @@ export default {
             letter-spacing: -0.35px;
             text-align: center;
             color: #000;
+            max-width: 571px;
+            margin-bottom: 43px;
         }
         .swiper-slide {
             min-width: 100%;
@@ -218,16 +216,17 @@ export default {
             background-image: url(https://velog.velcdn.com/images/kyj0206/post/0a222264-b3d0-4459-9d40-6c1ffad70ab2/image.png);
         }
         .swiper-slide img {
-            width: 208px;
-            height: 32px;
-             filter: invert(100%);
+            // width: 208px;
+            max-width: 200px;
+            width: 100%;
+            //  filter: invert(100%);
         }
         .swiper-slide i {
             display: flex;
             width: 100%;
-            margin: 56px 526px 56px;
             justify-content: center;
             align-items: center;
+            margin-bottom: 56px;
         }
         .swiper-slide p { line-height: 2; }
         .swiper-slide p:last-child {
@@ -240,7 +239,6 @@ export default {
             letter-spacing: -0.2px;
             text-align: center;
             color: #0a51b7;
-            margin-bottom: 100px;
         }
     }
 }
@@ -257,17 +255,24 @@ export default {
     }
 
 }
-
+@media screen and (max-width: 1090px) {
+    .moduleApply .ApplyInner .ApplySlider {
+        .contents {
+            font-size: 20px;
+            max-width: 372px;
+        }
+    }
+}
 @media screen and(max-width : 1024px) {
     .moduleApply .ApplyInner .ApplySlider {
          .swiper-slide i {
             display: flex;
             width: 100%;
-            margin: 40px 526px 30px;
+            // margin: 40px 526px 30px;
             justify-content: center;
             align-items: center;
         }
-        .swiper-slide p { line-height: 2; }
+        // .swiper-slide p { line-height: 2; }
         .swiper-slide p:last-child {
             text-align: center;
             font-size: 16px;

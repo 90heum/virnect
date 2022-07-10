@@ -17,7 +17,7 @@
       :functionArr="$t('productsText.twinText.functionLists')"
       :iconImage="functionIconImage"
     ></function-part>
-
+<!-- 
     <effect-part
       :bg="effectBG"
       :category="$t('productsText.twinText.effectHeading.category')"
@@ -26,7 +26,7 @@
       :effectArr="$t('productsText.twinText.effectList')"
       :greyBtn="$t('global.demoText')"
       :blueBtn="$t('global.ROIText')"
-    ></effect-part>
+    ></effect-part> -->
 
     <!-- <section class="divide-section">
       <heading-module
@@ -43,7 +43,7 @@
       </div>
     </section> -->
 
-    <div class="example-wrap">
+    <!-- <div class="example-wrap">
       <section class="divide-section">
         <div class="example-style">
           <heading-module
@@ -56,19 +56,18 @@
           <new-module :bannerData="$t('productsText.arsdkText.exampleList')"
                       :title="`Twin이`"/>
 
-          <!-- <div class="divide-contents-section example">
+          <div class="divide-contents-section example">
             <example-part
               :exampleArr="$t('productsText.twinText.exampleList')"
             ></example-part>
-          </div> -->
+          </div>
         </div>
       </section>
-    </div>
+    </div> -->
 
-    <new-bg-slide
-      :bannerData="$t('productsText.twinText.bgExampleList')"
-      :title="`Twin이`"
-    ></new-bg-slide>
+    <new-effect-part :title="title"
+                     :effectList="effectList.twin"
+                     :moduleData="moduleData.twin"/>
     <!-- <bg-slide-part
       :bgExampleArr="$t('productsText.twinText.bgExampleList')"
     ></bg-slide-part> -->
@@ -88,6 +87,10 @@ import NewBgSlide from "~/components/products/partials/NewBgSlide.vue";
 
 
 import headingModule from "../../modules/Heading";
+import NewEffectPart from "~/components/products/partials/NewEffectPart.vue";
+import { filedData , moduleData } from "~/components/products/newModuleData.js";
+import { title, effectList } from "~/components/products/newEffectPartData.js";
+
 export default {
   components: {
     introPart,
@@ -99,10 +102,15 @@ export default {
     bgSlidePart,
     headingModule,
     NewModule,
-    NewBgSlide
+    NewBgSlide,
+    NewEffectPart,
   },
   data() {
     return {
+    title,
+    effectList,
+    filedData,
+    moduleData,
       twinIntro: {
         logo: "../images/pages/products/logo-products-bi-twin",
         // img: '../images/pages/products/img-products-twin',

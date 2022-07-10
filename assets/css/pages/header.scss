@@ -1512,6 +1512,12 @@ header .headerInner .navWrap nav ul li a.navActive+header .subNavi {
     }
 }
 
+@media screen and (max-width: 600px) {
+    body{
+        width: 100vw;
+        min-width: 600px;
+    }
+}
 @media screen and(max-width: 425px) {
     header .headerInner {
         max-width: 425px;

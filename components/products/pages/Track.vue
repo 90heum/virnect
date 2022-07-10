@@ -18,7 +18,7 @@
       :iconImage="functionIconImage"
     ></function-part>
 
-    <effect-part
+    <!-- <effect-part
       :bg="effectBG"
       :category="$t('productsText.arsdkText.effectHeading.category')"
       :title="$t('productsText.arsdkText.effectHeading.title')"
@@ -26,7 +26,7 @@
       :effectArr="$t('productsText.arsdkText.effectList')"
       :greyBtn="$t('global.demoText')"
       :blueBtn="$t('global.ROIText')"
-    ></effect-part>
+    ></effect-part> -->
 
     <!-- <section class="divide-section">
       <heading-module
@@ -43,7 +43,7 @@
       </div>
     </section> -->
 
-    <div class="example-wrap">
+    <!-- <div class="example-wrap">
       <section class="divide-section">
         <div class="example-style">
           <heading-module
@@ -55,22 +55,21 @@
 
           <new-module :bannerData="$t('productsText.arsdkText.exampleList')"
                       :title="`Track이`"/>
-          <!-- <div class="divide-contents-section example">
+          <div class="divide-contents-section example">
             <example-part
               :exampleArr="$t('productsText.arsdkText.exampleList')"
             ></example-part>
-          </div> -->
+          </div>
         </div>
       </section>
-    </div>
+    </div> -->
 
     <!-- <bg-slide-part
       :bgExampleArr="$t('productsText.arsdkText.bgExampleList')"
     ></bg-slide-part> -->
-        <new-bg-slide
-      :bannerData="$t('productsText.arsdkText.bgExampleList')"
-      :title="`Track이`"
-    ></new-bg-slide>
+    <new-effect-part :title="title"
+                     :effectList="effectList.track"
+                     :moduleData="moduleData.track"/>
   </section>
 </template>
 
@@ -86,6 +85,10 @@ import NewModule from "~/components/products/partials/newModule.vue";
 import NewBgSlide from "~/components/products/partials/NewBgSlide.vue";
 
 import headingModule from "../../modules/Heading";
+import NewEffectPart from "~/components/products/partials/NewEffectPart.vue";
+import { filedData , moduleData } from "~/components/products/newModuleData.js";
+import { title, effectList } from "~/components/products/newEffectPartData.js";
+
 export default {
   components: {
     introPart,
@@ -97,10 +100,15 @@ export default {
     bgSlidePart,
     headingModule,
     NewModule,
-    NewBgSlide
+    NewBgSlide,
+    NewEffectPart,
   },
   data() {
     return {
+      title,
+      effectList,
+      filedData,
+      moduleData,
       arsdkIntro: {
         logo: "../images/pages/products/logo-products-bi-track",
         // intoBtn: `${window.urls['download']}/track`,

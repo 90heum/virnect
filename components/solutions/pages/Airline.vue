@@ -41,7 +41,7 @@
       :boldText="$t('solutionText.roiText.boldText')"
     ></roi-part>
 
-    <div class="example-wrap">
+    <!-- <div class="example-wrap">
       <section class="divide-section">
         <div class="example-style">
           <heading-module
@@ -51,22 +51,22 @@
             :contents="$t('solutionText.exampleTitle.contents')"
           ></heading-module>
 
-          <!-- <div class="divide-contents-section example">
+          <div class="divide-contents-section example">
             <example-part
               :exampleArr="$t('solutionText.airlineText.exampleList')"
             ></example-part>
-          </div> -->
+          </div>
           <new-module :bannerData="$t('solutionText.airlineText.exampleList')"
             :title="`Twin이`"/>
         </div>
       </section>
-    </div>
+    </div> -->
     <!-- <bg-slide-part
       :bgExampleArr="$t('solutionText.airlineText.bgExampleList')"
     ></bg-slide-part> -->
 
     <new-bg-slide
-      :bannerData="$t('solutionText.airlineText.bgExampleList')"
+      :bannerData="moduleData.airline"
       :title="`Twin이`"
     ></new-bg-slide>
 
@@ -92,6 +92,8 @@ import NewModule from "~/components/products/partials/newModule.vue";
 import NewBgSlide from "~/components/products/partials/NewBgSlide.vue";
 
 import headingModule from "../../modules/Heading";
+
+import {filedData, moduleData} from "~/components/products/NewBgPartData.js";
 export default {
   components: {
     issuePart,
@@ -107,6 +109,8 @@ export default {
   },
   data() {
     return {
+      filedData,
+      moduleData,
       issueBg: "../images/pages/solution/img-solution-airline-top",
       infographicBtn: [
         [

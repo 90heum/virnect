@@ -40,7 +40,7 @@
       :boldText="$t('solutionText.roiText.boldText')"
     ></roi-part>
 
-    <div class="example-wrap">
+    <!-- <div class="example-wrap">
       <section class="divide-section">
         <div class="example-style">
           <heading-module
@@ -50,22 +50,22 @@
             :contents="$t('solutionText.exampleTitle.contents')"
           ></heading-module>
 
-          <!-- <div class="divide-contents-section example">
+          <div class="divide-contents-section example">
             <example-part
               :exampleArr="$t('solutionText.epcText.exampleList')"
             ></example-part>
-          </div> -->
+          </div>
           <new-module :bannerData="$t('solutionText.epcText.exampleList')"
             :title="`Twin이`"/>
         </div>
       </section>
-    </div>
+    </div> -->
     <!-- <bg-slide-part
       :bgExampleArr="$t('solutionText.epcText.bgExampleList')"
     ></bg-slide-part> -->
 
-<new-bg-slide
-      :bannerData="$t('solutionText.epcText.bgExampleList')"
+    <new-bg-slide
+      :bannerData="moduleData.epc"
       :title="`Twin이`"
     ></new-bg-slide>
     <offer-part
@@ -90,6 +90,7 @@ import NewModule from "~/components/products/partials/newModule.vue";
 import NewBgSlide from "~/components/products/partials/NewBgSlide.vue";
 
 import headingModule from "../../modules/Heading";
+import {filedData, moduleData} from "~/components/products/NewBgPartData.js";
 export default {
   components: {
     issuePart,
@@ -105,6 +106,8 @@ export default {
   },
   data() {
     return {
+      filedData,
+      moduleData,
       issueBg: "../images/pages/solution/img-solution-epc-top",
       infographicBtn: [
         [

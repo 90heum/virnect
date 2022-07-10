@@ -23,7 +23,7 @@
       :id="remoteFunctionPartId"
     ></function-part>
 
-    <effect-part
+    <!-- <effect-part
       :bg="effectBG"
       :category="$t('productsText.remoteText.effectHeading.category')"
       :title="$t('productsText.remoteText.effectHeading.title')"
@@ -32,7 +32,10 @@
       :greyBtn="$t('global.demoText')"
       :blueBtn="$t('global.ROIText')"
       :id="`remoteEffectPartId`"
-    ></effect-part>
+    ></effect-part> -->
+    <new-effect-part :title="title"
+                     :effectList="effectList.remote"
+                     :moduleData="moduleData.remote"/>
 
     <!-- <section class="divide-section">
       <heading-module
@@ -67,14 +70,14 @@
         </div>
       </section>
     </div> -->
-    <div class="example-style">
+    <!-- <div class="example-style">
       <new-module :bannerData="bannerData"
                   :title="`Remote가`"/>
-    </div>
-    <new-bg-slide
-      :bannerData="$t('productsText.remoteText.bgExampleList')"
+    </div> -->
+    <!-- <new-bg-slide
+      :bannerData="moduleData.remote"
       :title="`Remote가`"
-    ></new-bg-slide>
+    ></new-bg-slide> -->
   </section>
 </template>
 
@@ -88,6 +91,9 @@ import examplePart from "../partials/ExamplePart";
 import bgSlidePart from "../partials/BgSlidePart.vue";
 import NewModule from "~/components/products/partials/newModule.vue";
 import NewBgSlide from "~/components/products/partials/NewBgSlide.vue";
+import NewEffectPart from "~/components/products/partials/NewEffectPart.vue";
+import { filedData , moduleData } from "~/components/products/newModuleData.js";
+import { title, effectList } from "~/components/products/newEffectPartData.js";
 
 const bannerData = [
                   {
@@ -165,9 +171,14 @@ export default {
     headingModule,
     NewModule,
     NewBgSlide,
+    NewEffectPart,
   },
   data() {
     return {
+      effectList,
+      title,
+      filedData,
+      moduleData,
       bannerData,
       remoteIntro: {
         logo: "../images/pages/products/logo-products-bi-remote",
