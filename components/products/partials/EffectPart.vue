@@ -95,7 +95,7 @@ export default {
     font-size: 16px;
   }
   position: relative;
-  margin-top: 258px;
+  margin-top: 200px;
   text-align: center;
   border-top: 560px solid #202937;
   $height: 380px;

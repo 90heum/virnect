@@ -571,7 +571,7 @@
   .productsSubMain .proSubMainList .proSubMainListInner div span.proSubView .subViewInner>span,
   .productsSubMain .proSubMainList .proSubMainListInner div span.proSubMake .subMakeInner>span,
   .productsSubMain .proSubMainList .proSubMainListInner div span.proSubRemote .subRemoteInner>span {
-    min-width: 512px;
+    min-width: 50%;
   }
 
   .productsSubMain .proSubMainList .proSubMainListInner div span.proSubView,
@@ -629,7 +629,7 @@
   .productsSubMain .proSubMainList .proSubMainListInner div span.proSubView .subViewInner>span,
   .productsSubMain .proSubMainList .proSubMainListInner div span.proSubMake .subMakeInner>span,
   .productsSubMain .proSubMainList .proSubMainListInner div span.proSubRemote .subRemoteInner>span {
-    min-width: 384px;
+    width: 50%;
     height: 432px;
     padding: 0;
   }

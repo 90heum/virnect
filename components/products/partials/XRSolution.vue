@@ -69,7 +69,7 @@ export default {};
   margin: 0 auto;
   max-width: 1200px;
   width: 100%;
-  padding: 179px 30px 182px;
+  padding: 150px 30px;
   box-sizing: unset;
 }
 .overView .overViewWrap .overViewTit {

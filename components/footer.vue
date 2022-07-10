@@ -205,11 +205,10 @@
                   @click="[showServiceMenu(), toggle(), (showEarth = false)]"
                   v-click-outside="serviceHide"
                   v-if="isWeb"
-                  v-bind:style="hamServiceColor"
                 >
-                  <div class="select">
+                  <div class="select" v-bind:style="showStyle">
                     <div class="selected">
-                      <div class="selected-value"><a>VIRNECT Service</a></div>
+                      <div class="selected-value" v-bind:style="showText"><a>VIRNECT Service</a></div>
                       <div class="arrow">
                         <img
                           class="downIcon6"
@@ -502,8 +501,9 @@ export default {
     isWeb: true,
     showEarth: false,
     isServiceMenu: false,
-    hamServiceColor: {},
     serviceOpen: false,
+    showStyle: {},
+    showText: {}
   }),
   directives: {
     ClickOutside,
@@ -517,13 +517,15 @@ export default {
     },
     showServiceMenu() {
       this.isServiceMenu = !this.isServiceMenu;
-      this.hamServiceColor.backgroundColor = "#fff";
+      /* this.showStyle.backgroundColor = "#fff";
+      this.showText.color = "#000"; */
     },
     toggle() {
-      this.serviceOpen = true;
+      this.serviceOpen = true
     },
     serviceHide() {
-      this.serviceOpen = false;
+      this.serviceOpen = false
+      this.isServiceMenu = false
     },
     /* showServiceMenu () {
       if (isServiceMenu == true) {
