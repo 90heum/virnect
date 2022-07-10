@@ -91,7 +91,7 @@
 </template>
 
 <script>
-import HeadBanner from "~/components/support/headBanner.vue";
+import HeadBanner from "~/components/news/CommonBaner.vue";
 import SubMenu from "~/components/support/SubMenu.vue";
 
 export default {
