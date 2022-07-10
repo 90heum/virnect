@@ -1,4 +1,3 @@
-
 <template>
   <div>
     <main-banner class="mainBanner" />
