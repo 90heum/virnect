@@ -5,7 +5,7 @@
 
      <!-- 콘텍트 콘텐츠 -->
     <div class="contactTab">
-        <sub-menu :isActive="'notice'"/>
+        <!-- <sub-menu :isActive="'notice'"/> -->
 
             <div data-content="1" class="contactTabActive1">
                  <!-- NoticeDetail -->
