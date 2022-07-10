@@ -86,8 +86,8 @@ export default {
                     // el: ".swiper-pagination"
                 },
                 navigation: {
-                nextEl: ".swiper-button-prev",
-                prevEl: ".swiper-button-next",
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
                 },
                 breakpoints: {
                 }
