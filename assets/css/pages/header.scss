@@ -1147,6 +1147,7 @@ header {
         background: #fff;
         position: relative;
         height: 100vh;
+        overflow-y: scroll;
 
         .hamSubMenu {
             padding: 30px 24px;
@@ -1514,11 +1515,12 @@ header .headerInner .navWrap nav ul li a.navActive+header .subNavi {
 }
 
 @media screen and (max-width: 600px) {
-    body{
+    body {
         width: 100vw;
         min-width: 600px;
     }
 }
+
 @media screen and(max-width: 425px) {
     header .headerInner {
         padding: 0 24px;
