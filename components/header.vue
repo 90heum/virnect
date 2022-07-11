@@ -459,7 +459,7 @@
           </span>
           <div class="BtnWrap">
             <button>
-              <nuxt-link to="/support/inquiry"> 지금 사용해보기 </nuxt-link>
+              <nuxt-link to="/support/demo"> 지금 사용해보기 </nuxt-link>
             </button>
             <button>
               <nuxt-link to="/support/inquiry"> 문의하기 </nuxt-link>
@@ -653,7 +653,11 @@
           </span>
         </div>
         <span class="asideInfoLink">
-          <nuxt-link :to="`/news/detail?id=${contentList ? contentList[0]['id'] : ''}&type`">
+          <nuxt-link
+            :to="`/news/detail?id=${
+              contentList ? contentList[0]['id'] : ''
+            }&type`"
+          >
             <img
               :src="`${contentList ? contentList[0]['thumbnail'] : ''}`"
               alt="뉴스룸 이미지"
@@ -699,23 +703,21 @@
             <p>VIRNECT가 알려드립니다.</p>
           </span>
           <a href="#">
-                <nuxt-link to="/products/productsMain">
-                  <img
-                  src="~/assets/images/pages/product.png"
-                  alt="#"
-                  />
-                </nuxt-link>
-                <nuxt-link to="/solutions/energy_resource">
-                  <img
-                    src="~/assets/images/pages/value.png"
-                    alt="#"
-                  />
-                </nuxt-link>
+            <nuxt-link to="/products/productsMain">
+              <img src="~/assets/images/pages/product.png" alt="#" />
+            </nuxt-link>
+            <nuxt-link to="/solutions/energy_resource">
+              <img src="~/assets/images/pages/value.png" alt="#" />
+            </nuxt-link>
           </a>
         </span>
       </div>
     </div>
-    <mobile-header :isMenu="isMenu" :availableLocales="availableLocales" :showMenu="showMenu"/>
+    <mobile-header
+      :isMenu="isMenu"
+      :availableLocales="availableLocales"
+      :showMenu="showMenu"
+    />
   </header>
 </template>
 
@@ -829,11 +831,13 @@ export default {
   methods: {
     async getData() {
       try {
-      const data = await this.$axios.get(`admin/news?page=1&size=${20}`);
-      const dataJson = await data;
-      console.log(dataJson.data.data.newsBoardResponseList)
-      this.contentList = dataJson.data.data.newsBoardResponseList;
-    } catch (e) { console.error(e); };    
+        const data = await this.$axios.get(`admin/news?page=1&size=${20}`);
+        const dataJson = await data;
+        console.log(dataJson.data.data.newsBoardResponseList);
+        this.contentList = dataJson.data.data.newsBoardResponseList;
+      } catch (e) {
+        console.error(e);
+      }
     },
     /* handleClickButton(){
       this.visible = !this.visible
@@ -957,7 +961,6 @@ export default {
       }
     },
   },
-  
 };
 </script>
 

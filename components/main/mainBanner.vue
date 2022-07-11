@@ -13,10 +13,12 @@
         </p>
         <span class="bannerButton">
           <button>
-            <a href="#">자세히 보기</a>
+            <nuxt-link to="/products/productsMain" target="_blank"
+              >자세히 보기</nuxt-link
+            >
           </button>
           <button>
-            <a href="support/inquiry" target="blank">데모신청</a>
+            <nuxt-link to="/support/demo" target="_blank">데모신청</nuxt-link>
           </button>
         </span>
         <span class="bannerTitN4">
@@ -49,10 +51,7 @@
             <a href="#">자세히 보기</a>
           </button>
           <button>
-            <a href="/support/demo"
-               target="blank"
-              >데모신청</a
-            >
+            <a href="/support/demo" target="blank">데모신청</a>
           </button>
         </span>
         <span class="bannerTitMb2">

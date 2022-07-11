@@ -323,8 +323,8 @@
               <span class="downLoad">
                 <span>
                   <a
-                    href="https://pardot.virnect.com/l/929783/2022-06-16/3nq4r/929783/1655376706vzuI1vzz/VIRNECT_Company_Profile.pdf"
-                    download="회사소개서(PDF)"
+                    href="http://13.209.200.75:8080/static/company/company/220221_VIRNECT_Brochure.pdf "
+                    target="_blank"
                   >
                     <i class="downIcon"
                       ><img
@@ -341,8 +341,8 @@
                 </span>
                 <span>
                   <a
-                    href="https://pardot.virnect.com/l/929783/2022-06-16/3nq4g/929783/1655376662PnC6EO3z/VIRNECT_Solution_Leaflet_ver_LF.KR2203A.pdf"
-                    download="제품소개서(PDF)"
+                    href="http://13.209.200.75:8080/static/company/product/VIRNECT_Solution_Leaflet_ver_LF.KR2203A.pdf"
+                    target="_blank"
                   >
                     <i class="downIcon"
                       ><img
