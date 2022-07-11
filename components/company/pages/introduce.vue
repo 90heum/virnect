@@ -78,7 +78,66 @@
           </span>
         </div>
       </section>
-      <company-awards />
+      <!-- <company-awards /> -->
+      <!-- 인증 및 수상 모듈 -->
+      <div class="company">
+        <div class="companyWrap">
+          <span class="companyAwards">
+            <div class="awardsWrap">
+              <div>
+                <p>인증 및 수상</p>
+              </div>
+              <div class="awardsSlider">
+                <img
+                  src="~/assets/images/pages/right@2x.png"
+                  class="prevBtn"
+                  @click="
+                    () => {
+                      if (awardIdx.start <= 0) return;
+                      awardIdx.start = Number(awardIdx.start) - 6;
+                      awardIdx.end = Number(awardIdx.end) - 6;
+                    }
+                  "
+                />
+                <span
+                  class="SliderList"
+                  v-for="(data, idx) of award.filter((e, idx) => {
+                    if (idx >= awardIdx.start && idx < awardIdx.end) {
+                      return e;
+                    }
+                  })"
+                  :key="idx"
+                >
+                  <span>
+                    <img
+                      :src="data.src"
+                      :alt="data.alt"
+                      class="CompanyBottomBannerAwardSlideImg"
+                    />
+                  </span>
+                  <span>
+                    <p>{{ data.title }}</p>
+                    <p>{{ data.host }}</p>
+                    <p>{{ data.info }}</p>
+                  </span>
+                </span>
+                <img
+                  src="~/assets/images/pages/left@2x.png"
+                  class="nextBtn"
+                  @click="
+                    () => {
+                      if (awardIdx.end >= award.length - 1) return;
+                      awardIdx.start = Number(awardIdx.start) + 6;
+                      awardIdx.end = Number(awardIdx.end) + 6;
+                    }
+                  "
+                />
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+
       <section class="aboutHistory">
         <div class="aboutHistoryInner">
           <span class="aboutHistoryTit">
@@ -411,6 +470,7 @@ import snbSection from "~/components/modules/Snb";
 import headingModule from "../../modules/Heading";
 import companyAwards from "~/components/main/companyAwards.vue";
 import SubVisual from "~/layouts/common/SubVisual.vue";
+import { awardData } from "~/components/dummy/award.js";
 
 const historyData = [
   {
@@ -443,8 +503,14 @@ export default {
       CustomerTab: 1,
       HistoryTab: 1,
       yearsData: historyData,
+      awardIdx: {
+        start: 0,
+        end: 6,
+      },
+      award: awardData,
     };
   },
+
   methods: {
     handleCustomerTab(e) {
       this.CustomerTab = e;
@@ -458,4 +524,875 @@ export default {
 <style lang="scss" scoped>
 //@import "~assets/css/pages/products.scss";
 @import "~assets/css/modules/aboutVirnect.scss";
+
+.company {
+  display: block;
+  overflow: hidden;
+  .companyWrap {
+    // 회사 배너
+    .companyBanner {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      height: 1010px;
+      overflow: hidden;
+      background-image: url("https://velog.velcdn.com/images/kyj0206/post/06ebae19-89fa-4331-a600-f572bc8273d6/image.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      .companyBannerInner {
+        gap: 200px;
+        height: 440px;
+        box-sizing: border-box;
+        align-items: center;
+        display: flex;
+        transform: translate(17%, 55%);
+        max-width: 2400px;
+
+        margin: 0 auto;
+        width: 100%;
+        color: #fff;
+        .companyBannerTit {
+          min-width: 558px;
+          > p {
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: -0.23px;
+            color: #bfdcff;
+            margin-bottom: 16px;
+          }
+          h2 {
+            font-size: 44px;
+            font-weight: bold;
+            letter-spacing: -0.55px;
+            color: #fff;
+            margin-bottom: 32px;
+          }
+          span {
+            display: block;
+            &:nth-child(3) {
+              margin-bottom: 75px;
+              > p {
+                font-size: 16px;
+                line-height: 1.75;
+                letter-spacing: -0.2px;
+                color: #e6e8eb;
+              }
+            }
+          }
+          div {
+            display: flex;
+            flex-direction: column;
+            span {
+              &:first-child {
+                font-size: 18px;
+                font-weight: bold;
+                letter-spacing: -0.23px;
+                color: #e6e8eb;
+                margin-bottom: 10px;
+              }
+              &:last-child {
+                display: flex;
+                gap: 14px;
+                p {
+                  &:first-child {
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 2;
+                    letter-spacing: -0.2px;
+                    color: #bfdcff;
+                  }
+                  &:last-child {
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 1.72;
+                    letter-spacing: -0.23px;
+                    color: #f7f8f9;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .companyBannerCont {
+          display: block;
+          gap: 140px;
+          height: 100%;
+          span {
+            img {
+              min-width: 660px;
+              width: 100%;
+            }
+            p {
+              &:nth-child(2) {
+                font-size: 24px;
+                font-weight: bold;
+                line-height: 1;
+                letter-spacing: normal;
+                color: #fff3bb;
+                margin-top: 26px;
+                margin-bottom: 12px;
+              }
+              &:last-child {
+                font-size: 16px;
+                font-weight: normal;
+                line-height: 1;
+                letter-spacing: -0.2px;
+                color: #bfdcff;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // 회사소개 모듈
+    .companyVirnect {
+      display: flex;
+      position: absolute;
+      box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.14);
+      background-color: #fff;
+      box-sizing: border-box;
+      left: 50%;
+      transform: translatex(-50%);
+      top: -90px;
+      div {
+        display: block;
+        min-width: 401px;
+        width: 100%;
+        position: relative;
+        a {
+          display: block;
+          img {
+            display: block;
+            max-width: 401px;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        &.virnectModule1 {
+          a {
+            div {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              top: 51%;
+              transform: translateY(-50%);
+              display: flex;
+              padding: 0px 30px 0 67px;
+              justify-content: space-between;
+              align-items: center;
+              > span {
+                font-size: 18px;
+                font-weight: bold;
+                letter-spacing: -0.23px;
+                text-align: center;
+                color: #092e6e;
+                img {
+                  max-width: 19px;
+                  min-width: 19px;
+                  width: 100%;
+                }
+                &:last-child {
+                  transform: translateY(-260%);
+                }
+              }
+            }
+          }
+        }
+        &.virnectModule2 {
+          a {
+            div {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              top: 51%;
+              transform: translateY(-50%);
+              display: flex;
+              padding: 0px 30px 0 67px;
+              justify-content: space-between;
+              align-items: center;
+              > span {
+                font-size: 18px;
+                font-weight: bold;
+                letter-spacing: -0.23px;
+                color: #f7f8f9;
+                img {
+                  max-width: 19px;
+                  min-width: 16px;
+                  width: 100%;
+                }
+                &:last-child {
+                  transform: translateY(-300%);
+                }
+              }
+            }
+          }
+        }
+        &.virnectModule3 {
+          a {
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+            justify-content: center;
+            height: 100%;
+            gap: 10px;
+            > span {
+              font-size: 14px;
+              font-weight: 500;
+              line-height: 1.36;
+              letter-spacing: -0.18px;
+              color: #092e6e;
+              &:first-child {
+                u {
+                  display: block;
+                  height: 100%;
+                }
+              }
+              img {
+                max-width: 22px;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // 버넥트 뉴스 모듈
+    .companyNews {
+      position: relative;
+      display: block;
+      width: 100%;
+      border-bottom: 1px solid #c5c8cf;
+      .companyNewsWrap {
+        margin: 0 auto;
+        display: block;
+        max-width: 1200px;
+        box-sizing: unset;
+        padding: 180px 30px 70px;
+        li,
+        ul {
+          list-style: none;
+        }
+        ul {
+          padding-left: 0px;
+        }
+        > span {
+          display: flex;
+          width: 100%;
+          &:first-child {
+            justify-content: space-between;
+            margin-bottom: 30px;
+            > p {
+              font-size: 18px;
+              font-weight: bold;
+              letter-spacing: -0.23px;
+              color: #121212;
+            }
+            span {
+              a {
+                display: flex;
+                gap: 6px;
+                p {
+                  font-size: 14px;
+                  font-weight: bold;
+                  font-stretch: normal;
+                  letter-spacing: -0.18px;
+                  text-align: right;
+                  color: #9a9da3;
+                }
+                i {
+                  img {
+                    max-width: 13px;
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
+          &:last-child {
+            display: block;
+            // border-bottom: ;
+            ul {
+              display: flex;
+              gap: 24px;
+              li {
+                max-width: 281px;
+                width: calc(100% / 4);
+                a {
+                  display: flex;
+                  flex-direction: column;
+                  span {
+                    &:first-child {
+                      margin-bottom: 18px;
+                      img {
+                        width: 100%;
+                      }
+                    }
+                    &:nth-child(2) {
+                      font-size: 14px;
+                      font-weight: 500;
+                      margin-bottom: 14px;
+                      letter-spacing: -0.18px;
+                      color: #121212;
+                      line-height: 1.3;
+                      overflow: hidden;
+                      // 말줄임
+                      text-overflow: ellipsis;
+                      display: -webkit-box;
+                      -webkit-line-clamp: 2;
+                      -webkit-box-orient: vertical;
+                    }
+                    &:last-child {
+                      border: solid 1px #c5c8cf;
+                      max-width: max-content;
+                      padding: 5.5px 10px;
+                      font-size: 12px;
+                      font-weight: bold;
+                      letter-spacing: -0.15px;
+                      text-align: center;
+                      &.news {
+                        color: #0a51b7;
+                      }
+                      &.people {
+                        color: #d88318;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        ul li a {
+          text-decoration: none;
+        }
+      }
+    }
+
+    // 인증 및 수상 모듈
+    .companyAwards {
+      display: block;
+      width: 100%;
+      background-color: #f7f8fa;
+      .awardsWrap {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 42px;
+        max-width: 1200px;
+        box-sizing: unset;
+        padding: 69px 0 100px;
+        div > .SliderList {
+          font-size: 10px;
+          span:nth-child(2) {
+            height: 36px;
+          }
+        }
+        div {
+          &:first-child {
+            p {
+              font-size: 18px;
+              font-weight: bold;
+              letter-spacing: -0.23px;
+              color: #121212;
+            }
+          }
+          &:last-child {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            .SliderList {
+              width: calc(100% / 7 - 40px);
+              span {
+                position: relative;
+                max-width: 160px;
+                &:first-child {
+                  img {
+                    max-width: 160px;
+                    margin-bottom: 6px;
+                  }
+                  &::after {
+                    display: block;
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    border-bottom: 1px solid #c5c8cf;
+                    left: 0;
+                    bottom: 0;
+                  }
+                }
+                &:last-child {
+                  width: 100%;
+                  display: block;
+                  text-align: center;
+                  font-size: 12px;
+                  margin: 14px 19px 0 15px;
+                  color: #9b9da3;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 1970px) {
+  .company .companyWrap .companyBanner .companyBannerInner {
+    gap: 5%;
+  }
+}
+
+@media screen and(max-width: 1630px) {
+  .company .companyWrap .companyBanner .companyBannerInner {
+    gap: 5%;
+    left: 60%;
+  }
+}
+
+@media screen and(max-width: 1450px) {
+  .company .companyWrap .companyBanner .companyBannerInner {
+    gap: 5%;
+    left: 55%;
+    top: 50%;
+  }
+}
+
+@media screen and(max-width: 1370px) {
+  .company .companyWrap .companyBanner .companyBannerInner {
+    left: 53%;
+  }
+}
+
+@media screen and(max-width: 1350px) {
+  .company .companyWrap .companyBanner .companyBannerInner .companyBannerCont {
+    gap: 70px;
+  }
+
+  .company .companyWrap .companyBanner {
+    height: 1326px;
+    background-image: url(https://velog.velcdn.com/images/kyj0206/post/78d93c8e-931f-4655-82c3-2f174608c229/image.jpg);
+    background-size: 100% 100%;
+  }
+  .company .companyWrap .companyBanner .companyBannerInner {
+    flex-direction: column;
+  }
+
+  .company .companyWrap .companyBanner .companyBannerInner {
+    height: auto;
+  }
+
+  .company .companyWrap .companyBanner .companyBannerInner {
+    align-items: flex-start;
+    transform: translate(5%, 20%);
+    gap: 142px;
+  }
+
+  .company .companyWrap .companyBanner .companyBannerInner .companyBannerTit {
+    text-align: center;
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 70px;
+  }
+
+  .company
+    .companyWrap
+    .companyBanner
+    .companyBannerInner
+    .companyBannerTit
+    span:nth-child(3) {
+    margin-bottom: 103px;
+  }
+
+  .company
+    .companyWrap
+    .companyBanner
+    .companyBannerInner
+    .companyBannerTit
+    span:nth-child(3)
+    > p {
+    display: inline;
+  }
+
+  .company
+    .companyWrap
+    .companyBanner
+    .companyBannerInner
+    .companyBannerTit
+    div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  .company
+    .companyWrap
+    .companyBanner
+    .companyBannerInner
+    .companyBannerTit
+    div
+    span:last-child {
+    justify-content: flex-start;
+  }
+
+  .company .companyWrap .companyVirnect {
+    position: static;
+    transform: translateX(0);
+  }
+
+  .company .companyWrap .companyVirnect div > a > img {
+    max-width: none;
+    min-height: 176px;
+    max-height: 176px;
+    object-fit: cover;
+  }
+
+  .company .companyWrap .companyVirnect {
+    flex-wrap: wrap;
+  }
+
+  .company .companyWrap .companyVirnect div {
+    width: 50%;
+  }
+  .company .companyWrap .companyVirnect div.virnectModule1 {
+    height: 176px;
+  }
+  .company .companyWrap .companyVirnect div.virnectModule2 {
+    height: 176px;
+  }
+  .company .companyWrap .companyVirnect div.virnectModule3 {
+    width: 100%;
+    height: 80px;
+  }
+
+  .company .companyWrap .companyNews .companyNewsWrap {
+    padding: 68px 30px 70px;
+  }
+}
+
+@media screen and(max-width: 1024px) {
+  .company
+    .companyWrap
+    .companyAwards
+    .awardsWrap
+    div:last-child
+    .SliderList
+    span:first-child
+    img {
+    width: 100%;
+    max-width: 226px;
+  }
+  .company .companyWrap .companyAwards .awardsWrap div:last-child {
+    gap: 25px;
+  }
+
+  .company .companyWrap .companyAwards .awardsWrap div:last-child .SliderList {
+    width: calc(100% / 4 - 19px);
+  }
+
+  .company .companyWrap .companyBanner {
+    height: 1326px;
+    background-image: url(https://velog.velcdn.com/images/kyj0206/post/78d93c8e-931f-4655-82c3-2f174608c229/image.jpg);
+    background-size: auto 100%;
+  }
+  .company .companyWrap .companyVirnect div {
+    min-width: auto;
+  }
+}
+
+@media screen and(max-width: 768px) {
+  .company
+    .companyWrap
+    .companyAwards
+    .awardsWrap
+    div:last-child
+    .SliderList
+    span:first-child
+    img {
+    width: 100%;
+    max-width: 226px;
+  }
+  .company .companyWrap .companyAwards .awardsWrap div:last-child {
+    gap: 28px;
+  }
+
+  .company .companyWrap .companyAwards .awardsWrap div:last-child .SliderList {
+    width: calc(100% / 3 - 19px);
+  }
+
+  .company .companyWrap .companyBanner .companyBannerInner {
+    transform: translate(0%, 10%);
+    gap: 122px;
+    padding-left: 24px;
+  }
+
+  .company .companyWrap .companyBanner .companyBannerInner .companyBannerTit {
+    min-width: auto;
+    padding-right: 24px;
+  }
+
+  .company .companyWrap .companyBanner {
+    height: 1274px;
+    background-image: url(https://velog.velcdn.com/images/kyj0206/post/78d93c8e-931f-4655-82c3-2f174608c229/image.jpg);
+    background-size: auto 100%;
+  }
+
+  .company .companyWrap .companyNews .companyNewsWrap > span:last-child ul {
+    flex-wrap: wrap;
+    gap: 19px;
+    justify-content: space-between;
+  }
+
+  .company .companyWrap .companyNews .companyNewsWrap > span:last-child ul li {
+    width: calc(95% / 2);
+    max-width: none;
+  }
+}
+.prevBtn,
+.nextBtn {
+  width: 42px;
+  height: 42x;
+  cursor: pointer;
+  margin-left: 0;
+}
+.awardsSlider {
+  display: flex;
+  align-items: center;
+}
+@media screen and(max-width: 735px) {
+  .company .companyWrap .companyBanner .companyBannerInner {
+    gap: 99px;
+  }
+
+  .company .companyWrap .companyBanner .companyBannerInner .companyBannerCont {
+    gap: 50px;
+  }
+
+  .company .companyWrap .companyBanner {
+    height: 1090px;
+    background-image: url(https://velog.velcdn.com/images/kyj0206/post/78d93c8e-931f-4655-82c3-2f174608c229/image.jpg);
+    background-size: auto 100%;
+  }
+
+  .company
+    .companyWrap
+    .companyBanner
+    .companyBannerInner
+    .companyBannerCont
+    span
+    img {
+    min-width: 377px;
+  }
+
+  .company
+    .companyWrap
+    .companyBanner
+    .companyBannerInner
+    .companyBannerTit
+    div {
+    margin: 0;
+    width: 100%;
+  }
+
+  .company
+    .companyWrap
+    .companyBanner
+    .companyBannerInner
+    .companyBannerTit
+    > p {
+    margin-bottom: 36px;
+  }
+
+  .company
+    .companyWrap
+    .companyBanner
+    .companyBannerInner
+    .companyBannerTit
+    h2 {
+    margin-bottom: 26px;
+  }
+
+  .company
+    .companyWrap
+    .companyBanner
+    .companyBannerInner
+    .companyBannerTit
+    span:nth-child(3) {
+    margin-bottom: 39px;
+  }
+
+  .company
+    .companyWrap
+    .companyBanner
+    .companyBannerInner
+    .companyBannerTit
+    div
+    span:last-child
+    p:last-child {
+    text-align: left;
+  }
+  .company .companyWrap .companyBanner .companyBannerInner .companyBannerTit {
+    padding-right: 24px;
+  }
+
+  .company .companyWrap .companyVirnect div.virnectModule1 a div,
+  .company .companyWrap .companyVirnect div.virnectModule2 a div {
+    padding: 0 24px;
+  }
+}
+
+@media screen and(max-width: 455px) {
+  .company .companyWrap .companyNews .companyNewsWrap > span:last-child ul li {
+    width: calc(100% / 1);
+    max-width: none;
+  }
+
+  .company .companyWrap .companyNews .companyNewsWrap > span:last-child ul {
+    gap: 38px;
+  }
+}
+
+@media screen and(max-width: 425px) {
+  .company .companyWrap .companyAwards .awardsWrap div:last-child {
+    gap: 38px;
+  }
+
+  .company .companyWrap .companyAwards .awardsWrap div:last-child .SliderList {
+    width: calc(100% / 2 - 19px);
+  }
+
+  .company .companyWrap .companyBanner {
+    height: 1090px;
+    background-image: url(https://velog.velcdn.com/images/kyj0206/post/78d93c8e-931f-4655-82c3-2f174608c229/image.jpg);
+    background-size: auto 100%;
+  }
+
+  .company
+    .companyWrap
+    .companyBanner
+    .companyBannerInner
+    .companyBannerCont
+    span
+    img {
+    min-width: 377px;
+  }
+}
+.CompanyBottomBanner {
+  width: 100%;
+  overflow: hidden;
+  top: 0px;
+  /* background-color: #000; */
+
+  .bannerWrap {
+    position: relative;
+
+    // 실제사용 모듈용 css 구역!!!!!!!!!!!!!!
+    .bannerMoule {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 35%);
+      padding: 0 30px;
+
+      .banner1024 {
+        display: block;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        a {
+          display: block;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      .banner768 {
+        display: none;
+
+        a {
+          display: block;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    // 실제사용 모듈용 css 구역 여기까지!!!!!!!!!!!
+  }
+}
+:root {
+  --shadow: rgba(0, 0, 0, 0.8);
+}
+.CompanyBottomBannerSlide {
+  margin-right: 15px;
+  max-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 1rem;
+  img {
+    width: 100%;
+    max-width: 660px;
+  }
+}
+.CompanyBottomBanner .CompanyBottomBannerSlider-container {
+  display: inline-flex;
+  overflow: hidden;
+  scrollbar-width: none;
+  transform: translateX(0);
+  will-change: transform;
+  transition: transform 0.3s ease-out;
+  cursor: grab;
+}
+
+@media (min-width: 1200px) {
+  .CompanyBottomBanner .slide {
+    padding: 3rem;
+  }
+}
+
+.CompanyBottomBanner .slide img {
+  max-width: 100%;
+  width: 80%;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 5px 5px 50px -1px var(--shadow);
+  border-radius: 4px;
+  user-select: none;
+}
+
+.CompanyBottomBanner .CompanyGrabbing {
+  cursor: grabbing;
+}
+
+.CompanyBottomBanner .CompanyGrabbing .slide img {
+  transform: scale(0.9);
+  box-shadow: 5px 5px 40px -1px var(--shadow);
+}
+
+@media screen and(max-width:768px) {
+  .CompanyBottomBanner .banner .bannerWrap .bannerMoule .banner1024 {
+    display: none;
+  }
+
+  .CompanyBottomBanner .banner .bannerWrap .bannerMoule .banner768 {
+    display: block;
+  }
+
+  .CompanyBottomBanner .banner .bannerWrap .bannerMoule {
+    padding: 0 24px;
+    transform: translate(-50%, 60%);
+  }
+}
 </style>

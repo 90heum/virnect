@@ -1,25 +1,107 @@
 <template>
   <section class="products-section">
     <subMenuMs />
-    <sub-visual-section
-      :image="visualText.image"
-      :category="'XR Devices'"
-      :title="$t('companyText.msText.title')"
-    ></sub-visual-section>
-    <!-- <snb-section :snbArr="$t('gnb[1].array')"></snb-section> -->
-    <transition name="app-fade" mode="out-in">
-      <ms-component />
-    </transition>
-    <!-- <tail-section
-      :bg="tailText.bg"
-      :mention="$t('productsText.tailText')"
-      :blueBtn="tailText.blue"
-      :blueRouter="tailText.blueRouter"
-      :greyBtn="tailText.grey"
-      :greyRouter="tailText.greyRouter"
-    ></tail-section> -->
-    <!-- <tailSection class="aa" /> -->
-    <CtaModule />
+    <section class="XRDeviceBanner">
+      <div class="XRDeviceBannerInner">
+        <p>Products</p>
+        <h2>XR Devices</h2>
+        <span>
+          다양한 XR(eXtended Reality) 디바이스를 통해 버넥트 확장현실(XR)
+          솔루션과
+          <p>완벽한 퍼포먼스를 경험하세요</p>
+        </span>
+      </div>
+    </section>
+    <section class="classDeviceVideo">
+      <div class="DeviceVideoWrap">
+        <div class="videoTit">
+          <i>
+            <img
+              src="https://velog.velcdn.com/images/kyj0206/post/ca2e8983-303e-4f04-b4af-ca2a180f3a44/image.png"
+              alt="타이틀로고"
+            />
+          </i>
+          <h2>Hololens 2</h2>
+          <p>홀로렌즈 전용 버넥트 XR 솔루션을 경험해보세요.</p>
+        </div>
+        <div class="videoCont">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/eqFqtAJMtYE?autoplay=1&mute=1"
+            title="Introducing Microsoft HoloLens 2"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="videoButton">
+          <button>
+            <a href="#"> 제품 정보 바로가기 </a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 기능소개 -->
+    <heading-module
+      :title="$t('productsText.msText.introText.title')"
+    ></heading-module>
+    <benefit-part
+      :benefitArr="$t('productsText.msText.benefitLists')"
+    ></benefit-part>
+
+    <!-- 적용사례 -->
+    <div class="example-wrap">
+      <section class="divide-section">
+        <div class="example-style">
+          <heading-module
+            :align="exampleAlign"
+            :category="$t('solutionText.exampleTitle.category')"
+            :title="$t('solutionText.exampleTitle.title')"
+            :contents="$t('solutionText.exampleTitle.contents')"
+          ></heading-module>
+
+          <div class="divide-contents-section example">
+            <example-part
+              :exampleArr="$t('solutionText.energyText.exampleList')"
+            ></example-part>
+          </div>
+        </div>
+      </section>
+    </div>
+    <bg-slide-part
+      :bgExampleArr="$t('solutionText.energyText.bgExampleList')"
+    ></bg-slide-part>
+    <!-- 아이템 -->
+    <section class="deviceItem">
+      <div class="deviceItemWrap">
+        <span>
+          <a href="https://www.realwear.com/ko/hmt-1/">
+            <p>Realwear</p>
+            <h2>HMT - 1</h2>
+            <i>
+              <img
+                src="https://velog.velcdn.com/images/kyj0206/post/127af7ac-6fc1-4d40-a6e3-f5feb348bdbe/image.png"
+                alt="hmt"
+              />
+            </i>
+          </a>
+        </span>
+        <span>
+          <a href="https://www.realwear.com/ko/navigator/">
+            <p>Realwear</p>
+            <h2>Navigator 500</h2>
+            <i>
+              <img
+                src="https://velog.velcdn.com/images/kyj0206/post/d82cc586-f962-453d-a771-5b62823b45bd/image.png"
+                alt="500"
+              />
+            </i>
+          </a>
+        </span>
+      </div>
+    </section>
   </section>
 </template>
 
@@ -30,6 +112,10 @@ import tailSection from "../../layouts/common/Tail.vue";
 import msComponent from "../../components/products/pages/MS.vue";
 import subMenuMs from "~/components/products/partials/subMenuMs.vue";
 import CtaModule from "~/components/main/ctaModule.vue";
+import headingModule from "~/components/modules/Heading.vue";
+import examplePart from "~/components/products/partials/ExamplePart.vue";
+import bgSlidePart from "~/components/products/partials/BgSlidePart.vue";
+import benefitPart from "~/components/products/partials/BenefitPart.vue";
 export default {
   components: {
     subVisualSection,
@@ -38,6 +124,10 @@ export default {
     msComponent,
     subMenuMs,
     CtaModule,
+    headingModule,
+    examplePart,
+    bgSlidePart,
+    benefitPart,
   },
   data() {
     return {
@@ -61,11 +151,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "~assets/css/pages/products.scss";
-.aa {
-  //margin-top: 100px;
-}
-.bb {
-  margin: 0 auto;
-}
+@import "~/assets/css/modules/XR_DeviceBanner.scss";
+@import "~/assets/css/modules/XR_DeviceVideo.scss";
+@import "~/assets/css/pages/products.scss";
+@import "~/assets/css/modules/deviceItem.scss";
 </style>

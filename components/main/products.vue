@@ -787,6 +787,17 @@ export default {
     min-height: 1000px;
   }
 }
+@media screen and (max-width: 600px) {
+  .productsModule {
+    padding-top: 196px;
+  }
+  .productsModule .moduleBottom {
+    min-height: 770px;
+  }
+  .productsModule .moduleTop .moduleTopNavi ul {
+    padding-left: 0;
+  }
+}
 @media screen and (max-width: 425px){
   .moduleBottomWrapTrack,
     .moduleBottomWrapTwin,
@@ -795,5 +806,8 @@ export default {
     .moduleBottomWrapRemote{
       flex-direction: column;
     }
+    .productsModule .moduleBottom {
+    min-height: 1000px;
+  }
 }
 </style>

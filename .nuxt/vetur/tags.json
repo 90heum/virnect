@@ -10,6 +10,15 @@
   },
   "ApiAxios": {
     "description": "Auto imported from components/api/axios.js"
+<<<<<<< HEAD
+=======
+  },
+  "DummyAward": {
+    "description": "Auto imported from components/dummy/award.js"
+  },
+  "MixinsMixin": {
+    "description": "Auto imported from components/mixins/mixin.js"
+>>>>>>> 01b1d3a0dda90104d3d0cf2964645ee41088a164
   },
   "DummyAward": {
     "description": "Auto imported from components/dummy/award.js"
@@ -98,9 +107,12 @@
   "ModulesYoutubeFullscreen": {
     "description": "Auto imported from components/modules/YoutubeFullscreen.vue"
   },
+<<<<<<< HEAD
   "NewsCommonBaner": {
     "description": "Auto imported from components/news/CommonBaner.vue"
   },
+=======
+>>>>>>> 01b1d3a0dda90104d3d0cf2964645ee41088a164
   "Paging": {
     "description": "Auto imported from components/paging/paging.vue"
   },

@@ -126,7 +126,7 @@ export default {
                 display: block;
                 cursor: pointer;
                 height: 100%;
-                padding: 10px;
+                padding: 26px;
                 border: solid 1px #e6e8eb;
                 background-color: #fff;
                 max-width: 324px;
@@ -231,7 +231,7 @@ export default {
         display: block;
         width: 100%;
         overflow: hidden;
-        height: 24px;
+        height: 26px;
         p {
             max-width: 60px;
             max-height: 24px;

@@ -555,6 +555,15 @@
   .aboutVirnect .customers .customersInner .customersCont .customerContCont li:nth-child(4n) {
     margin-right: 0;
   }
+  .aboutVirnect .aboutHistory {
+    padding: 100px 0;
+  }
+  .aboutHistoryContTab {
+    padding-left: 0;
+    li {
+      font-size: 16px;
+    }
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -576,5 +585,11 @@
 
   .aboutVirnect .customers .customersInner .customersCont .customerContCont li:nth-child(2n) {
     margin-right: 0;
+  }
+  .aboutVirnect .aboutHistory .aboutHistoryInner .aboutHistoryCont .aboutHistoryContTab li{
+      font-size: 16px;
+  }
+  .aboutVirnect .aboutHistory .aboutHistoryInner .aboutHistoryCont .aboutHistoryContTab li.active {
+    font-size: 16px;
   }
 }
