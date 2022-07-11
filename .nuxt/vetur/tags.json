@@ -8,11 +8,14 @@
   "Header": {
     "description": "Auto imported from components/header.vue"
   },
+  "ApiAxios": {
+    "description": "Auto imported from components/api/axios.js"
+  },
   "DummyAward": {
     "description": "Auto imported from components/dummy/award.js"
   },
-  "ApiAxios": {
-    "description": "Auto imported from components/api/axios.js"
+  "MixinsMixin": {
+    "description": "Auto imported from components/mixins/mixin.js"
   },
   "MainBannerModule": {
     "description": "Auto imported from components/main/bannerModule.vue"
@@ -41,8 +44,8 @@
   "MainUseCase": {
     "description": "Auto imported from components/main/useCase.vue"
   },
-  "MixinsMixin": {
-    "description": "Auto imported from components/mixins/mixin.js"
+  "NewsCommonBaner": {
+    "description": "Auto imported from components/news/CommonBaner.vue"
   },
   "ModulesBanner": {
     "description": "Auto imported from components/modules/Banner.vue"
@@ -97,9 +100,6 @@
   },
   "ModulesYoutubeFullscreen": {
     "description": "Auto imported from components/modules/YoutubeFullscreen.vue"
-  },
-  "NewsCommonBaner": {
-    "description": "Auto imported from components/news/CommonBaner.vue"
   },
   "Paging": {
     "description": "Auto imported from components/paging/paging.vue"
