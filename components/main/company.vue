@@ -129,19 +129,30 @@
           </span>
           <span>
             <ul>
-              <li v-for="(data, idx) of contentList ? contentList.filter((e, idx) => { if (idx < 4) return e;}) : []"
-                  :key="idx">
+              <li
+                v-for="(data, idx) of contentList
+                  ? contentList.filter((e, idx) => {
+                      if (idx < 4) return e;
+                    })
+                  : []"
+                :key="idx"
+              >
                 <nuxt-link :to="`/news/detail?id=${data.id}&type`">
                   <span>
-                    <img
-                      :src="`${data.thumbnail}`"
-                      alt="뉴스리스트 이미지"
-                    />
+                    <img :src="`${data.thumbnail}`" alt="뉴스리스트 이미지" />
                   </span>
                   <span>
-                    {{$i18n.localeProperties.code === "ko" ? data.title : data.titleEn}}
+                    {{
+                      $i18n.localeProperties.code === "ko"
+                        ? data.title
+                        : data.titleEn
+                    }}
                   </span>
-                  <span class="news">{{$i18n.localeProperties.code === "ko" ? data.typeName : data.typeNameEn}}</span>
+                  <span class="news">{{
+                    $i18n.localeProperties.code === "ko"
+                      ? data.typeName
+                      : data.typeNameEn
+                  }}</span>
                 </nuxt-link>
               </li>
             </ul>
@@ -211,7 +222,7 @@
 import { awardData } from "~/components/dummy/award.js";
 export default {
   props: {
-    contentList: Array
+    contentList: Array,
   },
   methods: {},
   data() {
@@ -346,7 +357,6 @@ export default {
       }
     }
   },
-   
 };
 </script>
 

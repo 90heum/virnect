@@ -154,7 +154,7 @@ export default {
 }
 .features .featuresWrap .featuresTit ul li {
   gap: 10px;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;

@@ -851,9 +851,7 @@
 		},
 		"msText": {
 			"introText": {
-				"category": "MS Hololens 2",
-				"title": "버넥트의 제품은 증강현실을 넘어서 <br>혼합현실 영역까지 확장됩니다",
-				"contents": "홀로렌즈 전용 버넥트 AR 솔루션을 경험해보세요."
+				"title": "기능소개"
 			},
 			"benefitLists": [
 				{
