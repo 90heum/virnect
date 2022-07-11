@@ -487,7 +487,7 @@ const historyData = [
   },
   {
     years: "2016",
-  },
+  }, 
 ];
 export default {
   components: {
