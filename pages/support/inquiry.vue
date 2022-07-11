@@ -72,14 +72,23 @@
                   v-if="isTab === 1"
                   id="iframe1"
                   src="https://pardot.virnect.com/l/929783/2022-06-16/3nplr"
+                  frameborder="0"
+                  marginwidth="0"
+                  marginheight="0"
+                  scrolling="auto"
                   style="
                     padding-bottom: 49px;
                     position: absolute;
-                    border: 0;
-                    display: block;
+                    border: none;
                     width: 100%;
                     height: 100%;
+                    max-width: 100%;
+                    display: block;
                   "
+                  allowfullscreen
+                  webkitallowfullscreen
+                  mozallowfullscreen
+                  msallowfullscreen
                 ></iframe>
                 <!-- 구매문의 -->
                 <iframe
@@ -87,14 +96,23 @@
                   v-if="isTab === 2"
                   id="iframe2"
                   src="https://pardot.virnect.com/l/929783/2022-06-15/3l686"
+                  frameborder="0"
+                  marginwidth="0"
+                  marginheight="0"
+                  scrolling="auto"
                   style="
                     padding-bottom: 49px;
                     position: absolute;
-                    border: 0;
-                    display: block;
+                    border: none;
                     width: 100%;
                     height: 100%;
+                    max-width: 100%;
+                    display: block;
                   "
+                  allowfullscreen
+                  webkitallowfullscreen
+                  mozallowfullscreen
+                  msallowfullscreen
                 ></iframe>
                 <!-- 제품문의 -->
                 <iframe
@@ -102,14 +120,23 @@
                   v-if="isTab === 3"
                   id="iframe3"
                   src="https://pardot.virnect.com/l/929783/2022-06-14/3kzcp"
+                  frameborder="0"
+                  marginwidth="0"
+                  marginheight="0"
+                  scrolling="auto"
                   style="
                     padding-bottom: 49px;
                     position: absolute;
-                    border: 0;
-                    display: block;
+                    border: none;
                     width: 100%;
                     height: 100%;
+                    max-width: 100%;
+                    display: block;
                   "
+                  allowfullscreen
+                  webkitallowfullscreen
+                  mozallowfullscreen
+                  msallowfullscreen
                 ></iframe>
                 <!-- 기타 -->
                 <iframe
@@ -117,14 +144,23 @@
                   v-if="isTab === 4"
                   id="iframe4"
                   src="https://pardot.virnect.com/l/929783/2022-06-16/3npmk"
+                  frameborder="0"
+                  marginwidth="0"
+                  marginheight="0"
+                  scrolling="auto"
                   style="
                     padding-bottom: 49px;
                     position: absolute;
-                    border: 0;
-                    display: block;
+                    border: none;
                     width: 100%;
                     height: 100%;
+                    max-width: 100%;
+                    display: block;
                   "
+                  allowfullscreen
+                  webkitallowfullscreen
+                  mozallowfullscreen
+                  msallowfullscreen
                 ></iframe>
                 <!-- //NOTE - 폼삽입 구역 END -->
               </div>
@@ -526,7 +562,7 @@ span {
 }
 
 .formWrap {
-  min-height: 1400px;
+  min-height: 1700px;
   position: relative;
   display: block;
   padding: 49px 0 100%;
