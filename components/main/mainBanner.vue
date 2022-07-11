@@ -48,10 +48,12 @@
         </p>
         <span class="bannerButtonMb">
           <button>
-            <a href="#">자세히 보기</a>
+            <nuxt-link to="/products/productsMain" target="_blank"
+              >자세히 보기</nuxt-link
+            >
           </button>
           <button>
-            <a href="/support/demo" target="blank">데모신청</a>
+            <a href="/support/demo" target="_blank">데모신청</a>
           </button>
         </span>
         <span class="bannerTitMb2">
@@ -64,7 +66,7 @@
               />
             </i>
             <p>
-              070. 7733. 2025 <a href="#"><u>문의하기</u></a>
+              070. 7733. 2025 <a href="support/inquiry"><u>문의하기</u></a>
             </p>
           </span>
         </span>
@@ -196,10 +198,24 @@ export default {
         color: #fff;
         margin-bottom: 100px;
         line-height: 1.44;
-        p {
-          &:first-child {
-            display: inline;
-            font-weight: 300;
+        span {
+          p {
+            a {
+              margin-left: 12px;
+              display: inline;
+              font-size: 16px;
+              letter-spacing: -0.2px;
+              height: 24px;
+              color: #fff;
+              white-space: nowrap;
+              line-height: 25px;
+            }
+            font-size: 16px;
+            letter-spacing: -0.2px;
+            &:first-child {
+              display: inline;
+              font-weight: 300;
+            }
           }
         }
       }
@@ -342,6 +358,10 @@ export default {
           height: 24px;
           line-height: 25px;
           white-space: nowrap;
+          > a {
+            color: #fff;
+            font-size: 16px;
+          }
         }
         span {
           display: flex;
@@ -571,6 +591,10 @@ export default {
 
   .mainBanner .mainBannerInner .mainBannerTitMb {
     display: block;
+  }
+  .bannerTitMb2 span > p > a {
+    font-size: 16px;
+    color: #fff;
   }
 }
 

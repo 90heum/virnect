@@ -14,8 +14,8 @@
           {{ $t("productsText.trackSubTitle.contents") }}
         </span>
         <span>
-          <button>
-            <a href="#">
+          <button @click="more()">
+            <a>
               <p>{{ $t("productsText.trackSubButton.know") }}</p>
               <p>
                 <img
@@ -47,7 +47,16 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    more() {
+      if (process.client)
+        document
+          .querySelector("#trackId")
+          .scrollIntoView({ behavior: "smooth" });
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -75,6 +84,9 @@ export default {};
     div,
     button {
       text-decoration: none;
+    }
+    button {
+      cursor: pointer;
     }
     display: flex;
     padding: 0 30px;
