@@ -70,7 +70,7 @@
                   marginwidth="0"
                   marginheight="0"
                   scrolling="no"
-                  scrolling="no"
+
                   style="border: none; max-width: 100%; max-height: 100vh"
                   allowfullscreen
                   webkitallowfullscreen

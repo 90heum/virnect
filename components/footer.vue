@@ -100,7 +100,7 @@
           </span>
           <ul>
             <li>
-              <a href="/products/remote">
+              <nuxt-link to="/products/remote">
                 <i
                   ><img
                     src="https://velog.velcdn.com/images/kyj0206/post/1594992e-d94f-480e-98f0-9f68662b9570/image.png"
@@ -112,10 +112,10 @@
                     src="https://velog.velcdn.com/images/kyj0206/post/80ac6d1e-8bf0-400b-aaae-4117151d714d/image.png"
                     alt="tap아이콘"
                 /></i>
-              </a>
+              </nuxt-link>
             </li>
             <li>
-              <a href="/products/make">
+              <nuxt-link to="/products/make">
                 <i
                   ><img
                     src="https://velog.velcdn.com/images/kyj0206/post/6bd22ee2-8bfe-4266-a733-fa30444c86c4/image.png"
@@ -127,10 +127,10 @@
                     src="https://velog.velcdn.com/images/kyj0206/post/80ac6d1e-8bf0-400b-aaae-4117151d714d/image.png"
                     alt="tap아이콘"
                 /></i>
-              </a>
+              </nuxt-link>
             </li>
             <li>
-              <a href="/products/view">
+              <nuxt-link to="/products/view">
                 <i
                   ><img
                     src="https://velog.velcdn.com/images/kyj0206/post/eaee1485-ad71-4cb5-9bc4-334007dea716/image.png"
@@ -142,10 +142,10 @@
                     src="https://velog.velcdn.com/images/kyj0206/post/80ac6d1e-8bf0-400b-aaae-4117151d714d/image.png"
                     alt="tap아이콘"
                 /></i>
-              </a>
+              </nuxt-link>
             </li>
             <li>
-              <a href="/products/twin">
+              <nuxt-link to="/products/twin">
                 <i
                   ><img
                     src="https://velog.velcdn.com/images/kyj0206/post/737f774b-0624-4e69-8d03-d54d4eca271e/image.png"
@@ -157,10 +157,10 @@
                     src="https://velog.velcdn.com/images/kyj0206/post/80ac6d1e-8bf0-400b-aaae-4117151d714d/image.png"
                     alt="tap아이콘"
                 /></i>
-              </a>
+              </nuxt-link>
             </li>
             <li>
-              <a href="/products/track">
+              <nuxt-link to="/products/track">
                 <i
                   ><img
                     src="https://velog.velcdn.com/images/kyj0206/post/503bf3bb-8bb4-4dcf-87bd-ab561d3a374f/image.png"
@@ -172,7 +172,7 @@
                     src="https://velog.velcdn.com/images/kyj0206/post/80ac6d1e-8bf0-400b-aaae-4117151d714d/image.png"
                     alt="tap아이콘"
                 /></i>
-              </a>
+              </nuxt-link>
             </li>
           </ul>
         </span>
@@ -188,13 +188,13 @@
               <p>대표전화 : <a>070-7733-2025</a></p>
               <p>
                 구매 및 제휴 문의 :
-                <a href="mailto:contact@virnect.com" target="_blank"
+                <a href="mailto:contact@virnect.com" target="blank"
                   ><u>contact@virnect.com</u></a
                 >
               </p>
               <p>
                 제품 사용 및 기술 지원 :
-                <a href="mailto:support@virnect.com" target="_blank"
+                <a href="mailto:support@virnect.com" target="blank"
                   ><u>support@virnect.com</u></a
                 >
               </p>
@@ -232,7 +232,7 @@
                       <li class="option">
                         <a
                           href="https://console.virnect.com/?continue=https%3A%2F%2Fvirnect.com%2F"
-                          target="_blank"
+                          target="blank"
                         >
                           <p>서비스 로그인</p>
 
@@ -253,7 +253,7 @@
                       <li class="option">
                         <a
                           href="https://download.virnect.com/remote"
-                          target="_blank"
+                          target="blank"
                         >
                           <p>다운로드 센터 2.0</p>
 
@@ -274,7 +274,7 @@
                       <li class="option">
                         <a
                           href="https://workstation.virnect.com/start"
-                          target="_blank"
+                          target="blank"
                         >
                           <p>Workstation 2.0</p>
 
@@ -295,7 +295,7 @@
                       <li class="option">
                         <a
                           href="https://remote.virnect.com/home"
-                          target="_blank"
+                          target="blank"
                         >
                           <p>Remote 2.0</p>
 
@@ -393,7 +393,7 @@
             <span>
               <a
                 href="https://www.youtube.com/virnect%E2%80%8B"
-                target="_blank"
+                target="blank"
               >
                 <i class="iconOn iconOn1"
                   ><img
@@ -408,7 +408,7 @@
               </a>
             </span>
             <span>
-              <a href="https://blog.naver.com/virnect" target="_blank">
+              <a href="https://blog.naver.com/virnect" target="blank">
                 <i class="iconOn iconOn2"
                   ><img
                     src="https://velog.velcdn.com/images/kyj0206/post/d88977ea-8624-4d40-8315-5bb1e85565eb/image.png"
@@ -424,7 +424,7 @@
             <span>
               <a
                 href="https://www.linkedin.com/company/virnect/"
-                target="_blank"
+                target="blank"
               >
                 <i class="iconOn iconOn3"
                   ><img
@@ -439,7 +439,7 @@
               </a>
             </span>
             <span>
-              <a href="https://www.facebook.com/virnectkorea" target="_blank">
+              <a href="https://www.facebook.com/virnectkorea" target="blank">
                 <i class="iconOn iconOn4"
                   ><img
                     src="https://velog.velcdn.com/images/kyj0206/post/1d55cef0-568a-4322-9ea5-9658c7a099c3/image.png"

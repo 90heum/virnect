@@ -119,16 +119,16 @@
         <span class="MenuSubSub">
           <ul>
             <li>
-              <a class="SubSubActive" href="#xrSolutionId" id="a01">제품개요</a>
+              <a :class="`${navActive === 1 ? 'SubSubActive' : ''}`" href="#xrSolutionId" id="a01" @click="() => navActive = 1">제품개요</a>
             </li>
             <li>
-              <a href="#overViewConn" id="a02">제품특징</a>
+              <a :class="`${navActive === 2 ? 'SubSubActive' : ''}`" href="#overViewConn" id="a02" @click="() => navActive = 2">제품특징</a>
             </li>
             <li>
-              <a href="#headingModule" id="a03">기능소개</a>
+              <a :class="`${navActive === 3 ? 'SubSubActive' : ''}`" href="#headingModuleBottom" id="a03" @click="() => navActive = 3">기능소개</a>
             </li>
             <li>
-              <a href="#remoteEffectPartId" id="a04">도입효과</a>
+              <a :class="`${navActive === 4 ? 'SubSubActive' : ''}`" href="#functionPart" id="a04" @click="() => navActive = 4">도입효과</a>
             </li>
           </ul>
         </span>
@@ -143,6 +143,7 @@ export default {
     return {
       isToggleNum: 1,
       isToggleOn: false,
+      navActive: 1
     };
   },
   methods: {

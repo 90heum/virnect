@@ -129,65 +129,20 @@
           </span>
           <span>
             <ul>
-              <li>
-                <a href="#">
+              <li v-for="(data, idx) of contentList ? contentList.filter((e, idx) => { if (idx < 4) return e;}) : []"
+                  :key="idx">
+                <nuxt-link :to="`/news/detail?id=${data.id}&type`">
                   <span>
                     <img
-                      src="https://velog.velcdn.com/images/kyj0206/post/7d3e659c-ea18-4ed9-98d8-e61a62df075a/image.jpg"
+                      :src="`${data.thumbnail}`"
                       alt="뉴스리스트 이미지"
                     />
                   </span>
                   <span>
-                    과기정통부, 디지털트윈 산업 현장 버넥트에서 '디지털 뉴딜반'
-                    회의 개최
+                    {{$i18n.localeProperties.code === "ko" ? data.title : data.titleEn}}
                   </span>
-                  <span class="news"> News & Press </span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span>
-                    <img
-                      src="https://velog.velcdn.com/images/kyj0206/post/26617ca2-365e-4bc0-83bc-54de3485b2e0/image.jpg"
-                      alt="뉴스리스트 이미지"
-                    />
-                  </span>
-                  <span>
-                    [전자신문 인터뷰] 버넥트 하태진 대표 "성공적인 시리즈B 투자
-                    기반으로 글로벌 최고…
-                  </span>
-                  <span class="people"> People & Culture </span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span>
-                    <img
-                      src="https://velog.velcdn.com/images/kyj0206/post/7d3e659c-ea18-4ed9-98d8-e61a62df075a/image.jpg"
-                      alt="뉴스리스트 이미지"
-                    />
-                  </span>
-                  <span>
-                    과기정통부, 디지털트윈 산업 현장 버넥트에서 '디지털 뉴딜반'
-                    회의 개최
-                  </span>
-                  <span class="news"> News & Press </span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <span>
-                    <img
-                      src="https://velog.velcdn.com/images/kyj0206/post/26617ca2-365e-4bc0-83bc-54de3485b2e0/image.jpg"
-                      alt="뉴스리스트 이미지"
-                    />
-                  </span>
-                  <span>
-                    [전자신문 인터뷰] 버넥트 하태진 대표 "성공적인 시리즈B 투자
-                    기반으로 글로벌 최고…
-                  </span>
-                  <span class="people"> People & Culture </span>
-                </a>
+                  <span class="news">{{$i18n.localeProperties.code === "ko" ? data.typeName : data.typeNameEn}}</span>
+                </nuxt-link>
               </li>
             </ul>
           </span>
@@ -255,6 +210,9 @@
 <script>
 import { awardData } from "~/components/dummy/award.js";
 export default {
+  props: {
+    contentList: Array
+  },
   methods: {},
   data() {
     return {
@@ -388,6 +346,7 @@ export default {
       }
     }
   },
+   
 };
 </script>
 

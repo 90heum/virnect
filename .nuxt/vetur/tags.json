@@ -8,11 +8,11 @@
   "Header": {
     "description": "Auto imported from components/header.vue"
   },
-  "ApiAxios": {
-    "description": "Auto imported from components/api/axios.js"
-  },
   "DummyAward": {
     "description": "Auto imported from components/dummy/award.js"
+  },
+  "ApiAxios": {
+    "description": "Auto imported from components/api/axios.js"
   },
   "MainBannerModule": {
     "description": "Auto imported from components/main/bannerModule.vue"
@@ -43,21 +43,6 @@
   },
   "MixinsMixin": {
     "description": "Auto imported from components/mixins/mixin.js"
-  },
-  "Paging": {
-    "description": "Auto imported from components/paging/paging.vue"
-  },
-  "NewsCommonBaner": {
-    "description": "Auto imported from components/news/CommonBaner.vue"
-  },
-  "PolicySubMenuPayment": {
-    "description": "Auto imported from components/policy/subMenuPayment.vue"
-  },
-  "PolicySubMenuPolicy": {
-    "description": "Auto imported from components/policy/subMenuPolicy.vue"
-  },
-  "PolicySubMenuTerms": {
-    "description": "Auto imported from components/policy/subMenuTerms.vue"
   },
   "ModulesBanner": {
     "description": "Auto imported from components/modules/Banner.vue"
@@ -113,6 +98,21 @@
   "ModulesYoutubeFullscreen": {
     "description": "Auto imported from components/modules/YoutubeFullscreen.vue"
   },
+  "NewsCommonBaner": {
+    "description": "Auto imported from components/news/CommonBaner.vue"
+  },
+  "Paging": {
+    "description": "Auto imported from components/paging/paging.vue"
+  },
+  "PolicySubMenuPayment": {
+    "description": "Auto imported from components/policy/subMenuPayment.vue"
+  },
+  "PolicySubMenuPolicy": {
+    "description": "Auto imported from components/policy/subMenuPolicy.vue"
+  },
+  "PolicySubMenuTerms": {
+    "description": "Auto imported from components/policy/subMenuTerms.vue"
+  },
   "ProductsNewBgPartData": {
     "description": "Auto imported from components/products/NewBgPartData.js"
   },
@@ -149,6 +149,27 @@
   "SupportNotice": {
     "description": "Auto imported from components/support/notice.vue"
   },
+  "GnbCompany": {
+    "description": "Auto imported from components/Gnb/Company/index.vue"
+  },
+  "GnbContact": {
+    "description": "Auto imported from components/Gnb/Contact/index.vue"
+  },
+  "GnbFreeTrials": {
+    "description": "Auto imported from components/Gnb/FreeTrials/index.vue"
+  },
+  "GnbPricing": {
+    "description": "Auto imported from components/Gnb/Pricing/index.vue"
+  },
+  "GnbProducts": {
+    "description": "Auto imported from components/Gnb/Products/index.vue"
+  },
+  "GnbSolution": {
+    "description": "Auto imported from components/Gnb/Solution/index.vue"
+  },
+  "GnbHeaderPartialMobileHeader": {
+    "description": "Auto imported from components/Gnb/headerPartial/mobileHeader.vue"
+  },
   "CompanyPagesRecruit": {
     "description": "Auto imported from components/company/pages/Recruit.vue"
   },
@@ -172,27 +193,6 @@
   },
   "CompanyPartialsSubMenuIr": {
     "description": "Auto imported from components/company/partials/subMenuIr.vue"
-  },
-  "GnbCompany": {
-    "description": "Auto imported from components/Gnb/Company/index.vue"
-  },
-  "GnbContact": {
-    "description": "Auto imported from components/Gnb/Contact/index.vue"
-  },
-  "GnbFreeTrials": {
-    "description": "Auto imported from components/Gnb/FreeTrials/index.vue"
-  },
-  "GnbPricing": {
-    "description": "Auto imported from components/Gnb/Pricing/index.vue"
-  },
-  "GnbProducts": {
-    "description": "Auto imported from components/Gnb/Products/index.vue"
-  },
-  "GnbSolution": {
-    "description": "Auto imported from components/Gnb/Solution/index.vue"
-  },
-  "GnbHeaderPartialMobileHeader": {
-    "description": "Auto imported from components/Gnb/headerPartial/mobileHeader.vue"
   },
   "ProductsPagesMS": {
     "description": "Auto imported from components/products/pages/MS.vue"
@@ -253,6 +253,9 @@
   },
   "ProductsPartialsBottomBannerRemote": {
     "description": "Auto imported from components/products/partials/bottomBannerRemote.vue"
+  },
+  "ProductsPartialsNavi": {
+    "description": "Auto imported from components/products/partials/navi.vue"
   },
   "ProductsPartialsNewModule": {
     "description": "Auto imported from components/products/partials/newModule.vue"

@@ -5,46 +5,38 @@
       <li class="hamUseCase">
         <span class="hamUseCaseTit">
           <a
-            @click="
-              showPage('/solutions/energy_resource'),
-                happykey(),
-                clickBlue(),
-                (masterkey = true)
-            "
-            v-bind:style="blueStyle"
+            @click="showMobileMenu('list1')"
+            :class="`${mobileMenu['list1'] ? 'mobileMenuActive' : ''}`"
           >
             Value
           </a>
-          <ul class="hamUseCaseMenu" v-if="isSub">
-            <li @click="supertest()">
-              <a href="/solutions/energy_resource"> 인프라/자원 </a>
+          <ul class="hamUseCaseMenu" v-if="mobileMenu['list1']">
+            <li @click="goToPage(`/solutions/energy_resource`)">
+              <a> 인프라/자원 </a>
             </li>
-            <li @click="supertest()">
-              <a href="/solutions/oil_chemical_battery"> 제조/건설 </a>
+            <li @click="goToPage(`/solutions/oil_chemical_battery`)">
+              <a> 제조/건설 </a>
             </li>
-            <li @click="supertest()">
-              <a href="/solutions/motor_parts"> 공공/교육 </a>
+            <li @click="goToPage('/solutions/motor_parts')">
+              <a> 공공/교육 </a>
             </li>
-            <li @click="supertest()">
-              <a href="/solutions/airline_railroad"> 엔터테인먼트 </a>
+            <li @click="goToPage('/solutions/airline_railroad')">
+              <a> 엔터테인먼트 </a>
             </li>
-            <li @click="supertest()">
-              <a href="/solutions/epc"> 기타 </a>
+            <li @click="goToPage('/solutions/epc')">
+              <a> 기타 </a>
             </li>
           </ul>
         </span>
         <span
           class="hamMenuToggle"
-          @click="showUse(), clickBlue(), masterClick()"
-          v-bind="masterkey"
+          @click="showMobileMenu('list1')"
         >
           <img
-            v-if="isShowing"
-            :src="isOpen"
+            :src="mobileMenu['list1'] ? isClose : isOpen"
             alt="일정접기"
-            @click="happykey()"
+            @click="showMobileMenu('list1')"
           />
-          <img v-else :src="isClose" alt="일정접기" @click="happykey()" />
 
           <!-- <img
             class="hamSubMenuOpen"
@@ -62,133 +54,109 @@
       </li>
       <li class="hamProducts">
         <span class="hamProductsTit">
-          <a @click="showPage('/products/remote')"> Products </a>
-          <ul class="hamProductsMenu" v-if="isSub2">
-            <li @click="supertest()">
-              <a href="/products/remote"> VIRNECT Remote </a>
+          <a @click="showMobileMenu('list2')"
+              :class="`${mobileMenu['list2'] ? 'mobileMenuActive' : ''}`"> Products </a>
+          <ul class="hamProductsMenu" v-if="mobileMenu['list2']">
+            <li @click="goToPage('/products/remote')">
+              <a> VIRNECT Remote </a>
             </li>
-            <li @click="supertest()">
-              <a href="/products/make"> VIRNECT Make </a>
+            <li @click="goToPage('/products/make')">
+              <a> VIRNECT Make </a>
             </li>
-            <li @click="supertest()">
-              <a href="/products/view"> VIRNECT VIEW </a>
+            <li @click="goToPage('/products/view')">
+              <a> VIRNECT VIEW </a>
             </li>
-            <li @click="supertest()">
-              <a href="/products/twin"> VIRNECT Twin </a>
+            <li @click="goToPage('/products/twin')">
+              <a> VIRNECT Twin </a>
             </li>
-            <li @click="supertest()">
-              <a href="/products/track"> VIRNECT Track </a>
+            <li @click="goToPage('/products/track')">
+              <a> VIRNECT Track </a>
             </li>
-            <li @click="supertest()">
-              <a href="/products/ms"> XR Devices </a>
+            <li @click="goToPage('/products/ms')">
+              <a> XR Devices </a>
             </li>
           </ul>
         </span>
-        <span class="hamMenuToggle" @click="[showUse2()]">
+        <span class="hamMenuToggle" @click="[showMobileMenu('list2')]">
           <img
-            v-if="isShowing2"
-            :src="isOpen"
+            :src="mobileMenu['list2'] ? isClose : isOpen"
             alt="일정접기"
-            @click="isShowing2 = !isShowing2"
-          />
-          <img
-            v-else
-            :src="isClose"
-            alt="일정접기"
-            @click="isShowing2 = !isShowing2"
+            @click="showMobileMenu('list2')"
           />
         </span>
       </li>
       <li class="hamSupport">
         <span class="hamSupportTit">
-          <a @click="showPage('/support/notice')"> Support </a>
-          <ul class="hamSupportMenu" v-if="isSub3">
-            <li @click="supertest()">
-              <a href="/support/notice"> Product Notice </a>
+          <a @click="showMobileMenu('list3')"
+             :class="`${mobileMenu['list3'] ? 'mobileMenuActive' : ''}`"> Support </a>
+          <ul class="hamSupportMenu" v-if="mobileMenu['list3']">
+            <li @click="goToPage('/support/notice')">
+              <a> Product Notice </a>
             </li>
-            <li @click="supertest()">
-              <a href="/support/faq"> FAQ </a>
+            <li @click="goToPage('/support/faq')">
+              <a> FAQ </a>
             </li>
-            <li @click="supertest()">
-              <a href="/support/learning-center"> 학습센터 </a>
+            <li @click="goToPage('/support/learning-center')">
+              <a> 학습센터 </a>
             </li>
-            <li @click="supertest()">
-              <a href="/support/inquiry"> 문의하기 </a>
+            <li @click="goToPage('/support/inquiry')">
+              <a> 문의하기 </a>
             </li>
           </ul>
         </span>
-        <span class="hamMenuToggle" @click="[showUse3()]">
+        <span class="hamMenuToggle" @click="[showMobileMenu('list3')]">
           <img
-            v-if="isShowing3"
-            :src="isOpen"
+            :src="mobileMenu['list3'] ? isClose : isOpen"
             alt="일정접기"
-            @click="isShowing3 = !isShowing3"
-          />
-          <img
-            v-else
-            :src="isClose"
-            alt="일정접기"
-            @click="isShowing3 = !isShowing3"
+            @click="showMobileMenu('list3')"
           />
         </span>
       </li>
       <li class="hamNews">
         <span class="hamNewsTit">
-          <a @click="showPage('/news/main')"> News </a>
-          <ul class="hamNewsMenu" v-if="isSub4">
-            <li>
-              <a href="#"> News & Press </a>
+          <a @click="showMobileMenu('list4')"
+             :class="`${mobileMenu['list4'] ? 'mobileMenuActive' : ''}`"> News </a>
+          <ul class="hamNewsMenu" v-if="mobileMenu['list4']">
+            <li @click="goToPage('/news/main')">
+              <a> News & Press </a>
             </li>
-            <li>
-              <a href="#"> People & Culture </a>
+            <!-- <li @click="goToPage('/company/about')">
+              <a> People & Culture </a>
             </li>
-            <li>
-              <a href="#"> Insight </a>
-            </li>
+            <li @click="goToPage('/company/about')">
+              <a> Insight </a>
+            </li> -->
           </ul>
         </span>
-        <span class="hamMenuToggle" @click="[showUse4(true)]">
+        <span class="hamMenuToggle" @click="[showMobileMenu('list4')]">
           <img
-            v-if="isShowing4"
-            :src="isOpen"
+            :src="mobileMenu['list4'] ? isClose : isOpen"
             alt="일정접기"
-            @click="isShowing4 = !isShowing4"
-          />
-          <img
-            v-else
-            :src="isClose"
-            alt="일정접기"
-            @click="isShowing4 = !isShowing4"
+            @click="showMobileMenu('list4')"
           />
         </span>
       </li>
       <li class="hamCompany">
         <span class="hamCompanyTit">
-          <a @click="showPage('/company/about')"> Company </a>
-          <ul class="hamCompanyMenu" v-if="isSub5">
-            <li @click="supertest()">
-              <a href="/company/about"> About VIRNECT </a>
+          <a @click="showMobileMenu('list5')"
+             :class="`${mobileMenu['list5'] ? 'mobileMenuActive' : ''}`"> Company </a>
+          <ul class="hamCompanyMenu" v-if="mobileMenu['list5']">
+            <li @click="goToPage('/company/about')">
+              <a> About VIRNECT </a>
             </li>
-            <li @click="supertest()">
-              <a href="/company/talent"> 인재채용 </a>
+            <li @click="goToPage('/company/talent')">
+              <a> 인재채용 </a>
             </li>
-            <li @click="supertest()">
-              <a href="/company/ir"> IR </a>
+            <li @click="goToPage('/company/ir')">
+              <a> IR </a>
             </li>
           </ul>
         </span>
-        <span class="hamMenuToggle" @click="[showUse5(true)]">
+        <span class="hamMenuToggle" @click="[showMobileMenu('list5')]">
           <img
-            v-if="isShowing5"
-            :src="isOpen"
+            :src="mobileMenu['list5'] ? isClose : isOpen"
             alt="일정접기"
-            @click="isShowing5 = !isShowing5"
-          />
-          <img
-            v-else
-            :src="isClose"
-            alt="일정접기"
-            @click="isShowing5 = !isShowing5"
+            @click="showMobileMenu('list5')"
           />
         </span>
       </li>
@@ -225,7 +193,7 @@
           <li class="option">
             <a
               href="https://console.virnect.com/?continue=https%3A%2F%2Fvirnect.com%2F"
-              target="_blank"
+              target="blank"
             >
               <p>서비스 로그인</p>
               <i>
@@ -243,7 +211,7 @@
             </a>
           </li>
           <li class="option">
-            <a href="https://download.virnect.com/remote" target="_blank">
+            <a href="https://download.virnect.com/remote" target="blank">
               <p>다운로드 센터 2.0</p>
               <i>
                 <img
@@ -260,7 +228,7 @@
             </a>
           </li>
           <li class="option">
-            <a href="https://workstation.virnect.com/start" target="_blank">
+            <a href="https://workstation.virnect.com/start" target="blank">
               <p>Workstation 2.0</p>
               <i>
                 <img
@@ -277,7 +245,7 @@
             </a>
           </li>
           <li class="option">
-            <a href="https://remote.virnect.com/home" target="_blank">
+            <a href="https://remote.virnect.com/home" target="blank">
               <p>Remote 2.0</p>
               <i>
                 <img
@@ -342,6 +310,7 @@ export default {
   props: {
     isMenu: Boolean,
     availableLocales: Array,
+    showMenu: Function
   },
   data: () => ({
     lang: false,
@@ -372,9 +341,34 @@ export default {
     isClose: require("~/assets/images/common/icon-menu-close.png"),
     blueStyle: {},
     masterkey: false,
+    mobileMenu: {list1: false}
     /* subOpen: false, */
   }),
   methods: {
+    showMobileMenu(e) {
+      console.log(e, "<<??", this.mobileMenu)
+      const energy = "/solutions/energy_resource";
+      const remote = "/products/remote";
+      const notice = "/support/notice";
+      const news = "/news/main";
+      const about = "/company/about";
+      const goPage = e === "list1" ? energy :
+                     e === "list2" ? remote :
+                     e === "list3" ? notice :
+                     e === "list4" ? news   :
+                     e === "list5" ? about : '';
+      if (this.mobileMenu[e]) {
+        this.goToPage(goPage);
+        this.mobileMenu = {};
+      } else {
+        this.mobileMenu = {[e]: !this.mobileMenu[e]};
+      }
+    },
+    goToPage(e) {
+      this.mobileMenu = {};
+      this.showMenu(false);
+      this.$router.push(e);
+    },
     // clickblue, masterClick 로직으로 텍스트 값도 변경하게 만듬.
     clickBlue() {
       if (this.masterkey == false) {
@@ -435,7 +429,6 @@ export default {
       this.isBottomMenu = false;
     },
     showPage(e) {
-      console.log(e, this.mobileMenu);
       if (e === this.mobileMenu) {
         this.mobileMenu = null;
         this.$router.push(e);
@@ -517,4 +510,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "~assets/css/pages/header.scss";
+header .hamSubBox .hamSubMenu > li > span > a.mobileMenuActive {
+  color: #0a51b7;
+}
 </style>

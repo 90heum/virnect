@@ -1,4 +1,3 @@
-
 <template>
   <div>
     <main-banner class="mainBanner" />
@@ -9,7 +8,7 @@
 
     <use-case />
 
-    <company-component />
+    <company-component :contentList="contentList"/>
 
     <support-component />
 
@@ -26,6 +25,17 @@ import SupportComponent from "~/components/products/partials/SupportPart.vue";
 import CtaModule from "~/components/main/ctaModule.vue";
 import ProductComponent from "~/components/main/products.vue";
 export default {
+  async asyncData({ $axios }) {
+      try {
+        const data = await $axios.get(`admin/news?page=1&size=${20}`);
+        const dataJson = await data;
+        return {
+          contentList: dataJson.data.data.newsBoardResponseList,
+        };
+      } catch (e) {
+        console.error(e);
+      }
+    },
   computed: {
     availableLocales() {
       return this.$i18n.locales;

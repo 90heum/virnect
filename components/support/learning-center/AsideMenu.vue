@@ -24,11 +24,11 @@
                :class="`${isTypeMenu === typeList[2].id ? 'asideActive' : ''}`">{{$i18n.localeProperties.code === "ko" ? typeList[2].name : typeList[2].nameEn}}</span>
 
 
-        <span @click="chooseTypeMenuAndToggle(typeList[3].id)">
+        <!-- <span @click="chooseTypeMenuAndToggle(typeList[3].id)">
             <p :class="`${isTypeMenu === typeList[3].id ? 'asideActive' : ''}`">{{$i18n.localeProperties.code === "ko" ? typeList[3].name : typeList[3].nameEn}}</p>
             <i><img src="https://velog.velcdn.com/images/kyj0206/post/677e0a5b-146e-46a5-a5db-ef2b185febf4/image.png"
                     alt="LearningCenterTag"></i>
-        </span>
+        </span> -->
     </span>
 
     <!-- 모바일 어사이드 -->

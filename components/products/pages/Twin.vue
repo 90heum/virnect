@@ -1,6 +1,7 @@
 <template>
   <section class="twin-section">
     <!-- <intro-part :introSource="twinIntro"></intro-part> -->
+    <span id="headingModuleTop"/>
     <heading-module
       :category="$t('productsText.twinText.introText.category')"
       :title="$t('productsText.twinText.introText.title')"
@@ -9,6 +10,7 @@
     <benefit-part
       :benefitArr="$t('productsText.twinText.benefitLists')"
     ></benefit-part>
+    <span id="headingModuleBottom"/>
     <heading-module
       :category="$t('productsText.twinText.funcTitle.category')"
       :title="$t('productsText.twinText.funcTitle.title')"
@@ -17,7 +19,8 @@
       :functionArr="$t('productsText.twinText.functionLists')"
       :iconImage="functionIconImage"
     ></function-part>
-    <!-- 
+    <span id="functionPart"/>
+<!-- 
     <effect-part
       :bg="effectBG"
       :category="$t('productsText.twinText.effectHeading.category')"
@@ -71,7 +74,7 @@
       :moduleData="moduleData.twin"
     />
     <new-bg-slide
-      :bannerData="moduleData.view"
+      :bannerData="moduleData.twin"
       :title="`Remote가`"
     ></new-bg-slide>
   </section>

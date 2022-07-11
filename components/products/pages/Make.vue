@@ -1,6 +1,7 @@
 <template>
   <section class="make-section">
     <!-- <intro-part :introSource="makeIntro"></intro-part> -->
+    <span id="headingModuleTop"/>
     <heading-module
       :category="$t('productsText.makeText.introText.category')"
       :title="$t('productsText.makeText.introText.title')"
@@ -10,6 +11,7 @@
     <benefit-part
       :benefitArr="$t('productsText.makeText.benefitLists')"
     ></benefit-part>
+    <span id="headingModuleBottom"/>
     <heading-module
       :category="$t('productsText.makeText.funcTitle.category')"
       :title="$t('productsText.makeText.funcTitle.title')"
@@ -18,7 +20,7 @@
       :functionArr="$t('productsText.makeText.functionLists')"
       :iconImage="functionIconImage"
     ></function-part>
-
+<span id="functionPart"/>
     <!-- <effect-part
       :bg="effectBG"
       :category="$t('productsText.makeText.effectHeading.category')"

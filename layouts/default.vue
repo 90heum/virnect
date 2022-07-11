@@ -1,10 +1,8 @@
 <template >
   <section>
-    <body>
       <Header />
       <nuxt />
       <Footer />
-    </body>
   </section>
 </template>
 
@@ -12,6 +10,7 @@
 // import Header from "../components/header.vue";
 import Header from "../components/header.vue";
 import Footer from "../components/footer.vue";
+
 export default {
   components: { Header, Footer },
 };
@@ -19,6 +18,7 @@ export default {
 
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;600&display=swap");
 /* @import "~assets/css/reset.scss";
 @import "~assets/css/common.scss"; */
 html {
