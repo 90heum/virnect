@@ -12,6 +12,7 @@
               <img
                 src="https://velog.velcdn.com/images/kyj0206/post/4783b946-5539-42b0-ad96-c0b9d63a8590/image.png"
                 alt="메뉴토글아이콘"
+                @click="handleMenuToggle()"
               />
             </p>
             <li
@@ -119,16 +120,40 @@
         <span class="MenuSubSub">
           <ul>
             <li>
-              <a :class="`${navActive === 1 ? 'SubSubActive' : ''}`" href="#xrSolutionId" id="a01" @click="() => navActive = 1">제품개요</a>
+              <a
+                :class="`${navActive === 1 ? 'SubSubActive' : ''}`"
+                href="#xrSolutionId"
+                id="a01"
+                @click="() => (navActive = 1)"
+                >제품개요</a
+              >
             </li>
             <li>
-              <a :class="`${navActive === 2 ? 'SubSubActive' : ''}`" href="#overViewConn" id="a02" @click="() => navActive = 2">제품특징</a>
+              <a
+                :class="`${navActive === 2 ? 'SubSubActive' : ''}`"
+                href="#overViewConn"
+                id="a02"
+                @click="() => (navActive = 2)"
+                >제품특징</a
+              >
             </li>
             <li>
-              <a :class="`${navActive === 3 ? 'SubSubActive' : ''}`" href="#headingModuleBottom" id="a03" @click="() => navActive = 3">기능소개</a>
+              <a
+                :class="`${navActive === 3 ? 'SubSubActive' : ''}`"
+                href="#headingModuleBottom"
+                id="a03"
+                @click="() => (navActive = 3)"
+                >기능소개</a
+              >
             </li>
             <li>
-              <a :class="`${navActive === 4 ? 'SubSubActive' : ''}`" href="#functionPart" id="a04" @click="() => navActive = 4">도입효과</a>
+              <a
+                :class="`${navActive === 4 ? 'SubSubActive' : ''}`"
+                href="#functionPart"
+                id="a04"
+                @click="() => (navActive = 4)"
+                >도입효과</a
+              >
             </li>
           </ul>
         </span>
@@ -143,7 +168,7 @@ export default {
     return {
       isToggleNum: 1,
       isToggleOn: false,
-      navActive: 1
+      navActive: 1,
     };
   },
   methods: {
@@ -171,7 +196,7 @@ export default {
   background-color: #f7f8f9;
   box-shadow: 4px 0 10px 0 rgba(0, 0, 0, 0.2);
   width: 100%;
-  height: 56px;
+  height: 62px;
   .SubMenuWrap {
     position: relative;
     display: flex;

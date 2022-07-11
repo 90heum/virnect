@@ -116,9 +116,8 @@
             </li>
           </ul>
         </span>
-       
+
         <sub-menu-nav />
-        
       </div>
     </div>
   </div>
@@ -140,7 +139,7 @@ export default {
     },
   },
   components: {
-    SubMenuNav
+    SubMenuNav,
   },
 };
 </script>
@@ -161,7 +160,7 @@ export default {
   background-color: #f7f8f9;
   box-shadow: 4px 0 10px 0 rgba(0, 0, 0, 0.2);
   width: 100%;
-  height: 56px;
+  height: 62px;
   .SubMenuWrap {
     position: relative;
     display: flex;
