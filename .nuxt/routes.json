@@ -2,23 +2,20 @@
   {
     "name": "company-about",
     "path": "/company/about",
-    "component": "/Users/majeongheum/virnect/pages/company/about.vue",
-    "chunkName": "pages/company/about",
-    "_name": "_ca203302"
+    "component": "/Users/hellodigital/virnect/pages/company/about.vue",
+    "chunkName": "pages/company/about"
   },
   {
     "name": "company-aboutSub",
     "path": "/company/aboutSub",
-    "component": "/Users/majeongheum/virnect/pages/company/aboutSub.vue",
-    "chunkName": "pages/company/aboutSub",
-    "_name": "_5432511e"
+    "component": "/Users/hellodigital/virnect/pages/company/aboutSub.vue",
+    "chunkName": "pages/company/aboutSub"
   },
   {
     "name": "company-ir",
     "path": "/company/ir",
-    "component": "/Users/majeongheum/virnect/pages/company/ir.vue",
-    "chunkName": "pages/company/ir",
-    "_name": "_732d62a7"
+    "component": "/Users/hellodigital/virnect/pages/company/ir.vue",
+    "chunkName": "pages/company/ir"
   },
   {
     "name": "company-ir-detail",
@@ -30,9 +27,8 @@
   {
     "name": "company-talent",
     "path": "/company/talent",
-    "component": "/Users/majeongheum/virnect/pages/company/talent.vue",
-    "chunkName": "pages/company/talent",
-    "_name": "_789d6c2c"
+    "component": "/Users/hellodigital/virnect/pages/company/talent.vue",
+    "chunkName": "pages/company/talent"
   },
   {
     "name": "news-detail",
@@ -107,9 +103,8 @@
   {
     "name": "products-twin",
     "path": "/products/twin",
-    "component": "/Users/majeongheum/virnect/pages/products/twin.vue",
-    "chunkName": "pages/products/twin",
-    "_name": "_add28892"
+    "component": "/Users/hellodigital/virnect/pages/products/twin.vue",
+    "chunkName": "pages/products/twin"
   },
   {
     "name": "products-view",
@@ -135,9 +130,8 @@
   {
     "name": "solutions-epc",
     "path": "/solutions/epc",
-    "component": "/Users/majeongheum/virnect/pages/solutions/epc.vue",
-    "chunkName": "pages/solutions/epc",
-    "_name": "_2fea2aa7"
+    "component": "/Users/hellodigital/virnect/pages/solutions/epc.vue",
+    "chunkName": "pages/solutions/epc"
   },
   {
     "name": "solutions-motor_parts",
@@ -149,16 +143,14 @@
   {
     "name": "solutions-oil_chemical_battery",
     "path": "/solutions/oil_chemical_battery",
-    "component": "/Users/majeongheum/virnect/pages/solutions/oil_chemical_battery.vue",
-    "chunkName": "pages/solutions/oil_chemical_battery",
-    "_name": "_02655bae"
+    "component": "/Users/hellodigital/virnect/pages/solutions/oil_chemical_battery.vue",
+    "chunkName": "pages/solutions/oil_chemical_battery"
   },
   {
     "name": "support-demo",
     "path": "/support/demo",
-    "component": "/Users/majeongheum/virnect/pages/support/demo.vue",
-    "chunkName": "pages/support/demo",
-    "_name": "_36050462"
+    "component": "/Users/hellodigital/virnect/pages/support/demo.vue",
+    "chunkName": "pages/support/demo"
   },
   {
     "name": "support-faq",

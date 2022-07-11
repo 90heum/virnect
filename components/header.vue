@@ -653,12 +653,12 @@
           </span>
         </div>
         <span class="asideInfoLink">
-          <a href="#">
+          <nuxt-link :to="`/news/detail?id=${contentList ? contentList[0]['id'] : ''}&type`">
             <img
-              src="https://velog.velcdn.com/images/kyj0206/post/5eeeaef0-66f2-47e9-b36d-6a193a7412d8/image.png"
+              :src="`${contentList ? contentList[0]['thumbnail'] : ''}`"
               alt="뉴스룸 이미지"
             />
-          </a>
+          </nuxt-link>
         </span>
       </div>
     </div>
@@ -699,10 +699,18 @@
             <p>VIRNECT가 알려드립니다.</p>
           </span>
           <a href="#">
-            <img
-              src="https://velog.velcdn.com/images/kyj0206/post/e8af89e4-bc0f-4c5f-a89f-a403f4c537a0/image.png"
-              alt="컴퍼니 이미지"
-            />
+                <nuxt-link to="/products/productsMain">
+                  <img
+                  src="~/assets/images/pages/product.png"
+                  alt="#"
+                  />
+                </nuxt-link>
+                <nuxt-link to="/solutions/energy_resource">
+                  <img
+                    src="~/assets/images/pages/value.png"
+                    alt="#"
+                  />
+                </nuxt-link>
           </a>
         </span>
       </div>
@@ -731,6 +739,9 @@ const optionList = [
 ];
 
 export default {
+  updated() {
+    this.getData();
+  },
   computed: {
     availableLocales() {
       return this.$i18n.locales;
@@ -816,6 +827,14 @@ export default {
     },
   },
   methods: {
+    async getData() {
+      try {
+      const data = await this.$axios.get(`admin/news?page=1&size=${20}`);
+      const dataJson = await data;
+      console.log(dataJson.data.data.newsBoardResponseList)
+      this.contentList = dataJson.data.data.newsBoardResponseList;
+    } catch (e) { console.error(e); };    
+    },
     /* handleClickButton(){
       this.visible = !this.visible
     }, */
@@ -938,6 +957,7 @@ export default {
       }
     },
   },
+  
 };
 </script>
 

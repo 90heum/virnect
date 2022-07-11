@@ -86,18 +86,20 @@
             </div>
     </div>
 
-
+    <contact-cta-module />
   </div>
 </template>
 
 <script>
 import HeadBanner from "~/components/news/CommonBaner.vue";
 import SubMenu from "~/components/support/SubMenu.vue";
+import ContactCtaModule from "~/components/company/partials/contactModule.vue";
 
 export default {
     components: {
         HeadBanner,
         SubMenu,
+        ContactCtaModule
     },
     data () {
         return {

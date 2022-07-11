@@ -8,7 +8,8 @@
 
     <use-case />
 
-    <company-component :contentList="contentList"/>
+    <company-component :contentList="contentList"
+                       :irData="irData"/>
 
     <support-component />
 
@@ -27,10 +28,11 @@ import ProductComponent from "~/components/main/products.vue";
 export default {
   async asyncData({ $axios }) {
       try {
-        const data = await $axios.get(`admin/news?page=1&size=${20}`);
+        const data = Promise.all([$axios.get(`admin/news?page=1&size=${20}`),$axios.get(`admin/ir?page=1&size=20`)]);
         const dataJson = await data;
         return {
-          contentList: dataJson.data.data.newsBoardResponseList,
+          contentList: dataJson[0].data.data.newsBoardResponseList,
+          irData: dataJson[1].data.data.irResponseList,
         };
       } catch (e) {
         console.error(e);
