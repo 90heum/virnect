@@ -510,8 +510,27 @@ export default {
       award: awardData,
     };
   },
-
+  created() {
+    if (process.client) {
+      window.addEventListener("resize", this.handleReactiveView);
+    }
+  },
+  beforeDestroy() {
+    if (process.client)
+      window.removeEventListener("resize", this.handleReactiveView);
+  },
   methods: {
+      handleReactiveView() {
+      if (window.innerWidth > 1025) {
+        this.awardIdx = {...this.awardIdx, end: 6};
+        // this.plus = 6;
+        // this.minus = 6;        
+      } else if (window.innerWidth < 1025) {
+        this.awardIdx = {...this.awardIdx, end: 3};
+        // this.plus = 3;
+        // this.minus = 3;        
+      }
+    },
     handleCustomerTab(e) {
       this.CustomerTab = e;
     },

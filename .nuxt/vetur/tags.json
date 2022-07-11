@@ -10,15 +10,6 @@
   },
   "ApiAxios": {
     "description": "Auto imported from components/api/axios.js"
-<<<<<<< HEAD
-=======
-  },
-  "DummyAward": {
-    "description": "Auto imported from components/dummy/award.js"
-  },
-  "MixinsMixin": {
-    "description": "Auto imported from components/mixins/mixin.js"
->>>>>>> 01b1d3a0dda90104d3d0cf2964645ee41088a164
   },
   "DummyAward": {
     "description": "Auto imported from components/dummy/award.js"
@@ -52,6 +43,9 @@
   },
   "MixinsMixin": {
     "description": "Auto imported from components/mixins/mixin.js"
+  },
+  "NewsCommonBaner": {
+    "description": "Auto imported from components/news/CommonBaner.vue"
   },
   "ModulesBanner": {
     "description": "Auto imported from components/modules/Banner.vue"
@@ -107,15 +101,6 @@
   "ModulesYoutubeFullscreen": {
     "description": "Auto imported from components/modules/YoutubeFullscreen.vue"
   },
-<<<<<<< HEAD
-  "NewsCommonBaner": {
-    "description": "Auto imported from components/news/CommonBaner.vue"
-  },
-=======
->>>>>>> 01b1d3a0dda90104d3d0cf2964645ee41088a164
-  "Paging": {
-    "description": "Auto imported from components/paging/paging.vue"
-  },
   "PolicySubMenuPayment": {
     "description": "Auto imported from components/policy/subMenuPayment.vue"
   },
@@ -124,6 +109,9 @@
   },
   "PolicySubMenuTerms": {
     "description": "Auto imported from components/policy/subMenuTerms.vue"
+  },
+  "Paging": {
+    "description": "Auto imported from components/paging/paging.vue"
   },
   "ProductsNewBgPartData": {
     "description": "Auto imported from components/products/NewBgPartData.js"
@@ -164,11 +152,11 @@
   "GnbCompany": {
     "description": "Auto imported from components/Gnb/Company/index.vue"
   },
-  "GnbContact": {
-    "description": "Auto imported from components/Gnb/Contact/index.vue"
-  },
   "GnbFreeTrials": {
     "description": "Auto imported from components/Gnb/FreeTrials/index.vue"
+  },
+  "GnbContact": {
+    "description": "Auto imported from components/Gnb/Contact/index.vue"
   },
   "GnbPricing": {
     "description": "Auto imported from components/Gnb/Pricing/index.vue"
