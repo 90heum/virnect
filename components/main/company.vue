@@ -24,8 +24,8 @@
             <div>
               <span>IR</span>
               <span>
-                <p>[2022.6.25]</p>
-                <p><u>제 6기 주식회사 버넥트 정기주주총회 소집공고</u></p>
+                <p>[{{$dayjs(irData[0].createdDate).format("YYYY-MM-DD")}}]</p>
+                <nuxt-link :to="`/company/ir-detail?id=${irData[0].id}`"><p><u>{{$i18n.localeProperties.code === "ko" ? irData[0].title : irData[0].titleEn}}</u></p></nuxt-link>
               </span>
             </div>
           </span>
@@ -162,8 +162,8 @@
               @click="
                 () => {
                   if (awardIdx.start <= 0) return;
-                  awardIdx.start = Number(awardIdx.start) - 6;
-                  awardIdx.end = Number(awardIdx.end) - 6;
+                  awardIdx.start = Number(awardIdx.start) - minus;
+                  awardIdx.end = Number(awardIdx.end) - minus;
                 }
               "
             />
@@ -195,8 +195,8 @@
               @click="
                 () => {
                   if (awardIdx.end >= award.length - 1) return;
-                  awardIdx.start = Number(awardIdx.start) + 6;
-                  awardIdx.end = Number(awardIdx.end) + 6;
+                  awardIdx.start = Number(awardIdx.start) + plus;
+                  awardIdx.end = Number(awardIdx.end) + plus;
                 }
               "
             />
@@ -210,16 +210,44 @@
 <script>
 import { awardData } from "~/components/dummy/award.js";
 export default {
-  props: {
-    contentList: Array
+  data() {
+    return {
+    }
+  },  
+  created() {
+    if (process.client) {
+      window.addEventListener("resize", this.handleReactiveView);
+    }
   },
-  methods: {},
+  beforeDestroy() {
+    if (process.client)
+      window.removeEventListener("resize", this.handleReactiveView);
+  },
+  props: {
+    contentList: Array,
+    irData: Array
+  },
+  methods: {
+     handleReactiveView() {
+      if (window.innerWidth > 1025) {
+        this.awardIdx = {...this.awardIdx, end: 6};
+        // this.plus = 6;
+        // this.minus = 6;        
+      } else if (window.innerWidth < 1025) {
+        this.awardIdx = {...this.awardIdx, end: 3};
+        // this.plus = 3;
+        // this.minus = 3;        
+      }
+    },
+  },
   data() {
     return {
       awardIdx: {
         start: 0,
         end: 6,
       },
+      plus: 6,
+      minus: 6,
       award: awardData,
       bottomBannerData: [
         {

@@ -33,7 +33,6 @@
               </span>
             </span>
            
-
             <img src="~/assets/images/pages/left@2x.png" class="nextBtn"
                          @click="() => {
                            if (awardIdx.end >= (award.length-1)) return;

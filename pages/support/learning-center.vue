@@ -65,6 +65,11 @@ import LearnBanner from "../../components/support/learnBanner.vue";
 
 import SupportTail from "~/layouts/common/Tail.vue";
 export default {
+watch: {
+    '$route' (to, from) {
+      console.log("asdasdasd")
+    }
+  },
     data () {
         return {
               visualText: {

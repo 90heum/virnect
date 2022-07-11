@@ -7,15 +7,15 @@
         <span class="leftTit">
           <span>Product Notice</span>
           <span>
-            <p>VIRNECT Solution 20220505 업데이트 안내</p>
+            <p>{{$i18n.localeProperties.code === "ko" ? contentData[0].title : contentData[0].titleEn}}</p>
             <span>
-              <p>릴리즈노트</p>
-              <p>2022-5-24</p>
+              <p>{{$i18n.localeProperties.code === "ko" ? contentData[0].typeName : contentData[0].typeNameEn}}</p>
+              <p>{{$dayjs(contentData[0].createdDate).format("YYYY-MM-DD")}}</p>
             </span>
           </span>
         </span>
         <span class="rightTit">
-          <p><a href="/support/notice">자세히보기</a></p>
+          <p><nuxt-link :to="`/support/notice-detail?id=${contentData[0].id}&type`">자세히보기</nuxt-link></p>
         </span>
       </div>
     </section>

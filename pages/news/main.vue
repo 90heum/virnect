@@ -130,12 +130,15 @@
         </span>
       </div>
     </div>
+
+    <contact-cta-module />
   </div>
 </template>
 
 <script>
 import CommonBanner from "~/components/news/CommonBaner.vue";
 import CommonPaging from "~/components/paging/paging.vue";
+import ContactCtaModule from "~/components/company/partials/contactModule.vue";
 
 export default {
   data() {
@@ -156,6 +159,7 @@ export default {
   components: {
     CommonBanner,
     CommonPaging,
+    ContactCtaModule
   },
   methods: {
     async handleIsType(e, isPaging = false) {
