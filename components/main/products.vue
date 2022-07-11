@@ -803,13 +803,15 @@ export default {
   }
 
   .productsModule .moduleBottom {
-    min-height: 1000px;
+    min-height: 669px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .productsModule {
+    padding-top: 200px;
   }
 }
 @media screen and (max-width: 600px) {
-  .productsModule {
-    padding-top: 196px;
-  }
   .productsModule .moduleBottom {
     min-height: 770px;
   }
@@ -826,7 +828,7 @@ export default {
     flex-direction: column;
   }
   .productsModule .moduleBottom {
-    min-height: 1000px;
+    min-height: 843px;
   }
 }
 </style>
