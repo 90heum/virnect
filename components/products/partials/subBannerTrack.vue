@@ -9,9 +9,9 @@
           />
         </i>
         <p>VIRNECT Track</p>
-        <h2>{{ $t("productsText.twinSubTitle.title") }}</h2>
+        <h2>{{ $t("productsText.trackSubTitle.title") }}</h2>
         <span class="subExplanation">
-          {{ $t("productsText.twinSubTitle.contents") }}
+          {{ $t("productsText.trackSubTitle.contents") }}
         </span>
         <span>
           <button>

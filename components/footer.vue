@@ -386,15 +386,12 @@
               >
             </span>
             <span>
-              <p>©VIRNECT CO., LTD. All rights reserved.</p>
+              <p>©VIRNECT Co., Ltd. All rights reserved.</p>
             </span>
           </div>
           <div class="bottomInnerRight">
             <span>
-              <a
-                href="https://www.youtube.com/virnect%E2%80%8B"
-                target="blank"
-              >
+              <a href="https://www.youtube.com/virnect%E2%80%8B" target="blank">
                 <i class="iconOn iconOn1"
                   ><img
                     src="https://velog.velcdn.com/images/kyj0206/post/9dddd89b-60a1-4f6d-a723-f50f21a095d7/image.png"
@@ -479,7 +476,7 @@
             </span>
           </div>
           <span class="mobileInfo">
-            <p>©VIRNECT CO., LTD. All rights reserved.</p>
+            <p>©VIRNECT Co., Ltd. All rights reserved.</p>
           </span>
         </div>
       </span>
