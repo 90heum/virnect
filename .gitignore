@@ -2,3 +2,7 @@
 .node_modules
 .nuxt
 
+.nuxt/components/index.js
+.nuxt/components/readme.md
+.nuxt/routes.json
+.nuxt/vetur/tags.json

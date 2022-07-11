@@ -3,7 +3,10 @@ export { default as GnbHeader } from '../../components/gnbHeader.vue'
 export { default as Header } from '../../components/header.vue'
 export { default as ApiAxios } from '../../components/api/axios.js'
 export { default as DummyAward } from '../../components/dummy/award.js'
+<<<<<<< HEAD
+=======
 export { default as MixinsMixin } from '../../components/mixins/mixin.js'
+>>>>>>> 01b1d3a0dda90104d3d0cf2964645ee41088a164
 export { default as MainBannerModule } from '../../components/main/bannerModule.vue'
 export { default as MainCompany } from '../../components/main/company.vue'
 export { default as MainCompanyAwards } from '../../components/main/companyAwards.vue'
@@ -14,6 +17,8 @@ export { default as MainProducts } from '../../components/main/products.vue'
 export { default as MainSuppoert } from '../../components/main/suppoert.vue'
 export { default as MainUseCase } from '../../components/main/useCase.vue'
 export { default as MixinsMixin } from '../../components/mixins/mixin.js'
+<<<<<<< HEAD
+=======
 export { default as NewsCommonBaner } from '../../components/news/CommonBaner.vue'
 export { default as PolicySubMenuPayment } from '../../components/policy/subMenuPayment.vue'
 export { default as PolicySubMenuPolicy } from '../../components/policy/subMenuPolicy.vue'
@@ -23,6 +28,7 @@ export { default as ProductsNewBgPartData } from '../../components/products/NewB
 export { default as ProductsNewEffectPartData } from '../../components/products/newEffectPartData.js'
 export { default as ProductsNewModuleData } from '../../components/products/newModuleData.js'
 export { default as NewsCommonBaner } from '../../components/news/CommonBaner.vue'
+>>>>>>> 01b1d3a0dda90104d3d0cf2964645ee41088a164
 export { default as ModulesBanner } from '../../components/modules/Banner.vue'
 export { default as ModulesBoard } from '../../components/modules/Board.vue'
 export { default as ModulesBoardView } from '../../components/modules/BoardView.vue'
@@ -41,6 +47,10 @@ export { default as ModulesRequiredPopup } from '../../components/modules/Requir
 export { default as ModulesSnb } from '../../components/modules/Snb.vue'
 export { default as ModulesSubSolutionMenu } from '../../components/modules/SubSolutionMenu.vue'
 export { default as ModulesYoutubeFullscreen } from '../../components/modules/YoutubeFullscreen.vue'
+<<<<<<< HEAD
+export { default as NewsCommonBaner } from '../../components/news/CommonBaner.vue'
+=======
+>>>>>>> 01b1d3a0dda90104d3d0cf2964645ee41088a164
 export { default as Paging } from '../../components/paging/paging.vue'
 export { default as PolicySubMenuPayment } from '../../components/policy/subMenuPayment.vue'
 export { default as PolicySubMenuPolicy } from '../../components/policy/subMenuPolicy.vue'

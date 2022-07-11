@@ -11,7 +11,10 @@ You can directly use them in pages and other components without the need to impo
 - `<Header>` | `<header>` (components/header.vue)
 - `<ApiAxios>` | `<api-axios>` (components/api/axios.js)
 - `<DummyAward>` | `<dummy-award>` (components/dummy/award.js)
+<<<<<<< HEAD
+=======
 - `<MixinsMixin>` | `<mixins-mixin>` (components/mixins/mixin.js)
+>>>>>>> 01b1d3a0dda90104d3d0cf2964645ee41088a164
 - `<MainBannerModule>` | `<main-banner-module>` (components/main/bannerModule.vue)
 - `<MainCompany>` | `<main-company>` (components/main/company.vue)
 - `<MainCompanyAwards>` | `<main-company-awards>` (components/main/companyAwards.vue)
@@ -22,6 +25,8 @@ You can directly use them in pages and other components without the need to impo
 - `<MainSuppoert>` | `<main-suppoert>` (components/main/suppoert.vue)
 - `<MainUseCase>` | `<main-use-case>` (components/main/useCase.vue)
 - `<MixinsMixin>` | `<mixins-mixin>` (components/mixins/mixin.js)
+<<<<<<< HEAD
+=======
 - `<NewsCommonBaner>` | `<news-common-baner>` (components/news/CommonBaner.vue)
 - `<PolicySubMenuPayment>` | `<policy-sub-menu-payment>` (components/policy/subMenuPayment.vue)
 - `<PolicySubMenuPolicy>` | `<policy-sub-menu-policy>` (components/policy/subMenuPolicy.vue)
@@ -31,6 +36,7 @@ You can directly use them in pages and other components without the need to impo
 - `<ProductsNewEffectPartData>` | `<products-new-effect-part-data>` (components/products/newEffectPartData.js)
 - `<ProductsNewModuleData>` | `<products-new-module-data>` (components/products/newModuleData.js)
 - `<NewsCommonBaner>` | `<news-common-baner>` (components/news/CommonBaner.vue)
+>>>>>>> 01b1d3a0dda90104d3d0cf2964645ee41088a164
 - `<ModulesBanner>` | `<modules-banner>` (components/modules/Banner.vue)
 - `<ModulesBoard>` | `<modules-board>` (components/modules/Board.vue)
 - `<ModulesBoardView>` | `<modules-board-view>` (components/modules/BoardView.vue)
@@ -49,6 +55,10 @@ You can directly use them in pages and other components without the need to impo
 - `<ModulesSnb>` | `<modules-snb>` (components/modules/Snb.vue)
 - `<ModulesSubSolutionMenu>` | `<modules-sub-solution-menu>` (components/modules/SubSolutionMenu.vue)
 - `<ModulesYoutubeFullscreen>` | `<modules-youtube-fullscreen>` (components/modules/YoutubeFullscreen.vue)
+<<<<<<< HEAD
+- `<NewsCommonBaner>` | `<news-common-baner>` (components/news/CommonBaner.vue)
+=======
+>>>>>>> 01b1d3a0dda90104d3d0cf2964645ee41088a164
 - `<Paging>` | `<paging>` (components/paging/paging.vue)
 - `<PolicySubMenuPayment>` | `<policy-sub-menu-payment>` (components/policy/subMenuPayment.vue)
 - `<PolicySubMenuPolicy>` | `<policy-sub-menu-policy>` (components/policy/subMenuPolicy.vue)
