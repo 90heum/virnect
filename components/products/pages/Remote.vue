@@ -34,18 +34,10 @@
       :blueBtn="$t('global.ROIText')"
       :id="`remoteEffectPartId`"
     ></effect-part> -->
-<<<<<<< HEAD
     <span id="functionPart"/>
     <new-effect-part :title="title"
                      :effectList="effectList.remote"
                      :moduleData="moduleData.remote"/>
-=======
-    <!-- <new-effect-part
-      :title="title"
-      :effectList="effectList.remote"
-      :moduleData="moduleData.remote"
-    /> -->
->>>>>>> 033d08b4a43f1f2cee1ad2cb8b1084886833b375
 
     <!-- <section class="divide-section">
       <heading-module
@@ -88,13 +80,13 @@
       :bannerData="moduleData.remote"
       :title="`Remote가`"
     ></new-bg-slide> -->
-    <new-effect-part
+    <!-- <new-effect-part
       :title="title"
       :effectList="effectList.view"
       :moduleData="moduleData.view"
-    />
+    /> -->
     <new-bg-slide
-      :bannerData="moduleData.view"
+      :bannerData="moduleData.remote"
       :title="`Remote가`"
     ></new-bg-slide>
   </section>

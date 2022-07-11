@@ -19,12 +19,8 @@
       :functionArr="$t('productsText.twinText.functionLists')"
       :iconImage="functionIconImage"
     ></function-part>
-<<<<<<< HEAD
     <span id="functionPart"/>
 <!-- 
-=======
-    <!-- 
->>>>>>> 033d08b4a43f1f2cee1ad2cb8b1084886833b375
     <effect-part
       :bg="effectBG"
       :category="$t('productsText.twinText.effectHeading.category')"
@@ -78,7 +74,7 @@
       :moduleData="moduleData.twin"
     />
     <new-bg-slide
-      :bannerData="moduleData.view"
+      :bannerData="moduleData.twin"
       :title="`Remote가`"
     ></new-bg-slide>
   </section>

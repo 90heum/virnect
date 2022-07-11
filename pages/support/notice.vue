@@ -26,7 +26,6 @@
         </div>
       </div>
     </div>
-<<<<<<< HEAD
 
     <support-tail 
       :bg="tailText.bg"
@@ -37,9 +36,6 @@
       :greyRouter="tailText.greyRouter"
       />
 </div> 
-=======
-  </div>
->>>>>>> 033d08b4a43f1f2cee1ad2cb8b1084886833b375
 </template>
 
 <script>
@@ -54,7 +50,6 @@ export default {
     $route(to, from) {
       this.chooseType(Number(this.$route.query.type) || null);
     },
-<<<<<<< HEAD
     components: {
         HeadBanner,
         SubMenu,
@@ -90,51 +85,6 @@ export default {
             contentData: [],
             isType: Number(this.$route.query.type) || null
         }
-=======
-  },
-  components: {
-    HeadBanner,
-    SubMenu,
-    AsideMenu,
-    NoticeContents,
-  },
-  data() {
-    return {
-      pagingData: {
-        currentPage: 1,
-        currentSize: 20,
-        totalPage: 1,
-        totalElements: 1,
-        startPage: 1,
-        endPage: 1,
-      },
-      asideData: [],
-      contentData: [],
-      isType: Number(this.$route.query.type) || null,
-    };
-  },
-  methods: {
-    movePage(currentPage) {
-      this.pagingData = { ...this.pagingData, currentPage: currentPage };
-      this.chooseType(this.isType, true);
-    },
-    async chooseType(e, isPaging = false) {
-      this.isType = e;
-      this.$router.push(`?type=${e ? e : ""}`);
-      if (!isPaging) this.pagingData = { ...this.pagingData, currentPage: 1 };
-      try {
-        const data = await this.$axios.get(
-          `admin/support/notice?page=${this.pagingData.currentPage}&size=${
-            this.pagingData.currentSize
-          }${this.isType ? "&type=" + this.isType : ""}`
-        );
-        const dataJson = await data;
-        this.contentData = dataJson.data.data.supportNoticeResponseList;
-        this.pagingData = dataJson.data.data.pageMetadataResponse;
-      } catch (e) {
-        console.error(e);
-      }
->>>>>>> 033d08b4a43f1f2cee1ad2cb8b1084886833b375
     },
   },
   async asyncData({ $axios, route }) {

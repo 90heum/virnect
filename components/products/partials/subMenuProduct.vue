@@ -122,11 +122,7 @@
               <a :class="`${navActive === 1 ? 'SubSubActive' : ''}`" href="#xrSolutionId" id="a01" @click="() => navActive = 1">제품개요</a>
             </li>
             <li>
-<<<<<<< HEAD
-              <a :class="`${navActive === 2 ? 'SubSubActive' : ''}`" href="#productPropertyId" id="a02" @click="() => navActive = 2">제품특징</a>
-=======
-              <a href="#overViewConn" id="a02">제품특징</a>
->>>>>>> 033d08b4a43f1f2cee1ad2cb8b1084886833b375
+              <a :class="`${navActive === 2 ? 'SubSubActive' : ''}`" href="#overViewConn" id="a02" @click="() => navActive = 2">제품특징</a>
             </li>
             <li>
               <a :class="`${navActive === 3 ? 'SubSubActive' : ''}`" href="#headingModuleBottom" id="a03" @click="() => navActive = 3">기능소개</a>

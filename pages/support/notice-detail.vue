@@ -120,7 +120,6 @@
         </div>
       </div>
     </div>
-<<<<<<< HEAD
 
     <support-tail 
       :bg="tailText.bg"
@@ -130,8 +129,6 @@
       :greyBtn="tailText.grey"
       :greyRouter="tailText.greyRouter"
       />
-=======
->>>>>>> 033d08b4a43f1f2cee1ad2cb8b1084886833b375
   </div>
 </template>
 
@@ -140,7 +137,6 @@ import HeadBanner from "~/components/support/headBanner.vue";
 import SubMenu from "~/components/support/SubMenu.vue";
 import SupportTail from "~/layouts/common/Tail.vue";
 export default {
-<<<<<<< HEAD
     components: {
         HeadBanner,
         SubMenu,
@@ -173,28 +169,7 @@ export default {
             if (process.client) window.scrollTo({top: "0px"});
             this.contentData = dataJson.data.data;
         }
-=======
-  components: {
-    HeadBanner,
-    SubMenu,
-  },
-  data() {
-    return {
-      contentData: {},
-    };
-  },
-  methods: {
-    async goToPage(id) {
-      if (!id) return;
-      const data = await this.$axios.get(
-        `admin/support/notice/${id}?typeId=${this.type ? this.type : ""}`
-      );
-      const dataJson = await data;
-      if (process.client) window.scrollTo({ top: "0px" });
-      this.contentData = dataJson.data.data;
->>>>>>> 033d08b4a43f1f2cee1ad2cb8b1084886833b375
     },
-  },
   async asyncData({ $axios, route }) {
     const data = await $axios.get(
       `admin/support/notice/${route.query.id}?typeId=${

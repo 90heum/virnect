@@ -73,26 +73,6 @@ export default {
     onSwiperRedied(swiper) {
       console.log("transtion", swiper);
     },
-<<<<<<< HEAD
-      data() {
-          return {
-                options: {
-                slidesPerView: "auto",
-                loop: true,
-                spaceBetween: 13,
-                centeredSlides: true,
-                pagination: {
-                    // el: ".swiper-pagination"
-                },
-                navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-                },
-                breakpoints: {
-                }
-            },
-          }
-=======
     onSwiperClickSlide(idx, realIdx) {
       console.log("click", idx, realIdx);
     },
@@ -115,7 +95,6 @@ export default {
           prevEl: ".swiper-button-next",
         },
         breakpoints: {},
->>>>>>> 033d08b4a43f1f2cee1ad2cb8b1084886833b375
       },
     };
   },
