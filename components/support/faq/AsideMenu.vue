@@ -2,12 +2,12 @@
 <div class="surplusFaqWrapper">
     <!-- aside -->
     <span class="FAQAside">
-        <span @click="chooseType(null)">
+        <span @click="handleMobileTab(null)">
             <p :class="`${isType === null ? 'asideActive' : ''}`">{{$i18n.localeProperties.code === "ko" ? "전체" : "All"}}</p>
         </span>
         <span v-for="(data, idx) of asideMenuList"
               :key="idx"
-              @click="chooseType(data.id)">
+              @click="handleMobileTab(data.id)">
             <p :class="`${isType === data.id ? 'asideActive' : ''}`">{{$i18n.localeProperties.code === "ko" ? data.name : data.nameEn}}</p>
             <i><img src="https://velog.velcdn.com/images/kyj0206/post/677e0a5b-146e-46a5-a5db-ef2b185febf4/image.png"
                     alt="noticeTag"></i>
@@ -26,11 +26,11 @@
             </div>
             <ul v-if="isToggle">
             <li class="option"
-                @click="chooseType(null)">{{$i18n.localeProperties.code === "ko" ? "전체" : "All" }}</li>
+                @click="handleMobileTab(null)">{{$i18n.localeProperties.code === "ko" ? "전체" : "All" }}</li>
             <li class="option"
                 v-for="(data, idx) of asideMenuList"
                 :key="idx"
-                @click="chooseType(data.id)">{{$i18n.localeProperties.code === "ko" ? data.name : data.nameEn}}</li>
+                @click="handleMobileTab(data.id)">{{$i18n.localeProperties.code === "ko" ? data.name : data.nameEn}}</li>
             </ul>
     </div>
 </div>
@@ -51,7 +51,7 @@ export default {
     methods: {
         handleMobileTab (e) {
             this.isToggle = !this.isToggle;
-            this.$router.push(`?type=${e ? e : ''}${this.isCategory ? '&category=' + this.isCategory : ''}`);
+            this.$router.push(`?type=${e ? e : ''}${this.$route.query.category ? '&category=' + this.$route.query.category : ''}`);
             // this.chooseType(e);
         },
     }
