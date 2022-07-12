@@ -78,7 +78,8 @@ export default {
   methods: {
     chooseDetail(e) {
       this.isDetail = this.isDetail === e ? null : e;
-      this.requestData(this.isDetail);
+      this.$router.push(`?type=${e ? e : ''}${this.isCategory ? '&category=' + this.isCategory : ''}`);
+      // this.requestData(this.isDetail);
     },
     async requestData(e) {
       this.responseData = {};

@@ -741,9 +741,6 @@ const optionList = [
 ];
 
 export default {
-  updated() {
-    this.getData();
-  },
   computed: {
     availableLocales() {
       return this.$i18n.locales;
@@ -751,6 +748,7 @@ export default {
     data() {
       return {
         visible: false,
+        contentList: []
       };
     },
   },
@@ -805,6 +803,7 @@ export default {
     MobileHeader,
   },
   mounted() {
+    this.getData();
     this.handleGnbMenuBorderBottm();
     if (process.client)
       window.innerWidth > 1025 ? (this.isWeb = true) : (this.isWeb = false);
