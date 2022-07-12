@@ -10,18 +10,17 @@
     <!-- <benefit-part
       :benefitArr="$t('productsText.remoteText.benefitLists')"
     ></benefit-part> -->
-<span id="headingModuleTop"/>
+    <span id="headingModuleTop" />
     <heading-module
       :category="$t('productsText.remoteText.funcTitle.category')"
       :title="$t('productsText.remoteText.funcTitle.title')"
       :id="remoteHeadingModuleId"
     ></heading-module>
 
-<span id="headingModuleBottom"/>
+    <span id="headingModuleBottom" />
     <function-part
       :functionArr="$t('productsText.remoteText.functionLists')"
       :iconImage="functionIconImage"
-      :id="remoteFunctionPartId"
     ></function-part>
 
     <!-- <effect-part
@@ -34,10 +33,12 @@
       :blueBtn="$t('global.ROIText')"
       :id="`remoteEffectPartId`"
     ></effect-part> -->
-    <span id="functionPart"/>
-    <new-effect-part :title="title"
-                     :effectList="effectList.remote"
-                     :moduleData="moduleData.remote"/>
+    <span id="functionPart" />
+    <new-effect-part
+      :title="title"
+      :effectList="effectList.remote"
+      :moduleData="moduleData.remote"
+    />
 
     <!-- <section class="divide-section">
       <heading-module

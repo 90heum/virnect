@@ -37,7 +37,9 @@
         </div>
         <div class="videoButton">
           <button>
-            <a href="#"> 제품 정보 바로가기 </a>
+            <a href="https://www.microsoft.com/ko-kr/hololens" target="blank">
+              제품 정보 바로가기
+            </a>
           </button>
         </div>
       </div>
@@ -70,9 +72,7 @@
         </div>
       </section>
     </div>
-    <bg-slide-part
-      :bgExampleArr="$t('solutionText.energyText.bgExampleList')"
-    ></bg-slide-part>
+
     <!-- 아이템 -->
     <section class="deviceItem">
       <div class="deviceItemWrap">
@@ -102,6 +102,14 @@
         </span>
       </div>
     </section>
+
+    <!-- 슬라이더 -->
+    <new-bg-slide
+      :bannerData="moduleData.motor"
+      :title="`Twin이`"
+    ></new-bg-slide>
+    <!-- cta 모듈 -->
+    <ctaModule />
   </section>
 </template>
 
@@ -114,8 +122,11 @@ import subMenuMs from "~/components/products/partials/subMenuMs.vue";
 import CtaModule from "~/components/main/ctaModule.vue";
 import headingModule from "~/components/modules/Heading.vue";
 import examplePart from "~/components/products/partials/ExamplePart.vue";
-import bgSlidePart from "~/components/products/partials/BgSlidePart.vue";
 import benefitPart from "~/components/products/partials/BenefitPart.vue";
+import NewBgSlide from "~/components/products/partials/NewBgSlide.vue";
+import { filedData, moduleData } from "~/components/products/NewBgPartData.js";
+import ctaModule from "~/components/main/ctaModule.vue";
+
 export default {
   components: {
     subVisualSection,
@@ -126,11 +137,16 @@ export default {
     CtaModule,
     headingModule,
     examplePart,
-    bgSlidePart,
+    ctaModule,
+
     benefitPart,
+
+    NewBgSlide,
   },
   data() {
     return {
+      filedData,
+      moduleData,
       visualText: {
         // 상단 비주얼 텍스트
         image:
@@ -155,4 +171,7 @@ export default {
 @import "~/assets/css/modules/XR_DeviceVideo.scss";
 @import "~/assets/css/pages/products.scss";
 @import "~/assets/css/modules/deviceItem.scss";
+.deviceItem {
+  margin-top: 80px;
+}
 </style>

@@ -43,7 +43,7 @@
               </ul>
             </li>
             <li>
-              <nuxt-link to="/products/remote">Products</nuxt-link>
+              <nuxt-link to="/products/productsMain">Products</nuxt-link>
               <ul>
                 <li>
                   <nuxt-link to="/products/remote">VIRNECT Remote</nuxt-link>
@@ -58,7 +58,7 @@
               </ul>
             </li>
             <li>
-              <nuxt-link to="/support/notice">Support</nuxt-link>
+              <nuxt-link to="/support/supportSubMain">Support</nuxt-link>
               <ul>
                 <li><nuxt-link to="/support/notice">Notice</nuxt-link></li>
                 <li><nuxt-link to="/support/faq">FAQ</nuxt-link></li>

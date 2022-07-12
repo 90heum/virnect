@@ -62,7 +62,7 @@
     <!-- <bg-slide-part
       :bgExampleArr="$t('solutionText.motorText.bgExampleList')"
     ></bg-slide-part> -->
-        <new-bg-slide
+    <new-bg-slide
       :bannerData="moduleData.motor"
       :title="`Twin이`"
     ></new-bg-slide>
@@ -88,7 +88,7 @@ import NewModule from "~/components/products/partials/newModule.vue";
 import NewBgSlide from "~/components/products/partials/NewBgSlide.vue";
 
 import headingModule from "../../modules/Heading";
-import {filedData, moduleData} from "~/components/products/NewBgPartData.js";
+import { filedData, moduleData } from "~/components/products/NewBgPartData.js";
 export default {
   components: {
     issuePart,
@@ -100,7 +100,7 @@ export default {
     bgSlidePart,
     headingModule,
     NewModule,
-    NewBgSlide
+    NewBgSlide,
   },
   data() {
     return {
