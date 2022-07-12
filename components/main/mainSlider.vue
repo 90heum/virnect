@@ -41,6 +41,13 @@
 
 <script>
 export default {
+  methods: {
+    getActiveSlide() {
+      this.exampleActiveIdx = this.$el
+        .querySelector(".swiper-slide-active")
+        .getAttribute("data-idx");
+    },
+  },
     data() {
         return {
         options: {

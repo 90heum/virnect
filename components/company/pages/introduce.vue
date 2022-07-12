@@ -80,63 +80,7 @@
       </section>
       <!-- <company-awards /> -->
       <!-- 인증 및 수상 모듈 -->
-      <div class="company">
-        <div class="companyWrap">
-          <span class="companyAwards">
-            <div class="awardsWrap">
-              <div>
-                <p>인증 및 수상</p>
-              </div>
-              <div class="awardsSlider">
-                <img
-                  src="~/assets/images/pages/right@2x.png"
-                  class="prevBtn"
-                  @click="
-                    () => {
-                      if (awardIdx.start <= 0) return;
-                      awardIdx.start = Number(awardIdx.start) - 6;
-                      awardIdx.end = Number(awardIdx.end) - 6;
-                    }
-                  "
-                />
-                <span
-                  class="SliderList"
-                  v-for="(data, idx) of award.filter((e, idx) => {
-                    if (idx >= awardIdx.start && idx < awardIdx.end) {
-                      return e;
-                    }
-                  })"
-                  :key="idx"
-                >
-                  <span>
-                    <img
-                      :src="data.src"
-                      :alt="data.alt"
-                      class="CompanyBottomBannerAwardSlideImg"
-                    />
-                  </span>
-                  <span>
-                    <p>{{ data.title }}</p>
-                    <p>{{ data.host }}</p>
-                    <p>{{ data.info }}</p>
-                  </span>
-                </span>
-                <img
-                  src="~/assets/images/pages/left@2x.png"
-                  class="nextBtn"
-                  @click="
-                    () => {
-                      if (awardIdx.end >= award.length - 1) return;
-                      awardIdx.start = Number(awardIdx.start) + 6;
-                      awardIdx.end = Number(awardIdx.end) + 6;
-                    }
-                  "
-                />
-              </div>
-            </div>
-          </span>
-        </div>
-      </div>
+      <company-awards />
 
       <section class="aboutHistory">
         <div class="aboutHistoryInner">
