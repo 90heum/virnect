@@ -1,7 +1,7 @@
 <template>
 <div>
     <!-- 헤더 -->
-    <faq-banner/>
+    <head-banner />
 
     <!-- 콘텍트 콘텐츠 -->
     <div class="contactTab">
@@ -17,7 +17,7 @@
                     <img src="https://velog.velcdn.com/images/kyj0206/post/ca9d309b-94ce-41db-a002-66a2f0d76ff8/image.png" alt="prebutton">
                 </div>
 
-                <span v-for="(data, idx) of typeList" 
+                <span v-for="(data, idx) of typeList || []" 
                       :class="`${isCategory === (data.id) ? 'active' : ''}`"
                       :key="idx"
                       @click="chooseCategory(data.id)">{{$i18n.localeProperties.code === "ko" ? data.name : data.nameEn}}</span>
@@ -39,47 +39,27 @@
             </div>    
         </div>
     </div>
-
-    
-    <support-tail 
-      :bg="tailText.bg"
-      :mention="$t('productsText.tailText')"
-      :blueBtn="tailText.blue"
-      :blueRouter="tailText.blueRouter"
-      :greyBtn="tailText.grey"
-      :greyRouter="tailText.greyRouter"
-      />
-
-      
 </div>
 </template>
 
 <script>
+import HeadBanner from "~/components/support/headBanner.vue";
 import SubMenu from "~/components/support/SubMenu.vue";
 import AsideMenu from "~/components/support/faq/AsideMenu.vue";
 import FaqContents from "~/components/support/faq/FaqContents.vue";
-import FaqBanner from "../../components/support/faqBanner.vue";
-import SupportTail from "~/layouts/common/Tail.vue";
-
 export default {
+    watch: {
+        '$route' (to, from) {
+            // this.chooseCategory(Number(this.$route.query.category) || null)
+            this.isType = Number(this.$route.query.type)||null;
+            this.isCategory = Number(this.$route.query.category)||null;
+            this.chooseType(this.isType);
+        }
+    },
     data() {
         return {
-             visualText: {
-        // 상단 비주얼 텍스트
-        image:
-          "https://image.virnect.com/images/pages/products/img-products-main.png",
-        category: "Products",
-      },
-      tailText: {
-        // 막줄 꼬리 텍스트
-        bg: "assets/images/pages/products/img-products-banner.png",
-        blue: "SOLUTIONS",
-        blueRouter: "energy_resource",
-        grey: "Contact",
-        greyRouter: "inquiry",
-      },
-            isCategory: 3,
-            isType: null,
+            isCategory: Number(this.$route.query.category) || 3,
+            isType: Number(this.$route.query.type) || null,
             typeList: [],
             asideMenuList: [],
             contentList: [],
@@ -94,12 +74,11 @@ export default {
         }
     },
     components: {
-    SupportTail,
-    SubMenu,
-    AsideMenu,
-    FaqContents,
-    FaqBanner
-},
+        SubMenu,
+        AsideMenu,
+        FaqContents,
+        HeadBanner
+    },
     methods: {
         changeTabNextAndPrevMenu(idx, action) {
             if (action === "next") {
@@ -114,9 +93,9 @@ export default {
         movePage (currentPage) {
             this.pagingData = {...this.pagingData, currentPage: currentPage};
             this.chooseType(this.isType, true);
-
         },
         async chooseCategory (e) {
+            this.$router.push(`?category=${e}`)
             this.isCategory = e;
             try{
                 const data = Promise.all([this.$axios.$get(`admin/support/faq/type?categoryId=${this.isCategory}`), 
@@ -135,7 +114,6 @@ export default {
             this.isType = null;
             } catch (e) {console.error(e)}
         },
-
         async chooseType (e, isPaging = false) {
             this.isType = e;
             if (!isPaging) this.pagingData = {...this.pagingData, currentPage: 1 };
@@ -154,13 +132,15 @@ export default {
             } catch(e) { console.error(e) };
         }
     },
-    async asyncData ({$axios}) {
+    async asyncData ({$axios, route}) {
+        const routePath = route.query.type ? route.query.type : '';
+        const routeCategory = route.query.category ? route.query.category : 3;
         try{
             const data = Promise.all([$axios.$get("admin/support/faq/category"), 
-                                      $axios.$get("admin/support/faq/type?categoryId=3"), 
+                                      $axios.$get(`admin/support/faq/type?categoryId=${routeCategory}`), 
                                       $axios.$get("admin/support/faq", {params: {
-                                          category: 3,
-                                          type: null,
+                                          category: routeCategory,
+                                          type: routePath,
                                           device: null,
                                           pageRequest: {
                                               page: 1,
@@ -173,7 +153,7 @@ export default {
                 typeList: dataJson[0].data.categoryList, 
                 asideMenuList: dataJson[1].data.typeList, 
                 contentList: dataJson[2].data.supportFaqDTOList,
-                pagingData: dataJson[2].data.pageMetadataResponse
+                pagingData: dataJson[2].data.pageMetadataResponse,
             };
         } catch (e) {console.error(e)}
             
@@ -256,7 +236,6 @@ section.contactTab {
     width: 100%;
     background-color: #fff;
 }
-
 // asideMenu 공통 css
 .FAQWrap{            
     margin: 0 auto;
@@ -264,12 +243,9 @@ section.contactTab {
     width: 100%;
     padding: 150px 30px;
 }
-
 .LearningCenterMbTab-prev, .LearningCenterMbTab-next  { display: none; cursor: pointer; }
 @media screen and (max-width: 1024px) {
-
 }
-
 @media screen and (max-width: 768px) {
     .contactBanner .ContactBannerInner span p{
         display: inline;
@@ -295,9 +271,6 @@ section.contactTab {
     }
     .tabCont { display: block; }
 }
-
 @media screen and (max-width: 425px) {
-
 }
-
 </style>
