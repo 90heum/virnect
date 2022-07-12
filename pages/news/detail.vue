@@ -113,6 +113,7 @@ export default {
             const dataJson = await data;
             if (process.client) window.scrollTo({top: "0px"});
             this.contentData = dataJson.data.data;
+            this.id = dataJson.data.data.id;
         }
     },
     async asyncData ({$axios, route}) {
