@@ -119,7 +119,7 @@
             </span>
           </div>
 
-          <div style="padding-top:52px">
+          <div style="padding-top: 52px">
             <span>
               <button>
                 <nuxt-link to="/products/remote"> 자세히 보기 </nuxt-link>
@@ -129,13 +129,18 @@
               </button>
             </span>
             <span>
-              <i>
-                <img
-                  src="https://velog.velcdn.com/images/kyj0206/post/7f7bb43e-b114-4733-b9f6-060e25b8ee49/image.png"
-                  alt="다운로드이미지"
-                />
-              </i>
-              <p><u>Remote 제품 소개서 다운로드(PDF)</u></p>
+              <a
+                href="http://13.209.200.75:8080/static/company/product/VIRNECT_Solution_Leaflet_ver_LF.KR2203A.pdf"
+                target="blank"
+              >
+                <i>
+                  <img
+                    src="https://velog.velcdn.com/images/kyj0206/post/7f7bb43e-b114-4733-b9f6-060e25b8ee49/image.png"
+                    alt="다운로드이미지"
+                  />
+                </i>
+                <p><u>Remote 제품 소개서 다운로드(PDF)</u></p>
+              </a>
             </span>
           </div>
         </span>
@@ -167,17 +172,20 @@
             </span>
           </div>
 
-          <div style="padding-top:52px">
+          <div style="padding-top: 52px">
             <span>
               <button>
                 <nuxt-link to="/products/make"> 자세히 보기 </nuxt-link>
               </button>
               <button>
-                <a href="support/inquiry" target="blank"> 데모신청 </a>
+                <a href="support/demo" target="blank"> 데모신청 </a>
               </button>
             </span>
             <span>
-              <a href="#">
+              <a
+                href="http://13.209.200.75:8080/static/company/product/VIRNECT_Solution_Leaflet_ver_LF.KR2203A.pdf"
+                target="blank"
+              >
                 <i>
                   <img
                     src="https://velog.velcdn.com/images/kyj0206/post/7f7bb43e-b114-4733-b9f6-060e25b8ee49/image.png"
@@ -216,23 +224,28 @@
             </span>
           </div>
 
-          <div style="padding-top:52px">
+          <div style="padding-top: 52px">
             <span>
               <button>
                 <nuxt-link to="/products/view"> 자세히 보기 </nuxt-link>
               </button>
               <button>
-                <a href="support/inquiry" target="blank"> 데모신청 </a>
+                <a href="support/demo" target="blank"> 데모신청 </a>
               </button>
             </span>
             <span>
-              <i>
-                <img
-                  src="https://velog.velcdn.com/images/kyj0206/post/7f7bb43e-b114-4733-b9f6-060e25b8ee49/image.png"
-                  alt="다운로드이미지"
-                />
-              </i>
-              <p><u>View 제품 소개서 다운로드(PDF)</u></p>
+              <a
+                href="http://13.209.200.75:8080/static/company/product/VIRNECT_Solution_Leaflet_ver_LF.KR2203A.pdf"
+                target="blank"
+              >
+                <i>
+                  <img
+                    src="https://velog.velcdn.com/images/kyj0206/post/7f7bb43e-b114-4733-b9f6-060e25b8ee49/image.png"
+                    alt="다운로드이미지"
+                  />
+                </i>
+                <p><u>View 제품 소개서 다운로드(PDF)</u></p>
+              </a>
             </span>
           </div>
         </span>
@@ -260,13 +273,13 @@
             </span>
           </div>
 
-          <div style="height: 92px; padding-top: 52px;" >
+          <div style="height: 92px; padding-top: 52px">
             <span>
               <button>
                 <nuxt-link to="/products/twin"> 자세히 보기 </nuxt-link>
               </button>
               <button>
-                <a href="support/inquiry" target="blank"> 데모신청 </a>
+                <a href="support/demo" target="blank"> 데모신청 </a>
               </button>
             </span>
             <!-- <span>
@@ -312,13 +325,13 @@
             </span>
           </div>
 
-          <div style="height: 92px; padding-top: 52px;" >
+          <div style="height: 92px; padding-top: 52px">
             <span>
               <button>
                 <nuxt-link to="/products/track"> 자세히 보기 </nuxt-link>
               </button>
               <button>
-                <a href="support/inquiry" target="blank"> 데모신청 </a>
+                <a href="support/demo" target="blank"> 데모신청 </a>
               </button>
             </span>
             <!-- <span>
@@ -366,6 +379,12 @@ export default {
   a {
     list-style: none;
     text-decoration: none;
+  }
+  a {
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+    gap: 10px;
   }
   max-width: 2400px;
   width: 100%;
@@ -784,13 +803,15 @@ export default {
   }
 
   .productsModule .moduleBottom {
-    min-height: 1000px;
+    min-height: 669px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .productsModule {
+    padding-top: 200px;
   }
 }
 @media screen and (max-width: 600px) {
-  .productsModule {
-    padding-top: 196px;
-  }
   .productsModule .moduleBottom {
     min-height: 770px;
   }
@@ -798,16 +819,16 @@ export default {
     padding-left: 0;
   }
 }
-@media screen and (max-width: 425px){
+@media screen and (max-width: 425px) {
   .moduleBottomWrapTrack,
-    .moduleBottomWrapTwin,
-    .moduleBottomWrapView,
-    .moduleBottomWrapMake,
-    .moduleBottomWrapRemote{
-      flex-direction: column;
-    }
-    .productsModule .moduleBottom {
-    min-height: 1000px;
+  .moduleBottomWrapTwin,
+  .moduleBottomWrapView,
+  .moduleBottomWrapMake,
+  .moduleBottomWrapRemote {
+    flex-direction: column;
+  }
+  .productsModule .moduleBottom {
+    min-height: 843px;
   }
 }
 </style>

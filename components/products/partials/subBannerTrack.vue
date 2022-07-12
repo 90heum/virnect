@@ -9,13 +9,13 @@
           />
         </i>
         <p>VIRNECT Track</p>
-        <h2>{{ $t("productsText.twinSubTitle.title") }}</h2>
+        <h2>{{ $t("productsText.trackSubTitle.title") }}</h2>
         <span class="subExplanation">
-          {{ $t("productsText.twinSubTitle.contents") }}
+          {{ $t("productsText.trackSubTitle.contents") }}
         </span>
         <span>
-          <button>
-            <a href="#">
+          <button @click="more()">
+            <a>
               <p>{{ $t("productsText.trackSubButton.know") }}</p>
               <p>
                 <img
@@ -47,7 +47,16 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    more() {
+      if (process.client)
+        document
+          .querySelector("#trackId")
+          .scrollIntoView({ behavior: "smooth" });
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -75,6 +84,9 @@ export default {};
     div,
     button {
       text-decoration: none;
+    }
+    button {
+      cursor: pointer;
     }
     display: flex;
     padding: 0 30px;

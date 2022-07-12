@@ -24,8 +24,18 @@
             <div>
               <span>IR</span>
               <span>
-                <p>[{{$dayjs(irData[0].createdDate).format("YYYY-MM-DD")}}]</p>
-                <nuxt-link :to="`/company/ir-detail?id=${irData[0].id}`"><p><u>{{$i18n.localeProperties.code === "ko" ? irData[0].title : irData[0].titleEn}}</u></p></nuxt-link>
+                <p>
+                  [{{ $dayjs(irData[0].createdDate).format("YYYY-MM-DD") }}]
+                </p>
+                <nuxt-link :to="`/company/ir-detail?id=${irData[0].id}`"
+                  ><p>
+                    <u>{{
+                      $i18n.localeProperties.code === "ko"
+                        ? irData[0].title
+                        : irData[0].titleEn
+                    }}</u>
+                  </p></nuxt-link
+                >
               </span>
             </div>
           </span>
@@ -99,7 +109,10 @@
             </nuxt-link>
           </div>
           <div class="virnectModule3">
-            <a href="#">
+            <a
+              href="http://13.209.200.75:8080/static/company/company/220221_VIRNECT_Brochure.pdf"
+              target="_blank"
+            >
               <span>
                 <u>회사소개서 다운로드(PDF)</u>
               </span>
@@ -116,7 +129,7 @@
           <span>
             <p>VIRNECT 뉴스</p>
             <span>
-              <a href="#">
+              <nuxt-link to="/news/main" target="_blank">
                 <p>뉴스 전체보기</p>
                 <i>
                   <img
@@ -124,7 +137,7 @@
                     alt="뉴스전체 더보기"
                   />
                 </i>
-              </a>
+              </nuxt-link>
             </span>
           </span>
           <span>
@@ -222,9 +235,8 @@
 import { awardData } from "~/components/dummy/award.js";
 export default {
   data() {
-    return {
-    }
-  },  
+    return {};
+  },
   created() {
     if (process.client) {
       window.addEventListener("resize", this.handleReactiveView);
@@ -236,18 +248,18 @@ export default {
   },
   props: {
     contentList: Array,
-    irData: Array
+    irData: Array,
   },
   methods: {
-     handleReactiveView() {
+    handleReactiveView() {
       if (window.innerWidth > 1025) {
-        this.awardIdx = {...this.awardIdx, end: 6};
+        this.awardIdx = { ...this.awardIdx, end: 6 };
         // this.plus = 6;
-        // this.minus = 6;        
+        // this.minus = 6;
       } else if (window.innerWidth < 1025) {
-        this.awardIdx = {...this.awardIdx, end: 3};
+        this.awardIdx = { ...this.awardIdx, end: 3 };
         // this.plus = 3;
-        // this.minus = 3;        
+        // this.minus = 3;
       }
     },
   },

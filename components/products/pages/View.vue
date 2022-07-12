@@ -1,7 +1,7 @@
 <template>
-  <section class="view-section">
+  <section class="view-section" id="viewId">
     <!-- <intro-part :introSource="viewIntro"></intro-part> -->
-    <span id="headingModuleTop"/>
+    <span id="headingModuleTop" />
     <heading-module
       :category="$t('productsText.viewText.introText.category')"
       :title="$t('productsText.viewText.introText.title')"
@@ -10,7 +10,7 @@
     <benefit-part
       :benefitArr="$t('productsText.viewText.benefitLists')"
     ></benefit-part>
-    <span id="headingModuleBottom"/>
+    <span id="headingModuleBottom" />
     <heading-module
       :category="$t('productsText.viewText.funcTitle.category')"
       :title="$t('productsText.viewText.funcTitle.title')"
@@ -19,7 +19,7 @@
       :functionArr="$t('productsText.viewText.functionLists')"
       :iconImage="functionIconImage"
     ></function-part>
-    <span id="functionPart"/>
+    <span id="functionPart" />
 
     <!-- <effect-part
       :bg="effectBG"

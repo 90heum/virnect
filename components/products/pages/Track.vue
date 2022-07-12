@@ -1,7 +1,7 @@
 <template>
-  <section class="arsdk-section">
+  <section class="arsdk-section" id="trackId">
     <!-- <intro-part :introSource="arsdkIntro"></intro-part> -->
-    <span id="headingModuleTop"/>
+    <span id="headingModuleTop" />
     <heading-module
       :category="$t('productsText.arsdkText.introText.category')"
       :title="$t('productsText.arsdkText.introText.title')"
@@ -10,7 +10,7 @@
     <benefit-part
       :benefitArr="$t('productsText.arsdkText.benefitLists')"
     ></benefit-part>
-    <span id="headingModuleBottom"/>
+    <span id="headingModuleBottom" />
     <heading-module
       :category="$t('productsText.arsdkText.funcTitle.category')"
       :title="$t('productsText.arsdkText.funcTitle.title')"
@@ -19,7 +19,7 @@
       :functionArr="$t('productsText.arsdkText.functionLists')"
       :iconImage="functionIconImage"
     ></function-part>
-<span id="functionPart"/>
+    <span id="functionPart" />
     <!-- <effect-part
       :bg="effectBG"
       :category="$t('productsText.arsdkText.effectHeading.category')"

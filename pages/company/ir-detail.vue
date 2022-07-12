@@ -1,4 +1,12 @@
 <template>
+<div>
+    <sub-visual-section
+      class="sm"
+      :image="'https://velog.velcdn.com/images/kyj0206/post/826e3755-e1d4-4466-bf63-273cc3b52c9c/image.png'"
+      :category="visualText.category"
+      :title="$t('companyText.visualText.title')"
+      :contents="$t('companyText.visualText.contents')"
+    ></sub-visual-section>
     <!-- NoticeDetail -->
     <div class="detailCompany">
         <!-- 컨텐츠 -->
@@ -69,14 +77,23 @@
             </span>
         </div>
     </div>
+</div>
 </template>
 
 <script>
+import subVisualSection from "~/layouts/common/SubVisual.vue";
 export default {
+    components: {
+        subVisualSection
+    },
     data () {
         return {
             id: null,
-            irContentData: {}
+            irContentData: {},
+             visualText: {
+                image: "../images/pages/company/img-company-top",
+                category: "Company",
+            },
         }
     },
     methods: {

@@ -14,8 +14,8 @@
           {{ $t("productsText.makeSubTitle.contents") }}
         </span>
         <span>
-          <button>
-            <a href="#">
+          <button @click="more()">
+            <a>
               <p>{{ $t("productsText.makeSubButton.know") }}</p>
               <p class="bb">
                 <img
@@ -33,8 +33,11 @@
         </span>
       </span>
       <div class="video_cont">
-        <img src="../../../assets/images/common/mov-bg-default@2x.png" alt="배경">
-        <video autoplay muted style="object-fit:cover">
+        <img
+          src="../../../assets/images/common/mov-bg-default@2x.png"
+          alt="배경"
+        />
+        <video autoplay muted style="object-fit: cover">
           <source
             src="https://player.vimeo.com/external/560736136.hd.mp4?s=34d4f2557f02474e88d1c1450bbecf3ae5ebb8cb&profile_id=174"
           />
@@ -45,7 +48,16 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    more() {
+      if (process.client)
+        document
+          .querySelector("#makeId")
+          .scrollIntoView({ behavior: "smooth" });
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -128,6 +140,7 @@ export default {};
           gap: 10px;
           align-items: center;
           button {
+            cursor: pointer;
             &:first-child {
               border: solid 1px #fff;
               background: #fff;
@@ -177,16 +190,16 @@ export default {};
         }
       }
     }
-    .video_cont{
+    .video_cont {
       position: relative;
       max-width: 951px;
       width: 100%;
       border: solid 2px #bfdcff;
-      img{
+      img {
         max-width: 951px;
-         width: 100%;
-         height: 100%;
-         object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
       video {
         position: absolute;
@@ -271,6 +284,7 @@ export default {};
           gap: 10px;
           align-items: center;
           button {
+            cursor: pointer;
             &:first-child {
               border: solid 1px #fff;
               background: #fff;
@@ -399,6 +413,7 @@ export default {};
           gap: 10px;
           align-items: center;
           button {
+            cursor: pointer;
             &:first-child {
               border: solid 1px #fff;
               background: #fff;
@@ -527,6 +542,7 @@ export default {};
           gap: 10px;
           align-items: center;
           button {
+            cursor: pointer;
             &:first-child {
               border: solid 1px #fff;
               background: #fff;
@@ -659,6 +675,7 @@ export default {};
           gap: 10px;
           align-items: center;
           button {
+            cursor: pointer;
             &:first-child {
               border: solid 1px #fff;
               background: #fff;

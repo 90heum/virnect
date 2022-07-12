@@ -1,7 +1,7 @@
 <template>
-  <section class="twin-section">
+  <section class="twin-section" id="twinId">
     <!-- <intro-part :introSource="twinIntro"></intro-part> -->
-    <span id="headingModuleTop"/>
+    <span id="headingModuleTop" />
     <heading-module
       :category="$t('productsText.twinText.introText.category')"
       :title="$t('productsText.twinText.introText.title')"
@@ -10,7 +10,7 @@
     <benefit-part
       :benefitArr="$t('productsText.twinText.benefitLists')"
     ></benefit-part>
-    <span id="headingModuleBottom"/>
+    <span id="headingModuleBottom" />
     <heading-module
       :category="$t('productsText.twinText.funcTitle.category')"
       :title="$t('productsText.twinText.funcTitle.title')"
@@ -19,8 +19,8 @@
       :functionArr="$t('productsText.twinText.functionLists')"
       :iconImage="functionIconImage"
     ></function-part>
-    <span id="functionPart"/>
-<!-- 
+    <span id="functionPart" />
+    <!-- 
     <effect-part
       :bg="effectBG"
       :category="$t('productsText.twinText.effectHeading.category')"

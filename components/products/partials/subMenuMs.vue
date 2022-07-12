@@ -12,6 +12,7 @@
               <img
                 src="https://velog.velcdn.com/images/kyj0206/post/4783b946-5539-42b0-ad96-c0b9d63a8590/image.png"
                 alt="메뉴토글아이콘"
+                @click="handleMenuToggle()"
               />
             </p>
             <li
