@@ -37,7 +37,9 @@
         </div>
         <div class="videoButton">
           <button>
-            <a href="#"> 제품 정보 바로가기 </a>
+            <a href="https://www.microsoft.com/ko-kr/hololens" target="blank">
+              제품 정보 바로가기
+            </a>
           </button>
         </div>
       </div>
