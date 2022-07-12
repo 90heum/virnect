@@ -173,67 +173,19 @@
         </div>
       </span>
 
-      <!-- 인증 및 수상 모듈 -->
-      <span class="companyAwards">
-        <div class="awardsWrap">
-          <div>
-            <p>인증 및 수상</p>
-          </div>
-          <div class="awardsSlider">
-            <img
-              src="~/assets/images/pages/right@2x.png"
-              class="prevBtn"
-              @click="
-                () => {
-                  if (awardIdx.start <= 0) return;
-                  awardIdx.start = Number(awardIdx.start) - minus;
-                  awardIdx.end = Number(awardIdx.end) - minus;
-                }
-              "
-            />
-            <span
-              class="SliderList"
-              v-for="(data, idx) of award.filter((e, idx) => {
-                if (idx >= awardIdx.start && idx < awardIdx.end) {
-                  return e;
-                }
-              })"
-              :key="idx"
-            >
-              <span>
-                <img
-                  :src="data.src"
-                  :alt="data.alt"
-                  class="CompanyBottomBannerAwardSlideImg"
-                />
-              </span>
-              <span>
-                <p>{{ data.title }}</p>
-                <p>{{ data.host }}</p>
-                <p>{{ data.info }}</p>
-              </span>
-            </span>
-            <img
-              src="~/assets/images/pages/left@2x.png"
-              class="nextBtn"
-              @click="
-                () => {
-                  if (awardIdx.end >= award.length - 1) return;
-                  awardIdx.start = Number(awardIdx.start) + plus;
-                  awardIdx.end = Number(awardIdx.end) + plus;
-                }
-              "
-            />
-          </div>
-        </div>
-      </span>
+        <company-awards />
+
     </div>
   </div>
 </template>
 
 <script>
 import { awardData } from "~/components/dummy/award.js";
+import CompanyAwards from "~/components/main/companyAwards.vue";
 export default {
+  components: {
+    CompanyAwards
+  },  
   data() {
     return {};
   },
@@ -265,12 +217,6 @@ export default {
   },
   data() {
     return {
-      awardIdx: {
-        start: 0,
-        end: 6,
-      },
-      plus: 6,
-      minus: 6,
       award: awardData,
       bottomBannerData: [
         {
@@ -401,6 +347,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.companyAwardsTitleWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 70px 0;
+  p {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: -0.23px;
+    color: #121212;
+  }
+}
 .company {
   display: block;
   overflow: hidden;
@@ -816,6 +774,38 @@ export default {
   }
 }
 
+
+// .companyAwards
+// .slide-wrap
+// .carousel-wrapper
+// .swiper-slide
+.company .companyWrap .companyAwards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 60px;
+  >div:first-child { align-self: start; padding-left: 2.5%; }
+   .slide-wrap {
+      width: 90%;
+   }
+   .carousel-wrapper .swiper-slide {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     img { width: 160px; }
+     span { width: 160px; }
+     p { text-align: center; }
+   }
+   .prev-btn, .next-btn {
+      position: absolute;
+      width: 42px;
+      transform: translateY(50px);
+      cursor: pointer;
+   }
+   .prev-btn { left: 10px; }
+   .next-btn { right: 10px; }
+}
 @media screen and(max-width: 1970px) {
   .company .companyWrap .companyBanner .companyBannerInner {
     gap: 5%;
