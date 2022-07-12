@@ -17,22 +17,14 @@
       :id="remoteHeadingModuleId"
     ></heading-module>
 
+    <!-- data 모듈 -->
+    <dataModule />
     <span id="headingModuleBottom" />
     <function-part
       :functionArr="$t('productsText.remoteText.functionLists')"
       :iconImage="functionIconImage"
     ></function-part>
 
-    <!-- <effect-part
-      :bg="effectBG"
-      :category="$t('productsText.remoteText.effectHeading.category')"
-      :title="$t('productsText.remoteText.effectHeading.title')"
-      :contents="$t('productsText.remoteText.effectHeading.contents')"
-      :effectArr="$t('productsText.remoteText.effectList')"
-      :greyBtn="$t('global.demoText')"
-      :blueBtn="$t('global.ROIText')"
-      :id="`remoteEffectPartId`"
-    ></effect-part> -->
     <span id="functionPart" />
     <new-effect-part
       :title="title"
@@ -40,52 +32,6 @@
       :moduleData="moduleData.remote"
     />
 
-    <!-- <section class="divide-section">
-      <heading-module
-        :align="supportTitle.align"
-        :category="$t('productsText.supportTitle.category')"
-        :title="$t('productsText.supportTitle.title')"
-        :contents="$t('productsText.supportTitle.contents')"
-      ></heading-module>
-
-      <div class="divide-contents-section">
-        <support-part
-          :supportArr="$t('productsText.remoteText.supportList')"
-        ></support-part>
-      </div>
-    </section> -->
-
-    <!-- <div class="example-wrap">
-      <section class="divide-section">
-        <div class="example-style">
-          <heading-module
-            :align="exampleAlign"
-            :category="$t('productsText.exampleTitle.category')"
-            :title="$t('productsText.exampleTitle.title')"
-            :contents="$t('productsText.remoteText.exampleContents')"
-          ></heading-module>
-
-          <div class="divide-contents-section example">
-            <example-part
-              :exampleArr="$t('productsText.remoteText.exampleList')"
-            ></example-part>
-          </div>
-        </div>
-      </section>
-    </div> -->
-    <!-- <div class="example-style">
-      <new-module :bannerData="bannerData"
-                  :title="`Remote가`"/>
-    </div> -->
-    <!-- <new-bg-slide
-      :bannerData="moduleData.remote"
-      :title="`Remote가`"
-    ></new-bg-slide> -->
-    <!-- <new-effect-part
-      :title="title"
-      :effectList="effectList.view"
-      :moduleData="moduleData.view"
-    /> -->
     <new-bg-slide
       :bannerData="moduleData.remote"
       :title="`Remote가`"
@@ -106,6 +52,7 @@ import NewBgSlide from "~/components/products/partials/NewBgSlide.vue";
 import NewEffectPart from "~/components/products/partials/NewEffectPart.vue";
 import { filedData, moduleData } from "~/components/products/newModuleData.js";
 import { title, effectList } from "~/components/products/newEffectPartData.js";
+import dataModule from "~/components/products/partials/dataModule.vue";
 
 const bannerData = [
   {
@@ -173,6 +120,7 @@ export default {
     NewModule,
     NewBgSlide,
     NewEffectPart,
+    dataModule,
   },
   data() {
     return {
@@ -209,4 +157,8 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "~assets/css/pages/products.scss";
+
+.function-part {
+  margin-top: 50px;
+}
 </style>

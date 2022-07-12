@@ -15,8 +15,9 @@
 
     <!-- 제품특징 -->
     <product-property />
+    <!-- 데이터 모듈 -->
+    <dataModule />
     <!-- 기능소개 -->
-    <sub-menu />
 
     <remote-component />
     <!-- <tail-section
