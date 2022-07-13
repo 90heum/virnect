@@ -88,8 +88,8 @@
         <div class="contents">
           <span class="featuresTit">
             <h2>
-              타사 제품 대비 접근성, 사용성, 확장성
-              <p>이 높습니다!</p>
+              타사 제품 대비 접근성, 사용성, 확장성 <br />
+              이 높습니다!
             </h2>
             <ul>
               <li>
