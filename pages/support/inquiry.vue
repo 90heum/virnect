@@ -264,7 +264,7 @@ export default {
   data() {
     return {
       chosenMenu: true,
-      isTab: 1,
+      isTab: 2,
       visualText: {
         // 상단 비주얼 텍스트
         image:
