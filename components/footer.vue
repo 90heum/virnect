@@ -72,7 +72,7 @@
               <nuxt-link to="/news/news-press">News</nuxt-link>
               <ul>
                 <li>
-                  <nuxt-link to="/news/news-press">News & press</nuxt-link>
+                  <nuxt-link to="/news/main">News & press</nuxt-link>
                 </li>
                 <!-- <li><a href="#">People & Culture</a></li>
                 <li><a href="#">Insight</a></li>
