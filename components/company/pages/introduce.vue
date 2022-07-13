@@ -826,7 +826,7 @@ export default {
                     &:last-child {
                       border: solid 1px #c5c8cf;
                       max-width: max-content;
-                      padding: 5.5px 10px;
+                      padding: 2.25px 10px;
                       font-size: 12px;
                       font-weight: bold;
                       letter-spacing: -0.15px;
