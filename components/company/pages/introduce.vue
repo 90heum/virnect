@@ -249,7 +249,8 @@
                 교육
               </li>
             </ul>
-            <ul class="customerContCont">
+            <!-- 공공 -->
+            <ul v-if="CustomerTab === 1" class="customerContCont">
               <li>
                 <img
                   src="https://velog.velcdn.com/images/kyj0206/post/1699289f-7c7e-411f-bc7d-587f891e3b34/image.png"
@@ -401,6 +402,21 @@
                 />
               </li>
             </ul>
+            <!-- 민간 -->
+            <ul v-if="CustomerTab === 2" class="customerContCont">
+              <li>
+                <img src="~/assets/images/common/kt@2x.png" alt="kt" />
+              </li>
+            </ul>
+            <!-- 교육 -->
+            <ul v-if="CustomerTab === 3" class="customerContCont">
+              <li>
+                <img
+                  src="https://velog.velcdn.com/images/kyj0206/post/4d765d3f-28de-4517-8775-65f009b619d4/image.png"
+                  alt="서울기술연구원"
+                />
+              </li>
+            </ul>
           </span>
         </div>
       </section>
@@ -431,7 +447,7 @@ const historyData = [
   },
   {
     years: "2016",
-  }, 
+  },
 ];
 export default {
   components: {
@@ -464,15 +480,15 @@ export default {
       window.removeEventListener("resize", this.handleReactiveView);
   },
   methods: {
-      handleReactiveView() {
+    handleReactiveView() {
       if (window.innerWidth > 1025) {
-        this.awardIdx = {...this.awardIdx, end: 6};
+        this.awardIdx = { ...this.awardIdx, end: 6 };
         // this.plus = 6;
-        // this.minus = 6;        
+        // this.minus = 6;
       } else if (window.innerWidth < 1025) {
-        this.awardIdx = {...this.awardIdx, end: 3};
+        this.awardIdx = { ...this.awardIdx, end: 3 };
         // this.plus = 3;
-        // this.minus = 3;        
+        // this.minus = 3;
       }
     },
     handleCustomerTab(e) {
