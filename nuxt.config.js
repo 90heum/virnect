@@ -4,7 +4,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     script: [
-      {type: 'text/javascript', src: 'jquery.js'}
+      { type: 'text/javascript', src: 'jquery.js' }
     ],
     title: 'virnect-ssr',
     htmlAttrs: {
@@ -66,7 +66,7 @@ export default {
           {
             code: "ko",
             iso: "ko",
-            name: "korean",
+            name: "Korean",
             file: "ko/index.js"
           }
         ]
