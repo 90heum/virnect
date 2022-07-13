@@ -7,7 +7,7 @@
       </span>
       <span>
         <button>
-          <a href="#"> 지금 문의하세요 </a>
+          <a href="/support/inquiry"> 지금 문의하세요 </a>
         </button>
       </span>
     </div>
