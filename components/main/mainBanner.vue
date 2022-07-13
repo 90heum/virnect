@@ -4,18 +4,14 @@
       <span class="mainBannerTit">
         <p class="bannerTitN1">생활 전반에 XR 기술이 스며들게 한다</p>
         <h1 class="bannerTitN2">
-          글로벌 No.1 확장현실
-          <p>(XR)</p>
-          플랫폼 기업 VIRNECT
+          글로벌 No.1 확장현실 (XR) 플랫폼 기업 VIRNECT
         </h1>
         <p class="bannerTitN3">
           산업 현장을 혁신으로 이끌 버넥트 XR 솔루션을 확인하세요
         </p>
         <span class="bannerButton">
           <button>
-            <nuxt-link to="/products/productsMain" target="_blank"
-              >자세히 보기</nuxt-link
-            >
+            <nuxt-link to="/products/productsMain">자세히 보기</nuxt-link>
           </button>
           <button>
             <nuxt-link to="/support/demo" target="_blank">데모신청</nuxt-link>
