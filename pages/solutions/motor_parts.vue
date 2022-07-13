@@ -46,7 +46,7 @@ export default {
       visualText: {
         image:
           "https://image.virnect.com/images/pages/solution/img-products-main.png",
-        category: "Solutions",
+        category: "Value",
       },
       tailText: {
         // 막줄 꼬리 텍스트
