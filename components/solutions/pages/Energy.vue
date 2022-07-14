@@ -50,12 +50,6 @@
                     {{ $t("ValueText.infraText.challengesText.contents3") }}
                   </span>
                 </li>
-                <li>
-                  <p>{{ $t("ValueText.infraText.challengesText.title4") }}</p>
-                  <span>
-                    {{ $t("ValueText.infraText.challengesText.contents4") }}
-                  </span>
-                </li>
               </ul>
             </span>
           </div>
@@ -79,6 +73,12 @@
         <span class="SE_Cont">
           <ul>
             <li>
+              <p>{{ $t("ValueText.infraText.challengesText.title4") }}</p>
+              <span>
+                {{ $t("ValueText.infraText.challengesText.contents4") }}
+              </span>
+            </li>
+            <li>
               <p>{{ $t("ValueText.infraText.challengesText.title5") }}</p>
               <span>
                 {{ $t("ValueText.infraText.challengesText.contents5") }}
@@ -88,18 +88,6 @@
               <p>{{ $t("ValueText.infraText.challengesText.title6") }}</p>
               <span>
                 {{ $t("ValueText.infraText.challengesText.contents6") }}
-              </span>
-            </li>
-            <li>
-              <p>{{ $t("ValueText.infraText.challengesText.title7") }}</p>
-              <span>
-                {{ $t("ValueText.infraText.challengesText.contents7") }}
-              </span>
-            </li>
-            <li>
-              <p>{{ $t("ValueText.infraText.challengesText.title8") }}</p>
-              <span>
-                {{ $t("ValueText.infraText.challengesText.contents8") }}
               </span>
             </li>
           </ul>
