@@ -65,7 +65,7 @@
                 <li>
                   <nuxt-link to="/support/learning-center">학습센터</nuxt-link>
                 </li>
-                <li><nuxt-link to="/support/inquiry">문의하기</nuxt-link></li>
+                <li><nuxt-link to="/support/inquiry" :target="blank">문의하기</nuxt-link></li>
               </ul>
             </li>
             <li>
@@ -366,7 +366,7 @@
             </span>
             <span>
               <!-- <input type="text" placeholder="email을 입력하세요" /> -->
-              <button><a href="#">지금 구독하세요</a></button>
+              <button @click="handleModal()"><a>지금 구독하세요</a></button>
             </span>
           </span>
         </span>
@@ -449,7 +449,7 @@
                 /></i>
               </a>
             </span>
-            <span @click="[(lang = true), langlang()]" v-if="isWeb">
+            <span @click="[(lang = true), langlang()]" v-if="isWeb" v-click-outside="langHide">
               <i
                 ><img
                   src="https://velog.velcdn.com/images/kyj0206/post/20a62134-5b70-4f72-ab0d-fdef4689940f/image.png"
@@ -481,12 +481,17 @@
         </div>
       </span>
     </div>
+    <modal-component :handleModal="handleModal" :isModal="isModal"/>
   </div>
 </template>
 <script>
 import ClickOutside from "vue-click-outside";
+import ModalComponent from "~/components/subscription/modal.vue";
 
 export default {
+  components: {
+    ModalComponent
+  },
   computed: {
     availableLocales() {
       return this.$i18n.locales;
@@ -505,16 +510,24 @@ export default {
     serviceOpen: false,
     showStyle: {},
     showText: {},
+    isModal: false
   }),
   directives: {
     ClickOutside,
   },
   methods: {
+    handleModal() {
+      this.isModal = !this.isModal;
+    },
     scrollToTop() {
       window.scrollTo({ top: 0, behavior: "smooth" });
     },
     langlang() {
       this.showEarth = !this.showEarth;
+    },
+    langHide() {
+      if (!this.showEarth) return;
+      this.showEarth = false;
     },
     showServiceMenu() {
       this.isServiceMenu = !this.isServiceMenu;

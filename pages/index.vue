@@ -29,6 +29,16 @@ import CtaModule from "~/components/main/ctaModule.vue";
 import ProductComponent from "~/components/main/products.vue";
 import supportModule from "~/components/modules/SupportModule.vue";
 export default {
+  head() {
+    return {
+      title: "Virnect",
+      meta: [
+        {
+          content: "증강현실 Virnect"
+        }
+      ]
+    }
+  },
   async asyncData({ $axios }) {
     try {
       const data = Promise.all([

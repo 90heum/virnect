@@ -44,8 +44,29 @@
   "MixinsMixin": {
     "description": "Auto imported from components/mixins/mixin.js"
   },
+  "Paging": {
+    "description": "Auto imported from components/paging/paging.vue"
+  },
   "NewsCommonBaner": {
     "description": "Auto imported from components/news/CommonBaner.vue"
+  },
+  "PolicySubMenuPayment": {
+    "description": "Auto imported from components/policy/subMenuPayment.vue"
+  },
+  "PolicySubMenuPolicy": {
+    "description": "Auto imported from components/policy/subMenuPolicy.vue"
+  },
+  "PolicySubMenuTerms": {
+    "description": "Auto imported from components/policy/subMenuTerms.vue"
+  },
+  "ProductsNewBgPartData": {
+    "description": "Auto imported from components/products/NewBgPartData.js"
+  },
+  "ProductsNewEffectPartData": {
+    "description": "Auto imported from components/products/newEffectPartData.js"
+  },
+  "ProductsNewModuleData": {
+    "description": "Auto imported from components/products/newModuleData.js"
   },
   "ModulesBanner": {
     "description": "Auto imported from components/modules/Banner.vue"
@@ -98,29 +119,17 @@
   "ModulesSubSolutionMenu": {
     "description": "Auto imported from components/modules/SubSolutionMenu.vue"
   },
+  "ModulesSupportModule": {
+    "description": "Auto imported from components/modules/SupportModule.vue"
+  },
   "ModulesYoutubeFullscreen": {
     "description": "Auto imported from components/modules/YoutubeFullscreen.vue"
   },
-  "Paging": {
-    "description": "Auto imported from components/paging/paging.vue"
+  "SubscriptionForm": {
+    "description": "Auto imported from components/subscription/form.vue"
   },
-  "PolicySubMenuPayment": {
-    "description": "Auto imported from components/policy/subMenuPayment.vue"
-  },
-  "PolicySubMenuPolicy": {
-    "description": "Auto imported from components/policy/subMenuPolicy.vue"
-  },
-  "PolicySubMenuTerms": {
-    "description": "Auto imported from components/policy/subMenuTerms.vue"
-  },
-  "ProductsNewBgPartData": {
-    "description": "Auto imported from components/products/NewBgPartData.js"
-  },
-  "ProductsNewEffectPartData": {
-    "description": "Auto imported from components/products/newEffectPartData.js"
-  },
-  "ProductsNewModuleData": {
-    "description": "Auto imported from components/products/newModuleData.js"
+  "SubscriptionModal": {
+    "description": "Auto imported from components/subscription/modal.vue"
   },
   "SupportSubMenu": {
     "description": "Auto imported from components/support/SubMenu.vue"
@@ -152,11 +161,11 @@
   "GnbCompany": {
     "description": "Auto imported from components/Gnb/Company/index.vue"
   },
-  "GnbFreeTrials": {
-    "description": "Auto imported from components/Gnb/FreeTrials/index.vue"
-  },
   "GnbContact": {
     "description": "Auto imported from components/Gnb/Contact/index.vue"
+  },
+  "GnbFreeTrials": {
+    "description": "Auto imported from components/Gnb/FreeTrials/index.vue"
   },
   "GnbPricing": {
     "description": "Auto imported from components/Gnb/Pricing/index.vue"

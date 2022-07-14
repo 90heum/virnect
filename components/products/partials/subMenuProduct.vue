@@ -122,7 +122,7 @@
             <li>
               <a
                 :class="`${navActive === 1 ? 'SubSubActive' : ''}`"
-                href="#xrSolutionId"
+                href="#headingModuleTop"
                 id="a01"
                 @click="() => (navActive = 1)"
                 >제품개요</a
@@ -131,7 +131,7 @@
             <li>
               <a
                 :class="`${navActive === 2 ? 'SubSubActive' : ''}`"
-                href="#overViewConn"
+                href="#featuresWrapId"
                 id="a02"
                 @click="() => (navActive = 2)"
                 >제품특징</a
