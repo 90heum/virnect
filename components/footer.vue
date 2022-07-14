@@ -449,7 +449,7 @@
                 /></i>
               </a>
             </span>
-            <span @click="[(lang = true), langlang()]" v-if="isWeb">
+            <span @click="[(lang = true), langlang()]" v-if="isWeb" v-click-outside="langHide">
               <i
                 ><img
                   src="https://velog.velcdn.com/images/kyj0206/post/20a62134-5b70-4f72-ab0d-fdef4689940f/image.png"
@@ -515,6 +515,10 @@ export default {
     },
     langlang() {
       this.showEarth = !this.showEarth;
+    },
+    langHide() {
+      if (!this.showEarth) return;
+      this.showEarth = false;
     },
     showServiceMenu() {
       this.isServiceMenu = !this.isServiceMenu;
