@@ -69,12 +69,11 @@
             /></i>
             <p>다양한 타겟 지원</p>
             <p>QR 코드, 이미지 타겟, 3D 타겟, 인스턴트</p>
-            <p>타겟 등 다양한 타겟을 대상으로 XR이 가능합니다.</p>
+            <p id="headingModuleBottom">타겟 등 다양한 타겟을 대상으로 XR이 가능합니다.</p>
           </span>
         </span>
       </div>
     </div>
-    <span id="headingModuleBottom" />
     <heading-module
       :category="$t('productsText.arsdkText.funcTitle.category')"
       :title="$t('productsText.arsdkText.funcTitle.title')"

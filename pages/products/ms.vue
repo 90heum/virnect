@@ -41,21 +41,21 @@
               제품 정보 바로가기
             </a>
           </button>
+          <div id="productInfoId"/>
         </div>
       </div>
     </section>
 
     <!-- 기능소개 -->
-    <div id="productInfoId"/>
     <heading-module
       :title="$t('productsText.msText.introText.title')"
     ></heading-module>
     <benefit-part
       :benefitArr="$t('productsText.msText.benefitLists')"
     ></benefit-part>
-
+  <span id="caseId" />
     <!-- 적용사례 -->
-    <div class="example-wrap" id="caseId">
+    <div class="example-wrap">
       <section class="divide-section">
         <div class="example-style">
           <heading-module
