@@ -5,7 +5,7 @@
               <a :class="`${navActive === 1 ? 'SubSubActive' : ''}`" href="#headingModuleTop" id="a01" @click="() => navActive = 1">제품개요</a>
             </li>
             <li>
-              <a :class="`${navActive === 2 ? 'SubSubActive' : ''}`" href="#productPropertyId" id="a02" @click="() => navActive = 2">제품특징</a>
+              <a :class="`${navActive === 2 ? 'SubSubActive' : ''}`" href="#featuresWrapId" id="a02" @click="() => navActive = 2">제품특징</a>
             </li>
             <li>
               <a :class="`${navActive === 3 ? 'SubSubActive' : ''}`" href="#headingModuleBottom" id="a03" @click="() => navActive = 3">기능소개</a>

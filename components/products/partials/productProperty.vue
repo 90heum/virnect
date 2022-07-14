@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="featuresRemote">
-      <div class="featuresWrap">
+      <div class="featuresWrap" id="featuresWrapId">
         <span class="title">
           <p>{{ $t("productsText.productPropertyTitle.title") }}</p>
         </span>

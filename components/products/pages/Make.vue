@@ -80,7 +80,7 @@
 
     <!-- 기능소개 -->
     <div class="featuresMake">
-      <div class="featuresWrap">
+      <div class="featuresWrap" id="featuresWrapId">
         <span class="title">
           <p>제품특징</p>
         </span>
