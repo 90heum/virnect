@@ -1,5 +1,6 @@
 <template>
   <section class="airline-section">
+    <!-- 엔터 -->
     <!-- <heading-module
       :category="$t('solutionText.airlineText.airlineTitle.category')"
       :title="$t('solutionText.airlineText.airlineTitle.title')"
@@ -19,15 +20,13 @@
       <div class="EnterChallengeWrap">
         <div class="EnterTit">
           <h2>
-            엔터테인먼트에 적용된 XR 기술 사례를 확인하세요.<br />
-            여러분의 서비스를 더욱 가치있게 만듭니다.
+            {{ $t("ValueText.enterText.topText.title1") }}
+            <p>{{ $t("ValueText.enterText.topText.title2") }}</p>
           </h2>
           <span>
-            엔터테인먼트 분야에서 고객이 안전하게 콘텐츠를 경험을 하는데 있어
-            현장감을 주기위한 몰입형 콘텐츠의 필요성이 점차 부각되고
+            {{ $t("ValueText.enterText.topText.contents1") }}
             <p>
-              있습니다. XR기술을 활용하면 창의적이고 실감나는 콘텐츠를 손쉽게
-              즐길 수 있습니다.
+              {{ $t("ValueText.enterText.topText.contents2") }}
             </p>
           </span>
           <i>
@@ -45,30 +44,21 @@
               </span>
               <ul>
                 <li>
-                  <p>넓은 관람 동선과 관리비용</p>
+                  <p>{{ $t("ValueText.enterText.challengesText.title1") }}</p>
                   <span>
-                    관람 동선이 넓은 곳은 직접 둘러보며 체험하는데 있어,
-                    이동시간과 노약자와 어린이가 편리하고 안전하게 즐길 수
-                    있어야 합니다. 또한 문화 유적지/전시 체험관을 운영하는데
-                    있어 문화재 관리 비용이나, 운영시간 등의 제약이 있습니다.
+                    {{ $t("ValueText.enterText.challengesText.contents1") }}
                   </span>
                 </li>
                 <li>
-                  <p>실감/몰입형 정보 필요성</p>
+                  <p>{{ $t("ValueText.enterText.challengesText.title2") }}</p>
                   <span>
-                    미술관 내 도슨트 서비스는 운영상 제한된 관람자에게만
-                    정보만을 제공하며, 작품을 이해하고 관람하는데 부가적인 체험
-                    콘텐츠 제공이 어렵습니다. 또한 역사적 문화적 소재들에 대한
-                    가치를 설명하고 이해를 시키기 위해 음성이나 이미지의
-                    정보만으로는 한계가 있습니다.
+                    {{ $t("ValueText.enterText.challengesText.contents2") }}
                   </span>
                 </li>
                 <li>
-                  <p>무형 콘텐츠 제작 필요</p>
+                  <p>{{ $t("ValueText.enterText.challengesText.title3") }}</p>
                   <span>
-                    온라인을 통한 문화체험 서비스가 증가함에 따라 역사적 의미를
-                    가상 체험할 수 있는 무형 콘텐츠 제작과 고부가가치의 가상
-                    체험 서비스의 필요성이 대두하고 있습니다.
+                    {{ $t("ValueText.enterText.challengesText.contents3") }}
                   </span>
                 </li>
               </ul>
@@ -86,31 +76,21 @@
         <span class="SE_Cont">
           <ul>
             <li>
-              <p>시공간 제약이 없는 역사/문화 체험 실감 콘텐츠 구현</p>
+              <p>{{ $t("ValueText.enterText.challengesText.title4") }}</p>
               <span>
-                XR솔루션을 활용하면 온라인 전시 서비스를 통해 공간 제약 없이
-                콘텐츠를 즐길 수 있습니다. 또한 역사적, 문화적 소재들을 AR로
-                제공하여 다양한 관람 정보 서비스를 제공하며, 직관적이고 입체적인
-                몰입형 콘텐츠로 체험을 통한 공감과 이해로 정보를 습득할 수
-                있습니다.
+                {{ $t("ValueText.enterText.challengesText.contents4") }}
               </span>
             </li>
             <li>
-              <p>유연한 콘텐츠 접근 및 홍보</p>
+              <p>{{ $t("ValueText.enterText.challengesText.title5") }}</p>
               <span>
-                일부 또는 전체가 소실된 문화재도 XR 콘텐츠를 스마트폰으로 손쉽게
-                증강하여 간편하게 몰입형 콘텐츠를 즐길 수 있습니다. 또한 최적의
-                인터랙티브 통해 대상물의 기능 정보를 직관적이고 입체적인 체험을
-                제공하여 흥미를 제공합니다.
+                {{ $t("ValueText.enterText.challengesText.contents5") }}
               </span>
             </li>
             <li>
-              <p>콘텐츠의 가치 전달과 관심 유도</p>
+              <p>{{ $t("ValueText.enterText.challengesText.title6") }}</p>
               <span>
-                역사적, 문화적 소재들의 고증 연구 기록물을 공감각적으로 제작하여
-                문화상품으로 개발하여, 관심을 유도하고 가치를 효과적으로 전달할
-                수 있으며, 다양한 유형/무형의 콘텐츠를 과거/현실/미래로 연결할
-                수 있습니다.
+                {{ $t("ValueText.enterText.challengesText.contents6") }}
               </span>
             </li>
           </ul>
