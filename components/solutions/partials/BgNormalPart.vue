@@ -13,23 +13,22 @@ export default {
     text: String,
     boldText: String,
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>
-@import '~assets/css/pages/products.scss';
+@import "~assets/css/pages/products.scss";
 .bg-normal-part {
-  margin-top: 200px;
   margin-bottom: -12px;
   padding-top: 108px;
   text-align: center;
-  background: url('~assets/images/pages/solution/img-bg-solutions.png')
+  background: url("~assets/images/pages/solution/img-bg-solutions.png")
     no-repeat top;
   background-size: 100%;
   > div {
     margin: 0 120px;
     padding: 120px 0 110px;
-    background: url('~assets/images/pages/solution/img-solutions.png');
+    background: url("~assets/images/pages/solution/img-solutions.png");
     background-size: cover;
   }
   p {
@@ -51,13 +50,13 @@ export default {
     margin-top: 120px;
     margin-bottom: -28px;
     padding-top: 28px;
-    background: url('~assets/images/pages/solution/img-bg-solutions-m.png')
+    background: url("~assets/images/pages/solution/img-bg-solutions-m.png")
       no-repeat top;
     background-size: 100%;
     > div {
       margin: 0 24px;
       padding: 40px 0;
-      background: url('~assets/images/pages/solution/img-solutions-m.png');
+      background: url("~assets/images/pages/solution/img-solutions-m.png");
       background-size: cover;
     }
     p {
