@@ -27,7 +27,7 @@
                                     {{$i18n.localeProperties.code === "ko" ? contentData.title : contentData.titleEn}}
                                 </h2>
                                 <p>
-                                    릴리즈 노트
+                                    {{$i18n.localeProperties.code === "ko" ? "프레스" : "Press"}}
                                 </p>
                             </span>
                             <span>
