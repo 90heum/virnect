@@ -596,7 +596,73 @@
             <ul v-if="CustomerTab === 3" class="customerContCont">
               <li>
                 <img
-                  src="https://velog.velcdn.com/images/kyj0206/post/4d765d3f-28de-4517-8775-65f009b619d4/image.png"
+                  src="~/assets/images/brand/education/3DFIA@2x.png"
+                  alt="서울기술연구원"
+                />
+              </li>
+              <li>
+                <img
+                  src="~/assets/images/brand/education/dentalunivercity.png"
+                  alt="서울기술연구원"
+                />
+              </li>
+              <li>
+                <img
+                  src="~/assets/images/brand/education/hanbatunivercity.png"
+                  alt="서울기술연구원"
+                />
+              </li>
+              <li>
+                <img
+                  src="~/assets/images/brand/education/hansinuniverctity.png"
+                  alt="서울기술연구원"
+                />
+              </li>
+              <li>
+                <img
+                  src="~/assets/images/brand/education/Kaist@2x.png"
+                  alt="서울기술연구원"
+                />
+              </li>
+              <li>
+                <img
+                  src="~/assets/images/brand/education/kisulunivercity.png"
+                  alt="서울기술연구원"
+                />
+              </li>
+              <li>
+                <img
+                  src="~/assets/images/brand/education/koreahospital.png"
+                  alt="서울기술연구원"
+                />
+              </li>
+              <li>
+                <img
+                  src="~/assets/images/brand/education/korearesource.png"
+                  alt="서울기술연구원"
+                />
+              </li>
+              <li>
+                <img
+                  src="~/assets/images/brand/education/koreauniverciticar.png"
+                  alt="서울기술연구원"
+                />
+              </li>
+              <li>
+                <img
+                  src="~/assets/images/brand/education/mokfounivercity.png"
+                  alt="서울기술연구원"
+                />
+              </li>
+              <li>
+                <img
+                  src="~/assets/images/brand/education/Multicampus@2x.png"
+                  alt="서울기술연구원"
+                />
+              </li>
+              <li>
+                <img
+                  src="~/assets/images/brand/education/radoscience.png"
                   alt="서울기술연구원"
                 />
               </li>
