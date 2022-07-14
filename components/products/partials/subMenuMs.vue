@@ -120,16 +120,16 @@
         <span class="MenuSubSub">
           <ul>
             <li>
-              <a class="SubSubActive" href="#xrSolutionId" id="a01">제품개요</a>
+              <a class="SubSubActive" href="#hololensId" id="a01">Hololens</a>
             </li>
             <li>
-              <a href="#productPropertyId" id="a02">제품특징</a>
+              <a href="#productInfoId" id="a02">기능소개</a>
             </li>
             <li>
-              <a href="#headingModule" id="a03">기능소개</a>
+              <a href="#caseId" id="a03">적용사례</a>
             </li>
             <li>
-              <a href="#remoteEffectPartId" id="a04">도입효과</a>
+              <a href="#realWearId" id="a04">Realwear</a>
             </li>
           </ul>
         </span>

@@ -118,7 +118,7 @@
           </ul>
         </span>
 
-        <sub-menu-nav />
+        <sub-menu-nav :type="true"/>
       </div>
     </div>
   </div>

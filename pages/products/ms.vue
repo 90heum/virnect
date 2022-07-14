@@ -12,7 +12,7 @@
         </span>
       </div>
     </section>
-    <section class="classDeviceVideo">
+    <section class="classDeviceVideo" id="hololensId">
       <div class="DeviceVideoWrap">
         <div class="videoTit">
           <i>
@@ -46,6 +46,7 @@
     </section>
 
     <!-- 기능소개 -->
+    <div id="productInfoId"/>
     <heading-module
       :title="$t('productsText.msText.introText.title')"
     ></heading-module>
@@ -54,7 +55,7 @@
     ></benefit-part>
 
     <!-- 적용사례 -->
-    <div class="example-wrap">
+    <div class="example-wrap" id="caseId">
       <section class="divide-section">
         <div class="example-style">
           <heading-module
@@ -74,7 +75,7 @@
     </div>
 
     <!-- 아이템 -->
-    <section class="deviceItem">
+    <section class="deviceItem" id="realWearId">
       <div class="deviceItemWrap">
         <span>
           <a href="https://www.realwear.com/ko/hmt-1/">

@@ -1,7 +1,7 @@
 <template>
   <section class="products-section">
     <subMenuTwin />
-    <SubBannerTwin class="bb" />
+    <sub-banner-twin class="bb" />
     <!-- <sub-visual-section
       :image="visualText.image"
       :category="visualText.category"
