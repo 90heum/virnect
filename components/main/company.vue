@@ -41,8 +41,9 @@
           </span>
 
           <client-only>
-            <div class="banner">
-              <div class="CompanyBottomBanner">
+           
+            <slide-carousel />
+              <!-- <div class="CompanyBottomBanner">
                 <div class="CompanyBottomBannerSlider-container">
                   <div
                     class="CompanyBottomBannerSlide"
@@ -64,8 +65,8 @@
                     </span>
                   </div>
                 </div>
-              </div>
-            </div>
+              </div> -->
+            <!-- </div> -->
           </client-only>
         </div>
       </span>
@@ -182,12 +183,16 @@
 <script>
 import { awardData } from "~/components/dummy/award.js";
 import CompanyAwards from "~/components/main/companyAwards.vue";
+import SlideCarousel from "~/components/main/slideCarousel.vue";
+
 export default {
   components: {
-    CompanyAwards
+    CompanyAwards,
+    SlideCarousel
   },  
   data() {
-    return {};
+    return {
+    };
   },
   created() {
     if (process.client) {
@@ -202,7 +207,12 @@ export default {
     contentList: Array,
     irData: Array,
   },
-  methods: {
+  methods: { 
+    getActiveSlide() {
+      this.exampleActiveIdx = this.$el
+        .querySelector(".swiper-slide-active")
+        .getAttribute("data-idx");
+    },
     handleReactiveView() {
       if (window.innerWidth > 1025) {
         this.awardIdx = { ...this.awardIdx, end: 6 };
@@ -226,12 +236,6 @@ export default {
           content: "효율적인 업무와 효과적인 학습환경",
         },
         {
-          src: "https://velog.velcdn.com/images/kyj0206/post/295148e7-24fd-4611-af87-d2f0f95f576a/image.jpg",
-          alt: "Smart future",
-          title: "Smart future",
-          content: "효율적인 업무와 효과적인 학습환경",
-        },
-        {
           src: "https://velog.velcdn.com/images/kyj0206/post/ed9983b2-ceeb-4258-b543-0a29f40fda60/image.jpg",
           alt: "Safe future",
           title: "Safe future",
@@ -247,101 +251,101 @@ export default {
     };
   },
   updated() {
-    if (process.client) {
-      const slider = document.querySelector(
-          ".CompanyBottomBannerSlider-container"
-        ),
-        slides = Array.from(
-          document.querySelectorAll(".CompanyBottomBannerSlide")
-        );
+    // if (process.client) {
+    //   const slider = document.querySelector(
+    //       ".CompanyBottomBannerSlider-container"
+    //     ),
+    //     slides = Array.from(
+    //       document.querySelectorAll(".CompanyBottomBannerSlide")
+    //     );
 
-      let isDragging = false,
-        startPos = 0,
-        currentTranslate = 0,
-        prevTranslate = 0,
-        animationID,
-        currentIndex = 0;
+    //   let isDragging = false,
+    //     startPos = 0,
+    //     currentTranslate = 0,
+    //     prevTranslate = 0,
+    //     animationID,
+    //     currentIndex = 0;
 
-      slides.forEach((slide, index) => {
-        const slideImage = slide.querySelector(".CompanyBottomBannerSlideImg");
-        // disable default image drag
-        slideImage.addEventListener("dragstart", (e) => e.preventDefault());
-        // touch events
-        slide.addEventListener("touchstart", touchStart(index));
-        slide.addEventListener("touchend", touchEnd);
-        slide.addEventListener("touchmove", touchMove);
-        // mouse events
-        slide.addEventListener("mousedown", touchStart(index));
-        slide.addEventListener("mouseup", touchEnd);
-        slide.addEventListener("mousemove", touchMove);
-        slide.addEventListener("mouseleave", touchEnd);
-      });
+    //   slides.forEach((slide, index) => {
+    //     const slideImage = slide.querySelector(".CompanyBottomBannerSlideImg");
+    //     // disable default image drag
+    //     slideImage.addEventListener("dragstart", (e) => e.preventDefault());
+    //     // touch events
+    //     slide.addEventListener("touchstart", touchStart(index));
+    //     slide.addEventListener("touchend", touchEnd);
+    //     slide.addEventListener("touchmove", touchMove);
+    //     // mouse events
+    //     slide.addEventListener("mousedown", touchStart(index));
+    //     slide.addEventListener("mouseup", touchEnd);
+    //     slide.addEventListener("mousemove", touchMove);
+    //     slide.addEventListener("mouseleave", touchEnd);
+    //   });
 
-      // make responsive to viewport changes
-      window.addEventListener("resize", setPositionByIndex);
+    //   // make responsive to viewport changes
+    //   window.addEventListener("resize", setPositionByIndex);
 
-      // prevent menu popup on long press
-      window.oncontextmenu = function (event) {
-        event.preventDefault();
-        event.stopPropagation();
-        return false;
-      };
+    //   // prevent menu popup on long press
+    //   window.oncontextmenu = function (event) {
+    //     event.preventDefault();
+    //     event.stopPropagation();
+    //     return false;
+    //   };
 
-      function getPositionX(event) {
-        return event.type.includes("mouse")
-          ? event.pageX
-          : event.touches[0].clientX;
-      }
+    //   function getPositionX(event) {
+    //     return event.type.includes("mouse")
+    //       ? event.pageX
+    //       : event.touches[0].clientX;
+    //   }
 
-      function touchStart(index) {
-        return function (event) {
-          currentIndex = index;
-          startPos = getPositionX(event);
-          isDragging = true;
-          animationID = requestAnimationFrame(animation);
-          slider.classList.add("CompanyGrabbing");
-        };
-      }
+    //   function touchStart(index) {
+    //     return function (event) {
+    //       currentIndex = index;
+    //       startPos = getPositionX(event);
+    //       isDragging = true;
+    //       animationID = requestAnimationFrame(animation);
+    //       slider.classList.add("CompanyGrabbing");
+    //     };
+    //   }
 
-      function touchMove(event) {
-        if (isDragging) {
-          const currentPosition = getPositionX(event);
-          currentTranslate = prevTranslate + currentPosition - startPos;
-        }
-      }
+    //   function touchMove(event) {
+    //     if (isDragging) {
+    //       const currentPosition = getPositionX(event);
+    //       currentTranslate = prevTranslate + currentPosition - startPos;
+    //     }
+    //   }
 
-      function touchEnd() {
-        cancelAnimationFrame(animationID);
-        isDragging = false;
-        const movedBy = currentTranslate - prevTranslate;
+    //   function touchEnd() {
+    //     cancelAnimationFrame(animationID);
+    //     isDragging = false;
+    //     const movedBy = currentTranslate - prevTranslate;
 
-        // if moved enough negative then snap to next slide if there is one
-        if (movedBy < -100 && currentIndex < slides.length - 1)
-          currentIndex += 1;
+    //     // if moved enough negative then snap to next slide if there is one
+    //     if (movedBy < -100 && currentIndex < slides.length - 1)
+    //       currentIndex += 1;
 
-        // if moved enough positive then snap to previous slide if there is one
-        if (movedBy > 100 && currentIndex > 0) currentIndex -= 1;
+    //     // if moved enough positive then snap to previous slide if there is one
+    //     if (movedBy > 100 && currentIndex > 0) currentIndex -= 1;
 
-        setPositionByIndex();
+    //     setPositionByIndex();
 
-        slider.classList.remove("CompanyGrabbing");
-      }
+    //     slider.classList.remove("CompanyGrabbing");
+    //   }
 
-      function animation() {
-        setSliderPosition();
-        if (isDragging) requestAnimationFrame(animation);
-      }
+    //   function animation() {
+    //     setSliderPosition();
+    //     if (isDragging) requestAnimationFrame(animation);
+    //   }
 
-      function setPositionByIndex() {
-        currentTranslate = currentIndex * -window.innerWidth;
-        prevTranslate = currentTranslate;
-        setSliderPosition();
-      }
+    //   function setPositionByIndex() {
+    //     currentTranslate = currentIndex * -window.innerWidth;
+    //     prevTranslate = currentTranslate;
+    //     setSliderPosition();
+    //   }
 
-      function setSliderPosition() {
-        slider.style.transform = `translateX(${currentTranslate}px)`;
-      }
-    }
+    //   function setSliderPosition() {
+    //     slider.style.transform = `translateX(${currentTranslate}px)`;
+    //   }
+    // }
   },
 };
 </script>
@@ -360,6 +364,9 @@ export default {
   }
 }
 .company {
+  /* 컴퍼니 배너 수정 */
+  .CompanyBottomBannerSlideImg { max-width: 500px; }
+  /* */ 
   display: block;
   overflow: hidden;
   .companyWrap {

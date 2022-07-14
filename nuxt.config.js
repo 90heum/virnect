@@ -22,7 +22,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['swiper/dist/css/swiper.css', 'nuxt-video-player/src/assets/css/main.css'],
+  css: ['swiper/dist/css/swiper.css', 'nuxt-video-player/src/assets/css/main.css', 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'],
   buildModules: ['@nuxtjs/style-resources', '@nuxt/image'],
   styleResources: {
     less: '~/assets/css/*.scss'
@@ -30,6 +30,12 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    {
+      src: "@/plugins/locomotive.js",
+      mode: "client",
+      ssr: false
+    },
+    { src: "./plugins/slickCarousel.js", ssr: false, mode: "client"},
     { src: './plugins/vue-awesome-swiper.js', ssr: false, mode: "client" },
   ],
 
@@ -39,7 +45,7 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
   ],
-  modules: [
+  modules: [    
     ['nuxt-gsap-module'],
     ['nuxt-agile'],
     ['@nuxtjs/dayjs'],
@@ -79,6 +85,11 @@ export default {
     axios: {
       baseURL: 'http://13.209.200.75:8080',
       credential: true
+    }
+  },
+  gsap: {
+    extraPlugins: {
+      scrollTrigger: true
     }
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
