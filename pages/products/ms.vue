@@ -73,9 +73,9 @@
         </div>
       </section>
     </div>
-
+    <span id="realWearId" />
     <!-- 아이템 -->
-    <section class="deviceItem" id="realWearId">
+    <section class="deviceItem">
       <div class="deviceItemWrap">
         <span>
           <a href="https://www.realwear.com/ko/hmt-1/">
