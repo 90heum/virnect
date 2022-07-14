@@ -402,17 +402,267 @@
                 />
               </li>
             </ul>
+
             <!-- 민간 -->
             <ul v-if="CustomerTab === 2" class="customerContCont">
               <li>
-                <img src="~/assets/images/common/kt@2x.png" alt="kt" />
+                <img
+                  src="~/assets/images/brand/minkan/hanhwabuild.png"
+                  alt="kt"
+                />
+              </li>
+
+              <li>
+                <img
+                  src="~/assets/images/brand/minkan/HanwhaTotal@2x.png"
+                  alt="kt"
+                />
+              </li>
+
+              <li>
+                <img
+                  src="~/assets/images/brand/minkan/hanwhawSolution.png"
+                  alt="kt"
+                />
+              </li>
+
+              <li>
+                <img
+                  src="~assets/images/brand/minkan/hundaijungkongup.png"
+                  alt="kt"
+                />
+              </li>
+
+              <li>
+                <img
+                  src="~/assets/images/brand/minkan/hyundaiengine.png"
+                  alt="kt"
+                />
+              </li>
+
+              <li>
+                <img
+                  src="~/assets/images/brand/minkan/hyundaijosuan.png"
+                  alt="kt"
+                />
+              </li>
+
+              <li>
+                <img
+                  src="~/assets/images/brand/minkan/hyundaijung.png"
+                  alt="kt"
+                />
+              </li>
+
+              <li>
+                <img
+                  src="~/assets/images/brand/minkan/koreajosun.png"
+                  alt="kt"
+                />
+              </li>
+
+              <li>
+                <img
+                  src="~/assets/images/brand/minkan/KT commerce@2x.png"
+                  alt="kt"
+                />
+              </li>
+
+              <li>
+                <img src="~/assets/images/brand/minkan/KT@2x.png" alt="kt" />
+              </li>
+
+              <li>
+                <img src="~/assets/images/brand/minkan/LGCNS@2x.png" alt="kt" />
+              </li>
+
+              <li>
+                <img
+                  src="~/assets/images/brand/minkan/LGdisplayx.png"
+                  alt="kt"
+                />
+              </li>
+
+              <li>
+                <img src="~/assets/images/brand/minkan/lgEnergy.png" alt="kt" />
+              </li>
+
+              <li>
+                <img
+                  src="~/assets/images/brand/minkan/lginotech.png"
+                  alt="kt"
+                />
+              </li>
+
+              <li>
+                <img src="~/assets/images/brand/minkan/lgjeonja.png" alt="kt" />
+              </li>
+
+              <li>
+                <img src="~/assets/images/brand/minkan/lglife.png" alt="kt" />
+              </li>
+
+              <li>
+                <img src="~/assets/images/brand/minkan/lgwhahak.png" alt="kt" />
+              </li>
+
+              <li>
+                <img
+                  src="~/assets/images/brand/minkan/Ls Metal@2x.png"
+                  alt="kt"
+                />
+              </li>
+
+              <li>
+                <img src="~/assets/images/brand/minkan/lsauto.png" alt="kt" />
+              </li>
+
+              <li>
+                <img
+                  src="~/assets/images/brand/minkan/LSElectric@2x.png"
+                  alt="kt"
+                />
+              </li>
+
+              <li>
+                <img src="~/assets/images/brand/minkan/lsmtron.png" alt="kt" />
+              </li>
+
+              <li>
+                <img src="~/assets/images/brand/minkan/S&I@2x.png" alt="kt" />
+              </li>
+
+              <li>
+                <img
+                  src="~/assets/images/brand/minkan/samsungJ2x.png"
+                  alt="kt"
+                />
+              </li>
+
+              <li>
+                <img
+                  src="~/assets/images/brand/minkan/samsungM2x.png"
+                  alt="kt"
+                />
+              </li>
+
+              <li>
+                <img
+                  src="~/assets/images/brand/minkan/samsungS2x.png"
+                  alt="kt"
+                />
+              </li>
+
+              <li>
+                <img src="~/assets/images/brand/minkan/SK@2x.png" alt="kt" />
+              </li>
+
+              <li>
+                <img src="~/assets/images/brand/minkan/skbuild.png" alt="kt" />
+              </li>
+
+              <li>
+                <img
+                  src="~/assets/images/brand/minkan/skcamical.png"
+                  alt="kt"
+                />
+              </li>
+
+              <li>
+                <img src="~/assets/images/brand/minkan/skcnc.png" alt="kt" />
+              </li>
+
+              <li>
+                <img
+                  src="~/assets/images/brand/minkan/SKecoplant@2x.png"
+                  alt="kt"
+                />
+              </li>
+
+              <li>
+                <img src="~/assets/images/brand/minkan/skenergy.png" alt="kt" />
+              </li>
+              <li>
+                <img
+                  src="~/assets/images/brand/minkan/sktelecom.png"
+                  alt="kt"
+                />
+              </li>
+              <li>
+                <img src="~/assets/images/brand/minkan/SMC@2x.png" alt="kt" />
               </li>
             </ul>
             <!-- 교육 -->
             <ul v-if="CustomerTab === 3" class="customerContCont">
               <li>
                 <img
-                  src="https://velog.velcdn.com/images/kyj0206/post/4d765d3f-28de-4517-8775-65f009b619d4/image.png"
+                  src="~/assets/images/brand/education/3DFIA@2x.png"
+                  alt="서울기술연구원"
+                />
+              </li>
+              <li>
+                <img
+                  src="~/assets/images/brand/education/dentalunivercity.png"
+                  alt="서울기술연구원"
+                />
+              </li>
+              <li>
+                <img
+                  src="~/assets/images/brand/education/hanbatunivercity.png"
+                  alt="서울기술연구원"
+                />
+              </li>
+              <li>
+                <img
+                  src="~/assets/images/brand/education/hansinuniverctity.png"
+                  alt="서울기술연구원"
+                />
+              </li>
+              <li>
+                <img
+                  src="~/assets/images/brand/education/Kaist@2x.png"
+                  alt="서울기술연구원"
+                />
+              </li>
+              <li>
+                <img
+                  src="~/assets/images/brand/education/kisulunivercity.png"
+                  alt="서울기술연구원"
+                />
+              </li>
+              <li>
+                <img
+                  src="~/assets/images/brand/education/koreahospital.png"
+                  alt="서울기술연구원"
+                />
+              </li>
+              <li>
+                <img
+                  src="~/assets/images/brand/education/korearesource.png"
+                  alt="서울기술연구원"
+                />
+              </li>
+              <li>
+                <img
+                  src="~/assets/images/brand/education/koreauniverciticar.png"
+                  alt="서울기술연구원"
+                />
+              </li>
+              <li>
+                <img
+                  src="~/assets/images/brand/education/mokfounivercity.png"
+                  alt="서울기술연구원"
+                />
+              </li>
+              <li>
+                <img
+                  src="~/assets/images/brand/education/Multicampus@2x.png"
+                  alt="서울기술연구원"
+                />
+              </li>
+              <li>
+                <img
+                  src="~/assets/images/brand/education/radoscience.png"
                   alt="서울기술연구원"
                 />
               </li>
