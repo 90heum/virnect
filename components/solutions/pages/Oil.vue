@@ -18,13 +18,14 @@
     <section class="ProduceChallenge">
       <div class="ProduceChallengeWrap">
         <div class="ProduceTit">
-          <h2>인프라/자원 산업의 문제에 <br />대해 고민 해 보셨나요?</h2>
+          <h2>
+            {{ $t("ValueText.OilProduceText.topText.title1") }}
+            <p>{{ $t("ValueText.OilProduceText.topText.title2") }}</p>
+          </h2>
           <span>
-            인프라/자원 산업은 복잡한 설비와 데이터로 인해 관리 효율 저하를 겪고
-            있습니다. 눈에 보이지 않는 매립된 설비들, 설비 간
+            {{ $t("ValueText.OilProduceText.topText.contents1") }}
             <p>
-              복잡한 관계성은 현장 파악에 어려움을 줍니다. 현장 전문성을 가진
-              고급 인력 확보 또한 문제가 되는 상황입니다.
+              {{ $t("ValueText.OilProduceText.topText.contents2") }}
             </p>
           </span>
           <i>

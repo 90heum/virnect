@@ -102,7 +102,7 @@
           <div>
             <p>VIRNECT Remote</p>
             <h2>XR 원격 협업 솔루션</h2>
-            <span>
+            <span class="solution">
               <p>
                 VIRNECT Remote의 실시간 원격협업 서비스를 통해 산업 현장에
                 필요한 정보와
@@ -224,7 +224,7 @@
             </span>
           </div>
 
-          <div style="padding-top: 52px">
+          <div class="viewview" style="padding-top: 52px">
             <span>
               <button>
                 <nuxt-link to="/products/view"> 자세히 보기 </nuxt-link>
@@ -504,6 +504,7 @@ export default {
         display: flex;
         min-height: 70px;
         height: 100%;
+        padding: 0;
         li {
           cursor: pointer;
           min-height: 70px;
@@ -553,7 +554,6 @@ export default {
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto 100%;
-    align-items: center;
     justify-content: center;
     .bottomBackLogo {
       position: absolute;
@@ -574,6 +574,7 @@ export default {
       position: absolute;
       max-width: 1200px;
       padding: 0 30px;
+      padding-top: 165px;
       gap: 59px;
       &.bottomContActive {
         display: flex;
@@ -624,7 +625,7 @@ export default {
               line-height: normal;
               letter-spacing: -0.4px;
               color: #121212;
-              margin-bottom: 40px;
+              margin-bottom: 30px;
             }
             > span {
               display: flex;
@@ -754,7 +755,39 @@ export default {
     }
   }
 }
-
+@media screen and (max-width: 1150px) {
+  .moduleBottomTitMake,
+      .moduleBottomTitView,
+      .moduleBottomTitTwin,
+      .moduleBottomTitTrack,
+      .moduleBottomTitRemote {
+        div {
+          &:first-child {
+            span {display: inline;}
+            > p {
+            }
+            h2 {
+              margin-bottom: 10px;
+            }
+          }}}
+      .moduleBottomTitRemote {
+        div {
+        .solution{
+          display: inline !important;
+          >p{
+            display: inline;
+          }
+        }
+        }
+      }
+}
+@media screen and (max-width: 1050px) {
+.moduleBottomTitView {
+    .viewview {
+        padding-top: 26px!important;
+    }
+  }
+}
 @media screen and (max-width: 1000px) {
   .productsModule .moduleBottom .moduleBottomWrapTrack.bottomContActive,
   .productsModule .moduleBottom .moduleBottomWrapTwin.bottomContActive,
@@ -765,7 +798,7 @@ export default {
     flex-direction: column;
     width: 100%;
   }
-
+  
   .productsModule .moduleBottom .moduleBottomWrapTrack .moduleBottomCont,
   .productsModule .moduleBottom .moduleBottomWrapTwin .moduleBottomCont,
   .productsModule .moduleBottom .moduleBottomWrapView .moduleBottomCont,
@@ -805,6 +838,35 @@ export default {
   .productsModule .moduleBottom {
     min-height: 669px;
   }
+  .productsModule .moduleBottom .moduleBottomWrapTrack.bottomContActive, .productsModule .moduleBottom .moduleBottomWrapTwin.bottomContActive, .productsModule .moduleBottom .moduleBottomWrapView.bottomContActive, .productsModule .moduleBottom .moduleBottomWrapMake.bottomContActive, .productsModule .moduleBottom .moduleBottomWrapRemote.bottomContActive{
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .productsModule .moduleBottom .moduleBottomWrapTrack .moduleBottomCont, .productsModule .moduleBottom .moduleBottomWrapTwin .moduleBottomCont, .productsModule .moduleBottom .moduleBottomWrapView .moduleBottomCont, .productsModule .moduleBottom .moduleBottomWrapMake .moduleBottomCont, .productsModule .moduleBottom .moduleBottomWrapRemote .moduleBottomCont{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .productsModule .moduleBottom .moduleBottomWrapTrack .moduleBottomTitMake, .productsModule .moduleBottom .moduleBottomWrapTrack .moduleBottomTitView, .productsModule .moduleBottom .moduleBottomWrapTrack .moduleBottomTitTwin, .productsModule .moduleBottom .moduleBottomWrapTrack .moduleBottomTitTrack, .productsModule .moduleBottom .moduleBottomWrapTrack .moduleBottomTitRemote, .productsModule .moduleBottom .moduleBottomWrapTwin .moduleBottomTitMake, .productsModule .moduleBottom .moduleBottomWrapTwin .moduleBottomTitView, .productsModule .moduleBottom .moduleBottomWrapTwin .moduleBottomTitTwin, .productsModule .moduleBottom .moduleBottomWrapTwin .moduleBottomTitTrack, .productsModule .moduleBottom .moduleBottomWrapTwin .moduleBottomTitRemote, .productsModule .moduleBottom .moduleBottomWrapView .moduleBottomTitMake, .productsModule .moduleBottom .moduleBottomWrapView .moduleBottomTitView, .productsModule .moduleBottom .moduleBottomWrapView .moduleBottomTitTwin, .productsModule .moduleBottom .moduleBottomWrapView .moduleBottomTitTrack, .productsModule .moduleBottom .moduleBottomWrapView .moduleBottomTitRemote, .productsModule .moduleBottom .moduleBottomWrapMake .moduleBottomTitMake, .productsModule .moduleBottom .moduleBottomWrapMake .moduleBottomTitView, .productsModule .moduleBottom .moduleBottomWrapMake .moduleBottomTitTwin, .productsModule .moduleBottom .moduleBottomWrapMake .moduleBottomTitTrack, .productsModule .moduleBottom .moduleBottomWrapMake .moduleBottomTitRemote, .productsModule .moduleBottom .moduleBottomWrapRemote .moduleBottomTitMake, .productsModule .moduleBottom .moduleBottomWrapRemote .moduleBottomTitView, .productsModule .moduleBottom .moduleBottomWrapRemote .moduleBottomTitTwin, .productsModule .moduleBottom .moduleBottomWrapRemote .moduleBottomTitTrack, .productsModule .moduleBottom .moduleBottomWrapRemote .moduleBottomTitRemote{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .productsModule .moduleBottom{
+        min-height: 1000px;
+
+    }
+    .productsModule .moduleBottom .moduleBottomWrapTrack, .productsModule .moduleBottom .moduleBottomWrapTwin, .productsModule .moduleBottom .moduleBottomWrapView, .productsModule .moduleBottom .moduleBottomWrapMake, .productsModule .moduleBottom .moduleBottomWrapRemote {
+      flex-direction: column;
+      padding-top: 100px;
+    }
+    .moduleBottomCont {
+        img {
+          max-width: 100% !important;
+        }
+      }
 }
 @media screen and (max-width: 768px) {
   .productsModule {
@@ -813,11 +875,33 @@ export default {
 }
 @media screen and (max-width: 600px) {
   .productsModule .moduleBottom {
-    min-height: 770px;
   }
   .productsModule .moduleTop .moduleTopNavi ul {
     padding-left: 0;
   }
+  .productsModule .moduleTop .moduleTopTit .dataModule{
+        flex-wrap: wrap;
+        padding: 25px 0;
+    }
+
+    .productsModule .moduleTop .moduleTopTit .dataModule li{
+        width: 50%;
+        border: none;
+    }
+
+    .productsModule .moduleTop .moduleTopTit .dataModule li:nth-child(1),
+    .productsModule .moduleTop .moduleTopTit .dataModule li:nth-child(3){
+        border-right: 1px solid #c5c8cf;
+    }
+    .productsModule .moduleTop .moduleTopTit .dataModule li:nth-child(1),
+    .productsModule .moduleTop .moduleTopTit .dataModule li:nth-child(2){
+        padding-bottom: 55px;
+    }
+    .moduleBottomCont {
+        img {
+          max-width: 100%;
+        }
+      }
 }
 @media screen and (max-width: 425px) {
   .moduleBottomWrapTrack,
