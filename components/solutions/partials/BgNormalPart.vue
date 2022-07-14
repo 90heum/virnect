@@ -47,7 +47,7 @@ export default {
   }
 
   @media (max-width: $mobile) {
-    margin-top: 120px;
+    // margin-top: 120px;
     margin-bottom: -28px;
     padding-top: 28px;
     background: url("~assets/images/pages/solution/img-bg-solutions-m.png")
