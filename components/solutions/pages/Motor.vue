@@ -36,26 +36,26 @@
                 </li>
                 <li>
                   <p>
-                    {{ $t("ValueText.educationText.challengesText.title1") }}
+                    {{ $t("ValueText.educationText.challengesText.title2") }}
                   </p>
                   <span>
-                    {{ $t("ValueText.educationText.challengesText.contents1") }}
+                    {{ $t("ValueText.educationText.challengesText.contents2") }}
                   </span>
                 </li>
                 <li>
                   <p>
-                    {{ $t("ValueText.educationText.challengesText.title1") }}
+                    {{ $t("ValueText.educationText.challengesText.title3") }}
                   </p>
                   <span>
-                    {{ $t("ValueText.educationText.challengesText.contents1") }}
+                    {{ $t("ValueText.educationText.challengesText.contents3") }}
                   </span>
                 </li>
                 <li>
                   <p>
-                    {{ $t("ValueText.educationText.challengesText.title1") }}
+                    {{ $t("ValueText.educationText.challengesText.title4") }}
                   </p>
                   <span>
-                    {{ $t("ValueText.educationText.challengesText.contents1") }}
+                    {{ $t("ValueText.educationText.challengesText.contents4") }}
                   </span>
                 </li>
               </ul>
@@ -73,27 +73,27 @@
         <span class="SE_Cont">
           <ul>
             <li>
-              <p>{{ $t("ValueText.educationText.challengesText.title1") }}</p>
+              <p>{{ $t("ValueText.educationText.challengesText.title5") }}</p>
               <span>
-                {{ $t("ValueText.educationText.challengesText.contents1") }}
+                {{ $t("ValueText.educationText.challengesText.contents5") }}
               </span>
             </li>
             <li>
-              <p>{{ $t("ValueText.educationText.challengesText.title1") }}</p>
+              <p>{{ $t("ValueText.educationText.challengesText.title6") }}</p>
               <span>
-                {{ $t("ValueText.educationText.challengesText.contents1") }}
+                {{ $t("ValueText.educationText.challengesText.contents6") }}
               </span>
             </li>
             <li>
-              <p>{{ $t("ValueText.educationText.challengesText.title1") }}</p>
+              <p>{{ $t("ValueText.educationText.challengesText.title7") }}</p>
               <span>
-                {{ $t("ValueText.educationText.challengesText.contents1") }}
+                {{ $t("ValueText.educationText.challengesText.contents7") }}
               </span>
             </li>
             <li>
-              <p>{{ $t("ValueText.educationText.challengesText.title1") }}</p>
+              <p>{{ $t("ValueText.educationText.challengesText.title8") }}</p>
               <span>
-                {{ $t("ValueText.educationText.challengesText.contents1") }}
+                {{ $t("ValueText.educationText.challengesText.contents8") }}
               </span>
             </li>
           </ul>
