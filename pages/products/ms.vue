@@ -12,7 +12,7 @@
         </span>
       </div>
     </section>
-    <section class="classDeviceVideo">
+    <section class="classDeviceVideo" id="hololensId">
       <div class="DeviceVideoWrap">
         <div class="videoTit">
           <i>
@@ -41,6 +41,7 @@
               제품 정보 바로가기
             </a>
           </button>
+          <div id="productInfoId"/>
         </div>
       </div>
     </section>
@@ -52,7 +53,7 @@
     <benefit-part
       :benefitArr="$t('productsText.msText.benefitLists')"
     ></benefit-part>
-
+  <span id="caseId" />
     <!-- 적용사례 -->
     <div class="example-wrap">
       <section class="divide-section">
@@ -72,7 +73,7 @@
         </div>
       </section>
     </div>
-
+    <span id="realWearId" />
     <!-- 아이템 -->
     <section class="deviceItem">
       <div class="deviceItemWrap">

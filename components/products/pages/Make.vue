@@ -59,7 +59,7 @@
             <p>디바이스별 콘텐츠 제작기능 제공</p>
           </span>
         </span>
-        <span class="overViewBox">
+        <span class="overViewBox" id="featuresWrapId">
           <ul>
             <li>
               <p>2,569</p>
@@ -80,7 +80,7 @@
 
     <!-- 기능소개 -->
     <div class="featuresMake">
-      <div class="featuresWrap" id="featuresWrapId">
+      <div class="featuresWrap">
         <span class="title">
           <p>제품특징</p>
         </span>
@@ -151,6 +151,7 @@
                 <p>IoT데이터 및 고객사 시스템과의 연동(구축형)</p>
               </li>
             </ul>
+            <span id="headingModuleBottom" />
           </span>
           <span class="featuresCont">
             <img
@@ -163,7 +164,6 @@
     </div>
 
     <!-- ㅇㄹㅁㅇㄴㄹ -->
-    <span id="headingModuleBottom" />
     <heading-module
       :category="$t('productsText.makeText.funcTitle.category')"
       :title="$t('productsText.makeText.funcTitle.title')"

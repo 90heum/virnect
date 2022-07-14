@@ -93,10 +93,10 @@
             <p>있는 3D 스캐닝 서비스를 제공합니다.</p>
           </span>
         </span>
+        <span id="headingModuleBottom" />
       </div>
     </div>
 
-    <span id="headingModuleBottom" />
     <heading-module
       :category="$t('productsText.twinText.funcTitle.category')"
       :title="$t('productsText.twinText.funcTitle.title')"

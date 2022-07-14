@@ -6,11 +6,9 @@
       :title="$t('productsText.remoteText.introText.title')"
       :contents="$t('productsText.remoteText.introText.contents')"
     ></heading-module> -->
-
     <!-- <benefit-part
       :benefitArr="$t('productsText.remoteText.benefitLists')"
     ></benefit-part> -->
-    <span id="headingModuleTop" />
     <heading-module
       :category="$t('productsText.remoteText.funcTitle.category')"
       :title="$t('productsText.remoteText.funcTitle.title')"
@@ -19,7 +17,6 @@
 
     <!-- data 모듈 -->
     <dataModule />
-    <span id="headingModuleBottom" />
     <function-part
       :functionArr="$t('productsText.remoteText.functionLists')"
       :iconImage="functionIconImage"

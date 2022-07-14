@@ -4,7 +4,7 @@
             <li>
               <a :class="`${navActive === 1 ? 'SubSubActive' : ''}`" href="#headingModuleTop" id="a01" @click="() => navActive = 1">제품개요</a>
             </li>
-            <li>
+            <li v-if="!type">
               <a :class="`${navActive === 2 ? 'SubSubActive' : ''}`" href="#featuresWrapId" id="a02" @click="() => navActive = 2">제품특징</a>
             </li>
             <li>
@@ -19,6 +19,9 @@
 
 <script>
 export default {
+  props: {
+    type: Boolean
+  },
   data() {
     return {
       navActive: 1

@@ -1,5 +1,6 @@
 <template>
   <section>
+    <span id="headingModuleTop" />
     <div class="overViewRemote">
       <div class="overViewWrap">
         <span class="overViewTit">
@@ -55,6 +56,7 @@
               <p>계약건수</p>
             </li>
           </ul>
+          <span id="featuresWrapId"/>
         </span>
       </div>
     </div>

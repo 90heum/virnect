@@ -60,7 +60,7 @@
             <p>통한 확장성 제공(구축형)</p>
           </span>
         </span>
-        <span class="overViewBox">
+        <span class="overViewBox"  id="featuresWrapId">
           <ul>
             <li>
               <p>2,569</p>
@@ -81,7 +81,7 @@
 
     <!-- sdaf -->
     <div class="featuresView">
-      <div class="featuresWrap" id="featuresWrapId">
+      <div class="featuresWrap">
         <span class="title">
           <p>제품특징</p>
         </span>
@@ -134,6 +134,7 @@
                 </p>
               </li>
             </ul>
+            <span id="headingModuleBottom" />
           </span>
           <span class="featuresCont">
             <img
@@ -145,7 +146,6 @@
       </div>
     </div>
     <!-- dsadsf -->
-    <span id="headingModuleBottom" />
     <heading-module
       :category="$t('productsText.viewText.funcTitle.category')"
       :title="$t('productsText.viewText.funcTitle.title')"

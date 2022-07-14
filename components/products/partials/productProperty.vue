@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="featuresRemote">
-      <div class="featuresWrap" id="featuresWrapId">
+      <div class="featuresWrap">
         <span class="title">
           <p>{{ $t("productsText.productPropertyTitle.title") }}</p>
         </span>
@@ -71,6 +71,7 @@
               src="https://velog.velcdn.com/images/kyj0206/post/a8db337e-78a5-453b-a4ba-15bc111b05b2/image.png"
               alt="features"
             />
+            <span id="headingModuleBottom" />
           </span>
         </div>
       </div>
