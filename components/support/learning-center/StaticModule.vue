@@ -2,7 +2,7 @@
   <!-- 학습센터 고정 모듈 -->
   <div class="centerModule">
     <span class="centerModuleTit">
-      <h2>산업 현장을 위해 최적화 된 버넥트 XR 솔루션을 만나보세요</h2>
+      <h2>{{ $t("supportText.LearnText.middletext") }}</h2>
     </span>
     <span class="centerModuleMore">
       <span>

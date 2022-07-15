@@ -15,12 +15,17 @@
     },
     "LearnText": {
       "title": "Learning Center",
-      "contents": "Guides you through tutorials, manuals, tips, and more."
+      "contents": "Guides you through tutorials, manuals, tips, and more.",
+      "middletext": " VIRNECT products make safer and more efficient industrial worksites by applying XR solutions and digital twin technologies."
     },
     "supModule": {
       "title": "We always welcome various inquiries from customers.",
       "subtitle": "Please contact any one of our experts with any questions.",
       "now": "inquiry"
+    },
+    "contactBannerText": {
+      "contents1": "Are you looking for solutions or trying to advance your worksite?",
+      "contents2": "VIRNECT is prepared to solve the problem."
     },
     "visualText": {
       "title": " 영문영문영문<p>빠르고 친절하게 해결해 드리겠습니다.</p>",
@@ -92,6 +97,22 @@
       "Inquiries": {
         "title": "Inquiries",
         "url": ""
+      }
+    },
+    "contactText": {
+      "contact": {
+        "title": "We always welcome various inquiries from customers.",
+        "subTitle": "Please select your inquiry type below and submit your inquiry so that we can provide a reply more quickly.",
+        "buy": "Purchase Inquiry",
+        "productQ": "Product inquiry",
+        "other": "Other",
+        "myproduct": "관심제품 *",
+        "email": "E-mail *",
+        "name": "Name *",
+        "company": "Company *",
+        "department": "Industry",
+        "level": "Position",
+        "contents": "nquiry *"
       }
     }
   }

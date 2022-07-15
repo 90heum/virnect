@@ -31,10 +31,9 @@
               :class="`${chosenMenu ? 'contactTabActive3' : ''}`"
               tap-content="1"
             >
-              <h2>무엇을 도와드릴까요?</h2>
+              <h2>{{ $t("supportText.contactText.contact.title") }}</h2>
               <p>
-                아래 문의 유형을 선택하시고, 내용을 작성해주시면 신속하게 답변
-                드리겠습니다.
+                {{ $t("supportText.contactText.contact.subTitle") }}
               </p>
               <span class="formTab">
                 <ul>
@@ -48,19 +47,19 @@
                     :class="`${isTab === 2 ? 'active' : ''}`"
                     @click="chooseTab(2)"
                   >
-                    구매문의
+                    {{ $t("supportText.contactText.contact.buy") }}
                   </li>
                   <li
                     :class="`${isTab === 3 ? 'active' : ''}`"
                     @click="chooseTab(3)"
                   >
-                    제품문의
+                    {{ $t("supportText.contactText.contact.productQ") }}
                   </li>
                   <li
                     :class="`${isTab === 4 ? 'active' : ''}`"
                     @click="chooseTab(4)"
                   >
-                    기타
+                    {{ $t("supportText.contactText.contact.other") }}
                   </li>
                 </ul>
               </span>
@@ -237,14 +236,14 @@
         </span>
       </div>
     </section>
-        <support-tail 
+    <support-tail
       :bg="tailText.bg"
       :mention="$t('productsText.tailText')"
       :blueBtn="tailText.blue"
       :blueRouter="tailText.blueRouter"
       :greyBtn="tailText.grey"
       :greyRouter="tailText.greyRouter"
-      />
+    />
   </div>
 </template>
 
@@ -259,7 +258,7 @@ export default {
     SubMenu,
     GoogleMap,
     InquiryBanner,
-    SupportTail
+    SupportTail,
   },
   data() {
     return {
