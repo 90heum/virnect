@@ -23,7 +23,7 @@
               @click="[(gnb1 = false), (gnbStyleBorder = { gnbStyle1: true })]"
             >
               <nuxt-link
-                to="/solutions/energy_resource"
+                to="/value/energy_resource"
                 :class="`navTab container1 ${gnb1 ? 'gnbActive' : ''}`"
                 v-bind:style="gnbStyleBorder.gnbStyle1 ? commonGnbStyle : {}"
               >
@@ -734,7 +734,7 @@
             <nuxt-link to="/products/productsMain">
               <img src="~/assets/images/pages/product.png" alt="#" />
             </nuxt-link>
-            <nuxt-link to="/solutions/energy_resource">
+            <nuxt-link to="/value/energy_resource">
               <img src="~/assets/images/pages/value.png" alt="#" />
             </nuxt-link>
           </a>
@@ -776,7 +776,7 @@ export default {
     data() {
       return {
         visible: false,
-        contentList: []
+        contentList: [],
       };
     },
   },
