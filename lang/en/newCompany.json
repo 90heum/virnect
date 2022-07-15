@@ -1,5 +1,9 @@
 {
     "newCompany": {
+        "AwardModuleText": {
+            "AwardText": "Awards",
+            "Award": "awarden"
+        },
         "BrandText": {
             "topTitleText": "VIRNECT pursues client value.",
             "topContents1": "VIRNECT finds solutions by connecting virtual reality with our clients' reality.",

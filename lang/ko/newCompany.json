@@ -1,5 +1,8 @@
 {
     "newCompany": {
+        "AwardModuleText": {
+            "AwardText": "인증 및 수상"
+        },
         "BrandText": {
             "topTitleText": "VIRNECT는 고객의 가치를 지향합니다",
             "topContents1": "VIRNECT는 고객의 문제를 해결하기 위해",

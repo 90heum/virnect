@@ -1,3 +1,4 @@
+
 export const awardData = [
     {
         src: "https://velog.velcdn.com/images/kyj0206/post/ef5b1c81-cebd-4c4f-bdbd-071be7253b3c/image.jpg",
@@ -182,8 +183,6 @@ export const awardData = [
         info: ""
     }
 ]
-
-
 
 
 
