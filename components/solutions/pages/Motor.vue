@@ -455,5 +455,5 @@ export default {
 @import "~assets/css/pages/products.scss";
 @import "~/assets/css/pages/eduChallenges.scss";
 @import "~/assets/css/pages/eduS&E.scss";
-@import "/Users/majeongheum/virnect/assets/css/pages/edu_Usecase.scss";
+@import "~/assets/css/pages/edu_Usecase.scss";
 </style>
