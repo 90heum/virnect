@@ -217,6 +217,27 @@
     "_name": "_60625dbe"
   },
   {
+    "name": "terms-charged",
+    "path": "/terms/charged",
+    "component": "/Users/hellodigital/virnect/pages/terms/charged.vue",
+    "chunkName": "pages/terms/charged",
+    "_name": "_4fbca624"
+  },
+  {
+    "name": "terms-persnal",
+    "path": "/terms/persnal",
+    "component": "/Users/hellodigital/virnect/pages/terms/persnal.vue",
+    "chunkName": "pages/terms/persnal",
+    "_name": "_a25a2a52"
+  },
+  {
+    "name": "terms-service",
+    "path": "/terms/service",
+    "component": "/Users/hellodigital/virnect/pages/terms/service.vue",
+    "chunkName": "pages/terms/service",
+    "_name": "_c0a723ae"
+  },
+  {
     "name": "company-subCompany-Brand",
     "path": "/company/subCompany/Brand",
     "component": "/Users/hellodigital/virnect/pages/company/subCompany/Brand.vue",

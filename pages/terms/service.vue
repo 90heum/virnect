@@ -1,0 +1,163 @@
+<template>
+  <div class="termsWrapper">
+    <div class="termsInnerWrapper">
+        <div class="termsTypeWrapper">
+            <span v-for="(data, idx) of termsType"
+                  :key="idx"
+                  :class="`termsTypeBox ${type === data.id ? 'active' : ''}`">
+                  {{data.name}}
+            </span>
+        </div>
+        <article>
+            <h1>서비스 이용 약관</h1>
+            <h2>제 1장 총칙</h2>
+            <h3>제 1조 (목적)</h3>
+            <p>본 약관은 주식회사 버넥트(이하 '회사’라 한다.)가 제공하는 VIRNECT 제품과 관련하여, 회사와 회원간에 제품의 이용조건 및 절차, 회사와 회원간의 권리와 의무사항 및 기타 필요한 제반사항의 규정을 목적으로 합니다.</p>
+        </article>
+        <article>
+            <h3>부칙</h3>
+            <ul>
+                <li v-for="(data, idx) of termsHistory"
+                    :key="idx">본 약관은 {{$dayjs(data.noticeDate).format("YYYY년 MM월 DD일")}}부터 시행합니다.</li>
+            </ul>
+        </article>
+
+        <div class="termsSelectWrapper">
+            <input type="text" 
+                   readonly="readonly"
+                   autocomplete="off"
+                   class="termsSelectInput"/>
+            <span class="termsSelectInputArrow">
+                <span class="termsSelectInputInnerArrow">
+                    <i></i>
+                </span>
+            </span>
+        </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+    data() {
+        return {
+            type: 1
+        }
+    },
+    async asyncData ({$axios}) {
+        try {
+            const data = Promise.all([$axios.get(`/admin/terms/type`), $axios.get(`/admin/terms?typeId=1`)]);
+            const dataJson = await data;
+            return {
+                termsType: dataJson[0].data.data.termsTypeResponseList,
+                termsHistory: dataJson[1].data.data.termsResponseList
+            }
+        } catch (e) {console.error(e)}
+    }
+}
+</script>
+
+<style lang="scss" scoped>
+.termsWrapper {
+    display: flex;
+    justify-content: center;
+    padding: 150px 20px;
+    /deep/ .termsInnerWrapper {
+        .termsSelectWrapper {
+            position: relative;
+            font-size: 14px;
+            display: inline-block;
+            .termsSelectInput {
+                height: 52px;
+                font-size: 15px;
+                text-indent: 24px;
+                border: 2px solid #e6e9ee;
+                transition: .3s;
+                cursor: pointer;
+                padding: 0;
+                color: #111;
+                font-weight: 500;
+            }
+            .termsSelectInputArrow {
+                position: absolute;
+                height: 100%;
+                right: 5px;
+                top: 0;
+                text-align: center;
+                color: #c0c4cc;
+                transition: all .3s;
+                pointer-events: none;
+                .termsSelectInputInnerArrow { 
+                    pointer-events: all; 
+
+                    i {
+                        color: #c0c4cc;
+                        font-size: 14px;
+                        transition: transform .3s;
+                        transform: rotate(180deg);
+                        cursor: pointer;
+                        margin-top: -1px;
+                        margin-right: 6px;
+                        color: #fafbfc;
+                        font-weight: 700;
+                        width: 25px;
+                        line-height: 48px;
+                    }
+                    i::before { content: "a"; }
+                    i::after {
+                        content: "";
+                        height: 100%;
+                        width: 0;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+
+        .termsTypeWrapper { display: flex; }
+        .termsTypeBox {
+            display: inline-block;
+            padding: 17px 60px;
+            color: #979fae;
+            font-size: 16px;
+            background: #fff;
+            border: 1px solid #eaedf3;
+        }
+        .active {
+            color: #fafbfc;
+            background: #0d2a58;
+            border-color: #0d2a58;
+        }
+        max-width: 1200px;
+        width: 100%;
+        word-break: keep-all;
+        h1 { 
+            margin-bottom: 32px;
+            font-weight: 700;
+            font-size: 40px;
+            color: #0D2A58;
+        }
+        h2 { 
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        h3 {
+            margin-bottom: 20px;
+            font-weight: 700;
+            color: #0D2A58;
+        }
+        p {
+            margin-top: 20px;
+            color: #0D2A58;
+        }
+        li {
+            margin-left: 13px;
+            text-indent: -13px;
+            margin-top: 16px;
+            color: #0D2A58;
+        }
+    }
+}
+</style>

@@ -35,6 +35,9 @@ const _2467f924 = () => interopDefault(import('../pages/support/learning-video-d
 const _3f2d804c = () => interopDefault(import('../pages/support/notice.vue' /* webpackChunkName: "pages/support/notice" */))
 const _05c9c622 = () => interopDefault(import('../pages/support/notice-detail.vue' /* webpackChunkName: "pages/support/notice-detail" */))
 const _60625dbe = () => interopDefault(import('../pages/support/supportSubMain.vue' /* webpackChunkName: "pages/support/supportSubMain" */))
+const _4fbca624 = () => interopDefault(import('../pages/terms/charged.vue' /* webpackChunkName: "pages/terms/charged" */))
+const _a25a2a52 = () => interopDefault(import('../pages/terms/persnal.vue' /* webpackChunkName: "pages/terms/persnal" */))
+const _c0a723ae = () => interopDefault(import('../pages/terms/service.vue' /* webpackChunkName: "pages/terms/service" */))
 const _379d9e0a = () => interopDefault(import('../pages/company/subCompany/Brand.vue' /* webpackChunkName: "pages/company/subCompany/Brand" */))
 const _a985eb64 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -173,6 +176,18 @@ export const routerOptions = {
     path: "/support/supportSubMain",
     component: _60625dbe,
     name: "support-supportSubMain"
+  }, {
+    path: "/terms/charged",
+    component: _4fbca624,
+    name: "terms-charged"
+  }, {
+    path: "/terms/persnal",
+    component: _a25a2a52,
+    name: "terms-persnal"
+  }, {
+    path: "/terms/service",
+    component: _c0a723ae,
+    name: "terms-service"
   }, {
     path: "/company/subCompany/Brand",
     component: _379d9e0a,
