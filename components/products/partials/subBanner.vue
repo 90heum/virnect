@@ -10,15 +10,15 @@
         </i>
         <p>VIRNECT Remote</p>
         <h2>
-          {{ $t("productsText.remoteSubTitle.title") }}
+          {{ $t("productsText.remoteBanner.title") }}
         </h2>
         <span class="subExplanation">
-          {{ $t("productsText.remoteSubTitle.contents") }}
+          {{ $t("productsText.remoteBanner.contents") }}
         </span>
         <span>
           <button @click="more()">
             <a>
-              <p>{{ $t("productsText.remoteSubButton.know") }}</p>
+              <p>{{ $t("productsText.subButton.know") }}</p>
               <p>
                 <img
                   src="https://velog.velcdn.com/images/kyj0206/post/ede40cab-2b1a-47ff-a338-ad93d68b93f4/image.png"
@@ -29,17 +29,14 @@
           </button>
           <button>
             <a href="/support/inquiry" target="blank">
-              {{ $t("productsText.remoteSubButton.free") }}
+              {{ $t("productsText.subButton.free") }}
             </a>
           </button>
         </span>
       </span>
       <div class="video_cont">
-        <img
-          src="../../../assets/images/common/mov-bg-default@2x.png"
-          alt="배경"
-        />
-        <video autoplay muted style="object-fit: cover">
+        <img src="../../../assets/images/common/mov-bg-default@2x.png" alt="배경">
+        <video autoplay muted style="object-fit:cover">
           <source
             src="https://player.vimeo.com/external/560735983.hd.mp4?s=e14e93e201c67212624d232508ddcad911d7d617&profile_id=174"
           />
@@ -80,6 +77,7 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   .SubProductsWrap {
+
     p,
     a,
     span,
@@ -197,16 +195,16 @@ export default {
         }
       }
     }
-    .video_cont {
+    .video_cont{
       position: relative;
       max-width: 951px;
       width: 100%;
       border: solid 2px #bfdcff;
-      img {
+      img{
         max-width: 951px;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
       }
       video {
         position: absolute;

@@ -8,11 +8,17 @@
   "Header": {
     "description": "Auto imported from components/header.vue"
   },
+  "ApiAxios": {
+    "description": "Auto imported from components/api/axios.js"
+  },
   "DummyAward": {
     "description": "Auto imported from components/dummy/award.js"
   },
-  "ApiAxios": {
-    "description": "Auto imported from components/api/axios.js"
+  "DummyAwardEn": {
+    "description": "Auto imported from components/dummy/awardEn.js"
+  },
+  "MixinsMixin": {
+    "description": "Auto imported from components/mixins/mixin.js"
   },
   "MainBannerModule": {
     "description": "Auto imported from components/main/bannerModule.vue"
@@ -43,21 +49,6 @@
   },
   "MainUseCase": {
     "description": "Auto imported from components/main/useCase.vue"
-  },
-  "MixinsMixin": {
-    "description": "Auto imported from components/mixins/mixin.js"
-  },
-  "Paging": {
-    "description": "Auto imported from components/paging/paging.vue"
-  },
-  "PolicySubMenuPayment": {
-    "description": "Auto imported from components/policy/subMenuPayment.vue"
-  },
-  "PolicySubMenuPolicy": {
-    "description": "Auto imported from components/policy/subMenuPolicy.vue"
-  },
-  "PolicySubMenuTerms": {
-    "description": "Auto imported from components/policy/subMenuTerms.vue"
   },
   "NewsCommonBaner": {
     "description": "Auto imported from components/news/CommonBaner.vue"
@@ -119,11 +110,26 @@
   "ModulesYoutubeFullscreen": {
     "description": "Auto imported from components/modules/YoutubeFullscreen.vue"
   },
+  "Paging": {
+    "description": "Auto imported from components/paging/paging.vue"
+  },
+  "PolicySubMenuPayment": {
+    "description": "Auto imported from components/policy/subMenuPayment.vue"
+  },
+  "PolicySubMenuPolicy": {
+    "description": "Auto imported from components/policy/subMenuPolicy.vue"
+  },
+  "PolicySubMenuTerms": {
+    "description": "Auto imported from components/policy/subMenuTerms.vue"
+  },
   "ProductsNewBgPartData": {
     "description": "Auto imported from components/products/NewBgPartData.js"
   },
   "ProductsNewEffectPartData": {
     "description": "Auto imported from components/products/newEffectPartData.js"
+  },
+  "ProductsNewEffectPartDataEn": {
+    "description": "Auto imported from components/products/newEffectPartData_en.js"
   },
   "ProductsNewModuleData": {
     "description": "Auto imported from components/products/newModuleData.js"

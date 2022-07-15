@@ -4,10 +4,10 @@
     <div class="overViewRemote">
       <div class="overViewWrap">
         <span class="overViewTit">
-          <p>{{ $t("productsText.xrSolutionTitle.category") }}</p>
-          <h2>{{ $t("productsText.xrSolutionTitle.title") }}</h2>
+          <p>{{ $t("productsText.remoteTitle.category") }}</p>
+          <h2>{{ $t("productsText.remoteTitle.title") }}</h2>
           <span>
-            {{ $t("productsText.xrSolutionTitle.contents") }}
+            {{ $t("productsText.remoteTitle.contents") }}
           </span>
         </span>
         <span class="overViewCont">
@@ -18,7 +18,7 @@
                 alt="Save Time and Cost"
             /></i>
             <p>Save Time and Cost</p>
-            <p>{{ $t("productsText.xrSolutionText.TimeCost") }}</p>
+            <p>{{ $t("productsText.remoteSubText.TimeCost") }}</p>
           </span>
           <span>
             <i
@@ -27,7 +27,7 @@
                 alt="Inform Quicky and ccurately"
             /></i>
             <p>Inform Quicky and ccurately</p>
-            <p>{{ $t("productsText.xrSolutionText.Quicky") }}</p>
+            <p>{{ $t("productsText.remoteSubText.Quicky") }}</p>
           </span>
           <span>
             <i
@@ -37,7 +37,7 @@
             /></i>
             <p>Reduce Industry Risks</p>
             <p>
-              {{ $t("productsText.xrSolutionText.Risks") }}
+              {{ $t("productsText.remoteSubText.Risks") }}
             </p>
           </span>
         </span>
@@ -45,15 +45,15 @@
           <ul>
             <li>
               <p>1,357</p>
-              <p>디운로드 수</p>
+              <p>{{ $t("productsText.subBox.download") }}</p>
             </li>
             <li>
               <p>63</p>
-              <p>Enterprise</p>
+              <p>{{ $t("productsText.subBox.current") }}</p>
             </li>
             <li>
               <p>120+</p>
-              <p>계약건수</p>
+              <p>{{ $t("productsText.subBox.prject") }}</p>
             </li>
           </ul>
           <span id="featuresWrapId"/>

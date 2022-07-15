@@ -9,14 +9,14 @@
           />
         </i>
         <p>VIRNECT Make</p>
-        <h2>{{ $t("productsText.makeSubTitle.title") }}</h2>
+        <h2>{{ $t("productsText.makeBanner.title") }}</h2>
         <span class="subExplanation">
-          {{ $t("productsText.makeSubTitle.contents") }}
+          {{ $t("productsText.makeBanner.contents") }}
         </span>
         <span>
           <button @click="more()">
             <a>
-              <p>{{ $t("productsText.makeSubButton.know") }}</p>
+              <p>{{ $t("productsText.subButton.know") }}</p>
               <p class="bb">
                 <img
                   src="https://velog.velcdn.com/images/kyj0206/post/ede40cab-2b1a-47ff-a338-ad93d68b93f4/image.png"
@@ -27,7 +27,7 @@
           </button>
           <button>
             <a href="/support/inquiry" target="blank">{{
-              $t("productsText.makeSubButton.free")
+              $t("productsText.subButton.free")
             }}</a>
           </button>
         </span>

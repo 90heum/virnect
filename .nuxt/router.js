@@ -21,11 +21,6 @@ const _987ac756 = () => interopDefault(import('../pages/products/remote.vue' /* 
 const _88c2d1e8 = () => interopDefault(import('../pages/products/track.vue' /* webpackChunkName: "pages/products/track" */))
 const _add28892 = () => interopDefault(import('../pages/products/twin.vue' /* webpackChunkName: "pages/products/twin" */))
 const _e4256e18 = () => interopDefault(import('../pages/products/view.vue' /* webpackChunkName: "pages/products/view" */))
-const _13c91414 = () => interopDefault(import('../pages/solutions/airline_railroad.vue' /* webpackChunkName: "pages/solutions/airline_railroad" */))
-const _4ff2d474 = () => interopDefault(import('../pages/solutions/energy_resource.vue' /* webpackChunkName: "pages/solutions/energy_resource" */))
-const _2fea2aa7 = () => interopDefault(import('../pages/solutions/epc.vue' /* webpackChunkName: "pages/solutions/epc" */))
-const _14d49625 = () => interopDefault(import('../pages/solutions/motor_parts.vue' /* webpackChunkName: "pages/solutions/motor_parts" */))
-const _02655bae = () => interopDefault(import('../pages/solutions/oil_chemical_battery.vue' /* webpackChunkName: "pages/solutions/oil_chemical_battery" */))
 const _36050462 = () => interopDefault(import('../pages/support/demo.vue' /* webpackChunkName: "pages/support/demo" */))
 const _01c5bd4c = () => interopDefault(import('../pages/support/faq.vue' /* webpackChunkName: "pages/support/faq" */))
 const _40d6298b = () => interopDefault(import('../pages/support/inquiry.vue' /* webpackChunkName: "pages/support/inquiry" */))
@@ -35,6 +30,11 @@ const _64128576 = () => interopDefault(import('../pages/support/learning-video-d
 const _3777a178 = () => interopDefault(import('../pages/support/notice.vue' /* webpackChunkName: "pages/support/notice" */))
 const _4a96d02a = () => interopDefault(import('../pages/support/notice-detail.vue' /* webpackChunkName: "pages/support/notice-detail" */))
 const _9592d694 = () => interopDefault(import('../pages/support/supportSubMain.vue' /* webpackChunkName: "pages/support/supportSubMain" */))
+const _0aea9b1d = () => interopDefault(import('../pages/value/airline_railroad.vue' /* webpackChunkName: "pages/value/airline_railroad" */))
+const _686fc84b = () => interopDefault(import('../pages/value/energy_resource.vue' /* webpackChunkName: "pages/value/energy_resource" */))
+const _1e0ce8fe = () => interopDefault(import('../pages/value/epc.vue' /* webpackChunkName: "pages/value/epc" */))
+const _22c9e508 = () => interopDefault(import('../pages/value/motor_parts.vue' /* webpackChunkName: "pages/value/motor_parts" */))
+const _202b9392 = () => interopDefault(import('../pages/value/oil_chemical_battery.vue' /* webpackChunkName: "pages/value/oil_chemical_battery" */))
 const _54d389f3 = () => interopDefault(import('../pages/company/subCompany/Brand.vue' /* webpackChunkName: "pages/company/subCompany/Brand" */))
 const _4e2f2456 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -118,26 +118,6 @@ export const routerOptions = {
     component: _e4256e18,
     name: "products-view"
   }, {
-    path: "/solutions/airline_railroad",
-    component: _13c91414,
-    name: "solutions-airline_railroad"
-  }, {
-    path: "/solutions/energy_resource",
-    component: _4ff2d474,
-    name: "solutions-energy_resource"
-  }, {
-    path: "/solutions/epc",
-    component: _2fea2aa7,
-    name: "solutions-epc"
-  }, {
-    path: "/solutions/motor_parts",
-    component: _14d49625,
-    name: "solutions-motor_parts"
-  }, {
-    path: "/solutions/oil_chemical_battery",
-    component: _02655bae,
-    name: "solutions-oil_chemical_battery"
-  }, {
     path: "/support/demo",
     component: _36050462,
     name: "support-demo"
@@ -173,6 +153,26 @@ export const routerOptions = {
     path: "/support/supportSubMain",
     component: _9592d694,
     name: "support-supportSubMain"
+  }, {
+    path: "/value/airline_railroad",
+    component: _0aea9b1d,
+    name: "value-airline_railroad"
+  }, {
+    path: "/value/energy_resource",
+    component: _686fc84b,
+    name: "value-energy_resource"
+  }, {
+    path: "/value/epc",
+    component: _1e0ce8fe,
+    name: "value-epc"
+  }, {
+    path: "/value/motor_parts",
+    component: _22c9e508,
+    name: "value-motor_parts"
+  }, {
+    path: "/value/oil_chemical_battery",
+    component: _202b9392,
+    name: "value-oil_chemical_battery"
   }, {
     path: "/company/subCompany/Brand",
     component: _54d389f3,

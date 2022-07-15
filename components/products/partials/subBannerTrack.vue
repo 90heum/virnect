@@ -9,14 +9,14 @@
           />
         </i>
         <p>VIRNECT Track</p>
-        <h2>{{ $t("productsText.trackSubTitle.title") }}</h2>
+        <h2>{{ $t("productsText.trackBanner.title") }}</h2>
         <span class="subExplanation">
-          {{ $t("productsText.trackSubTitle.contents") }}
+          {{ $t("productsText.trackBanner.contents") }}
         </span>
         <span>
           <button @click="more()">
             <a>
-              <p>{{ $t("productsText.trackSubButton.know") }}</p>
+              <p>{{ $t("productsText.subButton.know") }}</p>
               <p>
                 <img
                   src="https://velog.velcdn.com/images/kyj0206/post/ede40cab-2b1a-47ff-a338-ad93d68b93f4/image.png"
@@ -27,7 +27,7 @@
           </button>
           <button>
             <a href="https://pardot.virnect.com/l/929783/2022-06-16/3nplr">
-              {{ $t("productsText.trackSubButton.free") }}
+              {{ $t("productsText.subButton.free") }}
             </a>
           </button>
         </span>
