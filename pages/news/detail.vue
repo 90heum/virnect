@@ -27,7 +27,7 @@
                                     {{$i18n.localeProperties.code === "ko" ? contentData.title : contentData.titleEn}}
                                 </h2>
                                 <p>
-                                    {{$i18n.localeProperties.code === "ko" ? "프레스" : "Press"}}
+                                    {{$i18n.localeProperties.code === "ko" ? contentData.typeName : contentData.typeNameEn }}
                                 </p>
                             </span>
                             <span>
@@ -119,6 +119,7 @@ export default {
     async asyncData ({$axios, route}) {
         const data = await $axios.get(`admin/news/${route.query.id}?type=${route.query.type ? route.query.type : ''}`);
         const dataJson = await data;
+        console.log(dataJson.data.data)
         return {contentData: dataJson.data.data, id: route.query.id, type: route.query.type}
     }
 }
