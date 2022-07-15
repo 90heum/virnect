@@ -4,7 +4,9 @@
       <!-- 인증 및 수상 모듈 -->
       <span class="companyAwards">
         <!-- <div class="awardsWrap"> -->
-        <div class="companyAwardsTitleWrapper"></div>
+        <div class="companyAwardsTitleWrapper">
+          <p>인증 및 수상</p>
+        </div>
 
         <div class="slide-wrap">
           <div class="carousel-wrapper">

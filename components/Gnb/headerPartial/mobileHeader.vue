@@ -11,7 +11,7 @@
             Value
           </a>
           <ul class="hamUseCaseMenu" v-if="mobileMenu['list1']">
-            <li @click="goToPage(`/solutions/energy_resource`)">
+            <li @click="goToPage(`/value/energy_resource`)">
               <a> 인프라/자원 </a>
             </li>
             <li @click="goToPage(`/solutions/oil_chemical_battery`)">
@@ -360,7 +360,7 @@ export default {
   methods: {
     showMobileMenu(e) {
       console.log(e, "<<??", this.mobileMenu);
-      const energy = "/solutions/energy_resource";
+      const energy = "/value/energy_resource";
       const remote = "/products/remote";
       const notice = "/support/notice";
       const news = "/news/main";
@@ -455,7 +455,7 @@ export default {
         this.isMenu = false;
       } else {
         this.mobileMenu = e;
-        if (e === "/solutions/energy_resource") {
+        if (e === "/value/energy_resource") {
           this.isSub = !this.isSub;
         }
         if (e === "/products/remote") {

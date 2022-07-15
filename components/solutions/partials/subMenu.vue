@@ -2,19 +2,19 @@
   <div id="menu_re" class="SubMenuUse">
     <ul class="SubMenuNav">
       <li class="SubUseNavActive subMenu">
-        <nuxt-link to="/solutions/energy_resource"> 인프라/자원 </nuxt-link>
+        <nuxt-link to="/value/energy_resource"> 인프라/자원 </nuxt-link>
       </li>
       <li class="subMenu">
-        <nuxt-link to="/solutions/oil_chemical_battery"> 제조/건설 </nuxt-link>
+        <nuxt-link to="/value/oil_chemical_battery"> 제조/건설 </nuxt-link>
       </li>
       <li class="subMenu">
-        <nuxt-link to="/solutions/motor_parts"> 공공/교육 </nuxt-link>
+        <nuxt-link to="/value/motor_parts"> 공공/교육 </nuxt-link>
       </li>
       <li class="subMenu">
-        <nuxt-link to="/solutions/airline_railroad"> 엔터테인먼트 </nuxt-link>
+        <nuxt-link to="/value/airline_railroad"> 엔터테인먼트 </nuxt-link>
       </li>
       <li class="subMenu">
-        <nuxt-link to="/solutions/epc"> 기타 </nuxt-link>
+        <nuxt-link to="/value/epc"> 기타 </nuxt-link>
       </li>
     </ul>
   </div>
