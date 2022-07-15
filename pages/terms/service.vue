@@ -9,10 +9,11 @@
             </span>
         </div>
         <article>
-            <h1>서비스 이용 약관</h1>
+            <nuxt-content :document="contentData.content" />
+            <!-- <h1>서비스 이용 약관</h1>
             <h2>제 1장 총칙</h2>
             <h3>제 1조 (목적)</h3>
-            <p>본 약관은 주식회사 버넥트(이하 '회사’라 한다.)가 제공하는 VIRNECT 제품과 관련하여, 회사와 회원간에 제품의 이용조건 및 절차, 회사와 회원간의 권리와 의무사항 및 기타 필요한 제반사항의 규정을 목적으로 합니다.</p>
+            <p>본 약관은 주식회사 버넥트(이하 '회사’라 한다.)가 제공하는 VIRNECT 제품과 관련하여, 회사와 회원간에 제품의 이용조건 및 절차, 회사와 회원간의 권리와 의무사항 및 기타 필요한 제반사항의 규정을 목적으로 합니다.</p> -->
         </article>
         <article>
             <h3>부칙</h3>
@@ -26,31 +27,69 @@
             <input type="text" 
                    readonly="readonly"
                    autocomplete="off"
-                   class="termsSelectInput"/>
+                   class="termsSelectInput"
+                   :value="$dayjs(termsHistory[dateIdx].noticeDate).format('YYYY년 MM월 DD일')"
+                   @click="handleToggle()"
+                   v-click-outside="handleToggleOutside"/>
             <span class="termsSelectInputArrow">
                 <span class="termsSelectInputInnerArrow">
-                    <i></i>
+                    <i><img src="https://velog.velcdn.com/images/kyj0206/post/5933ac65-99ad-42c7-a624-4158514e9df8/image.png"/></i>
                 </span>
             </span>
+        <ul class="termsSelectBody" v-if="toggle">
+            <li v-for="(data, idx) of termsHistory"
+                :key="idx"
+                @click="fetchData(idx, data.id)">{{$dayjs(data.noticeDate).format("YYYY년 MM월 DD일")}}</li>
+        </ul>
         </div>
     </div>
   </div>
 </template>
 
 <script>
+import ClickOutside from "vue-click-outside";
 export default {
+    directives: {
+        ClickOutside,
+    },    
+    methods: {
+        handleToggle() {
+            this.toggle = !this.toggle;
+        },
+        handleToggleOutside() {
+            if (!this.toggle) return;
+            this.toggle = false;
+        },
+        fetchData (idx, id) {
+            this.dateIdx = idx;
+            this.requestData(id);
+            this.toggle = false;
+        },
+        async requestData (e) {
+            this.$axios.get(`admin/terms/1?termsId=${e}`)
+                       .then(res => {
+                           this.contentData = res.data.data;
+                       })
+                       .catch(e => console.error(e))
+
+        }
+    },
     data() {
         return {
-            type: 1
+            type: 1,
+            toggle: false,
+            dateIdx: 0,
+            contentData: null
         }
     },
     async asyncData ({$axios}) {
         try {
-            const data = Promise.all([$axios.get(`/admin/terms/type`), $axios.get(`/admin/terms?typeId=1`)]);
+            const data = Promise.all([$axios.get(`/admin/terms/type`), $axios.get(`/admin/terms?typeId=1`), $axios.get(`/admin/terms/1`)]);
             const dataJson = await data;
             return {
                 termsType: dataJson[0].data.data.termsTypeResponseList,
-                termsHistory: dataJson[1].data.data.termsResponseList
+                termsHistory: dataJson[1].data.data.termsResponseList,
+                contentData: dataJson[2].data.data
             }
         } catch (e) {console.error(e)}
     }
@@ -64,13 +103,28 @@ export default {
     padding: 150px 20px;
     /deep/ .termsInnerWrapper {
         .termsSelectWrapper {
+            margin-top: 30px;
             position: relative;
             font-size: 14px;
             display: inline-block;
+            .termsSelectBody {
+                border: 1px solid #dcdcdc;
+                margin-top: 2px;
+                padding-left: 0px;
+                li {
+                    padding: 10px 20px 10px 20px;
+                    width: auto;
+                    margin: 0px;
+                    cursor: pointer;
+                }
+                li:hover {
+                    background-color: #f5f7fa;
+                }
+            }
             .termsSelectInput {
                 height: 52px;
                 font-size: 15px;
-                text-indent: 24px;
+                text-indent: 10px;
                 border: 2px solid #e6e9ee;
                 transition: .3s;
                 cursor: pointer;
@@ -89,7 +143,6 @@ export default {
                 pointer-events: none;
                 .termsSelectInputInnerArrow { 
                     pointer-events: all; 
-
                     i {
                         color: #c0c4cc;
                         font-size: 14px;
@@ -98,19 +151,22 @@ export default {
                         cursor: pointer;
                         margin-top: -1px;
                         margin-right: 6px;
-                        color: #fafbfc;
+                        color: #000000;
                         font-weight: 700;
                         width: 25px;
                         line-height: 48px;
+                        img {
+                            width: 20px;
+                            transform: translateY(5px);
+                        }
                     }
-                    i::before { content: "a"; }
-                    i::after {
-                        content: "";
-                        height: 100%;
-                        width: 0;
-                        display: inline-block;
-                        vertical-align: middle;
-                    }
+                    // i::after {
+                    //     content: "";
+                    //     height: 100%;
+                    //     width: 0;
+                    //     display: inline-block;
+                    //     vertical-align: middle;
+                    // }
                 }
             }
         }
