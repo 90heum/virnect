@@ -380,7 +380,7 @@ export default {
             a {
               margin-left: 12px;
             }
-            font-size: 1.6px;
+            font-size: 16px;
             letter-spacing: -0.2px;
             color: #fff;
           }

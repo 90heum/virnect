@@ -37,7 +37,7 @@ export default {
     justify-content: center;
     align-items: center;
     position: fixed;
-    // z-index: 998;
+    z-index: 999999999;
     top: 0px;
 }
 .modalWrapper::before {
