@@ -85,7 +85,7 @@ a {
    } */
 
   body {
-    min-width: 600px;
+   /* min-width: 600px; */
     width: 100vw;
   }
 }

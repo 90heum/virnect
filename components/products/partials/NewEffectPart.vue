@@ -717,7 +717,7 @@ input[type="text"]::-ms-clear {
   }
 
   .modileWrap {
-    min-width: 600px;
+    /* min-width: 600px; */
     min-height: 960px;
     width: 100vw;
     height: 100vh;
@@ -725,7 +725,7 @@ input[type="text"]::-ms-clear {
   }
 
   .moduleGuide2RemoteBack {
-    min-width: 600px;
+    /* min-width: 600px; */
   }
 }
 </style>
