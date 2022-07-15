@@ -15,14 +15,14 @@
               tap="1"
               @click="chooseMenu(true)"
             >
-              기업소개
+              {{ $t("middleBanner.introuduce") }}
             </li>
             <li
               :class="`${!chosenMenu ? 'contactTabActive2' : ''}`"
               tap="2"
               @click="chooseMenu(false)"
             >
-              브랜드
+              {{ $t("middleBanner.brand") }}
             </li>
           </ul>
 
