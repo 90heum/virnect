@@ -20,7 +20,7 @@
                     <p>연결하여 자유롭게 정보를 공유합니다.</p>
                   </span>
                   <button>
-                    <a href="/products/remote">자세히보기</a>
+                    <nuxt-link to="/products/remote">자세히보기</nuxt-link>
                   </button>
                 </span>
               </div>

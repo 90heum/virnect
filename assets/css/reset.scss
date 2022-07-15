@@ -365,7 +365,7 @@ input[type=text]::-ms-clear {
 
 @media screen and (max-width:600px) {
   body {
-    min-width: 600px;
+    /* min-width: 600px; */
     width: 100vw;
   }
 }

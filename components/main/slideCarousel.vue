@@ -348,4 +348,6 @@ export default {
     }
   }
 }
+@media screen and (max-width: 600px) { .company .CompanyBottomBannerSlideImg { max-width: 300px; } }
+@media screen and (max-width: 360px) { .company .CompanyBottomBannerSlideImg { max-width: 250px; } }
 </style>

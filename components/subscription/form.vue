@@ -89,14 +89,14 @@ body{
         position: relative;
     }
     .gudockPopup{
-        min-width: 600px;
+        /* min-width: 600px; */
         width: 100vw;
         top: 55%;
         left: 0;
         transform: translate(0);
     }
     body::after{
-        min-width: 600px;
+        /* min-width: 600px; */
         width: 100vw;
     }
 }
