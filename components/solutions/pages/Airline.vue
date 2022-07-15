@@ -113,7 +113,7 @@
             <li class="active">
               <div class="listWrap">
                 <span>
-                  <p>AR 글라스 기반 도슨트 운용(서울 국립중앙박물관)</p>
+                  <p @click="showMenu(1)">AR 글라스 기반 도슨트 운용(서울 국립중앙박물관)</p>
                 </span>
                 <i>
                   <img
@@ -129,10 +129,11 @@
                     class="hover"
                     src="https://velog.velcdn.com/images/kyj0206/post/198b9aa4-f609-4154-9726-c6e765ee2052/image.png"
                     alt="hover"
+                    @click="showMenu(1)"
                   />
                 </i>
               </div>
-              <ul class="listInner">
+              <ul class="listInner" v-if="menu===1">
                 <li>
                   <p>- 조작이 편리하고 습득이 쉽고 몰입 향상이 가능</p>
                   <p>- 관람자 행동과 패턴을 분석하여 차별화된 서비스 제공</p>
@@ -149,7 +150,7 @@
             <li>
               <div class="listWrap">
                 <span>
-                  <p>혼합현실 기술 기반의 미니병풍(경복궁) 개발</p>
+                  <p @click="showMenu(2)">혼합현실 기술 기반의 미니병풍(경복궁) 개발</p>
                 </span>
                 <i>
                   <img
@@ -165,10 +166,11 @@
                     class="hover"
                     src="https://velog.velcdn.com/images/kyj0206/post/198b9aa4-f609-4154-9726-c6e765ee2052/image.png"
                     alt="hover"
+                    @click="showMenu(2)"
                   />
                 </i>
               </div>
-              <ul class="listInner">
+              <ul class="listInner" v-if="menu===2">
                 <li>
                   <p>
                     - 역사적, 문화적 소재들에 대한 다양한 가상체험 서비스 제공
@@ -191,7 +193,7 @@
             <li>
               <div class="listWrap">
                 <span>
-                  <p>증강현실 황룡사 중문 실감형 콘텐츠 제작</p>
+                  <p @click="showMenu(3)">증강현실 황룡사 중문 실감형 콘텐츠 제작</p>
                 </span>
                 <i>
                   <img
@@ -207,10 +209,11 @@
                     class="hover"
                     src="https://velog.velcdn.com/images/kyj0206/post/198b9aa4-f609-4154-9726-c6e765ee2052/image.png"
                     alt="hover"
+                    @click="showMenu(3)"
                   />
                 </i>
               </div>
-              <ul class="listInner">
+              <ul class="listInner" v-if="menu===3">
                 <li>
                   <p>- 황룡사 복원 고증 연구 결과에 대한 공감각적 검토</p>
                   <p>- 실현가능한 복원 안 마련 가능</p>
@@ -228,7 +231,7 @@
             <li>
               <div class="listWrap">
                 <span>
-                  <p>AR-VR 전환 가능한 몰입형 체험전시 시스템</p>
+                  <p @click="showMenu(4)">AR-VR 전환 가능한 몰입형 체험전시 시스템</p>
                 </span>
                 <i>
                   <img
@@ -244,10 +247,11 @@
                     class="hover"
                     src="https://velog.velcdn.com/images/kyj0206/post/198b9aa4-f609-4154-9726-c6e765ee2052/image.png"
                     alt="hover"
+                    @click="showMenu(4)"
                   />
                 </i>
               </div>
-              <ul class="listInner">
+              <ul class="listInner" v-if="menu===4">
                 <li>
                   <p>- 관람자는 AR기반 기본정보를 효과적으로 습득</p>
                   <p>- 3D로 복원하여 해당 전시물에 대한 상세 정보를 제공</p>
@@ -265,7 +269,7 @@
             <li>
               <div class="listWrap">
                 <span>
-                  <p>전시관을 위한 증강현실 전시 콘텐츠 개발</p>
+                  <p @click="showMenu(5)">전시관을 위한 증강현실 전시 콘텐츠 개발</p>
                 </span>
                 <i>
                   <img
@@ -281,10 +285,11 @@
                     class="hover"
                     src="https://velog.velcdn.com/images/kyj0206/post/198b9aa4-f609-4154-9726-c6e765ee2052/image.png"
                     alt="hover"
+                     @click="showMenu(5)"
                   />
                 </i>
               </div>
-              <ul class="listInner">
+              <ul class="listInner" v-if="menu===5">
                 <li>
                   <p>- 체험형 전시의 몰입감을 극대화</p>
                   <p>- AR기반 몰입, 체험형 천연기념물센터 매머드 특별전 전시</p>
@@ -301,7 +306,7 @@
             <li>
               <div class="listWrap">
                 <span>
-                  <p>직업가상체험 360도 파노라마</p>
+                  <p @click="showMenu(6)">직업가상체험 360도 파노라마</p>
                 </span>
                 <i>
                   <img
@@ -317,10 +322,11 @@
                     class="hover"
                     src="https://velog.velcdn.com/images/kyj0206/post/198b9aa4-f609-4154-9726-c6e765ee2052/image.png"
                     alt="hover"
+                    @click="showMenu(6)"
                   />
                 </i>
               </div>
-              <ul class="listInner">
+              <ul class="listInner" v-if="menu===6">
                 <li>
                   <p>- 직업별 실제적인 상황을 간접적으로 체험</p>
                   <p>- 실제 일어날 수 있는 상황들을 빠르게 습득</p>
@@ -403,6 +409,8 @@ export default {
   },
   data() {
     return {
+      menu : 1,
+
       filedData,
       moduleData,
       issueBg: "../images/pages/solution/img-solution-airline-top",
@@ -472,6 +480,11 @@ export default {
         [],
       ],
     };
+  },
+  methods: {
+    showMenu(e){
+      this.menu = e;
+    },
   },
 };
 </script>
