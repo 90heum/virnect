@@ -7,15 +7,34 @@
         <span class="leftTit">
           <span>Product Notice</span>
           <span>
-            <p>{{$i18n.localeProperties.code === "ko" ? contentData[0].title : contentData[0].titleEn}}</p>
+            <p>
+              {{
+                $i18n.localeProperties.code === "ko"
+                  ? contentData[0].title
+                  : contentData[0].titleEn
+              }}
+            </p>
             <span>
-              <p>{{$i18n.localeProperties.code === "ko" ? contentData[0].typeName : contentData[0].typeNameEn}}</p>
-              <p>{{$dayjs(contentData[0].createdDate).format("YYYY-MM-DD")}}</p>
+              <p>
+                {{
+                  $i18n.localeProperties.code === "ko"
+                    ? contentData[0].typeName
+                    : contentData[0].typeNameEn
+                }}
+              </p>
+              <p>
+                {{ $dayjs(contentData[0].createdDate).format("YYYY-MM-DD") }}
+              </p>
             </span>
           </span>
         </span>
         <span class="rightTit">
-          <p><nuxt-link :to="`/support/notice-detail?id=${contentData[0].id}&type`">자세히보기</nuxt-link></p>
+          <p>
+            <nuxt-link
+              :to="`/support/notice-detail?id=${contentData[0].id}&type`"
+              >자세히보기</nuxt-link
+            >
+          </p>
         </span>
       </div>
     </section>
@@ -24,7 +43,7 @@
         <span class="FaqTit">
           <p>FAQ</p>
           <span>
-            <p>사용자들이 자주 묻는 질문과 답변을 확인해 보세요.</p>
+            <p>{{ $t("supportText.FAQText.title") }}</p>
             <p>
               <a href="/support/faq"> 전체보기</a>
               <i>
@@ -134,9 +153,9 @@
       </span>
       <span class="studySenter">
         <span class="studyTit">
-          <p>학습센터</p>
+          <p>{{ $t("supportText.LearnText.title") }}</p>
           <span>
-            <p>제품 사용을 위한 튜토리얼,메뉴얼,유용한 팁 등을 안내합니다.</p>
+            <p>{{ $t("supportText.LearnText.contents") }}</p>
             <p>
               <a href="/support/learning-center"> 전체보기</a>
               <i>

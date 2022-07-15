@@ -1,5 +1,27 @@
 {
   "supportText": {
+    "headBannerText": {
+      "title": "학습센터",
+      "contents": "제품 사용을 위한 튜토리얼, 메뉴얼, 유용한 팁 등을 확인해 보세요."
+    },
+    "FAQText": {
+      "title": "사용자들이 자주 묻는 질문과 답변을 확인해 보세요.",
+      "con1": "회원",
+      "con2": "제품",
+      "con3": "결제",
+      "con4": "서비스",
+      "con5": "기기",
+      "con6": "기타"
+    },
+    "LearnText": {
+      "title": "학습센터",
+      "contents": "제품 사용을 위한 튜토리얼,메뉴얼,유용한 팁 등을 안내합니다."
+    },
+    "supModule": {
+      "title": "VIRNECT는 언제나 가까이에 있습니다.",
+      "subtitle": "현장의 XR/DT 혁신, 지금 바로 시작하세요.",
+      "now": "지금 문의하세요"
+    },
     "visualText": {
       "title": " 서비스 이용에 도움이 되도록<p>빠르고 친절하게 해결해 드리겠습니다.</p>",
       "url": ""
@@ -8,23 +30,21 @@
       "productNotice": {
         "title": "Product Notice",
         "url": "",
-        "list":
-          [
-            {
-              "title": "릴리즈 노트",
-              "url": "/support/notice?type=2"
-            },
-            {
-              "title": "안내",
-              "url": "/support/notice?type=1"
-            }
-          ]
+        "list": [
+          {
+            "title": "릴리즈 노트",
+            "url": "/support/notice?type=2"
+          },
+          {
+            "title": "안내",
+            "url": "/support/notice?type=1"
+          }
+        ]
       },
-    "faq": {
-      "title": "FAQ",
-      "url": "",
-      "list":
-        [
+      "faq": {
+        "title": "FAQ",
+        "url": "",
+        "list": [
           {
             "title": "회원",
             "url": "/support/faq?category=1"
@@ -54,21 +74,20 @@
       "Leaning Center": {
         "title": "학습센터",
         "url": "",
-        "list":
-          [
-            {
-              "title": "Remote",
-              "url": "/support/learning-center?category=1"
-            },
-            {
-              "title": "Make",
-              "url": "/support/learning-center?category=2"
-            },
-            {
-              "title": "View",
-              "url": "/support/learning-center?category=3"
-            }
-          ]
+        "list": [
+          {
+            "title": "Remote",
+            "url": "/support/learning-center?category=1"
+          },
+          {
+            "title": "Make",
+            "url": "/support/learning-center?category=2"
+          },
+          {
+            "title": "View",
+            "url": "/support/learning-center?category=3"
+          }
+        ]
       },
       "Inquiries": {
         "title": "문의하기",

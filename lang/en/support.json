@@ -1,30 +1,50 @@
 {
-    "supportText": {
-      "visualText": {
-        "title": " 영문영문영문<p>빠르고 친절하게 해결해 드리겠습니다.</p>",
-        "contents": ""
+  "supportText": {
+    "headBannerText": {
+      "title": "How can we help you?",
+      "contents": "We will do our best to assist with issues related to the service."
+    },
+    "FAQText": {
+      "title": "Check out frequently asked questions and answers.",
+      "con1": "Account",
+      "con2": "Product",
+      "con3": "Purchase",
+      "con4": "Services",
+      "con5": "Device",
+      "con6": "Others"
+    },
+    "LearnText": {
+      "title": "Learning Center",
+      "contents": "Guides you through tutorials, manuals, tips, and more."
+    },
+    "supModule": {
+      "title": "We always welcome various inquiries from customers.",
+      "subtitle": "Please contact any one of our experts with any questions.",
+      "now": "inquiry"
+    },
+    "visualText": {
+      "title": " 영문영문영문<p>빠르고 친절하게 해결해 드리겠습니다.</p>",
+      "contents": ""
+    },
+    "menuList": {
+      "productNotice": {
+        "title": "Product Notice",
+        "url": "",
+        "list": [
+          {
+            "title": "릴리즈 노트",
+            "url": "/support/notice?type=2"
+          },
+          {
+            "title": "안내",
+            "url": "/support/notice?type=1"
+          }
+        ]
       },
-      "menuList": {
-        "productNotice": {
-          "title": "Product Notice",
-          "url": "",
-          "list":
-            [
-              {
-                "title": "릴리즈 노트",
-                "url": "/support/notice?type=2"
-              },
-              {
-                "title": "안내",
-                "url": "/support/notice?type=1"
-              }
-            ]
-        },
       "faq": {
         "title": "FAQ",
         "url": "",
-        "list":
-        [
+        "list": [
           {
             "title": "회원",
             "url": "/support/faq?category=1"
@@ -54,21 +74,20 @@
       "Leaning Center": {
         "title": "Leaning Center",
         "url": "",
-        "list":
-          [
-            {
-              "title": "Remote",
-              "url": "/support/learning-center?category=1"
-            },
-            {
-              "title": "Make",
-              "url": "/support/learning-center?category=2"
-            },
-            {
-              "title": "View",
-              "url": "/support/learning-center?category=3"
-            }
-          ]
+        "list": [
+          {
+            "title": "Remote",
+            "url": "/support/learning-center?category=1"
+          },
+          {
+            "title": "Make",
+            "url": "/support/learning-center?category=2"
+          },
+          {
+            "title": "View",
+            "url": "/support/learning-center?category=3"
+          }
+        ]
       },
       "Inquiries": {
         "title": "Inquiries",

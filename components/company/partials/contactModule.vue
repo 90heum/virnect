@@ -2,12 +2,12 @@
   <div class="ContactCtaModule">
     <div class="ContactCtaCont">
       <span>
-        <h2>VIRNECT는 언제나 가까이에 있습니다.</h2>
-        <p>현장의 XR/DT 혁신, 지금 바로 시작하세요.</p>
+        <h2>{{ $t("supportText.supModule.title") }}</h2>
+        <p>{{ $t("supportText.supModule.subtitle") }}</p>
       </span>
       <span>
         <button>
-          <a href="/support/inquiry"> 지금 문의하세요 </a>
+          <a href="/support/inquiry">{{ $t("supportText.supModule.now") }}</a>
         </button>
       </span>
     </div>
