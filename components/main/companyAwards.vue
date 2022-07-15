@@ -1,27 +1,27 @@
 <template>
   <div class="company">
     <div class="companyWrap">
-    <!-- 인증 및 수상 모듈 -->
+      <!-- 인증 및 수상 모듈 -->
       <span class="companyAwards">
         <!-- <div class="awardsWrap"> -->
-          <div class="companyAwardsTitleWrapper">
-            <p>인증 및 수상</p>
-          </div>
+        <div class="companyAwardsTitleWrapper">
+          <p>인증 및 수상</p>
+        </div>
 
-          <div class="slide-wrap">
-            <div class="carousel-wrapper">
-              <div
-                v-swiper:mySwiper="options"
-                class="dark"
-                @slideChangeTransitionStart="getActiveSlide()"
-              >
-                <div class="swiper-wrapper">
-                  <div
-                    v-for="(list, idx) of award"
-                    :key="idx"
-                    class="img-wrapper swiper-slide"
-                  >
-                <span>
+        <div class="slide-wrap">
+          <div class="carousel-wrapper">
+            <div
+              v-swiper:mySwiper="options"
+              class="dark"
+              @slideChangeTransitionStart="getActiveSlide()"
+            >
+              <div class="swiper-wrapper">
+                <div
+                  v-for="(list, idx) of award"
+                  :key="idx"
+                  class="img-wrapper swiper-slide"
+                >
+                  <span>
                     <img
                       :src="list.src"
                       :alt="list.alt"
@@ -33,40 +33,37 @@
                     <p>{{ list.host }}</p>
                     <p>{{ list.info }}</p>
                   </span>
-                  </div>
                 </div>
               </div>
             </div>
-            <div class="pagination">
-              <img
-              src="~/assets/images/pages/right@2x.png"
-              class="prev-btn"/>
-            <img
-              src="~/assets/images/pages/left@2x.png"
-              class="next-btn"/>
-            </div>
-          </div>  
+          </div>
+          <div class="pagination">
+            <img src="~/assets/images/pages/right@2x.png" class="prev-btn" />
+            <img src="~/assets/images/pages/left@2x.png" class="next-btn" />
+          </div>
+        </div>
       </span>
     </div>
   </div>
 </template>
 <script>
 import { awardData } from "~/components/dummy/award.js";
+
 export default {
   methods: {
-     getActiveSlide() {
+    getActiveSlide() {
       this.exampleActiveIdx = this.$el
         .querySelector(".swiper-slide-active")
         .getAttribute("data-idx");
     },
   },
-   data() {
+  data() {
     return {
-       options: {
+      options: {
         slidesPerView: "6",
         loop: true,
         autoplay: {
-          delay: 3500
+          delay: 3500,
         },
         navigation: {
           nextEl: ".next-btn",
@@ -76,16 +73,16 @@ export default {
           1024: {
             slidesPerView: "3",
             autoplay: {
-              delay: 3500
+              delay: 3500,
             },
-          }
+          },
         },
       },
-      award: awardData
-    }
-  }
-}
 
+      award: awardData,
+    };
+  },
+};
 </script>
 <style lang="scss" scoped>
 .companyAwardsTitleWrapper {
@@ -100,72 +97,72 @@ export default {
     color: #121212;
   }
 }
-        // 인증 및 수상 모듈
-    .companyAwards {
-      display: block;
-      width: 100%;
-      background-color: #f7f8fa;
-      .awardsWrap {
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        gap: 42px;
-        max-width: 1200px;
-        box-sizing: unset;
-        padding: 69px 30px 100px;
-        div > .SliderList {
-          font-size: 10px;
-          span:nth-child(2) {
-            height: 36px;
-          }
+// 인증 및 수상 모듈
+.companyAwards {
+  display: block;
+  width: 100%;
+  background-color: #f7f8fa;
+  .awardsWrap {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    max-width: 1200px;
+    box-sizing: unset;
+    padding: 69px 30px 100px;
+    div > .SliderList {
+      font-size: 10px;
+      span:nth-child(2) {
+        height: 36px;
+      }
+    }
+    div {
+      &:first-child {
+        p {
+          font-size: 18px;
+          font-weight: bold;
+          letter-spacing: -0.23px;
+          color: #121212;
         }
-        div {
-          &:first-child {
-            p {
-              font-size: 18px;
-              font-weight: bold;
-              letter-spacing: -0.23px;
-              color: #121212;
-            }
-          }
-          &:last-child {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
-            .SliderList {
-              width: calc(100% / 7 - 40px);
-              span {
-                position: relative;
+      }
+      &:last-child {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        .SliderList {
+          width: calc(100% / 7 - 40px);
+          span {
+            position: relative;
+            max-width: 160px;
+            &:first-child {
+              img {
                 max-width: 160px;
-                &:first-child {
-                  img {
-                    max-width: 160px;
-                    margin-bottom: 6px;
-                  }
-                  &::after {
-                    display: block;
-                    position: absolute;
-                    content: "";
-                    width: 100%;
-                    border-bottom: 1px solid #c5c8cf;
-                    left: 0;
-                    bottom: 0;
-                  }
-                }
-                &:last-child {
-                  width: 100%;
-                  display: block;
-                  text-align: center;
-                  font-size: 12px;
-                  margin: 14px 19px 0 15px;
-                  color: #9b9da3;
-                }
+                margin-bottom: 6px;
               }
+              &::after {
+                display: block;
+                position: absolute;
+                content: "";
+                width: 100%;
+                border-bottom: 1px solid #c5c8cf;
+                left: 0;
+                bottom: 0;
+              }
+            }
+            &:last-child {
+              width: 100%;
+              display: block;
+              text-align: center;
+              font-size: 12px;
+              margin: 14px 19px 0 15px;
+              color: #9b9da3;
             }
           }
         }
       }
     }
+  }
+}
 .company .companyWrap .companyAwards {
   display: flex;
   align-items: center;
@@ -173,29 +170,43 @@ export default {
   flex-direction: column;
   padding-bottom: 60px;
   position: relative;
-  >div:first-child { align-self: start; padding-left: 2.5%; }
-   .slide-wrap {
-      width: 90%;
-   }
-   .carousel-wrapper .swiper-slide {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     img { width: 160px; }
-     span { width: 160px; }
-     p { text-align: center; }
-   }
-   .prev-btn, .next-btn {
-      position: absolute;
-      width: 42px;
-      transform: translateY(50px);
-      cursor: pointer;
-      top: 40%;
-   }
-   .prev-btn { left: 15px; }
-   .next-btn { right: 15px; }
+  > div:first-child {
+    align-self: start;
+    padding-left: 2.5%;
+  }
+  .slide-wrap {
+    width: 90%;
+  }
+  .carousel-wrapper .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 160px;
+    }
+    span {
+      width: 160px;
+    }
+    p {
+      text-align: center;
+    }
+  }
+  .prev-btn,
+  .next-btn {
+    position: absolute;
+    width: 42px;
+    transform: translateY(50px);
+    cursor: pointer;
+    top: 40%;
+  }
+  .prev-btn {
+    left: 15px;
+  }
+  .next-btn {
+    right: 15px;
+  }
 }
-    @media screen and(max-width: 1024px) {
+@media screen and(max-width: 1024px) {
   .company
     .companyWrap
     .companyAwards

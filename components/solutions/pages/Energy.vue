@@ -121,11 +121,13 @@
         </span>
         <span class="usecaseCont">
           <ul class="usecaseList">
-            <li class="active">
+            <li class="active"
+            >
               <div class="listWrap">
                 <span>
-                  <p>실시간 원격 협업 솔루션</p>
-                  <ul class="listInner">
+                  <p @click="showMenu(1)"
+                  >실시간 원격 협업 솔루션</p>
+                  <ul class="listInner" v-if="menu === 1">
                     <li>
                       <p>
                         - 발전소 내 데이터를 관리함으로써 작업 오류 감소 및 예방
@@ -153,11 +155,13 @@
                     class="normal"
                     src="https://velog.velcdn.com/images/kyj0206/post/6add4766-ac35-47a3-affa-aba62b87881e/image.png"
                     alt="normal"
+                    
                   />
                   <img
                     class="hover"
                     src="https://velog.velcdn.com/images/kyj0206/post/198b9aa4-f609-4154-9726-c6e765ee2052/image.png"
                     alt="hover"
+                    @click="showMenu(1)"
                   />
                 </i>
               </div>
@@ -165,8 +169,8 @@
             <li>
               <div class="listWrap">
                 <span>
-                  <p>발전소 디지털트윈 O&M 시스템 개발</p>
-                  <ul class="listInner">
+                  <p @click="showMenu(2)">발전소 디지털트윈 O&M 시스템 개발</p>
+                  <ul class="listInner" v-if="menu === 2">
                     <li>
                       <p>
                         - 발전소 내 데이터를 관리함으로써 작업 오류 감소 및 예방
@@ -194,11 +198,13 @@
                     class="normal"
                     src="https://velog.velcdn.com/images/kyj0206/post/6add4766-ac35-47a3-affa-aba62b87881e/image.png"
                     alt="normal"
+                    
                   />
                   <img
                     class="hover"
                     src="https://velog.velcdn.com/images/kyj0206/post/198b9aa4-f609-4154-9726-c6e765ee2052/image.png"
                     alt="hover"
+                    @click="showMenu(2)"
                   />
                 </i>
               </div>
@@ -206,8 +212,8 @@
             <li>
               <div class="listWrap">
                 <span>
-                  <p>AR기반 구조물 안정성 검증 솔루션</p>
-                  <ul class="listInner">
+                  <p @click="showMenu(3)">AR기반 구조물 안정성 검증 솔루션</p>
+                  <ul class="listInner" v-if="menu === 3">
                     <li>
                       <p>
                         - 발전소 내 데이터를 관리함으로써 작업 오류 감소 및 예방
@@ -235,11 +241,13 @@
                     class="normal"
                     src="https://velog.velcdn.com/images/kyj0206/post/6add4766-ac35-47a3-affa-aba62b87881e/image.png"
                     alt="normal"
+                    
                   />
                   <img
                     class="hover"
                     src="https://velog.velcdn.com/images/kyj0206/post/198b9aa4-f609-4154-9726-c6e765ee2052/image.png"
                     alt="hover"
+                    @click="showMenu(3)"
                   />
                 </i>
               </div>
@@ -247,8 +255,8 @@
             <li>
               <div class="listWrap">
                 <span>
-                  <p>생산기지 자율주행로봇(SPOT) 현장적용 검증 용역</p>
-                  <ul class="listInner">
+                  <p @click="showMenu(4)">생산기지 자율주행로봇(SPOT) 현장적용 검증 용역</p>
+                  <ul class="listInner" v-if="menu === 4">
                     <li>
                       <p>
                         - 발전소 내 데이터를 관리함으로써 작업 오류 감소 및 예방
@@ -276,11 +284,13 @@
                     class="normal"
                     src="https://velog.velcdn.com/images/kyj0206/post/6add4766-ac35-47a3-affa-aba62b87881e/image.png"
                     alt="normal"
+                    
                   />
                   <img
                     class="hover"
                     src="https://velog.velcdn.com/images/kyj0206/post/198b9aa4-f609-4154-9726-c6e765ee2052/image.png"
                     alt="hover"
+                    @click="showMenu(4)"
                   />
                 </i>
               </div>
@@ -288,8 +298,8 @@
             <li>
               <div class="listWrap">
                 <span>
-                  <p>3D Visualization System 기능 개선</p>
-                  <ul class="listInner">
+                  <p @click="showMenu(5)">3D Visualization System 기능 개선</p>
+                  <ul class="listInner" v-if="menu === 5">
                     <li>
                       <p>
                         - 발전소 내 데이터를 관리함으로써 작업 오류 감소 및 예방
@@ -317,11 +327,13 @@
                     class="normal"
                     src="https://velog.velcdn.com/images/kyj0206/post/6add4766-ac35-47a3-affa-aba62b87881e/image.png"
                     alt="normal"
+                    
                   />
                   <img
                     class="hover"
                     src="https://velog.velcdn.com/images/kyj0206/post/198b9aa4-f609-4154-9726-c6e765ee2052/image.png"
                     alt="hover"
+                    @click="showMenu(5)"
                   />
                 </i>
               </div>
@@ -366,6 +378,9 @@ import headingModule from "../../modules/Heading";
 import { filedData, moduleData } from "~/components/products/NewBgPartData.js";
 
 export default {
+  props: {
+    functionArr: Array,
+  },
   components: {
     issuePart,
     bgNormalPart,
@@ -380,6 +395,8 @@ export default {
   },
   data() {
     return {
+      menu: 1,
+
       filedData,
       moduleData,
       issueBg:
@@ -484,6 +501,16 @@ export default {
         ],
       ],
     };
+  },
+  methods: {
+    showMenu(e){
+      this.menu = e;
+    },
+    
+    /* slideDown(idx) {
+      if (this.activeIdx == idx) return (this.activeIdx = null);
+      else return (this.activeIdx = idx);
+    }, */
   },
 };
 </script>

@@ -1,30 +1,59 @@
 {
-    "supportText": {
-      "visualText": {
-        "title": " 영문영문영문<p>빠르고 친절하게 해결해 드리겠습니다.</p>",
-        "contents": ""
+  "supportText": {
+    "subMenuText": {
+      "learn": "LEARNING CENTER",
+      "Inquiries": "INQUIRIES"
+    },
+    "headBannerText": {
+      "title": "How can we help you?",
+      "contents": "We will do our best to assist with issues related to the service."
+    },
+    "FAQText": {
+      "title": "Check out frequently asked questions and answers.",
+      "con1": "Account",
+      "con2": "Product",
+      "con3": "Purchase",
+      "con4": "Services",
+      "con5": "Device",
+      "con6": "Others"
+    },
+    "LearnText": {
+      "title": "Learning Center",
+      "contents": "Guides you through tutorials, manuals, tips, and more.",
+      "middletext": " VIRNECT products make safer and more efficient industrial worksites by applying XR solutions and digital twin technologies."
+    },
+    "supModule": {
+      "title": "We always welcome various inquiries from customers.",
+      "subtitle": "Please contact any one of our experts with any questions.",
+      "now": "inquiry"
+    },
+    "contactBannerText": {
+      "contents1": "Are you looking for solutions or trying to advance your worksite?",
+      "contents2": "VIRNECT is prepared to solve the problem."
+    },
+    "visualText": {
+      "title": " 영문영문영문<p>빠르고 친절하게 해결해 드리겠습니다.</p>",
+      "contents": ""
+    },
+    "menuList": {
+      "productNotice": {
+        "title": "Product Notice",
+        "url": "",
+        "list": [
+          {
+            "title": "릴리즈 노트",
+            "url": "/support/notice?type=2"
+          },
+          {
+            "title": "안내",
+            "url": "/support/notice?type=1"
+          }
+        ]
       },
-      "menuList": {
-        "productNotice": {
-          "title": "Product Notice",
-          "url": "",
-          "list":
-            [
-              {
-                "title": "릴리즈 노트",
-                "url": "/support/notice?type=2"
-              },
-              {
-                "title": "안내",
-                "url": "/support/notice?type=1"
-              }
-            ]
-        },
       "faq": {
         "title": "FAQ",
         "url": "",
-        "list":
-        [
+        "list": [
           {
             "title": "회원",
             "url": "/support/faq?category=1"
@@ -54,25 +83,40 @@
       "Leaning Center": {
         "title": "Leaning Center",
         "url": "",
-        "list":
-          [
-            {
-              "title": "Remote",
-              "url": "/support/learning-center?category=1"
-            },
-            {
-              "title": "Make",
-              "url": "/support/learning-center?category=2"
-            },
-            {
-              "title": "View",
-              "url": "/support/learning-center?category=3"
-            }
-          ]
+        "list": [
+          {
+            "title": "Remote",
+            "url": "/support/learning-center?category=1"
+          },
+          {
+            "title": "Make",
+            "url": "/support/learning-center?category=2"
+          },
+          {
+            "title": "View",
+            "url": "/support/learning-center?category=3"
+          }
+        ]
       },
       "Inquiries": {
         "title": "Inquiries",
         "url": ""
+      }
+    },
+    "contactText": {
+      "contact": {
+        "title": "We always welcome various inquiries from customers.",
+        "subTitle": "Please select your inquiry type below and submit your inquiry so that we can provide a reply more quickly.",
+        "buy": "Purchase Inquiry",
+        "productQ": "Product inquiry",
+        "other": "Other",
+        "myproduct": "관심제품 *",
+        "email": "E-mail *",
+        "name": "Name *",
+        "company": "Company *",
+        "department": "Industry",
+        "level": "Position",
+        "contents": "nquiry *"
       }
     }
   }

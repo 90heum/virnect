@@ -27,7 +27,7 @@
           </span>
           <!-- 에너지/지원 호버 -->
           <span class="energyHover">
-            <nuxt-link to="/solutions/energy_resource">
+            <nuxt-link to="/value/energy_resource">
               <span>
                 <p>인프라/자원</p>
                 <i>
@@ -73,7 +73,7 @@
           </span>
           <!-- 정유/화학/배터리 호버 -->
           <span class="oilHover">
-            <nuxt-link to="/solutions/oil_chemical_battery">
+            <nuxt-link to="/value/oil_chemical_battery">
               <span>
                 <p>제조/건설</p>
                 <i>

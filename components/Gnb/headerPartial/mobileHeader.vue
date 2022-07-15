@@ -11,7 +11,7 @@
             Value
           </a>
           <ul class="hamUseCaseMenu" v-if="mobileMenu['list1']">
-            <li @click="goToPage(`/solutions/energy_resource`)">
+            <li @click="goToPage(`/value/energy_resource`)">
               <a> 인프라/자원 </a>
             </li>
             <li @click="goToPage(`/solutions/oil_chemical_battery`)">
@@ -28,10 +28,7 @@
             </li>
           </ul>
         </span>
-        <span
-          class="hamMenuToggle"
-          @click="showMobileMenu('list1')"
-        >
+        <span class="hamMenuToggle" @click="showMobileMenu('list1')">
           <img
             :src="mobileMenu['list1'] ? isClose : isOpen"
             alt="일정접기"
@@ -54,8 +51,12 @@
       </li>
       <li class="hamProducts">
         <span class="hamProductsTit">
-          <a @click="showMobileMenu('list2')"
-              :class="`${mobileMenu['list2'] ? 'mobileMenuActive' : ''}`"> Products </a>
+          <a
+            @click="showMobileMenu('list2')"
+            :class="`${mobileMenu['list2'] ? 'mobileMenuActive' : ''}`"
+          >
+            Products
+          </a>
           <ul class="hamProductsMenu" v-if="mobileMenu['list2']">
             <li @click="goToPage('/products/remote')">
               <a> VIRNECT Remote </a>
@@ -87,8 +88,12 @@
       </li>
       <li class="hamSupport">
         <span class="hamSupportTit">
-          <a @click="showMobileMenu('list3')"
-             :class="`${mobileMenu['list3'] ? 'mobileMenuActive' : ''}`"> Support </a>
+          <a
+            @click="showMobileMenu('list3')"
+            :class="`${mobileMenu['list3'] ? 'mobileMenuActive' : ''}`"
+          >
+            Support
+          </a>
           <ul class="hamSupportMenu" v-if="mobileMenu['list3']">
             <li @click="goToPage('/support/notice')">
               <a> Product Notice </a>
@@ -114,8 +119,12 @@
       </li>
       <li class="hamNews">
         <span class="hamNewsTit">
-          <a @click="showMobileMenu('list4')"
-             :class="`${mobileMenu['list4'] ? 'mobileMenuActive' : ''}`"> News </a>
+          <a
+            @click="showMobileMenu('list4')"
+            :class="`${mobileMenu['list4'] ? 'mobileMenuActive' : ''}`"
+          >
+            News
+          </a>
           <ul class="hamNewsMenu" v-if="mobileMenu['list4']">
             <li @click="goToPage('/news/main')">
               <a> News & Press </a>
@@ -138,8 +147,12 @@
       </li>
       <li class="hamCompany">
         <span class="hamCompanyTit">
-          <a @click="showMobileMenu('list5')"
-             :class="`${mobileMenu['list5'] ? 'mobileMenuActive' : ''}`"> Company </a>
+          <a
+            @click="showMobileMenu('list5')"
+            :class="`${mobileMenu['list5'] ? 'mobileMenuActive' : ''}`"
+          >
+            Company
+          </a>
           <ul class="hamCompanyMenu" v-if="mobileMenu['list5']">
             <li @click="goToPage('/company/about')">
               <a> About VIRNECT </a>
@@ -310,7 +323,7 @@ export default {
   props: {
     isMenu: Boolean,
     availableLocales: Array,
-    showMenu: Function
+    showMenu: Function,
   },
   data: () => ({
     lang: false,
@@ -341,27 +354,34 @@ export default {
     isClose: require("~/assets/images/common/icon-menu-close.png"),
     blueStyle: {},
     masterkey: false,
-    mobileMenu: {list1: false}
+    mobileMenu: { list1: false },
     /* subOpen: false, */
   }),
   methods: {
     showMobileMenu(e) {
-      console.log(e, "<<??", this.mobileMenu)
-      const energy = "/solutions/energy_resource";
+      console.log(e, "<<??", this.mobileMenu);
+      const energy = "/value/energy_resource";
       const remote = "/products/remote";
       const notice = "/support/notice";
       const news = "/news/main";
       const about = "/company/about";
-      const goPage = e === "list1" ? energy :
-                     e === "list2" ? remote :
-                     e === "list3" ? notice :
-                     e === "list4" ? news   :
-                     e === "list5" ? about : '';
+      const goPage =
+        e === "list1"
+          ? energy
+          : e === "list2"
+          ? remote
+          : e === "list3"
+          ? notice
+          : e === "list4"
+          ? news
+          : e === "list5"
+          ? about
+          : "";
       if (this.mobileMenu[e]) {
         this.goToPage(goPage);
         this.mobileMenu = {};
       } else {
-        this.mobileMenu = {[e]: !this.mobileMenu[e]};
+        this.mobileMenu = { [e]: !this.mobileMenu[e] };
       }
     },
     goToPage(e) {
@@ -435,7 +455,7 @@ export default {
         this.isMenu = false;
       } else {
         this.mobileMenu = e;
-        if (e === "/solutions/energy_resource") {
+        if (e === "/value/energy_resource") {
           this.isSub = !this.isSub;
         }
         if (e === "/products/remote") {

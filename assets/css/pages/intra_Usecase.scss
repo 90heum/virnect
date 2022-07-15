@@ -43,7 +43,17 @@
   align-items: center;
   border-bottom: solid 1px #c5c8cf;
   padding: 45px 50px;
+  /* &.active {
+    .listInner {
+      display: block;
+    }
+  } */
 }
+/* .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li {
+  .listInner {
+    display: none;
+  }
+} */
 
 .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap {
   width: 100%;
@@ -74,7 +84,7 @@
 }
 
 .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap span .listInner {
-  display: none;
+  /* display: none; */
   width: 100%;
   margin-top: 85px;
 }

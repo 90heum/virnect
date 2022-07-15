@@ -3,10 +3,9 @@
   <div class="contactBanner">
     <div class="ContactBannerInner">
       <p>SUPPORT</p>
-      <h2>학습센터</h2>
+      <h2>{{ $t("supportText.headBannerText.title") }}</h2>
       <span>
-        제품 사용을 위한 튜토리얼, 매뉴얼, 유용한 팁 등을 <br />
-        확인해 보세요.
+        {{ $t("supportText.headBannerText.contents") }}
       </span>
     </div>
   </div>

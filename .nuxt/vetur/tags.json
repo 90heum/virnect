@@ -14,6 +14,9 @@
   "DummyAward": {
     "description": "Auto imported from components/dummy/award.js"
   },
+  "DummyAwardEn": {
+    "description": "Auto imported from components/dummy/awardEn.js"
+  },
   "MainBannerModule": {
     "description": "Auto imported from components/main/bannerModule.vue"
   },
@@ -110,15 +113,6 @@
   "Paging": {
     "description": "Auto imported from components/paging/paging.vue"
   },
-  "ProductsNewBgPartData": {
-    "description": "Auto imported from components/products/NewBgPartData.js"
-  },
-  "ProductsNewEffectPartData": {
-    "description": "Auto imported from components/products/newEffectPartData.js"
-  },
-  "ProductsNewModuleData": {
-    "description": "Auto imported from components/products/newModuleData.js"
-  },
   "PolicySubMenuPayment": {
     "description": "Auto imported from components/policy/subMenuPayment.vue"
   },
@@ -127,6 +121,18 @@
   },
   "PolicySubMenuTerms": {
     "description": "Auto imported from components/policy/subMenuTerms.vue"
+  },
+  "ProductsNewBgPartData": {
+    "description": "Auto imported from components/products/NewBgPartData.js"
+  },
+  "ProductsNewEffectPartData": {
+    "description": "Auto imported from components/products/newEffectPartData.js"
+  },
+  "ProductsNewEffectPartDataEn": {
+    "description": "Auto imported from components/products/newEffectPartData_en.js"
+  },
+  "ProductsNewModuleData": {
+    "description": "Auto imported from components/products/newModuleData.js"
   },
   "SubscriptionForm": {
     "description": "Auto imported from components/subscription/form.vue"

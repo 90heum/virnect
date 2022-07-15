@@ -131,7 +131,7 @@
             <li class="active">
               <div class="listWrap">
                 <span>
-                  <p>2021년 혁신제품 시범사용</p>
+                  <p @click="showMenu(1)">2021년 혁신제품 시범사용</p>
                 </span>
                 <i>
                   <img
@@ -147,10 +147,11 @@
                     class="hover"
                     src="https://velog.velcdn.com/images/kyj0206/post/198b9aa4-f609-4154-9726-c6e765ee2052/image.png"
                     alt="hover"
+                    @click="showMenu(1)"
                   />
                 </i>
               </div>
-              <ul class="listInner">
+              <ul class="listInner" v-if="menu===1">
                 <li>
                   <p>
                     - 코로나 환경에서 대학과 실습처인 기업체간 Remote 시스템
@@ -177,7 +178,7 @@
             <li>
               <div class="listWrap">
                 <span>
-                  <p>경기도 찾아가는 수출 상담회</p>
+                  <p @click="showMenu(2)">경기도 찾아가는 수출 상담회</p>
                 </span>
                 <i>
                   <img
@@ -193,10 +194,11 @@
                     class="hover"
                     src="https://velog.velcdn.com/images/kyj0206/post/198b9aa4-f609-4154-9726-c6e765ee2052/image.png"
                     alt="hover"
+                    @click="showMenu(2)"
                   />
                 </i>
               </div>
-              <ul class="listInner">
+              <ul class="listInner" v-if="menu===2">
                 <li>
                   <p>- 해외 바이어를 사업장으로 초청하는 것과 같은 효과</p>
                   <p>
@@ -219,7 +221,7 @@
             <li>
               <div class="listWrap">
                 <span>
-                  <p>한국 건설안전박람회 2020 비대면 도슨트 투어</p>
+                  <p @click="showMenu(3)">한국 건설안전박람회 2020 비대면 도슨트 투어</p>
                 </span>
                 <i>
                   <img
@@ -235,10 +237,11 @@
                     class="hover"
                     src="https://velog.velcdn.com/images/kyj0206/post/198b9aa4-f609-4154-9726-c6e765ee2052/image.png"
                     alt="hover"
+                    @click="showMenu(3)"
                   />
                 </i>
               </div>
-              <ul class="listInner">
+              <ul class="listInner" v-if="menu===3">
                 <li>
                   <p>
                     - 국내 전시회에 참석이 불가한 해외 바이어에게 간접 체험의
@@ -351,6 +354,8 @@ export default {
   },
   data() {
     return {
+      menu: 1,
+
       filedData,
       moduleData,
       issueBg: "../images/pages/solution/img-solution-motor-top",
@@ -449,6 +454,11 @@ export default {
       ],
     };
   },
+  methods: {
+    showMenu(e){
+      this.menu=e;
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>

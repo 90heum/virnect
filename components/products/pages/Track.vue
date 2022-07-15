@@ -13,17 +13,11 @@
 
     <div class="overViewTrack">
       <div class="overViewWrap">
-        <span class="overViewTit">
-          <p>제품개요</p>
-          <h2>XR 원격 협업 솔루션</h2>
+        <span class="overViewTit" > 
+          <p>{{ $t("productsText.twinTitle.category") }}</p> 
+          <h2>{{ $t("productsText.twinTitle.title") }}</h2>
           <span>
-            VIRNECT Remote의 실시간 원격협업 서비스를 통해 산업 현장에 필요한
-            정보와 이슈를 실시간으로 공유하여 언제 어디서든 업무 대응이
-            가능합니다.
-            <p>
-              빠르고 간편하게 협업이 가능하며 기존의 익숙한 업무 환경을 그대로
-              유지하여 업무의 정확성과 효율성을 높일 수 있습니다.
-            </p>
+              {{ $t("productsText.twinTitle.contents") }}
           </span>
         </span>
         <span class="overViewCont">
@@ -33,12 +27,10 @@
                 src="https://velog.velcdn.com/images/kyj0206/post/d47cf553-7a4f-4e94-b696-dff128df0eae/image.png"
                 alt="우수한 검출 성능"
             /></i>
-            <p>우수한 검출 성능</p>
+            <p>{{ $t("productsText.twinSubText.Title1") }}</p>
             <p>
-              15ms 이내의 빠른 속도와 90% 이상의 정확도로 타겟을 검출합니다.
+              {{ $t("productsText.twinSubText.Contents1") }}
             </p>
-            <p>TTA V&V 시험을 통해 다양한 환경에서</p>
-            <p>우수한 검출 성능을 검증하였습니다.</p>
           </span>
           <span>
             <i
@@ -46,10 +38,8 @@
                 src="https://velog.velcdn.com/images/kyj0206/post/ef06c2ae-8193-498e-8a81-cceebcd9be6a/image.png"
                 alt="경량 디바이스 최적화"
             /></i>
-            <p>경량 디바이스 최적화</p>
-            <p>연산을 최적화하고 발열 및 배터리 소모를 감소시켜</p>
-            <p>스마트글라스, 스마트폰, 태블릿 등 다양한</p>
-            <p>경량 디바이스에 탑재할 수 있습니다.</p>
+            <p>{{ $t("productsText.twinSubText.Title2") }}</p>
+            <p>{{ $t("productsText.twinSubText.Contents2") }}</p>
           </span>
           <span>
             <i
@@ -57,9 +47,8 @@
                 src="https://velog.velcdn.com/images/kyj0206/post/b6d72214-1b00-4b81-a786-580203193731/image.png"
                 alt="수정 가능한 소스코드"
             /></i>
-            <p>수정 가능한 소스코드</p>
-            <p>버넥트 자체 기술력으로 개발한 SLAM 엔진으로</p>
-            <p>변형 및 응용에 대한 확장성이 뛰어납니다.</p>
+            <p>{{ $t("productsText.twinSubText.Title3") }}</p>
+            <p>{{ $t("productsText.twinSubText.Contents3") }}</p>
           </span>
           <span>
             <i
@@ -67,9 +56,8 @@
                 src="https://velog.velcdn.com/images/kyj0206/post/545eccf4-9784-419d-a579-d6f6e3fd2a95/image.png"
                 alt="다양한 타겟 지원"
             /></i>
-            <p>다양한 타겟 지원</p>
-            <p>QR 코드, 이미지 타겟, 3D 타겟, 인스턴트</p>
-            <p id="headingModuleBottom">타겟 등 다양한 타겟을 대상으로 XR이 가능합니다.</p>
+            <p>{{ $t("productsText.twinSubText.Title4") }}</p>
+            <p>{{ $t("productsText.twinSubText.Contents4") }}</p>
           </span>
         </span>
       </div>

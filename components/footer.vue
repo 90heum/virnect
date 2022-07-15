@@ -19,27 +19,25 @@
           </div>
           <ul>
             <li>
-              <nuxt-link to="/solutions/energy_resource">Value</nuxt-link>
+              <nuxt-link to="/value/energy_resource">Value</nuxt-link>
               <ul>
                 <li>
-                  <nuxt-link to="/solutions/energy_resource"
-                    >인프라/자원</nuxt-link
-                  >
+                  <nuxt-link to="/value/energy_resource">인프라/자원</nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link to="/solutions/oil_chemical_battery"
+                  <nuxt-link to="/value/oil_chemical_battery"
                     >제조/건설</nuxt-link
                   >
                 </li>
                 <li>
-                  <nuxt-link to="/solutions/motor_parts">공공/교육</nuxt-link>
+                  <nuxt-link to="/value/motor_parts">공공/교육</nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link to="/solutions/airline_railroad"
+                  <nuxt-link to="/value/airline_railroad"
                     >엔터테인먼트</nuxt-link
                   >
                 </li>
-                <li><nuxt-link to="/solutions/epc">기타</nuxt-link></li>
+                <li><nuxt-link to="/value/epc">기타</nuxt-link></li>
               </ul>
             </li>
             <li>
@@ -65,7 +63,11 @@
                 <li>
                   <nuxt-link to="/support/learning-center">학습센터</nuxt-link>
                 </li>
-                <li><nuxt-link to="/support/inquiry" :target="blank">문의하기</nuxt-link></li>
+                <li>
+                  <nuxt-link to="/support/inquiry" :target="blank"
+                    >문의하기</nuxt-link
+                  >
+                </li>
               </ul>
             </li>
             <li>
@@ -449,7 +451,11 @@
                 /></i>
               </a>
             </span>
-            <span @click="[(lang = true), langlang()]" v-if="isWeb" v-click-outside="langHide">
+            <span
+              @click="[(lang = true), langlang()]"
+              v-if="isWeb"
+              v-click-outside="langHide"
+            >
               <i
                 ><img
                   src="https://velog.velcdn.com/images/kyj0206/post/20a62134-5b70-4f72-ab0d-fdef4689940f/image.png"
@@ -481,7 +487,7 @@
         </div>
       </span>
     </div>
-    <modal-component :handleModal="handleModal" :isModal="isModal"/>
+    <modal-component :handleModal="handleModal" :isModal="isModal" />
   </div>
 </template>
 <script>
@@ -490,7 +496,7 @@ import ModalComponent from "~/components/subscription/modal.vue";
 
 export default {
   components: {
-    ModalComponent
+    ModalComponent,
   },
   computed: {
     availableLocales() {
@@ -510,7 +516,7 @@ export default {
     serviceOpen: false,
     showStyle: {},
     showText: {},
-    isModal: false
+    isModal: false,
   }),
   directives: {
     ClickOutside,

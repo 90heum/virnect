@@ -3,32 +3,32 @@
     {
       "text": "Solutions",
       "page": "energy_resource",
-      "to": "/solutions/energy_resource",
+      "to": "/value/energy_resource",
       "array": [
         {
           "text": "Energy/Resources",
           "page": "energy_resource",
-          "to": "/solutions/energy_resource"
+          "to": "/value/energy_resource"
         },
         {
           "text": "Refinery/Petrochemical/Batteries",
           "page": "oil_chemical_battery",
-          "to": "/solutions/oil_chemical_battery"
+          "to": "/value/oil_chemical_battery"
         },
         {
           "text": "Automotive/Parts",
           "page": "motor_parts",
-          "to": "/solutions/motor_parts"
+          "to": "/value/motor_parts"
         },
         {
           "text": "Aviation/Railway",
           "page": "airline_railroad",
-          "to": "/solutions/airline_railroad"
+          "to": "/value/airline_railroad"
         },
         {
           "text": "EPC",
           "page": "epc",
-          "to": "/solutions/epc"
+          "to": "/value/epc"
         }
       ]
     },

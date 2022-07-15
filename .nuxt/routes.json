@@ -119,41 +119,6 @@
     "_name": "_6791b6ec"
   },
   {
-    "name": "solutions-airline_railroad",
-    "path": "/solutions/airline_railroad",
-    "component": "/Users/hellodigital/virnect/pages/solutions/airline_railroad.vue",
-    "chunkName": "pages/solutions/airline_railroad",
-    "_name": "_4259191c"
-  },
-  {
-    "name": "solutions-energy_resource",
-    "path": "/solutions/energy_resource",
-    "component": "/Users/hellodigital/virnect/pages/solutions/energy_resource.vue",
-    "chunkName": "pages/solutions/energy_resource",
-    "_name": "_a76be328"
-  },
-  {
-    "name": "solutions-epc",
-    "path": "/solutions/epc",
-    "component": "/Users/hellodigital/virnect/pages/solutions/epc.vue",
-    "chunkName": "pages/solutions/epc",
-    "_name": "_098e989f"
-  },
-  {
-    "name": "solutions-motor_parts",
-    "path": "/solutions/motor_parts",
-    "component": "/Users/hellodigital/virnect/pages/solutions/motor_parts.vue",
-    "chunkName": "pages/solutions/motor_parts",
-    "_name": "_5ff0e7c6"
-  },
-  {
-    "name": "solutions-oil_chemical_battery",
-    "path": "/solutions/oil_chemical_battery",
-    "component": "/Users/hellodigital/virnect/pages/solutions/oil_chemical_battery.vue",
-    "chunkName": "pages/solutions/oil_chemical_battery",
-    "_name": "_a048c694"
-  },
-  {
     "name": "support-demo",
     "path": "/support/demo",
     "component": "/Users/hellodigital/virnect/pages/support/demo.vue",
@@ -236,6 +201,41 @@
     "component": "/Users/hellodigital/virnect/pages/terms/service.vue",
     "chunkName": "pages/terms/service",
     "_name": "_c0a723ae"
+  },
+  {
+    "name": "value-airline_railroad",
+    "path": "/value/airline_railroad",
+    "component": "/Users/hellodigital/virnect/pages/value/airline_railroad.vue",
+    "chunkName": "pages/value/airline_railroad",
+    "_name": "_93d337b6"
+  },
+  {
+    "name": "value-energy_resource",
+    "path": "/value/energy_resource",
+    "component": "/Users/hellodigital/virnect/pages/value/energy_resource.vue",
+    "chunkName": "pages/value/energy_resource",
+    "_name": "_23a2be43"
+  },
+  {
+    "name": "value-epc",
+    "path": "/value/epc",
+    "component": "/Users/hellodigital/virnect/pages/value/epc.vue",
+    "chunkName": "pages/value/epc",
+    "_name": "_5571da14"
+  },
+  {
+    "name": "value-motor_parts",
+    "path": "/value/motor_parts",
+    "component": "/Users/hellodigital/virnect/pages/value/motor_parts.vue",
+    "chunkName": "pages/value/motor_parts",
+    "_name": "_63e7bf74"
+  },
+  {
+    "name": "value-oil_chemical_battery",
+    "path": "/value/oil_chemical_battery",
+    "component": "/Users/hellodigital/virnect/pages/value/oil_chemical_battery.vue",
+    "chunkName": "pages/value/oil_chemical_battery",
+    "_name": "_1e7a3b3f"
   },
   {
     "name": "company-subCompany-Brand",

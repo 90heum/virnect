@@ -1,50 +1,25 @@
 {
 	"productsText": {
-		"trackSubTitle": {
-			"title": "검출/추적용 XR 개발 엔진",
-			"contents": "VIRNECT Track은 빠르고 정확하게 객체를 학습, 인식 검출, 추적하는 버넥트 자체 개발 XR 엔진입니다. 버넥트 XR 제품들에 탑재되어 뛰어 난 성능과 운영 퍼포먼스를 제공하고 있습니다."
-		},
-		"trackSubButton": {
-			"know": "자세히 보기",
-			"free": "문의하기"
-		},
-		"twinSubTitle": {
-			"title": "XR 기반 3D 현장 관리 솔루션",
-			"contents": "VIRNECT Twin은 산업 현장을 가상 모델로 재현하고 이를 실제 데이터와 연동하여, 산업 현장의 운영 상태 및 프로세스를 모니터링할 수 있는 제품입니다"
-		},
-		"twinSubButton": {
-			"know": "자세히 보기",
-			"free": "문의하기"
-		},
-		"viewSubTitle": {
-			"title": "확장현실(XR) 콘텐츠 시각화 솔루션",
-			"contents": "VIRNECT View는 XR 콘텐츠를 언제 어디서나 상용화된 기기로 즉시 확인이 가능하며, 현장의 작업과 보고가 동시에 가능하여 업무 효율성을 높입니다."
-		},
-		"viewSubButton": {
-			"know": "자세히 보기",
-			"free": "문의하기"
-		},
-		"makeSubTitle": {
-			"title": "확장현실(XR) 콘텐츠 제작 솔루션",
-			"contents": "VIRNECT Make는 비전문가도 XR 콘텐츠를 쉽고 빠르게 제작 할 수 있는 노코드(No Code) 방식의 XR 콘텐츠 제작 솔루션 입니다."
-		},
-		"makeSubButton": {
-			"know": "자세히 보기",
-			"free": "문의하기"
-		},
-		"remoteSubTitle": {
+
+		"remoteBanner": {
 			"title": "XR 원격 협업 솔루션",
 			"contents": "VIRNECT Remote는 시/공간 제약 없이 여러 현장을 하나로 연결하여 자유롭게 정보를 공유합니다."
 		},
-		"remoteSubButton": {
-			"know": "자세히 보기",
-			"free": "문의하기"
+		"remoteTitle": {
+			"category": "제품 개요",
+			"title": "XR 원격 협업 솔루션",
+			"contents": "VIRNECT Remote의 실시간 원격협업 서비스를 통해 산업 현장에 필요한 정보와 이슈를 실시간으로 공유하여 언제 어디서든 업무 대응이 가능합니다. 빠르고 간편하게 협업이 가능하며 기존의 익숙한 업무 환경을 그대로 유지하여 업무의 정확성과 효율성을 높일 수 있습니다."
 		},
-		"productPropertyTitle": {
+		"remoteSubText": {
+			"TimeCost": "현지공장 출장 비용, 시간을 획기적으로 줄일 수 있습니다",
+			"Quicky": "정보를 신속하고 정확하게 전달할 수 있습니다.",
+			"Risks": "긴급상황 발생 시 외부 전문가들의 신속한 도움을 받을 수 있습니다."
+		},
+		"remotePropertyTitle": {
 			"title": "제품특징",
 			"contents": "업계 최고 수준의 기술력을 통한 VIRNECT Remote만의 특징"
 		},
-		"productPropertyText": {
+		"remotePropertyText": {
 			"multiple": "Web/App, Smart Glass, 360º Camera, Robot 등 다양한 구동 환경 제공",
 			"translation": "설정한 언어로 실시간 통번역",
 			"images": "네트워크 상태가 불안정해도 고화질 영상 선택 가능",
@@ -52,16 +27,123 @@
 			"autoStart": "RealWear 기기 전원을 켜면 Remote 자동 실행 및 빠른 사용",
 			"personalization": "고객 맞춤형 커스터마이징 기능 탑재 가능"
 		},
-		"xrSolutionTitle": {
+		
+
+		"makeBanner": {
+			"title": "확장현실(XR) 콘텐츠 제작 솔루션",
+			"contents": "VIRNECT Make는 비전문가도 XR 콘텐츠를 쉽고 빠르게 제작 할 수 있는 노코드(No Code) 방식의 XR 콘텐츠 제작 솔루션 입니다."
+		},
+		"makeSubTitle": {
 			"category": "제품 개요",
-			"title": "XR 원격 협업 솔루션",
-			"contents": "VIRNECT Remote의 실시간 원격협업 서비스를 통해 산업 현장에 필요한 정보와 이슈를 실시간으로 공유하여 언제 어디서든 업무 대응이 가능합니다. 빠르고 간편하게 협업이 가능하며 기존의 익숙한 업무 환경을 그대로 유지하여 업무의 정확성과 효율성을 높일 수 있습니다."
+			"title": "쉽고 빠른 확장현실(XR) 콘텐츠 제작 솔루션",
+			"contents": "VIRNECT Make는 XR 콘텐츠로 제작 도구로, 비전문가도 마우스 클릭으로 XR 콘텐츠 제작이 가능합니다. 또한 문자, 사진, 비디오, 3D 모델은 물론 기존 작업 문서, 설비 도면 등을 그대로 제작에 빠르게 활용할 수 있습니다."
 		},
-		"xrSolutionText": {
-			"TimeCost": "현지공장 출장 비용, 시간을 획기적으로 줄일 수 있습니다",
-			"Quicky": "정보를 신속하고 정확하게 전달할 수 있습니다.",
-			"Risks": "긴급상황 발생 시 외부 전문가들의 신속한 도움을 받을 수 있습니다."
+		"makeSubContent": {
+			"noCode": "코딩 없이, 클릭으로 쉽고 간단하게 XR 콘텐츠 제작 이 가능합니다.",
+			"content": "기존 리소스를 최대한 녹여낸 XR 콘텐츠 제작이 가능합니다.",
+			"accessibility": "XR 콘텐츠 접근성을 높이기 위한 다양한 디바이스별 콘 텐츠 제작기능 제공"
 		},
+		"makeFeaturesText": {
+			"category": "제품 특징",
+			"title": "어려움 없이, XR 콘텐츠를 만드는 노코드(No Code) 제작 솔루션!",
+			"resources": "이미 보유된 이미지, 음성, 3D 가이드 등 여러가지 리소스를 최대한 활용가능",
+			"interface": "초보 사용자를 위한 클릭, 드래그 & 드롭 등의 편리한 인터페이스 제공",
+			"simplify": "에셋 라이브러리로 리소스를 묶어서 사용할 수 있어 제작에 편리",
+			"devices": "모바일(안드로이드) 디바이스, 리얼웨어용, 홀로렌즈용 콘텐츠 제작이 가능",
+			"targets": "여러 가지 타겟을 지정하여 제작 (QR, V, 플레인 타겟)",
+			"ioT": "IoT데이터 및 고객사 시스템과의 연동(구축형)"
+		},
+
+		
+		"viewBanner": {
+			"title": "확장현실(XR) 콘텐츠 시각화 솔루션",
+			"contents": "VIRNECT View는 XR 콘텐츠를 언제 어디서나 상용화된 기기로 즉시 확인이 가능하며, 현장의 작업과 보고가 동시에 가능하여 업무 효율성을 높입니다."
+		},
+		"viewTitle": {
+			"category": "제품 개요",
+			"title": "확장현실(XR) 콘텐츠 시각화 솔루션",
+			"contents": "VIRNECT View는 XR 콘텐츠를 언제 어디서나 상용화된 기기로 즉시 확인이 가능하며, 현장의 작업과 보고가 동시에 가능하여 업무 효율성을 높입니다."
+		},
+		"viewSubText": {
+			"check": "상용 디바이스로 제작한 XR 콘텐츠를 바로 확인!",
+			"efficiency": "작업 시간 단축 및 효율적인 현장업무 활용성",
+			"expandability": "데이터 연동 및 커스텀마이즈를 통한 확장성 제공(구축형)"
+		},
+		"viewPropertyTitle": {
+			"category": "제품 특징",
+			"title": "타사 제품 대비 접근성, 사용성, 확장성이 높습니다!",
+			"contents1": "하나의 타겟으로 여러 개의 콘텐츠를 선택 시각화 (연관된 콘텐츠 목록을 제공)",
+			"contents2": "보조현실/증강현실/가상현실 유형을 선택하여 시각화",
+			"contents3": "접근 권한 설정을 통해 특정 사용자에게만 콘텐츠 확인 권한 부여 가능",
+			"contents4": "고객사 데이터 연동 및 조직 구조 인증환경(SSO)에 맞춰 커스텀 가능(구축형)"
+
+		},
+
+
+		"twinBanner": {
+			"title": "XR 기반 3D 현장 관리 솔루션",
+			"contents": "VIRNECT Twin은 산업 현장을 가상 모델로 재현하고 이를 실제 데이터와 연동하여, 산업 현장의 운영 상태 및 프로세스를 모니터링할 수 있는 제품입니다"
+		},
+		"twinTitle": {
+			"category": "제품 개요",
+			"title": "현장을 디지털로 복제하여 상황을 예측하고 관리합니다",
+			"contents": "VIRNECT Twin은 산업 현장을 스캐닝 및 모델링으로 디지털화하고 이를 실제 데이터와 연동하여, 산업 현장의 운영 상태 및 프로세스를 모니터링할 수 있는 제품입니다. 설비 및 현장 프로세스 전반을 예측, 통제, 관리하여 운영을 최적화합니다."
+		},
+		"twinSubText": {
+			"Title1": "실시간 모니터링",
+			"Contents1": "설비 데이터와 현장 영상은 물론 작업자 및 장비의 위치 현황 등을 가상 모델에서 실시간으로 모니터링할 수 있습니다.",
+			"Title2": "3D 모델 경량화로 웹 환경 구동",
+			"Contents2": "버넥트만의 3D 시각화 프로세스로 용량이 큰 3D 데이터를 경량화하여, 다양한 디바이스에서 접근이 가능한 웹 환경에서 구동할 수 있습니다.",
+			"Title3": "강력한 협업 시스템",
+			"Contents3": "버넥트 이외 다른 제품들과 연계하여 XR 원격지원, 매뉴얼 제작, 작업 현황 열람 등 강력한 협업 시스템을 구축할 수 있습니다.",
+			"Title4": "완벽한 설비 연동",
+			"Contents4": "2D HMI 화면인식 기술을 이용해 네트워크와 단절된 기존 아날로그 방식의 설비까지 데이터화 하여 연동할 수 있습니다.",
+			"Title5": "다양한 모바일 디바이스 지원",
+			"Contents5": "전용 앱을 설치할 필요 없이 웹 환경에서 이용할 수 있어 PC, 태블릿 등 다양한 디바이스에서 사용할 수 있습니다.",
+			"Title6": "3D 모델 제작 서비스 제공",
+			"Contents6": "가상의 산업현장을 구축하기 위해 필요한 산업 설비 및 장비 등을 간편하게 3D 모델로 제작할 수 있는 3D 스캐닝 서비스를 제공합니다."
+		},
+
+
+		"trackBanner": {
+			"title": "검출/추적용 XR 개발 엔진",
+			"contents": "VIRNECT Track은 빠르고 정확하게 객체를 학습, 인식 검출, 추적하는 버넥트 자체 개발 XR 엔진입니다. 버넥트 XR 제품들에 탑재되어 뛰어 난 성능과 운영 퍼포먼스를 제공하고 있습니다."
+		},
+		"trackTitle": {
+			"category": "제품개요",
+			"title": "완벽한 확장현실(XR) 애플리케이션을 개발합니다",
+			"contents": "VIRNECT Track은 빠르고 정확하게 객체를 학습, 인식 검출, 추적하는 자체 개발 XR 엔진입니다. 타겟을 속도 15ms 이하 90% 이상의 정확도로 검출하고, SLAM 엔진에 기반해 안정적으로 콘텐츠를 증강합니다. 버넥트 XR 제품들에 탑재되어 뛰어난 성능을 보장합니다."
+		
+		},
+		"trackSubText": {
+			"Title1": "우수한 검출 성능",
+			"Contents1": "15ms 이내의 빠른 속도와 90% 이상의 정확도로 타겟을 검출합니다. TTA V&V 시험을 통해 다양한 환경에서 우수한 검출 성능을 검증하였습니다.",
+			"Title2": "경량 디바이스 최적화",
+			"Contents2": "연산을 최적화하고 발열 및 배터리 소모를 감소시켜 스마트글라스, 스마트폰, 태블릿 등 다양한 경량 디바이스에 탑재할 수 있습니다.",
+			"Title3": "수정 가능한 소스코드",
+			"Contents3": "버넥트 자체 기술력으로 개발한 SLAM 엔진으로 변형 및 응용에 대한 확장성이 뛰어납니다.",
+			"Title4": "다양한 타겟 지원",
+			"Contents4": "QR 코드, 이미지 타겟, 3D 타겟, 인스턴트 타겟 등 다양한 타겟을 대상으로 XR이 가능합니다."
+		},
+
+
+		"subButton": {
+			"know": "자세히 보기",
+			"free": "문의하기"
+		},
+		"data": {
+			"battery": "배터리 소모량",
+			"temperature": "외부발열",
+			"cpu":"CPU점유율",
+			"memory": "메모리 점유율"
+		},
+		"subBox": {
+			"download": "디운로드 수",
+			"current": "Enterprise",
+			"prject": "계약건수"
+		},
+
+
 		"visualText": {
 			"title": "산업 현장을 위해 최적화된 <br class='mobile-hidden'>제품을 만나보세요",
 			"contents": "VIRNECT의 제품은 AR 원천기술 및 <br class='mobile-show'>디지털 트윈 기술을 바탕으로 <br class='mobile-hidden'>​안전하고 효율적인 <br class='mobile-show'>미래 산업 현장을 만들어 갑니다."
@@ -784,29 +866,7 @@
 					"img": "https://virnect.com/images/pages/products/img-products-remote-function-06@2x.png"
 				}
 			],
-			"effectHeading": {
-				"category": "도입효과",
-				"title": "최고의 의사결정을 위한 <br>가장 정확한 현장 확인 방법",
-				"contents": "관리자는 VIRNECT Twin을 통해 모든 현장에 강력한 모니터링 시스템을 구축하여, 운영 전반의 통찰력과 판단력을 강화할 수 있습니다.<br> VIRNECT Twin의 데이터 분석 및 예측 기능은 프로세스 전반을 최적화하고 제품의 품질을 향상할 수 있도록 합니다."
-			},
-			"effectList": [
-				{
-					"title": "Real-Time",
-					"contents": "현장의 모습을 복제한 모델에서 <br>연결된 실시간 데이터를 확인"
-				},
-				{
-					"title": "Prediction",
-					"contents": "데이터 기반의 장비 다운 타임 방지 및 <br>정비 시기 예측"
-				},
-				{
-					"title": "Efficiency",
-					"contents": "가상 환경 시뮬레이션을 통한 <br>현장 운영 효율화"
-				},
-				{
-					"title": "Safe",
-					"contents": "현장 작업자 위치 정보 공유를 통한 <br>안전 사고 예방"
-				}
-			],
+
 			"supportList": [
 				{
 					"title": "3D 모델 경량화로 가벼운 제품 사용",
@@ -941,7 +1001,7 @@
 							"802.11ac 2x2"
 						],
 						[
-							"Bluetooth",
+							"Bluetooth", 
 							"5.0"
 						],
 						[

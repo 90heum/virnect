@@ -10,15 +10,15 @@
         </i>
         <p>VIRNECT Remote</p>
         <h2>
-          {{ $t("productsText.remoteSubTitle.title") }}
+          {{ $t("productsText.remoteBanner.title") }}
         </h2>
         <span class="subExplanation">
-          {{ $t("productsText.remoteSubTitle.contents") }}
+          {{ $t("productsText.remoteBanner.contents") }}
         </span>
         <span>
           <button @click="more()">
             <a>
-              <p>{{ $t("productsText.remoteSubButton.know") }}</p>
+              <p>{{ $t("productsText.subButton.know") }}</p>
               <p>
                 <img
                   src="https://velog.velcdn.com/images/kyj0206/post/ede40cab-2b1a-47ff-a338-ad93d68b93f4/image.png"
@@ -29,7 +29,7 @@
           </button>
           <button>
             <a href="/support/inquiry" target="blank">
-              {{ $t("productsText.remoteSubButton.free") }}
+              {{ $t("productsText.subButton.free") }}
             </a>
           </button>
         </span>

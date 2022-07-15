@@ -4,7 +4,7 @@
     <ul class="dataModule">
       <li>
         <span>
-          배터리 소모량
+          {{ $t("productsText.data.battery") }}
           <p>(mAh/min)</p>
         </span>
         <span>
@@ -19,7 +19,7 @@
       </li>
       <li>
         <span>
-          외부발열
+           {{ $t("productsText.data.temperature") }}
           <p>(℃)</p>
         </span>
         <span>
@@ -34,7 +34,7 @@
       </li>
       <li>
         <span>
-          CPU점유율
+          {{ $t("productsText.data.cpu") }}
           <p>(%)</p>
         </span>
         <span>
@@ -49,7 +49,7 @@
       </li>
       <li>
         <span>
-          메모리 점유율
+          {{ $t("productsText.data.memory") }}
           <p>(KB)</p>
         </span>
         <span>

@@ -126,12 +126,19 @@ export default {
     border-bottom: 4px solid #092e6e;
     p {
       color: #616161;
+      font-size: 20px;
     }
   }
   .LearningCenterMbTab-prev,
   .LearningCenterMbTab-next {
-    display: block;
+    display: flex;
+    align-items: center;
     border-bottom: 4px solid #092e6e;
+    img {max-width: 42px;
+    width: 100%;}
   }
 }
+@media screen and (max-width: 600px){
+  
+} 
 </style>

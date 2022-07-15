@@ -16,15 +16,10 @@
     <div class="overViewMake">
       <div class="overViewWrap">
         <span class="overViewTit">
-          <p>제품개요</p>
-          <h2>쉽고 빠른 확장현실(XR) 콘텐츠 제작 솔루션</h2>
+          <p>{{ $t("productsText.makeSubTitle.category") }}</p>
+          <h2>{{ $t("productsText.makeSubTitle.title") }}</h2>
           <span>
-            VIRNECT Make는 XR 콘텐츠로 제작 도구로, 비전문가도 마우스 클릭으로
-            XR 콘텐츠 제작이 가능합니다.
-            <p>
-              또한 문자, 사진, 비디오, 3D 모델은 물론 기존 작업 문서, 설비 도면
-              등을 그대로 제작에 빠르게 활용할 수 있습니다.
-            </p>
+            {{ $t("productsText.makeSubTitle.contents") }}
           </span>
         </span>
         <span class="overViewCont">
@@ -35,8 +30,7 @@
                 alt="No Code and Simple"
             /></i>
             <p>No Code and Simple</p>
-            <p>코딩 없이, 클릭으로 쉽고 간단하게</p>
-            <p>XR 콘텐츠 제작이 가능합니다.</p>
+            <p>{{ $t("productsText.makeSubContent.noCode") }}</p>
           </span>
           <span>
             <i
@@ -45,8 +39,7 @@
                 alt="Custom-made Content"
             /></i>
             <p>Custom-made Content</p>
-            <p>기존 리소스를 최대한 녹여낸</p>
-            <p>XR 콘텐츠 제작이 가능합니다.</p>
+            <p>{{ $t("productsText.makeSubContent.content") }}</p>
           </span>
           <span>
             <i
@@ -55,23 +48,22 @@
                 alt="XR Device Accessibility"
             /></i>
             <p>XR Device Accessibility</p>
-            <p>XR 콘텐츠 접근성을 높이기 위한 다양한</p>
-            <p>디바이스별 콘텐츠 제작기능 제공</p>
+            <p>{{ $t("productsText.makeSubContent.accessibility") }}</p>
           </span>
         </span>
         <span class="overViewBox" id="featuresWrapId">
           <ul>
             <li>
               <p>2,569</p>
-              <p>디운로드 수</p>
+              <p>{{ $t("productsText.subBox.download") }} </p>
             </li>
             <li>
               <p>38</p>
-              <p>Enterprise</p>
+              <p>{{ $t("productsText.subBox.current") }}</p>
             </li>
             <li>
               <p>51</p>
-              <p>계약건수</p>
+              <p>{{ $t("productsText.subBox.prject") }}</p>
             </li>
           </ul>
         </span>
@@ -82,13 +74,12 @@
     <div class="featuresMake">
       <div class="featuresWrap">
         <span class="title">
-          <p>제품특징</p>
+          <p>{{ $t("productsText.makeFeaturesText.category") }}</p>
         </span>
         <div class="contents">
           <span class="featuresTit">
             <h2>
-              어려움 없이, XR 콘텐츠를 만드는
-              <p>노코드(No Code) 제작 솔루션!</p>
+              {{ $t("productsText.makeFeaturesText.title") }}
             </h2>
             <ul>
               <li>
@@ -98,8 +89,7 @@
                     alt="리스트1"
                 /></i>
                 <p>
-                  이미 보유된 이미지, 음성, 3D 가이드 등 여러가지 리소스를
-                  최대한 활용가능
+                  {{ $t("productsText.makeFeaturesText.resources") }}
                 </p>
               </li>
               <li>
@@ -109,8 +99,7 @@
                     alt="리스트2"
                 /></i>
                 <p>
-                  초보 사용자를 위한 클릭, 드래그 & 드롭 등의 편리한 인터페이스
-                  제공
+                  {{ $t("productsText.makeFeaturesText.interface") }}
                 </p>
               </li>
               <li>
@@ -120,7 +109,7 @@
                     alt="리스트3"
                 /></i>
                 <p>
-                  에셋 라이브러리로 리소스를 묶어서 사용할 수 있어 제작에 편리
+                  {{ $t("productsText.makeFeaturesText.simplify") }}
                 </p>
               </li>
               <li>
@@ -130,8 +119,7 @@
                     alt="리스트4"
                 /></i>
                 <p>
-                  모바일(안드로이드) 디바이스, 리얼웨어용, 홀로렌즈용 콘텐츠
-                  제작이 가능
+                  {{ $t("productsText.makeFeaturesText.devices") }}
                 </p>
               </li>
               <li>
@@ -140,7 +128,7 @@
                     src="https://velog.velcdn.com/images/kyj0206/post/6ee9bae6-3d0a-4c24-9868-c8a3af3759a9/image.png"
                     alt="리스트4"
                 /></i>
-                <p>여러 가지 타겟을 지정하여 제작 (QR, V, 플레인 타겟)</p>
+                <p>{{ $t("productsText.makeFeaturesText.targets") }}</p>
               </li>
               <li>
                 <i
@@ -148,7 +136,7 @@
                     src="https://velog.velcdn.com/images/kyj0206/post/6ee9bae6-3d0a-4c24-9868-c8a3af3759a9/image.png"
                     alt="리스트4"
                 /></i>
-                <p>IoT데이터 및 고객사 시스템과의 연동(구축형)</p>
+                <p>{{ $t("productsText.makeFeaturesText.ioT") }}</p>
               </li>
             </ul>
             <span id="headingModuleBottom" />
@@ -165,7 +153,6 @@
 
     <!-- ㅇㄹㅁㅇㄴㄹ -->
     <heading-module
-      :category="$t('productsText.makeText.funcTitle.category')"
       :title="$t('productsText.makeText.funcTitle.title')"
     ></heading-module>
     <function-part
