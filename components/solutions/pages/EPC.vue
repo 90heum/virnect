@@ -105,7 +105,7 @@
             <li class="active">
               <div class="listWrap">
                 <span>
-                  <p>상대측위, 절대측위 변환 SW</p>
+                  <p @click="showMenu(1)">상대측위, 절대측위 변환 SW</p>
                 </span>
                 <i>
                   <img
@@ -121,10 +121,11 @@
                     class="hover"
                     src="https://velog.velcdn.com/images/kyj0206/post/198b9aa4-f609-4154-9726-c6e765ee2052/image.png"
                     alt="hover"
+                    @click="showMenu(1)"
                   />
                 </i>
               </div>
-              <ul class="listInner">
+              <ul class="listInner" v-if="menu===1">
                 <li>
                   <p>
                     - 출발 지점, 이동방향에 구애 받지 않고 목적지로 안내 가능
@@ -144,7 +145,7 @@
             <li>
               <div class="listWrap">
                 <span>
-                  <p>스마트글라스기반 AR전시시스템</p>
+                  <p @click="showMenu(2)">스마트글라스기반 AR전시시스템</p>
                 </span>
                 <i>
                   <img
@@ -160,10 +161,11 @@
                     class="hover"
                     src="https://velog.velcdn.com/images/kyj0206/post/198b9aa4-f609-4154-9726-c6e765ee2052/image.png"
                     alt="hover"
+                    @click="showMenu(2)"
                   />
                 </i>
               </div>
-              <ul class="listInner">
+              <ul class="listInner" v-if="menu===2">
                 <li>
                   <p>- AR시각화로 합병증 정보를 연관지어 정확한 정보를 전달</p>
                   <p>
@@ -182,7 +184,7 @@
             <li>
               <div class="listWrap">
                 <span>
-                  <p>금융상품 AR콘텐츠 개발</p>
+                  <p @click="showMenu(3)">금융상품 AR콘텐츠 개발</p>
                 </span>
                 <i>
                   <img
@@ -198,10 +200,11 @@
                     class="hover"
                     src="https://velog.velcdn.com/images/kyj0206/post/198b9aa4-f609-4154-9726-c6e765ee2052/image.png"
                     alt="hover"
+                    @click="showMenu(3)"
                   />
                 </i>
               </div>
-              <ul class="listInner">
+              <ul class="listInner" v-if="menu===3">
                 <li>
                   <p>
                     - 행사장에서 고객이 AR콘텐츠를 직접 체험하여 홍보효과가 높음
@@ -221,7 +224,7 @@
             <li>
               <div class="listWrap">
                 <span>
-                  <p>증강현실 기술 기반의 성형외과 수술 플랫폼</p>
+                  <p @click="showMenu(4)">증강현실 기술 기반의 성형외과 수술 플랫폼</p>
                 </span>
                 <i>
                   <img
@@ -237,10 +240,11 @@
                     class="hover"
                     src="https://velog.velcdn.com/images/kyj0206/post/198b9aa4-f609-4154-9726-c6e765ee2052/image.png"
                     alt="hover"
+                    @click="showMenu(4)"
                   />
                 </i>
               </div>
-              <ul class="listInner">
+              <ul class="listInner" v-if="menu===4">
                 <li>
                   <p>- 수술 시 참고하는 환자의 CT파일을 AR로 시각화</p>
                   <p>
@@ -323,6 +327,8 @@ export default {
   },
   data() {
     return {
+      menu:1,
+
       filedData,
       moduleData,
       issueBg: "../images/pages/solution/img-solution-epc-top",
@@ -392,6 +398,11 @@ export default {
       ],
     };
   },
+  methods: {
+    showMenu(e){
+      this.menu = e;
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>
