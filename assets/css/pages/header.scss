@@ -50,6 +50,7 @@ header {
 
 
                         a {
+                            border-bottom: 3px solid transparent;
                             white-space: nowrap;
                             display: flex;
                             height: 100%;
@@ -1515,7 +1516,7 @@ header .headerInner .navWrap nav ul li a.navActive+header .subNavi {
     }
 
     header .headerInner .MbHam .MbOpen {
-        display: block;
+        display: flex;
     }
 
     header .headerInner .navWrap nav {
@@ -1539,6 +1540,10 @@ header .headerInner .navWrap nav ul li a.navActive+header .subNavi {
     body {
         width: 100vw;
         /* min-width: 600px; */
+    }
+
+    header .headerInner .MbHam {
+        margin-left: 10px;
     }
 }
 

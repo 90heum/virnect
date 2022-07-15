@@ -265,6 +265,13 @@ section.contactTab {
     .LearningCenterMbTab-prev, .LearningCenterMbTab-next  { 
         display: block;
     }
+
+    .LearningCenterMbTab-prev img, .LearningCenterMbTab-next img  { 
+        max-width: 42px;
+        width: 100%;
+    }
+
+
     .tabCont { display: block; }
 }
 

@@ -71,12 +71,14 @@
 }
 
 .ValueCtaModule .ValueCtaCont>span:first-child>span>span span i {
+  display: flex;
   margin-right: 8px;
 }
 
 .ValueCtaModule .ValueCtaCont>span:first-child>span>span span i img {
   max-width: 22px;
   width: 100%;
+  padding-bottom: 2px;
 }
 
 .ValueCtaModule .ValueCtaCont>span:first-child>span>span span p {
@@ -126,6 +128,10 @@
   .ValueCtaModule .ValueCtaCont>span:first-child h2 {
     font-size: 36px;
     line-height: 1.28;
+  }
+
+  .ValueCtaModule .ValueCtaCont>span:first-child>span>span span i img {
+    padding-bottom: 2px;
   }
 
   .ValueCtaModule .ValueCtaCont>span:first-child>p {

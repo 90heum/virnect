@@ -40,8 +40,9 @@ export default {
     @include default-btn(220px);
   }
   @media (max-width: $mobile) {
-    margin-top: 120px;
-    margin-bottom: 120px;
+    // margin-top: 120px;
+    // margin-bottom: 120px;
+    margin-top: 0;
     padding-top: 50px;
     padding-bottom: 48px;
     background: url("~assets/images/pages/solution/img-solutions-roi-m.png")
