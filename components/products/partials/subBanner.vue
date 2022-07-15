@@ -35,8 +35,11 @@
         </span>
       </span>
       <div class="video_cont">
-        <img src="../../../assets/images/common/mov-bg-default@2x.png" alt="배경">
-        <video autoplay muted style="object-fit:cover">
+        <img
+          src="../../../assets/images/common/mov-bg-default@2x.png"
+          alt="배경"
+        />
+        <video autoplay muted style="object-fit: cover">
           <source
             src="https://player.vimeo.com/external/560735983.hd.mp4?s=e14e93e201c67212624d232508ddcad911d7d617&profile_id=174"
           />
@@ -77,7 +80,6 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   .SubProductsWrap {
-
     p,
     a,
     span,
@@ -195,16 +197,16 @@ export default {
         }
       }
     }
-    .video_cont{
+    .video_cont {
       position: relative;
       max-width: 951px;
       width: 100%;
       border: solid 2px #bfdcff;
-      img{
+      img {
         max-width: 951px;
-         width: 100%;
-         height: 100%;
-         object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
       }
       video {
         position: absolute;

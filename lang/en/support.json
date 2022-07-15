@@ -1,5 +1,9 @@
 {
   "supportText": {
+    "subMenuText": {
+      "learn": "LEARNING CENTER",
+      "Inquiries": "INQUIRIES"
+    },
     "headBannerText": {
       "title": "How can we help you?",
       "contents": "We will do our best to assist with issues related to the service."
