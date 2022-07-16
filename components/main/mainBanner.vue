@@ -156,14 +156,15 @@ export default {
   background-color: #000;
   background-repeat: no-repeat;
   background-position: center center;
-  
+  transition: all 0.4s;
+
   // background-size: cover;
   // transition: all 0.4s;
   // transform 0.95s 0s cubic-bezier(0.3,0.58,0.42,0.9);
-  animation: fadein 3s cubic-bezier(0.3,0.58,0.42,0.9);
-  -moz-animation: fadein 3s; /* Firefox */
-  -webkit-animation: fadein 3s; /* Safari and Chrome */
-  -o-animation: fadein 3s; /* Opera */
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
   background-size: 112%;
   @keyframes fadein {
       from {

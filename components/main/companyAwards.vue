@@ -89,7 +89,7 @@ export default {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 70px 0;
+  padding: 70px 0 40px;
   p {
     font-size: 18px;
     font-weight: bold;
@@ -169,7 +169,7 @@ export default {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-bottom: 60px;
+  padding-bottom: 100px;
   position: relative;
   > div:first-child {
     align-self: start;
@@ -190,6 +190,8 @@ export default {
     }
     p {
       text-align: center;
+      font-size: 14px;
+      line-height: 1.3;
     }
   }
   .prev-btn,
