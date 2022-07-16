@@ -102,6 +102,7 @@ export default {
   display: block;
   width: 100%;
   background-color: #f7f8fa;
+  padding: 0 24px;
   .awardsWrap {
     margin: 0 auto;
     display: flex;

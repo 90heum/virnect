@@ -271,7 +271,8 @@ section.contactTab {
         width: 100%;
     }
 
-
+    .tabCont > div { padding-bottom: 35px;}
+    
     .tabCont { display: block; }
 }
 

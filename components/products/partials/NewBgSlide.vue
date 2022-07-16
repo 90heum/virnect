@@ -355,7 +355,6 @@ export default {
     }
   }
   .moduleApply .moduleApplyBgTop .ApplyInner {
-    margin-top: 100px;
     .swiper-button-prev,
     .swiper-button-next {
       bottom: 100px;

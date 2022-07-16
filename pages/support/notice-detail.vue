@@ -474,14 +474,48 @@ export default {
     }
   }
 }
-
 @media screen and (max-width: 768px) {
-  .detailNotice .detailNoticeWrap {
-    padding: 80px 24px;
-  }
+    .detailNotice .detailNoticeWrap{
+        padding: 80px 24px;
+    }
 
-  .detailNotice .detailNoticeWrap .PreNext ul li {
-    padding: 29px 10px;
-  }
+    .detailNotice .detailNoticeWrap .PreNext ul li{
+        padding: 29px 10px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .detailNotice .detailNoticeWrap .PreNext ul:last-child li:last-child,
+    .detailNotice .detailNoticeWrap .PreNext ul:first-child li:last-child{
+        display: none;
+    }
+
+    .detailNotice .detailNoticeWrap .PreNext ul:first-child li:nth-child(2) a,
+    .detailNotice .detailNoticeWrap .PreNext ul:last-child li:nth-child(2) a{
+        -webkit-line-clamp: 1;
+    }
+
+    .detailNotice .detailNoticeWrap .contHead span:last-child p,
+    .detailNotice .detailNoticeWrap .PreNext ul:last-child li:first-child i,
+    .detailNotice .detailNoticeWrap .PreNext ul:first-child li:first-child i{
+        display: none;
+    }
+
+    .detailNotice .detailNoticeWrap .contHead span:first-child h2{
+        margin-bottom: 12px;
+    }
+
+    .detailNotice .detailNoticeWrap .PreNext ul:last-child li:first-child,
+    .detailNotice .detailNoticeWrap .PreNext ul:first-child li:first-child{
+        padding: 29px 0px 29px 10px;
+    }
+
+    .detailNotice .detailNoticeWrap .PreNext ul:first-child li:nth-child(2),
+    .detailNotice .detailNoticeWrap .PreNext ul:last-child li:nth-child(2){
+        padding: 29px 10px 29px 15px;
+    }
+    .detailNotice .detailNoticeWrap .PreNext ul {
+        padding-left: 0;
+    }
 }
 </style>

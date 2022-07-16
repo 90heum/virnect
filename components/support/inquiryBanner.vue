@@ -71,4 +71,10 @@ export default {};
     }
   }
 }
+
+@media screen and(max-width: 500px) {
+  .contactBanner .ContactBannerInner span p{
+    display: inline;
+  }
+}
 </style>
