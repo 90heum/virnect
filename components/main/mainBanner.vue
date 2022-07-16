@@ -155,17 +155,18 @@ export default {
   background-image: url("https://velog.velcdn.com/images/kyj0206/post/1e0517a7-d564-465f-b8e2-458f7d4fcfac/image.jpg");
   background-color: #000;
   background-repeat: no-repeat;
-  background-position: center center;
+  // background-position: center center;
+  background-size: cover;
   transition: all 0.4s;
 
   // background-size: cover;
   // transition: all 0.4s;
   // transform 0.95s 0s cubic-bezier(0.3,0.58,0.42,0.9);
-  animation: fadein 2s;
-  -moz-animation: fadein 2s; /* Firefox */
-  -webkit-animation: fadein 2s; /* Safari and Chrome */
-  -o-animation: fadein 2s; /* Opera */
-  background-size: 112%;
+  // animation: fadein 2s;
+  // -moz-animation: fadein 2s; /* Firefox */
+  // -webkit-animation: fadein 2s; /* Safari and Chrome */
+  // -o-animation: fadein 2s; /* Opera */
+  // background-size: 112%;
   @keyframes fadein {
       from {
           background-size: 180%;
@@ -718,6 +719,10 @@ export default {
   .slide img {
     width: 377px;
     height: 96px;
+  }
+  .mainBanner{
+    background-size: cover;
+    background-position: -270px 40px;
   }
   .mainBanner .mainBannerInner .mainBannerTit .bannerTitN1 {
     font-size: 22px;
