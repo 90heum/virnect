@@ -394,6 +394,7 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transition: all 0.4s;
   .moduleTop {
     max-width: 1200px;
     width: 100%;
@@ -511,6 +512,7 @@ export default {
           width: 20%;
           height: 100%;
           border-bottom: 4px solid transparent;
+          transition: all 0.4s;
           &.topNaviActive,
           &:hover {
             border-bottom: 4px solid #092e6e;
@@ -555,6 +557,7 @@ export default {
     background-repeat: no-repeat;
     background-size: auto 100%;
     justify-content: center;
+    transition: all 0.4s;
     .bottomBackLogo {
       position: absolute;
       bottom: 0;
@@ -706,6 +709,7 @@ export default {
                 }
               }
               button {
+                transition: all 0.4s;
                 &:first-child {
                   border: solid 1px #979797;
                   background-color: #f7f8f9;
@@ -739,6 +743,42 @@ export default {
                   }
                 }
               }
+              // 0716조성우 추가
+              button:hover {
+                &:first-child {
+                  border: solid 1px #000;
+                  background-color: #000;
+                  display: flex;
+                  a {
+                    padding: 10px 33px;
+                    font-size: 18px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #fff;
+                  }
+                }
+                &:last-child {
+                  border: solid 1px #121212;
+                  background-color: #121212;
+                  display: flex;
+                  a {
+                    padding: 10px 33px;
+                    font-size: 18px;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: normal;
+                    letter-spacing: normal;
+                    text-align: center;
+                    color: #fff;
+                  }
+                }
+              }
+              // 조성우 추가 끝
             }
           }
         }

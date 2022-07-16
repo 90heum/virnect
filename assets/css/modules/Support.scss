@@ -1,7 +1,7 @@
 .SupportBanner {
   display: flex;
   align-items: center;
-  max-width: 2400px;
+  // max-width: 2400px;
   width: 100%;
   min-height: 920px;
   background-image: url("https://velog.velcdn.com/images/kyj0206/post/994912db-5d75-420f-ac1b-0c70c251909e/image.png");
@@ -9,6 +9,7 @@
   background-position: center;
   background-repeat: no-repeat;
   margin: 0 auto;
+  background-color:#1d55a6;
 }
 
 .SupportBanner .SupportBannerWrap {
@@ -293,10 +294,19 @@
   padding: 6.5px 10px 5.5px 10px;
   text-align: center;
 }
+.SupportBanner .SupportBannerWrap .SupportBottomTit div:last-child div:last-child:hover {
+  width: 92px;
+  height: 26px;
+  border-radius: 17px;
+  background-color: #78BBFD;
+  padding: 6.5px 10px 5.5px 10px;
+  text-align: center;
+  transition: all 0.4s;
+}
 
 .SupportBanner .SupportBannerWrap .SupportBottomTit div:last-child div:last-child a {
   width: 100%;
-  font-size: 1.2rem;
+  font-size: 14px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -304,6 +314,10 @@
   letter-spacing: -0.15px;
   text-align: center;
   color: #092e6e;
+}
+.SupportBanner .SupportBannerWrap .SupportBottomTit div:last-child div:last-child a:hover {
+  color: #000;
+  transition: all 0.4s;
 }
 
 @media screen and (max-width: 1260px) {
