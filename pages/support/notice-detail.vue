@@ -241,7 +241,7 @@ export default {
           width: 100%;
           padding: 29px 0;
           h2 {
-            font-size: 22px;
+            font-size: 28px;
             font-weight: bold;
             font-stretch: normal;
             font-style: normal;

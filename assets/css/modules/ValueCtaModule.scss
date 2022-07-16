@@ -29,6 +29,7 @@
 
 .ValueCtaModule .ValueCtaCont>span:first-child h2 {
   font-size: 48px;
+  font-weight: 600;
   color: #fff;
   margin-bottom: 11px;
   line-height: 1.28;
@@ -107,15 +108,27 @@
 .ValueCtaModule .ValueCtaCont>span:first-child>span>span button {
   background: #f7f8f9;
 }
+.ValueCtaModule .ValueCtaCont>span:first-child>span>span button:hover {
+  background: #0A51B7;
+}
 
 .ValueCtaModule .ValueCtaCont>span:first-child>span>span button a {
   height: 100%;
   line-height: 1.5;
   display: block;
-  padding: 19.5px 46.5px;
+  padding: 16px 33px;
   font-size: 18px;
   font-weight: bold;
   color: #121212;
+}
+.ValueCtaModule .ValueCtaCont>span:first-child>span>span button a:hover {
+  height: 100%;
+  line-height: 1.5;
+  display: block;
+  padding: 16px 33px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
 }
 
 @media screen and (max-width: 1024px) {
