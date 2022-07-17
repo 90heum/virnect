@@ -90,7 +90,7 @@
                 >
                   <span class="listImg">
                     <img
-                      :src="`${
+                      :src="`data:image/png;base64,${
                         data.thumbnail
                           ? data.thumbnail
                           : 'https://velog.velcdn.com/images/kyj0206/post/75a8bf3a-fe84-47e5-aa54-fca6f438b599/image.png'
@@ -173,6 +173,7 @@ export default {
         )
         .then((res) => {
           this.contentList = res.data.data.newsBoardResponseList;
+          this.pagingData = res.data.data.pageMetadataResponse;
         })
         .catch((e) => console.error(e));
       // movePage(currentPage) {
@@ -195,6 +196,7 @@ export default {
         return {
           typeList: dataJson[0].data.data.newsTypeResponseList,
           contentList: dataJson[1].data.data.newsBoardResponseList,
+          pagingData:  dataJson[1].data.data.pageMetadataResponse
         };
       } catch (e) {
         console.error(e);
