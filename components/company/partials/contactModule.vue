@@ -7,7 +7,7 @@
       </span>
       <span>
         <button>
-          <a href="/support/inquiry">{{ $t("supportText.supModule.now") }}</a>
+          <a href="/support/inquiry" target="_blank">{{ $t("supportText.supModule.now") }}</a>
         </button>
       </span>
     </div>

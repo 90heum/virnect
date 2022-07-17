@@ -360,8 +360,8 @@ export default {
   methods: {
     showMobileMenu(e) {
       const energy = "/value/infra_resource";
-      const remote = "/products/remote";
-      const notice = "/support/notice";
+      const remote = "/products/productsMain";
+      const notice = "/support/supportSubMain";
       const news = "/news/main";
       const about = "/company/about";
       const goPage =
@@ -457,10 +457,10 @@ export default {
         if (e === "/value/infra_resource") {
           this.isSub = !this.isSub;
         }
-        if (e === "/products/remote") {
+        if (e === "/products/productsMain") {
           this.isSub2 = !this.isSub2;
         }
-        if (e === "/support/notice") {
+        if (e === "/support/supportSubMain") {
           this.isSub3 = !this.isSub3;
         }
         if (e === "/news/main") {

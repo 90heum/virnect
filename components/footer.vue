@@ -319,7 +319,7 @@
                   </div>
                 </div>
                 <button>
-                  <nuxt-link to="/support/inquiry"> 문의하기 </nuxt-link>
+                  <a href="/support/inquiry" target="_blank"> 문의하기 </a>
                 </button>
               </span>
               <span class="downLoad">
