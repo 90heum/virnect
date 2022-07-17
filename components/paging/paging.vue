@@ -108,7 +108,8 @@ export default {
                 }
                 &:nth-child(2){
                     width: 100%;
-                    max-width: 110px;
+                    // 조성우 수정
+                    max-width: 260px;
                     margin: 0 23.5px;
                     ul{
                         display: flex;
