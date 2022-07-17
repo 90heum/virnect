@@ -365,9 +365,15 @@
   width: 100%;
 }
 
+.marginRanger {
+  padding-top: 150px;
+}
+
 .aboutVirnect .customers .customersInner {
   max-width: 1200px;
-  padding: 140px 30px;
+  padding: 0px 30px;
+
+  padding-bottom: 150px;
   margin: 0 auto;
 }
 
@@ -378,8 +384,9 @@
   font-style: normal;
   line-height: 1.2;
   letter-spacing: -0.38px;
-  text-align: center;
+  text-align: left;
   color: #121212;
+  padding-left: 30px;
   margin-bottom: 20px;
 }
 
@@ -390,8 +397,9 @@
   font-style: normal;
   line-height: 1.33;
   letter-spacing: -0.23px;
-  text-align: center;
+  text-align: left;
   color: #616161;
+  padding-left: 30px;
   margin-bottom: 56px;
 }
 
@@ -460,7 +468,7 @@
   }
 
   .aboutVirnect .aboutVirnect {
-    padding: 0  24px 100px;
+    padding: 0 24px 100px;
   }
 
   .aboutVirnect .aboutHistory {
@@ -545,10 +553,12 @@
 }
 
 @media screen and (max-width: 768px) {
+
   .aboutVirnect .customers .customersInner,
-  .aboutVirnect .aboutHistory{
+  .aboutVirnect .aboutHistory {
     padding: 90px 24px;
   }
+
   .aboutVirnect .customers .customersInner .customersCont .customerContCont li {
     width: calc((100% - 30px) / 4);
   }
