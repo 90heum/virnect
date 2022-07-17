@@ -324,6 +324,8 @@ export default {
     isMenu: Boolean,
     availableLocales: Array,
     showMenu: Function,
+    mobileMenu: Object,
+    handleMobileMenu: Function
   },
   data: () => ({
     lang: false,
@@ -344,7 +346,6 @@ export default {
     open4: false,
     open5: false,
     hamServiceOpen: false,
-    mobileMenu: null,
     isShowing: true,
     isShowing2: true,
     isShowing3: true,
@@ -354,13 +355,11 @@ export default {
     isClose: require("~/assets/images/common/icon-menu-close.png"),
     blueStyle: {},
     masterkey: false,
-    mobileMenu: { list1: false },
     /* subOpen: false, */
   }),
   methods: {
     showMobileMenu(e) {
-      console.log(e, "<<??", this.mobileMenu);
-      const energy = "/value/energy_resource";
+      const energy = "/value/infra_resource";
       const remote = "/products/remote";
       const notice = "/support/notice";
       const news = "/news/main";
@@ -379,13 +378,13 @@ export default {
           : "";
       if (this.mobileMenu[e]) {
         this.goToPage(goPage);
-        this.mobileMenu = {};
+        this.handleMobileMenu({});
       } else {
-        this.mobileMenu = { [e]: !this.mobileMenu[e] };
+        this.handleMobileMenu({ [e]: !this.mobileMenu[e] });
       }
     },
     goToPage(e) {
-      this.mobileMenu = {};
+      this.handleMobileMenu({});
       this.showMenu(false);
       this.$router.push(e);
     },
@@ -455,7 +454,7 @@ export default {
         this.isMenu = false;
       } else {
         this.mobileMenu = e;
-        if (e === "/value/energy_resource") {
+        if (e === "/value/infra_resource") {
           this.isSub = !this.isSub;
         }
         if (e === "/products/remote") {

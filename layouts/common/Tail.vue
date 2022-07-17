@@ -47,7 +47,7 @@
                 >
               </span>
               <button>
-                <nuxt-link to="/value/energy_resource">
+                <nuxt-link to="/value/infra_resource">
                   VIRNECT Value 바로가기
                 </nuxt-link>
               </button>
