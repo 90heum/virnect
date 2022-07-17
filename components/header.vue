@@ -659,7 +659,7 @@
             }&type`"
           >
             <img
-              :src="`${contentList ? contentList[0]['thumbnail'] : ''}`"
+              :src="`data:image/png;base64,${contentList ? contentList[0]['thumbnail'] : ''}`"
               alt="뉴스룸 이미지"
             />
           </nuxt-link>

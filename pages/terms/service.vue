@@ -4,24 +4,24 @@
         <div class="termsTypeWrapper">
             <span v-for="(data, idx) of termsType"
                   :key="idx"
-                  :class="`termsTypeBox ${type === data.id ? 'active' : ''}`">
+                  :class="`termsTypeBox ${type === data.id ? 'active' : ''}`"
+                  @click="pushLocation(data.id)">
                   {{data.name}}
             </span>
         </div>
-        <article>
-            <nuxt-content :document="contentData.content" />
+        <article v-html="$i18n.localeProperties.code === 'ko' ? contentBody : contentBodyEn">
             <!-- <h1>서비스 이용 약관</h1>
             <h2>제 1장 총칙</h2>
             <h3>제 1조 (목적)</h3>
             <p>본 약관은 주식회사 버넥트(이하 '회사’라 한다.)가 제공하는 VIRNECT 제품과 관련하여, 회사와 회원간에 제품의 이용조건 및 절차, 회사와 회원간의 권리와 의무사항 및 기타 필요한 제반사항의 규정을 목적으로 합니다.</p> -->
         </article>
-        <article>
+        <!-- <article>
             <h3>부칙</h3>
             <ul>
                 <li v-for="(data, idx) of termsHistory"
                     :key="idx">본 약관은 {{$dayjs(data.noticeDate).format("YYYY년 MM월 DD일")}}부터 시행합니다.</li>
             </ul>
-        </article>
+        </article> -->
 
         <div class="termsSelectWrapper">
             <input type="text" 
@@ -48,11 +48,18 @@
 
 <script>
 import ClickOutside from "vue-click-outside";
+import Markdown from '@nuxt/markdown';
 export default {
     directives: {
         ClickOutside,
     },    
     methods: {
+        pushLocation(e) {
+            const routePath = e === 1 ? "service" :
+                              e === 2 ? "persnal" :
+                              e === 3 ? "charged" : '';
+            this.$router.push(`/terms/${routePath}`);
+        },
         handleToggle() {
             this.toggle = !this.toggle;
         },
@@ -65,10 +72,16 @@ export default {
             this.requestData(id);
             this.toggle = false;
         },
+        // $i18n.localeProperties.code === "ko" ? res.data.data.content : res.data.data.contentEn
         async requestData (e) {
             this.$axios.get(`admin/terms/1?termsId=${e}`)
-                       .then(res => {
+                       .then(async res => {
                            this.contentData = res.data.data;
+                           const md = new Markdown({ toc: false, sanitize: false })
+                           const contents = await md.toMarkup(res.data.data.content)
+                           const contentsEn = await md.toMarkup(res.data.data.contentEn)
+                           this.contentBody = contents.html;
+                           this.contentBodyEn = contentsEn.html;
                        })
                        .catch(e => console.error(e))
 
@@ -84,12 +97,17 @@ export default {
     },
     async asyncData ({$axios}) {
         try {
+            const md = new Markdown({ toc: false, sanitize: false })
             const data = Promise.all([$axios.get(`/admin/terms/type`), $axios.get(`/admin/terms?typeId=1`), $axios.get(`/admin/terms/1`)]);
             const dataJson = await data;
+            const contents = await md.toMarkup(dataJson[2].data.data.content)
+            const contentsEn = await md.toMarkup(dataJson[2].data.data.contentEn)
             return {
                 termsType: dataJson[0].data.data.termsTypeResponseList,
                 termsHistory: dataJson[1].data.data.termsResponseList,
-                contentData: dataJson[2].data.data
+                contentData: dataJson[2].data.data,
+                contentBody: contents.html,
+                contentBodyEn: contentsEn.html
             }
         } catch (e) {console.error(e)}
     }
