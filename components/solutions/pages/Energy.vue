@@ -144,7 +144,7 @@
                 </span>
                 <i>
                   <img
-                    src="https://velog.velcdn.com/images/kyj0206/post/5fb24587-342d-497c-a6bb-9a38ba606fd6/image.png"
+                    src="~/assets/images/pages/value/img-value-1@2x.png"
                     alt="협업솔루션"
                   />
                   <img
@@ -189,7 +189,7 @@
                 </span>
                 <i>
                   <img
-                    src="https://velog.velcdn.com/images/kyj0206/post/a92a1ae1-0697-40e7-9e26-cb55312c743b/image.png"
+                    src="~/assets/images/pages/value/img-value-2@2x.png"
                     alt="시스템개발"
                   />
                   <img
@@ -231,7 +231,7 @@
                 </span>
                 <i>
                   <img
-                    src="https://velog.velcdn.com/images/kyj0206/post/85c82f2a-dc8f-4d80-b2ac-eb0cde5e6087/image.png"
+                    src="~/assets/images/pages/value/img-value-3@2x.png"
                     alt="검증솔루션"
                   />
                   <img
@@ -276,7 +276,7 @@
                 </span>
                 <i>
                   <img
-                    src="https://velog.velcdn.com/images/kyj0206/post/546b114e-b806-41ab-b1c3-22b5d8603880/image.png"
+                    src="~/assets/images/pages/value/img-value-4@2x.png"
                     alt="검증용역"
                   />
                   <img
@@ -322,7 +322,7 @@
                 </span>
                 <i>
                   <img
-                    src="https://velog.velcdn.com/images/kyj0206/post/70183a55-342f-46c2-8a76-9acc85fab18a/image.png"
+                    src="~/assets/images/pages/value/img-value-5@2x.png"
                     alt="기능개선"
                   />
                   <img
