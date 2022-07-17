@@ -67,6 +67,15 @@
       </span>
       <span class="moduleTopNavi">
         <ul>
+          <div
+          class="LearningCenterMbTab-prev"
+          @click="handleCategory(category - 1 > category.length ? 0 : category - 1)"
+        >
+          <img
+            src="https://velog.velcdn.com/images/kyj0206/post/ca9d309b-94ce-41db-a002-66a2f0d76ff8/image.png"
+            alt="prebutton"
+          />
+        </div>
           <li
             @click="handleCategory(1)"
             :class="`${category === 1 && 'topNaviActive'}`"
@@ -87,10 +96,20 @@
             @click="handleCategory(5)"
             :class="`${category === 5 && 'topNaviActive'}`"
           ></li>
+          <div
+        class="LearningCenterMbTab-next"
+        @click="handleCategory(category + 1 > category.length ? 0 : category + 1)"
+      >
+        <img
+          src="https://velog.velcdn.com/images/kyj0206/post/a1bbf083-3da6-413c-9f16-48fc60000827/image.png"
+          alt="nextbutton"
+        />
+      </div>
         </ul>
       </span>
     </div>
-    <div class="moduleBottom">
+    <div class="swiper-wrapper">
+      <div class="moduleBottom img-warpper swiper-slide">
       <span class="bottomBackLogo">
         <img
           src="https://velog.velcdn.com/images/kyj0206/post/98cf4c83-d886-464e-8f33-e289c3908adc/image.png"
@@ -352,6 +371,7 @@
           />
         </span>
       </div>
+      </div>
     </div>
   </div>
 </template>
@@ -361,12 +381,40 @@ export default {
   data() {
     return {
       category: 1,
+      options: {
+        slidesPerView: "auto",
+        loop: true,
+        spaceBetween: 13,
+        centeredSlides: true,
+        pagination: {
+          // el: ".swiper-pagination"
+        },
+        navigation: {
+          nextEl: ".LearningCenterMbTab-prev",
+          prevEl: ".LearningCenterMbTab-next",
+        },
+        breakpoints: {},
+      },
     };
   },
   methods: {
     handleCategory(e) {
       this.category = e;
     },
+    onSwiperSlideChangeTransitionStart(e) {
+      console.log("redied", e);
+    },
+    onSwiperRedied(swiper) {
+      console.log("transtion", swiper);
+    },
+    onSwiperClickSlide(idx, realIdx) {
+      console.log("click", idx, realIdx);
+    },
+  },
+  props: {
+    categoryList: Array,
+    isTabMenu: Number,
+    chooseTabMenu: Function,
   },
 };
 </script>
@@ -505,6 +553,8 @@ export default {
         min-height: 70px;
         height: 100%;
         padding: 0;
+        .LearningCenterMbTab-prev,
+        .LearningCenterMbTab-next {display: none; cursor: pointer;}
         li {
           cursor: pointer;
           min-height: 70px;
@@ -515,27 +565,27 @@ export default {
           &:hover {
             border-bottom: 4px solid #092e6e;
           }
-          &:first-child {
+          &:nth-child(2) {
             background-image: url("https://velog.velcdn.com/images/kyj0206/post/d3979587-c0e2-430b-ad0f-1eec7deb8c84/image.png");
             background-size: auto 100%;
             background-position: center;
           }
-          &:nth-child(2) {
+          &:nth-child(3) {
             background-image: url("https://velog.velcdn.com/images/kyj0206/post/c90bac54-bec8-415b-949f-b9e7e5142ffa/image.png");
             background-size: auto 100%;
             background-position: center;
           }
-          &:nth-child(3) {
+          &:nth-child(4) {
             background-image: url("https://velog.velcdn.com/images/kyj0206/post/55999c1f-157d-4dde-85c3-4038aba26b91/image.png");
             background-size: auto 100%;
             background-position: center;
           }
-          &:nth-child(4) {
+          &:nth-child(5) {
             background-image: url("https://velog.velcdn.com/images/kyj0206/post/0acbda75-7c59-48e7-ac7c-bc20fc45d618/image.png");
             background-size: auto 100%;
             background-position: center;
           }
-          &:last-child {
+          &:nth-child(6) {
             background-image: url("https://velog.velcdn.com/images/kyj0206/post/9a3abaac-00cb-4eb1-9605-1ad5e3c38371/image.png");
             background-size: auto 100%;
             background-position: center;
@@ -757,38 +807,34 @@ export default {
 }
 @media screen and (max-width: 1150px) {
   .moduleBottomTitMake,
-  .moduleBottomTitView,
-  .moduleBottomTitTwin,
-  .moduleBottomTitTrack,
-  .moduleBottomTitRemote {
-    div {
-      &:first-child {
-        span {
-          display: inline;
+      .moduleBottomTitView,
+      .moduleBottomTitTwin,
+      .moduleBottomTitTrack,
+      .moduleBottomTitRemote {
+        div {
+          &:first-child {
+            span {display: inline;}
+            > p {
+            }
+            h2 {
+              margin-bottom: 10px;
+            }
+          }}}
+      .moduleBottomTitRemote {
+        div {
+        .solution{
+          display: inline !important;
+          >p{
+            display: inline;
+          }
         }
-        > p {
-        }
-        h2 {
-          margin-bottom: 10px;
-        }
-      }
-    }
-  }
-  .moduleBottomTitRemote {
-    div {
-      .solution {
-        display: inline !important;
-        > p {
-          display: inline;
         }
       }
-    }
-  }
 }
 @media screen and (max-width: 1050px) {
-  .moduleBottomTitView {
+.moduleBottomTitView {
     .viewview {
-      padding-top: 26px !important;
+        padding-top: 26px!important;
     }
   }
 }
@@ -802,7 +848,7 @@ export default {
     flex-direction: column;
     width: 100%;
   }
-
+  
   .productsModule .moduleBottom .moduleBottomWrapTrack .moduleBottomCont,
   .productsModule .moduleBottom .moduleBottomWrapTwin .moduleBottomCont,
   .productsModule .moduleBottom .moduleBottomWrapView .moduleBottomCont,
@@ -842,84 +888,53 @@ export default {
   .productsModule .moduleBottom {
     min-height: 669px;
   }
-  .productsModule .moduleBottom .moduleBottomWrapTrack.bottomContActive,
-  .productsModule .moduleBottom .moduleBottomWrapTwin.bottomContActive,
-  .productsModule .moduleBottom .moduleBottomWrapView.bottomContActive,
-  .productsModule .moduleBottom .moduleBottomWrapMake.bottomContActive,
-  .productsModule .moduleBottom .moduleBottomWrapRemote.bottomContActive {
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .productsModule .moduleBottom .moduleBottomWrapTrack .moduleBottomCont,
-  .productsModule .moduleBottom .moduleBottomWrapTwin .moduleBottomCont,
-  .productsModule .moduleBottom .moduleBottomWrapView .moduleBottomCont,
-  .productsModule .moduleBottom .moduleBottomWrapMake .moduleBottomCont,
-  .productsModule .moduleBottom .moduleBottomWrapRemote .moduleBottomCont {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .productsModule .moduleBottom .moduleBottomWrapTrack .moduleBottomTitMake,
-  .productsModule .moduleBottom .moduleBottomWrapTrack .moduleBottomTitView,
-  .productsModule .moduleBottom .moduleBottomWrapTrack .moduleBottomTitTwin,
-  .productsModule .moduleBottom .moduleBottomWrapTrack .moduleBottomTitTrack,
-  .productsModule .moduleBottom .moduleBottomWrapTrack .moduleBottomTitRemote,
-  .productsModule .moduleBottom .moduleBottomWrapTwin .moduleBottomTitMake,
-  .productsModule .moduleBottom .moduleBottomWrapTwin .moduleBottomTitView,
-  .productsModule .moduleBottom .moduleBottomWrapTwin .moduleBottomTitTwin,
-  .productsModule .moduleBottom .moduleBottomWrapTwin .moduleBottomTitTrack,
-  .productsModule .moduleBottom .moduleBottomWrapTwin .moduleBottomTitRemote,
-  .productsModule .moduleBottom .moduleBottomWrapView .moduleBottomTitMake,
-  .productsModule .moduleBottom .moduleBottomWrapView .moduleBottomTitView,
-  .productsModule .moduleBottom .moduleBottomWrapView .moduleBottomTitTwin,
-  .productsModule .moduleBottom .moduleBottomWrapView .moduleBottomTitTrack,
-  .productsModule .moduleBottom .moduleBottomWrapView .moduleBottomTitRemote,
-  .productsModule .moduleBottom .moduleBottomWrapMake .moduleBottomTitMake,
-  .productsModule .moduleBottom .moduleBottomWrapMake .moduleBottomTitView,
-  .productsModule .moduleBottom .moduleBottomWrapMake .moduleBottomTitTwin,
-  .productsModule .moduleBottom .moduleBottomWrapMake .moduleBottomTitTrack,
-  .productsModule .moduleBottom .moduleBottomWrapMake .moduleBottomTitRemote,
-  .productsModule .moduleBottom .moduleBottomWrapRemote .moduleBottomTitMake,
-  .productsModule .moduleBottom .moduleBottomWrapRemote .moduleBottomTitView,
-  .productsModule .moduleBottom .moduleBottomWrapRemote .moduleBottomTitTwin,
-  .productsModule .moduleBottom .moduleBottomWrapRemote .moduleBottomTitTrack,
-  .productsModule .moduleBottom .moduleBottomWrapRemote .moduleBottomTitRemote {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .productsModule .moduleBottom {
-    min-height: 1000px;
-  }
-  .productsModule .moduleBottom .moduleBottomWrapTrack,
-  .productsModule .moduleBottom .moduleBottomWrapTwin,
-  .productsModule .moduleBottom .moduleBottomWrapView,
-  .productsModule .moduleBottom .moduleBottomWrapMake,
-  .productsModule .moduleBottom .moduleBottomWrapRemote {
-    flex-direction: column;
-    padding-top: 100px;
-  }
-  .moduleBottomCont {
-    img {
-      max-width: 100% !important;
+  .productsModule .moduleBottom .moduleBottomWrapTrack.bottomContActive, .productsModule .moduleBottom .moduleBottomWrapTwin.bottomContActive, .productsModule .moduleBottom .moduleBottomWrapView.bottomContActive, .productsModule .moduleBottom .moduleBottomWrapMake.bottomContActive, .productsModule .moduleBottom .moduleBottomWrapRemote.bottomContActive{
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
     }
-  }
+
+    .productsModule .moduleBottom .moduleBottomWrapTrack .moduleBottomCont, .productsModule .moduleBottom .moduleBottomWrapTwin .moduleBottomCont, .productsModule .moduleBottom .moduleBottomWrapView .moduleBottomCont, .productsModule .moduleBottom .moduleBottomWrapMake .moduleBottomCont, .productsModule .moduleBottom .moduleBottomWrapRemote .moduleBottomCont{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .productsModule .moduleBottom .moduleBottomWrapTrack .moduleBottomTitMake, .productsModule .moduleBottom .moduleBottomWrapTrack .moduleBottomTitView, .productsModule .moduleBottom .moduleBottomWrapTrack .moduleBottomTitTwin, .productsModule .moduleBottom .moduleBottomWrapTrack .moduleBottomTitTrack, .productsModule .moduleBottom .moduleBottomWrapTrack .moduleBottomTitRemote, .productsModule .moduleBottom .moduleBottomWrapTwin .moduleBottomTitMake, .productsModule .moduleBottom .moduleBottomWrapTwin .moduleBottomTitView, .productsModule .moduleBottom .moduleBottomWrapTwin .moduleBottomTitTwin, .productsModule .moduleBottom .moduleBottomWrapTwin .moduleBottomTitTrack, .productsModule .moduleBottom .moduleBottomWrapTwin .moduleBottomTitRemote, .productsModule .moduleBottom .moduleBottomWrapView .moduleBottomTitMake, .productsModule .moduleBottom .moduleBottomWrapView .moduleBottomTitView, .productsModule .moduleBottom .moduleBottomWrapView .moduleBottomTitTwin, .productsModule .moduleBottom .moduleBottomWrapView .moduleBottomTitTrack, .productsModule .moduleBottom .moduleBottomWrapView .moduleBottomTitRemote, .productsModule .moduleBottom .moduleBottomWrapMake .moduleBottomTitMake, .productsModule .moduleBottom .moduleBottomWrapMake .moduleBottomTitView, .productsModule .moduleBottom .moduleBottomWrapMake .moduleBottomTitTwin, .productsModule .moduleBottom .moduleBottomWrapMake .moduleBottomTitTrack, .productsModule .moduleBottom .moduleBottomWrapMake .moduleBottomTitRemote, .productsModule .moduleBottom .moduleBottomWrapRemote .moduleBottomTitMake, .productsModule .moduleBottom .moduleBottomWrapRemote .moduleBottomTitView, .productsModule .moduleBottom .moduleBottomWrapRemote .moduleBottomTitTwin, .productsModule .moduleBottom .moduleBottomWrapRemote .moduleBottomTitTrack, .productsModule .moduleBottom .moduleBottomWrapRemote .moduleBottomTitRemote{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .productsModule .moduleBottom{
+        min-height: 1000px;
+
+    }
+    .productsModule .moduleBottom .moduleBottomWrapTrack, .productsModule .moduleBottom .moduleBottomWrapTwin, .productsModule .moduleBottom .moduleBottomWrapView, .productsModule .moduleBottom .moduleBottomWrapMake, .productsModule .moduleBottom .moduleBottomWrapRemote {
+      flex-direction: column;
+      padding-top: 100px;
+    }
+    .moduleBottomCont {
+        img {
+          max-width: 100% !important;
+        }
+      }
 }
 @media screen and (max-width: 768px) {
   .productsModule {
     padding-top: 200px;
   }
-  .productsModule .moduleTop .moduleTopTit ul {
-    flex-wrap: wrap;
-  }
-  .productsModule .moduleTop .moduleTopTit ul li {
-    width: 50%;
-    padding: 20px 0;
-  }
-  .productsModule .moduleTop .moduleTopTit ul li:nth-child(2) {
-    border-right: 0px;
+  .productsModule .moduleTop .moduleTopNavi ul li {display: none; }
+  .productsModule .moduleTop .moduleTopNavi ul li.topNaviActive {
+    display: block;
+    width: 100%;
+    background-repeat: no-repeat;
+    }
+    .productsModule .moduleTop .moduleTopNavi ul .LearningCenterMbTab-prev,
+  .productsModule .moduleTop .moduleTopNavi ul .LearningCenterMbTab-next {
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid #092e6e;
+    img {max-width: 42px;
+    width: 100%;}
   }
 }
 @media screen and (max-width: 600px) {
@@ -928,29 +943,29 @@ export default {
   .productsModule .moduleTop .moduleTopNavi ul {
     padding-left: 0;
   }
-  .productsModule .moduleTop .moduleTopTit .dataModule {
-    flex-wrap: wrap;
-    padding: 25px 0;
-  }
-
-  .productsModule .moduleTop .moduleTopTit .dataModule li {
-    width: 50%;
-    border: none;
-  }
-
-  .productsModule .moduleTop .moduleTopTit .dataModule li:nth-child(1),
-  .productsModule .moduleTop .moduleTopTit .dataModule li:nth-child(3) {
-    border-right: 1px solid #c5c8cf;
-  }
-  .productsModule .moduleTop .moduleTopTit .dataModule li:nth-child(1),
-  .productsModule .moduleTop .moduleTopTit .dataModule li:nth-child(2) {
-    padding-bottom: 55px;
-  }
-  .moduleBottomCont {
-    img {
-      max-width: 100%;
+  .productsModule .moduleTop .moduleTopTit .dataModule{
+        flex-wrap: wrap;
+        padding: 25px 0;
     }
-  }
+
+    .productsModule .moduleTop .moduleTopTit .dataModule li{
+        width: 50%;
+        border: none;
+    }
+
+    .productsModule .moduleTop .moduleTopTit .dataModule li:nth-child(1),
+    .productsModule .moduleTop .moduleTopTit .dataModule li:nth-child(3){
+        border-right: 1px solid #c5c8cf;
+    }
+    .productsModule .moduleTop .moduleTopTit .dataModule li:nth-child(1),
+    .productsModule .moduleTop .moduleTopTit .dataModule li:nth-child(2){
+        padding-bottom: 55px;
+    }
+    .moduleBottomCont {
+        img {
+          max-width: 100%;
+        }
+      }
 }
 @media screen and (max-width: 425px) {
   .moduleBottomWrapTrack,
