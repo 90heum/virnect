@@ -335,7 +335,7 @@
             />
           </span>
         </div>
-        <!-- <span class="asideInfoLink">
+        <span class="asideInfoLink">
           <span class="asideInfoLinkTit">
             더 많은 디지털 인사이트를 발견하세요.
           </span>
@@ -360,34 +360,6 @@
                 />
               </i>
             </a>
-          </div>
-        </span> -->
-        <span class="asideInfoLink">
-          <span class="asideInfoLinkTit">
-            준비된 기술 컨설턴트가 직접 도움을 드립니다.
-          </span>
-          <span class="asideInfoLinkCont">
-            <p>대표전화 : 070-7733-2025</p>
-            <p>
-              구매 및 제휴 문의 :
-              <a href="mailto:contact@virnect.com" target="blank">
-                <u>contact@virnect.com</u>
-              </a>
-            </p>
-            <p>
-              제품 사용 및 기술 지원 :
-              <a href="mailto:support@virnect.com" target="blank">
-                <u>support@virnect.com</u>
-              </a>
-            </p>
-          </span>
-          <div class="BtnWrap">
-            <button>
-              <nuxt-link to="/support/demo"> 지금 사용해보기 </nuxt-link>
-            </button>
-            <button>
-              <nuxt-link to="/support/inquiry"> 문의하기 </nuxt-link>
-            </button>
           </div>
         </span>
       </div>

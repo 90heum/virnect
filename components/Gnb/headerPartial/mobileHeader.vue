@@ -14,16 +14,16 @@
             <li @click="goToPage(`/value/energy_resource`)">
               <a> 인프라/자원 </a>
             </li>
-            <li @click="goToPage(`/solutions/oil_chemical_battery`)">
+            <li @click="goToPage(`/value/oil_chemical_battery`)">
               <a> 제조/건설 </a>
             </li>
-            <li @click="goToPage('/solutions/motor_parts')">
+            <li @click="goToPage('/value/motor_parts')">
               <a> 공공/교육 </a>
             </li>
-            <li @click="goToPage('/solutions/airline_railroad')">
+            <li @click="goToPage('/value/airline_railroad')">
               <a> 엔터테인먼트 </a>
             </li>
-            <li @click="goToPage('/solutions/epc')">
+            <li @click="goToPage('/value/epc')">
               <a> 기타 </a>
             </li>
           </ul>

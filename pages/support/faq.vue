@@ -1,7 +1,7 @@
 <template>
 <div>
     <!-- 헤더 -->
-    <head-banner />
+    <faq-banner />
 
     <!-- 콘텍트 콘텐츠 -->
     <div class="contactTab">
@@ -17,7 +17,7 @@
                     <img src="https://velog.velcdn.com/images/kyj0206/post/ca9d309b-94ce-41db-a002-66a2f0d76ff8/image.png" alt="prebutton">
                 </div>
 
-                <span v-for="(data, idx) of typeList || []" 
+                <span v-for="(data, idx) of typeList" 
                       :class="`${isCategory === (data.id) ? 'active' : ''}`"
                       :key="idx"
                       @click="chooseCategory(data.id)">{{$i18n.localeProperties.code === "ko" ? data.name : data.nameEn}}</span>
@@ -43,23 +43,16 @@
 </template>
 
 <script>
-import HeadBanner from "~/components/support/headBanner.vue";
+import faqBanner from "~/components/support/faqBanner.vue";
 import SubMenu from "~/components/support/SubMenu.vue";
 import AsideMenu from "~/components/support/faq/AsideMenu.vue";
 import FaqContents from "~/components/support/faq/FaqContents.vue";
+
 export default {
-    watch: {
-        '$route' (to, from) {
-            // this.chooseCategory(Number(this.$route.query.category) || null)
-            this.isType = Number(this.$route.query.type)||null;
-            this.isCategory = Number(this.$route.query.category)||null;
-            this.chooseType(this.isType);
-        }
-    },
     data() {
         return {
-            isCategory: Number(this.$route.query.category) || 3,
-            isType: Number(this.$route.query.type) || null,
+            isCategory: 3,
+            isType: null,
             typeList: [],
             asideMenuList: [],
             contentList: [],
@@ -77,7 +70,7 @@ export default {
         SubMenu,
         AsideMenu,
         FaqContents,
-        HeadBanner
+        faqBanner
     },
     methods: {
         changeTabNextAndPrevMenu(idx, action) {
@@ -93,9 +86,9 @@ export default {
         movePage (currentPage) {
             this.pagingData = {...this.pagingData, currentPage: currentPage};
             this.chooseType(this.isType, true);
+
         },
         async chooseCategory (e) {
-            this.$router.push(`?category=${e}`)
             this.isCategory = e;
             try{
                 const data = Promise.all([this.$axios.$get(`admin/support/faq/type?categoryId=${this.isCategory}`), 
@@ -114,6 +107,7 @@ export default {
             this.isType = null;
             } catch (e) {console.error(e)}
         },
+
         async chooseType (e, isPaging = false) {
             this.isType = e;
             if (!isPaging) this.pagingData = {...this.pagingData, currentPage: 1 };
@@ -132,15 +126,13 @@ export default {
             } catch(e) { console.error(e) };
         }
     },
-    async asyncData ({$axios, route}) {
-        const routePath = route.query.type ? route.query.type : '';
-        const routeCategory = route.query.category ? route.query.category : 3;
+    async asyncData ({$axios}) {
         try{
             const data = Promise.all([$axios.$get("admin/support/faq/category"), 
-                                      $axios.$get(`admin/support/faq/type?categoryId=${routeCategory}`), 
+                                      $axios.$get("admin/support/faq/type?categoryId=3"), 
                                       $axios.$get("admin/support/faq", {params: {
-                                          category: routeCategory,
-                                          type: routePath,
+                                          category: 3,
+                                          type: null,
                                           device: null,
                                           pageRequest: {
                                               page: 1,
@@ -153,7 +145,7 @@ export default {
                 typeList: dataJson[0].data.categoryList, 
                 asideMenuList: dataJson[1].data.typeList, 
                 contentList: dataJson[2].data.supportFaqDTOList,
-                pagingData: dataJson[2].data.pageMetadataResponse,
+                pagingData: dataJson[2].data.pageMetadataResponse
             };
         } catch (e) {console.error(e)}
             
@@ -236,6 +228,7 @@ section.contactTab {
     width: 100%;
     background-color: #fff;
 }
+
 // asideMenu 공통 css
 .FAQWrap{            
     margin: 0 auto;
@@ -243,9 +236,12 @@ section.contactTab {
     width: 100%;
     padding: 150px 30px;
 }
+
 .LearningCenterMbTab-prev, .LearningCenterMbTab-next  { display: none; cursor: pointer; }
 @media screen and (max-width: 1024px) {
+
 }
+
 @media screen and (max-width: 768px) {
     .contactBanner .ContactBannerInner span p{
         display: inline;
@@ -269,8 +265,18 @@ section.contactTab {
     .LearningCenterMbTab-prev, .LearningCenterMbTab-next  { 
         display: block;
     }
+
+    .LearningCenterMbTab-prev img, .LearningCenterMbTab-next img  { 
+        max-width: 42px;
+        width: 100%;
+    }
+
+
     .tabCont { display: block; }
 }
+
 @media screen and (max-width: 425px) {
+
 }
+
 </style>

@@ -87,7 +87,7 @@
           </span>
           <!-- 정유/화학/배터리 호버 -->
           <span class="oilHover">
-            <nuxt-link to="/solutions/oil_chemical_battery">
+            <nuxt-link to="/value/oil_chemical_battery">
               <span>
                 <p>제조/건설</p>
                 <i>
@@ -133,7 +133,7 @@
           </span>
           <!-- 자동차/부품 호버 -->
           <span class="partsHover">
-            <nuxt-link to="/solutions/motor_parts">
+            <nuxt-link to="/value/motor_parts">
               <span>
                 <p>공공/교육</p>
                 <i>
@@ -179,7 +179,7 @@
           </span>
           <!-- 항공/철도 호버 -->
           <span class="airLineHover">
-            <nuxt-link to="/solutions/airline_railroad">
+            <nuxt-link to="/value/airline_railroad">
               <span>
                 <p>엔터테인먼트</p>
                 <i>
@@ -225,7 +225,7 @@
           </span>
           <!-- EPC 호버 -->
           <span class="epcHover">
-            <nuxt-link to="/solutions/epc">
+            <nuxt-link to="/value/epc">
               <span>
                 <p>기타</p>
                 <i>
