@@ -153,7 +153,7 @@
               >
                 <nuxt-link :to="`/news/detail?id=${data.id}&type`">
                   <span>
-                    <img :src="`${data.thumbnail}`" alt="뉴스리스트 이미지" />
+                    <img :src="`data:image/png;base64,${data.thumbnail}`" alt="뉴스리스트 이미지" />
                   </span>
                   <span>
                     {{
