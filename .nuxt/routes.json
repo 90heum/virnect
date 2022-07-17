@@ -203,39 +203,39 @@
     "_name": "_c0a723ae"
   },
   {
-    "name": "value-airline_railroad",
-    "path": "/value/airline_railroad",
-    "component": "/Users/hellodigital/virnect/pages/value/airline_railroad.vue",
-    "chunkName": "pages/value/airline_railroad",
-    "_name": "_93d337b6"
+    "name": "value-entertainment",
+    "path": "/value/entertainment",
+    "component": "/Users/hellodigital/virnect/pages/value/entertainment.vue",
+    "chunkName": "pages/value/entertainment",
+    "_name": "_8be91c34"
   },
   {
-    "name": "value-energy_resource",
-    "path": "/value/energy_resource",
-    "component": "/Users/hellodigital/virnect/pages/value/energy_resource.vue",
-    "chunkName": "pages/value/energy_resource",
-    "_name": "_23a2be43"
+    "name": "value-etc",
+    "path": "/value/etc",
+    "component": "/Users/hellodigital/virnect/pages/value/etc.vue",
+    "chunkName": "pages/value/etc",
+    "_name": "_47cb151c"
   },
   {
-    "name": "value-epc",
-    "path": "/value/epc",
-    "component": "/Users/hellodigital/virnect/pages/value/epc.vue",
-    "chunkName": "pages/value/epc",
-    "_name": "_5571da14"
+    "name": "value-infra_resource",
+    "path": "/value/infra_resource",
+    "component": "/Users/hellodigital/virnect/pages/value/infra_resource.vue",
+    "chunkName": "pages/value/infra_resource",
+    "_name": "_cfc8c2a2"
   },
   {
-    "name": "value-motor_parts",
-    "path": "/value/motor_parts",
-    "component": "/Users/hellodigital/virnect/pages/value/motor_parts.vue",
-    "chunkName": "pages/value/motor_parts",
-    "_name": "_63e7bf74"
+    "name": "value-manufacture_construction",
+    "path": "/value/manufacture_construction",
+    "component": "/Users/hellodigital/virnect/pages/value/manufacture_construction.vue",
+    "chunkName": "pages/value/manufacture_construction",
+    "_name": "_5f0e9f21"
   },
   {
-    "name": "value-oil_chemical_battery",
-    "path": "/value/oil_chemical_battery",
-    "component": "/Users/hellodigital/virnect/pages/value/oil_chemical_battery.vue",
-    "chunkName": "pages/value/oil_chemical_battery",
-    "_name": "_1e7a3b3f"
+    "name": "value-public_education",
+    "path": "/value/public_education",
+    "component": "/Users/hellodigital/virnect/pages/value/public_education.vue",
+    "chunkName": "pages/value/public_education",
+    "_name": "_49a50538"
   },
   {
     "name": "company-subCompany-Brand",

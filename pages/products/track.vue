@@ -57,7 +57,7 @@ export default {
         // 막줄 꼬리 텍스트
         bg: "assets/images/pages/products/img-products-banner.png",
         blue: "SOLUTIONS",
-        blueRouter: "energy_resource",
+        blueRouter: "infra_resource",
         grey: "Contact",
         greyRouter: "inquiry",
       },

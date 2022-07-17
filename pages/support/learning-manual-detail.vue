@@ -39,7 +39,7 @@
                       v-html="$i18n.localeProperties.code === 'ko' ? contentList.content : contentList.contentEn">
                 </span>
                 <!-- 첨부파일 다운로드 -->
-                <div class="downloadFile">
+                <!-- <div class="downloadFile">
                     <span class="downloadFileWrap">
                         <span class="downloadFileTit">첨부파일 다운로드</span>
                         <span class="downloadFileCont">
@@ -48,11 +48,11 @@
                                   @click="requestFile(idx, contentList.id, (`${$i18n.localeProperties.code === 'ko' ? data.name : data.nameEn}.${data.extension}`) )">
                                 <i><img src="https://velog.velcdn.com/images/kyj0206/post/acd53d6c-61d6-47f2-8747-f260c7d434f3/image.png" alt="다운로드 아이콘"/></i>
                                 <u>{{data.name + "." + data.extension}}</u>
-                                <!-- <p>[257kb]</p> -->
+                                <p>[257kb]</p>
                             </span>
                         </span>
                     </span>
-                </div>
+                </div> -->
                 <!-- PreNext -->
                 <span class="PreNext">
                     <ul @click="goToPage(contentList.prevId)">
@@ -129,7 +129,7 @@ export default {
         // 막줄 꼬리 텍스트
         bg: "assets/images/pages/products/img-products-banner.png",
         blue: "SOLUTIONS",
-        blueRouter: "energy_resource",
+        blueRouter: "infra_resource",
         grey: "Contact",
         greyRouter: "inquiry",
       },

@@ -182,11 +182,14 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 0.4s;
     img {
       width: 160px;
     }
     span {
       width: 160px;
+      // 조성우수정
+      margin-top: -12px;
     }
     p {
       text-align: center;

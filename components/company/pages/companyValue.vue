@@ -27,7 +27,7 @@
           </span>
           <!-- 에너지/지원 호버 -->
           <span class="energyHover">
-            <nuxt-link to="/value/energy_resource">
+            <nuxt-link to="/value/infra_resource">
               <span>
                 <p>인프라/자원</p>
                 <i>
