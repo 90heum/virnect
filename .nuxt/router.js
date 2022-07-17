@@ -4,42 +4,42 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _74945477 = () => interopDefault(import('../pages/company/about.vue' /* webpackChunkName: "pages/company/about" */))
-const _1bc00679 = () => interopDefault(import('../pages/company/aboutSub.vue' /* webpackChunkName: "pages/company/aboutSub" */))
-const _b98f10a2 = () => interopDefault(import('../pages/company/ir.vue' /* webpackChunkName: "pages/company/ir" */))
-const _50df495f = () => interopDefault(import('../pages/company/ir-detail.vue' /* webpackChunkName: "pages/company/ir-detail" */))
-const _1e9a9af2 = () => interopDefault(import('../pages/company/talent.vue' /* webpackChunkName: "pages/company/talent" */))
-const _4d57fc09 = () => interopDefault(import('../pages/news/detail.vue' /* webpackChunkName: "pages/news/detail" */))
-const _005fdd71 = () => interopDefault(import('../pages/news/main.vue' /* webpackChunkName: "pages/news/main" */))
-const _2870ce86 = () => interopDefault(import('../pages/policy/Payment.vue' /* webpackChunkName: "pages/policy/Payment" */))
-const _7a0067cb = () => interopDefault(import('../pages/policy/Policy.vue' /* webpackChunkName: "pages/policy/Policy" */))
-const _54fd7904 = () => interopDefault(import('../pages/policy/Terms.vue' /* webpackChunkName: "pages/policy/Terms" */))
-const _22b4b5b5 = () => interopDefault(import('../pages/products/make.vue' /* webpackChunkName: "pages/products/make" */))
-const _4e70612d = () => interopDefault(import('../pages/products/ms.vue' /* webpackChunkName: "pages/products/ms" */))
-const _4a526af8 = () => interopDefault(import('../pages/products/productsMain.vue' /* webpackChunkName: "pages/products/productsMain" */))
-const _93f92766 = () => interopDefault(import('../pages/products/remote.vue' /* webpackChunkName: "pages/products/remote" */))
-const _1687e814 = () => interopDefault(import('../pages/products/track.vue' /* webpackChunkName: "pages/products/track" */))
-const _fa89aca2 = () => interopDefault(import('../pages/products/twin.vue' /* webpackChunkName: "pages/products/twin" */))
-const _6791b6ec = () => interopDefault(import('../pages/products/view.vue' /* webpackChunkName: "pages/products/view" */))
-const _3e9770d7 = () => interopDefault(import('../pages/support/demo.vue' /* webpackChunkName: "pages/support/demo" */))
-const _5f16a55c = () => interopDefault(import('../pages/support/faq.vue' /* webpackChunkName: "pages/support/faq" */))
-const _4316f983 = () => interopDefault(import('../pages/support/inquiry.vue' /* webpackChunkName: "pages/support/inquiry" */))
-const _011e49c0 = () => interopDefault(import('../pages/support/learning-center.vue' /* webpackChunkName: "pages/support/learning-center" */))
-const _632d4e86 = () => interopDefault(import('../pages/support/learning-manual-detail.vue' /* webpackChunkName: "pages/support/learning-manual-detail" */))
-const _2467f924 = () => interopDefault(import('../pages/support/learning-video-detail.vue' /* webpackChunkName: "pages/support/learning-video-detail" */))
-const _3f2d804c = () => interopDefault(import('../pages/support/notice.vue' /* webpackChunkName: "pages/support/notice" */))
-const _05c9c622 = () => interopDefault(import('../pages/support/notice-detail.vue' /* webpackChunkName: "pages/support/notice-detail" */))
-const _60625dbe = () => interopDefault(import('../pages/support/supportSubMain.vue' /* webpackChunkName: "pages/support/supportSubMain" */))
-const _4fbca624 = () => interopDefault(import('../pages/terms/charged.vue' /* webpackChunkName: "pages/terms/charged" */))
-const _a25a2a52 = () => interopDefault(import('../pages/terms/persnal.vue' /* webpackChunkName: "pages/terms/persnal" */))
-const _c0a723ae = () => interopDefault(import('../pages/terms/service.vue' /* webpackChunkName: "pages/terms/service" */))
-const _93d337b6 = () => interopDefault(import('../pages/value/airline_railroad.vue' /* webpackChunkName: "pages/value/airline_railroad" */))
-const _23a2be43 = () => interopDefault(import('../pages/value/energy_resource.vue' /* webpackChunkName: "pages/value/energy_resource" */))
-const _5571da14 = () => interopDefault(import('../pages/value/epc.vue' /* webpackChunkName: "pages/value/epc" */))
-const _63e7bf74 = () => interopDefault(import('../pages/value/motor_parts.vue' /* webpackChunkName: "pages/value/motor_parts" */))
-const _1e7a3b3f = () => interopDefault(import('../pages/value/oil_chemical_battery.vue' /* webpackChunkName: "pages/value/oil_chemical_battery" */))
-const _379d9e0a = () => interopDefault(import('../pages/company/subCompany/Brand.vue' /* webpackChunkName: "pages/company/subCompany/Brand" */))
-const _a985eb64 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _861d7008 = () => interopDefault(import('../pages/company/about.vue' /* webpackChunkName: "pages/company/about" */))
+const _1496a8d4 = () => interopDefault(import('../pages/company/aboutSub.vue' /* webpackChunkName: "pages/company/aboutSub" */))
+const _be3a8b6c = () => interopDefault(import('../pages/company/ir.vue' /* webpackChunkName: "pages/company/ir" */))
+const _72dcf264 = () => interopDefault(import('../pages/company/ir-detail.vue' /* webpackChunkName: "pages/company/ir-detail" */))
+const _3c47cfe6 = () => interopDefault(import('../pages/company/talent.vue' /* webpackChunkName: "pages/company/talent" */))
+const _04f60cce = () => interopDefault(import('../pages/news/detail.vue' /* webpackChunkName: "pages/news/detail" */))
+const _63655b76 = () => interopDefault(import('../pages/news/main.vue' /* webpackChunkName: "pages/news/main" */))
+const _a1edd450 = () => interopDefault(import('../pages/policy/Payment.vue' /* webpackChunkName: "pages/policy/Payment" */))
+const _7b454960 = () => interopDefault(import('../pages/policy/Policy.vue' /* webpackChunkName: "pages/policy/Policy" */))
+const _11a54b59 = () => interopDefault(import('../pages/policy/Terms.vue' /* webpackChunkName: "pages/policy/Terms" */))
+const _6b11a93a = () => interopDefault(import('../pages/products/make.vue' /* webpackChunkName: "pages/products/make" */))
+const _060e71f2 = () => interopDefault(import('../pages/products/ms.vue' /* webpackChunkName: "pages/products/ms" */))
+const _041e6909 = () => interopDefault(import('../pages/products/productsMain.vue' /* webpackChunkName: "pages/products/productsMain" */))
+const _5af19292 = () => interopDefault(import('../pages/products/remote.vue' /* webpackChunkName: "pages/products/remote" */))
+const _4c6d35a2 = () => interopDefault(import('../pages/products/track.vue' /* webpackChunkName: "pages/products/track" */))
+const _69cfc598 = () => interopDefault(import('../pages/products/twin.vue' /* webpackChunkName: "pages/products/twin" */))
+const _a022ab1e = () => interopDefault(import('../pages/products/view.vue' /* webpackChunkName: "pages/products/view" */))
+const _7abb78b2 = () => interopDefault(import('../pages/support/demo.vue' /* webpackChunkName: "pages/support/demo" */))
+const _efda83d2 = () => interopDefault(import('../pages/support/faq.vue' /* webpackChunkName: "pages/support/faq" */))
+const _2ff5c070 = () => interopDefault(import('../pages/support/inquiry.vue' /* webpackChunkName: "pages/support/inquiry" */))
+const _156a2736 = () => interopDefault(import('../pages/support/learning-center.vue' /* webpackChunkName: "pages/support/learning-center" */))
+const _62fb3fd8 = () => interopDefault(import('../pages/support/learning-manual-detail.vue' /* webpackChunkName: "pages/support/learning-manual-detail" */))
+const _24234cf3 = () => interopDefault(import('../pages/support/learning-video-detail.vue' /* webpackChunkName: "pages/support/learning-video-detail" */))
+const _026efd67 = () => interopDefault(import('../pages/support/notice.vue' /* webpackChunkName: "pages/support/notice" */))
+const _2f1164a7 = () => interopDefault(import('../pages/support/notice-detail.vue' /* webpackChunkName: "pages/support/notice-detail" */))
+const _600e8fd9 = () => interopDefault(import('../pages/support/supportSubMain.vue' /* webpackChunkName: "pages/support/supportSubMain" */))
+const _cfccccae = () => interopDefault(import('../pages/terms/charged.vue' /* webpackChunkName: "pages/terms/charged" */))
+const _11a04348 = () => interopDefault(import('../pages/terms/persnal.vue' /* webpackChunkName: "pages/terms/persnal" */))
+const _2fed3ca4 = () => interopDefault(import('../pages/terms/service.vue' /* webpackChunkName: "pages/terms/service" */))
+const _947ad380 = () => interopDefault(import('../pages/value/airline_railroad.vue' /* webpackChunkName: "pages/value/airline_railroad" */))
+const _4cea5cc8 = () => interopDefault(import('../pages/value/energy_resource.vue' /* webpackChunkName: "pages/value/energy_resource" */))
+const _384c90fb = () => interopDefault(import('../pages/value/epc.vue' /* webpackChunkName: "pages/value/epc" */))
+const _f4352f0e = () => interopDefault(import('../pages/value/motor_parts.vue' /* webpackChunkName: "pages/value/motor_parts" */))
+const _2a39e7da = () => interopDefault(import('../pages/value/oil_chemical_battery.vue' /* webpackChunkName: "pages/value/oil_chemical_battery" */))
+const _accd6f54 = () => interopDefault(import('../pages/company/subCompany/Brand.vue' /* webpackChunkName: "pages/company/subCompany/Brand" */))
+const _33d452d3 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -54,147 +54,147 @@ export const routerOptions = {
 
   routes: [{
     path: "/company/about",
-    component: _74945477,
+    component: _861d7008,
     name: "company-about"
   }, {
     path: "/company/aboutSub",
-    component: _1bc00679,
+    component: _1496a8d4,
     name: "company-aboutSub"
   }, {
     path: "/company/ir",
-    component: _b98f10a2,
+    component: _be3a8b6c,
     name: "company-ir"
   }, {
     path: "/company/ir-detail",
-    component: _50df495f,
+    component: _72dcf264,
     name: "company-ir-detail"
   }, {
     path: "/company/talent",
-    component: _1e9a9af2,
+    component: _3c47cfe6,
     name: "company-talent"
   }, {
     path: "/news/detail",
-    component: _4d57fc09,
+    component: _04f60cce,
     name: "news-detail"
   }, {
     path: "/news/main",
-    component: _005fdd71,
+    component: _63655b76,
     name: "news-main"
   }, {
     path: "/policy/Payment",
-    component: _2870ce86,
+    component: _a1edd450,
     name: "policy-Payment"
   }, {
     path: "/policy/Policy",
-    component: _7a0067cb,
+    component: _7b454960,
     name: "policy-Policy"
   }, {
     path: "/policy/Terms",
-    component: _54fd7904,
+    component: _11a54b59,
     name: "policy-Terms"
   }, {
     path: "/products/make",
-    component: _22b4b5b5,
+    component: _6b11a93a,
     name: "products-make"
   }, {
     path: "/products/ms",
-    component: _4e70612d,
+    component: _060e71f2,
     name: "products-ms"
   }, {
     path: "/products/productsMain",
-    component: _4a526af8,
+    component: _041e6909,
     name: "products-productsMain"
   }, {
     path: "/products/remote",
-    component: _93f92766,
+    component: _5af19292,
     name: "products-remote"
   }, {
     path: "/products/track",
-    component: _1687e814,
+    component: _4c6d35a2,
     name: "products-track"
   }, {
     path: "/products/twin",
-    component: _fa89aca2,
+    component: _69cfc598,
     name: "products-twin"
   }, {
     path: "/products/view",
-    component: _6791b6ec,
+    component: _a022ab1e,
     name: "products-view"
   }, {
     path: "/support/demo",
-    component: _3e9770d7,
+    component: _7abb78b2,
     name: "support-demo"
   }, {
     path: "/support/faq",
-    component: _5f16a55c,
+    component: _efda83d2,
     name: "support-faq"
   }, {
     path: "/support/inquiry",
-    component: _4316f983,
+    component: _2ff5c070,
     name: "support-inquiry"
   }, {
     path: "/support/learning-center",
-    component: _011e49c0,
+    component: _156a2736,
     name: "support-learning-center"
   }, {
     path: "/support/learning-manual-detail",
-    component: _632d4e86,
+    component: _62fb3fd8,
     name: "support-learning-manual-detail"
   }, {
     path: "/support/learning-video-detail",
-    component: _2467f924,
+    component: _24234cf3,
     name: "support-learning-video-detail"
   }, {
     path: "/support/notice",
-    component: _3f2d804c,
+    component: _026efd67,
     name: "support-notice"
   }, {
     path: "/support/notice-detail",
-    component: _05c9c622,
+    component: _2f1164a7,
     name: "support-notice-detail"
   }, {
     path: "/support/supportSubMain",
-    component: _60625dbe,
+    component: _600e8fd9,
     name: "support-supportSubMain"
   }, {
     path: "/terms/charged",
-    component: _4fbca624,
+    component: _cfccccae,
     name: "terms-charged"
   }, {
     path: "/terms/persnal",
-    component: _a25a2a52,
+    component: _11a04348,
     name: "terms-persnal"
   }, {
     path: "/terms/service",
-    component: _c0a723ae,
+    component: _2fed3ca4,
     name: "terms-service"
   }, {
     path: "/value/airline_railroad",
-    component: _93d337b6,
+    component: _947ad380,
     name: "value-airline_railroad"
   }, {
     path: "/value/energy_resource",
-    component: _23a2be43,
+    component: _4cea5cc8,
     name: "value-energy_resource"
   }, {
     path: "/value/epc",
-    component: _5571da14,
+    component: _384c90fb,
     name: "value-epc"
   }, {
     path: "/value/motor_parts",
-    component: _63e7bf74,
+    component: _f4352f0e,
     name: "value-motor_parts"
   }, {
     path: "/value/oil_chemical_battery",
-    component: _1e7a3b3f,
+    component: _2a39e7da,
     name: "value-oil_chemical_battery"
   }, {
     path: "/company/subCompany/Brand",
-    component: _379d9e0a,
+    component: _accd6f54,
     name: "company-subCompany-Brand"
   }, {
     path: "/",
-    component: _a985eb64,
+    component: _33d452d3,
     name: "index"
   }],
 
