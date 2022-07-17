@@ -96,7 +96,7 @@
 
                             li {
                                 padding: 1.5px 0px;
-                                margin-bottom: 12px;
+                                margin-bottom: 2px;
 
                                 a {
                                     font-size: 14px;
@@ -554,6 +554,7 @@
                                 opacity: 0.9;
                                 border: solid 1px #9a9da3;
                                 box-sizing: border-box;
+                                cursor: pointer;
 
                                 &:hover {
                                     background: #0a51b7;

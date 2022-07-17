@@ -78,14 +78,14 @@ a {
   background-color: #35495e;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 425px) {
   /* .productsSubMain {
      min-width: 600px;
      width: 100vw;
    } */
 
   body {
-   /* min-width: 600px; */
+   min-width: 425px;
     width: 100vw;
   }
 }

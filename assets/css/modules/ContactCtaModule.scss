@@ -20,7 +20,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 0px;
 }
 
 .ContactCtaModule .ContactCtaCont span:first-child {
@@ -52,7 +52,7 @@
   height: 100%;
   line-height: 1.5;
   display: block;
-  padding: 19.5px 49.15px;
+  padding: 16px 35px;
   font-size: 18px;
   font-weight: bold;
 }
@@ -63,6 +63,14 @@
 
 .ContactCtaModule .ContactCtaCont span:last-child button:last-child a {
   color: #121212;
+}
+
+.ContactCtaModule .ContactCtaCont span:last-child button:last-child:hover {
+  background: #0A51B7;
+}
+
+.ContactCtaModule .ContactCtaCont span:last-child button:last-child a:hover {
+  color: #fff;
 }
 
 @media screen and (max-width: 1024px) {

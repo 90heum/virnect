@@ -306,66 +306,6 @@ span {
             border-top: solid 2px #999;
             border-bottom: solid 2px #999;
             margin-bottom: 49px;
-            // NOTE - 폼태그 적용 부분
-            // form{
-            //     display: block;
-            //     padding: 24px;
-            //     span{
-            //         display: flex;
-            //         &:first-child{
-            //             justify-content: space-between;
-            //         }
-            //         &:nth-child(2){
-            //             justify-content: space-between;
-            //             label{
-
-            //             }
-            //             p{
-            //                 display: flex;
-            //                 flex-wrap: wrap;
-            //                 justify-content: flex-end;
-            //                 input{
-            //                     display: flex;
-            //                     border: 1px solid #121212;
-            //                     height: 35px;
-            //                 }
-            //             }
-            //         }
-            //         &:nth-child(3){}
-            //         &:nth-child(4){}
-            //         &:nth-child(5){}
-            //         &:last-child{}
-            //         label{
-            //             white-space: nowrap;
-            //             font-size: 16px;
-            //             font-weight: 500;
-            //             line-height: 1.75;
-            //             letter-spacing: normal;
-            //             text-align: center;
-            //             color: #121212;
-            //         }
-            //         p{
-            //             font-size: 16px;
-            //             font-weight: 500;
-            //             line-height: 1.75;
-            //             letter-spacing: normal;
-            //             text-align: center;
-            //             color: #121212;
-            //             input{
-            //                 font-size: 16px;
-            //                 color: #121212;
-            //             }
-            //         }
-            //         select{
-            //             font-size: 14px;
-            //             font-weight: 500;
-            //             line-height: 1.75;
-            //             letter-spacing: normal;
-            //             text-align: center;
-            //             color: #121212;
-            //         }
-            //     }
-            // }
           }
           .inquiryButton {
             button {
@@ -551,4 +491,6 @@ span {
     }
   }
 }
+
+
 </style>

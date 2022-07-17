@@ -612,4 +612,11 @@ span {
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  span.contactContTab .contContMenu > span:last-child span:last-child div.mapList > ul {
+    flex-direction: column;
+    gap: 0;
+  }
+}
 </style>

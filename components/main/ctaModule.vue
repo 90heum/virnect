@@ -57,6 +57,7 @@ export default {};
       gap: 12px;
       button {
         border: none;
+        transition: all 0.4s;
         a {
           height: 100%;
           line-height: 1.5;
@@ -78,13 +79,69 @@ export default {};
           }
         }
       }
+      // 조성우추가
+      button:hover {
+        border: none;
+        a {
+          height: 100%;
+          line-height: 1.5;
+          display: block;
+          padding: 13px 48.87px;
+          font-size: 18px;
+          font-weight: bold;
+        }
+        &:first-child {
+          background: #fff;
+          a {
+            color: #000;
+          }
+        }
+        &:last-child {
+          background: #092E6E;
+          a {
+            color: #fff;
+          }
+        }
+      }
+      // 조성우추가 끝
     }
   }
 }
 
+// 0716조성우 추가
+@media screen and (max-width: 1440px) {
+  .CtaModule {
+    display: flex;
+    width: 100%;
+    /* max-width: 2400px; */
+    height: 479px;
+    background-image: url("https://velog.velcdn.com/images/kyj0206/post/e22550d0-b661-41a6-8803-eef9ada91ff3/image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    padding-right: 23%;
+    padding-left: 30px;
+  }
+}
+// 조성우 추가 끝
+
+
+
 @media screen and (max-width: 1024px) {
+  .CtaModule{
+    padding: 0;
+  }
+
   .CtaModule .CtaCont {
-    padding: 0 90px;
+    padding: 0 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .CtaModule .CtaCont span{
+    justify-content: center;
   }
 }
 @media screen and (max-width: 768px) {
@@ -93,7 +150,7 @@ export default {};
     line-height: 1.28;
   }
   .CtaModule {
-    padding-left: 24px;
+    padding: 0;
   }
 
   .CtaModule .CtaCont p {
@@ -102,8 +159,7 @@ export default {};
 }
 
 @media screen and (max-width: 475px) {
-  .CtaModule {
-  }
+
   .CtaModule .CtaCont {
     padding: 0 24px;
   }

@@ -55,7 +55,8 @@
             </span>
           </span>
         </nuxt-link>
-        <span>
+        <!-- 0716 조성우 임시 주석처리 -->
+        <!-- <span>
           <i
             ><img
               class="small_img"
@@ -65,7 +66,8 @@
           <u @click="getFileDownload(data.id)">{{
             $i18n.localeProperties.code === "ko" ? "다운로드" : "download"
           }}</u>
-        </span>
+        </span> -->
+        <!-- 0716 조성우 임시 주석처리 -->
       </div>
     </span>
     <!-- 모바일용 전체보기 버튼  -->
