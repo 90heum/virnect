@@ -31,7 +31,7 @@
           </span>
           <i>
             <img
-              src="https://velog.velcdn.com/images/kyj0206/post/436a0f11-e6d3-4dcb-86c1-83f4b425a5e1/image.png"
+              src="~/assets/images/pages/solution/img-solution-chemical-top.png"
               alt="인프라 이미지"
             />
           </i>
