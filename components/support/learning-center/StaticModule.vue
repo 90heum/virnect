@@ -5,7 +5,7 @@
       <h2>{{ $t("supportText.LearnText.middletext") }}</h2>
     </span>
     <span class="centerModuleMore">
-      <span>
+      <nuxt-link to="/products/productsMain">
         <i>
           <img
             src="https://velog.velcdn.com/images/kyj0206/post/181b2336-255d-44dc-bfe9-1d4affd12a9d/image.png"
@@ -13,8 +13,8 @@
           />
         </i>
         <p>제품정보 바로가기</p>
-      </span>
-      <span>
+      </nuxt-link>
+      <nuxt-link to="/support/faq">
         <i>
           <img
             src="https://velog.velcdn.com/images/kyj0206/post/181b2336-255d-44dc-bfe9-1d4affd12a9d/image.png"
@@ -22,7 +22,7 @@
           />
         </i>
         <p>FAQ 바로가기</p>
-      </span>
+      </nuxt-link>
     </span>
   </div>
 </template>
@@ -56,7 +56,7 @@ export default {};
     display: flex;
     gap: 25px;
     justify-content: flex-end;
-    span {
+    a {
       display: flex;
       align-items: center;
       gap: 4px;
