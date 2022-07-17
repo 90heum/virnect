@@ -100,4 +100,9 @@ body{
         width: 100vw;
     }
 }
+@media screen and(max-width: 425px) {
+    .gudockPopup{
+        top: 7%;
+    }
+}
 </style>

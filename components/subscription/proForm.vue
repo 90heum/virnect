@@ -96,4 +96,10 @@ body{
         width: 100vw;
     }
 }
+@media screen and(max-width: 425px) {
+    .proForm{
+        top: 0%;
+        left: -6%;
+    }
+}
 </style>
