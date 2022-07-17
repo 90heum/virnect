@@ -19,25 +19,25 @@
           </div>
           <ul>
             <li>
-              <nuxt-link to="/value/energy_resource">Value</nuxt-link>
+              <nuxt-link to="/value/infra_resource">Value</nuxt-link>
               <ul>
                 <li>
-                  <nuxt-link to="/value/energy_resource">인프라/자원</nuxt-link>
+                  <nuxt-link to="/value/infra_resource">인프라/자원</nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link to="/value/oil_chemical_battery"
+                  <nuxt-link to="/value/manufacture_construction"
                     >제조/건설</nuxt-link
                   >
                 </li>
                 <li>
-                  <nuxt-link to="/value/motor_parts">공공/교육</nuxt-link>
+                  <nuxt-link to="/value/public_education">공공/교육</nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link to="/value/airline_railroad"
+                  <nuxt-link to="/value/entertainment"
                     >엔터테인먼트</nuxt-link
                   >
                 </li>
-                <li><nuxt-link to="/value/epc">기타</nuxt-link></li>
+                <li><nuxt-link to="/value/etc">기타</nuxt-link></li>
               </ul>
             </li>
             <li>

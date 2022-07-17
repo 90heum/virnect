@@ -33,11 +33,11 @@ const _60625dbe = () => interopDefault(import('../pages/support/supportSubMain.v
 const _4fbca624 = () => interopDefault(import('../pages/terms/charged.vue' /* webpackChunkName: "pages/terms/charged" */))
 const _a25a2a52 = () => interopDefault(import('../pages/terms/persnal.vue' /* webpackChunkName: "pages/terms/persnal" */))
 const _c0a723ae = () => interopDefault(import('../pages/terms/service.vue' /* webpackChunkName: "pages/terms/service" */))
-const _93d337b6 = () => interopDefault(import('../pages/value/airline_railroad.vue' /* webpackChunkName: "pages/value/airline_railroad" */))
-const _23a2be43 = () => interopDefault(import('../pages/value/energy_resource.vue' /* webpackChunkName: "pages/value/energy_resource" */))
-const _5571da14 = () => interopDefault(import('../pages/value/epc.vue' /* webpackChunkName: "pages/value/epc" */))
-const _63e7bf74 = () => interopDefault(import('../pages/value/motor_parts.vue' /* webpackChunkName: "pages/value/motor_parts" */))
-const _1e7a3b3f = () => interopDefault(import('../pages/value/oil_chemical_battery.vue' /* webpackChunkName: "pages/value/oil_chemical_battery" */))
+const _8be91c34 = () => interopDefault(import('../pages/value/entertainment.vue' /* webpackChunkName: "pages/value/entertainment" */))
+const _47cb151c = () => interopDefault(import('../pages/value/etc.vue' /* webpackChunkName: "pages/value/etc" */))
+const _cfc8c2a2 = () => interopDefault(import('../pages/value/infra_resource.vue' /* webpackChunkName: "pages/value/infra_resource" */))
+const _5f0e9f21 = () => interopDefault(import('../pages/value/manufacture_construction.vue' /* webpackChunkName: "pages/value/manufacture_construction" */))
+const _49a50538 = () => interopDefault(import('../pages/value/public_education.vue' /* webpackChunkName: "pages/value/public_education" */))
 const _379d9e0a = () => interopDefault(import('../pages/company/subCompany/Brand.vue' /* webpackChunkName: "pages/company/subCompany/Brand" */))
 const _a985eb64 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -169,25 +169,25 @@ export const routerOptions = {
     component: _c0a723ae,
     name: "terms-service"
   }, {
-    path: "/value/airline_railroad",
-    component: _93d337b6,
-    name: "value-airline_railroad"
+    path: "/value/entertainment",
+    component: _8be91c34,
+    name: "value-entertainment"
   }, {
-    path: "/value/energy_resource",
-    component: _23a2be43,
-    name: "value-energy_resource"
+    path: "/value/etc",
+    component: _47cb151c,
+    name: "value-etc"
   }, {
-    path: "/value/epc",
-    component: _5571da14,
-    name: "value-epc"
+    path: "/value/infra_resource",
+    component: _cfc8c2a2,
+    name: "value-infra_resource"
   }, {
-    path: "/value/motor_parts",
-    component: _63e7bf74,
-    name: "value-motor_parts"
+    path: "/value/manufacture_construction",
+    component: _5f0e9f21,
+    name: "value-manufacture_construction"
   }, {
-    path: "/value/oil_chemical_battery",
-    component: _1e7a3b3f,
-    name: "value-oil_chemical_battery"
+    path: "/value/public_education",
+    component: _49a50538,
+    name: "value-public_education"
   }, {
     path: "/company/subCompany/Brand",
     component: _379d9e0a,

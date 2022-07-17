@@ -23,7 +23,7 @@
               @click="[(gnb1 = false), (gnbStyleBorder = { gnbStyle1: true })]"
             >
               <nuxt-link
-                to="/value/energy_resource"
+                to="/value/infra_resource"
                 :class="`navTab container1 ${gnb1 ? 'gnbActive' : ''}`"
                 v-bind:style="gnbStyleBorder.gnbStyle1 ? commonGnbStyle : {}"
               >

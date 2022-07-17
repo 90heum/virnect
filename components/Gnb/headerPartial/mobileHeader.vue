@@ -11,19 +11,19 @@
             Value
           </a>
           <ul class="hamUseCaseMenu" v-if="mobileMenu['list1']">
-            <li @click="goToPage(`/value/energy_resource`)">
+            <li @click="goToPage(`/value/infra_resource`)">
               <a> 인프라/자원 </a>
             </li>
-            <li @click="goToPage(`/value/oil_chemical_battery`)">
+            <li @click="goToPage(`/value/manufacture_construction`)">
               <a> 제조/건설 </a>
             </li>
-            <li @click="goToPage('/value/motor_parts')">
+            <li @click="goToPage('/value/public_education')">
               <a> 공공/교육 </a>
             </li>
-            <li @click="goToPage('/value/airline_railroad')">
+            <li @click="goToPage('/value/entertainment')">
               <a> 엔터테인먼트 </a>
             </li>
-            <li @click="goToPage('/value/epc')">
+            <li @click="goToPage('/value/etc')">
               <a> 기타 </a>
             </li>
           </ul>
