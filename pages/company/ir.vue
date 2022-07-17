@@ -2,7 +2,7 @@
   <div>
     <sub-visual-section
       class="sm"
-      :image="'https://velog.velcdn.com/images/kyj0206/post/826e3755-e1d4-4466-bf63-273cc3b52c9c/image.png'"
+      :image="require('~/assets/images/pages/epc/company_bg_img.jpg')"
       :category="visualText.category"
       :title="$t('companyText.visualText.title')"
       :contents="$t('companyText.visualText.contents')"
