@@ -41,7 +41,7 @@ body{
     position: absolute;
     z-index: 9999;
     top: 50%;
-    left: 15%;
+    left: 50%;
     transform: translate(-50%, -50%);
     .comTit{
         display: flex;

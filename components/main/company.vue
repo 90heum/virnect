@@ -74,6 +74,7 @@
       <!-- 버넥트 뉴스 모듈 -->
       <span class="companyNews">
         <!-- 회사소개 모듈 -->
+        <com-modal :comModal="comModal" :comPopup="comPopup"/>
         <span class="companyVirnect">
           <div class="virnectModule1">
             <nuxt-link to="/company/about">
@@ -110,10 +111,7 @@
             </nuxt-link>
           </div>
           <div class="virnectModule3">
-            <a
-              href="http://13.209.200.75:8080/static/company/company/220221_VIRNECT_Brochure.pdf"
-              target="_blank"
-            >
+            <a @click="comModal()">
               <span>
                 <u>회사소개서 다운로드(PDF)</u>
               </span>
@@ -175,58 +173,27 @@
       </span>
 
         <company-awards />
-
     </div>
   </div>
 </template>
 
 <script>
+import ClickOutside from "vue-click-outside";
 import { awardData } from "~/components/dummy/award.js";
 import CompanyAwards from "~/components/main/companyAwards.vue";
 import SlideCarousel from "~/components/main/slideCarousel.vue";
+import ComModal from "../subscription/comModal.vue";
 
 export default {
   components: {
     CompanyAwards,
-    SlideCarousel
-  },  
+    SlideCarousel,
+    ComModal
+},  
   data() {
     return {
-    };
-  },
-  created() {
-    if (process.client) {
-      window.addEventListener("resize", this.handleReactiveView);
-    }
-  },
-  beforeDestroy() {
-    if (process.client)
-      window.removeEventListener("resize", this.handleReactiveView);
-  },
-  props: {
-    contentList: Array,
-    irData: Array,
-  },
-  methods: { 
-    getActiveSlide() {
-      this.exampleActiveIdx = this.$el
-        .querySelector(".swiper-slide-active")
-        .getAttribute("data-idx");
-    },
-    handleReactiveView() {
-      if (window.innerWidth > 1025) {
-        this.awardIdx = { ...this.awardIdx, end: 6 };
-        // this.plus = 6;
-        // this.minus = 6;
-      } else if (window.innerWidth < 1025) {
-        this.awardIdx = { ...this.awardIdx, end: 3 };
-        // this.plus = 3;
-        // this.minus = 3;
-      }
-    },
-  },
-  data() {
-    return {
+      comPopup: false,
+
       award: awardData,
       bottomBannerData: [
         {
@@ -249,6 +216,43 @@ export default {
         },
       ],
     };
+  },
+  directives: {
+    ClickOutside,
+  },
+  created() {
+    if (process.client) {
+      window.addEventListener("resize", this.handleReactiveView);
+    }
+  },
+  beforeDestroy() {
+    if (process.client)
+      window.removeEventListener("resize", this.handleReactiveView);
+  },
+  props: {
+    contentList: Array,
+    irData: Array,
+  },
+  methods: { 
+    comModal() {
+      this.comPopup = !this.comPopup;
+    },
+    getActiveSlide() {
+      this.exampleActiveIdx = this.$el
+        .querySelector(".swiper-slide-active")
+        .getAttribute("data-idx");
+    },
+    handleReactiveView() {
+      if (window.innerWidth > 1025) {
+        this.awardIdx = { ...this.awardIdx, end: 6 };
+        // this.plus = 6;
+        // this.minus = 6;
+      } else if (window.innerWidth < 1025) {
+        this.awardIdx = { ...this.awardIdx, end: 3 };
+        // this.plus = 3;
+        // this.minus = 3;
+      }
+    },
   },
   updated() {
     // if (process.client) {

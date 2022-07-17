@@ -147,11 +147,9 @@
                 <a href="support/demo" target="blank"> 데모신청 </a>
               </button>
             </span>
+            <ProModal :modal="modal" :popup="popup" />
             <span>
-              <a
-                href="http://13.209.200.75:8080/static/company/product/VIRNECT_Solution_Leaflet_ver_LF.KR2203A.pdf"
-                target="blank"
-              >
+              <a @click="modal()">
                 <i>
                   <img
                     src="https://velog.velcdn.com/images/kyj0206/post/7f7bb43e-b114-4733-b9f6-060e25b8ee49/image.png"
@@ -200,11 +198,9 @@
                 <a href="support/demo" target="blank"> 데모신청 </a>
               </button>
             </span>
+            <ProModal :modal="modal" :popup="popup" />
             <span>
-              <a
-                href="http://13.209.200.75:8080/static/company/product/VIRNECT_Solution_Leaflet_ver_LF.KR2203A.pdf"
-                target="blank"
-              >
+              <a @click="modal()">
                 <i>
                   <img
                     src="https://velog.velcdn.com/images/kyj0206/post/7f7bb43e-b114-4733-b9f6-060e25b8ee49/image.png"
@@ -252,11 +248,9 @@
                 <a href="support/demo" target="blank"> 데모신청 </a>
               </button>
             </span>
+            <ProModal :modal="modal" :popup="popup" />
             <span>
-              <a
-                href="http://13.209.200.75:8080/static/company/product/VIRNECT_Solution_Leaflet_ver_LF.KR2203A.pdf"
-                target="blank"
-              >
+              <a @click="modal()">
                 <i>
                   <img
                     src="https://velog.velcdn.com/images/kyj0206/post/7f7bb43e-b114-4733-b9f6-060e25b8ee49/image.png"
@@ -370,51 +364,63 @@
 </template>
 
 <script>
+import ClickOutside from "vue-click-outside";
+import ProModal from '../subscription/proModal.vue';
 export default {
-  data() {
-    return {
-      category: 1,
-      options: {
-        slidesPerView: "auto",
-        loop: true,
-        spaceBetween: 13,
-        centeredSlides: true,
-        pagination: {
-          // el: ".swiper-pagination"
-        },
-        navigation: {
-          nextEl: ".LearningCenterMbTab-prev",
-          prevEl: ".LearningCenterMbTab-next",
-        },
-        breakpoints: {},
+    data() {
+        return {
+            popup: false,
+            category: 1,
+            options: {
+                slidesPerView: "auto",
+                loop: true,
+                spaceBetween: 13,
+                centeredSlides: true,
+                pagination: {
+                // el: ".swiper-pagination"
+                },
+                navigation: {
+                    nextEl: ".LearningCenterMbTab-prev",
+                    prevEl: ".LearningCenterMbTab-next",
+                },
+                breakpoints: {},
+            },
+        };
+    },
+    directives: {
+      ClickOutside,
+    },
+    methods: {
+      modal() {
+      this.popup = !this.popup;
       },
-    };
-  },
-  methods: {
-    handleCategory(e) {
-      if(e > 5) {
-        this.category = 1;
-      } else if (e > 0){
-        this.category = e;
-      } else {
-        this.category = 5;
-      }
+        handleCategory(e) {
+            if (e > 5) {
+                this.category = 1;
+            }
+            else if (e > 0) {
+                this.category = e;
+            }
+            else {
+                this.category = 5;
+            }
+        },
+        onSwiperSlideChangeTransitionStart(e) {
+            console.log("redied", e);
+        },
+        onSwiperRedied(swiper) {
+            console.log("transtion", swiper);
+        },
+        onSwiperClickSlide(idx, realIdx) {
+            console.log("click", idx, realIdx);
+        },
     },
-    onSwiperSlideChangeTransitionStart(e) {
-      console.log("redied", e);
+    props: {
+        categoryList: Array,
+        isTabMenu: Number,
+        chooseTabMenu: Function,
     },
-    onSwiperRedied(swiper) {
-      console.log("transtion", swiper);
-    },
-    onSwiperClickSlide(idx, realIdx) {
-      console.log("click", idx, realIdx);
-    },
-  },
-  props: {
-    categoryList: Array,
-    isTabMenu: Number,
-    chooseTabMenu: Function,
-  },
+    components: { ProModal }
 };
 </script>
 
