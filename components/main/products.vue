@@ -69,7 +69,7 @@
         <ul>
           <div
           class="LearningCenterMbTab-prev"
-          @click="handleCategory(category - 1 > category.length ? 0 : category - 1)"
+          @click="handleCategory(category - 1 > category.length ? 0 : category - 1 )"
         >
           <img
             src="https://velog.velcdn.com/images/kyj0206/post/ca9d309b-94ce-41db-a002-66a2f0d76ff8/image.png"
@@ -399,7 +399,11 @@ export default {
   },
   methods: {
     handleCategory(e) {
-      this.category = e;
+      if(e > 0) {
+        this.category = e;
+      } else {
+        this.category = 5;
+      }
     },
     onSwiperSlideChangeTransitionStart(e) {
       console.log("redied", e);
