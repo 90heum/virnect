@@ -292,6 +292,8 @@ export default {
             img {
               max-width: 22px;
               display: inline;
+              // 조성우추가
+              margin-top: 9px;
             }
           }
           > p {
