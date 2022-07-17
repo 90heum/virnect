@@ -112,7 +112,7 @@
           </span>
         </div>
 
-        <!-- 자동차/부품 -->
+        <!-- 공공/교육 -->
         <div class="partsWrap">
           <span class="parts">
             <span>
@@ -126,12 +126,12 @@
             </span>
             <span>
               <img
-                src="https://velog.velcdn.com/images/kyj0206/post/c01b7af9-b9f6-47fa-8d2c-bc77d8def7ff/image.png"
-                alt="자동차/부품 이미지"
+                src="~/assets/images/common/value3.png"
+                alt="공공/교육 이미지"
               />
             </span>
           </span>
-          <!-- 자동차/부품 호버 -->
+          <!-- 공공/교육 호버 -->
           <span class="partsHover">
             <nuxt-link to="/value/motor_parts">
               <span>
@@ -150,15 +150,15 @@
                   언제 어디서나 접근 가능합니다.
                 </p>
                 <img
-                  src="https://velog.velcdn.com/images/kyj0206/post/c01b7af9-b9f6-47fa-8d2c-bc77d8def7ff/image.png"
-                  alt="자동차/부품 이미지"
+                  src="~/assets/images/common/value3.png"
+                  alt="공공/교육 이미지"
                 />
               </span>
             </nuxt-link>
           </span>
         </div>
 
-        <!-- 항공/철도 -->
+        <!-- 엔터테인먼트 -->
         <div class="airLineWrap">
           <span class="airLine">
             <span>
@@ -172,12 +172,12 @@
             </span>
             <span>
               <img
-                src="https://velog.velcdn.com/images/kyj0206/post/8d9d41ee-8d00-4748-8029-14e85ebe16d4/image.png"
-                alt="항공/철도 이미지"
+                src="~/assets/images/common/value4.png"
+                alt="엔터테인먼트 이미지"
               />
             </span>
           </span>
-          <!-- 항공/철도 호버 -->
+          <!-- 엔터테인먼트 호버 -->
           <span class="airLineHover">
             <nuxt-link to="/value/airline_railroad">
               <span>
@@ -196,15 +196,15 @@
                   점차 부각되고 있습니다.
                 </p>
                 <img
-                  src="https://velog.velcdn.com/images/kyj0206/post/8d9d41ee-8d00-4748-8029-14e85ebe16d4/image.png"
-                  alt="항공/철도 이미지"
+                  src="~/assets/images/common/value4.png"
+                  alt="엔터테인먼트 이미지"
                 />
               </span>
             </nuxt-link>
           </span>
         </div>
 
-        <!-- EPC -->
+        <!-- 기타 -->
         <div class="EPCWrap">
           <span class="epc">
             <span>
@@ -218,12 +218,12 @@
             </span>
             <span>
               <img
-                src="https://velog.velcdn.com/images/kyj0206/post/fa58caea-0736-4255-b432-9ff51b77c628/image.png"
-                alt="EPC 이미지"
+                src="~/assets/images/common/value5.png"
+                alt="기타 이미지"
               />
             </span>
           </span>
-          <!-- EPC 호버 -->
+          <!-- 기타 호버 -->
           <span class="epcHover">
             <nuxt-link to="/value/epc">
               <span>
@@ -241,8 +241,8 @@
                   밀접한 부분까지 다양한 분야에 적용 가능합니다.
                 </p>
                 <img
-                  src="https://velog.velcdn.com/images/kyj0206/post/fa58caea-0736-4255-b432-9ff51b77c628/image.png"
-                  alt="EPC 이미지"
+                  src="~/assets/images/common/value5.png"
+                  alt="기타 이미지"
                 />
               </span>
             </nuxt-link>
