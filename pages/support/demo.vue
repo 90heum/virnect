@@ -49,7 +49,7 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 160px;
-    height: 600px;
+    height: 480px;
     .demoBannerWrap {
       max-width: 1200px;
       height: 100%;

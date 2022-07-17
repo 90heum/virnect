@@ -19,7 +19,7 @@ export default {};
 <style lang="scss" scoped>
 .NewsBanner {
   width: 100%;
-  height: 600px;
+  height: 480px;
   margin-top: 80px;
   display: flex;
   background-image: url("https://velog.velcdn.com/images/kyj0206/post/65c0ebf9-9255-425d-80b8-5c8176713ef2/image.png");

@@ -153,7 +153,7 @@
                 </span>
                 <i>
                   <img
-                    src="https://velog.velcdn.com/images/kyj0206/post/69a08821-786b-4849-b94b-c785a8ec4b81/image.jpg"
+                    src="~/assets/images/pages/value/img-value-6@2x.png"
                     alt="kt"
                   />
                   <img
@@ -182,7 +182,7 @@
                   ></p>
                   <i>
                     <img
-                      src="https://velog.velcdn.com/images/kyj0206/post/0a5482a3-7e31-4075-b725-d5fdedd54dce/image.jpg"
+                      src="~/assets/images/pages/value/oil1x.png"
                       alt="지원솔루션"
                     />
                   </i>
@@ -198,7 +198,7 @@
                 </span>
                 <i>
                   <img
-                    src="https://velog.velcdn.com/images/kyj0206/post/aca02112-777a-4576-8fe3-0c4ca39e45e4/image.jpg"
+                    src="~/assets/images/pages/value/img-value-7@2x.png"
                     alt="삼성sds"
                   />
                   <img
@@ -228,7 +228,7 @@
 
                   <i>
                     <img
-                      src="https://velog.velcdn.com/images/kyj0206/post/7859c441-1f57-4ed4-b607-5bc2f9304823/image.jpg"
+                      src="~/assets/images/pages/value/oil2.png"
                       alt="지원솔루션"
                     />
                   </i>
@@ -244,7 +244,7 @@
                 </span>
                 <i>
                   <img
-                    src="https://velog.velcdn.com/images/kyj0206/post/f81ef3fb-2f4e-4833-a878-eb91b9d31297/image.jpg"
+                    src="~/assets/images/pages/value/img-value-8@2x.png"
                     alt="스마트제조혁신센터"
                   />
                   <img
@@ -271,7 +271,7 @@
 
                   <i>
                     <img
-                      src="https://velog.velcdn.com/images/kyj0206/post/827c3208-6e1a-4d1c-a829-1c1303c46713/image.jpg"
+                      src="~/assets/images/pages/value/oil3.png"
                       alt="연동시각화"
                     />
                   </i>
@@ -287,7 +287,7 @@
                 </span>
                 <i>
                   <img
-                    src="https://velog.velcdn.com/images/kyj0206/post/bbfe1d90-fa44-4296-aaf2-406701cf195a/image.jpg"
+                    src="~/assets/images/pages/value/img-value-9@2x.png"
                     alt="오토모티브"
                   />
                   <img
@@ -310,7 +310,7 @@
                   ></p>
                   <i>
                     <img
-                      src="https://velog.velcdn.com/images/kyj0206/post/65c80453-a5d7-46e5-958c-b0009aedf3b8/image.jpg"
+                      src="~/assets/images/pages/value/oil4.png"
                       alt="기술지원"
                     />
                   </i>
@@ -326,7 +326,7 @@
                 </span>
                 <i>
                   <img
-                    src="https://velog.velcdn.com/images/kyj0206/post/66d064ef-edb6-435e-98ad-4385fc1ec59b/image.jpg"
+                    src="~/assets/images/pages/value/img-value-10@2x.png"
                     alt="엔지니어링디자인"
                   />
                   <img
@@ -352,7 +352,7 @@
                   ></p>
                   <i>
                     <img
-                      src="https://velog.velcdn.com/images/kyj0206/post/7c9cd4ba-a553-40a2-b268-90949b78b640/image.jpg"
+                      src="~/assets/images/pages/value/oil5.png"
                       alt="어플리케이션 개발"
                     />
                   </i>

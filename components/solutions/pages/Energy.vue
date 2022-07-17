@@ -135,7 +135,7 @@
 
                       <i>
                         <img
-                          src="https://velog.velcdn.com/images/kyj0206/post/983bd062-8e99-44d0-8eb1-53ac5ba59e77/image.png"
+                          src="~/assets/images/pages/value/valueB-1@2x.png"
                           alt="협업솔루션"
                         />
                       </i>
@@ -180,7 +180,7 @@
                       ></p>
                       <i>
                         <img
-                          src="https://velog.velcdn.com/images/kyj0206/post/57c29367-7d69-4433-aec0-170881cf98e7/image.png"
+                          src="~/assets/images/pages/value/valueB-2@2x.png"
                           alt="협업솔루션"
                         />
                       </i>
@@ -222,7 +222,7 @@
                       ></p>
                       <i>
                         <img
-                          src="https://velog.velcdn.com/images/kyj0206/post/6b0d4487-2a22-4b41-9d3f-3486634422eb/image.png"
+                          src="~/assets/images/pages/value/valueB-3@2x.png"
                           alt="협업솔루션"
                         />
                       </i>
@@ -267,7 +267,7 @@
                       ></p>
                       <i>
                         <img
-                          src="https://velog.velcdn.com/images/kyj0206/post/14731540-0a65-494d-a057-5b20e5df1423/image.png"
+                          src="~/assets/images/pages/value/valueB-4@2x.png"
                           alt="협업솔루션"
                         />
                       </i>
@@ -313,7 +313,7 @@
 
                       <i>
                         <img
-                          src="https://velog.velcdn.com/images/kyj0206/post/280eb101-f01e-4c58-a109-7ed23728838c/image.png"
+                          src="~/assets/images/pages/value/valueB-5@2x.png"
                           alt="협업솔루션"
                         />
                       </i>
