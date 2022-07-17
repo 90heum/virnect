@@ -72,18 +72,12 @@
     <div class="bannerMoule">
       <span class="banner1024">
         <a href="#">
-          <img
-            src="../../assets/images/common/PC_링커리어_XR-콘테스트_홈페이지.png"
-            alt="배너모듈"
-          />
+          <img src="~/assets/images/common/contestHome1.png" alt="배너모듈" />
         </a>
       </span>
       <span class="banner768">
         <a href="#">
-          <img
-            src="../../assets/images/common/Mobile_링커리어_XR-콘테스트_홈페이지.png"
-            alt="배너모듈"
-          />
+          <img src="~/assets/images/common/homhomhom.png" alt="배너모듈" />
         </a>
       </span>
     </div>

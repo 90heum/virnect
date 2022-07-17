@@ -20,7 +20,7 @@
           </span>
           <i>
             <img
-              src="https://velog.velcdn.com/images/kyj0206/post/436a0f11-e6d3-4dcb-86c1-83f4b425a5e1/image.png"
+              src="~/assets/images/pages/solution/img-solution-energy-top.png"
               alt="인프라 이미지"
             />
           </i>
@@ -121,22 +121,18 @@
         </span>
         <span class="usecaseCont">
           <ul class="usecaseList">
-            <li class="active"
-            >
+            <li class="active">
               <div class="listWrap">
                 <span>
-                  <p @click="showMenu(1)"
-                  >실시간 원격 협업 솔루션</p>
+                  <p @click="showMenu(1)">
+                    {{ $t("ValueText.ValueUseCaseText.title1") }}
+                  </p>
                   <ul class="listInner" v-if="menu === 1">
                     <li>
-                      <p>
-                        - 발전소 내 데이터를 관리함으로써 작업 오류 감소 및 예방
-                      </p>
-                      <p>- 복잡한 발전소 설비의 효율적인 유지관리 가능</p>
-                      <p>
-                        - 작업자에게 정확한 지시 사항 제공으로 현장 안전사고
-                        감소
-                      </p>
+                      <p
+                        v-html="$t('ValueText.ValueUseCaseText.contents1-1')"
+                      ></p>
+
                       <i>
                         <img
                           src="https://velog.velcdn.com/images/kyj0206/post/983bd062-8e99-44d0-8eb1-53ac5ba59e77/image.png"
@@ -148,14 +144,13 @@
                 </span>
                 <i>
                   <img
-                    src="https://velog.velcdn.com/images/kyj0206/post/5fb24587-342d-497c-a6bb-9a38ba606fd6/image.png"
+                    src="~/assets/images/pages/value/img-value-1@2x.png"
                     alt="협업솔루션"
                   />
                   <img
                     class="normal"
                     src="https://velog.velcdn.com/images/kyj0206/post/6add4766-ac35-47a3-affa-aba62b87881e/image.png"
                     alt="normal"
-                    
                   />
                   <img
                     class="hover"
@@ -169,17 +164,20 @@
             <li>
               <div class="listWrap">
                 <span>
-                  <p @click="showMenu(2)">발전소 디지털트윈 O&M 시스템 개발</p>
+                  <p @click="showMenu(2)">
+                    {{ $t("ValueText.ValueUseCaseText.title1") }}
+                  </p>
                   <ul class="listInner" v-if="menu === 2">
                     <li>
-                      <p>
-                        - 발전소 내 데이터를 관리함으로써 작업 오류 감소 및 예방
-                      </p>
-                      <p>- 복잡한 발전소 설비의 효율적인 유지관리 가능</p>
-                      <p>
-                        - 작업자에게 정확한 지시 사항 제공으로 현장 안전사고
-                        감소
-                      </p>
+                      <p
+                        v-html="$t('ValueText.ValueUseCaseText.contents2-1')"
+                      ></p>
+                      <p
+                        v-html="$t('ValueText.ValueUseCaseText.contents2-2')"
+                      ></p>
+                      <p
+                        v-html="$t('ValueText.ValueUseCaseText.contents2-3')"
+                      ></p>
                       <i>
                         <img
                           src="https://velog.velcdn.com/images/kyj0206/post/57c29367-7d69-4433-aec0-170881cf98e7/image.png"
@@ -191,14 +189,13 @@
                 </span>
                 <i>
                   <img
-                    src="https://velog.velcdn.com/images/kyj0206/post/a92a1ae1-0697-40e7-9e26-cb55312c743b/image.png"
+                    src="~/assets/images/pages/value/img-value-2@2x.png"
                     alt="시스템개발"
                   />
                   <img
                     class="normal"
                     src="https://velog.velcdn.com/images/kyj0206/post/6add4766-ac35-47a3-affa-aba62b87881e/image.png"
                     alt="normal"
-                    
                   />
                   <img
                     class="hover"
@@ -212,17 +209,17 @@
             <li>
               <div class="listWrap">
                 <span>
-                  <p @click="showMenu(3)">AR기반 구조물 안정성 검증 솔루션</p>
+                  <p @click="showMenu(3)">
+                    {{ $t("ValueText.ValueUseCaseText.title3") }}
+                  </p>
                   <ul class="listInner" v-if="menu === 3">
                     <li>
-                      <p>
-                        - 발전소 내 데이터를 관리함으로써 작업 오류 감소 및 예방
-                      </p>
-                      <p>- 복잡한 발전소 설비의 효율적인 유지관리 가능</p>
-                      <p>
-                        - 작업자에게 정확한 지시 사항 제공으로 현장 안전사고
-                        감소
-                      </p>
+                      <p
+                        v-html="$t('ValueText.ValueUseCaseText.contents3-1')"
+                      ></p>
+                      <p
+                        v-html="$t('ValueText.ValueUseCaseText.contents3-2')"
+                      ></p>
                       <i>
                         <img
                           src="https://velog.velcdn.com/images/kyj0206/post/6b0d4487-2a22-4b41-9d3f-3486634422eb/image.png"
@@ -234,14 +231,13 @@
                 </span>
                 <i>
                   <img
-                    src="https://velog.velcdn.com/images/kyj0206/post/85c82f2a-dc8f-4d80-b2ac-eb0cde5e6087/image.png"
+                    src="~/assets/images/pages/value/img-value-3@2x.png"
                     alt="검증솔루션"
                   />
                   <img
                     class="normal"
                     src="https://velog.velcdn.com/images/kyj0206/post/6add4766-ac35-47a3-affa-aba62b87881e/image.png"
                     alt="normal"
-                    
                   />
                   <img
                     class="hover"
@@ -255,17 +251,20 @@
             <li>
               <div class="listWrap">
                 <span>
-                  <p @click="showMenu(4)">생산기지 자율주행로봇(SPOT) 현장적용 검증 용역</p>
+                  <p @click="showMenu(4)">
+                    {{ $t("ValueText.ValueUseCaseText.title4") }}
+                  </p>
                   <ul class="listInner" v-if="menu === 4">
                     <li>
-                      <p>
-                        - 발전소 내 데이터를 관리함으로써 작업 오류 감소 및 예방
-                      </p>
-                      <p>- 복잡한 발전소 설비의 효율적인 유지관리 가능</p>
-                      <p>
-                        - 작업자에게 정확한 지시 사항 제공으로 현장 안전사고
-                        감소
-                      </p>
+                      <p
+                        v-html="$t('ValueText.ValueUseCaseText.contents4-1')"
+                      ></p>
+                      <p
+                        v-html="$t('ValueText.ValueUseCaseText.contents4-2')"
+                      ></p>
+                      <p
+                        v-html="$t('ValueText.ValueUseCaseText.contents4-3')"
+                      ></p>
                       <i>
                         <img
                           src="https://velog.velcdn.com/images/kyj0206/post/14731540-0a65-494d-a057-5b20e5df1423/image.png"
@@ -277,14 +276,13 @@
                 </span>
                 <i>
                   <img
-                    src="https://velog.velcdn.com/images/kyj0206/post/546b114e-b806-41ab-b1c3-22b5d8603880/image.png"
+                    src="~/assets/images/pages/value/img-value-4@2x.png"
                     alt="검증용역"
                   />
                   <img
                     class="normal"
                     src="https://velog.velcdn.com/images/kyj0206/post/6add4766-ac35-47a3-affa-aba62b87881e/image.png"
                     alt="normal"
-                    
                   />
                   <img
                     class="hover"
@@ -298,17 +296,21 @@
             <li>
               <div class="listWrap">
                 <span>
-                  <p @click="showMenu(5)">3D Visualization System 기능 개선</p>
+                  <p @click="showMenu(5)">
+                    {{ $t("ValueText.ValueUseCaseText.title5") }}
+                  </p>
                   <ul class="listInner" v-if="menu === 5">
                     <li>
-                      <p>
-                        - 발전소 내 데이터를 관리함으로써 작업 오류 감소 및 예방
-                      </p>
-                      <p>- 복잡한 발전소 설비의 효율적인 유지관리 가능</p>
-                      <p>
-                        - 작업자에게 정확한 지시 사항 제공으로 현장 안전사고
-                        감소
-                      </p>
+                      <p
+                        v-html="$t('ValueText.ValueUseCaseText.contents5-1')"
+                      ></p>
+                      <p
+                        v-html="$t('ValueText.ValueUseCaseText.contents5-2')"
+                      ></p>
+                      <p
+                        v-html="$t('ValueText.ValueUseCaseText.contents5-3')"
+                      ></p>
+
                       <i>
                         <img
                           src="https://velog.velcdn.com/images/kyj0206/post/280eb101-f01e-4c58-a109-7ed23728838c/image.png"
@@ -320,14 +322,13 @@
                 </span>
                 <i>
                   <img
-                    src="https://velog.velcdn.com/images/kyj0206/post/70183a55-342f-46c2-8a76-9acc85fab18a/image.png"
+                    src="~/assets/images/pages/value/img-value-5@2x.png"
                     alt="기능개선"
                   />
                   <img
                     class="normal"
                     src="https://velog.velcdn.com/images/kyj0206/post/6add4766-ac35-47a3-affa-aba62b87881e/image.png"
                     alt="normal"
-                    
                   />
                   <img
                     class="hover"
@@ -503,10 +504,10 @@ export default {
     };
   },
   methods: {
-    showMenu(e){
+    showMenu(e) {
       this.menu = e;
     },
-    
+
     /* slideDown(idx) {
       if (this.activeIdx == idx) return (this.activeIdx = null);
       else return (this.activeIdx = idx);
