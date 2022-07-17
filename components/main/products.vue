@@ -399,7 +399,9 @@ export default {
   },
   methods: {
     handleCategory(e) {
-      if(e > 0) {
+      if(e > 5) {
+        this.category = 1;
+      } else if (e > 0){
         this.category = e;
       } else {
         this.category = 5;
