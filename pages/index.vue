@@ -77,5 +77,6 @@ export default {
 
 .mainBanner {
   margin: 0 auto;
+  margin-top: 79px;
 }
 </style>
