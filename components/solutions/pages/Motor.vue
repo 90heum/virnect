@@ -137,7 +137,7 @@
                 </span>
                 <i>
                   <img
-                    src="https://velog.velcdn.com/images/kyj0206/post/2262f8d5-2bdf-4cb0-bffe-9a9b03104394/image.jpg"
+                    src="~/assets/images/pages/value/img-value-11@2x.png"
                     alt="한밭대학교"
                   />
                   <img
@@ -167,7 +167,7 @@
 
                   <i>
                     <img
-                      src="https://velog.velcdn.com/images/kyj0206/post/20089a5c-6e07-488d-a5cc-d67599f2089c/image.png"
+                      src="/Users/majeongheum/virnect/assets/images/pages/value/edu1.png"
                       alt="시범사용"
                     />
                   </i>
@@ -183,7 +183,7 @@
                 </span>
                 <i>
                   <img
-                    src="https://velog.velcdn.com/images/kyj0206/post/ef3da921-94b4-475a-b233-801a3b64608c/image.jpg"
+                    src="~/assets/images/pages/value/img-value-12@2x.png"
                     alt="경기도경제과학진흥원"
                   />
                   <img
@@ -212,7 +212,7 @@
                   ></p>
                   <i>
                     <img
-                      src="https://velog.velcdn.com/images/kyj0206/post/8037fdb6-443f-415a-b39c-fc1b32ff99de/image.jpg"
+                      src="/Users/majeongheum/virnect/assets/images/pages/value/edu2.png"
                       alt="수출상담회"
                     />
                   </i>
@@ -228,7 +228,7 @@
                 </span>
                 <i>
                   <img
-                    src="https://velog.velcdn.com/images/kyj0206/post/b311c568-a7b1-4621-beea-d095236c85f1/image.jpg"
+                    src="~/assets/images/pages/value/img-value-13@2x.png"
                     alt="Kintex"
                   />
                   <img
@@ -258,7 +258,7 @@
 
                   <i>
                     <img
-                      src="https://velog.velcdn.com/images/kyj0206/post/0b9bc053-78e7-43a8-9b9b-e609ec382e48/image.jpg"
+                      src="/Users/majeongheum/virnect/assets/images/pages/value/edu3.png"
                       alt="도슨트투어"
                     />
                   </i>
