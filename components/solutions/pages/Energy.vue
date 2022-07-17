@@ -121,10 +121,12 @@
         </span>
         <span class="usecaseCont">
           <ul class="usecaseList">
-            <li class="active">
+            <li class="active"
+            >
               <div class="listWrap">
                 <span>
-                  <p @click="showMenu(1)">실시간 원격 협업 솔루션</p>
+                  <p @click="showMenu(1)"
+                  >실시간 원격 협업 솔루션</p>
                   <ul class="listInner" v-if="menu === 1">
                     <li>
                       <p>
@@ -153,6 +155,7 @@
                     class="normal"
                     src="https://velog.velcdn.com/images/kyj0206/post/6add4766-ac35-47a3-affa-aba62b87881e/image.png"
                     alt="normal"
+                    
                   />
                   <img
                     class="hover"
@@ -195,6 +198,7 @@
                     class="normal"
                     src="https://velog.velcdn.com/images/kyj0206/post/6add4766-ac35-47a3-affa-aba62b87881e/image.png"
                     alt="normal"
+                    
                   />
                   <img
                     class="hover"
@@ -237,6 +241,7 @@
                     class="normal"
                     src="https://velog.velcdn.com/images/kyj0206/post/6add4766-ac35-47a3-affa-aba62b87881e/image.png"
                     alt="normal"
+                    
                   />
                   <img
                     class="hover"
@@ -250,9 +255,7 @@
             <li>
               <div class="listWrap">
                 <span>
-                  <p @click="showMenu(4)">
-                    생산기지 자율주행로봇(SPOT) 현장적용 검증 용역
-                  </p>
+                  <p @click="showMenu(4)">생산기지 자율주행로봇(SPOT) 현장적용 검증 용역</p>
                   <ul class="listInner" v-if="menu === 4">
                     <li>
                       <p>
@@ -281,6 +284,7 @@
                     class="normal"
                     src="https://velog.velcdn.com/images/kyj0206/post/6add4766-ac35-47a3-affa-aba62b87881e/image.png"
                     alt="normal"
+                    
                   />
                   <img
                     class="hover"
@@ -323,6 +327,7 @@
                     class="normal"
                     src="https://velog.velcdn.com/images/kyj0206/post/6add4766-ac35-47a3-affa-aba62b87881e/image.png"
                     alt="normal"
+                    
                   />
                   <img
                     class="hover"
@@ -498,10 +503,10 @@ export default {
     };
   },
   methods: {
-    showMenu(e) {
+    showMenu(e){
       this.menu = e;
     },
-
+    
     /* slideDown(idx) {
       if (this.activeIdx == idx) return (this.activeIdx = null);
       else return (this.activeIdx = idx);

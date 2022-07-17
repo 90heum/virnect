@@ -147,7 +147,7 @@
             <li class="active">
               <div class="listWrap">
                 <span>
-                  <p>AR 원격 기술 지원 솔루션 적용</p>
+                  <p @click="showMenu(1)">AR 원격 기술 지원 솔루션 적용</p>
                 </span>
                 <i>
                   <img
@@ -163,10 +163,11 @@
                     class="hover"
                     src="https://velog.velcdn.com/images/kyj0206/post/198b9aa4-f609-4154-9726-c6e765ee2052/image.png"
                     alt="hover"
+                    @click="showMenu(1)"
                   />
                 </i>
               </div>
-              <ul class="listInner">
+              <ul class="listInner" v-if="menu === 1">
                 <li>
                   <p>- 전문가의 출장 비용 및 현장 작업자의 교육 비용 절감</p>
                   <p>
@@ -188,7 +189,7 @@
             <li>
               <div class="listWrap">
                 <span>
-                  <p>AR 원격 기술 지원 솔루션 적용</p>
+                  <p @click="showMenu(2)">AR 원격 기술 지원 솔루션 적용</p>
                 </span>
                 <i>
                   <img
@@ -204,10 +205,11 @@
                     class="hover"
                     src="https://velog.velcdn.com/images/kyj0206/post/198b9aa4-f609-4154-9726-c6e765ee2052/image.png"
                     alt="hover"
+                    @click="showMenu(2)"
                   />
                 </i>
               </div>
-              <ul class="listInner">
+              <ul class="listInner" v-if="menu === 2">
                 <li>
                   <p>
                     - 생산 설비 문제 발생 시, 즉각적 대처가 가능해짐으로써 큰
@@ -227,7 +229,7 @@
             <li>
               <div class="listWrap">
                 <span>
-                  <p>AR 기반 IoT 센서 정보 연동 시각화</p>
+                  <p @click="showMenu(3)">AR 기반 IoT 센서 정보 연동 시각화</p>
                 </span>
                 <i>
                   <img
@@ -243,10 +245,11 @@
                     class="hover"
                     src="https://velog.velcdn.com/images/kyj0206/post/198b9aa4-f609-4154-9726-c6e765ee2052/image.png"
                     alt="hover"
+                     @click="showMenu(3)"
                   />
                 </i>
               </div>
-              <ul class="listInner">
+              <ul class="listInner" v-if="menu === 3">
                 <li>
                   <p>- 시각화 정보를 통해 데모공장 구조에 대한 이해도를 높임</p>
                   <p>- 현장에서 공장 정보관리 효율성 증대</p>
@@ -262,7 +265,7 @@
             <li>
               <div class="listWrap">
                 <span>
-                  <p>해외 생산 공장 원격 기술 지원</p>
+                  <p @click="showMenu(4)">해외 생산 공장 원격 기술 지원</p>
                 </span>
                 <i>
                   <img
@@ -278,10 +281,11 @@
                     class="hover"
                     src="https://velog.velcdn.com/images/kyj0206/post/198b9aa4-f609-4154-9726-c6e765ee2052/image.png"
                     alt="hover"
+                    @click="showMenu(4)"
                   />
                 </i>
               </div>
-              <ul class="listInner">
+              <ul class="listInner" v-if="menu === 4">
                 <li>
                   <p>
                     - 한국 본사와 해외 지사를 원격지원을 함으로써 출장 비용 감소
@@ -300,7 +304,7 @@
             <li>
               <div class="listWrap">
                 <span>
-                  <p>배선 설계 시각화 어플리케이션 개발</p>
+                  <p @click="showMenu(5)">배선 설계 시각화 어플리케이션 개발</p>
                 </span>
                 <i>
                   <img
@@ -316,10 +320,11 @@
                     class="hover"
                     src="https://velog.velcdn.com/images/kyj0206/post/198b9aa4-f609-4154-9726-c6e765ee2052/image.png"
                     alt="hover"
+                    @click="showMenu(5)"
                   />
                 </i>
               </div>
-              <ul class="listInner">
+              <ul class="listInner" v-if="menu === 5">
                 <li>
                   <p>- AR 시각화를 통해 빠르고 정확한 배선 작업 가능</p>
                   <p>- XR 가이드로 작업자의 작업능률 향상 기대</p>
@@ -374,6 +379,8 @@ export default {
   },
   data() {
     return {
+      menu: 1,
+
       filedData,
       moduleData,
       issueBg: "../images/pages/solution/img-solution-chemical-top",
@@ -443,6 +450,11 @@ export default {
         ],
       ],
     };
+  },
+  methods: {
+    showMenu(e){
+      this.menu = e;
+    },
   },
 };
 </script>
