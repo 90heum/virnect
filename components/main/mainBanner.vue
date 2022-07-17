@@ -73,7 +73,7 @@
       <span class="banner1024">
         <a href="#">
           <img
-            src="https://velog.velcdn.com/images/kyj0206/post/01174201-9b39-4b4e-9090-6ebbb4a134d8/image.png"
+            src="../../assets/images/common/PC_링커리어_XR-콘테스트_홈페이지.png"
             alt="배너모듈"
           />
         </a>
@@ -81,7 +81,7 @@
       <span class="banner768">
         <a href="#">
           <img
-            src="https://velog.velcdn.com/images/kyj0206/post/43101697-a301-433b-867b-d64841ce7553/image.png"
+            src="../../assets/images/common/Mobile_링커리어_XR-콘테스트_홈페이지.png"
             alt="배너모듈"
           />
         </a>
@@ -153,54 +153,9 @@ export default {
   height: 100%;
   padding: 150px 30px;
   background-image: url("https://velog.velcdn.com/images/kyj0206/post/1e0517a7-d564-465f-b8e2-458f7d4fcfac/image.jpg");
-  background-color: #000;
-  background-repeat: no-repeat;
-  // background-position: center center;
   background-size: cover;
-  transition: all 0.4s;
-
-  // background-size: cover;
-  // transition: all 0.4s;
-  // transform 0.95s 0s cubic-bezier(0.3,0.58,0.42,0.9);
-  // animation: fadein 2s;
-  // -moz-animation: fadein 2s; /* Firefox */
-  // -webkit-animation: fadein 2s; /* Safari and Chrome */
-  // -o-animation: fadein 2s; /* Opera */
-  // background-size: 112%;
-  @keyframes fadein {
-      from {
-          background-size: 180%;
-          
-      }
-      to {
-          background-size: 112%;
-      }
-  }
-  @-moz-keyframes fadein { /* Firefox */
-      from {
-          background-size: 180%;
-      }
-      to {
-          background-size: 100%;
-      }
-  }
-  @-webkit-keyframes fadein { /* Safari and Chrome */
-      from {
-          background-size: 180%;
-      }
-      to {
-          background-size: 112%;
-      }
-  }
-  @-o-keyframes fadein { /* Opera */
-      from {
-          background-size: 180%;
-      }
-      to {
-          background-size: 112%;
-      }
-  }
-  
+  background-repeat: no-repeat;
+  background-position: center;
   &::after {
     content: "";
     position: absolute;
@@ -273,9 +228,7 @@ export default {
         display: flex;
         gap: 10px;
         button {
-          cursor: pointer;
-          padding: 15px 20px 11px;
-          transition: all 0.3s;
+          padding: 9px 16px 7px;
 
           a {
             width: 100%;
@@ -283,42 +236,18 @@ export default {
             display: block;
             color: #fff;
             font-weight: bold;
-            font-size: 16px;
+            font-size: 18px;
             text-decoration: none;
           }
           &:first-child {
             border: solid 1px #979797;
             background-color: #121212;
-          }          
+          }
           &:last-child {
             border: solid 1px #0a51b7;
             background-color: #0a51b7;
-          }          
-        }
-        // 0716조성우 추가 Hover효과
-        button:hover {
-          padding: 15px 20px 11px;
-          transition: all 0.3s;
-
-          a {
-            width: 100%;
-            height: 100%;
-            display: block;
-            color: rgb(0, 0, 0);
-            font-weight: bold;
-            font-size: 16px;
-            text-decoration: none;
           }
-          &:first-child {
-            border: solid 1px #fff;
-            background-color: #fff;
-          }          
-          &:last-child {
-            border: solid 1px #78BBFD;
-            background-color: #78BBFD;
-          }          
-        } 
-        //조성우 추가 끝
+        }
       }
       .bannerTitN4 {
         display: flex;
@@ -343,7 +272,6 @@ export default {
             img {
               max-width: 22px;
               display: inline;
-              margin-top: 10px;
             }
           }
           > p {
@@ -452,7 +380,7 @@ export default {
             a {
               margin-left: 12px;
             }
-            font-size: 16px;
+            font-size: 1.6px;
             letter-spacing: -0.2px;
             color: #fff;
           }
@@ -719,10 +647,6 @@ export default {
   .slide img {
     width: 377px;
     height: 96px;
-  }
-  .mainBanner{
-    background-size: cover;
-    background-position: -270px 40px;
   }
   .mainBanner .mainBannerInner .mainBannerTit .bannerTitN1 {
     font-size: 22px;
