@@ -57,7 +57,7 @@ export default {
     more() {
       if (process.client)
         document
-          .querySelector("#xrSolutionId")
+          .querySelector("#headingModuleTop")
           .scrollIntoView({ behavior: "smooth" });
     },
   },

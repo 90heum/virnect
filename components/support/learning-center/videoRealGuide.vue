@@ -24,7 +24,7 @@
                 :key="idx">
                 <nuxt-link :to="`learning-video-detail?category=${data.id}&type=${data.typeId}`">
                     <span class="listImg">
-                        <img :src="`${data.thumbnail ? data.thumbnail : 'https://velog.velcdn.com/images/kyj0206/post/75a8bf3a-fe84-47e5-aa54-fca6f438b599/image.png'}`" />
+                        <img :src="`${data.thumbnail ? 'data:image/png;base64,' + data.thumbnail : 'https://velog.velcdn.com/images/kyj0206/post/75a8bf3a-fe84-47e5-aa54-fca6f438b599/image.png'}`" />
                     </span>
                     <span class="listInfo">
                         <span>

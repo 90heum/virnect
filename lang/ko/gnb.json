@@ -2,33 +2,33 @@
   "gnb": [
     {
       "text": "value",
-      "page": "energy_resource",
-      "to": "/value/energy_resource",
+      "page": "infra_resource",
+      "to": "/value/infra_resource",
       "array": [
         {
           "text": "인프라/자원",
-          "page": "energy_resource",
-          "to": "/value/energy_resource"
+          "page": "infra_resource",
+          "to": "/value/infra_resource"
         },
         {
           "text": "제조/건설",
-          "page": "oil_chemical_battery",
-          "to": "/value/oil_chemical_battery"
+          "page": "manufacture_construction",
+          "to": "/value/manufacture_construction"
         },
         {
           "text": "공공/교육",
-          "page": "motor_parts",
-          "to": "/value/motor_parts"
+          "page": "public_education",
+          "to": "/value/public_education"
         },
         {
           "text": "엔터테인먼트",
-          "page": "airline_railroad",
-          "to": "/value/airline_railroad"
+          "page": "entertainment",
+          "to": "/value/entertainment"
         },
         {
           "text": "기타",
-          "page": "epc",
-          "to": "/value/epc"
+          "page": "etc",
+          "to": "/value/etc"
         }
       ]
     },

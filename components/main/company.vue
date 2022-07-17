@@ -657,6 +657,7 @@ export default {
                   img {
                     max-width: 13px;
                     width: 100%;
+                  
                   }
                   
                 }
@@ -682,6 +683,8 @@ export default {
                         width: 100%;
                         border: 2px solid #fff;
                         transition: all 0.3s;
+                        //조성우추가
+                        aspect-ratio: 16 / 9.7;
                       }
                       img:hover {
                         border: 2px solid #121212;
@@ -693,6 +696,21 @@ export default {
                       margin-bottom: 14px;
                       letter-spacing: -0.18px;
                       color: #121212;
+                      line-height: 1.3;
+                      overflow: hidden;
+                      // 말줄임
+                      text-overflow: ellipsis;
+                      display: -webkit-box;
+                      -webkit-line-clamp: 2;
+                      -webkit-box-orient: vertical;
+                    }
+                    // 조성우추가
+                    &:nth-child(2):hover {
+                      font-size: 14px;
+                      font-weight: 500;
+                      margin-bottom: 14px;
+                      letter-spacing: -0.18px;
+                      color: #0a51b7;
                       line-height: 1.3;
                       overflow: hidden;
                       // 말줄임

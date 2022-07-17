@@ -25,7 +25,7 @@ export default {};
   width: 100%;
   /* max-width: 2400px; */
   height: 479px;
-  background-image: url("https://velog.velcdn.com/images/kyj0206/post/e22550d0-b661-41a6-8803-eef9ada91ff3/image.jpg");
+  background-image: url("~/assets/images/pages/module/make-kv-200220-ext@2x.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -97,7 +97,7 @@ export default {};
           }
         }
         &:last-child {
-          background: #092E6E;
+          background: #092e6e;
           a {
             color: #fff;
           }
@@ -115,7 +115,7 @@ export default {};
     width: 100%;
     /* max-width: 2400px; */
     height: 479px;
-    background-image: url("https://velog.velcdn.com/images/kyj0206/post/e22550d0-b661-41a6-8803-eef9ada91ff3/image.jpg");
+    background-image: url("~/assets/images/pages/module/make-kv-200220-ext@2x.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -126,10 +126,8 @@ export default {};
 }
 // 조성우 추가 끝
 
-
-
 @media screen and (max-width: 1024px) {
-  .CtaModule{
+  .CtaModule {
     padding: 0;
   }
 
@@ -140,7 +138,7 @@ export default {};
     text-align: center;
   }
 
-  .CtaModule .CtaCont span{
+  .CtaModule .CtaCont span {
     justify-content: center;
   }
 }
@@ -159,7 +157,6 @@ export default {};
 }
 
 @media screen and (max-width: 475px) {
-
   .CtaModule .CtaCont {
     padding: 0 24px;
   }

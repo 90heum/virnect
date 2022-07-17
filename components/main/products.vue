@@ -195,7 +195,7 @@
                 <nuxt-link to="/products/make"> 자세히 보기 </nuxt-link>
               </button>
               <button>
-                <a href="support/demo" target="blank"> 데모신청 </a>
+                <a href="support/demo" target="_blank"> 데모신청 </a>
               </button>
             </span>
             <ProModal :modal="modal" :popup="popup" />

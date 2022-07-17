@@ -1,7 +1,8 @@
 <template>
   <header>
     <div class="headerInner">
-      <div class="logo">
+      <div class="logo"
+           @click="() => {if (!isMenu) {return;} isMenu = false; mobileMenu = { list1: false };}">
         <nuxt-link to="/">
           <img
             src="https://velog.velcdn.com/images/kyj0206/post/9ebd4dfa-26bb-4b50-bb22-9350ed0089b7/image.png"
@@ -23,7 +24,7 @@
               @click="[(gnb1 = false), (gnbStyleBorder = { gnbStyle1: true })]"
             >
               <nuxt-link
-                to="/value/energy_resource"
+                to="/value/infra_resource"
                 :class="`navTab container1 ${gnb1 ? 'gnbActive' : ''}`"
                 v-bind:style="gnbStyleBorder.gnbStyle1 ? commonGnbStyle : {}"
               >
@@ -288,7 +289,7 @@
         <!-- 햄버거 버튼 [모바일 메뉴] : 언어박스가 사라지고 얘가 나옴 -->
         <div class="MbHam" v-if="!isWeb">
           <!-- 햄버거 -->
-          <span class="MbOpen" @click="[showMenu(true)]" v-if="!isMenu">
+          <span class="MbOpen" @click="[showMenu(true),mobileMenu = { list1: false }]" v-if="!isMenu">
             <a>
               <img
                 src="https://velog.velcdn.com/images/kyj0206/post/9c806d74-c1f9-4601-8649-04e69f9613b4/image.png"
@@ -734,7 +735,7 @@
             <nuxt-link to="/products/productsMain">
               <img src="~/assets/images/pages/product.png" alt="#" />
             </nuxt-link>
-            <nuxt-link to="/value/energy_resource">
+            <nuxt-link to="/value/infra_resource">
               <img src="~/assets/images/pages/value.png" alt="#" />
             </nuxt-link>
           </a>
@@ -745,6 +746,8 @@
       :isMenu="isMenu"
       :availableLocales="availableLocales"
       :showMenu="showMenu"
+      :mobileMenu="mobileMenu"
+      :handleMobileMenu="handleMobileMenu"
     />
   </header>
 </template>
@@ -825,6 +828,7 @@ export default {
     serviceOpen: false,
     langOpen: false,
     upIcon: false,
+    mobileMenu: { list1: false },
   }),
   components: {
     SubSolutionMenu,
@@ -856,6 +860,9 @@ export default {
     },
   },
   methods: {
+    handleMobileMenu(e) {
+      this.mobileMenu = e;
+    },
     async getData() {
       try {
         const data = await this.$axios.get(`admin/news?page=1&size=${20}`);

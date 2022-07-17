@@ -398,6 +398,7 @@ export default {
                   max-width: 12px;
                   width: 100%;
                   height: 12px;
+
                 }
               }
             }
@@ -453,6 +454,7 @@ export default {
                   margin-bottom: 16px;
                   img {
                     width: 100%;
+                    // aspect-ratio: 16 / 9.7;
                   }
                 }
                 &.listInfo {
@@ -599,10 +601,12 @@ export default {
             cursor: pointer;
             height: 100%;
             padding: 10px;
-            border: solid 1px #e6e8eb;
+            // border: solid 1px #e6e8eb;
             background-color: #fff;
             max-width: 324px;
             width: calc((100% - 50px) / 3);
+            //성우추가
+            margin-bottom: 15px;
             &:first-child {
               margin-right: 15px;
               margin-bottom: 15px;
@@ -624,9 +628,12 @@ export default {
                 &.listImg {
                   flex: 1;
                   display: block;
-                  margin-bottom: 16px;
+                  margin-bottom: 6px;
                   img {
                     width: 100%;
+                    // 성우추가
+                    aspect-ratio: 16 / 9.7;
+                    border: 2px solid #fff;
                   }
                 }
                 &.listInfo {
@@ -642,13 +649,77 @@ export default {
                         white-space: nowrap;
                         -webkit-line-clamp: 1;
                         -webkit-box-orient: vertical;
-                        font-size: 20px;
-                        font-weight: bold;
+                        font-size: 18px;
+                        font-weight: 600;
                         font-stretch: normal;
                         font-style: normal;
                         line-height: 1.4;
                         letter-spacing: -0.25px;
                         color: #121212;
+                        margin-bottom: 12px;
+                      }
+                    }
+                    &:nth-child(2) {
+                      max-width: 60px;
+                      max-height: 24px;
+                      padding: 6px 10px;
+                      border-radius: 12px;
+                      border: solid 1px #3f97d3;
+                      background-color: #fff;
+                      p {
+                        font-size: 12px;
+                        font-weight: bold;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1;
+                        letter-spacing: normal;
+                        text-align: center;
+                        color: #3f97d3;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            // 성우추가
+            a:hover {
+              display: flex;
+              flex-direction: column;
+              max-height: 300px;
+              min-height: 300px;
+              span {
+                &.listImg {
+                  flex: 1;
+                  display: block;
+                  margin-bottom: 6px;
+                  img {
+                    width: 100%;
+                    // 성우추가
+                    aspect-ratio: 16 / 9.7;
+                    border: 2px solid #092e6e;
+                    transition: all 0.4s;
+                  }
+                }
+                &.listInfo {
+                  flex: 13;
+                  display: flex;
+                  flex-direction: column;
+                  span {
+                    &:first-child {
+                      h2 {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: block;
+                        white-space: nowrap;
+                        -webkit-line-clamp: 1;
+                        -webkit-box-orient: vertical;
+                        font-size: 18px;
+                        font-weight: 600;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.4;
+                        letter-spacing: -0.25px;
+                        color: #0a51b7;
                         margin-bottom: 12px;
                       }
                     }
@@ -709,7 +780,7 @@ export default {
 .ddayDiv {
   color: #9a9da3;
   font-size: 14px;
-  margin-top: 10px;
+  margin-top: 6px;
 }
 @media screen and (max-width: 1024px) {
   .newsPress .tabCont .newsPressList .userBox .userBoxCont > div,

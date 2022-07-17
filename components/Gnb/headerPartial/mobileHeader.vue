@@ -11,19 +11,19 @@
             Value
           </a>
           <ul class="hamUseCaseMenu" v-if="mobileMenu['list1']">
-            <li @click="goToPage(`/value/energy_resource`)">
+            <li @click="goToPage(`/value/infra_resource`)">
               <a> 인프라/자원 </a>
             </li>
-            <li @click="goToPage(`/value/oil_chemical_battery`)">
+            <li @click="goToPage(`/value/manufacture_construction`)">
               <a> 제조/건설 </a>
             </li>
-            <li @click="goToPage('/value/motor_parts')">
+            <li @click="goToPage('/value/public_education')">
               <a> 공공/교육 </a>
             </li>
-            <li @click="goToPage('/value/airline_railroad')">
+            <li @click="goToPage('/value/entertainment')">
               <a> 엔터테인먼트 </a>
             </li>
-            <li @click="goToPage('/value/epc')">
+            <li @click="goToPage('/value/etc')">
               <a> 기타 </a>
             </li>
           </ul>
@@ -324,6 +324,8 @@ export default {
     isMenu: Boolean,
     availableLocales: Array,
     showMenu: Function,
+    mobileMenu: Object,
+    handleMobileMenu: Function
   },
   data: () => ({
     lang: false,
@@ -344,7 +346,6 @@ export default {
     open4: false,
     open5: false,
     hamServiceOpen: false,
-    mobileMenu: null,
     isShowing: true,
     isShowing2: true,
     isShowing3: true,
@@ -354,15 +355,13 @@ export default {
     isClose: require("~/assets/images/common/icon-menu-close.png"),
     blueStyle: {},
     masterkey: false,
-    mobileMenu: { list1: false },
     /* subOpen: false, */
   }),
   methods: {
     showMobileMenu(e) {
-      console.log(e, "<<??", this.mobileMenu);
-      const energy = "/value/energy_resource";
-      const remote = "/products/remote";
-      const notice = "/support/notice";
+      const energy = "/value/infra_resource";
+      const remote = "/products/productsMain";
+      const notice = "/support/supportSubMain";
       const news = "/news/main";
       const about = "/company/about";
       const goPage =
@@ -379,13 +378,13 @@ export default {
           : "";
       if (this.mobileMenu[e]) {
         this.goToPage(goPage);
-        this.mobileMenu = {};
+        this.handleMobileMenu({});
       } else {
-        this.mobileMenu = { [e]: !this.mobileMenu[e] };
+        this.handleMobileMenu({ [e]: !this.mobileMenu[e] });
       }
     },
     goToPage(e) {
-      this.mobileMenu = {};
+      this.handleMobileMenu({});
       this.showMenu(false);
       this.$router.push(e);
     },
@@ -455,13 +454,13 @@ export default {
         this.isMenu = false;
       } else {
         this.mobileMenu = e;
-        if (e === "/value/energy_resource") {
+        if (e === "/value/infra_resource") {
           this.isSub = !this.isSub;
         }
-        if (e === "/products/remote") {
+        if (e === "/products/productsMain") {
           this.isSub2 = !this.isSub2;
         }
-        if (e === "/support/notice") {
+        if (e === "/support/supportSubMain") {
           this.isSub3 = !this.isSub3;
         }
         if (e === "/news/main") {

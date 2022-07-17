@@ -71,7 +71,11 @@
     <!-- 배너삽입 -->
     <div class="bannerMoule">
       <span class="banner1024">
+<<<<<<< HEAD
         <a href="/news/detail?id=145&type">
+=======
+        <a href="news/detail?id=145&type">
+>>>>>>> 17f9705c2bee2f7e76e4ec7b5b789dc98268cb14
           <img src="~/assets/images/common/contestHome1.png" alt="배너모듈" />
         </a>
       </span>
@@ -222,15 +226,17 @@ export default {
         display: flex;
         gap: 10px;
         button {
-          padding: 9px 16px 7px;
-
+          // 조성우추가
+          padding: 15px 35px 13px;
+          cursor: pointer;
+          transition: all 0.4s;
           a {
             width: 100%;
             height: 100%;
             display: block;
             color: #fff;
             font-weight: bold;
-            font-size: 18px;
+            font-size: 16px;
             text-decoration: none;
           }
           &:first-child {
@@ -240,6 +246,30 @@ export default {
           &:last-child {
             border: solid 1px #0a51b7;
             background-color: #0a51b7;
+          }
+        }
+        // 조성우추가
+        button:hover {
+          // 조성우추가
+          padding: 15px 35px 13px;
+          cursor: pointer;
+          transition: all 0.4s;          
+          a {
+            width: 100%;
+            height: 100%;
+            display: block;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-size: 16px;
+            text-decoration: none;
+          }
+          &:first-child {
+            border: solid 1px #fff;
+            background-color: #fff;
+          }
+          &:last-child {
+            border: solid 1px #78BBFD;
+            background-color: #78BBFD;
           }
         }
       }
@@ -266,6 +296,8 @@ export default {
             img {
               max-width: 22px;
               display: inline;
+              // 조성우추가
+              margin-top: 9px;
             }
           }
           > p {
@@ -682,12 +714,20 @@ export default {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  // 조성우 수정
+  // box-shadow: 6px 6px 13px #00000040;
 }
 .bannerMoule .banner1024 a {
   display: block;
 }
 .bannerMoule .banner1024 a img {
   width: 100%;
+  box-shadow: 4px 4px 8px #00000030;
+  transition: all 0.4s;
+}
+.bannerMoule .banner1024 a img:hover {
+  width: 100%;
+  box-shadow: 12px 12px 20px #00000045;
 }
 .bannerMoule .banner768 {
   display: none;
@@ -697,6 +737,7 @@ export default {
 }
 .bannerMoule .banner768 a img {
   width: 100%;
+  box-shadow: 6px 6px 13px #00000040;
 }
 
 @media screen and (max-width: 768px) {
@@ -706,6 +747,7 @@ export default {
 
   .bannerMoule .banner768 {
     display: block;
+    // box-shadow: 6px 6px 13px #00000040;
   }
 
   .bannerMoule {

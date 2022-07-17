@@ -3,252 +3,216 @@
     "name": "company-about",
     "path": "/company/about",
     "component": "/Users/macmini/Desktop/heejin/pages/company/about.vue",
-    "chunkName": "pages/company/about",
-    "_name": "_861d7008"
+    "chunkName": "pages/company/about"
   },
   {
     "name": "company-aboutSub",
     "path": "/company/aboutSub",
     "component": "/Users/macmini/Desktop/heejin/pages/company/aboutSub.vue",
-    "chunkName": "pages/company/aboutSub",
-    "_name": "_1496a8d4"
+    "chunkName": "pages/company/aboutSub"
   },
   {
     "name": "company-ir",
     "path": "/company/ir",
     "component": "/Users/macmini/Desktop/heejin/pages/company/ir.vue",
-    "chunkName": "pages/company/ir",
-    "_name": "_be3a8b6c"
+    "chunkName": "pages/company/ir"
   },
   {
     "name": "company-ir-detail",
     "path": "/company/ir-detail",
     "component": "/Users/macmini/Desktop/heejin/pages/company/ir-detail.vue",
-    "chunkName": "pages/company/ir-detail",
-    "_name": "_72dcf264"
+    "chunkName": "pages/company/ir-detail"
   },
   {
     "name": "company-talent",
     "path": "/company/talent",
     "component": "/Users/macmini/Desktop/heejin/pages/company/talent.vue",
-    "chunkName": "pages/company/talent",
-    "_name": "_3c47cfe6"
+    "chunkName": "pages/company/talent"
   },
   {
     "name": "news-detail",
     "path": "/news/detail",
     "component": "/Users/macmini/Desktop/heejin/pages/news/detail.vue",
-    "chunkName": "pages/news/detail",
-    "_name": "_04f60cce"
+    "chunkName": "pages/news/detail"
   },
   {
     "name": "news-main",
     "path": "/news/main",
     "component": "/Users/macmini/Desktop/heejin/pages/news/main.vue",
-    "chunkName": "pages/news/main",
-    "_name": "_63655b76"
+    "chunkName": "pages/news/main"
   },
   {
     "name": "policy-Payment",
     "path": "/policy/Payment",
     "component": "/Users/macmini/Desktop/heejin/pages/policy/Payment.vue",
-    "chunkName": "pages/policy/Payment",
-    "_name": "_a1edd450"
+    "chunkName": "pages/policy/Payment"
   },
   {
     "name": "policy-Policy",
     "path": "/policy/Policy",
     "component": "/Users/macmini/Desktop/heejin/pages/policy/Policy.vue",
-    "chunkName": "pages/policy/Policy",
-    "_name": "_7b454960"
+    "chunkName": "pages/policy/Policy"
   },
   {
     "name": "policy-Terms",
     "path": "/policy/Terms",
     "component": "/Users/macmini/Desktop/heejin/pages/policy/Terms.vue",
-    "chunkName": "pages/policy/Terms",
-    "_name": "_11a54b59"
+    "chunkName": "pages/policy/Terms"
   },
   {
     "name": "products-make",
     "path": "/products/make",
     "component": "/Users/macmini/Desktop/heejin/pages/products/make.vue",
-    "chunkName": "pages/products/make",
-    "_name": "_6b11a93a"
+    "chunkName": "pages/products/make"
   },
   {
     "name": "products-ms",
     "path": "/products/ms",
     "component": "/Users/macmini/Desktop/heejin/pages/products/ms.vue",
-    "chunkName": "pages/products/ms",
-    "_name": "_060e71f2"
+    "chunkName": "pages/products/ms"
   },
   {
     "name": "products-productsMain",
     "path": "/products/productsMain",
     "component": "/Users/macmini/Desktop/heejin/pages/products/productsMain.vue",
-    "chunkName": "pages/products/productsMain",
-    "_name": "_041e6909"
+    "chunkName": "pages/products/productsMain"
   },
   {
     "name": "products-remote",
     "path": "/products/remote",
     "component": "/Users/macmini/Desktop/heejin/pages/products/remote.vue",
-    "chunkName": "pages/products/remote",
-    "_name": "_5af19292"
+    "chunkName": "pages/products/remote"
   },
   {
     "name": "products-track",
     "path": "/products/track",
     "component": "/Users/macmini/Desktop/heejin/pages/products/track.vue",
-    "chunkName": "pages/products/track",
-    "_name": "_4c6d35a2"
+    "chunkName": "pages/products/track"
   },
   {
     "name": "products-twin",
     "path": "/products/twin",
     "component": "/Users/macmini/Desktop/heejin/pages/products/twin.vue",
-    "chunkName": "pages/products/twin",
-    "_name": "_69cfc598"
+    "chunkName": "pages/products/twin"
   },
   {
     "name": "products-view",
     "path": "/products/view",
     "component": "/Users/macmini/Desktop/heejin/pages/products/view.vue",
-    "chunkName": "pages/products/view",
-    "_name": "_a022ab1e"
+    "chunkName": "pages/products/view"
   },
   {
     "name": "support-demo",
     "path": "/support/demo",
     "component": "/Users/macmini/Desktop/heejin/pages/support/demo.vue",
-    "chunkName": "pages/support/demo",
-    "_name": "_7abb78b2"
+    "chunkName": "pages/support/demo"
   },
   {
     "name": "support-faq",
     "path": "/support/faq",
     "component": "/Users/macmini/Desktop/heejin/pages/support/faq.vue",
-    "chunkName": "pages/support/faq",
-    "_name": "_efda83d2"
+    "chunkName": "pages/support/faq"
   },
   {
     "name": "support-inquiry",
     "path": "/support/inquiry",
     "component": "/Users/macmini/Desktop/heejin/pages/support/inquiry.vue",
-    "chunkName": "pages/support/inquiry",
-    "_name": "_2ff5c070"
+    "chunkName": "pages/support/inquiry"
   },
   {
     "name": "support-learning-center",
     "path": "/support/learning-center",
     "component": "/Users/macmini/Desktop/heejin/pages/support/learning-center.vue",
-    "chunkName": "pages/support/learning-center",
-    "_name": "_156a2736"
+    "chunkName": "pages/support/learning-center"
   },
   {
     "name": "support-learning-manual-detail",
     "path": "/support/learning-manual-detail",
     "component": "/Users/macmini/Desktop/heejin/pages/support/learning-manual-detail.vue",
-    "chunkName": "pages/support/learning-manual-detail",
-    "_name": "_62fb3fd8"
+    "chunkName": "pages/support/learning-manual-detail"
   },
   {
     "name": "support-learning-video-detail",
     "path": "/support/learning-video-detail",
     "component": "/Users/macmini/Desktop/heejin/pages/support/learning-video-detail.vue",
-    "chunkName": "pages/support/learning-video-detail",
-    "_name": "_24234cf3"
+    "chunkName": "pages/support/learning-video-detail"
   },
   {
     "name": "support-notice",
     "path": "/support/notice",
     "component": "/Users/macmini/Desktop/heejin/pages/support/notice.vue",
-    "chunkName": "pages/support/notice",
-    "_name": "_026efd67"
+    "chunkName": "pages/support/notice"
   },
   {
     "name": "support-notice-detail",
     "path": "/support/notice-detail",
     "component": "/Users/macmini/Desktop/heejin/pages/support/notice-detail.vue",
-    "chunkName": "pages/support/notice-detail",
-    "_name": "_2f1164a7"
+    "chunkName": "pages/support/notice-detail"
   },
   {
     "name": "support-supportSubMain",
     "path": "/support/supportSubMain",
     "component": "/Users/macmini/Desktop/heejin/pages/support/supportSubMain.vue",
-    "chunkName": "pages/support/supportSubMain",
-    "_name": "_600e8fd9"
+    "chunkName": "pages/support/supportSubMain"
   },
   {
     "name": "terms-charged",
     "path": "/terms/charged",
     "component": "/Users/macmini/Desktop/heejin/pages/terms/charged.vue",
-    "chunkName": "pages/terms/charged",
-    "_name": "_cfccccae"
+    "chunkName": "pages/terms/charged"
   },
   {
     "name": "terms-persnal",
     "path": "/terms/persnal",
     "component": "/Users/macmini/Desktop/heejin/pages/terms/persnal.vue",
-    "chunkName": "pages/terms/persnal",
-    "_name": "_11a04348"
+    "chunkName": "pages/terms/persnal"
   },
   {
     "name": "terms-service",
     "path": "/terms/service",
     "component": "/Users/macmini/Desktop/heejin/pages/terms/service.vue",
-    "chunkName": "pages/terms/service",
-    "_name": "_2fed3ca4"
+    "chunkName": "pages/terms/service"
   },
   {
-    "name": "value-airline_railroad",
-    "path": "/value/airline_railroad",
-    "component": "/Users/macmini/Desktop/heejin/pages/value/airline_railroad.vue",
-    "chunkName": "pages/value/airline_railroad",
-    "_name": "_947ad380"
+    "name": "value-entertainment",
+    "path": "/value/entertainment",
+    "component": "/Users/macmini/Desktop/heejin/pages/value/entertainment.vue",
+    "chunkName": "pages/value/entertainment"
   },
   {
-    "name": "value-energy_resource",
-    "path": "/value/energy_resource",
-    "component": "/Users/macmini/Desktop/heejin/pages/value/energy_resource.vue",
-    "chunkName": "pages/value/energy_resource",
-    "_name": "_4cea5cc8"
+    "name": "value-etc",
+    "path": "/value/etc",
+    "component": "/Users/macmini/Desktop/heejin/pages/value/etc.vue",
+    "chunkName": "pages/value/etc"
   },
   {
-    "name": "value-epc",
-    "path": "/value/epc",
-    "component": "/Users/macmini/Desktop/heejin/pages/value/epc.vue",
-    "chunkName": "pages/value/epc",
-    "_name": "_384c90fb"
+    "name": "value-infra_resource",
+    "path": "/value/infra_resource",
+    "component": "/Users/macmini/Desktop/heejin/pages/value/infra_resource.vue",
+    "chunkName": "pages/value/infra_resource"
   },
   {
-    "name": "value-motor_parts",
-    "path": "/value/motor_parts",
-    "component": "/Users/macmini/Desktop/heejin/pages/value/motor_parts.vue",
-    "chunkName": "pages/value/motor_parts",
-    "_name": "_f4352f0e"
+    "name": "value-manufacture_construction",
+    "path": "/value/manufacture_construction",
+    "component": "/Users/macmini/Desktop/heejin/pages/value/manufacture_construction.vue",
+    "chunkName": "pages/value/manufacture_construction"
   },
   {
-    "name": "value-oil_chemical_battery",
-    "path": "/value/oil_chemical_battery",
-    "component": "/Users/macmini/Desktop/heejin/pages/value/oil_chemical_battery.vue",
-    "chunkName": "pages/value/oil_chemical_battery",
-    "_name": "_2a39e7da"
+    "name": "value-public_education",
+    "path": "/value/public_education",
+    "component": "/Users/macmini/Desktop/heejin/pages/value/public_education.vue",
+    "chunkName": "pages/value/public_education"
   },
   {
     "name": "company-subCompany-Brand",
     "path": "/company/subCompany/Brand",
     "component": "/Users/macmini/Desktop/heejin/pages/company/subCompany/Brand.vue",
-    "chunkName": "pages/company/subCompany/Brand",
-    "_name": "_accd6f54"
+    "chunkName": "pages/company/subCompany/Brand"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/macmini/Desktop/heejin/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_33d452d3"
+    "chunkName": "pages/index"
   }
 ]
