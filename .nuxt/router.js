@@ -4,42 +4,42 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _74945477 = () => interopDefault(import('../pages/company/about.vue' /* webpackChunkName: "pages/company/about" */))
-const _1bc00679 = () => interopDefault(import('../pages/company/aboutSub.vue' /* webpackChunkName: "pages/company/aboutSub" */))
-const _b98f10a2 = () => interopDefault(import('../pages/company/ir.vue' /* webpackChunkName: "pages/company/ir" */))
-const _50df495f = () => interopDefault(import('../pages/company/ir-detail.vue' /* webpackChunkName: "pages/company/ir-detail" */))
-const _1e9a9af2 = () => interopDefault(import('../pages/company/talent.vue' /* webpackChunkName: "pages/company/talent" */))
-const _4d57fc09 = () => interopDefault(import('../pages/news/detail.vue' /* webpackChunkName: "pages/news/detail" */))
-const _005fdd71 = () => interopDefault(import('../pages/news/main.vue' /* webpackChunkName: "pages/news/main" */))
-const _2870ce86 = () => interopDefault(import('../pages/policy/Payment.vue' /* webpackChunkName: "pages/policy/Payment" */))
-const _7a0067cb = () => interopDefault(import('../pages/policy/Policy.vue' /* webpackChunkName: "pages/policy/Policy" */))
-const _54fd7904 = () => interopDefault(import('../pages/policy/Terms.vue' /* webpackChunkName: "pages/policy/Terms" */))
-const _22b4b5b5 = () => interopDefault(import('../pages/products/make.vue' /* webpackChunkName: "pages/products/make" */))
-const _4e70612d = () => interopDefault(import('../pages/products/ms.vue' /* webpackChunkName: "pages/products/ms" */))
-const _4a526af8 = () => interopDefault(import('../pages/products/productsMain.vue' /* webpackChunkName: "pages/products/productsMain" */))
-const _93f92766 = () => interopDefault(import('../pages/products/remote.vue' /* webpackChunkName: "pages/products/remote" */))
-const _1687e814 = () => interopDefault(import('../pages/products/track.vue' /* webpackChunkName: "pages/products/track" */))
-const _fa89aca2 = () => interopDefault(import('../pages/products/twin.vue' /* webpackChunkName: "pages/products/twin" */))
-const _6791b6ec = () => interopDefault(import('../pages/products/view.vue' /* webpackChunkName: "pages/products/view" */))
-const _3e9770d7 = () => interopDefault(import('../pages/support/demo.vue' /* webpackChunkName: "pages/support/demo" */))
-const _5f16a55c = () => interopDefault(import('../pages/support/faq.vue' /* webpackChunkName: "pages/support/faq" */))
-const _4316f983 = () => interopDefault(import('../pages/support/inquiry.vue' /* webpackChunkName: "pages/support/inquiry" */))
-const _011e49c0 = () => interopDefault(import('../pages/support/learning-center.vue' /* webpackChunkName: "pages/support/learning-center" */))
-const _632d4e86 = () => interopDefault(import('../pages/support/learning-manual-detail.vue' /* webpackChunkName: "pages/support/learning-manual-detail" */))
-const _2467f924 = () => interopDefault(import('../pages/support/learning-video-detail.vue' /* webpackChunkName: "pages/support/learning-video-detail" */))
-const _3f2d804c = () => interopDefault(import('../pages/support/notice.vue' /* webpackChunkName: "pages/support/notice" */))
-const _05c9c622 = () => interopDefault(import('../pages/support/notice-detail.vue' /* webpackChunkName: "pages/support/notice-detail" */))
-const _60625dbe = () => interopDefault(import('../pages/support/supportSubMain.vue' /* webpackChunkName: "pages/support/supportSubMain" */))
-const _4fbca624 = () => interopDefault(import('../pages/terms/charged.vue' /* webpackChunkName: "pages/terms/charged" */))
-const _a25a2a52 = () => interopDefault(import('../pages/terms/persnal.vue' /* webpackChunkName: "pages/terms/persnal" */))
-const _c0a723ae = () => interopDefault(import('../pages/terms/service.vue' /* webpackChunkName: "pages/terms/service" */))
-const _8be91c34 = () => interopDefault(import('../pages/value/entertainment.vue' /* webpackChunkName: "pages/value/entertainment" */))
-const _47cb151c = () => interopDefault(import('../pages/value/etc.vue' /* webpackChunkName: "pages/value/etc" */))
-const _cfc8c2a2 = () => interopDefault(import('../pages/value/infra_resource.vue' /* webpackChunkName: "pages/value/infra_resource" */))
-const _5f0e9f21 = () => interopDefault(import('../pages/value/manufacture_construction.vue' /* webpackChunkName: "pages/value/manufacture_construction" */))
-const _49a50538 = () => interopDefault(import('../pages/value/public_education.vue' /* webpackChunkName: "pages/value/public_education" */))
-const _379d9e0a = () => interopDefault(import('../pages/company/subCompany/Brand.vue' /* webpackChunkName: "pages/company/subCompany/Brand" */))
-const _a985eb64 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
+const _861213fc = () => interopDefault(import('../pages/company/about.vue' /* webpackChunkName: "pages/company/about" */))
+const _ace615e4 = () => interopDefault(import('../pages/company/aboutSub.vue' /* webpackChunkName: "pages/company/aboutSub" */))
+const _e2a58bf8 = () => interopDefault(import('../pages/company/ir.vue' /* webpackChunkName: "pages/company/ir" */))
+const _7cb02d6a = () => interopDefault(import('../pages/company/ir-detail.vue' /* webpackChunkName: "pages/company/ir-detail" */))
+const _3ae7aa72 = () => interopDefault(import('../pages/company/talent.vue' /* webpackChunkName: "pages/company/talent" */))
+const _5f08f758 = () => interopDefault(import('../pages/news/detail.vue' /* webpackChunkName: "pages/news/detail" */))
+const _62cefc7c = () => interopDefault(import('../pages/news/main.vue' /* webpackChunkName: "pages/news/main" */))
+const _a08daedc = () => interopDefault(import('../pages/policy/Payment.vue' /* webpackChunkName: "pages/policy/Payment" */))
+const _7b39ed54 = () => interopDefault(import('../pages/policy/Policy.vue' /* webpackChunkName: "pages/policy/Policy" */))
+const _926276da = () => interopDefault(import('../pages/policy/Terms.vue' /* webpackChunkName: "pages/policy/Terms" */))
+const _6b175740 = () => interopDefault(import('../pages/products/make.vue' /* webpackChunkName: "pages/products/make" */))
+const _5cd82d10 = () => interopDefault(import('../pages/products/ms.vue' /* webpackChunkName: "pages/products/ms" */))
+const _2c30b10f = () => interopDefault(import('../pages/products/productsMain.vue' /* webpackChunkName: "pages/products/productsMain" */))
+const _7043d718 = () => interopDefault(import('../pages/products/remote.vue' /* webpackChunkName: "pages/products/remote" */))
+const _4b0d102e = () => interopDefault(import('../pages/products/track.vue' /* webpackChunkName: "pages/products/track" */))
+const _69c4698c = () => interopDefault(import('../pages/products/twin.vue' /* webpackChunkName: "pages/products/twin" */))
+const _a0174f12 = () => interopDefault(import('../pages/products/view.vue' /* webpackChunkName: "pages/products/view" */))
+const _1fe4f1ec = () => interopDefault(import('../pages/support/demo.vue' /* webpackChunkName: "pages/support/demo" */))
+const _5398359d = () => interopDefault(import('../pages/support/faq.vue' /* webpackChunkName: "pages/support/faq" */))
+const _05513764 = () => interopDefault(import('../pages/support/inquiry.vue' /* webpackChunkName: "pages/support/inquiry" */))
+const _61eb4aeb = () => interopDefault(import('../pages/support/learning-center.vue' /* webpackChunkName: "pages/support/learning-center" */))
+const _de9ac2dc = () => interopDefault(import('../pages/support/learning-manual-detail.vue' /* webpackChunkName: "pages/support/learning-manual-detail" */))
+const _59efa20e = () => interopDefault(import('../pages/support/learning-video-detail.vue' /* webpackChunkName: "pages/support/learning-video-detail" */))
+const _031f1021 = () => interopDefault(import('../pages/support/notice.vue' /* webpackChunkName: "pages/support/notice" */))
+const _5723acad = () => interopDefault(import('../pages/support/notice-detail.vue' /* webpackChunkName: "pages/support/notice-detail" */))
+const _3a454893 = () => interopDefault(import('../pages/support/supportSubMain.vue' /* webpackChunkName: "pages/support/supportSubMain" */))
+const _cfc170a2 = () => interopDefault(import('../pages/terms/charged.vue' /* webpackChunkName: "pages/terms/charged" */))
+const _1194e73c = () => interopDefault(import('../pages/terms/persnal.vue' /* webpackChunkName: "pages/terms/persnal" */))
+const _2fe1e098 = () => interopDefault(import('../pages/terms/service.vue' /* webpackChunkName: "pages/terms/service" */))
+const _35337f31 = () => interopDefault(import('../pages/value/entertainment.vue' /* webpackChunkName: "pages/value/entertainment" */))
+const _3e89947d = () => interopDefault(import('../pages/value/etc.vue' /* webpackChunkName: "pages/value/etc" */))
+const _fc158a78 = () => interopDefault(import('../pages/value/infra_resource.vue' /* webpackChunkName: "pages/value/infra_resource" */))
+const _2157e4f6 = () => interopDefault(import('../pages/value/manufacture_construction.vue' /* webpackChunkName: "pages/value/manufacture_construction" */))
+const _95df2f8e = () => interopDefault(import('../pages/value/public_education.vue' /* webpackChunkName: "pages/value/public_education" */))
+const _5df68ae0 = () => interopDefault(import('../pages/company/subCompany/Brand.vue' /* webpackChunkName: "pages/company/subCompany/Brand" */))
+const _ded9324e = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
 
@@ -54,147 +54,147 @@ export const routerOptions = {
 
   routes: [{
     path: "/company/about",
-    component: _74945477,
+    component: _861213fc,
     name: "company-about"
   }, {
     path: "/company/aboutSub",
-    component: _1bc00679,
+    component: _ace615e4,
     name: "company-aboutSub"
   }, {
     path: "/company/ir",
-    component: _b98f10a2,
+    component: _e2a58bf8,
     name: "company-ir"
   }, {
     path: "/company/ir-detail",
-    component: _50df495f,
+    component: _7cb02d6a,
     name: "company-ir-detail"
   }, {
     path: "/company/talent",
-    component: _1e9a9af2,
+    component: _3ae7aa72,
     name: "company-talent"
   }, {
     path: "/news/detail",
-    component: _4d57fc09,
+    component: _5f08f758,
     name: "news-detail"
   }, {
     path: "/news/main",
-    component: _005fdd71,
+    component: _62cefc7c,
     name: "news-main"
   }, {
     path: "/policy/Payment",
-    component: _2870ce86,
+    component: _a08daedc,
     name: "policy-Payment"
   }, {
     path: "/policy/Policy",
-    component: _7a0067cb,
+    component: _7b39ed54,
     name: "policy-Policy"
   }, {
     path: "/policy/Terms",
-    component: _54fd7904,
+    component: _926276da,
     name: "policy-Terms"
   }, {
     path: "/products/make",
-    component: _22b4b5b5,
+    component: _6b175740,
     name: "products-make"
   }, {
     path: "/products/ms",
-    component: _4e70612d,
+    component: _5cd82d10,
     name: "products-ms"
   }, {
     path: "/products/productsMain",
-    component: _4a526af8,
+    component: _2c30b10f,
     name: "products-productsMain"
   }, {
     path: "/products/remote",
-    component: _93f92766,
+    component: _7043d718,
     name: "products-remote"
   }, {
     path: "/products/track",
-    component: _1687e814,
+    component: _4b0d102e,
     name: "products-track"
   }, {
     path: "/products/twin",
-    component: _fa89aca2,
+    component: _69c4698c,
     name: "products-twin"
   }, {
     path: "/products/view",
-    component: _6791b6ec,
+    component: _a0174f12,
     name: "products-view"
   }, {
     path: "/support/demo",
-    component: _3e9770d7,
+    component: _1fe4f1ec,
     name: "support-demo"
   }, {
     path: "/support/faq",
-    component: _5f16a55c,
+    component: _5398359d,
     name: "support-faq"
   }, {
     path: "/support/inquiry",
-    component: _4316f983,
+    component: _05513764,
     name: "support-inquiry"
   }, {
     path: "/support/learning-center",
-    component: _011e49c0,
+    component: _61eb4aeb,
     name: "support-learning-center"
   }, {
     path: "/support/learning-manual-detail",
-    component: _632d4e86,
+    component: _de9ac2dc,
     name: "support-learning-manual-detail"
   }, {
     path: "/support/learning-video-detail",
-    component: _2467f924,
+    component: _59efa20e,
     name: "support-learning-video-detail"
   }, {
     path: "/support/notice",
-    component: _3f2d804c,
+    component: _031f1021,
     name: "support-notice"
   }, {
     path: "/support/notice-detail",
-    component: _05c9c622,
+    component: _5723acad,
     name: "support-notice-detail"
   }, {
     path: "/support/supportSubMain",
-    component: _60625dbe,
+    component: _3a454893,
     name: "support-supportSubMain"
   }, {
     path: "/terms/charged",
-    component: _4fbca624,
+    component: _cfc170a2,
     name: "terms-charged"
   }, {
     path: "/terms/persnal",
-    component: _a25a2a52,
+    component: _1194e73c,
     name: "terms-persnal"
   }, {
     path: "/terms/service",
-    component: _c0a723ae,
+    component: _2fe1e098,
     name: "terms-service"
   }, {
     path: "/value/entertainment",
-    component: _8be91c34,
+    component: _35337f31,
     name: "value-entertainment"
   }, {
     path: "/value/etc",
-    component: _47cb151c,
+    component: _3e89947d,
     name: "value-etc"
   }, {
     path: "/value/infra_resource",
-    component: _cfc8c2a2,
+    component: _fc158a78,
     name: "value-infra_resource"
   }, {
     path: "/value/manufacture_construction",
-    component: _5f0e9f21,
+    component: _2157e4f6,
     name: "value-manufacture_construction"
   }, {
     path: "/value/public_education",
-    component: _49a50538,
+    component: _95df2f8e,
     name: "value-public_education"
   }, {
     path: "/company/subCompany/Brand",
-    component: _379d9e0a,
+    component: _5df68ae0,
     name: "company-subCompany-Brand"
   }, {
     path: "/",
-    component: _a985eb64,
+    component: _ded9324e,
     name: "index"
   }],
 
