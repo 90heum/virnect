@@ -31,8 +31,8 @@
           </span>
           <i>
             <img
-              src="https://velog.velcdn.com/images/kyj0206/post/436a0f11-e6d3-4dcb-86c1-83f4b425a5e1/image.png"
-              alt="인프라 이미지"
+              src="~/assets/images/pages/value/img_4_big.jpg"
+              alt="엔터테인먼트 이미지"
             />
           </i>
         </div>
