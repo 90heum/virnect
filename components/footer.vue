@@ -341,11 +341,8 @@
                     <u>회사소개서 (PDF)</u>
                   </a>
                 </span>
-                <span>
-                  <a
-                    href="http://13.209.200.75:8080/static/company/product/VIRNECT_Solution_Leaflet_ver_LF.KR2203A.pdf"
-                    target="_blank"
-                  >
+                <span @click="modal()">
+                  <a>
                     <i class="downIcon"
                       ><img
                         src="https://velog.velcdn.com/images/kyj0206/post/82654c80-4c59-4e7e-a9bc-7d5ed7523d93/image.png"
@@ -359,6 +356,7 @@
                     <u>제품소개서 (PDF)</u>
                   </a>
                 </span>
+                <pro-modal :modal="modal" :popup="popup"/>
               </span>
             </span>
           </span>
@@ -493,11 +491,13 @@
 <script>
 import ClickOutside from "vue-click-outside";
 import ModalComponent from "~/components/subscription/modal.vue";
+import ProModal from "./subscription/proModal.vue";
 
 export default {
   components: {
     ModalComponent,
-  },
+    ProModal
+},
   computed: {
     availableLocales() {
       return this.$i18n.locales;
@@ -517,6 +517,7 @@ export default {
     showStyle: {},
     showText: {},
     isModal: false,
+    popup: false,
   }),
   directives: {
     ClickOutside,
@@ -524,6 +525,9 @@ export default {
   methods: {
     handleModal() {
       this.isModal = !this.isModal;
+    },
+    modal() {
+      this.popup = !this.popup;
     },
     scrollToTop() {
       window.scrollTo({ top: 0, behavior: "smooth" });
