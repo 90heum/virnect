@@ -55,7 +55,7 @@
           <ul>
             <li>
               <p>2,569</p>
-              <p>{{ $t("productsText.subBox.download") }} </p>
+              <p>{{ $t("productsText.subBox.download") }}</p>
             </li>
             <li>
               <p>38</p>
@@ -153,6 +153,7 @@
 
     <!-- ㅇㄹㅁㅇㄴㄹ -->
     <heading-module
+      :category="$t('productsText.makeText.funcTitle.category')"
       :title="$t('productsText.makeText.funcTitle.title')"
     ></heading-module>
     <function-part

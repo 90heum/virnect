@@ -10,6 +10,7 @@
       :benefitArr="$t('productsText.remoteText.benefitLists')"
     ></benefit-part> -->
     <heading-module
+      :category="$t('productsText.remoteText.funcTitle.category')"
       :title="$t('productsText.remoteText.funcTitle.title')"
       :id="remoteHeadingModuleId"
     ></heading-module>
