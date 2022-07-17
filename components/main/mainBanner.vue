@@ -71,12 +71,12 @@
     <!-- 배너삽입 -->
     <div class="bannerMoule">
       <span class="banner1024">
-        <a href="#">
+        <a href="/news/detail?id=145&type">
           <img src="~/assets/images/common/contestHome1.png" alt="배너모듈" />
         </a>
       </span>
       <span class="banner768">
-        <a href="#">
+        <a href="/news/detail?id=145&type">
           <img src="~/assets/images/common/homhomhom.png" alt="배너모듈" />
         </a>
       </span>
