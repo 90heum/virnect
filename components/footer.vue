@@ -12,7 +12,7 @@
               />
               <img
                 class="upHover"
-                src="https://velog.velcdn.com/images/kyj0206/post/fcd53b94-13c9-4499-b141-239c5ac68704/image.png"
+                src="~/assets/images/pages/epc/footerTop12.png"
                 alt="upButton"
               />
             </a>
@@ -33,9 +33,7 @@
                   <nuxt-link to="/value/public_education">공공/교육</nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link to="/value/entertainment"
-                    >엔터테인먼트</nuxt-link
-                  >
+                  <nuxt-link to="/value/entertainment">엔터테인먼트</nuxt-link>
                 </li>
                 <li><nuxt-link to="/value/etc">기타</nuxt-link></li>
               </ul>
@@ -96,7 +94,7 @@
         <span class="footerNavMb">
           <span class="infoLogoMb">
             <img
-              src="https://velog.velcdn.com/images/kyj0206/post/d3ed8e90-ece6-44d8-be3c-5e6a93b8a7ec/image.png"
+              src="~/assets/images/pages/epc/footerlogologo.png"
               alt="infoLogo"
             />
           </span>
@@ -105,13 +103,13 @@
               <nuxt-link to="/products/remote">
                 <i
                   ><img
-                    src="https://velog.velcdn.com/images/kyj0206/post/1594992e-d94f-480e-98f0-9f68662b9570/image.png"
+                    src="~/assets/images/pages/epc/footerimage2311.png"
                     alt="Remote"
                 /></i>
                 <p>VIRNECT Remote</p>
                 <i
                   ><img
-                    src="https://velog.velcdn.com/images/kyj0206/post/80ac6d1e-8bf0-400b-aaae-4117151d714d/image.png"
+                    src="~/assets/images/pages/epc/footer1245.png"
                     alt="tap아이콘"
                 /></i>
               </nuxt-link>
@@ -382,9 +380,7 @@
                 ><nuxt-link to="/terms/persnal">개인정보 처리방침</nuxt-link></u
               >
               <u
-                ><nuxt-link to="/terms/charged"
-                  >유료상품 이용약관</nuxt-link
-                ></u
+                ><nuxt-link to="/terms/charged">유료상품 이용약관</nuxt-link></u
               >
             </span>
             <span>
@@ -462,7 +458,9 @@
                   alt="언어선택"
               /></i>
               <div>
-                <span>{{$i18n.localeProperties.code === "ko" ? "KOR" : "ENG"}}</span>
+                <span>{{
+                  $i18n.localeProperties.code === "ko" ? "KOR" : "ENG"
+                }}</span>
                 <i
                   ><img
                     src="https://velog.velcdn.com/images/kyj0206/post/7390c5c2-b41e-4326-88fa-12fee83798e0/image.png"
