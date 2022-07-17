@@ -71,7 +71,7 @@
     <!-- 배너삽입 -->
     <div class="bannerMoule">
       <span class="banner1024">
-        <a href="#">
+        <a href="news/detail?id=145&type">
           <img src="~/assets/images/common/contestHome1.png" alt="배너모듈" />
         </a>
       </span>
@@ -718,7 +718,12 @@ export default {
 }
 .bannerMoule .banner1024 a img {
   width: 100%;
-  box-shadow: 6px 6px 13px #00000040;
+  box-shadow: 4px 4px 8px #00000030;
+  transition: all 0.4s;
+}
+.bannerMoule .banner1024 a img:hover {
+  width: 100%;
+  box-shadow: 12px 12px 20px #00000045;
 }
 .bannerMoule .banner768 {
   display: none;
