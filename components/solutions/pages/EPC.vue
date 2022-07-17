@@ -111,7 +111,7 @@
                 </span>
                 <i>
                   <img
-                    src="https://velog.velcdn.com/images/kyj0206/post/a0ec6526-8ec1-4a7d-ab7b-e4d15014616a/image.jpg"
+                    src="~/assets/images/pages/value/img-value-20@2x.png"
                     alt="kt commerce"
                   />
                   <img
@@ -137,7 +137,7 @@
                   ></p>
                   <i>
                     <img
-                      src="https://velog.velcdn.com/images/kyj0206/post/d5507b21-74d9-4dc1-8da0-de2ff92eb3ad/image.jpg"
+                      src="~/assets/images/pages/value/epc1.png"
                       alt="측위변환SW"
                     />
                   </i>
@@ -153,7 +153,7 @@
                 </span>
                 <i>
                   <img
-                    src="https://velog.velcdn.com/images/kyj0206/post/369ae049-e67b-400d-b4c9-f1b218fe3eb3/image.jpg"
+                    src="~/assets/images/pages/value/img-value-21@2x.png"
                     alt="종근당"
                   />
                   <img
@@ -179,7 +179,7 @@
                   ></p>
                   <i>
                     <img
-                      src="https://velog.velcdn.com/images/kyj0206/post/e3efede0-ab50-4ed0-9edd-61c0f8563e83/image.jpg"
+                      src="~/assets/images/pages/value/epc2.png"
                       alt="AR전시시스템"
                     />
                   </i>
@@ -195,7 +195,7 @@
                 </span>
                 <i>
                   <img
-                    src="https://velog.velcdn.com/images/kyj0206/post/d829c06f-ebe8-459c-91a8-cf8af43e7f5a/image.jpg"
+                    src="~/assets/images/pages/value/img-value-22@2x.png"
                     alt="농협카드"
                   />
                   <img
@@ -221,7 +221,7 @@
                   ></p>
                   <i>
                     <img
-                      src="https://velog.velcdn.com/images/kyj0206/post/c9d90c12-dd3e-4188-9ea1-c32a971b893d/image.jpg"
+                      src="~/assets/images/pages/value/epc3.png"
                       alt="금융상품 AR개발"
                     />
                   </i>
@@ -237,7 +237,7 @@
                 </span>
                 <i>
                   <img
-                    src="https://velog.velcdn.com/images/kyj0206/post/12c16711-6907-4082-b07b-a1228997a240/image.jpg"
+                    src="~/assets/images/pages/value/img-value-23@2x.png"
                     alt="안산병원"
                   />
                   <img
@@ -266,7 +266,7 @@
                   ></p>
                   <i>
                     <img
-                      src="https://velog.velcdn.com/images/kyj0206/post/c418344d-0b0f-464d-840f-d030bfc7e59b/image.jpg"
+                      src="~/assets/images/pages/value/epc4.png"
                       alt="성형외과 수술플랫폼"
                     />
                   </i>
