@@ -682,12 +682,15 @@ export default {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  // 조성우 수정
+  // box-shadow: 6px 6px 13px #00000040;
 }
 .bannerMoule .banner1024 a {
   display: block;
 }
 .bannerMoule .banner1024 a img {
   width: 100%;
+  box-shadow: 6px 6px 13px #00000040;
 }
 .bannerMoule .banner768 {
   display: none;
@@ -697,6 +700,7 @@ export default {
 }
 .bannerMoule .banner768 a img {
   width: 100%;
+  box-shadow: 6px 6px 13px #00000040;
 }
 
 @media screen and (max-width: 768px) {
@@ -706,6 +710,7 @@ export default {
 
   .bannerMoule .banner768 {
     display: block;
+    // box-shadow: 6px 6px 13px #00000040;
   }
 
   .bannerMoule {
