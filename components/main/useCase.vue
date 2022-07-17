@@ -306,7 +306,7 @@ export default {
       justify-content: center;
       flex-direction: row;
       flex-wrap: wrap;
-      height: 100%;
+      height: auto;
       transition: all 0.4s;
       a {
         text-decoration: none;
