@@ -36,13 +36,18 @@
   width: 100%;
 }
 
+.intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listInner{
+  padding: 45px 50px;
+    width: 100%;
+    background: #f7f8f9;
+}
+
 .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li {
   cursor: pointer;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-bottom: solid 1px #c5c8cf;
-  padding: 45px 50px;
   /* &.active {
     .listInner {
       display: block;
@@ -56,10 +61,12 @@
 } */
 
 .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap {
+  padding: 45px 50px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #fff;
 }
 
 .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap span {
@@ -83,13 +90,12 @@
   color: #092e6e;
 }
 
-.intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap span .listInner {
+.intra_usecase .usecaseWrap .usecaseCont .usecaseList>li  .listInner {
   /* display: none; */
   width: 100%;
-  margin-top: 85px;
 }
 
-.intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap span .listInner li p {
+.intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listInner li p {
   font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
@@ -99,11 +105,11 @@
   color: #121212;
 }
 
-.intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap span .listInner li p:nth-last-child(2) {
+.intra_usecase .usecaseWrap .usecaseCont .usecaseList>li  .listInner li p:nth-last-child(2) {
   margin-bottom: 22px;
 }
 
-.intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap span .listInner li i img {
+.intra_usecase .usecaseWrap .usecaseCont .usecaseList>li  .listInner li i img {
   display: block;
   max-width: 455px;
   width: 100%;
@@ -175,7 +181,7 @@
     position: relative;
   }
 
-  .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li.active .listWrap span>p::after {
+  .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listInner::after {
     content: "";
     display: block;
     position: absolute;
@@ -188,10 +194,6 @@
     border-left: none;
     padding-left: 0;
     justify-content: flex-end;
-  }
-
-  .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap span .listInner {
-    margin-top: 35px;
   }
 
   .intra_usecase .usecaseWrap .usecaseTit h2 {
@@ -219,12 +221,8 @@
     color: #092e6e;
   }
 
-  .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li.active {
-    height: 584px;
-  }
-
-  .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap span .listInner {
-    position: absolute;
+  .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listInner {
+    // position: absolute;
     top: 110px;
     width: 100%;
   }
@@ -239,7 +237,7 @@
     flex-direction: column;
   }
 
-  .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap span .listInner li p:nth-last-child(2) {
+  .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listInner li p:nth-last-child(2) {
     margin-bottom: 7px;
   }
 
@@ -247,7 +245,7 @@
     padding: 20px 20px 0;
   }
 
-  .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li.active .listWrap span .listInner {
+  .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li.active .listInner {
     top: 235px;
   }
 
@@ -255,7 +253,7 @@
     padding: 20px;
   }
 
-  .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap span .listInner li i img {
+  .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listInner li i img {
     width: 100%;
     height: 166px;
   }
@@ -280,7 +278,7 @@
     top: 235px;
   }
 
-  .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap span .listInner li i img {
+  .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listInner li i img {
     margin: 0 auto;
   }
 

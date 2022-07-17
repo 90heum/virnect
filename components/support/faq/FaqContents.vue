@@ -78,7 +78,11 @@ export default {
   methods: {
     chooseDetail(e) {
       this.isDetail = this.isDetail === e ? null : e;
-      this.$router.push(`?type=${e ? e : ''}${this.isCategory ? '&category=' + this.isCategory : ''}`);
+      this.$router.push(
+        `?type=${e ? e : ""}${
+          this.isCategory ? "&category=" + this.isCategory : ""
+        }`
+      );
       // this.requestData(this.isDetail);
     },
     async requestData(e) {
@@ -160,6 +164,7 @@ export default {
         &:first-child {
           flex: 1;
           text-align: left;
+          min-width: 140px;
           padding: 30px;
           p {
             border-radius: 12px;
@@ -265,6 +270,199 @@ export default {
     &:nth-last-child(2) {
       margin-bottom: 50px;
     }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .FAQList .FAQListInnerWrap > ul:first-child {
+    padding-top: 20px;
+  }
+  .FAQList .FAQListInnerWrap > ul li[data-v-caca98e8]:last-child {
+    padding: 10px 5px 10px 5px;
+  }
+  .FAQList .FAQListInnerWrap > ul li:nth-child(2) p {
+    margin-left: 20px;
+  }
+
+  .LearningCenterList
+    .userBox
+    .userBoxCont
+    > a
+    span.listInfo
+    span:nth-child(2) {
+    margin-bottom: 10px;
+  }
+
+  .noticeList > ul:first-child {
+    display: none;
+  }
+
+  .FAQList .FAQListInnerWrap > ul ul,
+  .FAQList .FAQListInnerWrap > ul > li:first-child {
+    width: 100%;
+  }
+
+  .noticeList > ul:nth-child(2) {
+    border-top: 1px solid #616161;
+  }
+
+  .noticeList > ul li:last-child {
+    display: none;
+  }
+
+  .FAQList .FAQListInnerWrap > ul,
+  .noticeList > ul {
+    gap: 5px;
+  }
+
+  .FAQList .FAQListInnerWrap > ul li:first-child,
+  .noticeList > ul li:first-child {
+    min-width: 85px;
+    padding: 0 0 25px 0;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #616161;
+  }
+
+  .FAQList .FAQListInnerWrap > ul ul li:first-child,
+  .FAQList .FAQListInnerWrap > ul ul li:last-child,
+  .FAQList .FAQListInnerWrap > ul li:nth-child(2),
+  .noticeList > ul li:nth-child(2) {
+    padding: 25px 0;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #616161;
+  }
+
+  .FAQList .FAQListInnerWrap > ul ul li:first-child p,
+  .FAQList .FAQListInnerWrap > ul ul li:last-child {
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: #616161;
+  }
+
+  .LearningCenter .centerModule {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 40px;
+  }
+
+  .LearningCenter .centerModule .centerModuleMore {
+    justify-content: center;
+  }
+
+  .LearningCenter .centerModule .centerModuleMore,
+  .LearningCenter .centerModule .centerModuleTit {
+    width: 100%;
+  }
+
+  .FAQList .FAQListInnerWrap > ul li:first-child p {
+    max-width: 85px;
+    min-width: 85px;
+    padding: 10px;
+  }
+
+  .LearningCenter .centerModule .centerModuleMore span:last-child p,
+  .LearningCenter .centerModule .centerModuleMore span:first-child p {
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.18px;
+    color: #092e6e;
+  }
+
+  .LearningCenter .centerModule .centerModuleTit h2 {
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: -0.23px;
+    text-align: center;
+    color: #092e6e;
+  }
+
+  .LearningCenterList .userBox .userBoxCont > div,
+  .LearningCenterList .tutorialBox .tutorialBoxCont > div,
+  .LearningCenterList .guideBox .guideBoxCont > div {
+    width: 100%;
+    margin-right: 0 !important;
+  }
+
+  .LearningCenterList .userBox .userBoxCont > a,
+  .LearningCenterList .tutorialBox .tutorialBoxCont > a,
+  .LearningCenterList .guideBox .guideBoxCont > a {
+    max-height: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contContMenu > span:first-child .formWrap {
+    min-height: 1725px;
+  }
+
+  .contContMenu > span.contactTabActive3 .formTab ul {
+    flex-wrap: wrap;
+  }
+  .contContMenu > span.contactTabActive3 .formTab ul li {
+    width: 50%;
+    border: 1px solid #ccc;
+    padding: 15px 10px;
+  }
+
+  .contContMenu > span.contactTabActive3 .formTab ul li.active,
+  .contContMenu > span.contactTabActive3 .formTab ul li:hover {
+    background-color: #092e6e;
+    border: 1px solid #092e6e;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .FAQList .FAQListInnerWrap > ul li:first-child p {
+    font-size: 10px;
+  }
+  .LearningCenterMbAside,
+  .LearningCenterMbAside ul,
+  .FAQMbAside,
+  .FAQMbAside ul,
+  .noticeMbAside,
+  .noticeMbAside ul {
+    max-width: none;
+  }
+
+  .LearningCenterMbAside,
+  .FAQMbAside,
+  .noticeMbAside {
+    position: relative;
+  }
+
+  .LearningCenterMbAside ul,
+  .FAQMbAside ul,
+  .noticeMbAside ul {
+    box-sizing: content-box;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .contContMenu > span:first-child .formWrap {
+    min-height: 1750px;
   }
 }
 </style>

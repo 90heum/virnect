@@ -307,11 +307,13 @@ export default {
       flex-direction: row;
       flex-wrap: wrap;
       height: 100%;
+      transition: all 0.4s;
       a {
         text-decoration: none;
       }
       .energyWrap {
         .energyHover {
+          transition: all 0.4s;
           background-color: #022158;
           display: none;
           a {

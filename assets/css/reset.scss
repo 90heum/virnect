@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 * {
-  transition: 0.4s;
+  transition: all 0.3s;
 }
 
 
@@ -94,6 +94,7 @@ video {
   vertical-align: baseline;
   box-sizing: border-box;
   word-break: keep-all;
+  transition: all 0.3s;
 }
 
 /* a-style */

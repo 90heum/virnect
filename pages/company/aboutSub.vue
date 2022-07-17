@@ -103,7 +103,7 @@ span {
     margin: 0 auto;
     max-width: 1260px;
     width: 100%;
-    padding: 151px 30px;
+    padding: 150px 0 0;
     > ul {
       display: flex;
       margin-bottom: 100px;
@@ -370,6 +370,12 @@ span {
         }
       }
     }
+  }
+}
+
+@media screen and(max-width: 768px) {
+  span.contactContTab{
+    padding: 90px 24px;
   }
 }
 </style>

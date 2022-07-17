@@ -153,7 +153,7 @@
               >
                 <nuxt-link :to="`/news/detail?id=${data.id}&type`">
                   <span>
-                    <img :src="`${data.thumbnail}`" alt="뉴스리스트 이미지" />
+                    <img :src="`data:image/png;base64,${data.thumbnail}`" alt="뉴스리스트 이미지" />
                   </span>
                   <span>
                     {{
@@ -622,6 +622,8 @@ export default {
         > span {
           display: flex;
           width: 100%;
+          transition: all 0.4s;
+          
           &:first-child {
             justify-content: space-between;
             margin-bottom: 30px;
@@ -643,11 +645,15 @@ export default {
                   text-align: right;
                   color: #9a9da3;
                 }
+                p:hover {
+                  color: #444547;
+                }
                 i {
                   img {
                     max-width: 13px;
                     width: 100%;
                   }
+                  
                 }
               }
             }
@@ -669,6 +675,11 @@ export default {
                       margin-bottom: 18px;
                       img {
                         width: 100%;
+                        border: 2px solid #fff;
+                        transition: all 0.3s;
+                      }
+                      img:hover {
+                        border: 2px solid #121212;
                       }
                     }
                     &:nth-child(2) {
@@ -710,6 +721,9 @@ export default {
           text-decoration: none;
         }
       }
+      // 조성우 추가
+      
+      // 조성우 추가 끝
     }
 
     // 인증 및 수상 모듈
