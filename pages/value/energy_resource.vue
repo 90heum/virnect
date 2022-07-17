@@ -1,7 +1,7 @@
 <template>
   <section class="products-section">
     <sub-visual-section
-      :image="visualText.image"
+      :image="require('~/assets/images/pages/solution/img-products-main.png')"
       :category="visualText.category"
       :title="$t('solutionText.visualText.title')"
       :contents="$t('solutionText.visualText.contents')"
@@ -44,8 +44,7 @@ export default {
   data() {
     return {
       visualText: {
-        image:
-          "https://image.virnect.com/images/pages/solution/img-products-main.png",
+        image: " ",
         category: "Value",
       },
       tailText: {
