@@ -323,11 +323,8 @@
                 </button>
               </span>
               <span class="downLoad">
-                <span>
-                  <a
-                    href="http://13.209.200.75:8080/static/company/company/220221_VIRNECT_Brochure.pdf "
-                    target="_blank"
-                  >
+                <span @click="comModal()">
+                  <a>
                     <i class="downIcon"
                       ><img
                         src="https://velog.velcdn.com/images/kyj0206/post/82654c80-4c59-4e7e-a9bc-7d5ed7523d93/image.png"
@@ -341,6 +338,7 @@
                     <u>회사소개서 (PDF)</u>
                   </a>
                 </span>
+                <com-modal :comModal="comModal" :comPopup="comPopup" />
                 <span @click="modal()">
                   <a>
                     <i class="downIcon"
@@ -492,11 +490,13 @@
 import ClickOutside from "vue-click-outside";
 import ModalComponent from "~/components/subscription/modal.vue";
 import ProModal from "./subscription/proModal.vue";
+import ComModal from "./subscription/comModal.vue";
 
 export default {
   components: {
     ModalComponent,
-    ProModal
+    ProModal,
+    ComModal
 },
   computed: {
     availableLocales() {
@@ -518,6 +518,7 @@ export default {
     showText: {},
     isModal: false,
     popup: false,
+    comPopup: false,
   }),
   directives: {
     ClickOutside,
@@ -528,6 +529,9 @@ export default {
     },
     modal() {
       this.popup = !this.popup;
+    },
+    comModal() {
+      this.comPopup = !this.comPopup;
     },
     scrollToTop() {
       window.scrollTo({ top: 0, behavior: "smooth" });
