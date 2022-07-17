@@ -222,9 +222,11 @@
           </span>
         </div>
       </section>
+
       <section class="customers">
         <div class="customersInner">
           <span class="customersTit">
+            <div class="marginRanger"></div>
             <h2>CUSTOMERS</h2>
             <p>{{ $t("customersContent.content") }}</p>
           </span>
@@ -667,6 +669,42 @@
                 />
               </li>
             </ul>
+          </span>
+        </div>
+      </section>
+      <section class="customers">
+        <div class="customersInner">
+          <span class="customersTit">
+            <h2>PARTNERS</h2>
+            <span class="customersCont">
+              <ul class="customerContTab"></ul>
+              <ul class="customerContCont">
+                <li>
+                  <img
+                    src="~/assets/images/pages/epc/partners-1@2x.png"
+                    alt="kt"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="~/assets/images/pages/epc/partners-2@2x.png"
+                    alt="kt"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="~/assets/images/pages/epc/partners-3@2x.png"
+                    alt="kt"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="~/assets/images/pages/epc/partners-4@2x.png"
+                    alt="kt"
+                  />
+                </li>
+              </ul>
+            </span>
           </span>
         </div>
       </section>
