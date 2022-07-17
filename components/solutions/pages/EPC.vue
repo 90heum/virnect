@@ -105,7 +105,9 @@
             <li class="active">
               <div class="listWrap">
                 <span>
-                  <p @click="showMenu(1)">상대측위, 절대측위 변환 SW</p>
+                  <p @click="showMenu(1)">
+                    {{ $t("ValueText.ValueEPCUseCaseText.title1") }}
+                  </p>
                 </span>
                 <i>
                   <img
@@ -125,14 +127,14 @@
                   />
                 </i>
               </div>
-              <ul class="listInner" v-if="menu===1">
+              <ul class="listInner" v-if="menu === 1">
                 <li>
-                  <p>
-                    - 출발 지점, 이동방향에 구애 받지 않고 목적지로 안내 가능
-                  </p>
-                  <p>
-                    - Core 기술을 통한 Navigation 기능 구현에 필요한 기술 입증
-                  </p>
+                  <p
+                    v-html="$t('ValueText.ValueEPCUseCaseText.contents1-1')"
+                  ></p>
+                  <p
+                    v-html="$t('ValueText.ValueEPCUseCaseText.contents1-2')"
+                  ></p>
                   <i>
                     <img
                       src="https://velog.velcdn.com/images/kyj0206/post/d5507b21-74d9-4dc1-8da0-de2ff92eb3ad/image.jpg"
@@ -145,7 +147,9 @@
             <li>
               <div class="listWrap">
                 <span>
-                  <p @click="showMenu(2)">스마트글라스기반 AR전시시스템</p>
+                  <p @click="showMenu(2)">
+                    {{ $t("ValueText.ValueEPCUseCaseText.title1") }}
+                  </p>
                 </span>
                 <i>
                   <img
@@ -165,13 +169,14 @@
                   />
                 </i>
               </div>
-              <ul class="listInner" v-if="menu===2">
+              <ul class="listInner" v-if="menu === 2">
                 <li>
-                  <p>- AR시각화로 합병증 정보를 연관지어 정확한 정보를 전달</p>
-                  <p>
-                    - 몰입형 체험이 가능하고 전시 체험자가 정보에 대한 이해가
-                    빨라짐
-                  </p>
+                  <p
+                    v-html="$t('ValueText.ValueEPCUseCaseText.contents2-1')"
+                  ></p>
+                  <p
+                    v-html="$t('ValueText.ValueEPCUseCaseText.contents2-2')"
+                  ></p>
                   <i>
                     <img
                       src="https://velog.velcdn.com/images/kyj0206/post/e3efede0-ab50-4ed0-9edd-61c0f8563e83/image.jpg"
@@ -184,7 +189,9 @@
             <li>
               <div class="listWrap">
                 <span>
-                  <p @click="showMenu(3)">금융상품 AR콘텐츠 개발</p>
+                  <p @click="showMenu(3)">
+                    {{ $t("ValueText.ValueEPCUseCaseText.title3") }}
+                  </p>
                 </span>
                 <i>
                   <img
@@ -204,14 +211,14 @@
                   />
                 </i>
               </div>
-              <ul class="listInner" v-if="menu===3">
+              <ul class="listInner" v-if="menu === 3">
                 <li>
-                  <p>
-                    - 행사장에서 고객이 AR콘텐츠를 직접 체험하여 홍보효과가 높음
-                  </p>
-                  <p>
-                    - 복잡한 설명서 없이 간단한 절차로 상품에 대한 이해도가 빠름
-                  </p>
+                  <p
+                    v-html="$t('ValueText.ValueEPCUseCaseText.contents3-1')"
+                  ></p>
+                  <p
+                    v-html="$t('ValueText.ValueEPCUseCaseText.contents3-2')"
+                  ></p>
                   <i>
                     <img
                       src="https://velog.velcdn.com/images/kyj0206/post/c9d90c12-dd3e-4188-9ea1-c32a971b893d/image.jpg"
@@ -224,7 +231,9 @@
             <li>
               <div class="listWrap">
                 <span>
-                  <p @click="showMenu(4)">증강현실 기술 기반의 성형외과 수술 플랫폼</p>
+                  <p @click="showMenu(4)">
+                    {{ $t("ValueText.ValueEPCUseCaseText.title4") }}
+                  </p>
                 </span>
                 <i>
                   <img
@@ -244,17 +253,17 @@
                   />
                 </i>
               </div>
-              <ul class="listInner" v-if="menu===4">
+              <ul class="listInner" v-if="menu === 4">
                 <li>
-                  <p>- 수술 시 참고하는 환자의 CT파일을 AR로 시각화</p>
-                  <p>
-                    - 고개를 돌리지 않아도 한눈에 환자와 정보를 볼 수 있어
-                    효율성 증가
-                  </p>
-                  <p>
-                    - 두 손이 자유롭고 만지지 않고 인터랙션이 가능해 위생적 문제
-                    해결
-                  </p>
+                  <p
+                    v-html="$t('ValueText.ValueEPCUseCaseText.contents4-1')"
+                  ></p>
+                  <p
+                    v-html="$t('ValueText.ValueEPCUseCaseText.contents4-2')"
+                  ></p>
+                  <p
+                    v-html="$t('ValueText.ValueEPCUseCaseText.contents4-3')"
+                  ></p>
                   <i>
                     <img
                       src="https://velog.velcdn.com/images/kyj0206/post/c418344d-0b0f-464d-840f-d030bfc7e59b/image.jpg"
@@ -327,7 +336,7 @@ export default {
   },
   data() {
     return {
-      menu:1,
+      menu: 1,
 
       filedData,
       moduleData,
@@ -399,10 +408,10 @@ export default {
     };
   },
   methods: {
-    showMenu(e){
+    showMenu(e) {
       this.menu = e;
-    }
-  }
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>

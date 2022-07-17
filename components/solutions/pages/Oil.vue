@@ -147,7 +147,9 @@
             <li class="active">
               <div class="listWrap">
                 <span>
-                  <p @click="showMenu(1)">AR 원격 기술 지원 솔루션 적용</p>
+                  <p @click="showMenu(1)">
+                    {{ $t("ValueText.ValueOilUseCaseText.title1") }}
+                  </p>
                 </span>
                 <i>
                   <img
@@ -169,14 +171,15 @@
               </div>
               <ul class="listInner" v-if="menu === 1">
                 <li>
-                  <p>- 전문가의 출장 비용 및 현장 작업자의 교육 비용 절감</p>
-                  <p>
-                    - 현장 작업자가 직관적인 원격 지원을 받음으로써 생산성 향상
-                  </p>
-                  <p>
-                    - 현장 작업자가 지시를 받음과 동시에 양 손이 자유롭게
-                    작업함으로써 작업 시간 단축
-                  </p>
+                  <p
+                    v-html="$t('ValueText.ValueOilUseCaseText.contents1-1')"
+                  ></p>
+                  <p
+                    v-html="$t('ValueText.ValueOilUseCaseText.contents1-2')"
+                  ></p>
+                  <p
+                    v-html="$t('ValueText.ValueOilUseCaseText.contents1-3')"
+                  ></p>
                   <i>
                     <img
                       src="https://velog.velcdn.com/images/kyj0206/post/0a5482a3-7e31-4075-b725-d5fdedd54dce/image.jpg"
@@ -189,7 +192,9 @@
             <li>
               <div class="listWrap">
                 <span>
-                  <p @click="showMenu(2)">AR 원격 기술 지원 솔루션 적용</p>
+                  <p @click="showMenu(2)">
+                    {{ $t("ValueText.ValueOilUseCaseText.title2") }}
+                  </p>
                 </span>
                 <i>
                   <img
@@ -211,12 +216,16 @@
               </div>
               <ul class="listInner" v-if="menu === 2">
                 <li>
-                  <p>
-                    - 생산 설비 문제 발생 시, 즉각적 대처가 가능해짐으로써 큰
-                    사고 방지
-                  </p>
-                  <p>- 유지보수, 점검 등을 원격으로 지원함으로써 비용 절감</p>
-                  <p>- 해외 사업장에 AR솔루션을 적용함으로써 생산성 향상</p>
+                  <p
+                    v-html="$t('ValueText.ValueOilUseCaseText.contents2-1')"
+                  ></p>
+                  <p
+                    v-html="$t('ValueText.ValueOilUseCaseText.contents2-2')"
+                  ></p>
+                  <p
+                    v-html="$t('ValueText.ValueOilUseCaseText.contents2-3')"
+                  ></p>
+
                   <i>
                     <img
                       src="https://velog.velcdn.com/images/kyj0206/post/7859c441-1f57-4ed4-b607-5bc2f9304823/image.jpg"
@@ -229,7 +238,9 @@
             <li>
               <div class="listWrap">
                 <span>
-                  <p @click="showMenu(3)">AR 기반 IoT 센서 정보 연동 시각화</p>
+                  <p @click="showMenu(3)">
+                    {{ $t("ValueText.ValueOilUseCaseText.title3") }}
+                  </p>
                 </span>
                 <i>
                   <img
@@ -245,14 +256,19 @@
                     class="hover"
                     src="https://velog.velcdn.com/images/kyj0206/post/198b9aa4-f609-4154-9726-c6e765ee2052/image.png"
                     alt="hover"
-                     @click="showMenu(3)"
+                    @click="showMenu(3)"
                   />
                 </i>
               </div>
               <ul class="listInner" v-if="menu === 3">
                 <li>
-                  <p>- 시각화 정보를 통해 데모공장 구조에 대한 이해도를 높임</p>
-                  <p>- 현장에서 공장 정보관리 효율성 증대</p>
+                  <p
+                    v-html="$t('ValueText.ValueOilUseCaseText.contents3-1')"
+                  ></p>
+                  <p
+                    v-html="$t('ValueText.ValueOilUseCaseText.contents3-2')"
+                  ></p>
+
                   <i>
                     <img
                       src="https://velog.velcdn.com/images/kyj0206/post/827c3208-6e1a-4d1c-a829-1c1303c46713/image.jpg"
@@ -265,7 +281,9 @@
             <li>
               <div class="listWrap">
                 <span>
-                  <p @click="showMenu(4)">해외 생산 공장 원격 기술 지원</p>
+                  <p @click="showMenu(4)">
+                    {{ $t("ValueText.ValueOilUseCaseText.title4") }}
+                  </p>
                 </span>
                 <i>
                   <img
@@ -287,11 +305,9 @@
               </div>
               <ul class="listInner" v-if="menu === 4">
                 <li>
-                  <p>
-                    - 한국 본사와 해외 지사를 원격지원을 함으로써 출장 비용 감소
-                    AR을 기반으로 확실한 지시를 내림으로써 해외 지사의 직관적인
-                    이해를 통한 생산성 향상
-                  </p>
+                  <p
+                    v-html="$t('ValueText.ValueOilUseCaseText.contents4-1')"
+                  ></p>
                   <i>
                     <img
                       src="https://velog.velcdn.com/images/kyj0206/post/65c80453-a5d7-46e5-958c-b0009aedf3b8/image.jpg"
@@ -304,7 +320,9 @@
             <li>
               <div class="listWrap">
                 <span>
-                  <p @click="showMenu(5)">배선 설계 시각화 어플리케이션 개발</p>
+                  <p @click="showMenu(5)">
+                    {{ $t("ValueText.ValueOilUseCaseText.title5") }}
+                  </p>
                 </span>
                 <i>
                   <img
@@ -326,8 +344,12 @@
               </div>
               <ul class="listInner" v-if="menu === 5">
                 <li>
-                  <p>- AR 시각화를 통해 빠르고 정확한 배선 작업 가능</p>
-                  <p>- XR 가이드로 작업자의 작업능률 향상 기대</p>
+                  <p
+                    v-html="$t('ValueText.ValueOilUseCaseText.contents5-1')"
+                  ></p>
+                  <p
+                    v-html="$t('ValueText.ValueOilUseCaseText.contents5-2')"
+                  ></p>
                   <i>
                     <img
                       src="https://velog.velcdn.com/images/kyj0206/post/7c9cd4ba-a553-40a2-b268-90949b78b640/image.jpg"
@@ -452,7 +474,7 @@ export default {
     };
   },
   methods: {
-    showMenu(e){
+    showMenu(e) {
       this.menu = e;
     },
   },
