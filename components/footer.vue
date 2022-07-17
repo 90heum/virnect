@@ -462,7 +462,7 @@
                   alt="언어선택"
               /></i>
               <div>
-                <span>KOR</span>
+                <span>{{$i18n.localeProperties.code === "ko" ? "KOR" : "ENG"}}</span>
                 <i
                   ><img
                     src="https://velog.velcdn.com/images/kyj0206/post/7390c5c2-b41e-4326-88fa-12fee83798e0/image.png"
