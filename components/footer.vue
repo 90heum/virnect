@@ -322,6 +322,7 @@
                   <nuxt-link to="/support/inquiry"> 문의하기 </nuxt-link>
                 </button>
               </span>
+              <com-modal :comModal="comModal" :comPopup="comPopup" />
               <span class="downLoad">
                 <span @click="comModal()">
                   <a>
@@ -338,7 +339,6 @@
                     <u>회사소개서 (PDF)</u>
                   </a>
                 </span>
-                <com-modal :comModal="comModal" :comPopup="comPopup" />
                 <span @click="modal()">
                   <a>
                     <i class="downIcon"

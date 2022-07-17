@@ -576,6 +576,7 @@ export default {
         }
         &.virnectModule3 {
           a {
+            cursor: pointer;
             display: flex;
             align-items: center;
             flex-direction: row-reverse;
