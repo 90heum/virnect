@@ -377,12 +377,12 @@
         <div class="footerBottomInner">
           <div class="bottomInnerLeft">
             <span>
-              <u><nuxt-link to="/policy/Terms">서비스 이용약관</nuxt-link></u>
+              <u><nuxt-link to="/terms/service">서비스 이용약관</nuxt-link></u>
               <u
-                ><nuxt-link to="/policy/Policy">개인정보 처리방침</nuxt-link></u
+                ><nuxt-link to="/terms/persnal">개인정보 처리방침</nuxt-link></u
               >
               <u
-                ><nuxt-link to="/policy/Payment"
+                ><nuxt-link to="/terms/charged"
                   >유료상품 이용약관</nuxt-link
                 ></u
               >

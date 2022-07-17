@@ -89,7 +89,7 @@ export default {
     },
     data() {
         return {
-            type: 1,
+            type: 2,
             toggle: false,
             dateIdx: 0,
             contentData: null
@@ -197,6 +197,7 @@ export default {
             font-size: 16px;
             background: #fff;
             border: 1px solid #eaedf3;
+            cursor: pointer;
         }
         .active {
             color: #fafbfc;
@@ -231,6 +232,24 @@ export default {
             text-indent: -13px;
             margin-top: 16px;
             color: #0D2A58;
+        }
+    }
+
+     @media screen and (max-width: 1200px) {
+        .termsTypeWrapper {
+            overflow-x: scroll;
+            position: fixed;
+            width: 100%;
+            max-width: 450px;
+            top: 77px;
+        }
+        .termsTypeWrapper .termsTypeBox {
+            z-index: 99;
+            padding: 12px 20px;
+            font-size: 14px;
+            border-bottom: 0;
+            min-width: 150px;
+            cursor: pointer;
         }
     }
 }
