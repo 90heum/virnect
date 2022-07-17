@@ -122,7 +122,6 @@
         <span class="usecaseCont">
           <ul class="usecaseList">
             <li class="active"
-
             >
               <div class="listWrap">
                 <span>
@@ -166,7 +165,12 @@
                   />
                 </i>
               </div>
-              <ul class="listInner" v-if="menu === 1">
+            </li>
+            <li>
+              <div class="listWrap">
+                <span>
+                  <p @click="showMenu(2)">발전소 디지털트윈 O&M 시스템 개발</p>
+                  <ul class="listInner" v-if="menu === 2">
                     <li>
                       <p>
                         - 발전소 내 데이터를 관리함으로써 작업 오류 감소 및 예방
@@ -178,18 +182,12 @@
                       </p>
                       <i>
                         <img
-                          src="https://velog.velcdn.com/images/kyj0206/post/983bd062-8e99-44d0-8eb1-53ac5ba59e77/image.png"
+                          src="https://velog.velcdn.com/images/kyj0206/post/57c29367-7d69-4433-aec0-170881cf98e7/image.png"
                           alt="협업솔루션"
                         />
                       </i>
                     </li>
                   </ul>
-            </li>
-            <li>
-              <div class="listWrap">
-                <span>
-                  <p @click="showMenu(2)">발전소 디지털트윈 O&M 시스템 개발</p>
-
                 </span>
                 <i>
                   <img
@@ -210,7 +208,12 @@
                   />
                 </i>
               </div>
-                                <ul class="listInner" v-if="menu === 2">
+            </li>
+            <li>
+              <div class="listWrap">
+                <span>
+                  <p @click="showMenu(3)">AR기반 구조물 안정성 검증 솔루션</p>
+                  <ul class="listInner" v-if="menu === 3">
                     <li>
                       <p>
                         - 발전소 내 데이터를 관리함으로써 작업 오류 감소 및 예방
@@ -222,17 +225,12 @@
                       </p>
                       <i>
                         <img
-                          src="https://velog.velcdn.com/images/kyj0206/post/57c29367-7d69-4433-aec0-170881cf98e7/image.png"
+                          src="https://velog.velcdn.com/images/kyj0206/post/6b0d4487-2a22-4b41-9d3f-3486634422eb/image.png"
                           alt="협업솔루션"
                         />
                       </i>
                     </li>
                   </ul>
-            </li>
-            <li>
-              <div class="listWrap">
-                <span>
-                  <p @click="showMenu(3)">AR기반 구조물 안정성 검증 솔루션</p>
                 </span>
                 <i>
                   <img
@@ -254,12 +252,10 @@
                 </i>
               </div>
             </li>
-            
             <li>
               <div class="listWrap">
                 <span>
                   <p @click="showMenu(4)">생산기지 자율주행로봇(SPOT) 현장적용 검증 용역</p>
-                </span>
                   <ul class="listInner" v-if="menu === 4">
                     <li>
                       <p>
@@ -272,20 +268,12 @@
                       </p>
                       <i>
                         <img
-                          src="https://velog.velcdn.com/images/kyj0206/post/6b0d4487-2a22-4b41-9d3f-3486634422eb/image.png"
+                          src="https://velog.velcdn.com/images/kyj0206/post/14731540-0a65-494d-a057-5b20e5df1423/image.png"
                           alt="협업솔루션"
                         />
                       </i>
                     </li>
                   </ul>
-                </div>
-            </li>
-
-            <li>
-              <div class="listWrap">
-                <span>
-                  <p @click="showMenu(4)">생산기지 자율주행로봇(SPOT) 현장적용 검증 용역</p>
-                  
                 </span>
                 <i>
                   <img
@@ -306,7 +294,12 @@
                   />
                 </i>
               </div>
-              <ul class="listInner" v-if="menu === 4">
+            </li>
+            <li>
+              <div class="listWrap">
+                <span>
+                  <p @click="showMenu(5)">3D Visualization System 기능 개선</p>
+                  <ul class="listInner" v-if="menu === 5">
                     <li>
                       <p>
                         - 발전소 내 데이터를 관리함으로써 작업 오류 감소 및 예방
@@ -318,18 +311,12 @@
                       </p>
                       <i>
                         <img
-                          src="https://velog.velcdn.com/images/kyj0206/post/14731540-0a65-494d-a057-5b20e5df1423/image.png"
+                          src="https://velog.velcdn.com/images/kyj0206/post/280eb101-f01e-4c58-a109-7ed23728838c/image.png"
                           alt="협업솔루션"
                         />
                       </i>
                     </li>
                   </ul>
-            </li>
-            <li>
-              <div class="listWrap">
-                <span>
-                  <p @click="showMenu(5)">3D Visualization System 기능 개선</p>
-                  
                 </span>
                 <i>
                   <img
@@ -350,24 +337,6 @@
                   />
                 </i>
               </div>
-              <ul class="listInner" v-if="menu === 5">
-                    <li>
-                      <p>
-                        - 발전소 내 데이터를 관리함으로써 작업 오류 감소 및 예방
-                      </p>
-                      <p>- 복잡한 발전소 설비의 효율적인 유지관리 가능</p>
-                      <p>
-                        - 작업자에게 정확한 지시 사항 제공으로 현장 안전사고
-                        감소
-                      </p>
-                      <i>
-                        <img
-                          src="https://velog.velcdn.com/images/kyj0206/post/280eb101-f01e-4c58-a109-7ed23728838c/image.png"
-                          alt="협업솔루션"
-                        />
-                      </i>
-                    </li>
-                  </ul>
             </li>
           </ul>
         </span>
