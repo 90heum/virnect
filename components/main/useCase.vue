@@ -20,7 +20,7 @@
         </span>
       </div>
       <div class="useCaseCont">
-        <!-- 에너지/지원 -->
+        <!-- 인프라/지원 -->
         <div class="energyWrap">
           <span class="energy">
             <span>
@@ -39,7 +39,7 @@
               />
             </span>
           </span>
-          <!-- 에너지/지원 호버 -->
+          <!-- 인프라/지원 호버 -->
           <span class="energyHover">
             <nuxt-link to="/value/infra_resource">
               <span>
