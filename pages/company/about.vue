@@ -15,6 +15,7 @@
           : $t('companyText.visualText.contents')
       "
     ></sub-visual-section>
+ 
     <SubMenu />
     <AboutSub />
     <!-- <transition name="app-fade" mode="out-in">
