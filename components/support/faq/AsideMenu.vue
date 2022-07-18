@@ -42,6 +42,7 @@ export default {
         asideMenuList: Array,
         chooseType: Function,
         isType: [Number, Boolean],
+        isCategory: [Number, Boolean]
     },
     data() {
         return {
@@ -51,12 +52,14 @@ export default {
     methods: {
         handleMobileTab (e) {
             this.isToggle = !this.isToggle;
-            this.$router.push(`?type=${e ? e : ''}${this.$route.query.category ? '&category=' + this.$route.query.category : ''}`);
+            this.$router.push(`?type=${e ? e : ''}${this.isCategory ? '&category=' + this.isCategory : ''}`);
             // this.chooseType(e);
         },
     }
 }
 </script>
+
+
 
 
 <style lang="scss" scoped>

@@ -33,11 +33,11 @@
                                    :pagingData="pagingData"
                                    :movePage="movePage"
                                    :chooseTypeMenu="chooseTypeMenu"/>
-                    <video-real-guide :contentList="contentList.guide||contentList.supportLearningResponseList"
+                    <!-- <video-real-guide :contentList="contentList.guide||contentList.supportLearningResponseList"
                                       :isDetailList="isTypeMenu"
                                       :pagingData="pagingData"
                                       :movePage="movePage"
-                                      :chooseTypeMenu="chooseTypeMenu"/>
+                                      :chooseTypeMenu="chooseTypeMenu"/> -->
                 </span>
         </div>
     </div>

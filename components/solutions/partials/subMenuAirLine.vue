@@ -1,19 +1,25 @@
 <template>
-  <div class="SubMenuUse">
-    <ul class="SubMenuNav">
-      <li>
+  <div id="menu_re" class="SubMenuUse">
+    <span class="SubMenuMobileTitle"
+          @click="handleToggle()">
+      <span>엔터테인먼트</span>
+      <i><img src="require(~/assets/images/pages/down.png)"/></i>
+    </span>
+    <ul :class="`SubMenuNav ${toggle ? 'mobileActive' : ''}`"
+        @click="handleToggle()">
+      <li class="subMenu">
         <nuxt-link to="/value/infra_resource"> 인프라/자원 </nuxt-link>
       </li>
-      <li>
+      <li class="SubUseNavActive subMenu">
         <nuxt-link to="/value/manufacture_construction"> 제조/건설 </nuxt-link>
       </li>
-      <li>
+      <li class="subMenu">
         <nuxt-link to="/value/public_education"> 공공/교육 </nuxt-link>
       </li>
-      <li class="SubUseNavActive">
+      <li class="subMenu">
         <nuxt-link to="/value/entertainment"> 엔터테인먼트 </nuxt-link>
       </li>
-      <li>
+      <li class="subMenu">
         <nuxt-link to="/value/etc"> 기타 </nuxt-link>
       </li>
     </ul>
@@ -22,17 +28,50 @@
 
 <script>
 export default {
+  data() {
+    return {
+      toggle: false,
+      // isWeb: true
+    }
+  },
+  // mounted() {
+  //   window.addEventListener('resize', this.handleResize);
+	// },
+  // beforeDestroy() {
+  //   window.removeEventListener('resize', this.handleResize);
+  // },
   created() {
     setTimeout(() => {
-      /* if(process.client)document.querySelector('.SubMenuUse').scrollIntoView({behavior: 'smooth'});  */
+      /* if(process.client)document.querySelector('.SubMenuUse').scrollIntoView({behavior: 'smooth'}); */
     }, 500);
   },
+  watch: {
+    $route(to, from) {
+      subScroll();
+    },
+  },
   methods: {
+    // handleResize() {
+    //   if (process.client) {
+    //     console.log(window.innerWidth)
+    //     if (window.innerWidth < 426) {
+    //       this.isWeb = false;
+    //       console.log("앱")
+    //     } else {
+    //       this.isWeb = true;
+    //       console.log("웹웹")
+    //     }
+    //   }
+    // },
+    handleToggle() {
+      this.toggle = !this.toggle;
+    },
     subScroll() {
-      if (process.client)
+      if (process.client) {
         document
           .querySelector(".SubMenuUse")
           .scrollIntoView({ behavior: "smooth" });
+      }
     },
   },
 };
@@ -40,6 +79,7 @@ export default {
 
 <style lang="scss" scoped>
 .SubMenuUse {
+  .SubMenuMobileTitle { display: none; }
   background-color: #e6e8eb;
   .SubMenuNav {
     position: relative;
@@ -93,6 +133,46 @@ export default {
         }
       }
     }
+  }
+}
+@media screen and (max-width: 425px) {
+  .SubMenuUse {
+    position: relative;
+  }
+  .SubMenuUse .SubMenuMobileTitle {
+    display: flex;
+    justify-content: space-between;
+    color: #0a51b7;
+    font-size: 16px;
+    height: 64px;
+    line-height: 4;
+    background: #fff;
+    padding: 0 20px;
+  }
+  .SubMenuUse .SubMenuNav {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    padding-left: 0px;
+    max-width: 425px;
+  }
+  .SubMenuUse .SubMenuNav .subMenu, .SubMenuUse .SubMenuNav li.SubUseNavActive { 
+    max-width: none; 
+    background-color: #0a51b7;
+    padding: 0 20px;
+  }
+  .SubMenuUse .SubMenuNav .subMenu:hover {
+    background: #092e6e;
+  }
+  .SubMenuUse .SubMenuNav .subMenu a:hover { color: #fff; }
+  .SubMenuUse .SubMenuNav li.subMenu>a {
+    color: #fff;
+    font-size: 16px;
+    text-align: start;
+  }
+  .SubMenuUse .SubMenuNav li.subMenu a::after { content: none; }
+  .SubMenuUse .mobileActive {
+    display: block;
   }
 }
 </style>

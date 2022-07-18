@@ -38,15 +38,28 @@ export default {
     align-items: center;
     position: fixed;
     z-index: 999999999;
-    top: 0px;
+    top: 10px;
+    left: 35%;
 }
 .modalWrapper::before {
     content: '';
-    height: 300vw;
+    height: 300vh;
     width: 300vw;
     position: absolute;
     background: #000000;
     opacity: 0.6;
     z-index: -1;
+}
+@media screen and (max-width: 600px) {
+    .modalWrapper {
+    top: -50%;
+    left: 0px;
+}
+}
+@media screen and (max-width: 425px) {
+    .modalWrapper {
+        top: 5%;
+        left: 20px;
+    }
 }
 </style>
