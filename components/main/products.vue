@@ -120,57 +120,6 @@
             alt="배경로고"
           />
         </span>
-        <div :class="`moduleBottomWrapRemote`" v-if="category === 1">
-          <span class="moduleBottomTitRemote">
-            <div>
-              <p>VIRNECT Remote</p>
-              <h2>XR 원격 협업 솔루션</h2>
-              <span class="solution">
-                <p>
-                  VIRNECT Remote의 실시간 원격협업 서비스를 통해 산업 현장에
-                  필요한 정보와
-                </p>
-                <p>
-                  이슈를​ 실시간으로 공유하여 언제 어디서든 업무 대응이
-                  가능합니다.​
-                </p>
-                <p>
-                  쉽고 빠르게 협업이 가능하며 ​기존의 익숙한 업무 환경을 그대로
-                  유지하여
-                </p>
-                <p>업무의 정확성과 효율성을 높일 수 있습니다.</p>
-              </span>
-            </div>
-
-            <div style="padding-top: 52px">
-              <span>
-                <button>
-                  <nuxt-link to="/products/remote"> 자세히 보기 </nuxt-link>
-                </button>
-                <button>
-                  <a href="support/demo" target="blank"> 데모신청 </a>
-                </button>
-              </span>
-              <ProModal :modal="modal" :popup="popup" />
-              <span>
-                <a @click="modal()">
-                  <i>
-                    <img
-                      src="https://velog.velcdn.com/images/kyj0206/post/7f7bb43e-b114-4733-b9f6-060e25b8ee49/image.png"
-                      alt="다운로드이미지"
-                    />
-                  </i>
-                  <p><u>Remote 제품 소개서 다운로드(PDF)</u></p>
-                </a>
-              </span>
-            </div>
-          </span>
-          <span class="moduleBottomCont">
-            <img
-              src="https://velog.velcdn.com/images/kyj0206/post/98cf4c83-d886-464e-8f33-e289c3908adc/image.png"
-              alt="배경로고"
-            />
-          </span>
           <div :class="`moduleBottomWrapRemote`" v-if="category === 1">
             <span class="moduleBottomTitRemote">
               <div>
@@ -432,6 +381,8 @@
         </div>
       </div>
     </div>
+  </div>
+  </div>
 </template>
 
 <script>
