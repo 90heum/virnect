@@ -2,524 +2,221 @@
 	"ValueText": {
 		"infraText": {
 			"topText": {
-				"title": "영어 - 인프라/자원 산업의 문제에 대해<br>고민 해 보셨나요? ",
-				"contents": "영어 - 인프라/자원 산업은 복잡한 설비와 데이터로 인해 관리 효율 저하를 겪고 있습니다. 눈에 보이지 않는 매립된 설비들, 설비 간<br>복잡한 관계성은 현장 파악에 어려움을 줍니다. 현장 전문성을 가진 고급 인력 확보 또한 문제가 되는 상황입니다."
+				"title": "인프라/자원 산업의 문제에 대해 ",
+				"title2": "고민해보셨나요?",
+				"contents": "인프라/자원 산업은 복잡한 설비와 데이터로 인해 관리 효율 저하를 겪고 있습니다. 눈에 보이지 않는 매립된 설비들, 설비 간 복잡한 관계성은 현장",
+				"contents2": "파악에 어려움을 줍니다. 현장 전문성을 가진 고급 인력 확보 또한 문제가 되는 상황입니다."
+			},
+			"challengesText": {
+				"title1": "복잡한 설비와 어려운 작업 지침",
+				"contents1": "반복적인 운영과 정비 작업 시 복잡한 설비와 어려운 작업 지침들은 종이 매뉴얼로 원하는 정보를 찾거나 많은 장비들을 활용하여 실시간으로 대응하는 데 많은 시간이 소요됩니다. 숙련된 작업자 부족으로 인해 고품질의 업무 수행이 어렵습니다.​",
+				"title2": "문제 발생 시 시간과 비용의 절감 필요",
+				"contents2": "현장에 문제 발생 시 복잡한 설비로 인해 구두 설명이나 사진만으로 정확한 원인규명 파악이 어렵습니다. 문제에 따른 다양한 원인들이 생길 수 있어 다 수의 전문 인원들이 다각도에서 실시간으로 확인하는 과정이 필요합니다. 해당 의사결정이 이루어지는 동안 설비들은 장시간 운전을 정지하고 멈춰 있 게 됩니다.",
+				"title3": "안전 관리와 재난예방 강화 검토",
+				"contents3": "설비 노후화 및 미숙련자의 현장 출입 등으로 인해 장애나 손실이 발생합니다. 현장인력 작업 동선이나 위치가 파악이 되지 않아 안전 사고 발생 시 대 응이 지연되거나, 노후화된 설비들을 제대로 대응하지 못해 지침과 다른 작업으로 설비에 장애가 발생하는 등 큰 손실로 이어질 수 있습니다.",
+				"title4": "정확한 지침과 즉각적인 매뉴얼",
+				"contents4": "XR 솔루션을 통해 현장에서 확인이 필요한 다양한 설비 정보 및 점검 항목, 정비 프로세스 등의 업무 매뉴얼을 XR 디바이스를 통해 선별적으로 시각적으로 정보를 제공합니다. 또한 고장 발생 시 현장에서 관련부서에서 실시간으로 내용 확인이 가능합니다.",
+				"title5": "시간 및 비용 절감과 업무 효율의 극대화",
+				"contents5": "현장의 문제 발생 시 원격 기술 전문가와 현장 직원이 실시간으로 상황을 공유하며 카메라를 통해 같은 상황을 인지하여 협업 및 조치를 신속히 처리 할 수 있습니다. 이는 설비의 정지시간과 정비시간을 단축시키며 이로 인한 설비 가동율과 생산성이 향상됩니다. 업무 관련자들이 원격지로 출장없이 실시간으로 설비 데이터, 점검 이력 등을 확인하고, 조치 사항에 대해 결정할 수 있어 업무 효율이 극대화 되고 비용도 크게 절감할 수 있습니다.",
+				"title6": "최고의 실감형 교육과 안전 관리 솔루션",
+				"contents6": "사업장 내에 복잡하고 체험이 어려운 교육에 대해 실감형 있는 콘텐츠로의 교육으로 제공이 가능하며, 이는 미숙련자의 현장 출입 시에도 고품질의 업무를 수행할 수 있는 교육 효과가 탁월합니다. 비디오녹화, 파일 및 화면 공유, 라이브 포인터, 즉각적인 번역 채팅 등을 통해 문제가 발생 시 해결하는 과정도 함 께 교육이 가능합니다. 또한, 두 손 자유로운 스마트 디바이스를 통해 작업의 단계별 지침이나 디지털 매뉴얼을 사용하는 등 신규 설비 증설 시 테스트 시뮬 레이션을 업무 기간 단축으로 기회비용을 높이고 안전 관리도 강화할 수 있습니다."
 			}
-		}
-	},
-	"solutionText": {
-		"visualText": {
-			"title": "현장을 혁신으로 이끌 확장현실(XR) <br class='modile-show'>솔루션을 확인하세요",
-			"contents": "문제의 핵심을 파악하는 컨설팅부터 솔루션 제시와 현장 적용까지,<br class='mobile-hidden'>비즈니스적 특성과 현장의 요구를 모두 고려한 최적의 해결책을 제공합니다."
 		},
-		"exampleTitle": {
-			"category": "적용 사례",
-			"title": "가치 향상의 경험을<br>공유합니다",
-			"contents": "VIRNECT Twin이 만들어낸 효율과 혁신을 <br>최신 사례와 자료를 통해 확인하세요."
-		},
-		"bgNormalText": {
-			"text": "AR 과 디지털 트윈 기술을 활용한",
-			"boldText": "산업 현장의 획기적인 변화를 실현하세요"
-		},
-		"roiText": {
-			"text": "VIRNECT 솔루션을 통한 ",
-			"boldText": "비즈니스 가치 상승을 <br class='mobile-show'>확인하세요."
-		},
-		"offerText": {
-			"title": "문제를 해결하기 위한 <br>지속가능한 솔루션을 제공합니다",
-			"contents": "VIRNECT는 고객사의 어려움을 근본적으로 해결하기 위한 지속가능한 솔루션과<br class='mobile-hidden'>고객 밀착 관리 서비스를 제공하고 있습니다.",
-			"array": [
-				{
-					"text": "AR 다자간 <br>원격 협업",
-					"image": "https://virnect.com/images/pages/solution/logo-solutions-remote",
-					"router": "remote"
-				},
-				{
-					"text": "AR 콘텐츠 제작 <br>및 배포",
-					"image": "https://virnect.com/images/pages/solution/logo-solutions-make",
-					"router": "make"
-				},
-				{
-					"text": "데이터 연동 <br>가상 모니터링 및 <br>시뮬레이션",
-					"image": "https://virnect.com/images/pages/solution/logo-solutions-twin",
-					"router": "twin"
-				},
-				{
-					"text": "정보 및 데이터 <br>AR 시각화",
-					"image": "https://virnect.com/images/pages/solution/logo-solutions-view",
-					"router": "view"
-				},
-				{
-					"text": "객체 검출/추적용 <br>AR 개발 SDK",
-					"image": "https://virnect.com/images/pages/solution/logo-solutions-track",
-					"router": "track"
-				}
-			]
-		},
-		"energyText": {
-			"motorTitle": {
-				"category": "인프라/자원",
-				"title": "인프라/자원 산업의 문제에 대해 <br class='mobile-hidden'>고민해보셨나요?",
-				"contents": "인프라/자원 산업은 복잡한 설비와 데이터로 인해 관리 효율 저하를 겪고 있습니다. 눈에 보이지 않는 매립된 설비들, 설비 간 복잡한 관계성은 현장 파악에 어려움을 줍니다. 현장 전문성을 가진 고급 인력 확보 또한 문제가 되는 상황입니다."
+		"OilProduceText": {
+			"topText": {
+				"title1": "제조/건설 산업의 산업재해",
+				"title2": "문제를 고민 해보셨나요?",
+				"contents1": "제조/건설 산업 현장에는 작업절차 오류, 시공결함 등으로부터 기인하는 다양한 산업재해와 작업자들의 위험,",
+				"contents2": "제조공정에 문제들이 발생합니다. 이는 기업 생산성과 이미지 저하 등 경제적 손실을 초래합니다."
 			},
-			"issueTitle": "산업이슈",
-			"issueList": [
-				{
-					"title": "인프라 관리 시스템의 필요성",
-					"contents": "원가 상승과 생산 설비 노후화에 따라 효율적인 인프라 관리 시스템의 중요성이 커지고 있습니다. 미세먼지, 온실가스 저감과 같은 정책은 인프라 산업 분야 확장에 걸림돌이 되며, 잦은 지진 발생으로 안전성에 대한 우려 또한 커지고 있습니다.​"
-				},
-				{
-					"title": "설비 점검의 전문성 결여",
-					"contents": "관리 인력의 순환 재배치 및 숙련자 은퇴로 인해 설비 점검 업무의 전문성 확보가 어려우며, 정확도를 요구하는 점검 사항이 작업자의 대략적인 짐작으로 진행되는 경우가 많이 발생합니다.​"
-				},
-				{
-					"title": "복잡한 설비, 어려운 의사결정",
-					"contents": "하나의 설비에 문제가 생기면 이와 연결된 다른 설비들에 대한 확인도 같이 이뤄져야 하기 때문에, 다수의 전문 인원이 다각도로 확인하는 과정이 필요합니다. 이에 따라 장시간 여러 단계의 의사결정 과정을 거쳐야 하고, 그 기간동안 공정은 멈춰 있게 됩니다.​"
-				},
-				{
-					"title": "눈에 보이지 않는 매립, 매설 정보",
-					"contents": "지하시설물 정보에 대한 관리가 전혀 되고 있지 않거나 전력선, 통신선 등 시설물의 위치 정보 신뢰도가 낮습니다. 위치 정보가 관리 되더라도 현장에서 직접 확인할 수 있는 방법이 없어 유지 관리 작업에 도움이 되지 않습니다.​"
-				}
-			],
-			"infographicText": {
-				"category": "솔루션",
-				"title": "버넥트가 인프라/자원 산업의<br> 성장, 고도화를 위한 해결책을 제시합니다",
-				"contents": "인프라/자원 산업은 대규모 발전 설비에 따른 체계적인 공급망 관리가 필수적입니다. 버넥트는 AR/DT 기술로 광대한 설비의 모니터링 및 <br class='mobile-hidden'>예방 정비 효율을 높이고, 작업 프로세스를 개선하여 발전 효율과 작업 생산성을 향상시킵니다.​",
-				"image": "https://virnect.com/images/pages/solution/img-energy-infographic-00.svg",
-				"infographicList": [
-					{
-						"title": "인프라 관리 통합 시스템",
-						"contents": "발전소 내에 유기적으로 연결된 설비들의 방대한 데이터와 미세먼지, 온실가스 등 확인이 필요한 데이터들을 시각화하여, 인프라 생산 공정과 관련된 모든 정보들을 관리합니다. 또한 사고 발생을 예측하고, 혹여 사고가 발생하더라도 즉시 문제를 식별하고 조치할 수 있는 통합 관제 시스템을 제공합니다.",
-						"image": "https://virnect.com/images/pages/solution/img-energy-infographic-01.svg"
-					},
-					{
-						"title": "현장 설비 관리 업무의 최적화",
-						"contents": "현장에서 확인이 필요한 변전, 송전, 발전 설비 정보 및 점검 항목, 정비 프로세스 등 업무를 보조할 수 있는 정보들을 스마트 디바이스를 통해 선별적으로 시각화합니다. 또한 고장 발생 시 현장에서 Trouble Memo(TM)를 발행 및 등록하여 관련부서에서 실시간으로 내용 확인이 가능합니다.​",
-						"image": "https://virnect.com/images/pages/solution/img-energy-infographic-02.svg"
-					},
-					{
-						"title": "빠른 현장 문제 확인 및 조치",
-						"contents": "VIRNECT Remote는 여러 명의 전문가가 함께 의사소통할 수 있는 기능을 제공합니다. 업무 관련자들이 동시에 실시간 설비 데이터, 점검 이력 등을 확인하고, 조치 사항에 대해 결정하여 작업 효율과 신뢰도를 높입니다. 실시간으로 의사 결정한 내용과 조치 사항은 미래의 작업 관리를 위해 기록하고 저장할 수 있습니다.",
-						"image": "https://virnect.com/images/pages/solution/img-energy-infographic-03.svg"
-					},
-					{
-						"title": "보이지 않는 시설물과 설비의 <br class='mobile-hidden'>3차원 시각화",
-						"contents": "지하에 매립된 시설물이나 매설되어 있는 설비를 개폐작업이나 공사 없이 현장에서 3차원으로 볼 수 있습니다. <br class='mobile-hidden'>VIRNECT View가 설치된 스마트폰이나 스마트글라스로 현장의 땅을 비추면 사활선이나 배전 방향, 매립된 설비 상태까지도 확인할 수 있기 때문에 긴급 상황 발생 시, 정확한 대응이 가능합니다.",
-						"image": "https://virnect.com/images/pages/solution/img-energy-infographic-04.svg"
-					}
-				]
+			"challengesText": {
+				"title1": "미숙련 작업자로 인한 생산성 및 품질 저하",
+				"contents1": "계약직 또는 임용직의 현장 작업자가 대부분으로 생산 및 품질에 대한 교육을 진행 시에도 연속성을 갖추기 어려우며, 작업 공정도 기억에 의존하여 업 무를 진행하고 있습니다. 종이 매뉴얼의 작업 지시에도 따르지 않거나 의존도가 낮으며, 잦은 변경이 발생하는 현장 특성에서 반영되지 않은 작업물들 이 발생하는 등 생산성과 품질 경쟁력은 저하되어 있습니다.​",
+				"title2": "반복적이고 소모적인 현장 검증 과정",
+				"contents2": "현장 및 현상을 정확히 알아야 진행되는 절차의 경우, 조금의 변화 및 변경에도 필요한 수치를 적용해야만 완성도 높은 설계 및 공정을 완성할 수 있습 니다. 이는 실물 모형(Mock-up)을 제작 하거나 수차례 현장을 방문하기 위한 출장 등으로 다양한 형태의 검증 절차 진행하며, 많은 시간과 돈이 소모 됩니다.",
+				"title3": "문제 발생 시 시간과 비용의 절감 필요",
+				"contents3": "현장에 문제가 발생 시 문제를 해결하기 위해 구두 설명이나 사진만으로 정확한 원인규명 및 조치가 어렵습니다. 문제에 따른 기술 전문가의 잦은 출장 이 발생하며, 반복적인 이슈에도 문제해결을 숙련시키기 위한 교육과 처리가 신속히 이루어 지지 않고 있습니다. 이는 재고 비용의 부담이나 문제 해결 을 위한 장시간 현장 방치 등으로 시간과 비용이 많이 발생합니다. ",
+				"title4": "오류의 최소화로 생산성 및 품질의 향상",
+				"contents4": "실시간 현장 연결과 설계 수정, 작업자 교육 진행으로 인해 생산성 즉각 향상 및 직관적인 피드백 제공이 가능합니다. 미숙련 작업자도 쉽게 이해할 수 있는 비디오 또는 음성 지시로 잦은 변경이 발생하는 현장에도 원격 기술자와 함께 업무를 수행하여 오류를 즉시 바로잡아, 생산성과 품질 경쟁력을 모두 향상 시킬 수 있습니다.",
+				"title5": "리드타임 감소로 비용 절감 효과",
+				"contents5": "XR솔루션은 실시간으로 현장 정보를 원격의 기술부서와 이해관계자에게 보여주면서 커뮤니케이션이 가능합니다. 또한 본사 엔지니어 및 관련 업체들과 함께 원격에서 현장을 확인할 수 있어, 어렵고 복잡한 공정이나 협의도 출장없이 원격으로 다자간 회의를 진행하여 실시간으로 의사결정이 가능하며, 이로 인해 비용 감소와 설계/입찰 시 일정 단축, 품질관리, 견적 파악에도 효과적입니다.",
+				"title6": "리드타임 감소로 비용 절감 효과",
+				"contents6": "XR솔루션은 실시간으로 현장 정보를 원격의 기술부서와 이해관계자에게 보여주면서 커뮤니케이션이 가능합니다. 또한 본사 엔지니어 및 관련 업체들과 함께 원격에서 현장을 확인할 수 있어, 어렵고 복잡한 공정이나 협의도 출장없이 원격으로 다자간 회의를 진행하여 실시간으로 의사결정이 가능하며, 이로 인해 비용 감소와 설계/입찰 시 일정 단축, 품질관리, 견적 파악에도 효과적입니다."
+			}
+		},
+		"educationText": {
+			"topText": {
+				"title1": "공공/교육의 효율적인 서비스에대해 알고 계신가요?",
+				"title2": " ",
+				"contents1": "공공/교육 분야에 사용되는 기존 교육 방식은 비용 대비 효과가 낮습니다. ",
+				"contents2": "XR 기술을 활용한다면 보다 탁월한 학습효과는 물론 언제 어디서나 접근 가능합니다."
 			},
-			"exampleList": [
-				{
-					"img": "https://virnect.com/images/pages/solution/arsdk-usecase-03.png",
-					"title": "아날로그 계측기 실시간 인식"
-				},
-				{
-					"img": "https://virnect.com/images/pages/products/view-usecase-08.png",
-					"title": "지진피해 모의 훈련 정보 시각화"
-				},
-				{
-					"img": "https://virnect.com/images/pages/solution/view-usecase-08.png",
-					"title": "GIS 설비 상태 실시간 확인"
-				},
-				{
-					"img": "https://virnect.com/images/pages/solution/make-usecase-06.png",
-					"title": "작업 결과 보고 전자 문서형 AR 콘텐츠 제작"
-				},
-				{
-					"img": "https://virnect.com/images/pages/solution/make-usecase-02.png",
-					"title": "내부 시스템 연동을 통한 설비 데이터 AR 콘텐츠 제작"
-				},
-				{
-					"img": "https://virnect.com/images/pages/solution/make-usecase-09.png",
-					"title": "교육 평가 및 평가 데이터 보고 AR 콘텐츠 제작"
-				},
-				{
-					"img": "https://virnect.com/images/pages/solution/twin-usecase-01.png",
-					"title": "가스산업 3차원 시각화"
-				},
-				{
-					"img": "https://virnect.com/images/pages/solution/twin-usecase-02.png",
-					"title": "작업자 행동 분석 및 안전사고 예측"
-				},
-				{
-					"img": "https://virnect.com/images/pages/solution/remote-usecase-02.png",
-					"title": "발전소 설비 점검 및 유지 보수 지원"
-				},
-				{
-					"img": "https://virnect.com/images/pages/solution/remote-usecase-09.png",
-					"title": "협업 중 도면 및 파일 공유를 통한 실시간 정보 확인"
-				},
-				{
-					"img": "https://virnect.com/images/pages/solution/remote-usecase-10.png",
-					"title": "해외 사업장과의 실시간 소통 가능(번역 지원)"
-				}
-			],
-			"bgExampleList": [
-				{
-					"img": "https://virnect.com/images/pages/solution/logo-recommendation-steel",
-					"contents": "버넥트 솔루션은 저희 회사 Smart Factory 플랫폼 발전에 <br class='mobile-hidden'>상당한 기여를 하였습니다.",
-					"category": " - 현대제철"
-				},
-				{
-					"img": "https://virnect.com/images/pages/products/logo-recommendation-kaeri",
-					"contents": "버넥트 솔루션은 높은 신뢰성을 요구하는 분야에도 체계적인 <br class='mobile-hidden'>정보관리와 최적의 안전관리 플랫폼을 제시합니다.",
-					"category": " - 한국원자력연구원, 폐기물총관리실 연구원"
-				},
-				{
-					"img": "https://virnect.com/images/pages/products/logo-recommendation-doosan",
-					"contents": "버넥트 솔루션 도입은 발전산업 현장의 생산성 향상과 <br class='mobile-hidden'>정보공유를 용이하게 지원합니다.",
-					"category": "- 두산중공업, 기술혁신연구원 인프라/환경기술개발팀"
-				}
-			]
+			"challengesText": {
+				"title1": "현장 교육의 시/공간 한계",
+				"contents1": "현장 교육은 주제에 따라 너무 교육 범위가 넓고 이를 교육하기 위한 장비가 다양합니다. 또한 신규 설비 운용 교육은 준비 기간도 길고, 넓은 현장 이동은 교육의 효과가 떨어집니다. 보안/안전 등으로 방문객 또는 VIP 현장투어에도 여러가지 한계가 있습니다.​",
+				"title2": "현장감이 필요한 재난 예방/진압 훈련",
+				"contents2": "기존에 재난 예방이나 진압 훈련 및 교육은 실제 설비와 공장 상황을 모사해서 하기 때문에, 교육 효과가 미흡했습니다. 실제 현장 교육으로 진행 시 준비 사항도 많고 교육이나 훈련 시에도 많은 위험한 상황들이 발생하여 운영이 어렵습니다.",
+				"title3": "변화하는 교육방식",
+				"contents3": "기존 주입식 강의 방식과 학습자료는 너무 어렵습니다. 또한 펜데믹으로 인한 대면 접촉의 어려움으로 현장교육, 기업 비즈니스, 국제 교류 활동에 효율적인 커뮤니케이션 솔루션이 필요하나 문서나 이미지만으로는 부족하고 원하는 결과를 목표를 달성하기 어려웠습니다.",
+				"title4": "공공지원의 필요성 대두",
+				"contents4": "정부의 가상융합경제 발전전략으로 수도권 외 지역 활성화를 위한 경제사회 전반의 가상융합기술 활용과 확산의 필요성이 대두되고 있습니다.",
+				"title5": "탁월한 체험 및 실감형 교육의 학습효과",
+				"contents5": "XR 솔루션을 통해 3차원/실감형 콘텐츠 방식의 교육이 가능합니다. 작업 프로세스 및 사고 가능성 사전 교육에 효과적이며, 직관적이고 쉽게 이해 할 수 있어 교육 효과도 높아지게 됩니다.",
+				"title6": "대피 경로 시뮬레이션 및 실감형 재난 교육/훈련 구현",
+				"contents6": "실제 공정 3D 정보에 각종 재난 발생에 대한 시뮬레이션을 증강하여 진압 훈련용으로 활용이 가능합니다. 또한 XR기술을 활용하여 대피 경로 시뮬 레이션은 물론 실감형 재난 교육/훈련을 구현할 수 있습니다.",
+				"title7": "언택트 환경에 최적화된 비용과 시간 절감형 XR 솔루션",
+				"contents7": "고가의 장비 없이 원격(현장,사무실, 집)에서 공간의 구애 받지 않고 가상교육이 가능합니다. 또한 3차원/동영상 진행으로 직관적이고 쉽게 배울 수 있어 학습 효과가 좋으며, 한번 구축해 놓은 솔루션은 반복적으로 시간 및 공간 제약없이 활용이 가능합니다.",
+				"title8": "지역 입주업체 및 주민 공공지원",
+				"contents8": "XR 솔루션 활용을 통해 지역주민들에게 공공사업의 필요성을 알리고, 주민들의 호응을 얻을 수 있습니다. 또한 기업은 사업의 이해도 향상과 응용방안 제안을 통해 지역 업체의 수출, 매출증대를 위한 지원이 가능합니다"
+			}
+		},
+		"enterText": {
+			"topText": {
+				"title1": "엔터테인먼트에 적용된 XR 기술 사례를 확인하세요. ",
+				"title2": "여러분의 서비스를 더욱 가치있게 만듭니다.",
+				"contents1": "엔터테인먼트 분야에서 고객이 안전하게 콘텐츠를 경험을 하는데 있어 현장감을 주기위한 몰입형 콘텐츠의 필요성이 점차 부각되고",
+				"contents2": "있습니다. XR기술을 활용하면 창의적이고 실감나는 콘텐츠를 손쉽게 즐길 수 있습니다."
+			},
+			"challengesText": {
+				"title1": "넓은 관람 동선과 관리비용",
+				"contents1": "관람 동선이 넓은 곳은 직접 둘러보며 체험하는데 있어, 이동시간과 노약자와 어린이가 편리하고 안전하게 즐길 수 있어야 합니다. 또한 문화 유적지/전시 체험관을 운영하는데 있어 문화재 관리 비용이나, 운영시간 등의 제약이 있습니다. ​",
+				"title2": "실감/몰입형 정보 필요성 ",
+				"contents2": "미술관 내 도슨트 서비스는 운영상 제한된 관람자에게만 정보만을 제공하며, 작품을 이해하고 관람하는데 부가적인 체험 콘텐츠 제공이 어렵습니다. 또한 역사적 문화적 소재들에 대한 가치를 설명하고 이해를 시키기 위해 음성이나 이미지의 정보만으 로는 한계가 있습니다.",
+				"title3": "무형 콘텐츠 제작 필요",
+				"contents3": "온라인을 통한 문화체험 서비스가 증가함에 따라 역사적 의미를 가상 체험할 수 있는 무형 콘텐츠 제작과  고부가가치의 가상 체험 서비스의 필요성이 대두하고 있습니다. ",
+				"title4": "시공간 제약이 없는 역사/문화 체험 실감 콘텐츠 구현",
+				"contents4": "XR솔루션을 활용하면 온라인 전시 서비스를 통해 공간 제약 없이 콘텐츠를 즐길 수 있습니다. 또한 역사적, 문화적 소재들을 AR로 제공하여 다양한 관람 정보 서비스를 제공하며, 직관적이고 입체적인 몰입형 콘텐츠로 체험을 통한 공감과 이해로 정보를 습득할 수 있습니다.",
+				"title5": "유연한 콘텐츠 접근 및 홍보",
+				"contents5": "일부 또는 전체가 소실된 문화재도 XR 콘텐츠를 스마트폰으로 손쉽게 증강하여 간편하게 몰입형 콘텐츠를 즐길 수 있습니다. 또한 최적의 인터랙티브 통해 대상물의 기능 정보를 직관적이고 입체적인 체험을 제공하여 흥미를 제공합니다.",
+				"title6": "콘텐츠의 가치 전달과 관심 유도",
+				"contents6": "역사적, 문화적 소재들의 고증 연구 기록물을 공감각적으로 제작하여 문화상품으로 개발하여, 관심을 유도하고 가치를 효과적으로 전달할 수 있으며, 다양한 유형/무형의 콘텐츠를 과거/현실/미래로 연결할 수 있습니다."
+			}
 		},
 		"epcText": {
-			"epcTitle": {
-				"category": "EPC",
-				"title": "EPC 산업의 문제에 대해 <br class='mobile-hidden'>고민해보셨나요?",
-				"contents": "설계 및 건설 산업에서는 실제 건축 현장과 정확한 정보 공유 및 소통에 어려움을 겪고 있습니다. 설계 도면과 현장 시공의 차이 및 하자 발생은 대부분 정보 비대칭과 관리의 부재로 일어납니다. 또한 공사 현장의 산업재해를 높이는 요인이 되기도 합니다."
+			"topText": {
+				"title1": "XR 솔루션 도입을 통한 다양한 비즈니스 확장 사례가 있습니다. ",
+				"title2": " ",
+				"contents1": "XR기술은 산업현장은 뿐만 아니라 의료, 헬스케어 등 일상 생활 속 밀접한 부분까지 다양한 분야에 적용 가능합니다.",
+				"contents2": " "
 			},
-			"issueTitle": "산업이슈",
-			"issueList": [
-				{
-					"title": "건설 현장의 운영 관리",
-					"contents": "건설, 산업 현장의 예상치 못한 사고는 시시 때때로 발생하는 운영 데이터의 관리 부재에 있습니다. 정확하게 모니터링할 수 있는 시스템이 필요합니다."
-				},
-				{
-					"title": "현장 작업자들의 정보 부재",
-					"contents": "현장은 여전히 작업 경험과 감으로 운영되고 있습니다. 작업의 효율성과 정확성을 높이기 위해서는 작업자들도 현장에서 작업 정보를 확인해야 합니다."
-				},
-				{
-					"title": "2차원 도면과 건설 현장과의 괴리",
-					"contents": "3차원 모델링 기술이 발전했음에도 불구하고 여전히 2차원 CAD 도면으로만 설계합니다. 현장은 제약사항을 근거로 도면과는 상이한 작업을 진행합니다."
-				},
-				{
-					"title": "직접적인 의사소통의 어려움",
-					"contents": "시행사와 시공사간 의사소통은 직접적이고 빨라야 합니다. 협의를 위한 공사 정지와 미팅을 위한 출장은 일정을 지연시키고 비용을 발생시킵니다."
-				}
-			],
-			"infographicText": {
-				"category": "솔루션",
-				"title": "버넥트가 안전하고 예측 가능한 <br>EPC 산업 현장을 제시합니다. ",
-				"contents": "설계 및 건설 산업에서는 건축 과정에 ICT 기술을 적용하여 효율을 높이려는 시도가 이어지고 있습니다. <br>버넥트는 건축 도면이나 완공 예상 모습을 현장에서 시각화하여 건설 공사 현장의 시공 점검 및 안전 관리를 효율화합니다.",
-				"image": "https://virnect.com/images/pages/solution/img-epc-infographic-00.svg",
-				"infographicList": [
-					{
-						"title": "정밀한 현장 모니터링",
-						"contents": "현장과 똑같이 복제된 VIRNECT Twin에서 현장에서 일어나고 있는 작업 상황과 설비 상태를 정밀하게 관리, 확인할 수 있습니다. 자동화되어 있는 설비는 물론 작업을 하고 있는 인력의 위치, 작업 현황도 정확하게 파악이 가능하여 효율적인 현장 관리가 가능합니다.",
-						"image": "https://virnect.com/images/pages/solution/img-epc-infographic-01.svg"
-					},
-					{
-						"title": "즉각적인 정보 확인",
-						"contents": "산업 현장 작업 리스트나, 도면, 자재 규격, 품질 평가 프로세스 등을 현장에서 시각화하세요. 시각화된 정보를 바로 확인하며 작업할 수 있어, 업무의 정확도와 속도를 높일 수 있습니다. 공사 과정과 최종 건축물에 대한 품질 신뢰도를 향상시킬 수 있습니다.",
-						"image": "https://virnect.com/images/pages/solution/img-epc-infographic-02.svg"
-					},
-					{
-						"title": "AR 설계 및 현장 시각화",
-						"contents": "현장에서 계획된 설계서를 3차원으로 시각화하여 진행 상황을 점검하거나 건축, 건설 전 현장의 특성이 반영되어 있는지 검토할 수 있습니다. 설계서 수정이 필요하다면 VIRNECT Make로 정밀하게 수정을 하거나 간단한 정보는 현장에서 VIRNECT View로 수정하세요.",
-						"image": "https://virnect.com/images/pages/solution/img-epc-infographic-03.svg"
-					},
-					{
-						"title": "사실감 높은 원격 협업",
-						"contents": "복잡한 작업들이 계획적이고, 순차적으로 이뤄지는 EPC 분야의 인프라 프로젝트는 하나의 공정에 문제가 생기면 다른 공정들에 영향을 끼쳐 큰 손실을 발생시킵니다. VIRNECT Remote를 활용하여 원격에 있는 다른 전문가들과 빠르고 사실감 있게 의사소통하여 문제를 해결하세요.",
-						"image": "https://virnect.com/images/pages/solution/img-epc-infographic-04.svg"
-					}
-				]
-			},
-			"exampleList": [
-				{
-					"img": "https://virnect.com/images/pages/solution/view-usecase-01.png",
-					"title": "구조물 평활도 AR 검사, 시각화"
-				},
-				{
-					"img": "https://virnect.com/images/pages/solution/view-usecase-02.png",
-					"title": "구조물 AR 측정, 측량"
-				},
-				{
-					"img": "https://virnect.com/images/pages/solution/make-usecase-08.png",
-					"title": "BIM 데이터 활용 건설 현장 감리용 AR 콘텐츠 저작"
-				},
-				{
-					"img": "https://virnect.com/images/pages/solution/make-usecase-13.png",
-					"title": "BIM 콘텐츠 실측 사이즈로 시각화"
-				},
-				{
-					"img": "https://virnect.com/images/pages/solution/view-usecase-12.png",
-					"title": "실측 사이즈 콘텐츠 증강을 통한 효율적 시설 관리 지원"
-				}
-			],
-			"bgExampleList": [
-				{
-					"img": "https://virnect.com/images/pages/products/logo-recommendation-miraecity",
-					"contents": "교량 등 시설물 안전점검에 적용 후 현장과 오피스 간 실시간 교식<br class='mobile-hidden'>으로 점검자의 효율이 올라가고 있습니다.",
-					"category": "- 미래시티"
-				},
-				{
-					"img": "https://virnect.com/images/pages/products/logo-recommendation-skcnc",
-					"contents": "현장 설비유지보수 업무에 AR솔루션 활용하니 업무 이해도 <br class='mobile-hidden'>빠르고, 작업 효율성도 좋아져서 업무가 쉬워 졌습니다.",
-					"category": "- SK CnC"
-				},
-				{
-					"img": "https://virnect.com/images/pages/products/logo-recommendation-ibim",
-					"contents": "증강현실 상에서 각종 구조물의 사전Digital Mock Up을 구현, 활용으로 <br class='mobile-hidden'>도면의 이해력과 숙련도 향상 및 업무 협의에 큰 도움이 되었습니다.",
-					"category": "- 인프라 BIM"
-				},
-				{
-					"img": "https://virnect.com/images/pages/products/logo-recommendation-seole-m",
-					"contents": "글로벌 AR 기업과 비교해도 손색없는 토종 AR 전문기업, 버넥트의 core 솔루션은 <br class='mobile-hidden'>확실한 차별점을 가지고 있습니다. 산업생산성 향상에 필수적인 파트너가 될 것입니다.",
-					"category": "- 서일이앤엠"
-				}
-			]
+			"challengesText": {
+				"title1": "운영 인력 및 교육/훈련 시스템 부족",
+				"contents1": "다양한 환경에서 운영 인력과 교육/훈련의 부족은 생산성과 품질 향상에 중요한 척도가 됩니다. 인프라 확충과 함께 고급 인력 수요도 증가하고 있으나, 현장에 바 로 투입할 수 있는 인력 공급은 부족합니다. 또한 잦은 출장 비용을 줄이고 효율적으로 정비할 수 있는 시스템이 필요합니다 ​",
+				"title2": "정보와 기술의 불균형",
+				"contents2": "새로운 방식의 업무나 진료 등은 오류나 부작용에 대한 정보를 공유하고 함께 신속히 문제해결을 필요로 하고 있습니다. 그러나 도서지역과 같은 열악한 환경에서 정보가 차단되어 원하는 시기에 적합한 정보를 공유 받을 수 없거나, 대처하기 어려운 경우가 발생합니다.",
+				"title3": "의료 환경의 시스템 개선 필요",
+				"contents3": "수술 시 별도의 모니터를 수술대 옆에 설치하고 보면서 환자를 수술하나, 고개를 돌리면서 보느라 수술시간이 많이 경과하고 있습니다. 실제 모습과 CT 파일을 정 합하여 볼 수 있는 시스템이 필요하며, 수술 진행 중 환자의 맥박, 호흡 등의 데이터를 빠르게 확인할 수 있는 수술 환경 필요합니다.",
+				"title4": "정확하고 즉각적인 교육/훈련 제공",
+				"contents4": "AR시각화를 통한 몰입형 체험으로 미숙련 작업자에게도 정확한 지침과 정보를 제공해 줄 수 있습니다. 특히, 의료 및 헬스분야에서는 의료기기 및 의약품 설명 을 효과적으로 소개할 수 있으며, 합병증 정보를 연관 지어 정확한 정보를 전달하여 체험자의 이해도와 신뢰성를 높일 수 있습니다. 또한 원격 지원으로 실시간 으로 문제 해결 및 의사결정을 진행할 수 있습니다.",
+				"title5": "시간 및 비용 절감과 업무 효율의 극대화",
+				"contents5": "일부 또는 전체가 소실된 문화재도 XR 콘텐츠를 스마트폰으로 손쉽게 증강하여 간편하게 몰입형 콘텐츠를 즐길 수 있습니다. 또한 최적의 인터랙티브 통해 대상물의 기능 정보를 직관적이고 입체적인 체험을 제공하여 흥미를 제공합니다.",
+				"title6": "지역불균형 완화 및 의료환경 개선",
+				"contents6": "XR 솔루션을 활용하여 지역응급의료센터의 전문의가 보건지소의 의료인/응급 구조사와 통신을 통해 환자의 상태 파악, 원격 협진, 지시, 교육 등을 진행할 수 있는 시스템을 제공함으로써 도서지역 재난/사고 응급환자에게 의료 혜택을 제공하고 의료 지역적 불균형 완화에 기여 할 수 있습니다. 또한, XR디바이스를 할 용하여 수술 시 환자의 CT파일을 AR로 시각화하여 고개를 돌리지 않아도 한눈에 환자의 정보를 볼 수 있어 효율이 증가하며, 두 손이 자유롭게 되어 별도의 장 비를 만지지 않고 인터랙션이 가능해 위생적 문제도 해결할 수 있습니다."
+			}
 		},
-		"motorText": {
-			"motorTitle": {
-				"category": "자동차/부품",
-				"title": "자동차/부품 산업의 문제에 대해 <br class='mobile-hidden'>고민해보셨나요?",
-				"contents": "자동차/부품 산업에서는 조립 공정상 발생하는 결함과 제조 과정의 위험이 큰 문제가 됩니다. 제품의 불량은 고객의 신뢰도를 하락시키며, 최종 제품에서 문제를 일으켜 사고를 초래할 수 있습니다. 작업자의 안전을 유지하면서도, 정확하고 정밀한 제조 시스템을 구축해야 합니다."
-			},
-			"issueTitle": "산업이슈",
-			"issueList": [
-				{
-					"title": "고난이도 제품 조립에서의 결함",
-					"contents": "제품의 높은 품질과 생산성을 유지하기 위해서는 공정 단계별로 정해진 절차를 준수하는 것이 가장 중요하나, 작업자들이 하루에 수천 개의 부품을 확인, 조립하다 보면 결함에 대한 인지가 어려운 것이 현실입니다."
-				},
-				{
-					"title": "컨베이어, 프레스, 조립 설비 등 중장비로부터의 위험 노출",
-					"contents": "중장비를 다뤄 작업해야하는 환경에서 장비에 부딪히거나 끼이는 사고가 매년 발생합니다. 작동법을 익혔더라도, 작업을 할 때마다 꼭 지켜야할 절차가 있으나 그것을 지키지 않아 인명피해가 발생합니다."
-				},
-				{
-					"title": "조립 공정 상세 모니터링 및 문제 발생 정보 관리 필요",
-					"contents": "순서대로 진행하는 일련의 조립 공정 중 하나의 공정에 문제가 발생하면 그 다음 공정에도 영향을 끼쳐 생산성을 떨어뜨립니다. 빠르게 문제를 해결해야하지만, 어디에 어떤 문제가 발생하였는지 확인하는데만 상당한 시간을 할애합니다."
-				},
-				{
-					"title": "고전적인 방식의 제품 디자인",
-					"contents": "제품 내, 외관의 디자인을 결정하기 위해 다양한 형태의 검증 절차를 진행하는데, 이를 위해 실물모형(Mockup)을 수차례 제작하고 파기하며 시간과 돈을 낭비합니다."
-				}
-			],
-			"infographicText": {
-				"category": "솔루션",
-				"title": "생산 시설의 개선과 조립 공정의 변화를 <br class='mobile-hidden'>버넥트와 함께 실현하세요.",
-				"contents": "지금의 자동차/부품 제조 현장은 품질의 상향 평준화와 공정의 효율화가 모두 필요합니다. <br>버넥트의 AR/DT 기술로 품질을 보장하는 한편, 효율적인 공장 운영을 실현하세요.",
-				"image": "https://virnect.com/images/pages/solution/img-motor-infographic-00.svg",
-				"infographicList": [
-					{
-						"title": "AR을 활용한 공정 매뉴얼",
-						"contents": "자동차, 부품 업체는 생산 시설의 개선과 조립 공정의 변화에 따라 많은 시간을 직무 교육에 할애하고 있습니다. AR 매뉴얼은 다양한 조립 설비와 부품들 위에 공정의 단계별로 작업해야하는 내용들을 글, 이미지, 동영상, 애니메이션이 포함된 3D 모델로 알려주기 때문에 직관적으로 확인이 가능합니다. 이에 별도의 교육이 필요 없어 작업자들의 업무 적용력을 높일 수 있습니다.",
-						"image": "https://virnect.com/images/pages/solution/img-motor-infographic-01.svg"
-					},
-					{
-						"title": "안전한 작업 환경",
-						"contents": "공장 내부에 있는 중장비와 작업자들의 위치를 실시간으로 파악하여 위험 상황이 발생하기 전에 중장비의 움직임을 제어하거나 작업자들에게 적절한 알람을 제공합니다. 또한 공정 상황에 따라 적절한 정보를 작업자들에게 제공하여 안전하고 정확한 작업을 수행할 수 있도록 안내합니다.",
-						"image": "https://virnect.com/images/pages/solution/img-motor-infographic-02.svg"
-					},
-					{
-						"title": "공정 상세 모니터링 및 <br class='mobile-hidden'>빠른 문제 해결",
-						"contents": "수천개의 부품들 조립하는 여러 단계의 공정 상황을 VIRNECT Twin으로 한눈에 파악할 수 있습니다. 문제 상황이 발생할 경우 현장 작업자, 관리자 뿐만 아니라 관련 업무자들도 즉시 상황 확인이 가능하여 대응 속도를 높일 수 있습니다. 필요 시, 여러 관계자들이 해결 방안 논의를 위한 원격 회의도 VIRNECT Remote로 가능합니다.",
-						"image": "https://virnect.com/images/pages/solution/img-motor-infographic-03.svg"
-					},
-					{
-						"title": "AR 디자인 품평",
-						"contents": "새로 디자인한 부품의 3D 모델을 VIRNECT Make로 배포하면 VIRNECT View를 통해 현실에 붙어 있는 가상의 모형(AR 모형)을 확인할 수 있습니다. 디자인을 변경할 때마다 실물모형을 제작할 필요없이 기존 실물모형 위에 AR 모형을 붙여 몇 가지 다른 디자인 안들을 비교할 수 있습니다. 또한 대형 스크린과 연결하여 많은 사람들이 함께 품평할 수도 있습니다.",
-						"image": "https://virnect.com/images/pages/solution/img-motor-infographic-04.svg"
-					}
-				]
-			},
-			"exampleList": [
-				{
-					"img": "https://virnect.com/images/pages/solution/arsdk-usecase-02.png",
-					"title": "HMI 화면 실시간 인식"
-				},
-				{
-					"img": "https://virnect.com/images/pages/solution/view-usecase-07.png",
-					"title": "전기오토바이 조립가이드"
-				},
-				{
-					"img": "https://virnect.com/images/pages/solution/view-usecase-03.png",
-					"title": "MCT 머신 BOM 정보 AR 시각화"
-				},
-				{
-					"img": "https://virnect.com/images/pages/solution/view-usecase-04.png",
-					"title": "자동차 클러스터 제조라인 시각화"
-				},
-				{
-					"img": "https://virnect.com/images/pages/solution/make-usecase-04.png",
-					"title": "제조라인 실시간 생산 물량 정보 연동 AR 콘텐츠 저작"
-				},
-				{
-					"img": "https://virnect.com/images/pages/solution/make-usecase-11.png",
-					"title": "신차 구매 홍보용 AR 콘텐츠 매뉴얼 제작"
-				},
-				{
-					"img": "https://virnect.com/images/pages/solution/make-usecase-10.png",
-					"title": "전기차 자가 정비 매뉴얼"
-				},
-				{
-					"img": "https://virnect.com/images/pages/solution/view-usecase-10.png",
-					"title": "자동차 가상 체험 홍보 콘텐츠"
-				},
-				{
-					"img": "https://virnect.com/images/pages/solution/make-usecase-01.png",
-					"title": "공장 내부 데이터 수집 및 수집 데이터 연동 AR 콘텐츠 저작"
-				},
-				{
-					"img": "https://virnect.com/images/pages/solution/make-usecase-03.png",
-					"title": "작업 이슈 보고 및 스마트툴 연동 AR 콘텐츠 저작"
-				},
-				{
-					"img": "https://virnect.com/images/pages/solution/view-usecase-06.png",
-					"title": "전기 배전 가이드 시각화"
-				}
-			],
-			"bgExampleList": [
-				{
-					"img": "https://virnect.com/images/pages/products/logo-recommendation-sds",
-					"contents": "작업자 Inspection에 활용된 버넥트 AR 솔루션은 고객만족도를 <br class='mobile-hidden'>크게 향상시켰습니다.",
-					"category": " - 삼성SDS"
-				},
-				{
-					"img": "https://virnect.com/images/pages/products/logo-recommendation-end",
-					"contents": "버넥트 솔루션은 저의 회사에게 스마트 공장에 대한 미래를 <br class='mobile-hidden'>꿈꾸게 하였습니다.",
-					"category": "- 이앤디일렉트릭㈜"
-				}
-			]
+		"ValueUseCaseText": {
+			"title1": "실시간 원격 협업 솔루션",
+			"contents1-1": "-일본공급사의 설비 고장 시에 Supervisor의 <br> 출장없이 실시간 원격 협업으로 해결함으로써  <br>비용과 시간 단축",
+			"contents1-2": " ",
+			"contents1-3": " ",
+			"title2": "발전소 디지털트윈 O&M 시스템 개발",
+			"contents2-1": "- 발전소 내 데이터를 관리함으로써 작업 오류 감소 및 예방",
+			"contents2-2": "- 복잡한 발전소 설비의 효율적인 유지관리 가능",
+			"contents2-3": "- 작업자에게 정확한 지시 사항 제공으로 현장 안전사고 감소",
+			"title3": "AR기반 구조물 안정성 검증 솔루션",
+			"contents3-1": "- 건축 설계에 대한 오류를 직관적으로 확인함으로써 사전에 사고 방지",
+			"contents3-2": "- 실제 비계 제작 및 구성에 비전문가도 활용함으로써 <br>비계 관련 전문가 인력비 감소",
+			"contents3-3": " ",
+			"title4": "생산기지 자율주행로봇(SPOT) 현장적용 검증 용역",
+			"contents4-1": "- 한국가스공사 제주 LNG 본부 현장업무 지원 강화 방안 마련을 위한<br> 생산기지 점검용 스마트 안전로봇 도입 로드맵 수립",
+			"contents4-2": "- 현장시연 실시를 통한 자율 주행 로봇 사업 도입 타당성 검증 실시",
+			"contents4-3": "- 제주 LNG 본부 규모가 작아 SPOT 도입 용이하지만 <br>상부 설비가 존재하는 그레이팅 및 계단 지역 적용 불가 확인 ",
+			"title5": "3D Visualization System 기능 개선",
+			"contents5-1": "- 쉬운조작과인터페이스를통한3D시각화로빠른업무처리",
+			"contents5-2": "- 직관적인업무지시및업무이력관리가가능",
+			"contents5-3": "- 화면캡쳐및녹화로입체적인기록가능"
 		},
-		"airlineText": {
-			"airlineTitle": {
-				"category": "항공/철도",
-				"title": "항공/철도 산업의 문제에 대해 <br class='mobile-hidden'>고민해보셨나요?",
-				"contents": "항공/철도 산업에서는 무엇보다 안전이 가장 큰 이슈입니다. 사고 발생 시마다 안전한 운행을 위한 정밀한 정비 및 관리 시스템 구축에 대한 중요성이 언급되고 있습니다. 하지만 산업 내에서는 운행 기체/기관과의 실시간 정확한 소통과 전문 기술 인력 확보에 어려움을 겪고 있습니다."
-			},
-			"issueTitle": "산업이슈",
-			"issueList": [
-				{
-					"title": "정비 인력의 훈련 시스템 부족",
-					"contents": "철도, 항공 교통 인프라 확충과 함께 정비 인력 수요 또한 증가하고 있으나, 현장에 바로 투입할 수 있는 중급, 고급 정비 인력 공급이 부족합니다. 효율적으로 교육할 수 있는 훈련 시스템이 필요합니다."
-				},
-				{
-					"title": "철도, 항공 안전 관리 체계(SMS) 재고",
-					"contents": "잘못된 운영 관리가 대형 악재로 이어질 수 있는 분야에서의 안전 관리 시스템은 사고를 예방하고 운영 제한 상황을 확인하는데 중요한 역할을 합니다."
-				},
-				{
-					"title": "음성에 의존한 원격 지원",
-					"contents": "아직도 우리는 관제실과 현장(활주로 또는 차고) 간 의사소통을 위해, 무전기를 사용합니다. 목소리에 의존한 의사소통은 정확하지 않고, 상세한 정보를 전달하기에 한계가 있습니다."
-				},
-				{
-					"title": "사고 관리 및 대응 시뮬레이션 부재",
-					"contents": "글과 이미지로 제작된 사고 대응 매뉴얼은 상황 발생 시, 도움이 되지 않습니다. 조종사나 정비사의 조작에 따른 예측 결과와 정확한 대응 단계의 가시화가 필요합니다."
-				}
-			],
-			"infographicText": {
-				"category": "솔루션",
-				"title": "버넥트가 제시하는 안전한 관리 체계를 바탕으로 <br class='mobile-hidden'>최고 수준의 항공/철도 서비스를 운영하세요.",
-				"contents": "항공/철도 산업은 수요 증가와 기술 고도화로 운영의 복잡성이 높아지고 있습니다. <br class='mobile-hidden'>안전 관리 체계의 핵심 프로세스인 위험 관리와 안전 보증을 위한 플랫폼을 버넥트와 함께 구축하세요.",
-				"image": "https://virnect.com/images/pages/solution/img-airline-infographic-00.svg",
-				"infographicList": [
-					{
-						"title": "현장 설비 대상 AR 매뉴얼",
-						"contents": "모형을 활용한 정비 교육이 아닌 실제 설비 위에 정보를 증강시켜 정확한 위치를 알려주는 교육, 훈련이 가능합니다. 기체/기관 한 대를 구성하는 부품 (약 500만개)들을 디지털화하여 정비 대상 설비를 체계적으로 관리하고,  작업 과정을 기록하여 교육 자료로 재사용할 수 있습니다. ",
-						"image": "https://virnect.com/images/pages/solution/img-airline-infographic-01.svg"
-					},
-					{
-						"title": "위험 지표 관리와 <br class='mobile-hidden'>운영 현황 모니터링",
-						"contents": "VIRNECT View로 기체/기관 등록 및 상태 확인 보고, 안전 조사 등의 운영 업무에서 발생하는 데이터를 현장에서 즉시 입력하고, 버넥트 Twin으로 수집, 분석함으로써 안전 관리 상태를 시각화하여 안정적인 운영 상태의 신뢰성을 더하고 객관화할 수 있습니다.",
-						"image": "https://virnect.com/images/pages/solution/img-airline-infographic-02.svg"
-					},
-					{
-						"title": "운영 정보를 바탕으로 한 <br class='mobile-hidden'>원격 점검 지원",
-						"contents": "기체와 기관의 복잡도가 높은 만큼 운항, 기체, 엔진 등 분야 전문가들이 함께 의사소통해야하는 상황이 발생합니다. 이 때, 버넥트 Remote로 상황를 확인하고, 관련 자료들을 함께 공유함으로써 더 정확한 원인 파악과 의사결정을 하여 신속하게 현장의 취약점을 해결할 수 있습니다.",
-						"image": "https://virnect.com/images/pages/solution/img-airline-infographic-03.svg"
-					},
-					{
-						"title": "사고 관리 및 위험 예측 분석",
-						"contents": "사고 상황과 정비 정보를 바탕으로 사고 원인을 분석하고 사고 위험 정도를 모델링, 단계화합니다. 이를 조종사와 정비사의 일상 업무에 제공하여 조작에 따른 예측 결과를 알려줘 업무의 정확도를 증가시킵니다. 또한, 사고 발생 시 최적의 매뉴얼을 제공함으로써 대응력을 높입니다. 대응한 결과 정보를 바탕으로 사고 예측 모델을 점점 더 고도화합니다.",
-						"image": "https://virnect.com/images/pages/solution/img-airline-infographic-04.svg"
-					}
-				]
-			},
-			"exampleList": [
-				{
-					"img": "https://virnect.com/images/pages/solution/view-usecase-05.png",
-					"title": "철도차량 자가 진단 시스템"
-				},
-				{
-					"img": "https://virnect.com/images/pages/solution/remote-usecase-01.png",
-					"title": "철도 차량 교육 훈련 및 정비 관리 지원"
-				}
-			],
-			"bgExampleList": [
-				{
-					"img": "https://virnect.com/images/pages/products/logo-recommendation-kt",
-					"contents": "높은 신뢰성을 가진 VIRNECT Track의 객체 검출 기능은 <br class='mobile-hidden'>산업현장의 계측 정보를 관리하는 플랫폼을 제공할 수 있습니다.",
-					"category": " - KT Infra 연구소, 김영석"
-				}
-			]
+		"ValueOilUseCaseText": {
+			"title1": "AR 원격 기술 지원 솔루션 적용",
+			"contents1-1": "- 전문가의 출장 비용 및 현장 작업자의 교육 비용 절감",
+			"contents1-2": "- 현장 작업자가 직관적인 원격 지원을 받음으로써 생산성 향상 ",
+			"contents1-3": "- 현장 작업자가 지시를 받음과 동시에 양 손이 자유롭게 <br>작업함으로써 작업 시간 단축 ",
+			"title2": "AR 원격 기술 지원 솔루션 적용",
+			"contents2-1": "- 생산 설비 문제 발생 시, 즉각적 대처가 가능해짐으로써 큰 사고 방지",
+			"contents2-2": "- 유지보수, 점검 등을 원격으로 지원함으로써 비용 절감",
+			"contents2-3": "- 해외 사업장에 AR솔루션을 적용함으로써 생산성 향상",
+			"title3": "AR 기반 IoT 센서 정보 연동 시각화",
+			"contents3-1": "- 시각화 정보를 통해 데모공장 구조에 대한 이해도를 높임",
+			"contents3-2": "- 현장에서 공장 정보관리 효율성 증대",
+			"contents3-3": " ",
+			"title4": "해외 생산 공장 원격 기술 지원",
+			"contents4-1": "- 한국 본사와 해외 지사를 원격지원을 함으로써 출장 비용 감소<br> AR을 기반으로 확실한 지시를 내림으로써 해외 지사의 직관<br> 이해를 통한 생산성 향상",
+			"contents4-2": " ",
+			"contents4-3": "-  ",
+			"title5": "배선 설계 시각화 어플리케이션 개발",
+			"contents5-1": "- AR 시각화를 통해 빠르고 정확한 배선 작업 가능",
+			"contents5-2": "- XR 가이드로 작업자의 작업능률 향상 기대",
+			"contents5-3": "- "
 		},
-		"oilText": {
-			"oilTitle": {
-				"category": "정유/석유화학/배터리",
-				"title": "정유/화학 산업의 문제에 대해 <br class='mobile-hidden'>고민해보셨나요?",
-				"contents": "화학 물질을 다루는 정유, 석유화학, 배터리 산업은 언제나 안전해야 합니다. 공정의 효율화도 중요하지만, 사고를 예방하기 위한 시설 관리 및 정확한 설비 제어, 정교한 안전 진단이 선행되어야 합니다."
-			},
-			"issueTitle": "산업이슈",
-			"issueList": [
-				{
-					"title": "시설 관리 시스템 재고",
-					"contents": "화학 물질을 재가공하는 석유 화학 분야에서의 시설 운용 관리는 중요한 업무입니다. 부실한 관리로 인해 화재, 폭발, 누수 사고로 이어지지 않도록 PSM(Process Safety Management)을 바탕으로 정밀한 모니터링 시스템이 필요합니다."
-				},
-				{
-					"title": "오조작 예방 및 사고 대처 미흡",
-					"contents": "사람의 조작으로 운용되는 시설에서의 잘못된 조작은 치명적인 사고로 이어집니다. 오조작을 사전에 예방할 수 있는 보조 장치가 필요하며, 조작자가 사고 초기에 대처 방법을 빠르게 확인할 수 있어야 합니다."
-				},
-				{
-					"title": "현장 안전 진단의 비전문성",
-					"contents": "배관 균열로 인한 기체 누출 사고로 현장 직원이 어지러움, 구토증세를 보이는 상황이 빈번하게 발생하고, 원인 조사 및 배관 교체를 위해 운영을 중단합니다. 면밀한 안전 진단을 위한 현장 지원 시스템이 필요합니다."
-				},
-				{
-					"title": "본사 - 지방, 해외 공장과의 의사소통 어려움",
-					"contents": "본사는 수도권에 위치해 있지만, 산업 시설은 사고 우려, 환경 규제 등으로 인해 대부분 지방 또는 해외에 있습니다. <br class='mobile-hidden'> 이로 인해, 업무 협의를 위한 출장도 빈번하게 발생하고, 업무 관련자 간 소통도 어렵습니다."
-				}
-			],
-			"infographicText": {
-				"category": "솔루션",
-				"title": "광대한 시설이 연결되어 있는 <br class='mobile-hidden'>정유/화학 자산 관리 시스템을 혁신합니다.",
-				"contents": "정유 및 석유화학, 배터리 산업은 공정 단계별로 다양한 생산 설비가 유기적으로 연결되어 있습니다. <br>버넥트는 시설물을 실시간으로 모니터링하고 안전한 공정 상태를 유지할 수 있는 솔루션을 제공합니다. ",
-				"image": "https://virnect.com/images/pages/solution/img-chemical-infographic-00.svg",
-				"infographicList": [
-					{
-						"title": "정밀한 시설 관리 시스템",
-						"contents": "화학 물질 취급 관리 정보와 자산, 작업자들의 3차원 위치 추정 정보, 공정 단계별 상태 정보 등을 관리함으로써 현장에서 발생하는 모든 활동을 정밀하게 확인하는 모니터링 시스템을 제공합니다. 이를 통해, 위험 요소 또는 잠재적인 위험요소를 확인하거나 줄일 수 있습니다.",
-						"image": "https://virnect.com/images/pages/solution/img-chemical-infographic-01.svg"
-					},
-					{
-						"title": "정확한 조작 및 <br class='mobile-hidden'>사고 대처 매뉴얼",
-						"contents": "VIRNECT Make로 조작 및 사고 대처 매뉴얼을 배포하면, 조작자가 VIRNECT View로 시설물을 비춰 공간 내 어느 곳을 어떻게 조작해야하는지 정확하게 확인할 수 있습니다. 이는 미숙련자의 빠른 현장 업무 투입을 실현하고, 조작자의 업무 정확성을 높여 오조작을 방지합니다.",
-						"image": "https://virnect.com/images/pages/solution/img-chemical-infographic-02.svg"
-					},
-					{
-						"title": "센서, AR/DT 기술을 활용한 <br class='mobile-hidden'>현장 안전 진단 지원",
-						"contents": "센서 설치를 통해, 배관의 상태 정보를 상시 확인하는 한편, 방사선투과시험, 초음파탐상시험, 자분탐상시험 등 비파괴검사의 상세 매뉴얼을 현장 배관 및 활용 장비 위에 시각화함으로써 면밀한 안전 진단과 정확한 유지 보수 작업을 지원합니다. 진단한 결과와 보수 작업의 결과는 작업자가 현장에서 바로 입력하여 보고할 수 있습니다.",
-						"image": "https://virnect.com/images/pages/solution/img-chemical-infographic-03.svg"
-					},
-					{
-						"title": "사실감 높은 원격 협업",
-						"contents": "복잡한 작업들이 계획적이고, 순차적으로 이뤄지는 화학, 석유화학 공정은 하나의 공정에 문제가 생기면 다른 공정들에 영향을 끼쳐 큰 손실을 발생시킵니다. 버넥트 Remote를 활용하여 원격에 있는 다른 전문가들과 빠르고 사실감 있게 의사소통하여 문제를 해결하세요.",
-						"image": "https://virnect.com/images/pages/solution/img-chemical-infographic-04.svg"
-					}
-				]
-			},
-			"bgExampleList": [
-				{
-					"img": "https://virnect.com/images/pages/products/logo-recommendation-oci",
-					"contents": "설비 유지보수시 시간과 공간의 제약없이 빠르게 협업할 수 있는 <br class='mobile-hidden'>강력한 Tool로 생각됩니다.",
-					"category": "- OCI"
-				},
-				{
-					"img": "https://virnect.com/images/pages/products/logo-recommendation-lgchem",
-					"contents": "해외 생산 사이트를 가지고 있는 입장에서 버넥트 리모트가 실제 <br class='mobile-hidden'>업무 수행에 많은 도움이 되고 있습니다.",
-					"category": "- LG 화학"
-				}
-			]
+		"ValueEduUseCaseText": {
+			"title1": "2021년 혁신제품 시범사용",
+			"contents1-1": "- 코로나 환경에서 대학과 실습처인 기업체간 Remote 시스템 구축과 원격 실감형 현장실습 구현",
+			"contents1-2": "- 대학내부에서외부의실습환경과학생의실습정보를확인,모니티링하여비대면원격지원플랫폼을구축",
+			"contents1-3": "- 대학과 대학, 대학과 산업체간의 기술 협업체계를 대면 방식이 아닌 비대면 방식의 혁신적 전환을 위해 비대면 <br>VIRNECT Remote 기술을 적용",
+			"title2": "경기도 찾아가는 수출 상담회",
+			"contents2-1": "- 해외 바이어를 사업장으로 초청하는 것과 같은 효과",
+			"contents2-2": "- 미팅 대상 바이어에게 기업의 실제 활동을 보여주어 신뢰감 형성",
+			"contents2-3": "- 제품이커서이동이불가한기업도현장연결을통해소개및데모가능",
+			"title3": "한국 건설안전박람회 2020 비대면 도슨트 투어",
+			"contents3-1": "- 국내 전시회에 참석이 불가한 해외 바이어에게 간접 체험의 기회",
+			"contents3-2": "- 실제제품의데모및체험을간접적이지만생생하게볼수있어단순비디오촬영과는다른현장감을부여",
+			"contents3-3": "- 양방향 커뮤니케이션을 통해 현장에서 직접 문의 사항을 질의하고 답변하여 즉각적 정보제공 가능"
 		},
-		"tailText": "지금 바로 운영 효율을 <br class='mobile-show'>최적화하세요."
+		"ValueEnterUseCaseText": {
+			"title1": "AR 글라스 기반 도슨트 운용(서울 국립중앙박물관)",
+			"contents1-1": "- 조작이 편리하고 습득이 쉽고 몰입 향상이 가능",
+			"contents1-2": "- 관람자 행동과 패턴을 분석하여 차별화된 서비스 제공",
+			"contents1-3": "- 인터랙티브한 체험 학습을 할 수 있는 콘텐츠로 활용",
+			"title2": "혼합현실 기술 기반의 미니병풍(경복궁) 개발",
+			"contents2-1": "- 역사적, 문화적 소재들에 대한 다양한 가상체험 서비스 제공",
+			"contents2-2": "- 원격 체험으로 관광지에 대한 지속적인 관심과 재방문 유도",
+			"contents2-3": "- 휴대형으로 필요할 때 스마트폰에 손쉽게 장착하여 간편화",
+			"title3": "증강현실 황룡사 중문 실감형 콘텐츠 제작",
+			"contents3-1": "- 황룡사 복원 고증 연구 결과에 대한 공감각적 검토",
+			"contents3-2": "- 실현가능한 복원 안 마련 가능",
+			"contents3-3": "- 황룡사지 유적에 대한 관심 유도 및 가치 전달 강화",
+			"contents3-4": "- 전통 건축 문화재 증강현실 구현 방안 제시",
+			"title4": "AR-VR 전환 가능한 몰입형 체험전시 시스템",
+			"contents4-1": "- 관람자는 AR기반 기본정보를 효과적으로 습득",
+			"contents4-2": "- 3D로 복원하여 해당 전시물에 대한 상세 정보를 제공",
+			"contents4-3": "- VR기반 실제 전시물과 동일한 크기의 가상공간 구현",
+			"contents4-4": "- 관람자에게 몰입감과 사실감을 높여 시간여행 체험 가능",
+			"title5": "전시관을 위한 증강현실 전시 콘텐츠 개발",
+			"contents5-1": "- 체험형 전시의 몰입감을 극대화",
+			"contents5-2": "- AR기반 몰입, 체험형 천연기념물센터 매머드 특별전 전시",
+			"contents5-3": "- IT 기술 적용한 매머드 콘텐츠로 관람객 증가",
+			"title6": "직업가상체험 360도 파노라마",
+			"contents6-1": "- 직업별 실제적인 상황을 간접적으로 체험",
+			"contents6-2": "- 실제 일어날 수 있는 상황들을 빠르게 습득",
+			"contents6-3": "- 360도 VR 영상을 체험으로 실제와 비슷한 경험"
+		},
+		"ValueEPCUseCaseText": {
+			"title1": "상대측위, 절대측위 변환 SW",
+			"contents1-1": "- 출발지점,이동방향에구애받지않고목적지로안내가능",
+			"contents1-2": "- Core 기술을 통한 Navigation 기능 구현에 필요한 기술 입증",
+			"title2": "스마트글라스기반 AR전시시스템",
+			"contents2-1": "- AR시각화로 합병증 정보를 연관지어 정확한 정보를 전달",
+			"contents2-2": "- 몰입형 체험이 가능하고 전시 체험자가 정보에 대한 이해가 빨라짐",
+			"contents2-3": " ",
+			"title3": "금융상품 AR콘텐츠 개발",
+			"contents3-1": "- 행사장에서 고객이 AR콘텐츠를 직접 체험하여 홍보효과가 높음",
+			"contents3-2": "- 복잡한설명서없이간단한절차로상품에대한이해도가빠름",
+			"contents3-3": "- ",
+			"contents3-4": "- ",
+			"title4": "증강현실 기술 기반의 성형외과 수술 플랫폼",
+			"contents4-1": "- 수술 시 참고하는 환자의 CT파일을 AR로 시각화",
+			"contents4-2": "- 고개를 돌리지 않아도 한눈에 환자와 정보를 볼 수 있어 효율성 증가",
+			"contents4-3": "- 두 손이 자유롭고 만지지 않고 인터랙션이 가능해 위생적 문제 해결"
+		}
 	}
 }
