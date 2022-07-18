@@ -463,6 +463,17 @@ export default {
   cursor: pointer;
   margin-left: 23px;
 }
+.company .companyWrap .companyAwards .prev-btn,
+.company .companyWrap .companyAwards .next-btn {
+  top: 70%;
+}
+.company .companyWrap .companyAwards .carousel-wrapper .swiper-slide span,
+.company .companyWrap .companyAwards .carousel-wrapper .swiper-slide img {
+  width: 100%;
+}
+.swiper-wapper {
+  gap: 10px;
+}
 .awardsSlider {
   display: flex;
   align-items: center;
