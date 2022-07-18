@@ -17,9 +17,6 @@
   "DummyAwardEn": {
     "description": "Auto imported from components/dummy/awardEn.js"
   },
-  "MixinsMixin": {
-    "description": "Auto imported from components/mixins/mixin.js"
-  },
   "MainBannerModule": {
     "description": "Auto imported from components/main/bannerModule.vue"
   },
@@ -50,8 +47,8 @@
   "MainUseCase": {
     "description": "Auto imported from components/main/useCase.vue"
   },
-  "NewsCommonBaner": {
-    "description": "Auto imported from components/news/CommonBaner.vue"
+  "MixinsMixin": {
+    "description": "Auto imported from components/mixins/mixin.js"
   },
   "Paging": {
     "description": "Auto imported from components/paging/paging.vue"
@@ -112,6 +109,9 @@
   },
   "ModulesYoutubeFullscreen": {
     "description": "Auto imported from components/modules/YoutubeFullscreen.vue"
+  },
+  "NewsCommonBaner": {
+    "description": "Auto imported from components/news/CommonBaner.vue"
   },
   "ProductsNewBgPartData": {
     "description": "Auto imported from components/products/NewBgPartData.js"
