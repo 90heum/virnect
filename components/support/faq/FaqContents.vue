@@ -83,7 +83,7 @@ export default {
           this.isCategory ? "&category=" + this.isCategory : ""
         }`
       );
-      // this.requestData(this.isDetail);
+      this.requestData(this.isDetail);
     },
     async requestData(e) {
       this.responseData = {};

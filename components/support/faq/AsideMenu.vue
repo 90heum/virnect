@@ -52,7 +52,7 @@ export default {
         handleMobileTab (e) {
             this.isToggle = !this.isToggle;
             this.$router.push(`?type=${e ? e : ''}${this.$route.query.category ? '&category=' + this.$route.query.category : ''}`);
-            // this.chooseType(e);
+            this.chooseType(e);
         },
     }
 }
