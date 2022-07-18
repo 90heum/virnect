@@ -50,4 +50,10 @@ export default {
     opacity: 0.6;
     z-index: -1;
 }
+@media screen and (max-width: 600px) {
+    .modalWrapper {
+    top: -50%;
+    left: 0px;
+}
+}
 </style>

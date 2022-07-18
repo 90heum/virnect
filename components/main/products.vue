@@ -202,7 +202,7 @@
                   </button>
                 </span>
                 <span>
-                  <pro-modal :modal="modal" :popup="popup" />
+                  <!-- <pro-modal :modal="modal" :popup="popup" /> -->
                   <a @click="modal()">
                     <i>
                       <img
@@ -253,7 +253,7 @@
                   </button>
                 </span>
                 <span>
-                  <pro-modal :modal="modal" :popup="popup" />
+                  <!-- <pro-modal :modal="modal" :popup="popup" /> -->
                   <a @click="modal()">
                     <i>
                       <img
