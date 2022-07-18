@@ -38,11 +38,12 @@ export default {
     align-items: center;
     position: fixed;
     z-index: 999999999;
-    top: 0px;
+    top: 10px;
+    left: 35%;
 }
 .modalWrapper::before {
     content: '';
-    height: 300vw;
+    height: 300vh;
     width: 300vw;
     position: absolute;
     background: #000000;
