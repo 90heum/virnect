@@ -332,6 +332,7 @@
           </span>
         </div>
       </div>
+      <pro-modal :modal="modal" :popup="popup" />
     </div>
   </div>
 </template>
@@ -396,6 +397,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.moduleBottom a {cursor: pointer;}
 .productsModule {
   ul,
   li,

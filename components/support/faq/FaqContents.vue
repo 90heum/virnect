@@ -59,7 +59,6 @@
 
 <script>
 import CommonPaging from "~/components/paging/paging.vue";
-
 export default {
   components: {
     CommonPaging,
@@ -78,12 +77,8 @@ export default {
   methods: {
     chooseDetail(e) {
       this.isDetail = this.isDetail === e ? null : e;
-      this.$router.push(
-        `?type=${e ? e : ""}${
-          this.isCategory ? "&category=" + this.isCategory : ""
-        }`
-      );
-      // this.requestData(this.isDetail);
+      // this.$router.push(`?type=${e ? e : ''}${this.isCategory ? '&category=' + this.isCategory : ''}`);
+      this.requestData(this.isDetail);
     },
     async requestData(e) {
       this.responseData = {};
@@ -94,6 +89,8 @@ export default {
   },
 };
 </script>
+
+
 
 <style lang="scss" scoped>
 .FAQList {
