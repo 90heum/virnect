@@ -315,6 +315,7 @@ export default {
         color: #121212;
       }
       /deep/ img {
+        width: 100%;
       }
     }
     // PreNext
