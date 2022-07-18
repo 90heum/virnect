@@ -1,8 +1,18 @@
 <template>
   <header>
     <div class="headerInner">
-      <div class="logo"
-           @click="() => {if (!isMenu) {return;} isMenu = false; mobileMenu = { list1: false };}">
+      <div
+        class="logo"
+        @click="
+          () => {
+            if (!isMenu) {
+              return;
+            }
+            isMenu = false;
+            mobileMenu = { list1: false };
+          }
+        "
+      >
         <nuxt-link to="/">
           <img
             src="https://velog.velcdn.com/images/kyj0206/post/9ebd4dfa-26bb-4b50-bb22-9350ed0089b7/image.png"
@@ -289,7 +299,11 @@
         <!-- 햄버거 버튼 [모바일 메뉴] : 언어박스가 사라지고 얘가 나옴 -->
         <div class="MbHam" v-if="!isWeb">
           <!-- 햄버거 -->
-          <span class="MbOpen" @click="[showMenu(true),mobileMenu = { list1: false }]" v-if="!isMenu">
+          <span
+            class="MbOpen"
+            @click="[showMenu(true), (mobileMenu = { list1: false })]"
+            v-if="!isMenu"
+          >
             <a>
               <img
                 src="https://velog.velcdn.com/images/kyj0206/post/9c806d74-c1f9-4601-8649-04e69f9613b4/image.png"
@@ -688,7 +702,9 @@
             }&type`"
           >
             <img
-              :src="`data:image/png;base64,${contentList ? contentList[0]['thumbnail'] : ''}`"
+              :src="`data:image/png;base64,${
+                contentList ? contentList[0]['thumbnail'] : ''
+              }`"
               alt="뉴스룸 이미지"
             />
           </nuxt-link>

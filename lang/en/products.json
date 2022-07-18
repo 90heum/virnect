@@ -3,10 +3,9 @@
 		"data": {
 			"battery": "Battery Consumption",
 			"temperature": "Device external temperature",
-			"cpu":"CPU Usage",
+			"cpu": "CPU Usage",
 			"memory": "Memory Usage"
 		},
-
 		"remoteBanner": {
 			"title": "XR Remote Collaboration",
 			"contents": "VIRNECT Remote enables seamless collaboration overcoming time and space constraints."
@@ -37,8 +36,6 @@
 			"autoStart": "Auto-start and login when RealWear devices are turned on",
 			"personalization": "By-customer personalization upon request"
 		},
-
-
 		"makeBanner": {
 			"title": "All-In-One Extended Reality (XR) Content Creation",
 			"contents": "VIRNECT Make enables fast and stable XR content creation. Translate industrial knowledge and operation manuals into engaging immersive content."
@@ -63,8 +60,6 @@
 			"targets": "Compatible with different targets (QR code, V-target, no target).",
 			"ioT": "Displays IoT and other customer system data (over customization request)."
 		},
-
-
 		"viewBanner": {
 			"title": "Extended Reality (XR) Content visualization",
 			"contents": "VIRNECT View delivers XR content anywhere, anytime, over commercial devices, increasing work efficiency and allowing on-site reporting."
@@ -73,7 +68,6 @@
 			"category": "Product Overview",
 			"title": "View XR content anywhere, anytime, on any commercially available device.",
 			"contents": "VIRNECT View is an extended reality (XR) information and data visualization solution. Check work information and operation data such as work manuals and safety guides right on the spot on your phone, and make informed decisions."
-		
 		},
 		"viewSubText": {
 			"check": "Have XR content at hand on your current devices",
@@ -88,8 +82,6 @@
 			"contents3": "Set access rights and make your content available only to a specific group of users",
 			"contents4": "Customize it, display company information, and log in with your company credentials"
 		},
-
-
 		"twinBanner": {
 			"title": "Digital Twins for analysis, monitoring, and simulation",
 			"contents": "VIRNECT Twin service allows companies to have industrial site virtual models linked to real-time data enabling analysis, monitoring, and simulation."
@@ -98,7 +90,6 @@
 			"category": "Data-linked digital models for virtual monitoring and simulation",
 			"title": "Predict and manage situations using digital replicas of industrial sites",
 			"contents": "VIRNECT Twin service offers a digital model of an industrial site connected with real-time information, a DT (digital twin). VIRNECT Twin allows a bird's eye view of a whole complex enabling managers to monitor current operation and simulate different factory configurations at minimum costs."
-		
 		},
 		"twinSubText": {
 			"Title1": "Robust collaboration system",
@@ -110,7 +101,6 @@
 			"Title4": "Perfect facility integration",
 			"Contents4": "Collect data from any process using 2D screen recognition and tracking technology, linking all moving parts to the digital twin."
 		},
-
 		"trackBanner": {
 			"title": "Detection and tracking engine",
 			"contents": "VIRNECT Track XR engine learns, detects, and tracks objects quickly and accurately. VIRNECT Track engine is in each VIRNECT product and service, granting outstanding performance."
@@ -119,7 +109,6 @@
 			"category": "AR development SDK for object detection and tracking",
 			"title": "Create the perfect AR application.",
 			"contents": "VIRNECT Track is our in-house AR engine that ensures fast and precise object learning, recognition, detection, and tracking. VIRNECT Track can detect a target with over 90% accuracy and in less than 15 milliseconds guaranteeing stability for SLAM-based AR content. Installed within VIRNECT AR Products, VIRNECT Track ensures superior performance."
-		
 		},
 		"trackSubText": {
 			"Title1": "Superior detection performance",
@@ -131,8 +120,6 @@
 			"Title4": "Supports a diversity of targets",
 			"Contents4": "VIRNECT Track follows various targets, such as QR codes, images, or 3D targets."
 		},
-
-
 		"subButton": {
 			"know": "Know more",
 			"free": "Try it for free"
@@ -142,15 +129,12 @@
 			"current": "Current Enterprise Customers",
 			"prject": "Projects"
 		},
-
-
-
 		"visualText": {
 			"title": "Try our optimized products <br class='mobile-hidden'>for industrial worksites.",
 			"contents": "VIRNECT products make safer and more efficient industrial worksites <br class='mobile-hidden'>by applying original AR and Digital Twin technologies."
 		},
 		"productText": {
-			"title": "VIRNECT products make safer and more efficient industrial worksites by.."
+			"title": "VIRNECT enables seamless collaboration overcoming time and space constraints."
 		},
 		"supportTitle": {
 			"category": "Use and support",

@@ -434,6 +434,8 @@ header {
                 }
             }
         }
+
+
     }
 
     // 수정예정
@@ -462,7 +464,7 @@ header {
 
             >div {
                 gap: 50px;
-                max-width: 455px;
+                max-width: 500px;
                 flex: 1;
                 height: 100%;
                 padding-top: 50px;
@@ -495,6 +497,8 @@ header {
                             letter-spacing: -0.16px;
                             color: #3f97d3;
 
+
+
                             p {
                                 padding-bottom: 10px;
                                 border-bottom: 1px solid #3f97d3;
@@ -502,6 +506,8 @@ header {
                         }
                     }
                 }
+
+
 
                 .subNavProductsMenu {
                     display: flex;
