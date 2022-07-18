@@ -124,21 +124,9 @@
           <span class="moduleBottomTitRemote">
             <div>
               <p>VIRNECT Remote</p>
-              <h2>XR 원격 협업 솔루션</h2>
+              <h2 v-html="$t('newMainText.remoteText.title')"></h2>
               <span class="solution">
-                <p>
-                  VIRNECT Remote의 실시간 원격협업 서비스를 통해 산업 현장에
-                  필요한 정보와
-                </p>
-                <p>
-                  이슈를​ 실시간으로 공유하여 언제 어디서든 업무 대응이
-                  가능합니다.​
-                </p>
-                <p>
-                  쉽고 빠르게 협업이 가능하며 ​기존의 익숙한 업무 환경을 그대로
-                  유지하여
-                </p>
-                <p>업무의 정확성과 효율성을 높일 수 있습니다.</p>
+                <p v-html="$t('newMainText.remoteText.contents')"></p>
               </span>
             </div>
             <div style="padding-top: 52px">
@@ -180,18 +168,9 @@
           <span class="moduleBottomTitMake">
             <div>
               <p>VIRNECT Make</p>
-              <h2>확장현실(XR) 콘텐츠 제작 솔루션</h2>
+              <h2 v-html="$t('newMainText.makeText.title')"></h2>
               <span>
-                <p>
-                  VIRNECT Make는 XR 콘텐츠로 제작 도구로, 비전문가도 마우스
-                  클릭으로 XR 콘 텐츠 제작이 가능합니다. 또한 문자, 사진,
-                  비디오, 3D 모델은 물론 기존 작업 문서, 설비 도면 등을 그대로
-                  제 작에 빠르게 활용할 수 있습니다.
-                </p>
-                <p>
-                  안전하고 효율적인 업무 생태계를 기업에서 직접 만들고
-                  관리합니다.
-                </p>
+                <p v-html="$t('newMainText.makeText.contents')"></p>
               </span>
             </div>
 
@@ -234,17 +213,9 @@
           <span class="moduleBottomTitView">
             <div>
               <p>VIRNECT View</p>
-              <h2>확장현실(XR) 콘텐츠 시각화 솔루션</h2>
+              <h2 v-html="$t('newMainText.viewText.title')"></h2>
               <span>
-                <p>
-                  VIRNECT View는 확장현실(XR) 정보 및 데이터 시각화
-                  솔루션입니다.
-                </p>
-                <p>
-                  상용회된 기 기로 작업 매뉴얼, 안전 가이드 등의 업무 정보와
-                  운영 데이터를 현장에서 바로 확인할 수 있으며, 신속한 의사
-                  결정과 빠른 대응이 가 능합니다.
-                </p>
+                <p v-html="$t('newMainText.viewText.contents')"></p>
               </span>
             </div>
 
@@ -287,13 +258,9 @@
           <span class="moduleBottomTitTwin">
             <div>
               <p>VIRNECT Twin</p>
-              <h2>XR 기반 3D 현장 관리 솔루션</h2>
+              <h2 v-html="$t('newMainText.twinText.title')"></h2>
               <span>
-                <p>
-                  VIRNECT Twin은 산업 현장을 가상 모델로 재현하고 이를 실제
-                  데이터와 연동하여, 산업 현장의 운영 상태 및 프로세스를
-                  모니터링할 수 있는 제품입니다.
-                </p>
+                <p v-html="$t('newMainText.twinText.contents')"></p>
               </span>
             </div>
 
@@ -331,21 +298,9 @@
           <span class="moduleBottomTitTrack">
             <div>
               <p>VIRNECT Track</p>
-              <h2>XR 원격 협업 솔루션</h2>
+              <h2 v-html="$t('newMainText.trackText.title')"></h2>
               <span>
-                <p>
-                  VIRNECT Remote의 실시간 원격협업 서비스를 통해 산업 현장에
-                  필요한 정보와
-                </p>
-                <p>
-                  이슈를​ 실시간으로 공유하여 언제 어디서든 업무 대응이
-                  가능합니다.​
-                </p>
-                <p>
-                  쉽고 빠르게 협업이 가능하며 ​기존의 익숙한 업무 환경을 그대로
-                  유지하여
-                </p>
-                <p>업무의 정확성과 효율성을 높일 수 있습니다.</p>
+                <p v-html="$t('newMainText.trackText.contents')"></p>
               </span>
             </div>
 
