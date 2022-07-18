@@ -70,4 +70,16 @@ export default {};
     }
   }
 }
+
+@media screen and (max-width: 555px) {
+  .contactBanner .ContactBannerInner h2{
+    font-size: 26px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    text-align: center;
+  }
+}
 </style>
