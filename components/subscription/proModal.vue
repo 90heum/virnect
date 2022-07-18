@@ -56,4 +56,10 @@ export default {
     left: 0px;
 }
 }
+@media screen and (max-width: 425px) {
+    .modalWrapper {
+        top: 5%;
+        left: 20px;
+    }
+}
 </style>
