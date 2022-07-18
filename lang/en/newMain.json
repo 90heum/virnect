@@ -19,6 +19,13 @@
         "trackText": {
             "title": "Detection and tracking engine",
             "contents": "VIRNECT Track XR engine learns, detects, and tracks objects<br> quickly and accurately. VIRNECT Track engine is in each VIRNECT <br>product and service, granting outstanding performance."
+        },
+        "companyText": {
+            "title": "About VIRNECT",
+            "contents": "VIRNECT virtually connects people and info right where is needed.<br>Using XR (extended reality), we enable our customers to access <br> knowledge anywhere, anytime."
+        },
+        "supportText": {
+            "contents": "We will do our best to assist with issues related to the service."
         }
     }
 }
