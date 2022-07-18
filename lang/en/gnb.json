@@ -6,27 +6,27 @@
       "to": "/value/infra_resource",
       "array": [
         {
-          "text": "Energy/Resources",
+          "text": "infra_resource",
           "page": "infra_resource",
           "to": "/value/infra_resource"
         },
         {
-          "text": "Refinery/Petrochemical/Batteries",
+          "text": "manufacture_construction",
           "page": "manufacture_construction",
           "to": "/value/manufacture_construction"
         },
         {
-          "text": "Automotive/Parts",
+          "text": "public_education",
           "page": "public_education",
           "to": "/value/public_education"
         },
         {
-          "text": "Aviation/Railway",
+          "text": "entertainment",
           "page": "entertainment",
           "to": "/value/entertainment"
         },
         {
-          "text": "EPC",
+          "text": "etc",
           "page": "etc",
           "to": "/value/etc"
         }
@@ -196,5 +196,17 @@
         }
       ]
     }
-  ]
+  ],
+  "gnbInnerText": {
+    "SupportText": {
+      "noteText1": "Release note",
+      "noteText2": "Notice",
+      "faqText1": "Member",
+      "faqText2": "Service",
+      "faqText3": "Product",
+      "faqText4": "Device",
+      "faqText5": "Purchase",
+      "faqText6": "Others"
+    }
+  }
 }

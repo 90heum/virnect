@@ -32,7 +32,7 @@
       "contents2": "VIRNECT is prepared to solve the problem."
     },
     "visualText": {
-      "title": " 영문영문영문<p>빠르고 친절하게 해결해 드리겠습니다.</p>",
+      "title": "We will do our best to assist with<br> issues related to the service.",
       "contents": ""
     },
     "menuList": {
@@ -41,11 +41,11 @@
         "url": "",
         "list": [
           {
-            "title": "릴리즈 노트",
+            "title": "Release note",
             "url": "/support/notice?type=2"
           },
           {
-            "title": "안내",
+            "title": "Notice",
             "url": "/support/notice?type=1"
           }
         ]
@@ -55,27 +55,27 @@
         "url": "",
         "list": [
           {
-            "title": "회원",
+            "title": "Member",
             "url": "/support/faq?category=1"
           },
           {
-            "title": "제품",
+            "title": "Product",
             "url": "/support/faq?category=3"
           },
           {
-            "title": "결제",
+            "title": "Purchase",
             "url": "/support/faq?category=4"
           },
           {
-            "title": "서비스",
+            "title": "Service",
             "url": "/support/faq?category=2"
           },
           {
-            "title": "기기",
+            "title": "Device",
             "url": "/support/faq?category=5"
           },
           {
-            "title": "기타",
+            "title": "Others",
             "url": "/support/faq?category=6"
           }
         ]

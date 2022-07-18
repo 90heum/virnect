@@ -6,9 +6,7 @@
           <h2>Support</h2>
         </div>
         <div>
-          <p>
-            서비스 이용에 도움이 되도록 빠르고 친절하게 해결해 드리겠습니다.
-          </p>
+          <p v-html="$t('newMainText.supportText.contents')"></p>
           <span>
             <p>바로가기</p>
             <p>
