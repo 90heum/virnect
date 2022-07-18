@@ -245,7 +245,8 @@
           <span>
             <span class="subNavSupportTit">
               서비스 이용에 도움이 되도록
-              <p>빠르고 친절하게 해결해 드리겠습니다.</p>
+              <br class="modile-show">
+              빠르고 친절하게 해결해 드리겠습니다.
             </span>
             <div class="subNavSupportMenu">
               <span>

@@ -172,8 +172,20 @@
     padding: 115px 24px 90px;
   }
 
-  .edu_usecase .usecaseWrap .usecaseTit h2 {
-    font-size: 40px;
+  .edu_usecase .usecaseWrap .usecaseTit h2{
+    margin-bottom: 50px;
+    font-size: 32px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.41;
+    letter-spacing: -0.5px;
+    text-align: center;
+    color: #0a51b7;
+  }
+
+  .edu_usecase .usecaseWrap  {
+    font-size: 32px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
