@@ -2,7 +2,7 @@
   {
     "name": "company-about",
     "path": "/company/about",
-    "component": "/Users/majeongheum/virnect/pages/company/about.vue",
+    "component": "/Users/hellodigital/virnect/pages/company/about.vue",
     "chunkName": "pages/company/about"
   },
   {
@@ -20,13 +20,13 @@
   {
     "name": "company-ir-detail",
     "path": "/company/ir-detail",
-    "component": "/Users/majeongheum/virnect/pages/company/ir-detail.vue",
+    "component": "/Users/hellodigital/virnect/pages/company/ir-detail.vue",
     "chunkName": "pages/company/ir-detail"
   },
   {
     "name": "company-talent",
     "path": "/company/talent",
-    "component": "/Users/majeongheum/virnect/pages/company/talent.vue",
+    "component": "/Users/hellodigital/virnect/pages/company/talent.vue",
     "chunkName": "pages/company/talent"
   },
   {

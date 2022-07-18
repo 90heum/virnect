@@ -89,7 +89,10 @@
             <p>{{ $t("aboutHistoryTitle.content") }}</p>
           </span>
           <span class="aboutHistoryCont">
-            <ul class="aboutHistoryContTab">
+            <span class="aboutHistoryContTabWrapper"
+                  @click="() => historyToggle = !historyToggle">
+              <span class="aboutHistoryContTabTitle">{{yearsData[HistoryTab-1].years}}</span>
+            <ul :class="`aboutHistoryContTab ${historyToggle ? 'historyActive' : ''}`">
               <li
                 :class="HistoryTab === idx + 1 ? 'active' : ''"
                 @click="handleHisrotyTab(idx + 1)"
@@ -99,6 +102,7 @@
                 {{ data.years }}
               </li>
             </ul>
+            </span>
             <ul class="aboutHistoryContCont" id="2021" v-if="HistoryTab === 1">
               <li class="HisLeft">
                 <div>
@@ -231,26 +235,30 @@
             <p>{{ $t("customersContent.content") }}</p>
           </span>
           <span class="customersCont">
-            <ul class="customerContTab">
-              <li
-                :class="CustomerTab === 1 ? 'active' : ''"
-                @click="handleCustomerTab(1)"
-              >
-                공공
-              </li>
-              <li
-                :class="CustomerTab === 2 ? 'active' : ''"
-                @click="handleCustomerTab(2)"
-              >
-                민간
-              </li>
-              <li
-                :class="CustomerTab === 3 ? 'active' : ''"
-                @click="handleCustomerTab(3)"
-              >
-                교육
-              </li>
-            </ul>
+            <span class="customersContTitleWrapper"
+                  @click="() => customerToggle = !customerToggle">
+              <span class="customersContTitle">{{CustomerTab === 1 ? "공공" : CustomerTab === 2 ? "민간" : "교육"}}</span>
+              <ul :class="`customerContTab ${customerToggle ? 'customerActive' : ''}`">
+                <li
+                  :class="CustomerTab === 1 ? 'active' : ''"
+                  @click="handleCustomerTab(1)"
+                >
+                  공공
+                </li>
+                <li
+                  :class="CustomerTab === 2 ? 'active' : ''"
+                  @click="handleCustomerTab(2)"
+                >
+                  민간
+                </li>
+                <li
+                  :class="CustomerTab === 3 ? 'active' : ''"
+                  @click="handleCustomerTab(3)"
+                >
+                  교육
+                </li>
+              </ul>
+            </span>
             <!-- 공공 -->
             <ul v-if="CustomerTab === 1" class="customerContCont">
               <li>
@@ -756,6 +764,8 @@ export default {
         end: 6,
       },
       award: awardData,
+      historyToggle: false,
+      customerToggle: false
     };
   },
   created() {
@@ -791,7 +801,7 @@ export default {
 <style lang="scss" scoped>
 //@import "~assets/css/pages/products.scss";
 @import "~assets/css/modules/aboutVirnect.scss";
-
+.aboutHistoryContTabTitle, .customersContTitle { display: none; }
 .company {
   display: block;
   overflow: hidden;
@@ -1137,7 +1147,6 @@ export default {
         }
       }
     }
-
     // 인증 및 수상 모듈
     .companyAwards {
       display: block;
@@ -1374,6 +1383,53 @@ export default {
 }
 
 @media screen and(max-width: 768px) {
+  .aboutHistoryContTabTitle, .customersContTitle { 
+    display: inline-block; 
+     font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #121212;
+  }
+
+  .customersContTitleWrapper {
+    height: 50px;
+    margin: 30px 24px 75px;
+    padding: 16px 16px 15px 19px;
+    border: solid 1px #c5c8cf;
+    background-color: #fff;
+    position: relative;
+    display: block;
+  }
+  .aboutVirnect .customers .customersInner .customersCont .customerContTab {
+    position: absolute;
+    display: none;
+    top: 50px;
+    width: 100%;
+    padding-left: 0px;
+    left: 0px;
+    border: 1px solid #c5c8cf;
+    border-radius: 15px;
+    background: #fff;
+  }
+  .aboutVirnect .customers .customersInner .customersCont .customerContTab li.active { color: #9a9da3; }
+  .aboutVirnect .customers .customersInner .customersCont .customerContTab li.active, .aboutVirnect .customers .customersInner .customersCont .customerContTab li:hover {
+    border: 0;
+    color: #0a51b7;
+  }
+  .aboutVirnect .customers .customersInner .customersCont .customerActive { display: block; }
+
+
+
+
+
+
+
+
+
+
   .company
     .companyWrap
     .companyAwards
@@ -1420,6 +1476,35 @@ export default {
     width: calc(95% / 2);
     max-width: none;
   }
+  .aboutHistoryContTabWrapper {
+    height: 50px;
+    margin: 30px 24px 75px;
+    padding: 16px 16px 15px 19px;
+    border: solid 1px #c5c8cf;
+    background-color: #fff;
+    position: relative;
+  }
+  .aboutVirnect .aboutHistory .aboutHistoryInner .aboutHistoryCont .aboutHistoryContTab {
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0px;
+    top: 50px;
+    border: 1px solid #c5c8cf;
+    background: #fff;
+    border-radius: 15px;
+    z-index: 10;
+  }
+  .aboutVirnect .aboutHistory .aboutHistoryInner .aboutHistoryCont .historyActive { display: block; }
+  .aboutVirnect .aboutHistory .aboutHistoryInner .aboutHistoryCont .aboutHistoryContTab li.active {
+    border: 0;
+    color: #9a9da3;
+  }
+  .aboutVirnect .aboutHistory .aboutHistoryInner .aboutHistoryCont .aboutHistoryContTab li:hover {
+    border: 0;
+    color: #092e6e;
+  }
+  
 }
 .prevBtn,
 .nextBtn {
