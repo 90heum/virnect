@@ -114,58 +114,7 @@
     </div>
     <div class="swiper-wrapper">
       <div class="moduleBottom img-warpper swiper-slide">
-      <span class="bottomBackLogo">
-        <img
-          src="https://velog.velcdn.com/images/kyj0206/post/98cf4c83-d886-464e-8f33-e289c3908adc/image.png"
-          alt="배경로고"
-        />
-      </span>
-      <div :class="`moduleBottomWrapRemote`" v-if="category === 1">
-        <span class="moduleBottomTitRemote">
-          <div>
-            <p>VIRNECT Remote</p>
-            <h2>XR 원격 협업 솔루션</h2>
-            <span class="solution">
-              <p>
-                VIRNECT Remote의 실시간 원격협업 서비스를 통해 산업 현장에
-                필요한 정보와
-              </p>
-              <p>
-                이슈를​ 실시간으로 공유하여 언제 어디서든 업무 대응이
-                가능합니다.​
-              </p>
-              <p>
-                쉽고 빠르게 협업이 가능하며 ​기존의 익숙한 업무 환경을 그대로
-                유지하여
-              </p>
-              <p>업무의 정확성과 효율성을 높일 수 있습니다.</p>
-            </span>
-          </div>
-
-          <div style="padding-top: 52px">
-            <span>
-              <button>
-                <nuxt-link to="/products/remote"> 자세히 보기 </nuxt-link>
-              </button>
-              <button>
-                <a href="support/demo" target="blank"> 데모신청 </a>
-              </button>
-            </span>
-            <ProModal :modal="modal" :popup="popup" />
-            <span>
-              <a @click="modal()">
-                <i>
-                  <img
-                    src="https://velog.velcdn.com/images/kyj0206/post/7f7bb43e-b114-4733-b9f6-060e25b8ee49/image.png"
-                    alt="다운로드이미지"
-                  />
-                </i>
-                <p><u>Remote 제품 소개서 다운로드(PDF)</u></p>
-              </a>
-            </span>
-          </div>
-        </span>
-        <span class="moduleBottomCont">
+        <span class="bottomBackLogo">
           <img
             src="https://velog.velcdn.com/images/kyj0206/post/98cf4c83-d886-464e-8f33-e289c3908adc/image.png"
             alt="배경로고"
@@ -192,6 +141,7 @@
                 <p>업무의 정확성과 효율성을 높일 수 있습니다.</p>
               </span>
             </div>
+
             <div style="padding-top: 52px">
               <span>
                 <button>
@@ -201,11 +151,9 @@
                   <a href="support/demo" target="blank"> 데모신청 </a>
                 </button>
               </span>
+              <ProModal :modal="modal" :popup="popup" />
               <span>
-                <a
-                  href="http://13.209.200.75:8080/static/company/product/VIRNECT_Solution_Leaflet_ver_LF.KR2203A.pdf"
-                  target="blank"
-                >
+                <a @click="modal()">
                   <i>
                     <img
                       src="https://velog.velcdn.com/images/kyj0206/post/7f7bb43e-b114-4733-b9f6-060e25b8ee49/image.png"
@@ -219,145 +167,197 @@
           </span>
           <span class="moduleBottomCont">
             <img
-              src="https://velog.velcdn.com/images/kyj0206/post/83c051ef-5178-405e-a1f2-75dc1e351a25/image.jpg"
-              alt="VIRNECT Remote"
+              src="https://velog.velcdn.com/images/kyj0206/post/98cf4c83-d886-464e-8f33-e289c3908adc/image.png"
+              alt="배경로고"
             />
           </span>
-        </div>
-        <div
-          :class="`moduleBottomWrapMake ${category === 2 && 'topNaviActive'}`"
-          v-if="category === 2"
-        >
-          <span class="moduleBottomTitMake">
-            <div>
-              <p>VIRNECT Make</p>
-              <h2>확장현실(XR) 콘텐츠 제작 솔루션</h2>
-              <span>
-                <p>
-                  VIRNECT Make는 XR 콘텐츠로 제작 도구로, 비전문가도 마우스
-                  클릭으로 XR 콘 텐츠 제작이 가능합니다. 또한 문자, 사진,
-                  비디오, 3D 모델은 물론 기존 작업 문서, 설비 도면 등을 그대로
-                  제 작에 빠르게 활용할 수 있습니다.
-                </p>
-                <p>
-                  안전하고 효율적인 업무 생태계를 기업에서 직접 만들고
-                  관리합니다.
-                </p>
-              </span>
-            </div>
+          <div :class="`moduleBottomWrapRemote`" v-if="category === 1">
+            <span class="moduleBottomTitRemote">
+              <div>
+                <p>VIRNECT Remote</p>
+                <h2>XR 원격 협업 솔루션</h2>
+                <span class="solution">
+                  <p>
+                    VIRNECT Remote의 실시간 원격협업 서비스를 통해 산업 현장에
+                    필요한 정보와
+                  </p>
+                  <p>
+                    이슈를​ 실시간으로 공유하여 언제 어디서든 업무 대응이
+                    가능합니다.​
+                  </p>
+                  <p>
+                    쉽고 빠르게 협업이 가능하며 ​기존의 익숙한 업무 환경을
+                    그대로 유지하여
+                  </p>
+                  <p>업무의 정확성과 효율성을 높일 수 있습니다.</p>
+                </span>
+              </div>
+              <div style="padding-top: 52px">
+                <span>
+                  <button>
+                    <nuxt-link to="/products/remote"> 자세히 보기 </nuxt-link>
+                  </button>
+                  <button>
+                    <a href="support/demo" target="blank"> 데모신청 </a>
+                  </button>
+                </span>
+                <span>
+                  <a
+                    href="http://13.209.200.75:8080/static/company/product/VIRNECT_Solution_Leaflet_ver_LF.KR2203A.pdf"
+                    target="blank"
+                  >
+                    <i>
+                      <img
+                        src="https://velog.velcdn.com/images/kyj0206/post/7f7bb43e-b114-4733-b9f6-060e25b8ee49/image.png"
+                        alt="다운로드이미지"
+                      />
+                    </i>
+                    <p><u>Remote 제품 소개서 다운로드(PDF)</u></p>
+                  </a>
+                </span>
+              </div>
+            </span>
+            <span class="moduleBottomCont">
+              <img
+                src="https://velog.velcdn.com/images/kyj0206/post/83c051ef-5178-405e-a1f2-75dc1e351a25/image.jpg"
+                alt="VIRNECT Remote"
+              />
+            </span>
+          </div>
+          <div
+            :class="`moduleBottomWrapMake ${category === 2 && 'topNaviActive'}`"
+            v-if="category === 2"
+          >
+            <span class="moduleBottomTitMake">
+              <div>
+                <p>VIRNECT Make</p>
+                <h2>확장현실(XR) 콘텐츠 제작 솔루션</h2>
+                <span>
+                  <p>
+                    VIRNECT Make는 XR 콘텐츠로 제작 도구로, 비전문가도 마우스
+                    클릭으로 XR 콘 텐츠 제작이 가능합니다. 또한 문자, 사진,
+                    비디오, 3D 모델은 물론 기존 작업 문서, 설비 도면 등을 그대로
+                    제 작에 빠르게 활용할 수 있습니다.
+                  </p>
+                  <p>
+                    안전하고 효율적인 업무 생태계를 기업에서 직접 만들고
+                    관리합니다.
+                  </p>
+                </span>
+              </div>
 
-            <div style="padding-top: 52px">
-              <span>
-                <button>
-                  <nuxt-link to="/products/make"> 자세히 보기 </nuxt-link>
-                </button>
-                <button>
-                  <a href="support/demo" target="_blank"> 데모신청 </a>
-                </button>
-              </span>
-              <span>
-                <a
-                  href="http://13.209.200.75:8080/static/company/product/VIRNECT_Solution_Leaflet_ver_LF.KR2203A.pdf"
-                  target="blank"
-                >
-                  <i>
-                    <img
-                      src="https://velog.velcdn.com/images/kyj0206/post/7f7bb43e-b114-4733-b9f6-060e25b8ee49/image.png"
-                      alt="다운로드이미지"
-                    />
-                  </i>
-                  <p><u>Make 제품 소개서 다운로드(PDF)</u></p>
-                </a>
-              </span>
-            </div>
-          </span>
-          <span class="moduleBottomCont">
-            <img
-              src="https://velog.velcdn.com/images/kyj0206/post/d3b6f1ee-9f96-4645-8db3-86b6fb2ec337/image.png"
-              alt="VIRNECT Make"
-            />
-          </span>
-        </div>
-        <div
-          :class="`moduleBottomWrapView ${category === 3 && 'topNaviActive'}`"
-          v-if="category === 3"
-        >
-          <span class="moduleBottomTitView">
-            <div>
-              <p>VIRNECT View</p>
-              <h2>확장현실(XR) 콘텐츠 시각화 솔루션</h2>
-              <span>
-                <p>
-                  VIRNECT View는 확장현실(XR) 정보 및 데이터 시각화
-                  솔루션입니다.
-                </p>
-                <p>
-                  상용회된 기 기로 작업 매뉴얼, 안전 가이드 등의 업무 정보와
-                  운영 데이터를 현장에서 바로 확인할 수 있으며, 신속한 의사
-                  결정과 빠른 대응이 가 능합니다.
-                </p>
-              </span>
-            </div>
+              <div style="padding-top: 52px">
+                <span>
+                  <button>
+                    <nuxt-link to="/products/make"> 자세히 보기 </nuxt-link>
+                  </button>
+                  <button>
+                    <a href="support/demo" target="_blank"> 데모신청 </a>
+                  </button>
+                </span>
+                <span>
+                  <a
+                    href="http://13.209.200.75:8080/static/company/product/VIRNECT_Solution_Leaflet_ver_LF.KR2203A.pdf"
+                    target="blank"
+                  >
+                    <i>
+                      <img
+                        src="https://velog.velcdn.com/images/kyj0206/post/7f7bb43e-b114-4733-b9f6-060e25b8ee49/image.png"
+                        alt="다운로드이미지"
+                      />
+                    </i>
+                    <p><u>Make 제품 소개서 다운로드(PDF)</u></p>
+                  </a>
+                </span>
+              </div>
+            </span>
+            <span class="moduleBottomCont">
+              <img
+                src="https://velog.velcdn.com/images/kyj0206/post/d3b6f1ee-9f96-4645-8db3-86b6fb2ec337/image.png"
+                alt="VIRNECT Make"
+              />
+            </span>
+          </div>
+          <div
+            :class="`moduleBottomWrapView ${category === 3 && 'topNaviActive'}`"
+            v-if="category === 3"
+          >
+            <span class="moduleBottomTitView">
+              <div>
+                <p>VIRNECT View</p>
+                <h2>확장현실(XR) 콘텐츠 시각화 솔루션</h2>
+                <span>
+                  <p>
+                    VIRNECT View는 확장현실(XR) 정보 및 데이터 시각화
+                    솔루션입니다.
+                  </p>
+                  <p>
+                    상용회된 기 기로 작업 매뉴얼, 안전 가이드 등의 업무 정보와
+                    운영 데이터를 현장에서 바로 확인할 수 있으며, 신속한 의사
+                    결정과 빠른 대응이 가 능합니다.
+                  </p>
+                </span>
+              </div>
 
-            <div class="viewview" style="padding-top: 52px">
-              <span>
-                <button>
-                  <nuxt-link to="/products/view"> 자세히 보기 </nuxt-link>
-                </button>
-                <button>
-                  <a href="support/demo" target="blank"> 데모신청 </a>
-                </button>
-              </span>
-              <span>
-                <a
-                  href="http://13.209.200.75:8080/static/company/product/VIRNECT_Solution_Leaflet_ver_LF.KR2203A.pdf"
-                  target="blank"
-                >
-                  <i>
-                    <img
-                      src="https://velog.velcdn.com/images/kyj0206/post/7f7bb43e-b114-4733-b9f6-060e25b8ee49/image.png"
-                      alt="다운로드이미지"
-                    />
-                  </i>
-                  <p><u>View 제품 소개서 다운로드(PDF)</u></p>
-                </a>
-              </span>
-            </div>
-          </span>
-          <span class="moduleBottomCont">
-            <img
-              src="https://velog.velcdn.com/images/kyj0206/post/d63cf94f-7150-4866-a0de-0697035f1de2/image.jpg"
-              alt="VIRNECT View"
-            />
-          </span>
-        </div>
-        <div
-          :class="`moduleBottomWrapTwin ${category === 4 && 'topNaviActive'}`"
-          v-if="category === 4"
-        >
-          <span class="moduleBottomTitTwin">
-            <div>
-              <p>VIRNECT Twin</p>
-              <h2>XR 기반 3D 현장 관리 솔루션</h2>
-              <span>
-                <p>
-                  VIRNECT Twin은 산업 현장을 가상 모델로 재현하고 이를 실제
-                  데이터와 연동하여, 산업 현장의 운영 상태 및 프로세스를
-                  모니터링할 수 있는 제품입니다.
-                </p>
-              </span>
-            </div>
+              <div class="viewview" style="padding-top: 52px">
+                <span>
+                  <button>
+                    <nuxt-link to="/products/view"> 자세히 보기 </nuxt-link>
+                  </button>
+                  <button>
+                    <a href="support/demo" target="blank"> 데모신청 </a>
+                  </button>
+                </span>
+                <span>
+                  <a
+                    href="http://13.209.200.75:8080/static/company/product/VIRNECT_Solution_Leaflet_ver_LF.KR2203A.pdf"
+                    target="blank"
+                  >
+                    <i>
+                      <img
+                        src="https://velog.velcdn.com/images/kyj0206/post/7f7bb43e-b114-4733-b9f6-060e25b8ee49/image.png"
+                        alt="다운로드이미지"
+                      />
+                    </i>
+                    <p><u>View 제품 소개서 다운로드(PDF)</u></p>
+                  </a>
+                </span>
+              </div>
+            </span>
+            <span class="moduleBottomCont">
+              <img
+                src="https://velog.velcdn.com/images/kyj0206/post/d63cf94f-7150-4866-a0de-0697035f1de2/image.jpg"
+                alt="VIRNECT View"
+              />
+            </span>
+          </div>
+          <div
+            :class="`moduleBottomWrapTwin ${category === 4 && 'topNaviActive'}`"
+            v-if="category === 4"
+          >
+            <span class="moduleBottomTitTwin">
+              <div>
+                <p>VIRNECT Twin</p>
+                <h2>XR 기반 3D 현장 관리 솔루션</h2>
+                <span>
+                  <p>
+                    VIRNECT Twin은 산업 현장을 가상 모델로 재현하고 이를 실제
+                    데이터와 연동하여, 산업 현장의 운영 상태 및 프로세스를
+                    모니터링할 수 있는 제품입니다.
+                  </p>
+                </span>
+              </div>
 
-            <div style="height: 92px; padding-top: 52px">
-              <span>
-                <button>
-                  <nuxt-link to="/products/twin"> 자세히 보기 </nuxt-link>
-                </button>
-                <button>
-                  <a href="support/demo" target="blank"> 데모신청 </a>
-                </button>
-              </span>
-              <!-- <span>
+              <div style="height: 92px; padding-top: 52px">
+                <span>
+                  <button>
+                    <nuxt-link to="/products/twin"> 자세히 보기 </nuxt-link>
+                  </button>
+                  <button>
+                    <a href="support/demo" target="blank"> 데모신청 </a>
+                  </button>
+                </span>
+                <!-- <span>
             <i>
               <img
                 src="https://velog.velcdn.com/images/kyj0206/post/7f7bb43e-b114-4733-b9f6-060e25b8ee49/image.png"
@@ -366,50 +366,52 @@
             </i>
             <p><u>Twin 제품 소개서 다운로드(PDF)</u></p>
           </span> -->
-            </div>
-          </span>
-          <span class="moduleBottomCont">
-            <img
-              src="https://velog.velcdn.com/images/kyj0206/post/8cec24d8-3d90-404c-9608-9856d9a7681c/image.jpg"
-              alt="VIRNECT Twin"
-            />
-          </span>
-        </div>
-        <div
-          :class="`moduleBottomWrapTrack ${category === 5 && 'topNaviActive'}`"
-          v-if="category === 5"
-        >
-          <span class="moduleBottomTitTrack">
-            <div>
-              <p>VIRNECT Track</p>
-              <h2>XR 원격 협업 솔루션</h2>
-              <span>
-                <p>
-                  VIRNECT Remote의 실시간 원격협업 서비스를 통해 산업 현장에
-                  필요한 정보와
-                </p>
-                <p>
-                  이슈를​ 실시간으로 공유하여 언제 어디서든 업무 대응이
-                  가능합니다.​
-                </p>
-                <p>
-                  쉽고 빠르게 협업이 가능하며 ​기존의 익숙한 업무 환경을 그대로
-                  유지하여
-                </p>
-                <p>업무의 정확성과 효율성을 높일 수 있습니다.</p>
-              </span>
-            </div>
+              </div>
+            </span>
+            <span class="moduleBottomCont">
+              <img
+                src="https://velog.velcdn.com/images/kyj0206/post/8cec24d8-3d90-404c-9608-9856d9a7681c/image.jpg"
+                alt="VIRNECT Twin"
+              />
+            </span>
+          </div>
+          <div
+            :class="`moduleBottomWrapTrack ${
+              category === 5 && 'topNaviActive'
+            }`"
+            v-if="category === 5"
+          >
+            <span class="moduleBottomTitTrack">
+              <div>
+                <p>VIRNECT Track</p>
+                <h2>XR 원격 협업 솔루션</h2>
+                <span>
+                  <p>
+                    VIRNECT Remote의 실시간 원격협업 서비스를 통해 산업 현장에
+                    필요한 정보와
+                  </p>
+                  <p>
+                    이슈를​ 실시간으로 공유하여 언제 어디서든 업무 대응이
+                    가능합니다.​
+                  </p>
+                  <p>
+                    쉽고 빠르게 협업이 가능하며 ​기존의 익숙한 업무 환경을
+                    그대로 유지하여
+                  </p>
+                  <p>업무의 정확성과 효율성을 높일 수 있습니다.</p>
+                </span>
+              </div>
 
-            <div style="height: 92px; padding-top: 52px">
-              <span>
-                <button>
-                  <nuxt-link to="/products/track"> 자세히 보기 </nuxt-link>
-                </button>
-                <button>
-                  <a href="support/demo" target="blank"> 데모신청 </a>
-                </button>
-              </span>
-              <!-- <span>
+              <div style="height: 92px; padding-top: 52px">
+                <span>
+                  <button>
+                    <nuxt-link to="/products/track"> 자세히 보기 </nuxt-link>
+                  </button>
+                  <button>
+                    <a href="support/demo" target="blank"> 데모신청 </a>
+                  </button>
+                </span>
+                <!-- <span>
             <i>
               <img
                 src="https://velog.velcdn.com/images/kyj0206/post/7f7bb43e-b114-4733-b9f6-060e25b8ee49/image.png"
@@ -418,14 +420,15 @@
             </i>
             <p><u>Track 제품 소개서 다운로드(PDF)</u></p>
           </span> -->
-            </div>
-          </span>
-          <span class="moduleBottomCont">
-            <img
-              src="https://velog.velcdn.com/images/kyj0206/post/3f31dd88-8507-4d28-8b10-eee7a70c675e/image.jpg"
-              alt="VIRNECT Track"
-            />
-          </span>
+              </div>
+            </span>
+            <span class="moduleBottomCont">
+              <img
+                src="https://velog.velcdn.com/images/kyj0206/post/3f31dd88-8507-4d28-8b10-eee7a70c675e/image.jpg"
+                alt="VIRNECT Track"
+              />
+            </span>
+          </div>
         </div>
       </div>
     </div>
@@ -434,62 +437,60 @@
 
 <script>
 import ClickOutside from "vue-click-outside";
-import ProModal from '../subscription/proModal.vue';
+import ProModal from "../subscription/proModal.vue";
 export default {
-    data() {
-        return {
-            popup: false,
-            category: 1,
-            options: {
-                slidesPerView: "auto",
-                loop: true,
-                spaceBetween: 13,
-                centeredSlides: true,
-                pagination: {
-                // el: ".swiper-pagination"
-                },
-                navigation: {
-                    nextEl: ".LearningCenterMbTab-prev",
-                    prevEl: ".LearningCenterMbTab-next",
-                },
-                breakpoints: {},
-            },
-        };
-    },
-    directives: {
-      ClickOutside,
-    },
-    methods: {
-      modal() {
-      this.popup = !this.popup;
+  data() {
+    return {
+      popup: false,
+      category: 1,
+      options: {
+        slidesPerView: "auto",
+        loop: true,
+        spaceBetween: 13,
+        centeredSlides: true,
+        pagination: {
+          // el: ".swiper-pagination"
+        },
+        navigation: {
+          nextEl: ".LearningCenterMbTab-prev",
+          prevEl: ".LearningCenterMbTab-next",
+        },
+        breakpoints: {},
       },
-        handleCategory(e) {
-            if (e > 5) {
-                this.category = 1;
-            }
-            else if (e > 0) {
-                this.category = e;
-            }
-            else {
-                this.category = 5;
-            }
-        },
-        onSwiperSlideChangeTransitionStart(e) {
-            console.log("redied", e);
-        },
-        onSwiperRedied(swiper) {
-            console.log("transtion", swiper);
-        },
-        onSwiperClickSlide(idx, realIdx) {
-            console.log("click", idx, realIdx);
-        },
+    };
+  },
+  directives: {
+    ClickOutside,
+  },
+  methods: {
+    modal() {
+      this.popup = !this.popup;
     },
-    props: {
-        categoryList: Array,
-        isTabMenu: Number,
-        chooseTabMenu: Function,
+    handleCategory(e) {
+      if (e > 5) {
+        this.category = 1;
+      } else if (e > 0) {
+        this.category = e;
+      } else {
+        this.category = 5;
+      }
     },
-    components: { ProModal }
+    onSwiperSlideChangeTransitionStart(e) {
+      console.log("redied", e);
+    },
+    onSwiperRedied(swiper) {
+      console.log("transtion", swiper);
+    },
+    onSwiperClickSlide(idx, realIdx) {
+      console.log("click", idx, realIdx);
+    },
+  },
+  props: {
+    categoryList: Array,
+    isTabMenu: Number,
+    chooseTabMenu: Function,
+  },
+  components: { ProModal },
 };
 </script>
 
