@@ -212,6 +212,11 @@ export default {
     right: 15px;
   }
 }
+@media screen and(max-width: 550px){
+  .carousel-wrapper .swiper-slide {
+    width: 50% !important;
+  }
+}
 @media screen and(max-width: 1024px) {
   .company
     .companyWrap

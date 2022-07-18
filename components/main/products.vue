@@ -69,7 +69,7 @@
         <ul>
           <div
           class="LearningCenterMbTab-prev"
-          @click="handleCategory(category - 1 > category.length ? 0 : category - 1)"
+          @click="handleCategory(category - 1 > category.length ? 0 : category - 1 )"
         >
           <img
             src="https://velog.velcdn.com/images/kyj0206/post/ca9d309b-94ce-41db-a002-66a2f0d76ff8/image.png"
@@ -147,11 +147,9 @@
                 <a href="support/demo" target="blank"> 데모신청 </a>
               </button>
             </span>
+            <ProModal :modal="modal" :popup="popup" />
             <span>
-              <a
-                href="http://13.209.200.75:8080/static/company/product/VIRNECT_Solution_Leaflet_ver_LF.KR2203A.pdf"
-                target="blank"
-              >
+              <a @click="modal()">
                 <i>
                   <img
                     src="https://velog.velcdn.com/images/kyj0206/post/7f7bb43e-b114-4733-b9f6-060e25b8ee49/image.png"
@@ -200,11 +198,9 @@
                 <a href="support/demo" target="_blank"> 데모신청 </a>
               </button>
             </span>
+            <ProModal :modal="modal" :popup="popup" />
             <span>
-              <a
-                href="http://13.209.200.75:8080/static/company/product/VIRNECT_Solution_Leaflet_ver_LF.KR2203A.pdf"
-                target="blank"
-              >
+              <a @click="modal()">
                 <i>
                   <img
                     src="https://velog.velcdn.com/images/kyj0206/post/7f7bb43e-b114-4733-b9f6-060e25b8ee49/image.png"
@@ -252,11 +248,9 @@
                 <a href="support/demo" target="blank"> 데모신청 </a>
               </button>
             </span>
+            <ProModal :modal="modal" :popup="popup" />
             <span>
-              <a
-                href="http://13.209.200.75:8080/static/company/product/VIRNECT_Solution_Leaflet_ver_LF.KR2203A.pdf"
-                target="blank"
-              >
+              <a @click="modal()">
                 <i>
                   <img
                     src="https://velog.velcdn.com/images/kyj0206/post/7f7bb43e-b114-4733-b9f6-060e25b8ee49/image.png"
@@ -326,21 +320,14 @@
         <span class="moduleBottomTitTrack">
           <div>
             <p>VIRNECT Track</p>
-            <h2>XR 원격 협업 솔루션</h2>
+            <h2>검출/추적용 XR 개발 엔진</h2>
             <span>
               <p>
-                VIRNECT Remote의 실시간 원격협업 서비스를 통해 산업 현장에
-                필요한 정보와
+                VIRNECT Track은 빠르고 정확하게 객체를 학습, 인식 검출, 추적하는 버넥트 자체 개발 XR 엔진입니다.
               </p>
               <p>
-                이슈를​ 실시간으로 공유하여 언제 어디서든 업무 대응이
-                가능합니다.​
+                버넥트 XR 제품들에 탑재되어 뛰어난 성능과 운영 퍼포먼스를 제공하고 있습니다.
               </p>
-              <p>
-                쉽고 빠르게 협업이 가능하며 ​기존의 익숙한 업무 환경을 그대로
-                유지하여
-              </p>
-              <p>업무의 정확성과 효율성을 높일 수 있습니다.</p>
             </span>
           </div>
 
@@ -377,45 +364,63 @@
 </template>
 
 <script>
+import ClickOutside from "vue-click-outside";
+import ProModal from '../subscription/proModal.vue';
 export default {
-  data() {
-    return {
-      category: 1,
-      options: {
-        slidesPerView: "auto",
-        loop: true,
-        spaceBetween: 13,
-        centeredSlides: true,
-        pagination: {
-          // el: ".swiper-pagination"
-        },
-        navigation: {
-          nextEl: ".LearningCenterMbTab-prev",
-          prevEl: ".LearningCenterMbTab-next",
-        },
-        breakpoints: {},
+    data() {
+        return {
+            popup: false,
+            category: 1,
+            options: {
+                slidesPerView: "auto",
+                loop: true,
+                spaceBetween: 13,
+                centeredSlides: true,
+                pagination: {
+                // el: ".swiper-pagination"
+                },
+                navigation: {
+                    nextEl: ".LearningCenterMbTab-prev",
+                    prevEl: ".LearningCenterMbTab-next",
+                },
+                breakpoints: {},
+            },
+        };
+    },
+    directives: {
+      ClickOutside,
+    },
+    methods: {
+      modal() {
+      this.popup = !this.popup;
       },
-    };
-  },
-  methods: {
-    handleCategory(e) {
-      this.category = e;
+        handleCategory(e) {
+            if (e > 5) {
+                this.category = 1;
+            }
+            else if (e > 0) {
+                this.category = e;
+            }
+            else {
+                this.category = 5;
+            }
+        },
+        onSwiperSlideChangeTransitionStart(e) {
+            console.log("redied", e);
+        },
+        onSwiperRedied(swiper) {
+            console.log("transtion", swiper);
+        },
+        onSwiperClickSlide(idx, realIdx) {
+            console.log("click", idx, realIdx);
+        },
     },
-    onSwiperSlideChangeTransitionStart(e) {
-      console.log("redied", e);
+    props: {
+        categoryList: Array,
+        isTabMenu: Number,
+        chooseTabMenu: Function,
     },
-    onSwiperRedied(swiper) {
-      console.log("transtion", swiper);
-    },
-    onSwiperClickSlide(idx, realIdx) {
-      console.log("click", idx, realIdx);
-    },
-  },
-  props: {
-    categoryList: Array,
-    isTabMenu: Number,
-    chooseTabMenu: Function,
-  },
+    components: { ProModal }
 };
 </script>
 

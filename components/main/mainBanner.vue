@@ -71,12 +71,12 @@
     <!-- 배너삽입 -->
     <div class="bannerMoule">
       <span class="banner1024">
-        <a href="news/detail?id=145&type">
+        <a href="/news/detail?id=145&type">
           <img src="~/assets/images/common/contestHome1.png" alt="배너모듈" />
         </a>
       </span>
       <span class="banner768">
-        <a href="#">
+        <a href="/news/detail?id=145&type">
           <img src="~/assets/images/common/homhomhom.png" alt="배너모듈" />
         </a>
       </span>
@@ -402,7 +402,7 @@ export default {
             a {
               margin-left: 12px;
             }
-            font-size: 1.6px;
+            font-size: 16px;
             letter-spacing: -0.2px;
             color: #fff;
           }
