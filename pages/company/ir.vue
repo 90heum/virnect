@@ -4,8 +4,8 @@
       class="sm"
       :image="require('~/assets/images/pages/epc/company_bg_img.jpg')"
       :category="visualText.category"
-      :title="$t('companyText.visualText.title')"
-      :contents="$t('companyText.visualText.contents')"
+      :title="$t('companyText.IRtext.title')"
+      :contents="$t('companyText.IRtext.contents')"
     ></sub-visual-section>
     <subMenuIr />
     <div class="companyWrap">
