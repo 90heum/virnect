@@ -87,7 +87,7 @@
           </span>
           <!-- 정유/화학/배터리 호버 -->
           <span class="oilHover">
-            <nuxt-link to="/value/oil_chemical_battery">
+            <nuxt-link to="/value/manufacture_construction">
               <span>
                 <p>제조/건설</p>
                 <i>
@@ -133,7 +133,7 @@
           </span>
           <!-- 공공/교육 호버 -->
           <span class="partsHover">
-            <nuxt-link to="/value/motor_parts">
+            <nuxt-link to="/value/public_education">
               <span>
                 <p>공공/교육</p>
                 <i>
@@ -179,7 +179,7 @@
           </span>
           <!-- 엔터테인먼트 호버 -->
           <span class="airLineHover">
-            <nuxt-link to="/value/airline_railroad">
+            <nuxt-link to="/value/entertainment">
               <span>
                 <p>엔터테인먼트</p>
                 <i>
@@ -217,15 +217,12 @@
               </i>
             </span>
             <span>
-              <img
-                src="~/assets/images/common/value5.png"
-                alt="기타 이미지"
-              />
+              <img src="~/assets/images/common/value5.png" alt="기타 이미지" />
             </span>
           </span>
           <!-- 기타 호버 -->
           <span class="epcHover">
-            <nuxt-link to="/value/epc">
+            <nuxt-link to="/value/etc">
               <span>
                 <p>기타</p>
                 <i>

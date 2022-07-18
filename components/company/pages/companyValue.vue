@@ -2,7 +2,8 @@
   <div class="useCase">
     <div class="useCaseWrap">
       <div class="useCaseTit">
-        <p>Value<인프라/자원 이미지  <h2>전문가의 명확한 문제 해결</h2>
+        <p>Value 인프라/자원 이미지</p>
+        <h2>전문가의 명확한 문제 해결</h2>
       </div>
       <div class="useCaseCont">
         <!-- 인프라/자원 -->
@@ -202,10 +203,7 @@
               </i>
             </span>
             <span>
-              <img
-                src="~/assets/images/common/value5.png"
-                alt="기타 이미지"
-              />
+              <img src="~/assets/images/common/value5.png" alt="기타 이미지" />
             </span>
           </span>
           <!-- EPC 호버 -->
