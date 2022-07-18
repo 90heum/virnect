@@ -10,10 +10,10 @@
       <li class="subMenu">
         <nuxt-link to="/value/infra_resource"> 인프라/자원 </nuxt-link>
       </li>
-      <li class="SubUseNavActive subMenu">
+      <li class="subMenu">
         <nuxt-link to="/value/manufacture_construction"> 제조/건설 </nuxt-link>
       </li>
-      <li class="subMenu">
+      <li class="SubUseNavActive subMenu">
         <nuxt-link to="/value/public_education"> 공공/교육 </nuxt-link>
       </li>
       <li class="subMenu">

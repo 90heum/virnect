@@ -7,10 +7,10 @@
     </span>
     <ul :class="`SubMenuNav ${toggle ? 'mobileActive' : ''}`"
         @click="handleToggle()">
-      <li class="subMenu">
+      <li class="SubUseNavActive subMenu">
         <nuxt-link to="/value/infra_resource"> 인프라/자원 </nuxt-link>
       </li>
-      <li class="SubUseNavActive subMenu">
+      <li class="subMenu">
         <nuxt-link to="/value/manufacture_construction"> 제조/건설 </nuxt-link>
       </li>
       <li class="subMenu">
