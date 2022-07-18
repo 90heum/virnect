@@ -1,9 +1,9 @@
 @charset "utf-8";
-@import '~assets/css/mixin.scss';
+@import '~/assets/css/mixin.scss';
 //news popup start
-
+$side: 106px;
+$sideMobile: 60px;
 .popup-container {
-    $side: 106px;
     $tutorialVideoSize: 135px;
     position: fixed;
     top: 0;
@@ -235,7 +235,6 @@
 }
 
 .policy-container {
-    $side: 60px;
     position: fixed;
     top: 0;
     left: 0;
@@ -255,7 +254,7 @@
         transform: translateX(-50%);
 
         .policy-wrap {
-            padding: $top $side $bottom;
+            padding: $top $sideMobile $bottom;
             text-align: center;
         }
 
@@ -275,7 +274,7 @@
         z-index: 103;
         box-sizing: border-box;
         width: 100%;
-        min-width: calc(100% - $side * 2);
+        min-width: calc(100% - 60px * 2);
         max-width: calc(100% - 60px);
         margin: auto;
         color: $baseColor;
