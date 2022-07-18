@@ -147,8 +147,8 @@
       </span>
       <span class="SupportBottomTit">
         <div>
-          <p>고객지원/제품 및 기술/파트너 정책 등 궁금하신</p>
-          <p>사항이 있으신가요?</p>
+          <p>{{ $t("newMainText.supportmodulText.kokacktext1") }}</p>
+          <p>{{ $t("newMainText.supportmodulText.kokacktext2") }}</p>
         </div>
         <div>
           <div>

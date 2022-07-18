@@ -1,5 +1,9 @@
 {
     "newMainText": {
+        "supportmodulText": {
+            "kokacktext1": "We will do our best to assist with",
+            "kokacktext2": "issues related to the service."
+        },
         "remoteText": {
             "title": "XR Remote Collaboration",
             "contents": "VIRNECT Remote enables seamless collaboration overcoming time and space constraints."
