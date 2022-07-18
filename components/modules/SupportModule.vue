@@ -7,7 +7,7 @@
         </div>
         <div>
           <p v-html="$t('newMainText.supportText.contents')"></p>
-          <span>
+          <span @click="() => $router.push('/support/supportSubMain')">
             <p>바로가기</p>
             <p>
               <img
@@ -161,7 +161,7 @@
             <p>070.7733.2025</p>
           </div>
           <div>
-            <a href="#"> 문의하기 </a>
+            <nuxt-link to="/support/inquiry"> 문의하기 </nuxt-link>
           </div>
         </div>
       </span>

@@ -50,6 +50,12 @@
   "MixinsMixin": {
     "description": "Auto imported from components/mixins/mixin.js"
   },
+  "Paging": {
+    "description": "Auto imported from components/paging/paging.vue"
+  },
+  "NewsCommonBaner": {
+    "description": "Auto imported from components/news/CommonBaner.vue"
+  },
   "ModulesBanner": {
     "description": "Auto imported from components/modules/Banner.vue"
   },
@@ -106,12 +112,6 @@
   },
   "ModulesYoutubeFullscreen": {
     "description": "Auto imported from components/modules/YoutubeFullscreen.vue"
-  },
-  "Paging": {
-    "description": "Auto imported from components/paging/paging.vue"
-  },
-  "NewsCommonBaner": {
-    "description": "Auto imported from components/news/CommonBaner.vue"
   },
   "PolicySubMenuPayment": {
     "description": "Auto imported from components/policy/subMenuPayment.vue"
@@ -329,27 +329,6 @@
   "ProductsPartialsSubMenuView": {
     "description": "Auto imported from components/products/partials/subMenuView.vue"
   },
-  "ProductsPagesMS": {
-    "description": "Auto imported from components/products/pages/MS.vue"
-  },
-  "ProductsPagesMake": {
-    "description": "Auto imported from components/products/pages/Make.vue"
-  },
-  "ProductsPagesPmain": {
-    "description": "Auto imported from components/products/pages/Pmain.vue"
-  },
-  "ProductsPagesRemote": {
-    "description": "Auto imported from components/products/pages/Remote.vue"
-  },
-  "ProductsPagesTrack": {
-    "description": "Auto imported from components/products/pages/Track.vue"
-  },
-  "ProductsPagesTwin": {
-    "description": "Auto imported from components/products/pages/Twin.vue"
-  },
-  "ProductsPagesView": {
-    "description": "Auto imported from components/products/pages/View.vue"
-  },
   "SolutionsPagesAirline": {
     "description": "Auto imported from components/solutions/pages/Airline.vue"
   },
@@ -404,12 +383,6 @@
   "SupportFaqGoogleMap": {
     "description": "Auto imported from components/support/faq/GoogleMap.vue"
   },
-  "SupportNoticeAsideMenu": {
-    "description": "Auto imported from components/support/notice/AsideMenu.vue"
-  },
-  "SupportNoticeContents": {
-    "description": "Auto imported from components/support/notice/NoticeContents.vue"
-  },
   "SupportLearningCenterAsideMenu": {
     "description": "Auto imported from components/support/learning-center/AsideMenu.vue"
   },
@@ -427,5 +400,11 @@
   },
   "SupportLearningCenterVideoTutorial": {
     "description": "Auto imported from components/support/learning-center/videoTutorial.vue"
+  },
+  "SupportNoticeAsideMenu": {
+    "description": "Auto imported from components/support/notice/AsideMenu.vue"
+  },
+  "SupportNoticeContents": {
+    "description": "Auto imported from components/support/notice/NoticeContents.vue"
   }
 }
