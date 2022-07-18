@@ -364,7 +364,7 @@ export default {
 }
 @media screen and(max-width: 650px) {
   .moduleApply {
-    padding-bottom: 150px;
+    padding-bottom: 90px;
   }
   .moduleApply .moduleApplyBgTop {
     //padding-top: 49.5px;
@@ -439,7 +439,7 @@ export default {
   .moduleApply .moduleApplyBgTop .ApplyInner {
     height: auto;
     margin: 0 0 0;
-    padding-bottom: 130px;
+    padding-bottom: 90px;
   }
 }
 

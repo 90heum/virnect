@@ -175,14 +175,14 @@
     /* position: relative; */
   }
 
-  .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li.active .listWrap span>p::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 110px;
-    width: 100%;
-    border-bottom: 1px solid #c5c8cf;
-  }
+  // .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li.active .listWrap span>p::after {
+  //   content: "";
+  //   display: block;
+  //   position: absolute;
+  //   top: 110px;
+  //   width: 100%;
+  //   border-bottom: 1px solid #c5c8cf;
+  // }
 
   .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap>i {
     border-left: none;
@@ -195,7 +195,8 @@
   }
 
   .intra_usecase .usecaseWrap .usecaseTit h2 {
-    font-size: 40px;
+    font-size: 32px;
+    margin-bottom: 50px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -217,10 +218,6 @@
     line-height: 1.5;
     letter-spacing: -0.2px;
     color: #092e6e;
-  }
-
-  .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li.active {
-    /* height: 584px; */
   }
 
   .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap span .listInner {

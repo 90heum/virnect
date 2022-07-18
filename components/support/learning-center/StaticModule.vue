@@ -41,6 +41,7 @@ export default {};
   background-color: #f7f8f9;
   .centerModuleTit {
     width: 50%;
+    margin-right: 20px;
     h2 {
       font-size: 22px;
       font-weight: 500;
@@ -65,11 +66,13 @@ export default {};
         i {
           img {
             max-width: 22px;
+            min-width: 22px;
             width: 100%;
             margin-top: 10px;
           }
         }
         p {
+          white-space: nowrap;
           text-decoration: underline;
           font-size: 16px;
           font-weight: bold;
@@ -84,11 +87,13 @@ export default {};
         i {
           img {
             max-width: 22px;
+            min-width: 22px;
             width: 100%;
             margin-top: 10px;
           }
         }
         p {
+          white-space: nowrap;
           text-decoration: underline;
           font-size: 16px;
           font-weight: bold;
@@ -104,11 +109,21 @@ export default {};
 }
 
 @media screen and (max-width: 650px) {
+  .centerModule .centerModuleTit{
+    margin-right: 0;
+    width: 100%;
+  }
+
   .centerModule {
     flex-direction: column;
     text-align: center;
     gap: 30px;
     padding: 40px;
+  }
+
+  .centerModule .centerModuleMore{
+    width: 100%;
+    justify-content: center;
   }
 }
 </style>
