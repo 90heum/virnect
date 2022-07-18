@@ -201,5 +201,17 @@
         }
       ]
     }
-  ]
+  ],
+  "gnbInnerText": {
+    "SupportText": {
+      "noteText1": "릴리즈 노트",
+      "noteText2": "안내",
+      "faqText1": "회원",
+      "faqText2": "서비스",
+      "faqText3": "제품",
+      "faqText4": "기기",
+      "faqText5": "결제",
+      "faqText6": "기타"
+    }
+  }
 }

@@ -254,10 +254,10 @@
                     <nuxt-link to=“/support/notice”><span>Product Notice</span></nuxt-link>
                   </li>
                   <li>
-                    <a href="#"><u>-릴리즈 노트</u></a>
+                    <a href="#"><u>-{{$t("gnbInnerText.SupportText.noteText1")}}</u></a>
                   </li>
                   <li>
-                    <a href="#"><u>-안내</u></a>
+                    <a href="#"><u>-{{$t("gnbInnerText.SupportText.noteText2")}}</u></a>
                   </li>
                 </ul>
               </span>
@@ -268,22 +268,22 @@
                   </li>
                   <div class="FAQWrap">
                     <li>
-                      <a href="#"><u>-회원</u></a>
+                      <a href="#"><u>-{{$t("gnbInnerText.SupportText.faqText1")}}</u></a>
                     </li>
                     <li>
-                      <a href="#"><u>-제품</u></a>
+                      <a href="#"><u>-{{$t("gnbInnerText.SupportText.faqText2")}}</u></a>
                     </li>
                     <li>
-                      <a href="#"><u>-결제</u></a>
+                      <a href="#"><u>-{{$t("gnbInnerText.SupportText.faqText3")}}</u></a>
                     </li>
                     <li>
-                      <a href="#"><u>-서비스</u></a>
+                      <a href="#"><u>-{{$t("gnbInnerText.SupportText.faqText4")}}</u></a>
                     </li>
                     <li>
-                      <a href="#"><u>-기기</u></a>
+                      <a href="#"><u>-{{$t("gnbInnerText.SupportText.faqText5")}}</u></a>
                     </li>
                     <li>
-                      <a href="#"><u>-기타</u></a>
+                      <a href="#"><u>-{{$t("gnbInnerText.SupportText.faqText6")}}</u></a>
                     </li>
                   </div>
                 </ul>
