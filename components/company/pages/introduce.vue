@@ -89,7 +89,10 @@
             <p>{{ $t("aboutHistoryTitle.content") }}</p>
           </span>
           <span class="aboutHistoryCont">
-            <ul class="aboutHistoryContTab">
+            <span class="aboutHistoryContTabWrapper"
+                  @click="() => historyToggle = !historyToggle">
+              <span class="aboutHistoryContTabTitle">{{yearsData[HistoryTab-1].years}}</span>
+            <ul :class="`aboutHistoryContTab ${historyToggle ? 'historyActive' : ''}`">
               <li
                 :class="HistoryTab === idx + 1 ? 'active' : ''"
                 @click="handleHisrotyTab(idx + 1)"
@@ -99,6 +102,7 @@
                 {{ data.years }}
               </li>
             </ul>
+            </span>
             <ul class="aboutHistoryContCont" id="2021" v-if="HistoryTab === 1">
               <li class="HisLeft">
                 <div>
@@ -756,6 +760,7 @@ export default {
         end: 6,
       },
       award: awardData,
+      historyToggle: false
     };
   },
   created() {
@@ -791,7 +796,7 @@ export default {
 <style lang="scss" scoped>
 //@import "~assets/css/pages/products.scss";
 @import "~assets/css/modules/aboutVirnect.scss";
-
+.aboutHistoryContTabTitle { display: none; }
 .company {
   display: block;
   overflow: hidden;
@@ -1137,7 +1142,6 @@ export default {
         }
       }
     }
-
     // 인증 및 수상 모듈
     .companyAwards {
       display: block;
@@ -1374,6 +1378,7 @@ export default {
 }
 
 @media screen and(max-width: 768px) {
+  .aboutHistoryContTabTitle { display: inline-block; }
   .company
     .companyWrap
     .companyAwards
@@ -1420,6 +1425,35 @@ export default {
     width: calc(95% / 2);
     max-width: none;
   }
+  .aboutHistoryContTabWrapper {
+    height: 50px;
+    margin: 30px 24px 75px;
+    padding: 16px 16px 15px 19px;
+    border: solid 1px #c5c8cf;
+    background-color: #fff;
+    position: relative;
+  }
+  .aboutVirnect .aboutHistory .aboutHistoryInner .aboutHistoryCont .aboutHistoryContTab {
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0px;
+    top: 50px;
+    border: 1px solid #c5c8cf;
+    background: #fff;
+    border-radius: 15px;
+    z-index: 10;
+  }
+  .aboutVirnect .aboutHistory .aboutHistoryInner .aboutHistoryCont .historyActive { display: block; }
+  .aboutVirnect .aboutHistory .aboutHistoryInner .aboutHistoryCont .aboutHistoryContTab li.active {
+    border: 0;
+    color: #9a9da3;
+  }
+  .aboutVirnect .aboutHistory .aboutHistoryInner .aboutHistoryCont .aboutHistoryContTab li:hover {
+    border: 0;
+    color: #092e6e;
+  }
+  
 }
 .prevBtn,
 .nextBtn {
