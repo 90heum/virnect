@@ -51,7 +51,7 @@
             <p>{{ $t("productsText.viewSubText.expandability") }}</p>
           </span>
         </span>
-        <span class="overViewBox"  id="featuresWrapId">
+        <span class="overViewBox" id="featuresWrapId">
           <ul>
             <li>
               <p>2,569</p>
@@ -79,7 +79,7 @@
         <div class="contents">
           <span class="featuresTit">
             <h2>
-               {{ $t("productsText.viewPropertyTitle.title") }}
+              {{ $t("productsText.viewPropertyTitle.title") }}
             </h2>
             <ul>
               <li>
@@ -134,6 +134,7 @@
     </div>
     <!-- dsadsf -->
     <heading-module
+      :category="$t('productsText.viewText.funcTitle.category')"
       :title="$t('productsText.viewText.funcTitle.title')"
     ></heading-module>
     <function-part

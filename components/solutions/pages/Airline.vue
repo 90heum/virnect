@@ -119,7 +119,7 @@
                 </span>
                 <i>
                   <img
-                    src="https://velog.velcdn.com/images/kyj0206/post/1ad6d4b8-e85e-4a8c-b9cd-cdc3cb6c5a6b/image.jpg"
+                    src="~/assets/images/pages/value/img-value-14@2x.png"
                     alt="한국콘텐츠진흥원"
                   />
                   <img
@@ -149,7 +149,7 @@
 
                   <i>
                     <img
-                      src="https://velog.velcdn.com/images/kyj0206/post/548dd5c2-367a-4c92-add5-847b5ba07361/image.jpg"
+                      src="~/assets/images/pages/value/enter1.png"
                       alt="서울 국립중앙박물관"
                     />
                   </i>
@@ -165,7 +165,7 @@
                 </span>
                 <i>
                   <img
-                    src="https://velog.velcdn.com/images/kyj0206/post/1ad6d4b8-e85e-4a8c-b9cd-cdc3cb6c5a6b/image.jpg"
+                    src="~/assets/images/pages/value/img-value-15@2x.png"
                     alt="한국콘텐츠진흥원"
                   />
                   <img
@@ -194,7 +194,7 @@
                   ></p>
                   <i>
                     <img
-                      src="https://velog.velcdn.com/images/kyj0206/post/25b51d1f-291c-4863-9929-96e873406ac6/image.jpg"
+                      src="~/assets/images/pages/value/enter2.png"
                       alt="미니병풍 개발"
                     />
                   </i>
@@ -210,7 +210,7 @@
                 </span>
                 <i>
                   <img
-                    src="https://velog.velcdn.com/images/kyj0206/post/b1ee8b8a-bd78-47ae-bbe0-8d52a596884a/image.jpg"
+                    src="~/assets/images/pages/value/img-value-15@2x.png"
                     alt="국립문화재연구소"
                   />
                   <img
@@ -242,7 +242,7 @@
                   ></p>
                   <i>
                     <img
-                      src="https://velog.velcdn.com/images/kyj0206/post/da46f306-aeae-4d19-9211-1fa5b9b6f4dc/image.jpg"
+                      src="~/assets/images/pages/value/enter3.png"
                       alt="증강현실 콘텐츠 제작"
                     />
                   </i>
@@ -258,7 +258,7 @@
                 </span>
                 <i>
                   <img
-                    src="https://velog.velcdn.com/images/kyj0206/post/2a6b6ecf-c49f-4abd-a8b9-175c0b0dbbc5/image.jpg"
+                    src="~/assets/images/pages/value/img-value-16@2x.png"
                     alt="목포자연사박물관"
                   />
                   <img
@@ -290,7 +290,7 @@
                   ></p>
                   <i>
                     <img
-                      src="https://velog.velcdn.com/images/kyj0206/post/0183e477-95a9-4e2a-a429-7abd48610f55/image.jpg"
+                      src="~/assets/images/pages/value/enter4.png"
                       alt="체험전시 시스템"
                     />
                   </i>
@@ -306,7 +306,7 @@
                 </span>
                 <i>
                   <img
-                    src="https://velog.velcdn.com/images/kyj0206/post/33ecee28-cce6-406c-bd88-62f5fc031f06/image.jpg"
+                    src="~/assets/images/pages/value/img-value-17@2x.png"
                     alt="천연기념물센터"
                   />
                   <img
@@ -335,7 +335,7 @@
                   ></p>
                   <i>
                     <img
-                      src="https://velog.velcdn.com/images/kyj0206/post/ac75166c-ffe3-4423-ae76-2e5b802a9d61/image.jpg"
+                      src="~/assets/images/pages/value/enter5.png"
                       alt="증강현실 전시 콘텐츠 개발"
                     />
                   </i>
@@ -351,7 +351,7 @@
                 </span>
                 <i>
                   <img
-                    src="https://velog.velcdn.com/images/kyj0206/post/45585afc-6dbf-49fe-a506-7ccabf239e25/image.jpg"
+                    src="~/assets/images/pages/value/img-value-18@2x.png"
                     alt="국토정보기술단"
                   />
                   <img
@@ -381,7 +381,7 @@
 
                   <i>
                     <img
-                      src="https://velog.velcdn.com/images/kyj0206/post/4b26db7b-5b14-406a-a3b5-ae6404240b52/image.jpg"
+                      src="~/assets/images/pages/value/enter6.png"
                       alt="직업가상체험 360도 파노라마"
                     />
                   </i>

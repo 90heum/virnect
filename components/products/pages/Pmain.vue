@@ -9,7 +9,7 @@
                 <span>
                   <i>
                     <img
-                      src="https://velog.velcdn.com/images/kyj0206/post/0dfa1b94-3b64-4917-983b-a995dcb56a6d/image.png"
+                      src="~/assets/images/pages/epc/remotea1zf.png"
                       alt="remote"
                     />
                   </i>
@@ -30,7 +30,7 @@
                 <span>
                   <i>
                     <img
-                      src="https://velog.velcdn.com/images/kyj0206/post/71c1e739-1237-4a5b-86e9-2a6e079791d1/image.png"
+                      src="~/assets/images/pages/epc/remote2adsf12.png"
                       alt="make"
                     />
                   </i>
@@ -55,7 +55,7 @@
                 <span>
                   <i>
                     <img
-                      src="https://velog.velcdn.com/images/kyj0206/post/641bed1f-b4a8-4b35-a2b9-15fd9bf6a531/image.png"
+                      src="~/assets/images/pages/epc/adsf112asdf.png"
                       alt="remote"
                     />
                   </i>
@@ -93,7 +93,7 @@
               <span>
                 <i>
                   <img
-                    src="https://velog.velcdn.com/images/kyj0206/post/40047e56-c0a0-4ef7-8dc1-c34ef7d0c1d0/image.png"
+                    src="~/assets/images/pages/epc/adsf121212.png"
                     alt="Twin"
                   />
                 </i>
@@ -114,7 +114,7 @@
               <span>
                 <i>
                   <img
-                    src="https://velog.velcdn.com/images/kyj0206/post/ea69225f-ea3f-4064-b859-2462abded389/image.png"
+                    src="~/assets/images/pages/epc/12sdfadsf234ddd.png"
                     alt="Track"
                   />
                 </i>

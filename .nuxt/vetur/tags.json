@@ -134,11 +134,14 @@
   "ProductsNewModuleData": {
     "description": "Auto imported from components/products/newModuleData.js"
   },
-  "SubscriptionComForm": {
-    "description": "Auto imported from components/subscription/comForm.vue"
+  "PolicySubMenuPayment": {
+    "description": "Auto imported from components/policy/subMenuPayment.vue"
   },
-  "SubscriptionComModal": {
-    "description": "Auto imported from components/subscription/comModal.vue"
+  "PolicySubMenuPolicy": {
+    "description": "Auto imported from components/policy/subMenuPolicy.vue"
+  },
+  "PolicySubMenuTerms": {
+    "description": "Auto imported from components/policy/subMenuTerms.vue"
   },
   "SubscriptionForm": {
     "description": "Auto imported from components/subscription/form.vue"

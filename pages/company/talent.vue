@@ -2,7 +2,7 @@
   <section class="talent">
     <subVisualSection
       class="sm"
-      :image="'https://velog.velcdn.com/images/kyj0206/post/826e3755-e1d4-4466-bf63-273cc3b52c9c/image.png'"
+      :image="require('~/assets/images/pages/epc/company_bg_img.jpg')"
       :category="'Company'"
       :title="$t('companyText.visualText.title')"
       :contents="$t('companyText.visualText.contents')"
@@ -12,10 +12,10 @@
     <div class="talentWrap">
       <span class="talentTit">
         <p>
-          버넥트는 글로벌 No.1 XR 플랫폼 기업이 되기 위해 모두가 같은 목표를
-          향해 달리고 있습니다.
+          버넥트는 사람과 사람/로봇, 현실과 가상, 시간과 공간, 정보와 지식,
+          그리고 지혜를 서로 연결하여스마트한 미래, 행복한 미래, 지속가능한
+          저탄소 미래를 만들어 나갑니다.
         </p>
-        <p>버넥트의 현재와 미래를 함께 만들어갈 여러분을 기다립니다.</p>
       </span>
       <span class="talentCont">
         <button>
