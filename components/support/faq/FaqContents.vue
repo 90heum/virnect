@@ -1,3 +1,32 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@KYJ0206 
+90heum
+/
+virnect
+Public
+Code
+Issues
+Pull requests
+1
+Actions
+Projects
+Wiki
+Security
+Insights
+virnect/components/support/faq/FaqContents.vue
+
+ParkTaeYong faq 복구
+Latest commit d567db7 8 hours ago
+ History
+ 1 contributor
+465 lines (433 sloc)  10.2 KB
+
 <template>
   <div>
     <span class="FAQList">
@@ -59,7 +88,6 @@
 
 <script>
 import CommonPaging from "~/components/paging/paging.vue";
-
 export default {
   components: {
     CommonPaging,
@@ -78,12 +106,8 @@ export default {
   methods: {
     chooseDetail(e) {
       this.isDetail = this.isDetail === e ? null : e;
-      this.$router.push(
-        `?type=${e ? e : ""}${
-          this.isCategory ? "&category=" + this.isCategory : ""
-        }`
-      );
-      // this.requestData(this.isDetail);
+      // this.$router.push(`?type=${e ? e : ''}${this.isCategory ? '&category=' + this.isCategory : ''}`);
+      this.requestData(this.isDetail);
     },
     async requestData(e) {
       this.responseData = {};
@@ -94,6 +118,8 @@ export default {
   },
 };
 </script>
+
+
 
 <style lang="scss" scoped>
 .FAQList {
@@ -160,7 +186,6 @@ export default {
         span {
           display: none;
         }
-
         &:first-child {
           flex: 1;
           text-align: left;
@@ -172,7 +197,6 @@ export default {
             background-color: #fff;
             padding: 6px 12px 7px;
             width: 100%;
-
             height: 100%;
             font-size: 12px;
             font-weight: bold;
@@ -272,7 +296,6 @@ export default {
     }
   }
 }
-
 @media screen and (max-width: 650px) {
   .FAQList .FAQListInnerWrap > ul:first-child {
     padding-top: 20px;
@@ -283,7 +306,6 @@ export default {
   .FAQList .FAQListInnerWrap > ul li:nth-child(2) p {
     margin-left: 20px;
   }
-
   .LearningCenterList
     .userBox
     .userBoxCont
@@ -292,29 +314,23 @@ export default {
     span:nth-child(2) {
     margin-bottom: 10px;
   }
-
   .noticeList > ul:first-child {
     display: none;
   }
-
   .FAQList .FAQListInnerWrap > ul ul,
   .FAQList .FAQListInnerWrap > ul > li:first-child {
     width: 100%;
   }
-
   .noticeList > ul:nth-child(2) {
     border-top: 1px solid #616161;
   }
-
   .noticeList > ul li:last-child {
     display: none;
   }
-
   .FAQList .FAQListInnerWrap > ul,
   .noticeList > ul {
     gap: 5px;
   }
-
   .FAQList .FAQListInnerWrap > ul li:first-child,
   .noticeList > ul li:first-child {
     min-width: 85px;
@@ -327,7 +343,6 @@ export default {
     letter-spacing: normal;
     color: #616161;
   }
-
   .FAQList .FAQListInnerWrap > ul ul li:first-child,
   .FAQList .FAQListInnerWrap > ul ul li:last-child,
   .FAQList .FAQListInnerWrap > ul li:nth-child(2),
@@ -341,7 +356,6 @@ export default {
     letter-spacing: normal;
     color: #616161;
   }
-
   .FAQList .FAQListInnerWrap > ul ul li:first-child p,
   .FAQList .FAQListInnerWrap > ul ul li:last-child {
     font-size: 14px;
@@ -352,29 +366,24 @@ export default {
     letter-spacing: normal;
     color: #616161;
   }
-
   .LearningCenter .centerModule {
     flex-direction: column;
     text-align: center;
     gap: 30px;
     padding: 40px;
   }
-
   .LearningCenter .centerModule .centerModuleMore {
     justify-content: center;
   }
-
   .LearningCenter .centerModule .centerModuleMore,
   .LearningCenter .centerModule .centerModuleTit {
     width: 100%;
   }
-
   .FAQList .FAQListInnerWrap > ul li:first-child p {
     max-width: 85px;
     min-width: 85px;
     padding: 10px;
   }
-
   .LearningCenter .centerModule .centerModuleMore span:last-child p,
   .LearningCenter .centerModule .centerModuleMore span:first-child p {
     white-space: nowrap;
@@ -386,7 +395,6 @@ export default {
     letter-spacing: -0.18px;
     color: #092e6e;
   }
-
   .LearningCenter .centerModule .centerModuleTit h2 {
     font-size: 18px;
     font-weight: 500;
@@ -397,26 +405,22 @@ export default {
     text-align: center;
     color: #092e6e;
   }
-
   .LearningCenterList .userBox .userBoxCont > div,
   .LearningCenterList .tutorialBox .tutorialBoxCont > div,
   .LearningCenterList .guideBox .guideBoxCont > div {
     width: 100%;
     margin-right: 0 !important;
   }
-
   .LearningCenterList .userBox .userBoxCont > a,
   .LearningCenterList .tutorialBox .tutorialBoxCont > a,
   .LearningCenterList .guideBox .guideBoxCont > a {
     max-height: none;
   }
 }
-
 @media screen and (max-width: 500px) {
   .contContMenu > span:first-child .formWrap {
     min-height: 1725px;
   }
-
   .contContMenu > span.contactTabActive3 .formTab ul {
     flex-wrap: wrap;
   }
@@ -425,7 +429,6 @@ export default {
     border: 1px solid #ccc;
     padding: 15px 10px;
   }
-
   .contContMenu > span.contactTabActive3 .formTab ul li.active,
   .contContMenu > span.contactTabActive3 .formTab ul li:hover {
     background-color: #092e6e;
@@ -433,7 +436,6 @@ export default {
     color: #fff;
   }
 }
-
 @media screen and (max-width: 425px) {
   .FAQList .FAQListInnerWrap > ul li:first-child p {
     font-size: 10px;
@@ -446,23 +448,81 @@ export default {
   .noticeMbAside ul {
     max-width: none;
   }
-
   .LearningCenterMbAside,
   .FAQMbAside,
   .noticeMbAside {
     position: relative;
   }
-
   .LearningCenterMbAside ul,
   .FAQMbAside ul,
   .noticeMbAside ul {
     box-sizing: content-box;
   }
 }
-
 @media screen and (max-width: 350px) {
   .contContMenu > span:first-child .formWrap {
     min-height: 1750px;
   }
 }
 </style>
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+You have no unread notifications
+90heum
+virnect
+main
+Search files
+modulesmodules
+newsnews
+pagingpaging
+policypolicy
+productsproducts
+solutionssolutions
+subscriptionsubscription
+supportsupport
+faqfaq
+AsideMenu.vueAsideMenu.vue
+FaqContents.vueFaqContents.vue
+GoogleMap.vueGoogleMap.vue
+learning-centerlearning-center
+noticenotice
+SubMenu.vueSubMenu.vue
+faq.vuefaq.vue
+faqBanner.vuefaqBanner.vue
+headBanner.vueheadBanner.vue
+inquiry.vueinquiry.vue
+inquiryBanner.vueinquiryBanner.vue
+learnBanner.vuelearnBanner.vue
+learning-center.vuelearning-center.vue
+notice.vuenotice.vue
+footer.vuefooter.vue
+gnbHeader.vuegnbHeader.vue
+header.vueheader.vue
+langlang
+layoutslayouts
+mixinsmixins
+node_modulesnode_modules
+pagespages
+pluginsplugins
+staticstatic
+storestore
+.DS_Store.DS_Store
+.gitignore.gitignore
+README.mdREADME.md
+nuxt.config.jsnuxt.config.js
+package-lock.jsonpackage-lock.json
+package.jsonpackage.json
+zzz.htmlzzz.html
+v3.8.2
