@@ -21,7 +21,7 @@
           </span>
         </span>
         <span class="overViewCont">
-          <span>
+          <span :class="`${$i18n.localeProperties.code !== 'ko' ? 'overViewActive' : ''}`">
             <i
               ><img
                 src="https://velog.velcdn.com/images/kyj0206/post/a093d711-5ab6-43e9-a55f-1686b3a56c45/image.png"
@@ -30,7 +30,7 @@
             <p>{{ $t("productsText.twinSubText.Title1") }}</p>
             <p>{{ $t("productsText.twinSubText.Contents1") }}</p>
           </span>
-          <span>
+          <span :class="`${$i18n.localeProperties.code !== 'ko' ? 'overViewActive' : ''}`">
             <i
               ><img
                 src="https://velog.velcdn.com/images/kyj0206/post/2f434057-76ce-44f4-add8-0c22ca243216/image.png"
@@ -39,7 +39,7 @@
             <p>{{ $t("productsText.twinSubText.Title2") }}</p>
             <p>{{ $t("productsText.twinSubText.Contents2") }}</p>
           </span>
-          <span>
+          <span :class="`${$i18n.localeProperties.code !== 'ko' ? 'overViewActive' : ''}`">
             <i
               ><img
                 src="https://velog.velcdn.com/images/kyj0206/post/4917a77e-db49-489c-99bc-0f7c915dc254/image.png"
@@ -48,7 +48,7 @@
             <p>{{ $t("productsText.twinSubText.Title3") }}</p>
             <p>{{ $t("productsText.twinSubText.Contents3") }}</p>
           </span>
-          <span>
+          <span :class="`${$i18n.localeProperties.code !== 'ko' ? 'overViewActive' : ''}`">
             <i
               ><img
                 src="https://velog.velcdn.com/images/kyj0206/post/8dcad46f-f757-4a25-be3c-ab59ce941656/image.png"
@@ -57,7 +57,7 @@
             <p>{{ $t("productsText.twinSubText.Title4") }}</p>
             <p>{{ $t("productsText.twinSubText.Contents4") }}</p>
           </span>
-          <span>
+          <span v-if="$i18n.localeProperties.code === 'ko'">
             <i
               ><img
                 src="https://velog.velcdn.com/images/kyj0206/post/9167e316-428a-4843-abac-efd11778055b/image.png"
@@ -66,7 +66,7 @@
             <p>{{ $t("productsText.twinSubText.Title5") }}</p>
             <p>{{ $t("productsText.twinSubText.Contents5") }}</p>
           </span>
-          <span>
+          <span v-if="$i18n.localeProperties.code === 'ko'">
             <i
               ><img
                 src="https://velog.velcdn.com/images/kyj0206/post/c4eed5ed-3d3c-42db-abe7-902e30d4a7c1/image.png"
@@ -207,4 +207,9 @@ export default {
 <style lang="scss" scoped>
 @import "~assets/css/pages/products.scss";
 @import "~/assets/css/pages/overviewTwin.scss";
+.overViewTwin .overViewWrap .overViewCont .overViewActive { 
+  width: 50%; 
+  max-width: none; 
+  border-bottom: 0!important;
+}
 </style>
