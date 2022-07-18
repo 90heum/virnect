@@ -676,7 +676,7 @@
           <span>
             <span
               class="subNavNewsrooomTit"
-              v-html="$t(`newsRoom.title`)"
+              v-html="$t(`newsRoom.gnbHeaderText.text`)"
             ></span>
             <div class="subNavNewsrooomMenu">
               <span

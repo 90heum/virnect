@@ -330,10 +330,9 @@
       <div class="subNavNewsrooomInner">
         <div>
           <span>
-            <span class="subNavNewsrooomTit">
-              글로벌 리더로 도약하는
-              <p>버넥트의 최신 소식을 전해드립니다.</p>
-            </span>
+            <p class="subNavNewsrooomTit" v-html="$t('newsRoom.gnbHeaderText.text')">
+       
+            </p>
             <div class="subNavNewsrooomMenu">
               <span>
                 <a href="#"> News & Press </a>
