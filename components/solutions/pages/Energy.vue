@@ -144,7 +144,7 @@
                 </span>
                 <i>
                   <img
-                    src="require(~/assets/images/pages/value/img-value-1@2x.png)"
+                    src="~/assets/images/pages/value/img-value-1@2x.png"
                     alt="협업솔루션"
                   />
                   <img
@@ -189,7 +189,7 @@
                 </span>
                 <i>
                   <img
-                    src="require(~/assets/images/pages/value/img-value-2@2x.png)"
+                    src="~/assets/images/pages/value/img-value-2@2x.png"
                     alt="시스템개발"
                   />
                   <img
@@ -231,7 +231,7 @@
                 </span>
                 <i>
                   <img
-                    src="require(~/assets/images/pages/value/img-value-3@2x.png)"
+                    src="~/assets/images/pages/value/img-value-3@2x.png"
                     alt="검증솔루션"
                   />
                   <img
@@ -276,7 +276,7 @@
                 </span>
                 <i>
                   <img
-                    src="require(~/assets/images/pages/value/img-value-4@2x.png)"
+                    src="~/assets/images/pages/value/img-value-4@2x.png"
                     alt="검증용역"
                   />
                   <img
@@ -322,7 +322,7 @@
                 </span>
                 <i>
                   <img
-                    src="require(~/assets/images/pages/value/img-value-5@2x.png)"
+                    src="~/assets/images/pages/value/img-value-5@2x.png"
                     alt="기능개선"
                   />
                   <img
