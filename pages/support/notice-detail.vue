@@ -328,6 +328,7 @@ export default {
           padding: 29px 15px;
         }
         &:first-child {
+          padding: 0;
           border-bottom: solid 1px #c5c8cf;
           li {
             &:first-child {
@@ -337,6 +338,7 @@ export default {
               align-items: center;
               p {
                 &:first-child {
+                  white-space: nowrap;
                   font-size: 16px;
                   font-weight: normal;
                   font-stretch: normal;
@@ -348,6 +350,7 @@ export default {
               }
               i {
                 img {
+                  display: flex;
                   max-width: 19px;
                 }
               }
@@ -387,6 +390,7 @@ export default {
           }
         }
         &:last-child {
+          padding: 0;
           li {
             &:first-child {
               flex: 1;
@@ -395,6 +399,7 @@ export default {
               align-items: center;
               p {
                 &:first-child {
+                  white-space: nowrap;
                   font-size: 16px;
                   font-weight: normal;
                   font-stretch: normal;
@@ -406,6 +411,7 @@ export default {
               }
               i {
                 img {
+                  display: flex;
                   max-width: 19px;
                 }
               }
@@ -476,12 +482,20 @@ export default {
   }
 }
 @media screen and (max-width: 768px) {
+      .detailNotice .detailNoticeWrap .PreNext ul {
+        padding-left: 0;
+    }
+
     .detailNotice .detailNoticeWrap{
         padding: 80px 24px;
     }
 
     .detailNotice .detailNoticeWrap .PreNext ul li{
         padding: 29px 10px;
+    }
+
+    .detailNotice .detailNoticeWrap .contHead span:first-child h2{
+      font-size: 22px;
     }
 }
 
@@ -514,9 +528,6 @@ export default {
     .detailNotice .detailNoticeWrap .PreNext ul:first-child li:nth-child(2),
     .detailNotice .detailNoticeWrap .PreNext ul:last-child li:nth-child(2){
         padding: 29px 10px 29px 15px;
-    }
-    .detailNotice .detailNoticeWrap .PreNext ul {
-        padding-left: 0;
     }
 }
 </style>

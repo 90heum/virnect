@@ -226,6 +226,9 @@ export default {
             margin-bottom: 16px;
             img {
               width: 100%;
+                  width: 100%;
+                  height: 165px;
+                  object-fit: scale-down;
             }
           }
           &.listInfo {
@@ -343,9 +346,29 @@ export default {
   .userBox .userBoxCont > div {
     width: calc((100% - 30px) / 2);
   }
+   .userBox .userBoxCont > div:nth-child(2n){
+    margin-right: 0;
+   }
   .userBox .userBoxCont > div:nth-child(3) {
     margin-right: 15px;
     margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .userBox .userBoxCont > div {
+    max-width: 100%;
+    width: 100%;
+    margin-right: 0!important;
+    margin-bottom: 60px!important;
+  }
+
+  .userBox .userBoxCont > div a{
+    max-height: 100%;
+  }
+
+  .userBox .userBoxCont > div a span.listImg img{
+    object-fit: scale-down;
   }
 }
 </style>

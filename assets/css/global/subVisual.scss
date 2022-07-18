@@ -87,14 +87,6 @@
   }
 
   @media (max-width: $mobile) {
-    .visual-text-wrap {
-      height: 320px;
-      /* margin-top: 63px; */
-    }
-
-    &.sm .visual-text-wrap {
-      height: 320px;
-    }
 
     .category {
       font-weight: 600;
