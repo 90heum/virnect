@@ -33,10 +33,13 @@
         </span>
       </span>
       <span class="mainBannerCont">
-        <img
+        <!-- <img
           :src="`https://velog.velcdn.com/images/kyj0206/post/6d62537d-6161-42ab-ac36-244f978d597b/image.png`"
           alt="메인베너이미지"
-        />
+        /> -->
+        <!-- 조성우추가 -->
+        <img src="~/assets/images/common/main_th.gif" alt="메인베너이미지" />        
+        <!-- <img src="~/assets/images/common/logo-gnb-ci.png" alt="메인베너이미지" />  -->
       </span>
       <span class="mainBannerTitMb">
         <p class="bannerTitMb">
