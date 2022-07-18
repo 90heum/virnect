@@ -801,7 +801,7 @@ export default {
 <style lang="scss" scoped>
 //@import "~assets/css/pages/products.scss";
 @import "~assets/css/modules/aboutVirnect.scss";
-.aboutHistoryContTabTitle { display: none; }
+.aboutHistoryContTabTitle, .customersContTitle { display: none; }
 .company {
   display: block;
   overflow: hidden;
@@ -1383,7 +1383,16 @@ export default {
 }
 
 @media screen and(max-width: 768px) {
-  .aboutHistoryContTabTitle { display: inline-block; }
+  .aboutHistoryContTabTitle, .customersContTitle { 
+    display: inline-block; 
+     font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #121212;
+  }
 
   .customersContTitleWrapper {
     height: 50px;
