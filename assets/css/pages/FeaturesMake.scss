@@ -35,12 +35,12 @@
 }
 
 .featuresMake .featuresWrap .contents .featuresTit h2 {
-  font-size: 34px;
+  font-size: 28px;
   font-weight: bold;
   line-height: 1.54;
   letter-spacing: -0.43px;
   color: #121212;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 
 .featuresMake .featuresWrap .contents .featuresTit h2 p {
@@ -52,15 +52,17 @@
 }
 
 .featuresMake .featuresWrap .contents .featuresTit ul li {
+  grid-gap: 10px;
   gap: 10px;
   font-size: 18px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
-  line-height: 2.33;
+  line-height: 1.33;
   letter-spacing: normal;
   color: #121212;
   display: flex;
+  margin-bottom: 15px;
 }
 
 .featuresMake .featuresWrap .contents .featuresTit ul li i {

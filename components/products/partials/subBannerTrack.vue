@@ -1,5 +1,5 @@
 <template>
-  <div class="SubProductsBannerRemote">
+  <div class="SubProductsBannerTrack">
     <div class="SubProductsWrap">
       <span>
         <i>
@@ -32,16 +32,9 @@
           </button>
         </span>
       </span>
-      <img
-        class="ddaa"
-        src="https://velog.velcdn.com/images/akwjdgma/post/de444ebf-469c-4c9b-81b7-93716f16b478/image.png"
-        alt=""
-      />
-      <!-- <video autoplay muted>
-        <source
-          src="https://player.vimeo.com/external/560735983.hd.mp4?s=e14e93e201c67212624d232508ddcad911d7d617&profile_id=174"
-        />
-      </video> -->
+      <div class="video_cont">
+        <img class="ddaa" src="https://velog.velcdn.com/images/akwjdgma/post/de444ebf-469c-4c9b-81b7-93716f16b478/image.png" alt=""/>
+      </div>
     </div>
   </div>
 </template>
@@ -66,7 +59,8 @@ export default {
   min-width: auto;
   border: solid 2px #bfdcff;
 }
-.SubProductsBannerRemote {
+
+.SubProductsBannerTrack {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -78,15 +72,15 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   .SubProductsWrap {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     p,
     a,
     span,
     div,
     button {
       text-decoration: none;
-    }
-    button {
-      cursor: pointer;
     }
     display: flex;
     padding: 0 30px;
@@ -103,24 +97,25 @@ export default {
         justify-content: center;
         margin-bottom: 20px;
         img {
-          max-width: 143px;
+          max-width: 110px;
         }
       }
       > p {
         font-size: 20px;
         font-weight: bold;
         letter-spacing: -0.25px;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
         text-align: center;
         color: #bfdcff;
       }
       h2 {
-        font-size: 48px;
+        font-size: 40px;
         font-weight: bold;
         letter-spacing: -0.6px;
         text-align: center;
         color: #fff;
         margin-bottom: 24px;
+        line-height: 1.5;
         p {
           display: inline;
         }
@@ -132,7 +127,7 @@ export default {
         color: #fff;
         &.subExplanation {
           display: block;
-          margin-bottom: 50px;
+          margin-bottom: 40px;
           text-align: center;
           p {
             font-size: 24px;
@@ -148,10 +143,12 @@ export default {
           gap: 10px;
           align-items: center;
           button {
+            cursor: pointer;
             &:first-child {
               border: solid 1px #fff;
               background: #fff;
               a {
+                white-space: nowrap;
                 display: flex;
                 gap: 20px;
                 padding: 10px 16px;
@@ -169,6 +166,7 @@ export default {
                       display: flex;
                       align-items: center;
                       max-width: 15px;
+                      min-width: 15px;
                       max-height: 15px;
                       width: 100%;
                       height: 100%;
@@ -181,6 +179,7 @@ export default {
               border: solid 1px #bfdcff;
               background-color: #bfdcff;
               a {
+                white-space: nowrap;
                 display: block;
                 font-size: 16px;
                 font-weight: bold;
@@ -197,529 +196,28 @@ export default {
         }
       }
     }
-    video {
+    .video_cont {
+      position: relative;
       max-width: 951px;
       width: 100%;
-      min-width: auto;
+      min-height: 442px;
       border: solid 2px #bfdcff;
-    }
-  }
-}
-.SubProductsBannerMake {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 2400px;
-  width: 100%;
-  min-height: 875px;
-  background-image: url("https://velog.velcdn.com/images/kyj0206/post/6a090db9-cd30-42a5-95f5-1dc04c915ab1/image.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  .SubProductsWrap {
-    display: flex;
-    padding: 0 30px;
-    gap: 74px;
-    > span {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      max-width: 560px;
-      min-width: 560px;
-      width: 50%;
-      i {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
-        img {
-          max-width: 143px;
-        }
-      }
-      > p {
-        font-size: 20px;
-        font-weight: bold;
-        letter-spacing: -0.25px;
-        margin-bottom: 60px;
-        text-align: center;
-        color: #bfdcff;
-      }
-      h2 {
-        font-size: 48px;
-        font-weight: bold;
-        letter-spacing: -0.6px;
-        text-align: center;
-        color: #fff;
-        margin-bottom: 24px;
-        p {
-          display: inline;
-        }
-      }
-      span {
-        font-size: 24px;
-        line-height: 1.58;
-        letter-spacing: -0.3px;
-        color: #fff;
-        &.subExplanation {
-          display: block;
-          margin-bottom: 50px;
-          text-align: center;
-          p {
-            font-size: 24px;
-            line-height: 1.58;
-            letter-spacing: -0.3px;
-            color: #fff;
-            display: block;
-          }
-        }
-        &:last-child {
-          display: flex;
-          justify-content: center;
-          gap: 10px;
-          align-items: center;
-          button {
-            &:first-child {
-              border: solid 1px #fff;
-              background: #fff;
-              a {
-                display: flex;
-                gap: 20px;
-                padding: 10px 16px;
-                color: #121212;
-                p {
-                  font-size: 16px;
-                  font-weight: bold;
-                  &:first-child {
-                    line-height: initial;
-                  }
-                  &:last-child {
-                    display: flex;
-                    align-items: flex-start;
-                    img {
-                      display: flex;
-                      align-items: center;
-                      max-width: 15px;
-                      max-height: 15px;
-                      width: 100%;
-                      height: 100%;
-                    }
-                  }
-                }
-              }
-            }
-            &:last-child {
-              border: solid 1px #bfdcff;
-              background-color: #bfdcff;
-              a {
-                display: block;
-                font-size: 16px;
-                font-weight: bold;
-                padding: 7px 42px;
-                color: #121212;
-
-                p {
-                  font-size: 16px;
-                  font-weight: bold;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    video {
-      max-width: 951px;
-      width: 100%;
-      min-width: auto;
-    }
-  }
-}
-.SubProductsBannerView {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 2400px;
-  width: 100%;
-  min-height: 875px;
-  background-image: url("https://velog.velcdn.com/images/kyj0206/post/6a090db9-cd30-42a5-95f5-1dc04c915ab1/image.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  .SubProductsWrap {
-    display: flex;
-    padding: 0 30px;
-    gap: 74px;
-    > span {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      max-width: 560px;
-      min-width: 560px;
-      width: 50%;
-      i {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
-        img {
-          max-width: 143px;
-        }
-      }
-      > p {
-        font-size: 20px;
-        font-weight: bold;
-        letter-spacing: -0.25px;
-        margin-bottom: 60px;
-        text-align: center;
-        color: #bfdcff;
-      }
-      h2 {
-        font-size: 48px;
-        font-weight: bold;
-        letter-spacing: -0.6px;
-        text-align: center;
-        color: #fff;
-        margin-bottom: 24px;
-        p {
-          display: inline;
-        }
-      }
-      span {
-        font-size: 24px;
-        line-height: 1.58;
-        letter-spacing: -0.3px;
-        color: #fff;
-        &.subExplanation {
-          display: block;
-          margin-bottom: 50px;
-          text-align: center;
-          p {
-            font-size: 24px;
-            line-height: 1.58;
-            letter-spacing: -0.3px;
-            color: #fff;
-            display: block;
-          }
-        }
-        &:last-child {
-          display: flex;
-          justify-content: center;
-          gap: 10px;
-          align-items: center;
-          button {
-            &:first-child {
-              border: solid 1px #fff;
-              background: #fff;
-              a {
-                display: flex;
-                gap: 20px;
-                padding: 10px 16px;
-                color: #121212;
-                p {
-                  font-size: 16px;
-                  font-weight: bold;
-                  &:first-child {
-                    line-height: initial;
-                  }
-                  &:last-child {
-                    display: flex;
-                    align-items: flex-start;
-                    img {
-                      display: flex;
-                      align-items: center;
-                      max-width: 15px;
-                      max-height: 15px;
-                      width: 100%;
-                      height: 100%;
-                    }
-                  }
-                }
-              }
-            }
-            &:last-child {
-              border: solid 1px #bfdcff;
-              background-color: #bfdcff;
-              a {
-                display: block;
-                font-size: 16px;
-                font-weight: bold;
-                padding: 7px 42px;
-                color: #121212;
-
-                p {
-                  font-size: 16px;
-                  font-weight: bold;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    video {
-      max-width: 951px;
-      width: 100%;
-      min-width: auto;
-    }
-  }
-}
-.SubProductsBannerTwin {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 2400px;
-  width: 100%;
-  min-height: 875px;
-  background-image: url("https://velog.velcdn.com/images/kyj0206/post/6a090db9-cd30-42a5-95f5-1dc04c915ab1/image.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  .SubProductsWrap {
-    display: flex;
-    padding: 0 30px;
-    gap: 74px;
-    > span {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      max-width: 560px;
-      min-width: 560px;
-      width: 50%;
-      i {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
-        img {
-          max-width: 143px;
-        }
-      }
-      > p {
-        font-size: 20px;
-        font-weight: bold;
-        letter-spacing: -0.25px;
-        margin-bottom: 60px;
-        text-align: center;
-        color: #bfdcff;
-      }
-      h2 {
-        font-size: 48px;
-        font-weight: bold;
-        letter-spacing: -0.6px;
-        text-align: center;
-        color: #fff;
-        margin-bottom: 24px;
-        p {
-          display: inline;
-        }
-      }
-      span {
-        font-size: 24px;
-        line-height: 1.58;
-        letter-spacing: -0.3px;
-        color: #fff;
-        &.subExplanation {
-          display: block;
-          margin-bottom: 50px;
-          text-align: center;
-          p {
-            font-size: 24px;
-            line-height: 1.58;
-            letter-spacing: -0.3px;
-            color: #fff;
-            display: block;
-          }
-        }
-        &:last-child {
-          display: flex;
-          justify-content: center;
-          gap: 10px;
-          align-items: center;
-          button {
-            &:first-child {
-              border: solid 1px #fff;
-              background: #fff;
-              a {
-                display: flex;
-                gap: 20px;
-                padding: 10px 16px;
-                color: #121212;
-                p {
-                  font-size: 16px;
-                  font-weight: bold;
-                  &:first-child {
-                    line-height: initial;
-                  }
-                  &:last-child {
-                    display: flex;
-                    align-items: flex-start;
-                    img {
-                      display: flex;
-                      align-items: center;
-                      max-width: 15px;
-                      max-height: 15px;
-                      width: 100%;
-                      height: 100%;
-                    }
-                  }
-                }
-              }
-            }
-            &:last-child {
-              border: solid 1px #bfdcff;
-              background-color: #bfdcff;
-              a {
-                display: block;
-                font-size: 16px;
-                font-weight: bold;
-                padding: 7px 42px;
-                color: #121212;
-
-                p {
-                  font-size: 16px;
-                  font-weight: bold;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    video {
-      max-width: 951px;
-      width: 100%;
-      min-width: auto;
-    }
-  }
-}
-.SubProductsBannerTrack {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 2400px;
-  width: 100%;
-  min-height: 875px;
-  background-image: url("https://velog.velcdn.com/images/kyj0206/post/6a090db9-cd30-42a5-95f5-1dc04c915ab1/image.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  .SubProductsWrap {
-    display: flex;
-    align-items: center;
-    padding: 0 30px;
-    gap: 74px;
-    > span {
-      &:first-child {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        max-width: 560px;
-        min-width: 560px;
-        width: 50%;
-      }
-
-      i {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 20px;
-        img {
-          max-width: 143px;
-        }
-      }
-      > p {
-        font-size: 20px;
-        font-weight: bold;
-        letter-spacing: -0.25px;
-        margin-bottom: 60px;
-        text-align: center;
-        color: #bfdcff;
-      }
-      h2 {
-        font-size: 48px;
-        font-weight: bold;
-        letter-spacing: -0.6px;
-        text-align: center;
-        color: #fff;
-        margin-bottom: 24px;
-        p {
-          display: inline;
-        }
-      }
-      span {
-        font-size: 24px;
-        line-height: 1.58;
-        letter-spacing: -0.3px;
-        color: #fff;
-        &.subExplanation {
-          display: block;
-          margin-bottom: 50px;
-          text-align: center;
-          p {
-            font-size: 24px;
-            line-height: 1.58;
-            letter-spacing: -0.3px;
-            color: #fff;
-            display: block;
-          }
-        }
-        &:last-child {
-          display: flex;
-          justify-content: center;
-          gap: 10px;
-          align-items: center;
-          button {
-            &:first-child {
-              border: solid 1px #fff;
-              background: #fff;
-              a {
-                display: flex;
-                gap: 20px;
-                padding: 10px 16px;
-                color: #121212;
-                p {
-                  font-size: 16px;
-                  font-weight: bold;
-                  &:first-child {
-                    line-height: initial;
-                  }
-                  &:last-child {
-                    display: flex;
-                    align-items: flex-start;
-                    img {
-                      display: flex;
-                      align-items: center;
-                      max-width: 15px;
-                      max-height: 15px;
-                      width: 100%;
-                      height: 100%;
-                    }
-                  }
-                }
-              }
-            }
-            &:last-child {
-              border: solid 1px #bfdcff;
-              background-color: #bfdcff;
-              a {
-                display: block;
-                font-size: 16px;
-                font-weight: bold;
-                padding: 7px 42px;
-                color: #121212;
-
-                p {
-                  font-size: 16px;
-                  font-weight: bold;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    .video {
-      max-width: 951px;
-      width: 100%;
-      min-width: auto;
       img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 951px;
         width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 951px;
+        width: 100%;
+        height: 100%;
       }
     }
   }

@@ -128,7 +128,7 @@
         </span>
         <span class="usecaseCont">
           <ul class="usecaseList">
-            <li class="active">
+            <li>
               <div class="listWrap">
                 <span>
                   <p @click="showMenu(1)">
@@ -167,7 +167,7 @@
 
                   <i>
                     <img
-                      src="/Users/majeongheum/virnect/assets/images/pages/value/edu1.png"
+                      src="~/assets/images/pages/value/edu1.png"
                       alt="시범사용"
                     />
                   </i>
@@ -212,7 +212,7 @@
                   ></p>
                   <i>
                     <img
-                      src="/Users/majeongheum/virnect/assets/images/pages/value/edu2.png"
+                      src="~/assets/images/pages/value/edu2.png"
                       alt="수출상담회"
                     />
                   </i>
@@ -258,7 +258,7 @@
 
                   <i>
                     <img
-                      src="/Users/majeongheum/virnect/assets/images/pages/value/edu3.png"
+                      src="~/assets/images/pages/value/edu3.png"
                       alt="도슨트투어"
                     />
                   </i>

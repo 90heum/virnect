@@ -121,7 +121,7 @@
         </span>
         <span class="usecaseCont">
           <ul class="usecaseList">
-            <li class="active">
+            <li>
               <div class="listWrap">
                 <span>
                   <p @click="showMenu(1)">
@@ -165,7 +165,7 @@
               <div class="listWrap">
                 <span>
                   <p @click="showMenu(2)">
-                    {{ $t("ValueText.ValueUseCaseText.title1") }}
+                    {{ $t("ValueText.ValueUseCaseText.title2") }}
                   </p>
                   <ul class="listInner" v-if="menu === 2">
                     <li>
