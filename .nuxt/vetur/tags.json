@@ -8,14 +8,14 @@
   "Header": {
     "description": "Auto imported from components/header.vue"
   },
+  "ApiAxios": {
+    "description": "Auto imported from components/api/axios.js"
+  },
   "DummyAward": {
     "description": "Auto imported from components/dummy/award.js"
   },
   "DummyAwardEn": {
     "description": "Auto imported from components/dummy/awardEn.js"
-  },
-  "ApiAxios": {
-    "description": "Auto imported from components/api/axios.js"
   },
   "MainBannerModule": {
     "description": "Auto imported from components/main/bannerModule.vue"
@@ -49,12 +49,6 @@
   },
   "MixinsMixin": {
     "description": "Auto imported from components/mixins/mixin.js"
-  },
-  "NewsCommonBaner": {
-    "description": "Auto imported from components/news/CommonBaner.vue"
-  },
-  "Paging": {
-    "description": "Auto imported from components/paging/paging.vue"
   },
   "ModulesBanner": {
     "description": "Auto imported from components/modules/Banner.vue"
@@ -113,6 +107,21 @@
   "ModulesYoutubeFullscreen": {
     "description": "Auto imported from components/modules/YoutubeFullscreen.vue"
   },
+  "NewsCommonBaner": {
+    "description": "Auto imported from components/news/CommonBaner.vue"
+  },
+  "Paging": {
+    "description": "Auto imported from components/paging/paging.vue"
+  },
+  "PolicySubMenuPayment": {
+    "description": "Auto imported from components/policy/subMenuPayment.vue"
+  },
+  "PolicySubMenuPolicy": {
+    "description": "Auto imported from components/policy/subMenuPolicy.vue"
+  },
+  "PolicySubMenuTerms": {
+    "description": "Auto imported from components/policy/subMenuTerms.vue"
+  },
   "ProductsNewBgPartData": {
     "description": "Auto imported from components/products/NewBgPartData.js"
   },
@@ -124,15 +133,6 @@
   },
   "ProductsNewModuleData": {
     "description": "Auto imported from components/products/newModuleData.js"
-  },
-  "PolicySubMenuPayment": {
-    "description": "Auto imported from components/policy/subMenuPayment.vue"
-  },
-  "PolicySubMenuPolicy": {
-    "description": "Auto imported from components/policy/subMenuPolicy.vue"
-  },
-  "PolicySubMenuTerms": {
-    "description": "Auto imported from components/policy/subMenuTerms.vue"
   },
   "SubscriptionComForm": {
     "description": "Auto imported from components/subscription/comForm.vue"
@@ -206,11 +206,11 @@
   "GnbCompany": {
     "description": "Auto imported from components/Gnb/Company/index.vue"
   },
-  "GnbContact": {
-    "description": "Auto imported from components/Gnb/Contact/index.vue"
-  },
   "GnbFreeTrials": {
     "description": "Auto imported from components/Gnb/FreeTrials/index.vue"
+  },
+  "GnbContact": {
+    "description": "Auto imported from components/Gnb/Contact/index.vue"
   },
   "GnbPricing": {
     "description": "Auto imported from components/Gnb/Pricing/index.vue"
