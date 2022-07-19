@@ -15,12 +15,14 @@
       "con3": "결제",
       "con4": "서비스",
       "con5": "기기",
-      "con6": "기타"
+      "con6": "기타",
+      "text": "전체보기"
     },
     "LearnText": {
       "title": "학습센터",
       "contents": "제품 사용을 위한 튜토리얼,메뉴얼,유용한 팁 등을 안내합니다.",
-      "middletext": "산업 현장을 위해 최적화 된 버넥트 XR 솔루션을 만나보세요"
+      "middletext": "산업 현장을 위해 최적화 된 버넥트 XR 솔루션을 만나보세요",
+      "text": "전체보기"
     },
     "supModule": {
       "title": "VIRNECT는 언제나 가까이에 있습니다.",
@@ -118,6 +120,11 @@
         "level": "직급",
         "contents": "내용*"
       }
+    },
+    "noticeList":{
+      "title1": "분류",
+      "title2": "제목",
+      "title3": "등록일"
     }
   }
 }

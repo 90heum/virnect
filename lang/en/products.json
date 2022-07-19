@@ -6,6 +6,10 @@
 			"cpu": "CPU Usage",
 			"memory": "Memory Usage"
 		},
+		"mainBanner": {
+			"title": "Try our optimized products for industrial worksites.",
+			"text": "VIRNECT products make safer and more efficient industrial worksites<br>by applying original AR and Digital Twin technologies."
+		},
 		"moduleTop":{
 			"title" : "AR and DT products for solving industrial problems",
 			"contents": "VIRNECT's products support productive communications and efficient working styles in industrial worksites. We provide the right solutions with the right products for each of our clients by combining our original AR technology with various IT technologies.",

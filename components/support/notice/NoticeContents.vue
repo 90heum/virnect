@@ -1,9 +1,9 @@
 <template>
   <span class="noticeList">
     <ul>
-      <li>분류</li>
-      <li>제목</li>
-      <li>등록일</li>
+      <li>{{$t(`supportText.noticeList.title1`)}}</li>
+      <li>{{$t(`supportText.noticeList.title2`)}}</li>
+      <li>{{$t(`supportText.noticeList.title3`)}}</li>
     </ul>
 
     <ul v-for="(data, idx) of contentData || []" :key="idx">

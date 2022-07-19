@@ -15,12 +15,14 @@
       "con3": "Purchase",
       "con4": "Services",
       "con5": "Device",
-      "con6": "Others"
+      "con6": "Others",
+      "text": "View all"
     },
     "LearnText": {
       "title": "Learning Center",
       "contents": "Guides you through tutorials, manuals, tips, and more.",
-      "middletext": " VIRNECT products make safer and more efficient industrial worksites by applying XR solutions and digital twin technologies."
+      "middletext": " VIRNECT products make safer and more efficient industrial worksites by applying XR solutions and digital twin technologies.",
+      "text": "View all"
     },
     "supModule": {
       "title": "We always welcome various inquiries from customers.",
@@ -118,6 +120,11 @@
         "level": "Position",
         "contents": "nquiry *"
       }
+    },
+    "noticeList":{
+      "title1": "Class",
+      "title2": "Title",
+      "title3": "Update date"
     }
   }
 }
