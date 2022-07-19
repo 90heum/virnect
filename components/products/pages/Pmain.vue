@@ -39,7 +39,7 @@
                   <span class="popInfo" v-html="$t(`productsText.makeBanner.contents`)">
                   </span>
                   <button>
-                    <a href="/products/make">자세히보기</a>
+                    <a href="/products/make">{{$t(`productsText.remoteinfo.text1`)}}</a>
                   </button>
                 </span>
               </div>
