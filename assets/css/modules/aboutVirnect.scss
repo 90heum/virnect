@@ -351,13 +351,14 @@
   max-width: 548px;
   width: 100%;
 }
-
+// 되????
 .aboutVirnect .aboutHistory .aboutHistoryInner .aboutHistoryCont .aboutHistoryContCont .HisRight ul li {
   font-size: 16px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
-  line-height: 2.44;
+  line-height: 1.5;
+  margin-bottom: 20px;
   letter-spacing: -0.2px;
   text-align: justify;
   color: #121212;
@@ -480,7 +481,11 @@
   }
 
   .aboutVirnect .customers .customersInner {
-    padding: 140px 24px;
+    padding: 0 24px 140px ;
+  }
+
+  .marginRanger{
+    padding: 70px;
   }
 }
 
@@ -520,6 +525,8 @@
 
   .aboutVirnect .customers .customersInner .customersTit h2 {
     margin-bottom: 20px;
+    text-align: center;
+    padding: 0;
   }
 
   .aboutVirnect .aboutVirnect .aboutVirnectInner .aboutVirnectTit span,
@@ -527,6 +534,7 @@
   .aboutVirnect .aboutHistory .aboutHistoryInner .aboutHistoryTit p,
   .aboutVirnect .customers .customersInner .customersTit p {
     font-size: 16px;
+    text-align: center;
   }
 
   .aboutVirnect .aboutVirnect .aboutVirnectInner .aboutVirnectCont>ul:first-child li:first-child>span:last-child,
@@ -538,6 +546,7 @@
     min-height: 456px;
     flex-direction: row-reverse;
     position: relative;
+    padding: 0 24px;
   }
 
   .aboutVirnect .aboutHistory .aboutHistoryInner .aboutHistoryCont .aboutHistoryContCont .HisRight {
@@ -547,8 +556,8 @@
 
   .aboutVirnect .aboutHistory .aboutHistoryInner .aboutHistoryCont .aboutHistoryContCont .HisLeft div {
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 24px;
+    top: -40px;
   }
 
   .aboutVirnect .aboutHistory .aboutHistoryInner .aboutHistoryCont .aboutHistoryContCont .HisLeft {
@@ -589,14 +598,13 @@
       font-size: 16px;
     }
   }
-}
-
-@media screen and (max-width: 650px) {
   .aboutVirnect .aboutHistory .aboutHistoryInner .aboutHistoryCont .aboutHistoryContCont {
     flex-direction: column-reverse;
     height: 750px;
     justify-content: end;
   }
+
+
 }
 
 @media screen and (max-width: 425px) {

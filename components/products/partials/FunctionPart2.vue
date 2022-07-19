@@ -64,6 +64,7 @@ export default {
   }
   .contents {
     font-weight: 400;
+    line-height: 1.5;
   }
   @media (max-width: $mobile) {
     border: 0;
