@@ -12,7 +12,7 @@
             alt="제품정보 바로가기"
           />
         </i>
-        <p>제품정보 바로가기</p>
+        <p>{{ $t("supportText.LearnText.text1") }}</p>
       </nuxt-link>
       <nuxt-link to="/support/faq">
         <i>
@@ -21,7 +21,7 @@
             alt="FAQ 바로가기"
           />
         </i>
-        <p>FAQ 바로가기</p>
+        <p>{{ $t("supportText.LearnText.text2") }}</p>
       </nuxt-link>
     </span>
   </div>
