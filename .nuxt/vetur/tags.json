@@ -8,17 +8,14 @@
   "Header": {
     "description": "Auto imported from components/header.vue"
   },
+  "ApiAxios": {
+    "description": "Auto imported from components/api/axios.js"
+  },
   "DummyAward": {
     "description": "Auto imported from components/dummy/award.js"
   },
   "DummyAwardEn": {
     "description": "Auto imported from components/dummy/awardEn.js"
-  },
-  "ApiAxios": {
-    "description": "Auto imported from components/api/axios.js"
-  },
-  "MixinsMixin": {
-    "description": "Auto imported from components/mixins/mixin.js"
   },
   "MainBannerModule": {
     "description": "Auto imported from components/main/bannerModule.vue"
@@ -49,6 +46,15 @@
   },
   "MainUseCase": {
     "description": "Auto imported from components/main/useCase.vue"
+  },
+  "MixinsMixin": {
+    "description": "Auto imported from components/mixins/mixin.js"
+  },
+  "NewsCommonBaner": {
+    "description": "Auto imported from components/news/CommonBaner.vue"
+  },
+  "Paging": {
+    "description": "Auto imported from components/paging/paging.vue"
   },
   "ModulesBanner": {
     "description": "Auto imported from components/modules/Banner.vue"
@@ -106,12 +112,6 @@
   },
   "ModulesYoutubeFullscreen": {
     "description": "Auto imported from components/modules/YoutubeFullscreen.vue"
-  },
-  "NewsCommonBaner": {
-    "description": "Auto imported from components/news/CommonBaner.vue"
-  },
-  "Paging": {
-    "description": "Auto imported from components/paging/paging.vue"
   },
   "PolicySubMenuPayment": {
     "description": "Auto imported from components/policy/subMenuPayment.vue"
@@ -374,12 +374,6 @@
   "SolutionsPartialsSubMenuOil": {
     "description": "Auto imported from components/solutions/partials/subMenuOil.vue"
   },
-  "SupportNoticeAsideMenu": {
-    "description": "Auto imported from components/support/notice/AsideMenu.vue"
-  },
-  "SupportNoticeContents": {
-    "description": "Auto imported from components/support/notice/NoticeContents.vue"
-  },
   "SupportFaqAsideMenu": {
     "description": "Auto imported from components/support/faq/AsideMenu.vue"
   },
@@ -406,5 +400,11 @@
   },
   "SupportLearningCenterVideoTutorial": {
     "description": "Auto imported from components/support/learning-center/videoTutorial.vue"
+  },
+  "SupportNoticeAsideMenu": {
+    "description": "Auto imported from components/support/notice/AsideMenu.vue"
+  },
+  "SupportNoticeContents": {
+    "description": "Auto imported from components/support/notice/NoticeContents.vue"
   }
 }
