@@ -33,8 +33,35 @@
                       class="img-warpper swiper-slide"
                     >
                       <i><img :src="`${data.logo}`" /></i>
-                      <p class="contents">{{ data.title }}</p>
-                      <p class="category">{{ data.company }}</p>
+                      <p class="contents"
+                         v-html="$t(`remote.data1.title`)"
+                      >
+                      </p>
+                      <p class="category" v-html="$t(`remote.data1.company`)"></p>
+                    </div>
+                    <div
+                      v-for="(data, idx) of bannerData"
+                      :key="idx"
+                      class="img-warpper swiper-slide"
+                    >
+                      <i><img :src="`${data.logo}`" /></i>
+                      <p class="contents"
+                         v-html="$t(`remote.data2.title`)"
+                      >
+                      </p>
+                      <p class="category" v-html="$t(`remote.data2.company`)"></p>
+                    </div>
+                    <div
+                      v-for="(data, idx) of bannerData"
+                      :key="idx"
+                      class="img-warpper swiper-slide"
+                    >
+                      <i><img :src="`${data.logo}`" /></i>
+                      <p class="contents"
+                         v-html="$t(`remote.data2.title`)"
+                      >
+                      </p>
+                      <p class="category" v-html="$t(`remote.data2.company`)"></p>
                     </div>
                   </div>
                   <div class="swiper-pagination swiper-pagination-bullets">

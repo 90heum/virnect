@@ -2,12 +2,12 @@
   <div class="mainBanner">
     <div class="mainBannerInner">
       <span class="mainBannerTit">
-        <p class="bannerTitN1">생활 전반에 XR 기술이 스며들게 한다</p>
+        <p class="bannerTitN1">{{$t(`mainTit.title1`)}}</p>
         <h1 class="bannerTitN2">
-          글로벌 No.1 확장현실 (XR) 플랫폼 기업 VIRNECT
+          {{$t(`mainTit.title2`)}}
         </h1>
         <p class="bannerTitN3">
-          산업 현장을 혁신으로 이끌 버넥트 XR 솔루션을 확인하세요
+          {{$t(`mainTit.title3`)}}
         </p>
         <span class="bannerButton">
           <button>
