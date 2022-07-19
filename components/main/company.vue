@@ -114,10 +114,10 @@
         </span>
         <div class="companyNewsWrap">
           <span>
-            <p>VIRNECT 뉴스</p>
+            <p>{{$t(`companyText.mainNews.text1`)}}</p>
             <span>
               <nuxt-link to="/news/main" target="_blank">
-                <p>뉴스 전체보기</p>
+                <p>{{$t(`companyText.mainNews.text2`)}}</p>
                 <i>
                   <img
                     src="https://velog.velcdn.com/images/kyj0206/post/5154a98a-9041-4d8d-989e-f3fdfe4ebaa4/image.svg"

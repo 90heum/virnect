@@ -6,7 +6,7 @@
           <h2>Support</h2>
         </div>
         <div>
-          <p v-html="$t('newMainText.supportText.contents')"></p>
+          <p v-html="$t(`newMainText.supportText.contents`)"></p>
           <span @click="() => $router.push('/support/supportSubMain')">
             <p>바로가기</p>
             <p>
@@ -108,7 +108,7 @@
         <div>
           <nuxt-link to="/support/learning-center">
             <span>
-              <p>학습센터</p>
+              <p>{{$t(`newMainText.supportInfo.text1`)}}</p>
               <p>
                 <img
                   src="~/assets/images/pages/epc/addbtn.png"
@@ -147,8 +147,8 @@
       </span>
       <span class="SupportBottomTit">
         <div>
-          <p>{{ $t("newMainText.supportmodulText.kokacktext1") }}</p>
-          <p>{{ $t("newMainText.supportmodulText.kokacktext2") }}</p>
+          <p>{{$t(`newMainText.supportmodulText.kokacktext1`)}}</p>
+          <p>{{$t(`newMainText.supportmodulText.kokacktext2`)}}</p>
         </div>
         <div>
           <div>
@@ -161,7 +161,7 @@
             <p>070.7733.2025</p>
           </div>
           <div>
-            <nuxt-link to="/support/inquiry"> 문의하기 </nuxt-link>
+            <nuxt-link to="/support/inquiry">{{$t(`newMainText.supportInfo.text2`)}}</nuxt-link>
           </div>
         </div>
       </span>

@@ -3,20 +3,14 @@
     <div class="moduleTop">
       <span class="moduleTopTit">
         <p>Products</p>
-        <h2>산업 문제를 해결할 XR/DT 제품</h2>
+        <h2>{{$t(`productsText.moduleTop.title`)}}</h2>
         <span>
-          <p>
-            VIRNECT의 제품들은 산업현장의 생산적인 커뮤니케이션과 효율적인 업무
-            방식을 지원합니다.
-          </p>
-          <p>
-            확장현실(XR) 원천기술과 다양한 IT 기술들을 융합하여 고객의 이슈를
-            해결하는 맞춤형 제품과 솔루션을 제공하고 있습니다.
+          <p v-html="$t(`productsText.moduleTop.contents`)">
           </p>
         </span>
         <ul ul class="dataModule">
           <li>
-            <span>생산성</span>
+            <span>{{$t(`productsText.moduleTop.text1`)}}</span>
             <span>
               <p>20%</p>
               <p>
@@ -28,7 +22,7 @@
             </span>
           </li>
           <li>
-            <span>숙련도</span>
+            <span>{{$t(`productsText.moduleTop.text2`)}}</span>
             <span>
               <p>4.7%</p>
               <p>
@@ -40,7 +34,7 @@
             </span>
           </li>
           <li>
-            <span>리드 타임</span>
+            <span>{{$t(`productsText.moduleTop.text3`)}}</span>
             <span>
               <p>10%</p>
               <p>
@@ -52,7 +46,7 @@
             </span>
           </li>
           <li>
-            <span>비용</span>
+            <span>{{$t(`productsText.moduleTop.text4`)}}</span>
             <span>
               <p>10%</p>
               <p>
@@ -132,10 +126,10 @@
             <div style="padding-top: 52px">
               <span>
                 <button>
-                  <nuxt-link to="/products/remote"> 자세히 보기 </nuxt-link>
+                  <nuxt-link to="/products/remote">{{$t(`productsText.remoteinfo.text1`)}}</nuxt-link>
                 </button>
                 <button>
-                  <a href="support/demo" target="blank"> 데모신청 </a>
+                  <a href="support/demo" target="blank">{{$t(`productsText.remoteinfo.text2`)}}</a>
                 </button>
               </span>
               <span>
@@ -146,7 +140,7 @@
                       alt="다운로드이미지"
                     />
                   </i>
-                  <p><u>Remote 제품 소개서 다운로드(PDF)</u></p>
+                  <p><u>{{$t(`productsText.remoteinfo.text3`)}}</u></p>
                 </a>
               </span>
             </div>

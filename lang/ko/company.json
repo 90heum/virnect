@@ -1,5 +1,12 @@
 {
 	"companyText": {
+		"mainNews":{
+			"text1": "VIRNECT 뉴스",
+			"text2": "뉴스 전체보기"
+		},
+		"companyAwards":{
+			"title": "인증 및 수상"
+		},
 		"talentText": {
 			"title": "인재 채용",
 			"contents": "버넥트는 사람과 사람/로봇, 현실과 가상, 시간과 공간, 정보와 지식, 그리고 지혜를 서로 연결하여 스마트한 미래, 행복한 미래, 지속가능한 저탄소 미래를 만들어 나갑니다."

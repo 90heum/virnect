@@ -1,5 +1,12 @@
 {
 	"companyText": {
+		"mainNews":{
+			"text1": "VIRNECT News",
+			"text2": "More"
+		},
+		"companyAwards":{
+			"title": "Awards"
+		},
 		"visualText": {
 			"title": "About VIRNECT",
 			"contents": "VIRNECT virtually connects people and info right where is needed. Using XR (extended reality),<br> we enable our customers to access knowledge anywhere, anytime."

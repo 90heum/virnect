@@ -62,7 +62,7 @@
         <div>
           <a href="#">
             <span>
-              <p>학습센터</p>
+              <p>{{$t(`newMainText.supportInfo.text1`)}}</p>
               <p>
                 <img
                   src="https://velog.velcdn.com/images/kyj0206/post/55729d34-c916-4922-97a2-ac8213bbeab6/image.png"
@@ -94,7 +94,7 @@
           <p>070.7733.2025</p>
         </div>
         <div>
-          <nuxt-link to="/support/inquiry"> 문의하기 </nuxt-link>
+          <nuxt-link to="/support/inquiry">{{$t(`newMainText.supportInfo.text2`)}}</nuxt-link>
         </div>
       </span>
     </div>

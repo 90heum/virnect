@@ -8,8 +8,16 @@
         "router": "prDetail",
         "seq": 168
       }
-    ],
+    ]
+  },
     "nomore": "Nomore",
-    "close": "Close"
-  }
+    "close": "Close",
+
+    "bannerTit":{
+      "text1": "See more",
+      "text2": "Free Trials",
+      "text3": "We always welcome inquiries on AR and DT.",
+      "text4": "+82-70-7733-2025",
+      "text5": "Inquiry"
+    }
 }

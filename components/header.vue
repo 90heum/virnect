@@ -201,7 +201,7 @@
                   href="https://console.virnect.com/?continue=https%3A%2F%2Fvirnect.com%2F"
                   target="blank"
                 >
-                  <p>서비스 로그인</p>
+                  <p v-html="$t(`service.text1`)"></p>
                   <i>
                     <img
                       class="subBottomMenuIconOpen"
@@ -218,7 +218,7 @@
               </li>
               <li class="option">
                 <a href="https://download.virnect.com/remote" target="blank">
-                  <p>다운로드 센터 2.0</p>
+                  <p v-html="$t(`service.text2`)"></p>
                   <i>
                     <img
                       class="subBottomMenuIconOpen"
@@ -379,30 +379,31 @@
           </div>
         </span> -->
         <span class="asideInfoLink">
-          <span class="asideInfoLinkTit">
-            준비된 기술 컨설턴트가 직접 도움을 드립니다.
+          <span class="asideInfoLinkTit"
+                v-html="$t(`productsText.asideInfo.title`)"
+          >
           </span>
           <span class="asideInfoLinkCont">
-            <p>대표전화 : 070-7733-2025</p>
+            <p v-html="$t(`productsText.asideInfo.contents1`)"></p>
             <p>
-              구매 및 제휴 문의 :
+              {{$t(`productsText.asideInfo.contents2`)}}
               <a href="mailto:contact@virnect.com" target="blank">
-                <u>contact@virnect.com</u>
+                <u v-html="$t(`productsText.asideInfo.contents3`)"></u>
               </a>
             </p>
             <p>
-              제품 사용 및 기술 지원 :
+              {{$t(`productsText.asideInfo.contents4`)}}
               <a href="mailto:support@virnect.com" target="blank">
-                <u>support@virnect.com</u>
+                <u>{{$t(`productsText.asideInfo.contents5`)}}</u>
               </a>
             </p>
           </span>
           <div class="BtnWrap">
             <button>
-              <nuxt-link to="/support/demo"> 지금 사용해보기 </nuxt-link>
+              <nuxt-link to="/support/demo">{{$t(`productsText.asideInfo.category1`)}}</nuxt-link>
             </button>
             <button>
-              <nuxt-link to="/support/inquiry"> 문의하기 </nuxt-link>
+              <nuxt-link to="/support/inquiry">{{$t(`productsText.asideInfo.category2`)}}</nuxt-link>
             </button>
           </div>
         </span>
@@ -483,30 +484,31 @@
           </span>
         </div>
         <span class="asideInfoLink">
-          <span class="asideInfoLinkTit">
-            준비된 기술 컨설턴트가 직접 도움을 드립니다.
+          <span class="asideInfoLinkTit"
+                v-html="$t(`productsText.asideInfo.title`)"
+          >
           </span>
           <span class="asideInfoLinkCont">
-            <p>대표전화 : 070-7733-2025</p>
+            <p v-html="$t(`productsText.asideInfo.contents1`)"></p>
             <p>
-              구매 및 제휴 문의 :
+              {{$t(`productsText.asideInfo.contents2`)}}
               <a href="mailto:contact@virnect.com" target="blank">
-                <u>contact@virnect.com</u>
+                <u v-html="$t(`productsText.asideInfo.contents3`)"></u>
               </a>
             </p>
             <p>
-              제품 사용 및 기술 지원 :
+              {{$t(`productsText.asideInfo.contents4`)}}
               <a href="mailto:support@virnect.com" target="blank">
-                <u>support@virnect.com</u>
+                <u>{{$t(`productsText.asideInfo.contents5`)}}</u>
               </a>
             </p>
           </span>
           <div class="BtnWrap">
             <button>
-              <nuxt-link to="/support/demo"> 지금 사용해보기 </nuxt-link>
+              <nuxt-link to="/support/demo">{{$t(`productsText.asideInfo.category1`)}}</nuxt-link>
             </button>
             <button>
-              <nuxt-link to="/support/inquiry"> 문의하기 </nuxt-link>
+              <nuxt-link to="/support/inquiry">{{$t(`productsText.asideInfo.category2`)}}</nuxt-link>
             </button>
           </div>
         </span>
@@ -744,9 +746,9 @@
           </span>
         </div>
         <span class="asideInfoLink">
-          <span class="asideInfoLinkTit">
-            산업별 XR / DT 해답.
-            <p>VIRNECT가 알려드립니다.</p>
+          <span class="asideInfoLinkTit"
+                v-html="$t(`asideCompany.title`)"
+          >
           </span>
           <a href="#">
             <nuxt-link to="/products/productsMain">

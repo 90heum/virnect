@@ -45,7 +45,7 @@
           <span>
             <p>{{ $t("supportText.FAQText.title") }}</p>
             <p>
-              <a href="/support/faq"> 전체보기</a>
+              <a href="/support/faq">{{ $t("supportText.FAQText.text") }}</a>
               <i>
                 <img
                   src="https://velog.velcdn.com/images/kyj0206/post/5b6d5b4d-eb77-45e8-b225-2bd6c2f328cb/image.png"
@@ -157,7 +157,7 @@
           <span>
             <p>{{ $t("supportText.LearnText.contents") }}</p>
             <p>
-              <a href="/support/learning-center"> 전체보기</a>
+              <a href="/support/learning-center">{{ $t("supportText.LearnText.text") }}</a>
               <i>
                 <img
                   src="https://velog.velcdn.com/images/kyj0206/post/5b6d5b4d-eb77-45e8-b225-2bd6c2f328cb/image.png"

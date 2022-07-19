@@ -3,19 +3,9 @@
     <div class="useCaseWrap">
       <div class="useCaseTit">
         <p>Value</p>
-        <h2>전문가의 명확한 문제 해결</h2>
+        <h2>{{$t(`landing.solutionText.solutionTitle.title`)}}</h2>
         <span>
-          <p>
-            VIRNECT는 개념증명(Proof of Concept)부터 상용화까지 130여건의
-            프로젝트를 완수했습니다.
-          </p>
-          <p>
-            다양한 산업현장에 대한 경험과 이해를 바탕으로 고객사의 문제 해결을
-            위한 산업별 맞춤 확장현실(XR) 비즈니스 컨설팅을 진행합니다.
-          </p>
-          <p>
-            고객과의 긴밀한 컨설팅을 바탕으로 고객 맞춤 솔루션을 제안하고
-            실행합니다.
+          <p v-html="$t(`landing.solutionText.solutionTitle.contents`)">
           </p>
         </span>
       </div>
@@ -24,7 +14,7 @@
         <div class="energyWrap">
           <span class="energy">
             <span>
-              <p>인프라/자원</p>
+              <p>{{$t(`landing.solutionText.solutionBenefitLists[0].title`)}}</p>
               <i>
                 <img
                   src="https://velog.velcdn.com/images/kyj0206/post/794db5e1-e499-4536-bf8e-26e2332b3c26/image.png"
@@ -43,7 +33,7 @@
           <span class="energyHover">
             <nuxt-link to="/value/infra_resource">
               <span>
-                <p>인프라/자원</p>
+                <p>{{$t(`landing.solutionText.solutionBenefitLists[0].title`)}}</p>
                 <i>
                   <img
                     src="https://velog.velcdn.com/images/kyj0206/post/dd0c8817-ecab-4fd9-95ef-8bd1e1764746/image.png"
@@ -70,7 +60,7 @@
         <div class="oilWrap">
           <span class="oil">
             <span>
-              <p>제조/건설</p>
+              <p>{{$t(`landing.solutionText.solutionBenefitLists[1].title`)}}</p>
               <i>
                 <img
                   src="https://velog.velcdn.com/images/kyj0206/post/794db5e1-e499-4536-bf8e-26e2332b3c26/image.png"
@@ -89,7 +79,7 @@
           <span class="oilHover">
             <nuxt-link to="/value/manufacture_construction">
               <span>
-                <p>제조/건설</p>
+                <p>{{$t(`landing.solutionText.solutionBenefitLists[1].title`)}}</p>
                 <i>
                   <img
                     src="https://velog.velcdn.com/images/kyj0206/post/dd0c8817-ecab-4fd9-95ef-8bd1e1764746/image.png"
@@ -116,7 +106,7 @@
         <div class="partsWrap">
           <span class="parts">
             <span>
-              <p>공공/교육</p>
+              <p>{{$t(`landing.solutionText.solutionBenefitLists[2].title`)}}</p>
               <i>
                 <img
                   src="https://velog.velcdn.com/images/kyj0206/post/794db5e1-e499-4536-bf8e-26e2332b3c26/image.png"
@@ -135,7 +125,7 @@
           <span class="partsHover">
             <nuxt-link to="/value/public_education">
               <span>
-                <p>공공/교육</p>
+                <p>{{$t(`landing.solutionText.solutionBenefitLists[2].title`)}}</p>
                 <i>
                   <img
                     src="https://velog.velcdn.com/images/kyj0206/post/dd0c8817-ecab-4fd9-95ef-8bd1e1764746/image.png"
@@ -162,7 +152,7 @@
         <div class="airLineWrap">
           <span class="airLine">
             <span>
-              <p>엔터테인먼트</p>
+              <p>{{$t(`landing.solutionText.solutionBenefitLists[3].title`)}}</p>
               <i>
                 <img
                   src="https://velog.velcdn.com/images/kyj0206/post/794db5e1-e499-4536-bf8e-26e2332b3c26/image.png"
@@ -181,7 +171,7 @@
           <span class="airLineHover">
             <nuxt-link to="/value/entertainment">
               <span>
-                <p>엔터테인먼트</p>
+                <p>{{$t(`landing.solutionText.solutionBenefitLists[3].title`)}}</p>
                 <i>
                   <img
                     src="https://velog.velcdn.com/images/kyj0206/post/dd0c8817-ecab-4fd9-95ef-8bd1e1764746/image.png"
@@ -208,7 +198,7 @@
         <div class="EPCWrap">
           <span class="epc">
             <span>
-              <p>기타</p>
+              <p>{{$t(`landing.solutionText.solutionBenefitLists[4].title`)}}</p>
               <i>
                 <img
                   src="https://velog.velcdn.com/images/kyj0206/post/794db5e1-e499-4536-bf8e-26e2332b3c26/image.png"
@@ -224,7 +214,7 @@
           <span class="epcHover">
             <nuxt-link to="/value/etc">
               <span>
-                <p>기타</p>
+                <p>{{$t(`landing.solutionText.solutionBenefitLists[4].title`)}}</p>
                 <i>
                   <img
                     src="https://velog.velcdn.com/images/kyj0206/post/dd0c8817-ecab-4fd9-95ef-8bd1e1764746/image.png"

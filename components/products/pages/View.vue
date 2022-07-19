@@ -134,7 +134,7 @@
     </div>
     <!-- dsadsf -->
     <heading-module
-      :category="$t('productsText.viewText.funcTitle.category')"
+      :category="$t(`productsText.arsdkText.funcTitle.category`)"
       :title="$t('productsText.viewText.funcTitle.title')"
     ></heading-module>
     <function-part

@@ -5,7 +5,7 @@
       <span class="companyAwards">
         <!-- <div class="awardsWrap"> -->
         <div class="companyAwardsTitleWrapper">
-          <p>인증 및 수상</p>
+          <p>{{$t(`companyText.companyAwards.title`)}}</p>
         </div>
 
         <div class="slide-wrap">
