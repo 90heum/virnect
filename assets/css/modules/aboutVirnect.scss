@@ -481,11 +481,11 @@
   }
 
   .aboutVirnect .customers .customersInner {
-    padding: 140px 24px;
+    padding: 0 24px 140px ;
   }
 
   .marginRanger{
-    padding: 0;
+    padding: 70px;
   }
 }
 
@@ -534,6 +534,7 @@
   .aboutVirnect .aboutHistory .aboutHistoryInner .aboutHistoryTit p,
   .aboutVirnect .customers .customersInner .customersTit p {
     font-size: 16px;
+    text-align: center;
   }
 
   .aboutVirnect .aboutVirnect .aboutVirnectInner .aboutVirnectCont>ul:first-child li:first-child>span:last-child,
