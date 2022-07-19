@@ -37,7 +37,7 @@
           src="../../../assets/images/common/mov-bg-default@2x.png"
           alt="배경"
         />
-        <video autoplay muted style="object-fit: cover">
+        <video autoplay muted style="object-fit: cover" playsinline>
           <source
             src="https://player.vimeo.com/external/427962056.hd.mp4?s=4c405dbd984c474798385f7ccc95c1b38de0e7db&profile_id=174"
           />

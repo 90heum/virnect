@@ -36,7 +36,7 @@
       </span>
       <div class="video_cont">
         <img src="../../../assets/images/common/mov-bg-default@2x.png" alt="배경">
-        <video autoplay muted style="object-fit:cover">
+        <video autoplay muted style="object-fit:cover" playsinline>
           <source
             src="https://player.vimeo.com/external/560735983.hd.mp4?s=e14e93e201c67212624d232508ddcad911d7d617&profile_id=174"
           />

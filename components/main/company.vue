@@ -6,20 +6,9 @@
         <div class="companyBannerInner">
           <span class="companyBannerTit">
             <p>Company</p>
-            <h2>글로벌 No.1 XR 플렛폼 기업</h2>
+            <h2 v-html="$t('newMainText.companyText.title')"></h2>
             <span>
-              <p>
-                버넥트는 Smart future, Safe future, Low-Carbon future라는 세
-                가지 관점으로
-              </p>
-              <p>
-                확장현실(XR) 기술을 활용한 산업현장의 디지털 트랜스포메이션을
-                이끌고 있습니다​.
-              </p>
-              <p>
-                자체 개발한 컴퓨터 비전 기반의 증강현실 원천기술을 바탕으로
-                메타버스 기술 트렌드를 선도하는 XR 솔루션 전문 기업입니다.
-              </p>
+              <p v-html="$t('newMainText.companyText.contents')"></p>
             </span>
             <div>
               <span>IR</span>
@@ -41,9 +30,8 @@
           </span>
 
           <client-only>
-           
             <slide-carousel />
-              <!-- <div class="CompanyBottomBanner">
+            <!-- <div class="CompanyBottomBanner">
                 <div class="CompanyBottomBannerSlider-container">
                   <div
                     class="CompanyBottomBannerSlide"
@@ -74,7 +62,7 @@
       <!-- 버넥트 뉴스 모듈 -->
       <span class="companyNews">
         <!-- 회사소개 모듈 -->
-        <com-modal :comModal="comModal" :comPopup="comPopup"/>
+        <com-modal :comModal="comModal" :comPopup="comPopup" />
         <span class="companyVirnect">
           <div class="virnectModule1">
             <nuxt-link to="/company/about">
@@ -151,7 +139,10 @@
               >
                 <nuxt-link :to="`/news/detail?id=${data.id}&type`">
                   <span>
-                    <img :src="`data:image/png;base64,${data.thumbnail}`" alt="뉴스리스트 이미지" />
+                    <img
+                      :src="`data:image/png;base64,${data.thumbnail}`"
+                      alt="뉴스리스트 이미지"
+                    />
                   </span>
                   <span>
                     {{
@@ -172,7 +163,7 @@
         </div>
       </span>
 
-        <company-awards />
+      <company-awards />
     </div>
   </div>
 </template>
@@ -188,8 +179,8 @@ export default {
   components: {
     CompanyAwards,
     SlideCarousel,
-    ComModal
-},  
+    ComModal,
+  },
   data() {
     return {
       comPopup: false,
@@ -233,7 +224,7 @@ export default {
     contentList: Array,
     irData: Array,
   },
-  methods: { 
+  methods: {
     comModal() {
       this.comPopup = !this.comPopup;
     },
@@ -262,14 +253,12 @@ export default {
     //     slides = Array.from(
     //       document.querySelectorAll(".CompanyBottomBannerSlide")
     //     );
-
     //   let isDragging = false,
     //     startPos = 0,
     //     currentTranslate = 0,
     //     prevTranslate = 0,
     //     animationID,
     //     currentIndex = 0;
-
     //   slides.forEach((slide, index) => {
     //     const slideImage = slide.querySelector(".CompanyBottomBannerSlideImg");
     //     // disable default image drag
@@ -284,23 +273,19 @@ export default {
     //     slide.addEventListener("mousemove", touchMove);
     //     slide.addEventListener("mouseleave", touchEnd);
     //   });
-
     //   // make responsive to viewport changes
     //   window.addEventListener("resize", setPositionByIndex);
-
     //   // prevent menu popup on long press
     //   window.oncontextmenu = function (event) {
     //     event.preventDefault();
     //     event.stopPropagation();
     //     return false;
     //   };
-
     //   function getPositionX(event) {
     //     return event.type.includes("mouse")
     //       ? event.pageX
     //       : event.touches[0].clientX;
     //   }
-
     //   function touchStart(index) {
     //     return function (event) {
     //       currentIndex = index;
@@ -310,42 +295,33 @@ export default {
     //       slider.classList.add("CompanyGrabbing");
     //     };
     //   }
-
     //   function touchMove(event) {
     //     if (isDragging) {
     //       const currentPosition = getPositionX(event);
     //       currentTranslate = prevTranslate + currentPosition - startPos;
     //     }
     //   }
-
     //   function touchEnd() {
     //     cancelAnimationFrame(animationID);
     //     isDragging = false;
     //     const movedBy = currentTranslate - prevTranslate;
-
     //     // if moved enough negative then snap to next slide if there is one
     //     if (movedBy < -100 && currentIndex < slides.length - 1)
     //       currentIndex += 1;
-
     //     // if moved enough positive then snap to previous slide if there is one
     //     if (movedBy > 100 && currentIndex > 0) currentIndex -= 1;
-
     //     setPositionByIndex();
-
     //     slider.classList.remove("CompanyGrabbing");
     //   }
-
     //   function animation() {
     //     setSliderPosition();
     //     if (isDragging) requestAnimationFrame(animation);
     //   }
-
     //   function setPositionByIndex() {
     //     currentTranslate = currentIndex * -window.innerWidth;
     //     prevTranslate = currentTranslate;
     //     setSliderPosition();
     //   }
-
     //   function setSliderPosition() {
     //     slider.style.transform = `translateX(${currentTranslate}px)`;
     //   }
@@ -369,8 +345,10 @@ export default {
 }
 .company {
   /* 컴퍼니 배너 수정 */
-  .CompanyBottomBannerSlideImg { max-width: 500px; }
-  /* */ 
+  .CompanyBottomBannerSlideImg {
+    max-width: 500px;
+  }
+  /* */
   display: block;
   overflow: hidden;
   .companyWrap {
@@ -628,7 +606,7 @@ export default {
           display: flex;
           width: 100%;
           transition: all 0.4s;
-          
+
           &:first-child {
             justify-content: space-between;
             margin-bottom: 30px;
@@ -657,9 +635,7 @@ export default {
                   img {
                     max-width: 13px;
                     width: 100%;
-                  
                   }
-                  
                 }
               }
             }
@@ -745,7 +721,7 @@ export default {
         }
       }
       // 조성우 추가
-      
+
       // 조성우 추가 끝
     }
 
@@ -818,7 +794,6 @@ export default {
   }
 }
 
-
 // .companyAwards
 // .slide-wrap
 // .carousel-wrapper
@@ -829,26 +804,40 @@ export default {
   justify-content: center;
   flex-direction: column;
   padding-bottom: 60px;
-  >div:first-child { align-self: start; padding-left: 2.5%; }
-   .slide-wrap {
-      width: 90%;
-   }
-   .carousel-wrapper .swiper-slide {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     img { width: 160px; }
-     span { width: 160px; }
-     p { text-align: center; }
-   }
-   .prev-btn, .next-btn {
-      position: absolute;
-      width: 42px;
-      transform: translateY(50px);
-      cursor: pointer;
-   }
-   .prev-btn { left: 10px; }
-   .next-btn { right: 10px; }
+  > div:first-child {
+    align-self: start;
+    padding-left: 2.5%;
+  }
+  .slide-wrap {
+    width: 90%;
+  }
+  .carousel-wrapper .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 160px;
+    }
+    span {
+      width: 160px;
+    }
+    p {
+      text-align: center;
+    }
+  }
+  .prev-btn,
+  .next-btn {
+    position: absolute;
+    width: 42px;
+    transform: translateY(50px);
+    cursor: pointer;
+  }
+  .prev-btn {
+    left: 10px;
+  }
+  .next-btn {
+    right: 10px;
+  }
 }
 @media screen and(max-width: 1970px) {
   .company .companyWrap .companyBanner .companyBannerInner {

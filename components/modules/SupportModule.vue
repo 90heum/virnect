@@ -6,10 +6,8 @@
           <h2>Support</h2>
         </div>
         <div>
-          <p>
-            서비스 이용에 도움이 되도록 빠르고 친절하게 해결해 드리겠습니다.
-          </p>
-          <span>
+          <p v-html="$t('newMainText.supportText.contents')"></p>
+          <span @click="() => $router.push('/support/supportSubMain')">
             <p>바로가기</p>
             <p>
               <img
@@ -149,8 +147,8 @@
       </span>
       <span class="SupportBottomTit">
         <div>
-          <p>고객지원/제품 및 기술/파트너 정책 등 궁금하신</p>
-          <p>사항이 있으신가요?</p>
+          <p>{{ $t("newMainText.supportmodulText.kokacktext1") }}</p>
+          <p>{{ $t("newMainText.supportmodulText.kokacktext2") }}</p>
         </div>
         <div>
           <div>
@@ -163,7 +161,7 @@
             <p>070.7733.2025</p>
           </div>
           <div>
-            <a href="#"> 문의하기 </a>
+            <nuxt-link to="/support/inquiry"> 문의하기 </nuxt-link>
           </div>
         </div>
       </span>
