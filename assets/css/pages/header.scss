@@ -50,6 +50,7 @@ header {
 
 
                         a {
+                            border-bottom: 3px solid transparent;
                             white-space: nowrap;
                             display: flex;
                             height: 100%;
@@ -131,7 +132,7 @@ header {
                         }
 
                         i {
-                            display: inline-block;
+                            display: flex;
                             vertical-align: top;
 
                             img {
@@ -1522,7 +1523,7 @@ header .headerInner .navWrap nav ul li a.navActive+header .subNavi {
     }
 
     header .headerInner .MbHam .MbOpen {
-        display: flex;
+        display: block;
     }
 
     header .headerInner .navWrap nav {

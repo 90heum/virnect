@@ -186,23 +186,26 @@
   flex: 1;
   text-align: center;
   width: 100%;
+  display: flex;
   min-width: 190px;
   max-width: 190px;
+  align-items: center;
   max-height: 190px;
   min-height: 190px;
   height: 100%;
-  padding: 72px 46px;
+  padding: 50px 20px;
   background-color: #f7f8f9;
   border-radius: 50%;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .aboutVirnect .aboutVirnect .aboutVirnectInner .aboutVirnectCont>ul:last-child li p {
-  white-space: nowrap;
   font-size: 16px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1;
+  line-height: 1.2;
   letter-spacing: -0.2px;
   text-align: center;
   color: #0a51b7;
@@ -210,7 +213,6 @@
 }
 
 .aboutVirnect .aboutVirnect .aboutVirnectInner .aboutVirnectCont>ul:last-child li span {
-  white-space: nowrap;
   font-size: 30px;
   font-weight: normal;
   font-stretch: normal;
@@ -349,13 +351,14 @@
   max-width: 548px;
   width: 100%;
 }
-
+// 되????
 .aboutVirnect .aboutHistory .aboutHistoryInner .aboutHistoryCont .aboutHistoryContCont .HisRight ul li {
   font-size: 16px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
-  line-height: 2.44;
+  line-height: 1.5;
+  margin-bottom: 20px;
   letter-spacing: -0.2px;
   text-align: justify;
   color: #121212;
@@ -425,6 +428,7 @@
   padding: 19px 0;
 }
 
+// 나나낱ㅌ
 .aboutVirnect .customers .customersInner .customersCont .customerContTab li.active,
 .aboutVirnect .customers .customersInner .customersCont .customerContTab li:hover {
   color: #0a51b7;
@@ -478,7 +482,11 @@
   }
 
   .aboutVirnect .customers .customersInner {
-    padding: 140px 24px;
+    padding: 0 24px 140px ;
+  }
+
+  .marginRanger{
+    padding: 70px;
   }
 }
 
@@ -518,6 +526,8 @@
 
   .aboutVirnect .customers .customersInner .customersTit h2 {
     margin-bottom: 20px;
+    text-align: center;
+    padding: 0;
   }
 
   .aboutVirnect .aboutVirnect .aboutVirnectInner .aboutVirnectTit span,
@@ -525,6 +535,7 @@
   .aboutVirnect .aboutHistory .aboutHistoryInner .aboutHistoryTit p,
   .aboutVirnect .customers .customersInner .customersTit p {
     font-size: 16px;
+    text-align: center;
   }
 
   .aboutVirnect .aboutVirnect .aboutVirnectInner .aboutVirnectCont>ul:first-child li:first-child>span:last-child,
@@ -536,6 +547,7 @@
     min-height: 456px;
     flex-direction: row-reverse;
     position: relative;
+    padding: 0 24px;
   }
 
   .aboutVirnect .aboutHistory .aboutHistoryInner .aboutHistoryCont .aboutHistoryContCont .HisRight {
@@ -545,8 +557,8 @@
 
   .aboutVirnect .aboutHistory .aboutHistoryInner .aboutHistoryCont .aboutHistoryContCont .HisLeft div {
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 24px;
+    top: -40px;
   }
 
   .aboutVirnect .aboutHistory .aboutHistoryInner .aboutHistoryCont .aboutHistoryContCont .HisLeft {
@@ -587,14 +599,13 @@
       font-size: 16px;
     }
   }
-}
-
-@media screen and (max-width: 650px) {
   .aboutVirnect .aboutHistory .aboutHistoryInner .aboutHistoryCont .aboutHistoryContCont {
     flex-direction: column-reverse;
     height: 750px;
     justify-content: end;
   }
+
+
 }
 
 @media screen and (max-width: 425px) {

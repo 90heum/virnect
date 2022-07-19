@@ -173,6 +173,7 @@ export default {
     box-sizing: border-box;
     .MenuSub {
       ul {
+        height: 62px;
         background-color: #fff;
         position: absolute;
         padding-left: 0px;
@@ -187,6 +188,7 @@ export default {
           }
         }
         li {
+          height: 62px;
           padding-right: 19px;
           background-color: #fff;
           border: 1px solid transparent;
@@ -210,11 +212,13 @@ export default {
             border-bottom: none;
           }
           a {
+            height: 59px;
             display: flex;
             align-items: center;
             p {
               &:first-child {
                 img {
+                  display: flex;
                   max-width: 58px;
                   width: 100%;
                   padding: 13px 10px 13px 23px;

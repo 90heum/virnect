@@ -101,12 +101,12 @@ span {
   &.contactContTab {
     display: block;
     margin: 0 auto;
-    max-width: 1260px;
     width: 100%;
     padding: 150px 0 0;
     > ul {
       display: flex;
-      margin-bottom: 100px;
+      margin: 0 auto 100px;
+      max-width: 1200px;
       li {
         padding: 13px 0;
         cursor: pointer;
@@ -373,9 +373,11 @@ span {
   }
 }
 
+
+
 @media screen and(max-width: 768px) {
   span.contactContTab{
-    padding: 90px 24px;
+    padding: 90px 0;
   }
 }
 </style>

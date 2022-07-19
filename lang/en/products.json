@@ -130,11 +130,11 @@
 			"prject": "Projects"
 		},
 		"visualText": {
-			"title": "Try our optimized products <br class='mobile-hidden'>for industrial worksites.",
+			"title": "Try our optimized products <p>for industrial worksites.</p>",
 			"contents": "VIRNECT products make safer and more efficient industrial worksites <br class='mobile-hidden'>by applying original AR and Digital Twin technologies."
 		},
 		"productText": {
-			"title": "VIRNECT enables seamless collaboration overcoming time and space constraints."
+			"title": "VIRNECT enables seamless collaboration <p>overcoming time and space constraints.</p>"
 		},
 		"supportTitle": {
 			"category": "Use and support",

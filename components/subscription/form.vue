@@ -68,6 +68,7 @@ body{
             &:last-child{
                 i{
                     img{
+                        cursor: pointer;
                         max-width: 34px;
                         width: 100%;
                     }

@@ -172,17 +172,17 @@
 
 @media screen and (max-width: 880px) {
   .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap {
-    /* position: relative; */
+    position: relative;
   }
 
-  // .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li.active .listWrap span>p::after {
-  //   content: "";
-  //   display: block;
-  //   position: absolute;
-  //   top: 110px;
-  //   width: 100%;
-  //   border-bottom: 1px solid #c5c8cf;
-  // }
+  .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap span>p::after {
+    content: "";
+    display: none;
+    position: absolute;
+    top: 110px;
+    width: 100%;
+    border-bottom: 1px solid #c5c8cf;
+  }
 
   .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap>i {
     border-left: none;
@@ -228,9 +228,6 @@
 }
 
 @media screen and (max-width: 680px) {
-  .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li.active .listWrap span>p::after {
-    top: 235px;
-  }
 
   .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap {
     flex-direction: column;
