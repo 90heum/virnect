@@ -23,6 +23,10 @@ You can directly use them in pages and other components without the need to impo
 - `<MainSuppoert>` | `<main-suppoert>` (components/main/suppoert.vue)
 - `<MainUseCase>` | `<main-use-case>` (components/main/useCase.vue)
 - `<MixinsMixin>` | `<mixins-mixin>` (components/mixins/mixin.js)
+
+- `<NewsCommonBaner>` | `<news-common-baner>` (components/news/CommonBaner.vue)
+- `<Paging>` | `<paging>` (components/paging/paging.vue)
+
 - `<ModulesBanner>` | `<modules-banner>` (components/modules/Banner.vue)
 - `<ModulesBoard>` | `<modules-board>` (components/modules/Board.vue)
 - `<ModulesBoardView>` | `<modules-board-view>` (components/modules/BoardView.vue)
@@ -42,8 +46,6 @@ You can directly use them in pages and other components without the need to impo
 - `<ModulesSubSolutionMenu>` | `<modules-sub-solution-menu>` (components/modules/SubSolutionMenu.vue)
 - `<ModulesSupportModule>` | `<modules-support-module>` (components/modules/SupportModule.vue)
 - `<ModulesYoutubeFullscreen>` | `<modules-youtube-fullscreen>` (components/modules/YoutubeFullscreen.vue)
-- `<NewsCommonBaner>` | `<news-common-baner>` (components/news/CommonBaner.vue)
-- `<Paging>` | `<paging>` (components/paging/paging.vue)
 - `<PolicySubMenuPayment>` | `<policy-sub-menu-payment>` (components/policy/subMenuPayment.vue)
 - `<PolicySubMenuPolicy>` | `<policy-sub-menu-policy>` (components/policy/subMenuPolicy.vue)
 - `<PolicySubMenuTerms>` | `<policy-sub-menu-terms>` (components/policy/subMenuTerms.vue)

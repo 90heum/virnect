@@ -1,0 +1,11 @@
+{
+    "valueCommon": {
+        "subTabText": {
+            "text1": "인프라/자원",
+            "text2": "제조/건설",
+            "text3": "공공/교육",
+            "text4": "엔터테인먼트",
+            "text5": "기타"
+        }
+    }
+}
