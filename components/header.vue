@@ -880,7 +880,8 @@ export default {
     redirectPage (locale) {
       if (locale === 'ko') return;
       const routePath = this.$route.fullPath;
-      if (routePath.includes("ir") || routePath.includes("talent")) {
+      console.log(routePath)
+      if (routePath.includes("/company/ir") || routePath.includes("/company/talent")) {
         this.$router.push("/company/about");
       }
     },
