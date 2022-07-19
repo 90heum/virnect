@@ -274,7 +274,7 @@
         <div
           class="language"
           @click="
-            [(lang = true), langlang(), toggle2(), (isServiceMenu = false)]
+            [(lang = true), langlang('ko'), toggle2(), (isServiceMenu = false)]
           "
           v-if="isWeb"
           v-click-outside="langHide"
@@ -290,7 +290,7 @@
               v-for="locale in availableLocales"
               :key="locale.code"
               @click.prevent.stop="$i18n.setLocale(locale.code)"
-              @click="langlang()"
+              @click="langlang(locale.code)"
             >
               <a href="#">{{ locale.name }}</a>
             </span>
@@ -727,7 +727,7 @@
             ></span>
             <div class="subNavCompanyMenu">
               <span
-                v-for="(list, idx) of $t(`newCompany.menuList`)"
+                v-for="(list, idx) of $i18n.localeProperties.code === 'ko' ? $t(`newCompany.menuList`) : $t(`newCompany.menuList`).filter((e, idx) => {if (idx === 0) return e; })"
                 :key="idx"
                 @click="
                   [
@@ -876,6 +876,14 @@ export default {
     },
   },
   methods: {
+    redirectPage (locale) {
+      console.log(locale)
+      if (locale === 'ko') return;
+      const routePath = this.$route.fullPath;
+      if (routePath.includes("ir") || routePath.includes("talent")) {
+        this.$router.push("/company/about")
+      }
+    },
     handleMobileMenu(e) {
       this.mobileMenu = e;
     },
@@ -916,8 +924,9 @@ export default {
         }
       }
     },
-    langlang() {
+    langlang(locale) {
       this.showEarth = !this.showEarth;
+      this.redirectPage(locale);
     },
     showServiceMenu() {
       this.isServiceMenu = !this.isServiceMenu;
