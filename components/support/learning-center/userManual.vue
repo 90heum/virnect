@@ -28,7 +28,7 @@
           : []"
         :key="idx"
       >
-        <nuxt-link :to="`learning-manual-detail?category=${data.id}&type=${1}`">
+        <nuxt-link :to="{path: `learning-manual-detail?category=${data.id}&type=${1}`}">
           <span class="listImg">
             <img
               :src="`${
@@ -189,7 +189,8 @@ export default {
       border: solid 1px #e6e8eb;
       background-color: #fff;
       max-width: 324px;
-      width: calc((100% - 30px) / 3);
+      width: calc((100% - 45px) / 3);
+      margin-bottom: 15px;
       &:first-child {
         margin-right: 15px;
         margin-bottom: 15px;

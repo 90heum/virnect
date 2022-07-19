@@ -31,7 +31,7 @@
         </p>
       </span>
 
-      <span @click="chooseTabMenu(0)" :class="isTabMenu === 0 ? 'active' : ''">
+      <span @click="chooseTabMenu(null)" :class="!isTabMenu? 'active' : ''">
         <p>
           <img
             src="https://velog.velcdn.com/images/kyj0206/post/90dc6681-fd1c-43de-ba9e-b1557f71b29a/image.png"
