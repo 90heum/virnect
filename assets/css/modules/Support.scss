@@ -60,6 +60,10 @@
   gap: 6px;
 }
 
+.SupportBanner .SupportBannerWrap .SupportTit div:last-child span p{
+  cursor: pointer;
+}
+
 .SupportBanner .SupportBannerWrap .SupportTit div:last-child span p:first-child {
   font-size: 14px;
   font-weight: bold;
@@ -69,6 +73,7 @@
 }
 
 .SupportBanner .SupportBannerWrap .SupportTit div:last-child span p:last-child img {
+  display: flex;
   max-width: 12px;
   width: 100%;
 }

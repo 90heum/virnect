@@ -133,10 +133,7 @@
                 </button>
               </span>
               <span>
-                <a
-                  href="http://13.209.200.75:8080/static/company/product/VIRNECT_Solution_Leaflet_ver_LF.KR2203A.pdf"
-                  target="blank"
-                >
+                <a @click="modal()">
                   <i>
                     <img
                       src="https://velog.velcdn.com/images/kyj0206/post/7f7bb43e-b114-4733-b9f6-060e25b8ee49/image.png"
@@ -178,10 +175,7 @@
                 </button>
               </span>
               <span>
-                <a
-                  href="http://13.209.200.75:8080/static/company/product/VIRNECT_Solution_Leaflet_ver_LF.KR2203A.pdf"
-                  target="blank"
-                >
+                <a @click="modal()">
                   <i>
                     <img
                       src="https://velog.velcdn.com/images/kyj0206/post/7f7bb43e-b114-4733-b9f6-060e25b8ee49/image.png"
@@ -223,10 +217,7 @@
                 </button>
               </span>
               <span>
-                <a
-                  href="http://13.209.200.75:8080/static/company/product/VIRNECT_Solution_Leaflet_ver_LF.KR2203A.pdf"
-                  target="blank"
-                >
+                <a @click="modal()">
                   <i>
                     <img
                       src="https://velog.velcdn.com/images/kyj0206/post/7f7bb43e-b114-4733-b9f6-060e25b8ee49/image.png"

@@ -9,7 +9,8 @@
               return;
             }
             isMenu = false;
-            mobileMenu = { list1: false };
+            mobileMenu = { list1: false }
+            showMenu(false);
           }
         "
       >
@@ -274,7 +275,7 @@
         <div
           class="language"
           @click="
-            [(lang = true), langlang(), toggle2(), (isServiceMenu = false)]
+            [(lang = true), langlang('ko'), toggle2(), (isServiceMenu = false)]
           "
           v-if="isWeb"
           v-click-outside="langHide"
@@ -290,7 +291,7 @@
               v-for="locale in availableLocales"
               :key="locale.code"
               @click.prevent.stop="$i18n.setLocale(locale.code)"
-              @click="langlang()"
+              @click="langlang(locale.code)"
             >
               <a href="#">{{ locale.name }}</a>
             </span>
@@ -729,7 +730,7 @@
             ></span>
             <div class="subNavCompanyMenu">
               <span
-                v-for="(list, idx) of $t(`newCompany.menuList`)"
+                v-for="(list, idx) of $i18n.localeProperties.code === 'ko' ? $t(`newCompany.menuList`) : $t(`newCompany.menuList`).filter((e, idx) => {if (idx === 0) return e; })"
                 :key="idx"
                 @click="
                   [
@@ -878,6 +879,14 @@ export default {
     },
   },
   methods: {
+    redirectPage (locale) {
+      if (locale === 'ko') return;
+      const routePath = this.$route.fullPath;
+      console.log(routePath)
+      if (routePath.includes("/company/ir") || routePath.includes("/company/talent")) {
+        this.$router.push("/company/about");
+      }
+    },
     handleMobileMenu(e) {
       this.mobileMenu = e;
     },
@@ -885,7 +894,6 @@ export default {
       try {
         const data = await this.$axios.get(`admin/news?page=1&size=${20}`);
         const dataJson = await data;
-        console.log(dataJson.data.data.newsBoardResponseList);
         this.contentList = dataJson.data.data.newsBoardResponseList;
       } catch (e) {
         console.error(e);
@@ -918,8 +926,9 @@ export default {
         }
       }
     },
-    langlang() {
+    langlang(locale) {
       this.showEarth = !this.showEarth;
+      this.redirectPage(locale);
     },
     showServiceMenu() {
       this.isServiceMenu = !this.isServiceMenu;

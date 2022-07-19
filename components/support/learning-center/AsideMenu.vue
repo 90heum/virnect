@@ -115,7 +115,6 @@ export default {
             i{
                 cursor: pointer;
                 display: flex;
-                padding-bottom: 5px;
                 img{
                     max-width: 19px;
                     min-width: 19px;

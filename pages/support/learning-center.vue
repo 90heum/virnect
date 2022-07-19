@@ -58,13 +58,10 @@ export default {
     watch: {
         '$route' (to, from) {
             // this.chooseTabMenu(Number(this.$route.query.category) || 1)
-            this.isTabMenu = Number(this.$route.query.category) || 1;
+            this.isTabMenu = Number(this.$route.query.category);
             this.isTypeMenu = Number(this.$route.query.type)||null;
             this.requestData();
         }
-    },
-    updated() {
-        console.log(Number(this.$route.query.category));
     },
     data () {
         return {
@@ -118,7 +115,6 @@ export default {
     async asyncData ({$axios, route}) {
         const routeCategory = Number(route.query.category) || 1;
         const routeType = Number(route.query.type)||null;
-        console.log(routeType, routeCategory, ">> : " , routeType ? routeType === 5 ? 0 : routeType : '')
         try {
             const data = Promise.all([$axios.get("admin/support/learning/category"),
                                       $axios.get("admin/support/learning/type"),

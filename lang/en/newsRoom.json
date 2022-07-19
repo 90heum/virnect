@@ -1,7 +1,7 @@
 {
     "newsRoom": {
         "gnbHeaderText": {
-            "text": "We bring you the latest <br>news of the leaping Bernect."
+            "text": "We bring you the latest <p>news of the leaping Bernect.</p>"
         },
         "title": "  도약하는<p>버넥트의 최신 소식을 전해드립니다.</p>",
         "type": {

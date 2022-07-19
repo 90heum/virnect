@@ -4,10 +4,10 @@
       <li class="SubUseNavActive">
         <nuxt-link to="/company/about">About VIRNECT</nuxt-link>
       </li>
-      <li>
+      <li v-if="$i18n.localeProperties.code === 'ko'">
         <nuxt-link to="/company/talent">인재채용</nuxt-link>
       </li>
-      <li>
+      <li v-if="$i18n.localeProperties.code === 'ko'">
         <nuxt-link to="/company/ir"> IR </nuxt-link>
       </li>
     </ul>
