@@ -4,7 +4,6 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-
 const _ca203302 = () => interopDefault(import('../pages/company/about.vue' /* webpackChunkName: "pages/company/about" */))
 const _5432511e = () => interopDefault(import('../pages/company/aboutSub.vue' /* webpackChunkName: "pages/company/aboutSub" */))
 const _732d62a7 = () => interopDefault(import('../pages/company/ir.vue' /* webpackChunkName: "pages/company/ir" */))
@@ -42,7 +41,6 @@ const _3001b45c = () => interopDefault(import('../pages/value/public_education.v
 const _54d389f3 = () => interopDefault(import('../pages/company/subCompany/Brand.vue' /* webpackChunkName: "pages/company/subCompany/Brand" */))
 const _4e2f2456 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
-
 const emptyFn = () => {}
 
 Vue.use(Router)
@@ -56,7 +54,6 @@ export const routerOptions = {
 
   routes: [{
     path: "/company/about",
-
     component: _ca203302,
     name: "company-about"
   }, {
@@ -198,7 +195,6 @@ export const routerOptions = {
   }, {
     path: "/",
     component: _4e2f2456,
-
     name: "index"
   }],
 
