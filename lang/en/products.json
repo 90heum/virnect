@@ -6,6 +6,14 @@
 			"cpu": "CPU Usage",
 			"memory": "Memory Usage"
 		},
+		"moduleTop":{
+			"title" : "AR and DT products for solving industrial problems",
+			"contents": "VIRNECT's products support productive communications and efficient working styles in industrial worksites. We provide the right solutions with the right products for each of our clients by combining our original AR technology with various IT technologies.",
+			"text1": "Productivity",
+			"text2": "Competencies",
+			"text3": "Lead time",
+			"text4": "Cost"
+		},
 		"remoteBanner": {
 			"title": "XR Remote Collaboration",
 			"contents": "VIRNECT Remote enables seamless collaboration overcoming time and space constraints."
@@ -18,6 +26,11 @@
 		"remoteSubTitle": {
 			"title": "XR Remote Collaboration",
 			"contents": "VIRNECT Remote enables seamless collaboration overcoming time and space constraints."
+		},
+		"remoteinfo": {
+			"text1": "Know more",
+			"text2": "Free Trials",
+			"text3": "Download Remote_Leaflet"
 		},
 		"remoteSubText": {
 			"TimeCost": "Slash costs, along with idle and travel times.",

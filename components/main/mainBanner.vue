@@ -11,14 +11,14 @@
         </p>
         <span class="bannerButton">
           <button>
-            <nuxt-link to="/products/productsMain">자세히 보기</nuxt-link>
+            <nuxt-link to="/products/productsMain">{{$t(`bannerTit.text1`)}}</nuxt-link>
           </button>
           <button>
-            <nuxt-link to="/support/demo" target="_blank">데모신청</nuxt-link>
+            <nuxt-link to="/support/demo" target="_blank">{{$t(`bannerTit.text2`)}}</nuxt-link>
           </button>
         </span>
         <span class="bannerTitN4">
-          <p>준비된 기술 컨설턴트가 직접 도움을 드립니다.</p>
+          <p>{{$t(`bannerTit.text3`)}}</p>
           <span>
             <i>
               <img
@@ -27,7 +27,7 @@
               />
             </i>
             <p>
-              070.7733.2025 <a href="support/inquiry"><u>문의하기</u></a>
+              {{$t(`bannerTit.text4`)}}<a href="support/inquiry"><u>{{$t(`bannerTit.text5`)}}</u></a>
             </p>
           </span>
         </span>
