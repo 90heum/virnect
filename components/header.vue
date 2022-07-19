@@ -9,7 +9,8 @@
               return;
             }
             isMenu = false;
-            mobileMenu = { list1: false };
+            mobileMenu = { list1: false }
+            showMenu(false);
           }
         "
       >
@@ -877,11 +878,10 @@ export default {
   },
   methods: {
     redirectPage (locale) {
-      console.log(locale)
       if (locale === 'ko') return;
       const routePath = this.$route.fullPath;
       if (routePath.includes("ir") || routePath.includes("talent")) {
-        this.$router.push("/company/about")
+        this.$router.push("/company/about");
       }
     },
     handleMobileMenu(e) {
@@ -891,7 +891,6 @@ export default {
       try {
         const data = await this.$axios.get(`admin/news?page=1&size=${20}`);
         const dataJson = await data;
-        console.log(dataJson.data.data.newsBoardResponseList);
         this.contentList = dataJson.data.data.newsBoardResponseList;
       } catch (e) {
         console.error(e);
