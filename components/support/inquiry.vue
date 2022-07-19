@@ -65,7 +65,7 @@
                   class="iframeForm"
                   v-if="isTab === 1"
                   id="iframe1"
-                  src="https://pardot.virnect.com/l/929783/2022-06-16/3nplr"
+                  :src="$i18n.localeProperties.code === 'ko' ? 'https://pardot.virnect.com/l/929783/2022-06-16/3nplr' : 'https://pardot.virnect.com/l/929783/2022-07-15/485t2'"
                   frameborder="0"
                   marginwidth="0"
                   marginheight="0"
@@ -83,7 +83,7 @@
                   class="iframeForm"
                   v-if="isTab === 2"
                   id="iframe2"
-                  src="https://pardot.virnect.com/l/929783/2022-06-15/3l686"
+                  :src="$i18n.localeProperties.code === 'ko' ? 'https://pardot.virnect.com/l/929783/2022-06-15/3l686' : 'https://pardot.virnect.com/l/929783/2022-07-15/485t5'"
                   style="
                     padding-bottom: 49px;
                     position: absolute;
@@ -98,7 +98,7 @@
                   class="iframeForm"
                   v-if="isTab === 3"
                   id="iframe3"
-                  src="https://pardot.virnect.com/l/929783/2022-06-14/3kzcp"
+                  :src="$i18n.localeProperties.code === 'ko' ? 'https://pardot.virnect.com/l/929783/2022-06-14/3kzcp' : 'https://pardot.virnect.com/l/929783/2022-07-15/485t8'"
                   style="
                     padding-bottom: 49px;
                     position: absolute;
