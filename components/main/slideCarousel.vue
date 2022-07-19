@@ -22,8 +22,9 @@
                     <p class="CompanyBottomBannerSlideTitle">
                     {{ data.title }}
                     </p>
-                    <p class="CompanyBottomBannerSlideContent">
-                    {{ data.content }}
+                    <p class="CompanyBottomBannerSlideContent"
+                       v-html="$t(data.content)"
+                    >
                     </p>
                 </span>
                     </div>
@@ -71,6 +72,26 @@ export default {
                 alt: "Low-carbon future",
                 title: "Low-carbon future",
                 content: "원격 협업 및 가상 경험을 통한 출장 및 장비 비용 절감",
+                },
+            ],
+            bottomBannerData: [
+                {
+                src: "https://velog.velcdn.com/images/kyj0206/post/295148e7-24fd-4611-af87-d2f0f95f576a/image.jpg",
+                alt: "Smart future",
+                title: "Smart future",
+                content: "-Efficient working<br>-Effective education",
+                },
+                {
+                src: "https://velog.velcdn.com/images/kyj0206/post/ed9983b2-ceeb-4258-b543-0a29f40fda60/image.jpg",
+                alt: "Safe future",
+                title: "Safe future",
+                content: "-Environmental cost reduction of business travel and equipment with remote collaboration and virtual experiences",
+                },
+                {
+                src: "https://velog.velcdn.com/images/kyj0206/post/ca545369-1a3e-4ce7-993c-3a5830ea7bec/image.jpg",
+                alt: "Low-carbon future",
+                title: "Low-carbon future",
+                content: "-Safe workplace<br>-Safe training",
                 },
             ],
             options: {
