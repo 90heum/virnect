@@ -47,7 +47,7 @@ export const title = {
 
 }
 
-export const effectList = {
+export const effectList2 = {
     remote: [
         {
             title: "Fast",

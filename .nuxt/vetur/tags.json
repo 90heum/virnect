@@ -134,6 +134,9 @@
   "ProductsNewModuleData": {
     "description": "Auto imported from components/products/newModuleData.js"
   },
+  "ProductsNewModuleDataEn": {
+    "description": "Auto imported from components/products/newModuleData_en.js"
+  },
   "SubscriptionComForm": {
     "description": "Auto imported from components/subscription/comForm.vue"
   },

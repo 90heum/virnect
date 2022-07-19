@@ -1,0 +1,25 @@
+{
+    "effectList":{
+        "effectTit":{
+            "category": "도입효과",
+            "title": "자유로운 원격 협업으로 즉시<br>해결하는 현장 대응",
+            "contents":"강력한 원격 커뮤니케이션을 지원하는 VIRNECT Remote는 관계자간 신속한 협의와 정확한 조치를 통해 작업 편의성과 생산성을 강화합니다.<br>전문 인력의 잦은 출장을 줄이고 문제 조치까지의 다운 타임을 감소시켜 전체 운영을 효율화 합니다."
+        },
+        "Speedy":{
+            "title": "Speedy",
+            "contents": "사내 제작으로 외주 대비<br>3배 이상의 제작 시간 단축"
+        },
+        "Reliable":{
+            "title": "Reliable",
+            "contents": "외주 대비 99% 이상의<br>제작 비용 및 유지보수 비용 절감"
+        },
+        "Immediately":{
+            "title": "Immediately",
+            "contents": "현장 상황이나 작업 변동 시,<br>빠른 콘텐츠 수정 및 배포"
+        },
+        "Security":{
+            "title": "Security",
+            "contents": "중요한 산업 정보의<br>외부 유출에 대한 보안 우려 감소"
+        }
+    }
+}
