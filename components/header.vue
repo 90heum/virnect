@@ -378,30 +378,31 @@
           </div>
         </span> -->
         <span class="asideInfoLink">
-          <span class="asideInfoLinkTit">
-            준비된 기술 컨설턴트가 직접 도움을 드립니다.
+          <span class="asideInfoLinkTit"
+                v-html="$t(`productsText.asideInfo.title`)"
+          >
           </span>
           <span class="asideInfoLinkCont">
-            <p>대표전화 : 070-7733-2025</p>
+            <p v-html="$t(`productsText.asideInfo.contents1`)"></p>
             <p>
-              구매 및 제휴 문의 :
+              {{$t(`productsText.asideInfo.contents2`)}}
               <a href="mailto:contact@virnect.com" target="blank">
-                <u>contact@virnect.com</u>
+                <u v-html="$t(`productsText.asideInfo.contents3`)"></u>
               </a>
             </p>
             <p>
-              제품 사용 및 기술 지원 :
+              {{$t(`productsText.asideInfo.contents4`)}}
               <a href="mailto:support@virnect.com" target="blank">
-                <u>support@virnect.com</u>
+                <u>{{$t(`productsText.asideInfo.contents5`)}}</u>
               </a>
             </p>
           </span>
           <div class="BtnWrap">
             <button>
-              <nuxt-link to="/support/demo"> 지금 사용해보기 </nuxt-link>
+              <nuxt-link to="/support/demo">{{$t(`productsText.asideInfo.category1`)}}</nuxt-link>
             </button>
             <button>
-              <nuxt-link to="/support/inquiry"> 문의하기 </nuxt-link>
+              <nuxt-link to="/support/inquiry">{{$t(`productsText.asideInfo.category2`)}}</nuxt-link>
             </button>
           </div>
         </span>

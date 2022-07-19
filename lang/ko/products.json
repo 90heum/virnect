@@ -136,6 +136,16 @@
 		"productText": {
 			"title": "AR 및 디지털 트윈 기술을 바탕으로 미래 산업을 만들어 갑니다."
 		},
+		"asideInfo": {
+			"title": "준비된 기술 컨설턴트가  직접 도움을 드립니다.",
+			"contents1": "대표전화 : 070-7733-2025",
+			"contents2": "구매 및 제휴 문의 :",
+			"contents3": "contact@virnect.com",
+			"contents4": "제품 사용 및 기술 지원 :", 
+			"contents5": "support@virnect.com", 
+			"category1": "지금 사용해보기",
+			"category2": "문의하기"
+		},
 		"supportTitle": {
 			"category": "사용 및 지원",
 			"title": "최적의 사용을<br class='mobile-hidden'> 지원합니다",

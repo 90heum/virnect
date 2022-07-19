@@ -136,6 +136,16 @@
 		"productText": {
 			"title": "VIRNECT enables seamless collaboration overcoming time and space constraints."
 		},
+		"asideInfo": {
+			"title": "We always welcome inquiries on AR and DT.",
+			"contents1": "Tel : 070-7733-2025",
+			"contents2": "CS/Purchase :",
+			"contents3": "contact@virnect.com",
+			"contents4": "Email :", 
+			"contents5": "support@virnect.com", 
+			"category1": "Free Trials",
+			"category2": "Inquiry"
+		},
 		"supportTitle": {
 			"category": "Use and support",
 			"title": "We provide support for optimal use.",
