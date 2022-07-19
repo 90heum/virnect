@@ -1,12 +1,32 @@
 <template>
   <section class="moduleGuide2RemoteBack">
     <div class="modileWrap">
-      <div class="guide2Tit" v-html="title.remote"></div>
+      <div class="guide2Tit">
+        <p>{{$t(`effectList.effectTit.category`)}}</p>
+        <h2 v-html="$t(`effectList.effectTit.title`)"></h2>
+        <span v-html="$t(`effectList.effectTit.contents`)"></span>
+      </div>
       <div class="guide2Menu">
         <ul>
-          <li v-for="(data, idx) of effectList" :key="idx">
-            <p>{{ data.title }}</p>
-            <span v-html="data.content"></span>
+          <li>
+            <p>{{$t(`effectList.Speedy.title`)}}</p>
+            <span v-html="$t(`effectList.Speedy.contents`)">
+            </span>
+          </li>
+          <li>
+            <p>{{$t(`effectList.Reliable.title`)}}</p>
+            <span v-html="$t(`effectList.Reliable.contents`)">
+            </span>
+          </li>
+          <li>
+            <p>{{$t(`effectList.Immediately.title`)}}</p>
+            <span v-html="$t(`effectList.Immediately.contents`)">
+            </span>
+          </li>
+          <li>
+            <p>{{$t(`effectList.Security.title`)}}</p>
+            <span v-html="$t(`effectList.Security.contents`)">
+            </span>
           </li>
         </ul>
       </div>
