@@ -110,7 +110,7 @@
         </span>
         <span class="usecaseCont">
           <ul class="usecaseList">
-            <li class="active">
+            <li>
               <div class="listWrap">
                 <span>
                   <p @click="showMenu(1)">
