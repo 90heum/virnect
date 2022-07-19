@@ -4,6 +4,11 @@
 			"text1": "VIRNECT 뉴스",
 			"text2": "뉴스 전체보기"
 		},
+		"companySlide":[
+			{"title": "효율적인 업무와 효과적인 학습환경"},
+			{"title": "안전한 작업환경과 현장실습"},
+			{"title": "원격 협업 및 가상 경험을 통한 출장 및 장비 비용 절감"}
+		],
 		"companyAwards":{
 			"title": "인증 및 수상"
 		},

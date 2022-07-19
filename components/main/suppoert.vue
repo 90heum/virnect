@@ -8,7 +8,7 @@
         <div>
           <p v-html="$t('newMainText.supportText.contents')"></p>
           <span @click="() => $router.push('/support/supportSubMain')">
-            <p>바로가기</p>
+            <p v-html="$t(`supportText.headBannerText.text`)"></p>
             <p>
               <img
                 src="https://velog.velcdn.com/images/kyj0206/post/d405b250-9807-41de-91f7-677076876929/image.png"
