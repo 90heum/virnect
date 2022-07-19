@@ -35,7 +35,7 @@ export default {
       mode: "client",
       ssr: false
     },
-    { src: "./plugins/slickCarousel.js", ssr: false, mode: "client"},
+    { src: "./plugins/slickCarousel.js", ssr: false, mode: "client" },
     { src: './plugins/vue-awesome-swiper.js', ssr: false, mode: "client" },
   ],
 
@@ -45,7 +45,7 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
   ],
-  modules: [    
+  modules: [
     ['nuxt-gsap-module'],
     ['nuxt-agile'],
     ['@nuxtjs/dayjs'],
@@ -81,6 +81,7 @@ export default {
     ],
 
   ],
+  // baseURL
   publicRuntimeConfig: {
     axios: {
       baseURL: 'http://13.209.200.75:8080',

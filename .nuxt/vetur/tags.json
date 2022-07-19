@@ -17,9 +17,6 @@
   "DummyAwardEn": {
     "description": "Auto imported from components/dummy/awardEn.js"
   },
-  "MixinsMixin": {
-    "description": "Auto imported from components/mixins/mixin.js"
-  },
   "MainBannerModule": {
     "description": "Auto imported from components/main/bannerModule.vue"
   },
@@ -50,8 +47,8 @@
   "MainUseCase": {
     "description": "Auto imported from components/main/useCase.vue"
   },
-  "NewsCommonBaner": {
-    "description": "Auto imported from components/news/CommonBaner.vue"
+  "MixinsMixin": {
+    "description": "Auto imported from components/mixins/mixin.js"
   },
   "ModulesBanner": {
     "description": "Auto imported from components/modules/Banner.vue"
@@ -110,6 +107,9 @@
   "ModulesYoutubeFullscreen": {
     "description": "Auto imported from components/modules/YoutubeFullscreen.vue"
   },
+  "NewsCommonBaner": {
+    "description": "Auto imported from components/news/CommonBaner.vue"
+  },
   "Paging": {
     "description": "Auto imported from components/paging/paging.vue"
   },
@@ -155,9 +155,6 @@
   "SubscriptionProModal": {
     "description": "Auto imported from components/subscription/proModal.vue"
   },
-  "GnbCompany": {
-    "description": "Auto imported from components/Gnb/Company/index.vue"
-  },
   "SupportSubMenu": {
     "description": "Auto imported from components/support/SubMenu.vue"
   },
@@ -184,6 +181,9 @@
   },
   "SupportNotice": {
     "description": "Auto imported from components/support/notice.vue"
+  },
+  "GnbCompany": {
+    "description": "Auto imported from components/Gnb/Company/index.vue"
   },
   "GnbContact": {
     "description": "Auto imported from components/Gnb/Contact/index.vue"

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="$i18n.localeProperties.code === 'ko'">
     <span>
         <h2>버넥트 본사</h2>
         <p>서울시 용산구 한강대로 7길 10-15 (우편번호 : 04379)</p>

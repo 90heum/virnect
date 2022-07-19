@@ -10,7 +10,7 @@
             <span>
               <p v-html="$t('newMainText.companyText.contents')"></p>
             </span>
-            <div>
+            <div v-if="$i18n.localeProperties.code === 'ko'">
               <span>IR</span>
               <span>
                 <p>
