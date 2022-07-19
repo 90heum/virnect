@@ -205,32 +205,32 @@
 				{
 					"title": "QR 코드 검출/추적",
 					"contents": "QR 코드를 인식하여 등록된 XR 콘텐츠를 불러오고, 카메라 자세를 측정하여 AR 콘텐츠를 자연스럽게 증강할 수 있습니다.",
-					"img": "~/assets/images/pages/epc/img-products-remote-function-01@2x.png"
+					"img": "https://velog.velcdn.com/images/heezin/post/2c9e0a55-d022-47f3-a49c-c543d497443c/image.png"
 				},
 				{
 					"title": "이미지(2D) 검출/추적",
 					"contents": "그림, 사진 등의 2D 이미지를 타겟으로 인식하고, <br class='mobile-hidden'>카메라 자세를 측정하여 자연스럽게 객체를 증강할 수 있습니다.",
-					"img": "https://virnect.com/images/pages/products/img-products-remote-function-02@2x.png"
+					"img": "https://velog.velcdn.com/images/heezin/post/a7c6240c-9e62-402b-8eb1-b3b6769298a7/image.png"
 				},
 				{
 					"title": "사물(3D) 검출/추적",
 					"contents": "사물, 건물, 공간 등의 3D 모델을 타겟으로 인식하고, 카메라 자세를 측정하여 자연스럽게 객체를 증강할 수 있습니다.",
-					"img": "https://virnect.com/images/pages/products/img-products-remote-function-03@2x.png"
+					"img": "https://velog.velcdn.com/images/heezin/post/45362a14-71ef-46ae-8db0-f05e87e7bb31/image.png"
 				},
 				{
 					"title": "인스턴트 타겟 검출/추적",
 					"contents": "지정된 타겟 없이 주변 환경을 실시간으로 인식 및 <br class='mobile-hidden'>추적하여 원하는 위치에 객체를 배치할 수 있습니다.",
-					"img": "https://virnect.com/images/pages/products/img-products-remote-function-04@2x.png"
+					"img": "https://velog.velcdn.com/images/heezin/post/5bf8cea8-57f0-4517-8023-f02cd6c3c0c2/image.png"
 				},
 				{
 					"title": "다중 타겟 검출/추적",
 					"contents": "다수의 이미지, 3D, 공간 등을 복합적으로 인식하여 객체를 증강할 수 있습니다.",
-					"img": "https://virnect.com/images/pages/products/img-products-remote-function-05@2x.png"
+					"img": "https://velog.velcdn.com/images/heezin/post/1383e52b-f7d1-40ca-82ca-de9dc06f3930/image.png"
 				},
 				{
 					"title": "비주얼 슬램(SLAM)",
 					"contents": "카메라 영상의 특징점을 도출하고 현실 공간에 대한 가상의 지도를 구성하여 더욱 안정적으로 객체를 <br class='mobile-hidden'>증강할 수 있습니다.",
-					"img": "https://virnect.com/images/pages/products/img-products-remote-function-06@2x.png"
+					"img": "https://velog.velcdn.com/images/heezin/post/3b75dd9c-d752-4996-8286-5a2b5461ef66/image.png"
 				}
 			],
 			"effectHeading": {
@@ -334,32 +334,32 @@
 				{
 					"title": "다양한 기기 지원",
 					"contents": "MS HoloLens2를 사용한 XR 증강부터스마트폰, 태블릿 PC를 통한 XR 증강까지현장에 최적화된 디바이스로 작업을 진행할 수 있습니다.",
-					"img": "https://virnect.com/images/pages/products/img-products-remote-function-03@2x.png"
+					"img": "https://velog.velcdn.com/images/heezin/post/cd743e07-996c-458d-b301-3f20f83a7883/image.png"
 				},
 				{
 					"title": "작업 조회 및 수행",
 					"contents": "작업자에게 할당된 업무 목록을 현장에서 즉시 조회하고 XR 가이드를 따라 작업을 수행할 수 있습니다. 진행사항과 작업 결과에 대한 피드백도 확인할 수 있습니다.",
-					"img": "https://virnect.com/images/pages/products/img-products-remote-function-02@2x.png"
+					"img": "https://velog.velcdn.com/images/heezin/post/b7208e36-e4c0-44aa-9184-295464f64e28/image.png"
 				},
 				{
 					"title": "현장 맞춤형 콘텐츠 시각화",
 					"contents": "사용자가 작업 환경에 맞게 직접 콘텐츠를 편집하며 작업을 진행할 수 있습니다. 인터넷 연결없이 콘텐츠 확인이 가능합니다.",
-					"img": "https://virnect.com/images/pages/products/img-products-remote-function-03@2x.png"
+					"img": "https://velog.velcdn.com/images/heezin/post/5750fbde-2daa-4b73-b13a-d92aa2b1f107/image.png"
 				},
 				{
 					"title": "작업 기록 및 보고",
 					"contents": "현장에서 작업 내용을 바로 시스템에 보고할 수 있습니다. 사진 첨부 및 점검 작업자 소견 작성으로 생생한 현장의 정보를 보고할 수 있습니다.",
-					"img": "https://virnect.com/images/pages/products/img-products-remote-function-04@2x.png"
+					"img": "https://velog.velcdn.com/images/heezin/post/e5ebddea-811d-42d6-aa6c-f2ddbc460989/image.png"
 				},
 				{
 					"title": "관리/IoT 정보 XR 시각화",
 					"contents": "공정 정보, 설비 데이터를 실제 설비에 XR로 증강하여실시간 공정현황을 파악하고 설비를 효율적으로 운영할 수 있습니다.(구축형에 한해 제공)",
-					"img": "https://virnect.com/images/pages/products/img-products-remote-function-05@2x.png"
+					"img": "https://velog.velcdn.com/images/heezin/post/a3af2d82-5609-4cf9-bc1c-0291f3b5b3ef/image.png"
 				},
 				{
 					"title": "긴급 알림 시각화",
 					"contents": "작업자가 위험한 상황에 처한 경우 사고 발생 위치를다른 사용자들에게 알려주어 신속하게 조치할 수 있습니다.(구축형에 한해 제공)",
-					"img": "https://virnect.com/images/pages/products/img-products-remote-function-06@2x.png"
+					"img": "https://velog.velcdn.com/images/heezin/post/af637f9b-06de-402e-85d0-fd88adea894d/image.png"
 				}
 			],
 			"effectHeading": {
@@ -511,32 +511,32 @@
 				{
 					"title": "다양한 타겟을 활용한 AR 콘텐츠 제작",
 					"contents": "QR코드/이미지/인스턴트 타겟 등 원하는 타겟을 <br class='mobile-hidden'>선택해 콘텐츠를 제작합니다. 인스턴트 타겟을 활용해 XR 콘텐츠를 제작 할 수 있습니다.",
-					"img": "https://virnect.com/images/pages/products/img-products-remote-function-01@2x.png"
+					"img": "https://velog.velcdn.com/images/heezin/post/8337a071-fc61-454d-b2f8-34cf757c2099/image.png"
 				},
 				{
 					"title": "디바이스 별 최적화 기능 지원",
 					"contents": "콘텐츠를 이용할 디바이스를 선택하면 해당 디바이스에 최적화된 기능이 제공됩니다. 디바이스의 장점을 극대화하는 XR 콘텐츠 제작이 가능합니다.",
-					"img": "https://virnect.com/images/pages/products/img-products-remote-function-02@2x.png"
+					"img": "https://velog.velcdn.com/images/heezin/post/d144c033-a379-42d5-91ab-ce345203e35e/image.png"
 				},
 				{
 					"title": "실시간 데이터 연동 그래프/테이블",
 					"contents": "OPC UA, SQL쿼리, TCP/IP 등 실시간 데이터를 활용한 그래프 또는 테이블을 XR 콘텐츠로 생성합니다. 복잡한 데이터를 쉽고 효과적으로 전달합니다.",
-					"img": "https://virnect.com/images/pages/products/img-products-remote-function-03@2x.png"
+					"img": "https://velog.velcdn.com/images/heezin/post/8822b6d6-20c8-47ca-8b97-7a67e706e2e8/image.png"
 				},
 				{
 					"title": "업무 보고 리스트 제작",
 					"contents": "설비 점검 및 정비 등의 작업 내용을 XR 전자 문서로 제작하고 담당자를 할당합니 다. 할당된 담당자의 업무를 실시간으로 보고 받을 수 있습니다.",
-					"img": "https://virnect.com/images/pages/products/img-products-remote-function-04@2x.png"
+					"img": "https://velog.velcdn.com/images/heezin/post/b0895d07-16b0-4cab-99d2-dcfd6d526870/image.png"
 				},
 				{
 					"title": "인터랙션 설정",
 					"contents": "버튼, 에셋 등에 사용자 인터랙션과 인터랙션 반응을 직접 설정합니다. XR 콘텐츠를 확장하여 하나의 앱처럼 배포할 수 있습니다.",
-					"img": "https://virnect.com/images/pages/products/img-products-remote-function-05@2x.png"
+					"img": "https://velog.velcdn.com/images/heezin/post/c5466450-080d-4ec1-ab7c-1931ae84f43d/image.png"
 				},
 				{
 					"title": "애니메이션 추가",
 					"contents": "다양한 객체에 애니메이션을 추가하여 객체가 움직이는 방향이나 속도 등을 표현합 니다. 움직이는 콘텐츠는 현장 작업자의 몰입감을 높이고, 직관적인 이해를 돕습니다.",
-					"img": "https://virnect.com/images/pages/products/img-products-remote-function-06@2x.png"
+					"img": "https://velog.velcdn.com/images/heezin/post/7defde1f-738f-4182-ae08-bed250a49da1/image.png"
 				}
 			],
 			"effectHeading": {
@@ -850,32 +850,32 @@
 				{
 					"title": "3D 가상 환경 생성/구축",
 					"contents": "3D 가상 모델을 배치하고 수집된 센서 데이터를 연동하여 산업현장과 동일한 3D 가상 환경을 구성합니다.",
-					"img": "https://virnect.com/images/pages/products/img-products-remote-function-01@2x.png"
+					"img": "https://velog.velcdn.com/images/heezin/post/5d88555b-75da-4705-a4cc-55b016fef910/image.png"
 				},
 				{
 					"title": "IoT/설비 정보 관리",
 					"contents": "기존에 관리하던 설비 운전 정보 및 열화상카메라(FLIR), IoT센서(가스,진동,미세먼지,온도,습도 등) 데이터를 실시간으로 시각화하여 보여줍니다.",
-					"img": "https://virnect.com/images/pages/products/img-products-remote-function-02@2x.png"
+					"img": "https://velog.velcdn.com/images/heezin/post/9301f1a3-293c-478a-8c42-71e08e585a62/image.png"
 				},
 				{
 					"title": "설비/작업자 위치 관리",
 					"contents": "AI기반의 지능형 감시시스템과 실내 위치 계측 기술을 기반으로 작업자와 장비의 위치를 실시간으로 감지하여 보여줍니다.",
-					"img": "https://virnect.com/images/pages/products/img-products-remote-function-03@2x.png"
+					"img": "https://velog.velcdn.com/images/heezin/post/521aa4ee-af00-4535-9c6a-9de13fb81e92/image.png"
 				},
 				{
 					"title": "현장 영상 모니터링/관리",
 					"contents": "관제실에서 현장을 전방위로 확인할 수 있는 360PTZ 감시카메라를 제어하면서, 실제 현장과 가상 모델의 데이터를 동시에 모니터링 할 수 있습니다.",
-					"img": "https://virnect.com/images/pages/products/img-products-remote-function-04@2x.png"
+					"img": "https://velog.velcdn.com/images/heezin/post/41705446-d301-4581-96a7-fd8fe4856f02/image.png"
 				},
 				{
 					"title": "현장 작업 이력 관리",
 					"contents": "관제실에서 현장 작업자의 정비/운전 작업 상황 및 작업 이력을 실시간으로 열람할 수 있습니다. <br>* VIRNECT View 연동 기능",
-					"img": "https://virnect.com/images/pages/products/img-products-remote-function-05@2x.png"
+					"img": "https://velog.velcdn.com/images/heezin/post/b59b46fb-1ef4-4f3b-873d-1821623b7183/image.png"
 				},
 				{
 					"title": "예측, 진단 정보 분석",
 					"contents": "각종 설비 데이터 및 환경 정보, 작업 이력 등을 바탕으로 장애 패턴 분석, 제품 수명 주기 예측 (PLM), 예방정비 등 다양한 인사이트를 제공합니다.",
-					"img": "https://virnect.com/images/pages/products/img-products-remote-function-06@2x.png"
+					"img": "https://velog.velcdn.com/images/heezin/post/e4826753-d9ef-4e1e-b46f-251946f620e1/image.png"
 				}
 			],
 			"supportList": [

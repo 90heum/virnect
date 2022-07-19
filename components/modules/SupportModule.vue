@@ -8,7 +8,7 @@
         <div>
           <p v-html="$t(`newMainText.supportText.contents`)"></p>
           <span @click="() => $router.push('/support/supportSubMain')">
-            <p>바로가기</p>
+            <p v-html="$t(`supportText.headBannerText.text`)"></p>
             <p>
               <img
                 src="~/assets/images/pages/epc/arrow-heum.png"
