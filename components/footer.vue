@@ -22,20 +22,20 @@
               <nuxt-link to="/value/infra_resource">Value</nuxt-link>
               <ul>
                 <li>
-                  <nuxt-link to="/value/infra_resource">인프라/자원</nuxt-link>
+                  <nuxt-link to="/value/infra_resource">{{$t(`footer.value.title1`)}}</nuxt-link>
                 </li>
                 <li>
                   <nuxt-link to="/value/manufacture_construction"
-                    >제조/건설</nuxt-link
+                    >{{$t(`footer.value.title2`)}}</nuxt-link
                   >
                 </li>
                 <li>
-                  <nuxt-link to="/value/public_education">공공/교육</nuxt-link>
+                  <nuxt-link to="/value/public_education">{{$t(`footer.value.title3`)}}</nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link to="/value/entertainment">엔터테인먼트</nuxt-link>
+                  <nuxt-link to="/value/entertainment">{{$t(`footer.value.title4`)}}</nuxt-link>
                 </li>
-                <li><nuxt-link to="/value/etc">기타</nuxt-link></li>
+                <li><nuxt-link to="/value/etc">{{$t(`footer.value.title5`)}}</nuxt-link></li>
               </ul>
             </li>
             <li>
@@ -185,17 +185,17 @@
               />
             </span>
             <span class="infoList">
-              <p>대표전화 : <a>070-7733-2025</a></p>
+              <p>{{$t(`footer.infolink.contents1`)}}<a>{{$t(`footer.infolink.contents2`)}}</a></p>
               <p>
-                구매 및 제휴 문의 :
+                {{$t(`footer.infolink.contents3`)}}
                 <a href="mailto:contact@virnect.com" target="blank"
-                  ><u>contact@virnect.com</u></a
-                >
+                  ><u>{{$t(`footer.infolink.contents4`)}}</u>
+                </a>
               </p>
               <p>
-                제품 사용 및 기술 지원 :
+                {{$t(`footer.infolink.contents5`)}}
                 <a href="mailto:support@virnect.com" target="blank"
-                  ><u>support@virnect.com</u></a
+                  ><u>{{$t(`footer.infolink.contents6`)}}</u></a
                 >
               </p>
             </span>
@@ -234,7 +234,7 @@
                           href="https://console.virnect.com/?continue=https%3A%2F%2Fvirnect.com%2F"
                           target="blank"
                         >
-                          <p>서비스 로그인</p>
+                          <p v-html="$t(`service.text1`)"></p>
 
                           <i>
                             <img
@@ -255,7 +255,7 @@
                           href="https://download.virnect.com/remote"
                           target="blank"
                         >
-                          <p>다운로드 센터 2.0</p>
+                          <p v-html="$t(`service.text2`)"></p>
 
                           <i>
                             <img
@@ -317,7 +317,7 @@
                   </div>
                 </div>
                 <button>
-                  <a href="/support/inquiry" target="_blank"> 문의하기 </a>
+                  <a href="/support/inquiry" target="_blank">{{$t(`footer.infolink.contents7`)}}</a>
                 </button>
               </span>
               <com-modal :comModal="comModal" :comPopup="comPopup" />
@@ -334,7 +334,7 @@
                         src="https://velog.velcdn.com/images/kyj0206/post/034f327b-6153-4e14-8058-17d2899545b7/image.png"
                         alt="다운로드호버"
                     /></i>
-                    <u>회사소개서 (PDF)</u>
+                    <u>{{$t(`footer.infolink.contents8`)}}</u>
                   </a>
                 </span>
                 <span @click="modal()">
@@ -349,7 +349,7 @@
                         src="https://velog.velcdn.com/images/kyj0206/post/034f327b-6153-4e14-8058-17d2899545b7/image.png"
                         alt="다운로드호버"
                     /></i>
-                    <u>제품소개서 (PDF)</u>
+                    <u>{{$t(`footer.infolink.contents9`)}}</u>
                   </a>
                 </span>
                 <pro-modal :modal="modal" :popup="popup"/>
@@ -358,11 +358,11 @@
           </span>
           <span class="infoRight">
             <span>
-              <p>VIRNECT가 전하는 최신 Digital Insight를 만나보세요</p>
+              <p>{{$t(`footer.infolink.contents10`)}}</p>
             </span>
             <span>
               <!-- <input type="text" placeholder="email을 입력하세요" /> -->
-              <button @click="handleModal()"><a>지금 구독하세요</a></button>
+              <button @click="handleModal()"><a>{{$t(`footer.infolink.contents11`)}}</a></button>
             </span>
           </span>
         </span>
@@ -371,12 +371,12 @@
         <div class="footerBottomInner">
           <div class="bottomInnerLeft">
             <span>
-              <u><nuxt-link to="/terms/service">서비스 이용약관</nuxt-link></u>
+              <u><nuxt-link to="/terms/service">{{$t(`footer.service.title1`)}}</nuxt-link></u>
               <u
-                ><nuxt-link to="/terms/persnal">개인정보 처리방침</nuxt-link></u
+                ><nuxt-link to="/terms/persnal">{{$t(`footer.service.title2`)}}</nuxt-link></u
               >
               <u
-                ><nuxt-link to="/terms/charged">유료상품 이용약관</nuxt-link></u
+                ><nuxt-link to="/terms/charged">{{$t(`footer.service.title3`)}}</nuxt-link></u
               >
             </span>
             <span>

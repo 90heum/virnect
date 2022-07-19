@@ -40,6 +40,9 @@
             }
         ]
     },
+    "asideCompany": {
+        "title": "AR/DT innovation in worksites.<br>Make it happen now."
+    },
     "aboutVirnectTitle": {
         "title": "버넥트는 국내 최고의 산업용 XR 솔루션 전문 기업입니다.<영문 없음>",
         "content": "VIRNECT is a leading industrial XR solution company. We connect critical data from industrial sites through virtual reality. We enable our customers to access the information they need from anywhere through XR services. We create value by linking people/robots, time/space, information/knowledge/wisdom, and we are striving to grow into the global No.1 XR platform company for a world where XR technology is used in all aspects of life."
