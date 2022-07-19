@@ -1,26 +1,37 @@
 <template>
   <div id="menu_re" class="SubMenuUse">
-    <span class="SubMenuMobileTitle"
-          @click="handleToggle()">
+    <span class="SubMenuMobileTitle" @click="handleToggle()">
       <span>엔터테인먼트</span>
-      <i><img src="require(~/assets/images/pages/down.png)"/></i>
+      <i><img src="require(~/assets/images/pages/down.png)" /></i>
     </span>
-    <ul :class="`SubMenuNav ${toggle ? 'mobileActive' : ''}`"
-        @click="handleToggle()">
+    <ul
+      :class="`SubMenuNav ${toggle ? 'mobileActive' : ''}`"
+      @click="handleToggle()"
+    >
       <li class="subMenu">
-        <nuxt-link to="/value/infra_resource"> 인프라/자원 </nuxt-link>
+        <nuxt-link to="/value/infra_resource">
+          {{ $t("valueCommon.subTabText.text1") }}</nuxt-link
+        >
       </li>
       <li class="subMenu">
-        <nuxt-link to="/value/manufacture_construction"> 제조/건설 </nuxt-link>
+        <nuxt-link to="/value/manufacture_construction">
+          {{ $t("valueCommon.subTabText.text2") }}</nuxt-link
+        >
       </li>
       <li class="subMenu">
-        <nuxt-link to="/value/public_education"> 공공/교육 </nuxt-link>
+        <nuxt-link to="/value/public_education">
+          {{ $t("valueCommon.subTabText.text3") }}</nuxt-link
+        >
       </li>
       <li class="SubUseNavActive subMenu">
-        <nuxt-link to="/value/entertainment"> 엔터테인먼트 </nuxt-link>
+        <nuxt-link to="/value/entertainment">
+          {{ $t("valueCommon.subTabText.text4") }}
+        </nuxt-link>
       </li>
       <li class="subMenu">
-        <nuxt-link to="/value/etc"> 기타 </nuxt-link>
+        <nuxt-link to="/value/etc">
+          {{ $t("valueCommon.subTabText.text5") }}
+        </nuxt-link>
       </li>
     </ul>
   </div>
@@ -32,11 +43,11 @@ export default {
     return {
       toggle: false,
       // isWeb: true
-    }
+    };
   },
   // mounted() {
   //   window.addEventListener('resize', this.handleResize);
-	// },
+  // },
   // beforeDestroy() {
   //   window.removeEventListener('resize', this.handleResize);
   // },
@@ -79,7 +90,9 @@ export default {
 
 <style lang="scss" scoped>
 .SubMenuUse {
-  .SubMenuMobileTitle { display: none; }
+  .SubMenuMobileTitle {
+    display: none;
+  }
   background-color: #e6e8eb;
   .SubMenuNav {
     position: relative;
@@ -156,21 +169,26 @@ export default {
     padding-left: 0px;
     max-width: 425px;
   }
-  .SubMenuUse .SubMenuNav .subMenu, .SubMenuUse .SubMenuNav li.SubUseNavActive { 
-    max-width: none; 
+  .SubMenuUse .SubMenuNav .subMenu,
+  .SubMenuUse .SubMenuNav li.SubUseNavActive {
+    max-width: none;
     background-color: #0a51b7;
     padding: 0 20px;
   }
   .SubMenuUse .SubMenuNav .subMenu:hover {
     background: #092e6e;
   }
-  .SubMenuUse .SubMenuNav .subMenu a:hover { color: #fff; }
-  .SubMenuUse .SubMenuNav li.subMenu>a {
+  .SubMenuUse .SubMenuNav .subMenu a:hover {
+    color: #fff;
+  }
+  .SubMenuUse .SubMenuNav li.subMenu > a {
     color: #fff;
     font-size: 16px;
     text-align: start;
   }
-  .SubMenuUse .SubMenuNav li.subMenu a::after { content: none; }
+  .SubMenuUse .SubMenuNav li.subMenu a::after {
+    content: none;
+  }
   .SubMenuUse .mobileActive {
     display: block;
   }
