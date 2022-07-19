@@ -36,6 +36,15 @@ html {
   line-height: 1.8;
 }
 
+ul,ol{
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  display: block;
+}
+
 *,
 *:before,
 *:after {
