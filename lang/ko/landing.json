@@ -16,23 +16,23 @@
       },
       "solutionBenefitLists": [
         {
-          "title": "에너지/자원​",
+          "title": "인프라/자원​",
           "contents": "에너지/자원 산업의 광대한 설비에 대해 모니터링과 예방 정비를 <br class='mobile-hidden'>효율화하고, 작업 프로세스를 개선하여 발전 효율과 작업생산성을 향상시킵니다."
         },
         {
-          "title": "정유/석유화학/배터리​",
+          "title": "제조/건설",
           "contents": "유기적으로 연결된 각 공정 설비 간의 연관 관계 및 물성 정보 등을 시각화하여 최적의 프로세스 운영과 관리를 가능하게 합니다."
         },
         {
-          "title": "자동차/부품",
+          "title": "공공/교육",
           "contents": "시각적인 가이드와 원격 협업을 통해 다양해진 주문 옵션에 <br class='mobile-hidden'>대응하고 현장의 표준 준수 시스템을 강화하여 높은 품질을 달성<br class='mobile-hidden'>할 수 있게 합니다."
         },
         {
-          "title": "항공/철도",
+          "title": "엔터테인먼트",
           "contents": "운송 산업의 인프라 계획, 건설, 자산 유지 보수까지 <br class='mobile-hidden'> 각 프로세스를 시각화 및 예측하여 시간과 비용을 절감하고 <br class='mobile-hidden'>운영을 간소화합니다."
         },
         {
-          "title": "EPC",
+          "title": "기타",
           "contents": "건물 설계 및 건설을 위한 건축 도면이나 완공 예상 모습을 <br class='mobile-hidden'>현장에서 시각화하여 건설 공사 현장의 시공 점검 및 안전 관리를 효율화합니다."
         }
       ]

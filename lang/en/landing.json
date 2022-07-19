@@ -12,27 +12,27 @@
     "solutionText": {
       "solutionTitle": {
 				"title": "Clear-cut solutions by experts",
-				"contents": "VIRNECT has completed over 110 projects, including proof of concept to commercialization. <br class='mobile-hidden'>With our expertise in various types of industries, our AR consulting can provide you with the best solutions for your problems. <br class='mobile-hidden'>We propose and implement customized solutions based on close consulting with our clients."
+				"contents": "VIRNECT has completed over 130 projects, including proof of concept to commercialization. With our expertise in various types of industries, our Extended reality(XR) consulting can provide you with the best solutions for your problems. We propose and implement customized solutions based on close consulting with our clients."
       },
       "solutionBenefitLists": [
 				{
-					"title": "Energy/Resources​",
+					"title": "infra_resource",
 					"contents": "Streamline monitoring and preventive maintenance for the vast facilities of the energy and resources industries, <br class='mobile-hidden'>and improve work processes to enhance power generation efficiency and work productivity."
 				},
 				{
-					"title": "Refinery/Petrochemical/Battery​",
+					"title": "manufacture_construction​",
 					"contents": "Enable optimal process operation and management by visualizing the connection and physical properties of process equipment connected systematically."
 				},
 				{
-					"title": "Automotive/Parts",
+					"title": "public_education",
 					"contents": "Respond to a wide variety of ordering options and enhance standard-compliant systems to achieve high-quality outcomes through visual guidance and remote collaboration."
 				},
 				{
-					"title": "Aviation/Railway",
+					"title": "entertainment",
 					"contents": "Save time and costs and simplify operations by visualizing and predicting each process in the transportation industry, from infrastructure planning and construction to asset maintenance."
 				},
 				{
-					"title": "EPC",
+					"title": "etc",
 					"contents": "Streamline construction inspection and safety management of construction sites by visualizing architectural plans and expected results."
 				}
 			]
