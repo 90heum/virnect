@@ -72,7 +72,7 @@
       </span>
     </div>
     <!-- 배너삽입 -->
-    <div class="bannerMoule">
+    <div class="bannerMoule" v-if="$i18n.localeProperties.code === 'ko'">
       <span class="banner1024">
         <a href="/news/detail?id=145&type">
           <img src="~/assets/images/common/contestHome1.png" alt="배너모듈" />
@@ -109,24 +109,24 @@ export default {
   updated() {
     if (process.client) {
       // 버튼 위치 지정 자바스크립트
-      const buttonTarget = document.querySelectorAll(
-        ".banner .agile__dot button"
-      );
+      // const buttonTarget = document.querySelectorAll(
+      //   ".banner .agile__dot button"
+      // );
 
-      const parentButtonTarget = document.querySelector(".agile__dots");
+      // const parentButtonTarget = document.querySelector(".agile__dots");
 
-      parentButtonTarget.style.position = "absolute";
-      parentButtonTarget.style.top = "-2px";
-      parentButtonTarget.style.right = "25%";
-      buttonTarget.forEach((e, idx) => {
-        e.style.width = "13px";
-        e.style.height = "13px";
-        e.style.margin = "0 5px";
-        // e.style.border = "0px";
-        e.style.borderRadius = "50%";
-        e.style.border = "none";
-        e.style.backgroundColor = "#ffffff75";
-      });
+      // parentButtonTarget.style.position = "absolute";
+      // parentButtonTarget.style.top = "-2px";
+      // parentButtonTarget.style.right = "25%";
+      // buttonTarget.forEach((e, idx) => {
+      //   e.style.width = "13px";
+      //   e.style.height = "13px";
+      //   e.style.margin = "0 5px";
+      //   // e.style.border = "0px";
+      //   e.style.borderRadius = "50%";
+      //   e.style.border = "none";
+      //   e.style.backgroundColor = "#ffffff75";
+      // });
     }
   },
   created() {
