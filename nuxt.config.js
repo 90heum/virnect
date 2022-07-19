@@ -84,7 +84,7 @@ export default {
   // baseURL
   publicRuntimeConfig: {
     axios: {
-      baseURL: 'https://marketing-homepage-1535779997.ap-northeast-2.elb.amazonaws.com:8080/',
+      baseURL: 'http://13.209.200.75:8080',
       credential: true
     }
   },
