@@ -2,253 +2,253 @@
   {
     "name": "company-about",
     "path": "/company/about",
-    "component": "/Users/hellodegital/Desktop/project1/pages/company/about.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/company/about.vue",
     "chunkName": "pages/company/about",
-    "_name": "_3bef1449"
+    "_name": "_6a2e64ec"
   },
   {
     "name": "company-aboutSub",
     "path": "/company/aboutSub",
-    "component": "/Users/hellodegital/Desktop/project1/pages/company/aboutSub.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/company/aboutSub.vue",
     "chunkName": "pages/company/aboutSub",
-    "_name": "_35585d67"
+    "_name": "_0f6125e4"
   },
   {
     "name": "company-ir",
     "path": "/company/ir",
-    "component": "/Users/hellodegital/Desktop/project1/pages/company/ir.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/company/ir.vue",
     "chunkName": "pages/company/ir",
-    "_name": "_e03fcdc6"
+    "_name": "_3054435a"
   },
   {
     "name": "company-ir-detail",
     "path": "/company/ir-detail",
-    "component": "/Users/hellodegital/Desktop/project1/pages/company/ir-detail.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/company/ir-detail.vue",
     "chunkName": "pages/company/ir-detail",
-    "_name": "_6a51d031"
+    "_name": "_5d3bd158"
   },
   {
     "name": "company-talent",
     "path": "/company/talent",
-    "component": "/Users/hellodegital/Desktop/project1/pages/company/talent.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/company/talent.vue",
     "chunkName": "pages/company/talent",
-    "_name": "_4297d560"
+    "_name": "_477acdc6"
   },
   {
     "name": "news-detail",
     "path": "/news/detail",
-    "component": "/Users/hellodegital/Desktop/project1/pages/news/detail.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/news/detail.vue",
     "chunkName": "pages/news/detail",
-    "_name": "_14b6ef4a"
+    "_name": "_63b5a5be"
   },
   {
     "name": "news-main",
     "path": "/news/main",
-    "component": "/Users/hellodegital/Desktop/project1/pages/news/main.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/news/main.vue",
     "chunkName": "pages/news/main",
-    "_name": "_c6b1537a"
+    "_name": "_abd31f34"
   },
   {
     "name": "policy-Payment",
     "path": "/policy/Payment",
-    "component": "/Users/hellodegital/Desktop/project1/pages/policy/Payment.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/policy/Payment.vue",
     "chunkName": "pages/policy/Payment",
-    "_name": "_0fc4d32b"
+    "_name": "_ad20d230"
   },
   {
     "name": "policy-Policy",
     "path": "/policy/Policy",
-    "component": "/Users/hellodegital/Desktop/project1/pages/policy/Policy.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/policy/Policy.vue",
     "chunkName": "pages/policy/Policy",
-    "_name": "_415b279d"
+    "_name": "_6f9a7840"
   },
   {
     "name": "policy-Terms",
     "path": "/policy/Terms",
-    "component": "/Users/hellodegital/Desktop/project1/pages/policy/Terms.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/policy/Terms.vue",
     "chunkName": "pages/policy/Terms",
-    "_name": "_36c6416c"
+    "_name": "_ea4e5f2e"
   },
   {
     "name": "products-make",
     "path": "/products/make",
-    "component": "/Users/hellodegital/Desktop/project1/pages/products/make.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/products/make.vue",
     "chunkName": "pages/products/make",
-    "_name": "_2be114f2"
+    "_name": "_184ec62a"
   },
   {
     "name": "products-ms",
     "path": "/products/ms",
-    "component": "/Users/hellodegital/Desktop/project1/pages/products/ms.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/products/ms.vue",
     "chunkName": "pages/products/ms",
-    "_name": "_12862502"
+    "_name": "_64ce0ae2"
   },
   {
     "name": "products-productsMain",
     "path": "/products/productsMain",
-    "component": "/Users/hellodegital/Desktop/project1/pages/products/productsMain.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/products/productsMain.vue",
     "chunkName": "pages/products/productsMain",
-    "_name": "_57259856"
+    "_name": "_beb0d40e"
   },
   {
     "name": "products-remote",
     "path": "/products/remote",
-    "component": "/Users/hellodegital/Desktop/project1/pages/products/remote.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/products/remote.vue",
     "chunkName": "pages/products/remote",
-    "_name": "_11ad7f9f"
+    "_name": "_a54998fc"
   },
   {
     "name": "products-track",
     "path": "/products/track",
-    "component": "/Users/hellodegital/Desktop/project1/pages/products/track.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/products/track.vue",
     "chunkName": "pages/products/track",
-    "_name": "_3a852282"
+    "_name": "_57a03382"
   },
   {
     "name": "products-twin",
     "path": "/products/twin",
-    "component": "/Users/hellodegital/Desktop/project1/pages/products/twin.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/products/twin.vue",
     "chunkName": "pages/products/twin",
-    "_name": "_4a15e981"
+    "_name": "_78553a24"
   },
   {
     "name": "products-view",
     "path": "/products/view",
-    "component": "/Users/hellodegital/Desktop/project1/pages/products/view.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/products/view.vue",
     "chunkName": "pages/products/view",
-    "_name": "_2eec76be"
+    "_name": "_5d2bc761"
   },
   {
     "name": "support-demo",
     "path": "/support/demo",
-    "component": "/Users/hellodegital/Desktop/project1/pages/support/demo.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/support/demo.vue",
     "chunkName": "pages/support/demo",
-    "_name": "_c0472276"
+    "_name": "_1822047c"
   },
   {
     "name": "support-faq",
     "path": "/support/faq",
-    "component": "/Users/hellodegital/Desktop/project1/pages/support/faq.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/support/faq.vue",
     "chunkName": "pages/support/faq",
-    "_name": "_78c139a4"
+    "_name": "_325b51f2"
   },
   {
     "name": "support-inquiry",
     "path": "/support/inquiry",
-    "component": "/Users/hellodegital/Desktop/project1/pages/support/inquiry.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/support/inquiry.vue",
     "chunkName": "pages/support/inquiry",
-    "_name": "_c27de656"
+    "_name": "_3a6ec0b8"
   },
   {
     "name": "support-learning-center",
     "path": "/support/learning-center",
-    "component": "/Users/hellodegital/Desktop/project1/pages/support/learning-center.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/support/learning-center.vue",
     "chunkName": "pages/support/learning-center",
-    "_name": "_b979071c"
+    "_name": "_d786c556"
   },
   {
     "name": "support-learning-manual-detail",
     "path": "/support/learning-manual-detail",
-    "component": "/Users/hellodegital/Desktop/project1/pages/support/learning-manual-detail.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/support/learning-manual-detail.vue",
     "chunkName": "pages/support/learning-manual-detail",
-    "_name": "_7daff72b"
+    "_name": "_74dda0e8"
   },
   {
     "name": "support-learning-video-detail",
     "path": "/support/learning-video-detail",
-    "component": "/Users/hellodegital/Desktop/project1/pages/support/learning-video-detail.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/support/learning-video-detail.vue",
     "chunkName": "pages/support/learning-video-detail",
-    "_name": "_adbe4180"
+    "_name": "_2a2eec3a"
   },
   {
     "name": "support-notice",
     "path": "/support/notice",
-    "component": "/Users/hellodegital/Desktop/project1/pages/support/notice.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/support/notice.vue",
     "chunkName": "pages/support/notice",
-    "_name": "_632ababa"
+    "_name": "_06550312"
   },
   {
     "name": "support-notice-detail",
     "path": "/support/notice-detail",
-    "component": "/Users/hellodegital/Desktop/project1/pages/support/notice-detail.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/support/notice-detail.vue",
     "chunkName": "pages/support/notice-detail",
-    "_name": "_fbced818"
+    "_name": "_68cadcd2"
   },
   {
     "name": "support-supportSubMain",
     "path": "/support/supportSubMain",
-    "component": "/Users/hellodegital/Desktop/project1/pages/support/supportSubMain.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/support/supportSubMain.vue",
     "chunkName": "pages/support/supportSubMain",
-    "_name": "_6ded4a2c"
+    "_name": "_54ab00e9"
   },
   {
     "name": "terms-charged",
     "path": "/terms/charged",
-    "component": "/Users/hellodegital/Desktop/project1/pages/terms/charged.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/terms/charged.vue",
     "chunkName": "pages/terms/charged",
-    "_name": "_171765f6"
+    "_name": "_4556b699"
   },
   {
     "name": "terms-persnal",
     "path": "/terms/persnal",
-    "component": "/Users/hellodegital/Desktop/project1/pages/terms/persnal.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/terms/persnal.vue",
     "chunkName": "pages/terms/persnal",
-    "_name": "_762daaa9"
+    "_name": "_b7260968"
   },
   {
     "name": "terms-service",
     "path": "/terms/service",
-    "component": "/Users/hellodegital/Desktop/project1/pages/terms/service.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/terms/service.vue",
     "chunkName": "pages/terms/service",
-    "_name": "_67072dfb"
+    "_name": "_d57302c4"
   },
   {
     "name": "value-entertainment",
     "path": "/value/entertainment",
-    "component": "/Users/hellodegital/Desktop/project1/pages/value/entertainment.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/value/entertainment.vue",
     "chunkName": "pages/value/entertainment",
-    "_name": "_40f78c38"
+    "_name": "_2512969b"
   },
   {
     "name": "value-etc",
     "path": "/value/etc",
-    "component": "/Users/hellodegital/Desktop/project1/pages/value/etc.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/value/etc.vue",
     "chunkName": "pages/value/etc",
-    "_name": "_7861ee44"
+    "_name": "_f45def32"
   },
   {
     "name": "value-infra_resource",
     "path": "/value/infra_resource",
-    "component": "/Users/hellodegital/Desktop/project1/pages/value/infra_resource.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/value/infra_resource.vue",
     "chunkName": "pages/value/infra_resource",
-    "_name": "_229a62c6"
+    "_name": "_e40ddecc"
   },
   {
     "name": "value-manufacture_construction",
     "path": "/value/manufacture_construction",
-    "component": "/Users/hellodegital/Desktop/project1/pages/value/manufacture_construction.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/value/manufacture_construction.vue",
     "chunkName": "pages/value/manufacture_construction",
-    "_name": "_0e553d8f"
+    "_name": "_0582e74c"
   },
   {
     "name": "value-public_education",
     "path": "/value/public_education",
-    "component": "/Users/hellodegital/Desktop/project1/pages/value/public_education.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/value/public_education.vue",
     "chunkName": "pages/value/public_education",
-    "_name": "_2e8f2c5c"
+    "_name": "_6113bee2"
   },
   {
     "name": "company-subCompany-Brand",
     "path": "/company/subCompany/Brand",
-    "component": "/Users/hellodegital/Desktop/project1/pages/company/subCompany/Brand.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/company/subCompany/Brand.vue",
     "chunkName": "pages/company/subCompany/Brand",
-    "_name": "_8a9a8c2e"
+    "_name": "_2e449534"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/hellodegital/Desktop/project1/pages/index.vue",
+    "component": "/Users/macmini/Desktop/virnect19/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_79b5bc20"
+    "_name": "_1cb55fc3"
   }
 ]
