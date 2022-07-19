@@ -1,7 +1,7 @@
 <template>
   <div class="CtaModule">
     <div class="CtaCont">
-      <h2>현장의 XR/DT 혁신, 지금 바로 시작하세요.</h2>
+      <h2>{{$t(`supportText.supModule.subtitle`)}}</h2>
       <p>준비된 기술 컨설턴트가 직접 도움을 드립니다.</p>
       <span>
         <button>

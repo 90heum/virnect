@@ -4,6 +4,10 @@
             "kokacktext1": "We will do our best to assist with",
             "kokacktext2": "issues related to the service."
         },
+        "supportInfo":{
+            "text1": "Leaning Center",
+            "text2": "inquiries"
+        },
         "remoteText": {
             "title": "XR Remote Collaboration",
             "contents": "VIRNECT Remote enables seamless collaboration overcoming time and space constraints."
