@@ -1,8 +1,8 @@
 <template >
   <section>
-      <Header />
-      <nuxt />
-      <Footer />
+    <Header />
+    <nuxt />
+    <Footer />
   </section>
 </template>
 
@@ -14,7 +14,6 @@ import Footer from "../components/footer.vue";
 export default {
   components: { Header, Footer },
 };
-
 </script>
 
 
@@ -36,13 +35,10 @@ html {
   line-height: 1.8;
 }
 
-ul,ol{
+ul,
+ol {
   margin: 0;
   padding: 0;
-}
-
-img{
-  display: block;
 }
 
 *,
@@ -94,7 +90,7 @@ a {
    } */
 
   body {
-   min-width: 425px;
+    min-width: 425px;
     width: 100vw;
   }
 }
