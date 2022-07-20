@@ -313,7 +313,7 @@
           </i>
           <div class="languageWrap" v-if="showEarth" v-show="langOpen">
             <p><a href="http://13.209.200.75:3001/en">english</a></p>
-            <p><a href="http://13.209.200.75:3001/">korean</a></p>
+            <p><a href="http://13.209.200.75:3000/">korean</a></p>
           </div>
         </div>
 
