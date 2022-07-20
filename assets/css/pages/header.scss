@@ -1460,6 +1460,11 @@ header {
     }
 }
 
+.languageWrap p a {
+    color: #000000;
+    padding: 10px 10px;
+}
+
 header .headerInner .navWrap nav ul li a.navActive+header .subNavi {
     opacity: 1 !important;
     transition: all 0.5s;

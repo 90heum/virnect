@@ -12,8 +12,8 @@ export const nuxtOptions = {
 export const options = {
   vueI18n: {},
   vueI18nLoader: false,
-  locales: [{"code":"en","iso":"en","name":"English","file":"en/index.js"},{"code":"ko","iso":"ko","name":"Korean","file":"ko/index.js"}],
-  defaultLocale: "en",
+  locales: [{"code":"ko","iso":"ko","name":"Korean","file":"ko/index.js"},{"code":"en","iso":"en","name":"English","file":"en/index.js"}],
+  defaultLocale: "ko",
   defaultDirection: "ltr",
   routesNameSeparator: "___",
   defaultLocaleRouteNameSuffix: "default",
@@ -22,7 +22,7 @@ export const options = {
   lazy: true,
   langDir: "/Users/majeongheum/virnect/lang",
   rootRedirect: null,
-  detectBrowserLanguage: {"alwaysRedirect":false,"cookieCrossOrigin":false,"cookieDomain":null,"cookieKey":"i18n_redirected","cookieSecure":false,"fallbackLocale":"","redirectOn":"root","useCookie":true},
+  detectBrowserLanguage: {"alwaysRedirect":true,"cookieCrossOrigin":false,"cookieDomain":null,"cookieKey":"lang","cookieSecure":false,"fallbackLocale":"ko","redirectOn":"root","useCookie":true},
   differentDomains: false,
   baseUrl: "",
   vuex: {"moduleName":"i18n","syncRouteParams":true},
@@ -32,12 +32,12 @@ export const options = {
   onBeforeLanguageSwitch: () => {},
   onLanguageSwitched: () => null,
   seo: true,
-  normalizedLocales: [{"code":"en","iso":"en","name":"English","file":"en/index.js"},{"code":"ko","iso":"ko","name":"Korean","file":"ko/index.js"}],
-  localeCodes: ["en","ko"],
+  normalizedLocales: [{"code":"ko","iso":"ko","name":"Korean","file":"ko/index.js"},{"code":"en","iso":"en","name":"English","file":"en/index.js"}],
+  localeCodes: ["ko","en"],
   additionalMessages: [],
 }
 
 export const localeMessages = {
-  'en/index.js': () => import('../../lang/en/index.js' /* webpackChunkName: "lang-en/index.js" */),
   'ko/index.js': () => import('../../lang/ko/index.js' /* webpackChunkName: "lang-ko/index.js" */),
+  'en/index.js': () => import('../../lang/en/index.js' /* webpackChunkName: "lang-en/index.js" */),
 }

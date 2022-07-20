@@ -21,6 +21,7 @@ export default {
     ]
   },
 
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ['swiper/dist/css/swiper.css', 'nuxt-video-player/src/assets/css/main.css', 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'],
   buildModules: ['@nuxtjs/style-resources', '@nuxt/image'],
@@ -62,19 +63,27 @@ export default {
         defaultLocale: "ko",
         lazy: true,
         langDir: "lang/",
+        detectBrowserLanguage: {
+          useCookie: true,
+          cookieDomain: null,
+          cookieKey: 'lang',
+          alwaysRedirect: true,
+          fallbackLocale: 'ko'
+        },
         locales: [
-          {
-            code: "en",
-            iso: "en",
-            name: "English",
-            file: "en/index.js"
-          },
           {
             code: "ko",
             iso: "ko",
             name: "Korean",
             file: "ko/index.js"
+          },
+          {
+            code: "en",
+            iso: "en",
+            name: "English",
+            file: "en/index.js"
           }
+
         ]
       }
 
