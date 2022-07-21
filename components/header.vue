@@ -272,7 +272,7 @@
         </div>
 
         <!-- 언어선택 박스 -->
-        <!-- <div
+        <div
           class="language"
           @click="
             [(lang = true), langlang('ko'), toggle2(), (isServiceMenu = false)]
@@ -296,8 +296,8 @@
               <a href="#">{{ locale.name }}</a>
             </span>
           </div>
-        </div> -->
-        <div
+        </div>
+        <!-- <div
           class="language"
           @click="
             [(lang = true), langlang('ko'), toggle2(), (isServiceMenu = false)]
@@ -315,7 +315,7 @@
             <p><a href="http://13.209.200.75:3001/en">english</a></p>
             <p><a href="http://13.209.200.75:3000/">korean</a></p>
           </div>
-        </div>
+        </div> -->
 
         <!-- 햄버거 버튼 [모바일 메뉴] : 언어박스가 사라지고 얘가 나옴 -->
         <div class="MbHam" v-if="!isWeb">
