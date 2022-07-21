@@ -87,9 +87,7 @@
               </span>
               <span>
                 <p>
-                  제조/건설 산업 현장에는 작업절차 오류, 시공결함 등으로부터
-                  기인하는 다 양한 산업재해와 작업자들의 위험, 제조공정에
-                  문제들이 발생합니다.
+                  {{$t(`landing.solutionText.solutionBenefitLists[1].contents`)}}
                 </p>
                 <img
                   src="https://velog.velcdn.com/images/kyj0206/post/01f0cb48-24c0-4b7f-859c-09b55be3daeb/image.png"
@@ -133,9 +131,7 @@
               </span>
               <span>
                 <p>
-                  공공/교육 분야에 사용되는 기존 교육 방식은 비용 대비 효과가
-                  낮습니다. XR 기술을 활용한다면 보다 탁월한 학습효과는 물론
-                  언제 어디서나 접근 가능합니다.
+                  {{$t(`landing.solutionText.solutionBenefitLists[2].contents`)}}
                 </p>
                 <img
                   src="~/assets/images/common/value3.png"
@@ -179,9 +175,7 @@
               </span>
               <span>
                 <p>
-                  엔터테인먼트 분야에서 고객의 안전 및 현장 관리요소가 발생하며,
-                  체험을 하는데 있어 현장감을 주기위한 몰입형 콘텐츠의 필요성이
-                  점차 부각되고 있습니다.
+                  {{$t(`landing.solutionText.solutionBenefitLists[3].contents`)}}
                 </p>
                 <img
                   src="~/assets/images/common/value4.png"
@@ -222,8 +216,7 @@
               </span>
               <span>
                 <p>
-                  XR기술은 산업현장은 뿐만 아니라 의료, 헬스케어 등 일상 생활 속
-                  밀접한 부분까지 다양한 분야에 적용 가능합니다.
+                  {{$t(`landing.solutionText.solutionBenefitLists[4].contents`)}}
                 </p>
                 <img
                   src="~/assets/images/common/value5.png"

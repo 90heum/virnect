@@ -1,7 +1,7 @@
 export const title = {
     remote: `<p>What to expect</p>
     <h2>
-        Timely response and collaboration in industrial environments
+    Efficient work with accurate and precise information delivery.
     </h2>
     <span>
     VIRNECT Remote level up teams’ synergies by overcoming time and distance limitations.
