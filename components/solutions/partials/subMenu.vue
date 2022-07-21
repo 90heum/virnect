@@ -103,13 +103,22 @@ export default {
     justify-content: center;
     margin: 0 auto;
     li {
+      width: 20%;
+      &::after {
+          position: absolute;
+          content: "";
+          display: block;
+          height: 25px;
+          top: 50%;
+          border-right: 1px solid #c5c8cf;
+          transform: translateY(-50%);
+      }
       a {
         text-decoration: none;
       }
       display: block;
       max-width: 241px;
       min-height: 66px;
-      width: 100%;
       height: 100%;
       &:nth-child(1) {
         a {
@@ -120,7 +129,7 @@ export default {
       }
       a {
         display: block;
-        padding: 24px 0;
+        padding: 24px;
         font-size: 16px;
         font-weight: bold;
         line-height: 1;
@@ -128,15 +137,7 @@ export default {
         text-align: center;
         color: #9a9da3;
 
-        &::after {
-          position: absolute;
-          content: "";
-          display: block;
-          height: 25px;
-          top: 50%;
-          border-right: 1px solid #c5c8cf;
-          transform: translateY(-50%);
-        }
+
       }
       &.SubUseNavActive,
       &:hover {
@@ -148,11 +149,12 @@ export default {
     }
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   .SubMenuUse {
     position: relative;
   }
-  .SubMenuUse .SubMenuMobileTitle {
+
+      .SubMenuUse .SubMenuMobileTitle {
     display: flex;
     justify-content: space-between;
     color: #0a51b7;
@@ -162,6 +164,7 @@ export default {
     background: #fff;
     padding: 0 20px;
   }
+
   .SubMenuUse .SubMenuNav {
     position: absolute;
     z-index: 1;
