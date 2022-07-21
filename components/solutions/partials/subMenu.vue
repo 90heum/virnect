@@ -93,6 +93,10 @@ export default {
   .SubMenuMobileTitle {
     display: none;
   }
+
+  .mobileActive{
+    max-width: 100%;
+  }
   background-color: #e6e8eb;
   .SubMenuNav {
     position: relative;
@@ -119,7 +123,7 @@ export default {
       display: block;
       max-width: 241px;
       min-height: 66px;
-      height: 100%;
+      height: auto;
       &:nth-child(1) {
         a {
           &::after {
@@ -128,16 +132,18 @@ export default {
         }
       }
       a {
-        display: block;
-        padding: 24px;
+        display: flex;
+        padding: 24px 10px;
         font-size: 16px;
         font-weight: bold;
+        height: 100%;
         line-height: 1;
         letter-spacing: -0.2px;
         text-align: center;
         color: #9a9da3;
-
-
+        word-break: break-all;
+        align-items: center;
+        justify-content: center;    
       }
       &.SubUseNavActive,
       &:hover {
@@ -154,16 +160,7 @@ export default {
     position: relative;
   }
 
-      .SubMenuUse .SubMenuMobileTitle {
-    display: flex;
-    justify-content: space-between;
-    color: #0a51b7;
-    font-size: 16px;
-    height: 64px;
-    line-height: 4;
-    background: #fff;
-    padding: 0 20px;
-  }
+
 
   .SubMenuUse .SubMenuNav {
     position: absolute;
@@ -172,6 +169,19 @@ export default {
     padding-left: 0px;
     max-width: 425px;
   }
+
+  .SubMenuUse .SubMenuMobileTitle {
+    display: flex;
+    justify-content: space-between;
+    color: #0a51b7;
+    font-size: 16px;
+    height: 64px;
+    line-height: 4;
+    background: #fff;
+    padding: 0 20px;
+
+  }
+
   .SubMenuUse .SubMenuNav .subMenu,
   .SubMenuUse .SubMenuNav li.SubUseNavActive {
     max-width: none;
@@ -192,8 +202,17 @@ export default {
   .SubMenuUse .SubMenuNav li.subMenu a::after {
     content: none;
   }
-  .SubMenuUse .mobileActive {
+  .SubMenuUse .mobileActive{
     display: block;
+    max-width: 100%;
+  }
+
+  .SubMenuUse .mobileActive .subMenu{
+    width: 100%;
+  }
+
+  .SubMenuUse .SubMenuNav li::after{
+    display: none;
   }
 }
 </style>

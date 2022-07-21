@@ -189,7 +189,7 @@ export default {
         &:first-child {
           flex: 1;
           text-align: left;
-          min-width: 140px;
+          min-width: 160px;
           padding: 30px;
           p {
             border-radius: 12px;
