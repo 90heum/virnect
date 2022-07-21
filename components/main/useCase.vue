@@ -43,9 +43,7 @@
               </span>
               <span>
                 <p>
-                  인프라/자원 산업은 복잡한 설비와 데이터로 인해 관리 효율
-                  저하를 겪고 있습니다. 눈에 보이지 않는 매립된 설비들, 설비 간
-                  복잡한 관계성은 현장 파악에 어려움을 줍니다.
+                  {{$t(`landing.solutionText.solutionBenefitLists[0].contents`)}}
                 </p>
                 <img
                   src="https://velog.velcdn.com/images/kyj0206/post/820aa8e2-ce41-4320-959e-f7b8d9e232b0/image.png"

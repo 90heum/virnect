@@ -20,7 +20,7 @@ export const options = {
   sortRoutes: true,
   strategy: "no_prefix",
   lazy: true,
-  langDir: "/Users/majeongheum/virnect/lang",
+  langDir: "/Users/hellodigital/Desktop/hj01/virnect/lang",
   rootRedirect: null,
   detectBrowserLanguage: {"alwaysRedirect":true,"cookieCrossOrigin":false,"cookieDomain":null,"cookieKey":"lang","cookieSecure":false,"fallbackLocale":"ko","redirectOn":"root","useCookie":true},
   differentDomains: false,
