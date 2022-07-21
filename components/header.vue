@@ -9,7 +9,7 @@
               return;
             }
             isMenu = false;
-            mobileMenu = { list1: false }
+            mobileMenu = { list1: false };
             showMenu(false);
           }
         "
@@ -297,6 +297,26 @@
             </span>
           </div>
         </div>
+        <!-- <div
+          class="language"
+          @click="
+            [(lang = true), langlang('ko'), toggle2(), (isServiceMenu = false)]
+          "
+          v-if="isWeb"
+          v-click-outside="langHide"
+        >
+          <i>
+            <img
+              src="https://velog.velcdn.com/images/kyj0206/post/3904dc78-e6ec-44d2-8bc0-f6e4c0c7c3a0/image.png"
+              alt="글로벌이미지"
+            />
+          </i>
+          <div class="languageWrap" v-if="showEarth" v-show="langOpen">
+            <p><a href="http://13.209.200.75:3001/en">english</a></p>
+            <p><a href="http://13.209.200.75:3000/">korean</a></p>
+          </div>
+        </div> -->
+
         <!-- 햄버거 버튼 [모바일 메뉴] : 언어박스가 사라지고 얘가 나옴 -->
         <div class="MbHam" v-if="!isWeb">
           <!-- 햄버거 -->
@@ -379,31 +399,36 @@
           </div>
         </span> -->
         <span class="asideInfoLink">
-          <span class="asideInfoLinkTit"
-                v-html="$t(`productsText.asideInfo.title`)"
+          <span
+            class="asideInfoLinkTit"
+            v-html="$t(`productsText.asideInfo.title`)"
           >
           </span>
           <span class="asideInfoLinkCont">
             <p v-html="$t(`productsText.asideInfo.contents1`)"></p>
             <p>
-              {{$t(`productsText.asideInfo.contents2`)}}
+              {{ $t(`productsText.asideInfo.contents2`) }}
               <a href="mailto:contact@virnect.com" target="blank">
                 <u v-html="$t(`productsText.asideInfo.contents3`)"></u>
               </a>
             </p>
             <p>
-              {{$t(`productsText.asideInfo.contents4`)}}
+              {{ $t(`productsText.asideInfo.contents4`) }}
               <a href="mailto:support@virnect.com" target="blank">
-                <u>{{$t(`productsText.asideInfo.contents5`)}}</u>
+                <u>{{ $t(`productsText.asideInfo.contents5`) }}</u>
               </a>
             </p>
           </span>
           <div class="BtnWrap">
             <button>
-              <nuxt-link to="/support/demo">{{$t(`productsText.asideInfo.category1`)}}</nuxt-link>
+              <nuxt-link to="/support/demo">{{
+                $t(`productsText.asideInfo.category1`)
+              }}</nuxt-link>
             </button>
             <button>
-              <nuxt-link to="/support/inquiry">{{$t(`productsText.asideInfo.category2`)}}</nuxt-link>
+              <nuxt-link to="/support/inquiry">{{
+                $t(`productsText.asideInfo.category2`)
+              }}</nuxt-link>
             </button>
           </div>
         </span>
@@ -484,31 +509,36 @@
           </span>
         </div>
         <span class="asideInfoLink">
-          <span class="asideInfoLinkTit"
-                v-html="$t(`productsText.asideInfo.title`)"
+          <span
+            class="asideInfoLinkTit"
+            v-html="$t(`productsText.asideInfo.title`)"
           >
           </span>
           <span class="asideInfoLinkCont">
             <p v-html="$t(`productsText.asideInfo.contents1`)"></p>
             <p>
-              {{$t(`productsText.asideInfo.contents2`)}}
+              {{ $t(`productsText.asideInfo.contents2`) }}
               <a href="mailto:contact@virnect.com" target="blank">
                 <u v-html="$t(`productsText.asideInfo.contents3`)"></u>
               </a>
             </p>
             <p>
-              {{$t(`productsText.asideInfo.contents4`)}}
+              {{ $t(`productsText.asideInfo.contents4`) }}
               <a href="mailto:support@virnect.com" target="blank">
-                <u>{{$t(`productsText.asideInfo.contents5`)}}</u>
+                <u>{{ $t(`productsText.asideInfo.contents5`) }}</u>
               </a>
             </p>
           </span>
           <div class="BtnWrap">
             <button>
-              <nuxt-link to="/support/demo">{{$t(`productsText.asideInfo.category1`)}}</nuxt-link>
+              <nuxt-link to="/support/demo">{{
+                $t(`productsText.asideInfo.category1`)
+              }}</nuxt-link>
             </button>
             <button>
-              <nuxt-link to="/support/inquiry">{{$t(`productsText.asideInfo.category2`)}}</nuxt-link>
+              <nuxt-link to="/support/inquiry">{{
+                $t(`productsText.asideInfo.category2`)
+              }}</nuxt-link>
             </button>
           </div>
         </span>
@@ -730,7 +760,11 @@
             ></span>
             <div class="subNavCompanyMenu">
               <span
-                v-for="(list, idx) of $i18n.localeProperties.code === 'ko' ? $t(`newCompany.menuList`) : $t(`newCompany.menuList`).filter((e, idx) => {if (idx === 0) return e; })"
+                v-for="(list, idx) of $i18n.localeProperties.code === 'ko'
+                  ? $t(`newCompany.menuList`)
+                  : $t(`newCompany.menuList`).filter((e, idx) => {
+                      if (idx === 0) return e;
+                    })"
                 :key="idx"
                 @click="
                   [
@@ -746,9 +780,7 @@
           </span>
         </div>
         <span class="asideInfoLink">
-          <span class="asideInfoLinkTit"
-                v-html="$t(`asideCompany.title`)"
-          >
+          <span class="asideInfoLinkTit" v-html="$t(`asideCompany.title`)">
           </span>
           <a href="#">
             <nuxt-link to="/products/productsMain">
@@ -879,11 +911,14 @@ export default {
     },
   },
   methods: {
-    redirectPage (locale) {
-      if (locale === 'ko') return;
+    redirectPage(locale) {
+      if (locale === "ko") return;
       const routePath = this.$route.fullPath;
-      console.log(routePath)
-      if (routePath.includes("/company/ir") || routePath.includes("/company/talent")) {
+      console.log(routePath);
+      if (
+        routePath.includes("/company/ir") ||
+        routePath.includes("/company/talent")
+      ) {
         this.$router.push("/company/about");
       }
     },
@@ -926,6 +961,7 @@ export default {
         }
       }
     },
+
     langlang(locale) {
       this.showEarth = !this.showEarth;
       this.redirectPage(locale);

@@ -17,9 +17,6 @@
   "DummyAwardEn": {
     "description": "Auto imported from components/dummy/awardEn.js"
   },
-  "MixinsMixin": {
-    "description": "Auto imported from components/mixins/mixin.js"
-  },
   "MainBannerModule": {
     "description": "Auto imported from components/main/bannerModule.vue"
   },
@@ -107,8 +104,8 @@
   "ModulesYoutubeFullscreen": {
     "description": "Auto imported from components/modules/YoutubeFullscreen.vue"
   },
-  "NewsCommonBaner": {
-    "description": "Auto imported from components/news/CommonBaner.vue"
+  "MixinsMixin": {
+    "description": "Auto imported from components/mixins/mixin.js"
   },
   "Paging": {
     "description": "Auto imported from components/paging/paging.vue"
@@ -121,6 +118,9 @@
   },
   "PolicySubMenuTerms": {
     "description": "Auto imported from components/policy/subMenuTerms.vue"
+  },
+  "NewsCommonBaner": {
+    "description": "Auto imported from components/news/CommonBaner.vue"
   },
   "ProductsNewBgPartData": {
     "description": "Auto imported from components/products/NewBgPartData.js"
@@ -182,6 +182,27 @@
   "SupportNotice": {
     "description": "Auto imported from components/support/notice.vue"
   },
+  "GnbCompany": {
+    "description": "Auto imported from components/Gnb/Company/index.vue"
+  },
+  "GnbContact": {
+    "description": "Auto imported from components/Gnb/Contact/index.vue"
+  },
+  "GnbFreeTrials": {
+    "description": "Auto imported from components/Gnb/FreeTrials/index.vue"
+  },
+  "GnbPricing": {
+    "description": "Auto imported from components/Gnb/Pricing/index.vue"
+  },
+  "GnbProducts": {
+    "description": "Auto imported from components/Gnb/Products/index.vue"
+  },
+  "GnbSolution": {
+    "description": "Auto imported from components/Gnb/Solution/index.vue"
+  },
+  "GnbHeaderPartialMobileHeader": {
+    "description": "Auto imported from components/Gnb/headerPartial/mobileHeader.vue"
+  },
   "CompanyPagesRecruit": {
     "description": "Auto imported from components/company/pages/Recruit.vue"
   },
@@ -205,27 +226,6 @@
   },
   "CompanyPartialsSubMenuIr": {
     "description": "Auto imported from components/company/partials/subMenuIr.vue"
-  },
-  "GnbCompany": {
-    "description": "Auto imported from components/Gnb/Company/index.vue"
-  },
-  "GnbContact": {
-    "description": "Auto imported from components/Gnb/Contact/index.vue"
-  },
-  "GnbFreeTrials": {
-    "description": "Auto imported from components/Gnb/FreeTrials/index.vue"
-  },
-  "GnbPricing": {
-    "description": "Auto imported from components/Gnb/Pricing/index.vue"
-  },
-  "GnbProducts": {
-    "description": "Auto imported from components/Gnb/Products/index.vue"
-  },
-  "GnbSolution": {
-    "description": "Auto imported from components/Gnb/Solution/index.vue"
-  },
-  "GnbHeaderPartialMobileHeader": {
-    "description": "Auto imported from components/Gnb/headerPartial/mobileHeader.vue"
   },
   "ProductsPagesMS": {
     "description": "Auto imported from components/products/pages/MS.vue"

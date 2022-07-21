@@ -285,6 +285,19 @@
         </a>
         <!-- 언어선택 박스 -->
         <div class="languageWrap" v-if="showEarth" @click="langHide()">
+          <p><a href="http://13.209.200.75:3001/en">english</a></p>
+          <p><a href="http://13.209.200.75:3000/">korean</a></p>
+        </div>
+      </span>
+      <!-- <span @click="[(lang = true), langlang()]" v-if="isWeb">
+        <a class="subBottomLanguage">
+          <img
+            src="https://velog.velcdn.com/images/kyj0206/post/98320b08-1c52-4226-a6f0-7ab1e58fb363/image.png"
+            alt="언어선택 박스"
+          />
+        </a>
+        언어선택 박스
+        <div class="languageWrap" v-if="showEarth" @click="langHide()">
           <span
             v-for="locale in availableLocales"
             :key="locale.code"
@@ -294,7 +307,7 @@
             <a>{{ locale.name }}</a>
           </span>
         </div>
-      </span>
+      </span> -->
     </div>
   </div>
 </template>
@@ -325,7 +338,7 @@ export default {
     availableLocales: Array,
     showMenu: Function,
     mobileMenu: Object,
-    handleMobileMenu: Function
+    handleMobileMenu: Function,
   },
   data: () => ({
     lang: false,

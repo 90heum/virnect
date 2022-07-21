@@ -22,20 +22,30 @@
               <nuxt-link to="/value/infra_resource">Value</nuxt-link>
               <ul>
                 <li>
-                  <nuxt-link to="/value/infra_resource">{{$t(`footer.value.title1`)}}</nuxt-link>
+                  <nuxt-link to="/value/infra_resource">{{
+                    $t(`footer.value.title1`)
+                  }}</nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link to="/value/manufacture_construction"
-                    >{{$t(`footer.value.title2`)}}</nuxt-link
-                  >
+                  <nuxt-link to="/value/manufacture_construction">{{
+                    $t(`footer.value.title2`)
+                  }}</nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link to="/value/public_education">{{$t(`footer.value.title3`)}}</nuxt-link>
+                  <nuxt-link to="/value/public_education">{{
+                    $t(`footer.value.title3`)
+                  }}</nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link to="/value/entertainment">{{$t(`footer.value.title4`)}}</nuxt-link>
+                  <nuxt-link to="/value/entertainment">{{
+                    $t(`footer.value.title4`)
+                  }}</nuxt-link>
                 </li>
-                <li><nuxt-link to="/value/etc">{{$t(`footer.value.title5`)}}</nuxt-link></li>
+                <li>
+                  <nuxt-link to="/value/etc">{{
+                    $t(`footer.value.title5`)
+                  }}</nuxt-link>
+                </li>
               </ul>
             </li>
             <li>
@@ -85,8 +95,12 @@
                 <li>
                   <nuxt-link to="/company/about">About VIRNECT</nuxt-link>
                 </li>
-                <li v-if="$i18n.localeProperties.code === 'ko'"><nuxt-link to="/company/talent">인재채용</nuxt-link></li>
-                <li v-if="$i18n.localeProperties.code === 'ko'"><nuxt-link to="/company/ir">IR</nuxt-link></li>
+                <li v-if="$i18n.localeProperties.code === 'ko'">
+                  <nuxt-link to="/company/talent">인재채용</nuxt-link>
+                </li>
+                <li v-if="$i18n.localeProperties.code === 'ko'">
+                  <nuxt-link to="/company/ir">IR</nuxt-link>
+                </li>
               </ul>
             </li>
           </ul>
@@ -185,17 +199,20 @@
               />
             </span>
             <span class="infoList">
-              <p>{{$t(`footer.infolink.contents1`)}}<a>{{$t(`footer.infolink.contents2`)}}</a></p>
               <p>
-                {{$t(`footer.infolink.contents3`)}}
+                {{ $t(`footer.infolink.contents1`)
+                }}<a>{{ $t(`footer.infolink.contents2`) }}</a>
+              </p>
+              <p>
+                {{ $t(`footer.infolink.contents3`) }}
                 <a href="mailto:contact@virnect.com" target="blank"
-                  ><u>{{$t(`footer.infolink.contents4`)}}</u>
+                  ><u>{{ $t(`footer.infolink.contents4`) }}</u>
                 </a>
               </p>
               <p>
-                {{$t(`footer.infolink.contents5`)}}
+                {{ $t(`footer.infolink.contents5`) }}
                 <a href="mailto:support@virnect.com" target="blank"
-                  ><u>{{$t(`footer.infolink.contents6`)}}</u></a
+                  ><u>{{ $t(`footer.infolink.contents6`) }}</u></a
                 >
               </p>
             </span>
@@ -317,7 +334,9 @@
                   </div>
                 </div>
                 <button>
-                  <a href="/support/inquiry" target="_blank">{{$t(`footer.infolink.contents7`)}}</a>
+                  <a href="/support/inquiry" target="_blank">{{
+                    $t(`footer.infolink.contents7`)
+                  }}</a>
                 </button>
               </span>
               <com-modal :comModal="comModal" :comPopup="comPopup" />
@@ -334,7 +353,7 @@
                         src="https://velog.velcdn.com/images/kyj0206/post/034f327b-6153-4e14-8058-17d2899545b7/image.png"
                         alt="다운로드호버"
                     /></i>
-                    <u>{{$t(`footer.infolink.contents8`)}}</u>
+                    <u>{{ $t(`footer.infolink.contents8`) }}</u>
                   </a>
                 </span>
                 <span @click="modal()">
@@ -349,20 +368,22 @@
                         src="https://velog.velcdn.com/images/kyj0206/post/034f327b-6153-4e14-8058-17d2899545b7/image.png"
                         alt="다운로드호버"
                     /></i>
-                    <u>{{$t(`footer.infolink.contents9`)}}</u>
+                    <u>{{ $t(`footer.infolink.contents9`) }}</u>
                   </a>
                 </span>
-                <pro-modal :modal="modal" :popup="popup"/>
+                <pro-modal :modal="modal" :popup="popup" />
               </span>
             </span>
           </span>
           <span class="infoRight">
             <span>
-              <p>{{$t(`footer.infolink.contents10`)}}</p>
+              <p>{{ $t(`footer.infolink.contents10`) }}</p>
             </span>
             <span>
               <!-- <input type="text" placeholder="email을 입력하세요" /> -->
-              <button @click="handleModal()"><a>{{$t(`footer.infolink.contents11`)}}</a></button>
+              <button @click="handleModal()">
+                <a>{{ $t(`footer.infolink.contents11`) }}</a>
+              </button>
             </span>
           </span>
         </span>
@@ -371,12 +392,20 @@
         <div class="footerBottomInner">
           <div class="bottomInnerLeft">
             <span>
-              <u><nuxt-link to="/terms/service">{{$t(`footer.service.title1`)}}</nuxt-link></u>
               <u
-                ><nuxt-link to="/terms/persnal">{{$t(`footer.service.title2`)}}</nuxt-link></u
+                ><nuxt-link to="/terms/service">{{
+                  $t(`footer.service.title1`)
+                }}</nuxt-link></u
               >
               <u
-                ><nuxt-link to="/terms/charged">{{$t(`footer.service.title3`)}}</nuxt-link></u
+                ><nuxt-link to="/terms/persnal">{{
+                  $t(`footer.service.title2`)
+                }}</nuxt-link></u
+              >
+              <u
+                ><nuxt-link to="/terms/charged">{{
+                  $t(`footer.service.title3`)
+                }}</nuxt-link></u
               >
             </span>
             <span>
@@ -463,7 +492,7 @@
                     alt="다운아이콘"
                 /></i>
               </div>
-              <div class="tabLang" v-if="showEarth">
+              <!-- <div class="tabLang" v-if="showEarth">
                 <span
                   v-for="locale in availableLocales"
                   :key="locale.code"
@@ -472,6 +501,10 @@
                 >
                   <a href="#">{{ locale.name }}</a>
                 </span>
+              </div> -->
+              <div class="tabLang" v-if="showEarth">
+                <p><a href="http://13.209.200.75:3001/en">english</a></p>
+                <p><a href="http://13.209.200.75:3000/">korean</a></p>
               </div>
             </span>
           </div>
@@ -494,8 +527,8 @@ export default {
   components: {
     ModalComponent,
     ProModal,
-    ComModal
-},
+    ComModal,
+  },
   computed: {
     availableLocales() {
       return this.$i18n.locales;
