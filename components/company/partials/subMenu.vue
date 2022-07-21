@@ -47,6 +47,7 @@ export default {};
         }
       }
       a {
+        word-break: break-all;
         display: block;
         padding: 24px 0;
         font-size: 16px;
@@ -55,7 +56,6 @@ export default {};
         letter-spacing: -0.2px;
         text-align: center;
         color: #9a9da3;
-
         &::after {
           position: absolute;
           content: "";
@@ -70,6 +70,7 @@ export default {};
       &:hover {
         background: #fff;
         a {
+          word-break: break-all;
           color: #0a51b7;
         }
       }
