@@ -283,6 +283,8 @@ section.contactTab {
 
 
     .tabCont { display: block; }
+
+    .tabCont > div { margin-bottom: 35px;}
 }
 
 @media screen and (max-width: 425px) {
