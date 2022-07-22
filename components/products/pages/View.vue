@@ -125,7 +125,7 @@
           </span>
           <span class="featuresCont">
             <img
-              src="https://velog.velcdn.com/images/kyj0206/post/d6f996f0-0c60-40f8-8ca7-3b123e0ab1d1/image.png"
+              src="~/assets/images/pages/products/imdsfg-en@2x.png"
               alt="features"
             />
           </span>

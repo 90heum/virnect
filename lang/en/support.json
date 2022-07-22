@@ -1,5 +1,25 @@
 {
   "supportText": {
+    "location": {
+      "title": "Global Virnect",
+      "text1": "VIRNECT HeadQuarter",
+      "contents1": "10-15, Hanging-daero 7-gil, Yongsan-Gu, Seoul, Republic of Korea",
+      "text2": "VIRNECT R&D Center,",
+      "contents2": "3F Central Park Tower, Sebinggo- ro 17, Yongsan-Gu, Seoul, Republic of Korea",
+      "text3": "VIRNECT Experience Center",
+      "contents3": "VIRNECT Experience Center 1F KY Bldg, Hangang-daero 31, Yongsan-Gu, Seoul, Republic of Korea",
+      "text4": "VIRNECT Europe GmbH",
+      "contents4": "VIRNECT Europe GmbHHoher Markt 4, stiege 2, Top D1, 1010 Wien, Austria",
+      "text5": "VIRNECT U.S.",
+      "contents5": "3003 N First St #221, San Jose CA95134, United States",
+      "title6": "Business Support",
+      "text6": "Email : contact@virnect.com",
+      "contents6": "Tel : +82-2-749-1004"
+    },
+    "inquiries": {
+      "sub1": "Inquiries",
+      "sub2": "location"
+    },
     "subMenuText": {
       "learn": "LEARNING CENTER",
       "Inquiries": "INQUIRIES"
@@ -7,7 +27,13 @@
     "headBannerText": {
       "title": "How can we help you?",
       "contents": "We will do our best to assist with issues related to the service.",
-      "text": "More"
+      "text": "More",
+      "title2": "Product Notice",
+      "contents2": "Check the notices regarding our products and services.",
+      "title3": "FAQ",
+      "contents3": "Check out frequently asked questions and answers.",
+      "title4": "Learning Center",
+      "contents4": "Guides you through tutorials, manuals, tips, and more."
     },
     "FAQText": {
       "title": "Check out frequently asked questions and answers.",
@@ -37,7 +63,7 @@
       "contents2": "VIRNECT is prepared to solve the problem."
     },
     "visualText": {
-      "title": "We will do our best to assist with<br> issues related to the service.",
+      "title": "We will do our best to assist with<p> issues related to the service.</p>",
       "contents": ""
     },
     "menuList": {
@@ -124,7 +150,7 @@
         "contents": "nquiry *"
       }
     },
-    "noticeList":{
+    "noticeList": {
       "title1": "Class",
       "title2": "Title",
       "title3": "Update date"

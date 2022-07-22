@@ -189,7 +189,7 @@ export default {
         &:first-child {
           flex: 1;
           text-align: left;
-          min-width: 140px;
+          min-width: 160px;
           padding: 30px;
           p {
             border-radius: 12px;
@@ -380,8 +380,8 @@ export default {
     width: 100%;
   }
   .FAQList .FAQListInnerWrap > ul li:first-child p {
-    max-width: 85px;
-    min-width: 85px;
+    max-width: 90px;
+    min-width: 90px;
     padding: 10px;
   }
   .LearningCenter .centerModule .centerModuleMore span:last-child p,
