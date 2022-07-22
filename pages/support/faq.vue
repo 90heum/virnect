@@ -336,13 +336,10 @@ section.contactTab {
   .tabCont {
     display: block;
   }
-<<<<<<< HEAD
-=======
 
   .tabCont > div {
     margin-bottom: 35px;
   }
->>>>>>> f7bdb89047cd9cdddac54955cdf2f1300d241b83
 }
 
 @media screen and (max-width: 425px) {
