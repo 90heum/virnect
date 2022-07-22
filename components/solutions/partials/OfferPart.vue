@@ -64,7 +64,7 @@
                       />
                     </i>
                   </span>
-                  <p>XR 원격 협업 솔루션</p>
+                  <p v-html="$t('valueBannerModule.text1')"></p>
                 </nuxt-link>
               </li>
               <li>
@@ -83,7 +83,7 @@
                       />
                     </i>
                   </span>
-                  <p>확장현실(XR) 콘텐츠 제작 솔루션</p>
+                  <p v-html="$t('valueBannerModule.text2')"></p>
                 </nuxt-link>
               </li>
               <li>
@@ -102,7 +102,7 @@
                       />
                     </i>
                   </span>
-                  <p>확장현실(XR) 콘텐츠 시각화 솔루션</p>
+                  <p v-html="$t('valueBannerModule.text3')"></p>
                 </nuxt-link>
               </li>
             </ul>
@@ -130,7 +130,7 @@
                       />
                     </i>
                   </span>
-                  <p>XR 기반 3D 현장 관리 솔루션</p>
+                  <p v-html="$t('valueBannerModule.text4')"></p>
                 </nuxt-link>
               </li>
               <li>
@@ -149,7 +149,7 @@
                       />
                     </i>
                   </span>
-                  <p>검출/추적용 XR 개발 엔진</p>
+                  <p v-html="$t('valueBannerModule.text5')"></p>
                 </nuxt-link>
               </li>
               <li>

@@ -68,7 +68,7 @@
           </span>
           <span class="featuresCont">
             <img
-              src="https://velog.velcdn.com/images/kyj0206/post/a8db337e-78a5-453b-a4ba-15bc111b05b2/image.png"
+              src="~/assets/images/pages/products/group-13-en@2x.png"
               alt="features"
             />
             <span id="headingModuleBottom" />

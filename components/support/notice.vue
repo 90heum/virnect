@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import HeadBanner from "~/components/support/headBanner.vue";
+import HeadBanner from "~/components/support/headBannerProduct.vue";
 import SubMenu from "~/components/support/SubMenu.vue";
 import AsideMenu from "~/components/support/notice/AsideMenu.vue";
 import NoticeContents from "~/components/support/notice/NoticeContents.vue";

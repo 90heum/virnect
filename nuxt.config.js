@@ -63,13 +63,7 @@ export default {
         defaultLocale: "ko",
         lazy: true,
         langDir: "lang/",
-        detectBrowserLanguage: {
-          useCookie: true,
-          cookieDomain: null,
-          cookieKey: 'lang',
-          alwaysRedirect: true,
-          fallbackLocale: 'ko'
-        },
+
         locales: [
           {
             code: "ko",

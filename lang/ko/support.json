@@ -1,12 +1,38 @@
 {
   "supportText": {
+    "location": {
+      "title": "글로벌 버넥트",
+      "text1": "본사",
+      "contents1": "서울시 용산구 한강대로 7길 10-15",
+      "text2": "연구/개발 센터",
+      "contents2": "서울시 용산구 서빙고로 17, 센트럴파워타워 3층",
+      "text3": "사업/프로젝트 센터",
+      "contents3": "서울시 용산구 한강대로 31, KY빌딩 1층",
+      "text4": "유럽 법인",
+      "contents4": "Hoher Markt4, Stiege2, Top D1, 1010 Wien, Austria",
+      "text5": "미국 지사",
+      "contents5": "3003 N First St #221, San Jose CA95134, United States",
+      "title6": "사업 지원",
+      "text6": "이메일 : contact@virnect.com",
+      "contents6": "연락처 : +82-2-749-1004"
+    },
+    "inquiries": {
+      "sub1": "문의하기",
+      "sub2": "찾아오는 길"
+    },
     "subMenuText": {
       "learn": "학습센터",
       "Inquiries": "문의하기"
     },
     "headBannerText": {
-      "title": "Product Notice",
-      "contents": "제품 및 서비스 이용을 위한 주요 안내를 확인해 보세요"
+      "title": "무엇을 도와드릴까요?",
+      "contents": "서비스 이용에 도움이 되도록 빠르고 친절하게 해결해 드리겠습니다.",
+      "title2": "Product Notice",
+      "contents2": "제품 및 서비스 이용을 위한 주요 안내를 확인해 보세요",
+      "title3": "FAQ",
+      "contents3": "사용자들이 자주 묻는 질문과 답변을 확인해 보세요.",
+      "title4": "학습센터",
+      "contents4": "제품 사용을 위한 튜토리얼, 매뉴얼, 유용한 팁 등을 확인해 보세요."
     },
     "FAQText": {
       "title": "사용자들이 자주 묻는 질문과 답변을 확인해 보세요.",
@@ -123,7 +149,7 @@
         "contents": "내용*"
       }
     },
-    "noticeList":{
+    "noticeList": {
       "title1": "분류",
       "title2": "제목",
       "title3": "등록일"

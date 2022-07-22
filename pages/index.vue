@@ -2,7 +2,7 @@
   <div>
     <main-banner class="mainBanner" />
 
-    <!-- <banner-module /> -->
+    <banner-module />
 
     <product-component />
 
@@ -34,10 +34,10 @@ export default {
       title: "Virnect",
       meta: [
         {
-          content: "증강현실 Virnect"
-        }
-      ]
-    }
+          content: "증강현실 Virnect",
+        },
+      ],
+    };
   },
   async asyncData({ $axios }) {
     try {
