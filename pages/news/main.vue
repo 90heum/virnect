@@ -190,7 +190,7 @@ export default {
       try {
         const data = Promise.all([
           $axios.get(`admin/news/type`),
-          $axios.get(`admin/news?page=1&size=${20}`),
+          $axios.get(`admin/news?page=1&size=${21}`),
         ]);
         const dataJson = await data;
         return {

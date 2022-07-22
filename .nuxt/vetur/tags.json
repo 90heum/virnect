@@ -17,6 +17,8 @@
   "DummyAwardEn": {
     "description": "Auto imported from components/dummy/awardEn.js"
   },
+<<<<<<< HEAD
+=======
   "NewsCommonBaner": {
     "description": "Auto imported from components/news/CommonBaner.vue"
   },
@@ -47,6 +49,7 @@
   "ProductsNewModuleDataEn": {
     "description": "Auto imported from components/products/newModuleData_en.js"
   },
+>>>>>>> 4671c4813016b78857029874013df4ad8ba1620d
   "MixinsMixin": {
     "description": "Auto imported from components/mixins/mixin.js"
   },
@@ -80,6 +83,53 @@
   "MainUseCase": {
     "description": "Auto imported from components/main/useCase.vue"
   },
+<<<<<<< HEAD
+<<<<<<< HEAD
+  "Paging": {
+    "description": "Auto imported from components/paging/paging.vue"
+=======
+<<<<<<< HEAD
+  "NewsCommonBaner": {
+    "description": "Auto imported from components/news/CommonBaner.vue"
+>>>>>>> 596e34699acfe9b6a3789a69a400534611e6d88b
+  },
+=======
+  "MixinsMixin": {
+    "description": "Auto imported from components/mixins/mixin.js"
+  },
+  "NewsCommonBaner": {
+    "description": "Auto imported from components/news/CommonBaner.vue"
+  },
+  "PolicySubMenuPayment": {
+    "description": "Auto imported from components/policy/subMenuPayment.vue"
+  },
+  "PolicySubMenuPolicy": {
+    "description": "Auto imported from components/policy/subMenuPolicy.vue"
+  },
+  "PolicySubMenuTerms": {
+    "description": "Auto imported from components/policy/subMenuTerms.vue"
+  },
+  "ProductsNewBgPartData": {
+    "description": "Auto imported from components/products/NewBgPartData.js"
+  },
+  "ProductsNewEffectPartData": {
+    "description": "Auto imported from components/products/newEffectPartData.js"
+  },
+  "ProductsNewEffectPartDataEn": {
+    "description": "Auto imported from components/products/newEffectPartData_en.js"
+  },
+  "ProductsNewModuleData": {
+    "description": "Auto imported from components/products/newModuleData.js"
+  },
+  "ProductsNewModuleDataEn": {
+    "description": "Auto imported from components/products/newModuleData_en.js"
+  },
+  "Paging": {
+    "description": "Auto imported from components/paging/paging.vue"
+  },
+>>>>>>> 81863a479c527c43abc8478fde2bae3db3c48726
+=======
+>>>>>>> 4671c4813016b78857029874013df4ad8ba1620d
   "ModulesBanner": {
     "description": "Auto imported from components/modules/Banner.vue"
   },
@@ -136,6 +186,60 @@
   },
   "ModulesYoutubeFullscreen": {
     "description": "Auto imported from components/modules/YoutubeFullscreen.vue"
+  },
+<<<<<<< HEAD
+<<<<<<< HEAD
+  "NewsCommonBaner": {
+    "description": "Auto imported from components/news/CommonBaner.vue"
+=======
+<<<<<<< HEAD
+  "Paging": {
+    "description": "Auto imported from components/paging/paging.vue"
+>>>>>>> 596e34699acfe9b6a3789a69a400534611e6d88b
+  },
+  "PolicySubMenuPayment": {
+    "description": "Auto imported from components/policy/subMenuPayment.vue"
+  },
+  "PolicySubMenuPolicy": {
+    "description": "Auto imported from components/policy/subMenuPolicy.vue"
+  },
+  "PolicySubMenuTerms": {
+    "description": "Auto imported from components/policy/subMenuTerms.vue"
+  },
+  "ProductsNewBgPartData": {
+    "description": "Auto imported from components/products/NewBgPartData.js"
+  },
+  "ProductsNewEffectPartData": {
+    "description": "Auto imported from components/products/newEffectPartData.js"
+  },
+  "ProductsNewEffectPartDataEn": {
+    "description": "Auto imported from components/products/newEffectPartData_en.js"
+  },
+  "ProductsNewModuleData": {
+    "description": "Auto imported from components/products/newModuleData.js"
+  },
+  "ProductsNewModuleDataEn": {
+    "description": "Auto imported from components/products/newModuleData_en.js"
+=======
+=======
+>>>>>>> 4671c4813016b78857029874013df4ad8ba1620d
+  "SubscriptionComForm": {
+    "description": "Auto imported from components/subscription/comForm.vue"
+  },
+  "SubscriptionComModal": {
+    "description": "Auto imported from components/subscription/comModal.vue"
+  },
+  "SubscriptionForm": {
+    "description": "Auto imported from components/subscription/form.vue"
+  },
+  "SubscriptionModal": {
+    "description": "Auto imported from components/subscription/modal.vue"
+  },
+  "SubscriptionProForm": {
+    "description": "Auto imported from components/subscription/proForm.vue"
+  },
+  "SubscriptionProModal": {
+    "description": "Auto imported from components/subscription/proModal.vue"
   },
   "SubscriptionComForm": {
     "description": "Auto imported from components/subscription/comForm.vue"
@@ -254,6 +358,24 @@
   "ProductsPagesView": {
     "description": "Auto imported from components/products/pages/View.vue"
   },
+<<<<<<< HEAD
+  "SolutionsPagesAirline": {
+    "description": "Auto imported from components/solutions/pages/Airline.vue"
+  },
+  "SolutionsPagesEPC": {
+    "description": "Auto imported from components/solutions/pages/EPC.vue"
+  },
+  "SolutionsPagesEnergy": {
+    "description": "Auto imported from components/solutions/pages/Energy.vue"
+  },
+  "SolutionsPagesMotor": {
+    "description": "Auto imported from components/solutions/pages/Motor.vue"
+  },
+  "SolutionsPagesOil": {
+    "description": "Auto imported from components/solutions/pages/Oil.vue"
+  },
+=======
+>>>>>>> 4671c4813016b78857029874013df4ad8ba1620d
   "ProductsPartialsBenefitPart": {
     "description": "Auto imported from components/products/partials/BenefitPart.vue"
   },
@@ -338,6 +460,8 @@
   "ProductsPartialsSubMenuView": {
     "description": "Auto imported from components/products/partials/subMenuView.vue"
   },
+<<<<<<< HEAD
+=======
   "SolutionsPagesAirline": {
     "description": "Auto imported from components/solutions/pages/Airline.vue"
   },
@@ -353,6 +477,7 @@
   "SolutionsPagesOil": {
     "description": "Auto imported from components/solutions/pages/Oil.vue"
   },
+>>>>>>> 4671c4813016b78857029874013df4ad8ba1620d
   "SolutionsPartialsBgNormalPart": {
     "description": "Auto imported from components/solutions/partials/BgNormalPart.vue"
   },
