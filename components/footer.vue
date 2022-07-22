@@ -69,11 +69,11 @@
                 <li><nuxt-link to="/support/notice">Notice</nuxt-link></li>
                 <li><nuxt-link to="/support/faq">FAQ</nuxt-link></li>
                 <li>
-                  <nuxt-link to="/support/learning-center">학습센터</nuxt-link>
+                  <nuxt-link to="/support/learning-center">{{$t(`footer.support.tit1`)}}</nuxt-link>
                 </li>
                 <li>
                   <nuxt-link to="/support/inquiry" :target="blank"
-                    >문의하기</nuxt-link
+                    >{{$t(`footer.support.tit2`)}}</nuxt-link
                   >
                 </li>
               </ul>
