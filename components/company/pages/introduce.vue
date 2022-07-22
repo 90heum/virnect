@@ -89,19 +89,27 @@
             <p>{{ $t("aboutHistoryTitle.content") }}</p>
           </span>
           <span class="aboutHistoryCont">
-            <span class="aboutHistoryContTabWrapper"
-                  @click="() => historyToggle = !historyToggle">
-              <span class="aboutHistoryContTabTitle">{{yearsData[HistoryTab-1].years}}</span>
-            <ul :class="`aboutHistoryContTab ${historyToggle ? 'historyActive' : ''}`">
-              <li
-                :class="HistoryTab === idx + 1 ? 'active' : ''"
-                @click="handleHisrotyTab(idx + 1)"
-                v-for="(data, idx) of yearsData"
-                :key="idx"
+            <span
+              class="aboutHistoryContTabWrapper"
+              @click="() => (historyToggle = !historyToggle)"
+            >
+              <span class="aboutHistoryContTabTitle">{{
+                yearsData[HistoryTab - 1].years
+              }}</span>
+              <ul
+                :class="`aboutHistoryContTab ${
+                  historyToggle ? 'historyActive' : ''
+                }`"
               >
-                {{ data.years }}
-              </li>
-            </ul>
+                <li
+                  :class="HistoryTab === idx + 1 ? 'active' : ''"
+                  @click="handleHisrotyTab(idx + 1)"
+                  v-for="(data, idx) of yearsData"
+                  :key="idx"
+                >
+                  {{ data.years }}
+                </li>
+              </ul>
             </span>
             <ul class="aboutHistoryContCont" id="2021" v-if="HistoryTab === 1">
               <li class="HisLeft">
@@ -235,27 +243,35 @@
             <p>{{ $t("customersContent.content") }}</p>
           </span>
           <span class="customersCont">
-            <span class="customersContTitleWrapper"
-                  @click="() => customerToggle = !customerToggle">
-              <span class="customersContTitle">{{CustomerTab === 1 ? "공공" : CustomerTab === 2 ? "민간" : "교육"}}</span>
-              <ul :class="`customerContTab ${customerToggle ? 'customerActive' : ''}`">
+            <span
+              class="customersContTitleWrapper"
+              @click="() => (customerToggle = !customerToggle)"
+            >
+              <span class="customersContTitle">{{
+                CustomerTab === 1 ? "공공" : CustomerTab === 2 ? "민간" : "교육"
+              }}</span>
+              <ul
+                :class="`customerContTab ${
+                  customerToggle ? 'customerActive' : ''
+                }`"
+              >
                 <li
                   :class="CustomerTab === 1 ? 'active' : ''"
                   @click="handleCustomerTab(1)"
                 >
-                  공공
+                  {{ $t("newCompany.tab3king.title1") }}
                 </li>
                 <li
                   :class="CustomerTab === 2 ? 'active' : ''"
                   @click="handleCustomerTab(2)"
                 >
-                  민간
+                  {{ $t("newCompany.tab3king.title2") }}
                 </li>
                 <li
                   :class="CustomerTab === 3 ? 'active' : ''"
                   @click="handleCustomerTab(3)"
                 >
-                  교육
+                  {{ $t("newCompany.tab3king.title3") }}
                 </li>
               </ul>
             </span>
@@ -765,7 +781,7 @@ export default {
       },
       award: awardData,
       historyToggle: false,
-      customerToggle: false
+      customerToggle: false,
     };
   },
   created() {
@@ -801,7 +817,10 @@ export default {
 <style lang="scss" scoped>
 //@import "~assets/css/pages/products.scss";
 @import "~assets/css/modules/aboutVirnect.scss";
-.aboutHistoryContTabTitle, .customersContTitle { display: none; }
+.aboutHistoryContTabTitle,
+.customersContTitle {
+  display: none;
+}
 .company {
   display: block;
   overflow: hidden;
@@ -1383,9 +1402,10 @@ export default {
 }
 
 @media screen and(max-width: 768px) {
-  .aboutHistoryContTabTitle, .customersContTitle { 
-    display: inline-block; 
-     font-size: 16px;
+  .aboutHistoryContTabTitle,
+  .customersContTitle {
+    display: inline-block;
+    font-size: 16px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -1414,21 +1434,32 @@ export default {
     border-radius: 15px;
     background: #fff;
   }
-  .aboutVirnect .customers .customersInner .customersCont .customerContTab li.active { color: #9a9da3; }
-  .aboutVirnect .customers .customersInner .customersCont .customerContTab li.active, .aboutVirnect .customers .customersInner .customersCont .customerContTab li:hover {
+  .aboutVirnect
+    .customers
+    .customersInner
+    .customersCont
+    .customerContTab
+    li.active {
+    color: #9a9da3;
+  }
+  .aboutVirnect
+    .customers
+    .customersInner
+    .customersCont
+    .customerContTab
+    li.active,
+  .aboutVirnect
+    .customers
+    .customersInner
+    .customersCont
+    .customerContTab
+    li:hover {
     border: 0;
     color: #0a51b7;
   }
-  .aboutVirnect .customers .customersInner .customersCont .customerActive { display: block; }
-
-
-
-
-
-
-
-
-
+  .aboutVirnect .customers .customersInner .customersCont .customerActive {
+    display: block;
+  }
 
   .company
     .companyWrap
@@ -1484,7 +1515,11 @@ export default {
     background-color: #fff;
     position: relative;
   }
-  .aboutVirnect .aboutHistory .aboutHistoryInner .aboutHistoryCont .aboutHistoryContTab {
+  .aboutVirnect
+    .aboutHistory
+    .aboutHistoryInner
+    .aboutHistoryCont
+    .aboutHistoryContTab {
     position: absolute;
     display: none;
     width: 100%;
@@ -1495,16 +1530,31 @@ export default {
     border-radius: 15px;
     z-index: 10;
   }
-  .aboutVirnect .aboutHistory .aboutHistoryInner .aboutHistoryCont .historyActive { display: block; }
-  .aboutVirnect .aboutHistory .aboutHistoryInner .aboutHistoryCont .aboutHistoryContTab li.active {
+  .aboutVirnect
+    .aboutHistory
+    .aboutHistoryInner
+    .aboutHistoryCont
+    .historyActive {
+    display: block;
+  }
+  .aboutVirnect
+    .aboutHistory
+    .aboutHistoryInner
+    .aboutHistoryCont
+    .aboutHistoryContTab
+    li.active {
     border: 0;
     color: #9a9da3;
   }
-  .aboutVirnect .aboutHistory .aboutHistoryInner .aboutHistoryCont .aboutHistoryContTab li:hover {
+  .aboutVirnect
+    .aboutHistory
+    .aboutHistoryInner
+    .aboutHistoryCont
+    .aboutHistoryContTab
+    li:hover {
     border: 0;
     color: #092e6e;
   }
-  
 }
 .prevBtn,
 .nextBtn {
