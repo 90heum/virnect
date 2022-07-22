@@ -168,10 +168,10 @@
             <div style="padding-top: 52px">
               <span>
                 <button>
-                  <nuxt-link to="/products/make"> 자세히 보기 </nuxt-link>
+                  <nuxt-link to="/products/make">{{$t(`productsText.remoteinfo.text1`)}} </nuxt-link>
                 </button>
                 <button>
-                  <a href="support/demo" target="_blank"> 데모신청 </a>
+                  <a href="support/demo" target="_blank"> {{$t(`productsText.remoteinfo.text2`)}} </a>
                 </button>
               </span>
               <span>
@@ -182,7 +182,7 @@
                       alt="다운로드이미지"
                     />
                   </i>
-                  <p><u>제품 소개서 다운로드(PDF)</u></p>
+                  <p><u>{{$t(`productsText.remoteinfo.text3`)}}</u></p>
                 </a>
               </span>
             </div>
@@ -210,10 +210,10 @@
             <div class="viewview" style="padding-top: 52px">
               <span>
                 <button>
-                  <nuxt-link to="/products/view"> 자세히 보기 </nuxt-link>
+                  <nuxt-link to="/products/view">{{$t(`productsText.remoteinfo.text1`)}}</nuxt-link>
                 </button>
                 <button>
-                  <a href="support/demo" target="blank"> 데모신청 </a>
+                  <a href="support/demo" target="blank"> {{$t(`productsText.remoteinfo.text2`)}} </a>
                 </button>
               </span>
               <span>
@@ -224,7 +224,7 @@
                       alt="다운로드이미지"
                     />
                   </i>
-                  <p><u>제품 소개서 다운로드(PDF)</u></p>
+                  <p><u>{{$t(`productsText.remoteinfo.text3`)}}</u></p>
                 </a>
               </span>
             </div>
@@ -252,10 +252,10 @@
             <div style="height: 92px; padding-top: 52px">
               <span>
                 <button>
-                  <nuxt-link to="/products/twin"> 자세히 보기 </nuxt-link>
+                  <nuxt-link to="/products/twin">{{$t(`productsText.remoteinfo.text1`)}}</nuxt-link>
                 </button>
                 <button>
-                  <a href="support/demo" target="blank"> 데모신청 </a>
+                  <a href="support/demo" target="blank"> {{$t(`productsText.remoteinfo.text2`)}} </a>
                 </button>
               </span>
               <!-- <span>
@@ -292,10 +292,10 @@
             <div style="height: 92px; padding-top: 52px">
               <span>
                 <button>
-                  <nuxt-link to="/products/track"> 자세히 보기 </nuxt-link>
+                  <nuxt-link to="/products/track"> {{$t(`productsText.remoteinfo.text1`)}}</nuxt-link>
                 </button>
                 <button>
-                  <a href="support/demo" target="blank"> 데모신청 </a>
+                  <a href="support/demo" target="blank"> {{$t(`productsText.remoteinfo.text2`)}} </a>
                 </button>
               </span>
               <!-- <span>
