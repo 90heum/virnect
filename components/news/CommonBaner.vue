@@ -5,8 +5,7 @@
       <p>NEWS</p>
       <h2>News & Press</h2>
       <span>
-        VIRNECT는 고객과 함께 산업 현장의 문제를 해결하고,
-        <p>더 안전하고 효율적인 현장을 만들어 가고 있습니다.</p>
+        {{ $t("newsRoom.topText.text") }}
       </span>
     </div>
   </div>

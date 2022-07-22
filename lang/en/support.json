@@ -9,7 +9,7 @@
       "text3": "VIRNECT Experience Center",
       "contents3": "VIRNECT Experience Center 1F KY Bldg, Hangang-daero 31, Yongsan-Gu, Seoul, Republic of Korea",
       "text4": "VIRNECT Europe GmbH",
-      "contents4": "VIRNECT Europe GmbHHoher Markt 4, stiege 2, Top D1, 1010 Wien, Austria",
+      "contents4": "5th floor, Austria Campus 2 , Jakov-Lind-Straße 2/2, 1020 Wien",
       "text5": "VIRNECT U.S.",
       "contents5": "3003 N First St #221, San Jose CA95134, United States",
       "title6": "Business Support",
@@ -55,7 +55,10 @@
     },
     "supModule": {
       "title": "We always welcome various inquiries from customers.",
-      "subtitle": "We always welcome inquiries on AR and DT.",
+      "subtitle": "The AR/DT solution for industrial problems. VIRNECT can show you.",
+      "subtitle2": "We always welcome inquiries on AR and DT.",
+      "btnText1": "Free Trials",
+      "btnText2": "Contact",
       "now": "inquiry"
     },
     "contactBannerText": {
