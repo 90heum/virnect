@@ -1,5 +1,10 @@
 {
     "newCompany": {
+        "tab3king": {
+            "title1": "공공",
+            "title2": "민간",
+            "title3": "교육"
+        },
         "AwardModuleText": {
             "AwardText": "인증 및 수상"
         },

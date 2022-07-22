@@ -65,12 +65,15 @@
                   class="iframeForm"
                   v-if="isTab === 1"
                   id="iframe1"
-                  :src="$i18n.localeProperties.code === 'ko' ? 'https://pardot.virnect.com/l/929783/2022-06-16/3nplr' : 'https://pardot.virnect.com/l/929783/2022-07-15/485t2'"
+                  :src="
+                    $i18n.localeProperties.code === 'ko'
+                      ? 'https://pardot.virnect.com/l/929783/2022-06-16/3nplr'
+                      : 'https://pardot.virnect.com/l/929783/2022-07-15/485t2'
+                  "
                   frameborder="0"
                   marginwidth="0"
                   marginheight="0"
                   scrolling="no"
-
                   style="border: none; max-width: 100%; max-height: 100vh"
                   allowfullscreen
                   webkitallowfullscreen
@@ -83,7 +86,11 @@
                   class="iframeForm"
                   v-if="isTab === 2"
                   id="iframe2"
-                  :src="$i18n.localeProperties.code === 'ko' ? 'https://pardot.virnect.com/l/929783/2022-06-15/3l686' : 'https://pardot.virnect.com/l/929783/2022-07-15/485t5'"
+                  :src="
+                    $i18n.localeProperties.code === 'ko'
+                      ? 'https://pardot.virnect.com/l/929783/2022-06-15/3l686'
+                      : 'https://pardot.virnect.com/l/929783/2022-07-15/485t5'
+                  "
                   style="
                     padding-bottom: 49px;
                     position: absolute;
@@ -98,7 +105,11 @@
                   class="iframeForm"
                   v-if="isTab === 3"
                   id="iframe3"
-                  :src="$i18n.localeProperties.code === 'ko' ? 'https://pardot.virnect.com/l/929783/2022-06-14/3kzcp' : 'https://pardot.virnect.com/l/929783/2022-07-15/485t8'"
+                  :src="
+                    $i18n.localeProperties.code === 'ko'
+                      ? 'https://pardot.virnect.com/l/929783/2022-06-14/3kzcp'
+                      : 'https://pardot.virnect.com/l/929783/2022-07-15/485t8'
+                  "
                   style="
                     padding-bottom: 49px;
                     position: absolute;
@@ -137,7 +148,7 @@
               <span>
                 <h2>글로벌 버넥트</h2>
                 <img
-                  src="https://velog.velcdn.com/images/kyj0206/post/9b4e3616-1268-4aef-999e-ea07046a9174/image.png"
+                  src="~/assets/images/pages/support/imageadf.png"
                   alt="글로벌 지도 이미지"
                 />
                 <div class="mapList">
@@ -491,6 +502,4 @@ span {
     }
   }
 }
-
-
 </style>

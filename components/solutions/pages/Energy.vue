@@ -1,10 +1,5 @@
 <template>
   <section class="energy-section">
-    <!-- <heading-module
-      :category="$t('solutionText.energyText.motorTitle.category')"
-      :title="$t('solutionText.energyText.motorTitle.title')"
-      :contents="$t('solutionText.energyText.motorTitle.contents')"
-    ></heading-module> -->
     <section class="infraChallenge">
       <div class="infraChallengeWrap">
         <div class="infraTit">
@@ -56,15 +51,7 @@
         </div>
       </div>
     </section>
-    <!-- <issue-part
-      :image="issueBg"
-      :title="$t('solutionText.energyText.issueTitle')"
-      :issueArr="$t('solutionText.energyText.issueList')"
-      :bannerImg="
-        $t('global.myUrl') +
-        `/images/pages/solution/img-solution-energy-top.png`
-      "
-    ></issue-part> -->
+
     <section class="infra_SE">
       <div class="SE_Wrap">
         <span class="SE_Tit">
@@ -99,21 +86,6 @@
       :text="$t('solutionText.bgNormalText.text')"
       :boldText="$t('solutionText.bgNormalText.boldText')"
     ></bg-normal-part>
-
-    <!-- <heading-module
-      :category="$t('solutionText.energyText.infographicText.category')"
-      :title="$t('solutionText.energyText.infographicText.title')"
-      :contents="$t('solutionText.energyText.infographicText.contents')"
-    ></heading-module> -->
-
-    <!-- <infographic-part
-      :image="$t('solutionText.energyText.infographicText.image')"
-      :infographicArr="
-        $t('solutionText.energyText.infographicText.infographicList')
-      "
-      :slideList="solutionGellary"
-      :btnList="infographicBtn"
-    ></infographic-part> -->
     <section class="intra_usecase">
       <div class="usecaseWrap">
         <span class="usecaseTit">

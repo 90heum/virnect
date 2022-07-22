@@ -15,11 +15,15 @@
                   </i>
                   <p class="popTit">VIRNECT Remote</p>
                   <span v-html="$t(`productsText.remoteBanner.title`)"></span>
-                  <span class="popInfo"
-                         v-html="$t(`productsText.remoteBanner.contents`)">
+                  <span
+                    class="popInfo"
+                    v-html="$t(`productsText.remoteBanner.contents`)"
+                  >
                   </span>
                   <button>
-                    <nuxt-link to="/products/remote">{{$t(`productsText.remoteinfo.text1`)}}</nuxt-link>
+                    <nuxt-link to="/products/remote">{{
+                      $t(`productsText.remoteinfo.text1`)
+                    }}</nuxt-link>
                   </button>
                 </span>
               </div>
@@ -34,12 +38,16 @@
                     />
                   </i>
                   <p class="popTit">VIRNECT Make</p>
-                  <span v-html="$t(`productsText.makeBanner.title`)">
-                  </span>
-                  <span class="popInfo" v-html="$t(`productsText.makeBanner.contents`)">
+                  <span v-html="$t(`productsText.makeBanner.title`)"> </span>
+                  <span
+                    class="popInfo"
+                    v-html="$t(`productsText.makeBanner.contents`)"
+                  >
                   </span>
                   <button>
-                    <a href="/products/make">{{$t(`productsText.remoteinfo.text1`)}}</a>
+                    <a href="/products/make">{{
+                      $t(`productsText.remoteinfo.text1`)
+                    }}</a>
                   </button>
                 </span>
               </div>
@@ -54,12 +62,16 @@
                     />
                   </i>
                   <p class="popTit">VIRNECT View</p>
-                  <span v-html="$t(`productsText.viewBanner.title`)">
-                  </span>
-                  <span class="popInfo" v-html="$t(`productsText.viewBanner.contents`)">
+                  <span v-html="$t(`productsText.viewBanner.title`)"> </span>
+                  <span
+                    class="popInfo"
+                    v-html="$t(`productsText.viewBanner.contents`)"
+                  >
                   </span>
                   <button>
-                    <a href="/products/view">{{$t(`productsText.remoteinfo.text1`)}}</a>
+                    <a href="/products/view">{{
+                      $t(`productsText.remoteinfo.text1`)
+                    }}</a>
                   </button>
                 </span>
               </div>
@@ -71,12 +83,7 @@
         <div class="xrBannerInner">
           <div class="xrBannerWrap">
             <span class="xrBannerTit">
-              <h2>
-                XR 및
-                <p>디지털 트윈 기술을</p>
-                <p>바탕으로 미래 산업을</p>
-                <p>만들어 갑니다.</p>
-              </h2>
+              <h2 v-html="$t('OfferPartdigital.text')"></h2>
             </span>
             <span class="xrBannerCont">
               <span>
@@ -87,12 +94,16 @@
                   />
                 </i>
                 <p class="popTit">VIRNECT Twin</p>
-                <span v-html="$t(`productsText.twinBanner.title`)">
-                </span>
-                <span class="popInfo" v-html="$t(`productsText.twinBanner.contents`)">
+                <span v-html="$t(`productsText.twinBanner.title`)"> </span>
+                <span
+                  class="popInfo"
+                  v-html="$t(`productsText.twinBanner.contents`)"
+                >
                 </span>
                 <button>
-                  <a href="/products/twin">{{$t(`productsText.remoteinfo.text1`)}}</a>
+                  <a href="/products/twin">{{
+                    $t(`productsText.remoteinfo.text1`)
+                  }}</a>
                 </button>
               </span>
               <span>
@@ -104,10 +115,15 @@
                 </i>
                 <p class="popTit">VIRNECT Track</p>
                 <span v-html="$t(`productsText.trackBanner.title`)"></span>
-                <span class="popInfo" v-html="$t(`productsText.trackBanner.contents`)">
+                <span
+                  class="popInfo"
+                  v-html="$t(`productsText.trackBanner.contents`)"
+                >
                 </span>
                 <button>
-                  <a href="/products/track">{{$t(`productsText.remoteinfo.text1`)}}</a>
+                  <a href="/products/track">{{
+                    $t(`productsText.remoteinfo.text1`)
+                  }}</a>
                 </button>
               </span>
             </span>

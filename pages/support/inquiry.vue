@@ -15,14 +15,14 @@
               tap="1"
               @click="chooseMenu(true)"
             >
-              문의하기
+              {{ $t("supportText.inquiries.sub1") }}
             </li>
             <li
               :class="`${!chosenMenu ? 'contactTabActive2' : ''}`"
               tap="2"
               @click="chooseMenu(false)"
             >
-              찾아오는 길
+              {{ $t("supportText.inquiries.sub2") }}
             </li>
           </ul>
 
@@ -173,9 +173,9 @@
 
               <!-- 하단 이미지 지도 및 사업지원 -->
               <span>
-                <h2>글로벌 버넥트</h2>
+                <h2 v-html="$t('supportText.location.title')"></h2>
                 <img
-                  src="https://velog.velcdn.com/images/kyj0206/post/9b4e3616-1268-4aef-999e-ea07046a9174/image.png"
+                  src="~/assets/images/pages/support/imageadf.png"
                   alt="글로벌 지도 이미지"
                 />
                 <div class="mapList">
@@ -184,16 +184,16 @@
                       <p>KOREA</p>
                       <ul>
                         <li>
-                          <p>본사</p>
-                          <p>서울시 용산구 한강대로 7길 10-15</p>
+                          <p v-html="$t('supportText.location.text1')"></p>
+                          <p v-html="$t('supportText.location.contents1')"></p>
                         </li>
                         <li>
-                          <p>연구/개발 센터</p>
-                          <p>서울시 용산구 서빙고로 17, 센트럴파워타워 3층</p>
+                          <p v-html="$t('supportText.location.text2')"></p>
+                          <p v-html="$t('supportText.location.contents2')"></p>
                         </li>
                         <li>
-                          <p>사업/프로젝트 센터</p>
-                          <p>서울시 용산구 한강대로 31, KY빌딩 1층</p>
+                          <p v-html="$t('supportText.location.text3')"></p>
+                          <p v-html="$t('supportText.location.contents3')"></p>
                         </li>
                       </ul>
                     </li>
@@ -201,10 +201,8 @@
                       <p>AUSTRIA</p>
                       <ul>
                         <li>
-                          <p>유럽 법인</p>
-                          <p>
-                            Hoher Markt4, Stiege2, Top D1, 1010 Wien, Austria
-                          </p>
+                          <p v-html="$t('supportText.location.text4')"></p>
+                          <p v-html="$t('supportText.location.contents4')"></p>
                         </li>
                       </ul>
                     </li>
@@ -212,11 +210,8 @@
                       <p>U.S.</p>
                       <ul>
                         <li>
-                          <p>미국 지사</p>
-                          <p>
-                            3003 N First St #221, San Jose CA95134, United
-                            States
-                          </p>
+                          <p v-html="$t('supportText.location.text5')"></p>
+                          <p v-html="$t('supportText.location.contents5')"></p>
                         </li>
                       </ul>
                     </li>
@@ -225,9 +220,9 @@
 
                 <div class="mapInfo">
                   <span>
-                    <span>사업 지원</span>
-                    <p>이메일 : contact@virnect.com</p>
-                    <p>연락처 : 02-749-1004</p>
+                    <span v-html="$t('supportText.location.title6')"></span>
+                    <p v-html="$t('supportText.location.text6')"></p>
+                    <p v-html="$t('supportText.location.contents6')"></p>
                   </span>
                 </div>
               </span>
@@ -614,7 +609,12 @@ span {
 }
 
 @media screen and (max-width: 768px) {
-  span.contactContTab .contContMenu > span:last-child span:last-child div.mapList > ul {
+  span.contactContTab
+    .contContMenu
+    > span:last-child
+    span:last-child
+    div.mapList
+    > ul {
     flex-direction: column;
     gap: 0;
   }
