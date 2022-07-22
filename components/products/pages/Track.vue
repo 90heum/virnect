@@ -59,6 +59,7 @@
             <p>{{ $t("productsText.twinSubText.Title4") }}</p>
             <p>{{ $t("productsText.twinSubText.Contents4") }}</p>
           </span>
+          <span id="headingModuleBottom"/>
         </span>
       </div>
     </div>

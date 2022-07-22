@@ -84,22 +84,18 @@
     "description": "Auto imported from components/main/useCase.vue"
   },
 <<<<<<< HEAD
+=======
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f7bdb89047cd9cdddac54955cdf2f1300d241b83
   "Paging": {
     "description": "Auto imported from components/paging/paging.vue"
-=======
+  },
+  "NewsCommonBaner": {
+    "description": "Auto imported from components/news/CommonBaner.vue"
+  },
 <<<<<<< HEAD
-  "NewsCommonBaner": {
-    "description": "Auto imported from components/news/CommonBaner.vue"
->>>>>>> 596e34699acfe9b6a3789a69a400534611e6d88b
-  },
 =======
-  "MixinsMixin": {
-    "description": "Auto imported from components/mixins/mixin.js"
-  },
-  "NewsCommonBaner": {
-    "description": "Auto imported from components/news/CommonBaner.vue"
-  },
   "PolicySubMenuPayment": {
     "description": "Auto imported from components/policy/subMenuPayment.vue"
   },
@@ -130,6 +126,7 @@
 >>>>>>> 81863a479c527c43abc8478fde2bae3db3c48726
 =======
 >>>>>>> 4671c4813016b78857029874013df4ad8ba1620d
+>>>>>>> f7bdb89047cd9cdddac54955cdf2f1300d241b83
   "ModulesBanner": {
     "description": "Auto imported from components/modules/Banner.vue"
   },
@@ -188,6 +185,8 @@
     "description": "Auto imported from components/modules/YoutubeFullscreen.vue"
   },
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
   "NewsCommonBaner": {
     "description": "Auto imported from components/news/CommonBaner.vue"
@@ -197,6 +196,7 @@
     "description": "Auto imported from components/paging/paging.vue"
 >>>>>>> 596e34699acfe9b6a3789a69a400534611e6d88b
   },
+>>>>>>> f7bdb89047cd9cdddac54955cdf2f1300d241b83
   "PolicySubMenuPayment": {
     "description": "Auto imported from components/policy/subMenuPayment.vue"
   },
@@ -220,6 +220,8 @@
   },
   "ProductsNewModuleDataEn": {
     "description": "Auto imported from components/products/newModuleData_en.js"
+<<<<<<< HEAD
+=======
 =======
 =======
 >>>>>>> 4671c4813016b78857029874013df4ad8ba1620d
@@ -240,6 +242,7 @@
   },
   "SubscriptionProModal": {
     "description": "Auto imported from components/subscription/proModal.vue"
+>>>>>>> f7bdb89047cd9cdddac54955cdf2f1300d241b83
   },
   "SubscriptionComForm": {
     "description": "Auto imported from components/subscription/comForm.vue"
@@ -359,6 +362,8 @@
     "description": "Auto imported from components/products/pages/View.vue"
   },
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
   "SolutionsPagesAirline": {
     "description": "Auto imported from components/solutions/pages/Airline.vue"
   },
@@ -376,6 +381,7 @@
   },
 =======
 >>>>>>> 4671c4813016b78857029874013df4ad8ba1620d
+>>>>>>> f7bdb89047cd9cdddac54955cdf2f1300d241b83
   "ProductsPartialsBenefitPart": {
     "description": "Auto imported from components/products/partials/BenefitPart.vue"
   },
@@ -462,6 +468,9 @@
   },
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
+>>>>>>> f7bdb89047cd9cdddac54955cdf2f1300d241b83
   "SolutionsPagesAirline": {
     "description": "Auto imported from components/solutions/pages/Airline.vue"
   },
@@ -477,7 +486,10 @@
   "SolutionsPagesOil": {
     "description": "Auto imported from components/solutions/pages/Oil.vue"
   },
+<<<<<<< HEAD
+=======
 >>>>>>> 4671c4813016b78857029874013df4ad8ba1620d
+>>>>>>> f7bdb89047cd9cdddac54955cdf2f1300d241b83
   "SolutionsPartialsBgNormalPart": {
     "description": "Auto imported from components/solutions/partials/BgNormalPart.vue"
   },
