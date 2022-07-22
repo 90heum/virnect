@@ -4,6 +4,19 @@ export { default as Header } from '../../components/header.vue'
 export { default as ApiAxios } from '../../components/api/axios.js'
 export { default as DummyAward } from '../../components/dummy/award.js'
 export { default as DummyAwardEn } from '../../components/dummy/awardEn.js'
+<<<<<<< HEAD
+=======
+export { default as NewsCommonBaner } from '../../components/news/CommonBaner.vue'
+export { default as Paging } from '../../components/paging/paging.vue'
+export { default as PolicySubMenuPayment } from '../../components/policy/subMenuPayment.vue'
+export { default as PolicySubMenuPolicy } from '../../components/policy/subMenuPolicy.vue'
+export { default as PolicySubMenuTerms } from '../../components/policy/subMenuTerms.vue'
+export { default as ProductsNewBgPartData } from '../../components/products/NewBgPartData.js'
+export { default as ProductsNewEffectPartData } from '../../components/products/newEffectPartData.js'
+export { default as ProductsNewEffectPartDataEn } from '../../components/products/newEffectPartData_en.js'
+export { default as ProductsNewModuleData } from '../../components/products/newModuleData.js'
+export { default as ProductsNewModuleDataEn } from '../../components/products/newModuleData_en.js'
+>>>>>>> 4671c4813016b78857029874013df4ad8ba1620d
 export { default as MixinsMixin } from '../../components/mixins/mixin.js'
 export { default as MainBannerModule } from '../../components/main/bannerModule.vue'
 export { default as MainCompany } from '../../components/main/company.vue'
@@ -15,6 +28,7 @@ export { default as MainProducts } from '../../components/main/products.vue'
 export { default as MainSlideCarousel } from '../../components/main/slideCarousel.vue'
 export { default as MainSuppoert } from '../../components/main/suppoert.vue'
 export { default as MainUseCase } from '../../components/main/useCase.vue'
+<<<<<<< HEAD
 <<<<<<< HEAD
 export { default as Paging } from '../../components/paging/paging.vue'
 =======
@@ -34,6 +48,8 @@ export { default as ProductsNewModuleDataEn } from '../../components/products/ne
 export { default as Paging } from '../../components/paging/paging.vue'
 >>>>>>> 81863a479c527c43abc8478fde2bae3db3c48726
 >>>>>>> 596e34699acfe9b6a3789a69a400534611e6d88b
+=======
+>>>>>>> 4671c4813016b78857029874013df4ad8ba1620d
 export { default as ModulesBanner } from '../../components/modules/Banner.vue'
 export { default as ModulesBoard } from '../../components/modules/Board.vue'
 export { default as ModulesBoardView } from '../../components/modules/BoardView.vue'
@@ -54,6 +70,7 @@ export { default as ModulesSubSolutionMenu } from '../../components/modules/SubS
 export { default as ModulesSupportModule } from '../../components/modules/SupportModule.vue'
 export { default as ModulesYoutubeFullscreen } from '../../components/modules/YoutubeFullscreen.vue'
 <<<<<<< HEAD
+<<<<<<< HEAD
 export { default as NewsCommonBaner } from '../../components/news/CommonBaner.vue'
 =======
 <<<<<<< HEAD
@@ -71,6 +88,8 @@ export { default as ProductsNewModuleDataEn } from '../../components/products/ne
 =======
 =======
 >>>>>>> 596e34699acfe9b6a3789a69a400534611e6d88b
+=======
+>>>>>>> 4671c4813016b78857029874013df4ad8ba1620d
 export { default as SubscriptionComForm } from '../../components/subscription/comForm.vue'
 export { default as SubscriptionComModal } from '../../components/subscription/comModal.vue'
 export { default as SubscriptionForm } from '../../components/subscription/form.vue'
@@ -78,9 +97,12 @@ export { default as SubscriptionModal } from '../../components/subscription/moda
 export { default as SubscriptionProForm } from '../../components/subscription/proForm.vue'
 export { default as SubscriptionProModal } from '../../components/subscription/proModal.vue'
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 81863a479c527c43abc8478fde2bae3db3c48726
 >>>>>>> 596e34699acfe9b6a3789a69a400534611e6d88b
+=======
+>>>>>>> 4671c4813016b78857029874013df4ad8ba1620d
 export { default as SupportSubMenu } from '../../components/support/SubMenu.vue'
 export { default as SupportFaq } from '../../components/support/faq.vue'
 export { default as SupportFaqBanner } from '../../components/support/faqBanner.vue'
@@ -147,6 +169,14 @@ export { default as ProductsPartialsSubMenuProduct } from '../../components/prod
 export { default as ProductsPartialsSubMenuTrack } from '../../components/products/partials/subMenuTrack.vue'
 export { default as ProductsPartialsSubMenuTwin } from '../../components/products/partials/subMenuTwin.vue'
 export { default as ProductsPartialsSubMenuView } from '../../components/products/partials/subMenuView.vue'
+<<<<<<< HEAD
+=======
+export { default as SolutionsPagesAirline } from '../../components/solutions/pages/Airline.vue'
+export { default as SolutionsPagesEPC } from '../../components/solutions/pages/EPC.vue'
+export { default as SolutionsPagesEnergy } from '../../components/solutions/pages/Energy.vue'
+export { default as SolutionsPagesMotor } from '../../components/solutions/pages/Motor.vue'
+export { default as SolutionsPagesOil } from '../../components/solutions/pages/Oil.vue'
+>>>>>>> 4671c4813016b78857029874013df4ad8ba1620d
 export { default as SolutionsPartialsBgNormalPart } from '../../components/solutions/partials/BgNormalPart.vue'
 export { default as SolutionsPartialsInfographicPart } from '../../components/solutions/partials/InfographicPart.vue'
 export { default as SolutionsPartialsIssuePart } from '../../components/solutions/partials/IssuePart.vue'

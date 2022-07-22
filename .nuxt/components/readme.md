@@ -12,6 +12,19 @@ You can directly use them in pages and other components without the need to impo
 - `<ApiAxios>` | `<api-axios>` (components/api/axios.js)
 - `<DummyAward>` | `<dummy-award>` (components/dummy/award.js)
 - `<DummyAwardEn>` | `<dummy-award-en>` (components/dummy/awardEn.js)
+<<<<<<< HEAD
+=======
+- `<NewsCommonBaner>` | `<news-common-baner>` (components/news/CommonBaner.vue)
+- `<Paging>` | `<paging>` (components/paging/paging.vue)
+- `<PolicySubMenuPayment>` | `<policy-sub-menu-payment>` (components/policy/subMenuPayment.vue)
+- `<PolicySubMenuPolicy>` | `<policy-sub-menu-policy>` (components/policy/subMenuPolicy.vue)
+- `<PolicySubMenuTerms>` | `<policy-sub-menu-terms>` (components/policy/subMenuTerms.vue)
+- `<ProductsNewBgPartData>` | `<products-new-bg-part-data>` (components/products/NewBgPartData.js)
+- `<ProductsNewEffectPartData>` | `<products-new-effect-part-data>` (components/products/newEffectPartData.js)
+- `<ProductsNewEffectPartDataEn>` | `<products-new-effect-part-data-en>` (components/products/newEffectPartData_en.js)
+- `<ProductsNewModuleData>` | `<products-new-module-data>` (components/products/newModuleData.js)
+- `<ProductsNewModuleDataEn>` | `<products-new-module-data-en>` (components/products/newModuleData_en.js)
+>>>>>>> 4671c4813016b78857029874013df4ad8ba1620d
 - `<MixinsMixin>` | `<mixins-mixin>` (components/mixins/mixin.js)
 - `<MainBannerModule>` | `<main-banner-module>` (components/main/bannerModule.vue)
 - `<MainCompany>` | `<main-company>` (components/main/company.vue)
@@ -23,6 +36,7 @@ You can directly use them in pages and other components without the need to impo
 - `<MainSlideCarousel>` | `<main-slide-carousel>` (components/main/slideCarousel.vue)
 - `<MainSuppoert>` | `<main-suppoert>` (components/main/suppoert.vue)
 - `<MainUseCase>` | `<main-use-case>` (components/main/useCase.vue)
+<<<<<<< HEAD
 <<<<<<< HEAD
 - `<Paging>` | `<paging>` (components/paging/paging.vue)
 =======
@@ -42,6 +56,8 @@ You can directly use them in pages and other components without the need to impo
 - `<Paging>` | `<paging>` (components/paging/paging.vue)
 >>>>>>> 81863a479c527c43abc8478fde2bae3db3c48726
 >>>>>>> 596e34699acfe9b6a3789a69a400534611e6d88b
+=======
+>>>>>>> 4671c4813016b78857029874013df4ad8ba1620d
 - `<ModulesBanner>` | `<modules-banner>` (components/modules/Banner.vue)
 - `<ModulesBoard>` | `<modules-board>` (components/modules/Board.vue)
 - `<ModulesBoardView>` | `<modules-board-view>` (components/modules/BoardView.vue)
@@ -62,6 +78,7 @@ You can directly use them in pages and other components without the need to impo
 - `<ModulesSupportModule>` | `<modules-support-module>` (components/modules/SupportModule.vue)
 - `<ModulesYoutubeFullscreen>` | `<modules-youtube-fullscreen>` (components/modules/YoutubeFullscreen.vue)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - `<NewsCommonBaner>` | `<news-common-baner>` (components/news/CommonBaner.vue)
 =======
 <<<<<<< HEAD
@@ -79,6 +96,8 @@ You can directly use them in pages and other components without the need to impo
 =======
 =======
 >>>>>>> 596e34699acfe9b6a3789a69a400534611e6d88b
+=======
+>>>>>>> 4671c4813016b78857029874013df4ad8ba1620d
 - `<SubscriptionComForm>` | `<subscription-com-form>` (components/subscription/comForm.vue)
 - `<SubscriptionComModal>` | `<subscription-com-modal>` (components/subscription/comModal.vue)
 - `<SubscriptionForm>` | `<subscription-form>` (components/subscription/form.vue)
@@ -86,9 +105,12 @@ You can directly use them in pages and other components without the need to impo
 - `<SubscriptionProForm>` | `<subscription-pro-form>` (components/subscription/proForm.vue)
 - `<SubscriptionProModal>` | `<subscription-pro-modal>` (components/subscription/proModal.vue)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 81863a479c527c43abc8478fde2bae3db3c48726
 >>>>>>> 596e34699acfe9b6a3789a69a400534611e6d88b
+=======
+>>>>>>> 4671c4813016b78857029874013df4ad8ba1620d
 - `<SupportSubMenu>` | `<support-sub-menu>` (components/support/SubMenu.vue)
 - `<SupportFaq>` | `<support-faq>` (components/support/faq.vue)
 - `<SupportFaqBanner>` | `<support-faq-banner>` (components/support/faqBanner.vue)
@@ -155,6 +177,14 @@ You can directly use them in pages and other components without the need to impo
 - `<ProductsPartialsSubMenuTrack>` | `<products-partials-sub-menu-track>` (components/products/partials/subMenuTrack.vue)
 - `<ProductsPartialsSubMenuTwin>` | `<products-partials-sub-menu-twin>` (components/products/partials/subMenuTwin.vue)
 - `<ProductsPartialsSubMenuView>` | `<products-partials-sub-menu-view>` (components/products/partials/subMenuView.vue)
+<<<<<<< HEAD
+=======
+- `<SolutionsPagesAirline>` | `<solutions-pages-airline>` (components/solutions/pages/Airline.vue)
+- `<SolutionsPagesEPC>` | `<solutions-pages-e-p-c>` (components/solutions/pages/EPC.vue)
+- `<SolutionsPagesEnergy>` | `<solutions-pages-energy>` (components/solutions/pages/Energy.vue)
+- `<SolutionsPagesMotor>` | `<solutions-pages-motor>` (components/solutions/pages/Motor.vue)
+- `<SolutionsPagesOil>` | `<solutions-pages-oil>` (components/solutions/pages/Oil.vue)
+>>>>>>> 4671c4813016b78857029874013df4ad8ba1620d
 - `<SolutionsPartialsBgNormalPart>` | `<solutions-partials-bg-normal-part>` (components/solutions/partials/BgNormalPart.vue)
 - `<SolutionsPartialsInfographicPart>` | `<solutions-partials-infographic-part>` (components/solutions/partials/InfographicPart.vue)
 - `<SolutionsPartialsIssuePart>` | `<solutions-partials-issue-part>` (components/solutions/partials/IssuePart.vue)
