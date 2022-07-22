@@ -13,7 +13,7 @@ export const options = {
   vueI18n: {},
   vueI18nLoader: false,
   locales: [{"code":"ko","iso":"ko","name":"Korean","file":"ko/index.js"},{"code":"en","iso":"en","name":"English","file":"en/index.js"}],
-  defaultLocale: "en",
+  defaultLocale: "ko",
   defaultDirection: "ltr",
   routesNameSeparator: "___",
   defaultLocaleRouteNameSuffix: "default",

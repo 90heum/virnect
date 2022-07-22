@@ -23,25 +23,8 @@ You can directly use them in pages and other components without the need to impo
 - `<MainSlideCarousel>` | `<main-slide-carousel>` (components/main/slideCarousel.vue)
 - `<MainSuppoert>` | `<main-suppoert>` (components/main/suppoert.vue)
 - `<MainUseCase>` | `<main-use-case>` (components/main/useCase.vue)
-<<<<<<< HEAD
 - `<Paging>` | `<paging>` (components/paging/paging.vue)
-=======
-<<<<<<< HEAD
 - `<NewsCommonBaner>` | `<news-common-baner>` (components/news/CommonBaner.vue)
-=======
-- `<MixinsMixin>` | `<mixins-mixin>` (components/mixins/mixin.js)
-- `<NewsCommonBaner>` | `<news-common-baner>` (components/news/CommonBaner.vue)
-- `<PolicySubMenuPayment>` | `<policy-sub-menu-payment>` (components/policy/subMenuPayment.vue)
-- `<PolicySubMenuPolicy>` | `<policy-sub-menu-policy>` (components/policy/subMenuPolicy.vue)
-- `<PolicySubMenuTerms>` | `<policy-sub-menu-terms>` (components/policy/subMenuTerms.vue)
-- `<ProductsNewBgPartData>` | `<products-new-bg-part-data>` (components/products/NewBgPartData.js)
-- `<ProductsNewEffectPartData>` | `<products-new-effect-part-data>` (components/products/newEffectPartData.js)
-- `<ProductsNewEffectPartDataEn>` | `<products-new-effect-part-data-en>` (components/products/newEffectPartData_en.js)
-- `<ProductsNewModuleData>` | `<products-new-module-data>` (components/products/newModuleData.js)
-- `<ProductsNewModuleDataEn>` | `<products-new-module-data-en>` (components/products/newModuleData_en.js)
-- `<Paging>` | `<paging>` (components/paging/paging.vue)
->>>>>>> 81863a479c527c43abc8478fde2bae3db3c48726
->>>>>>> 596e34699acfe9b6a3789a69a400534611e6d88b
 - `<ModulesBanner>` | `<modules-banner>` (components/modules/Banner.vue)
 - `<ModulesBoard>` | `<modules-board>` (components/modules/Board.vue)
 - `<ModulesBoardView>` | `<modules-board-view>` (components/modules/BoardView.vue)
@@ -61,12 +44,6 @@ You can directly use them in pages and other components without the need to impo
 - `<ModulesSubSolutionMenu>` | `<modules-sub-solution-menu>` (components/modules/SubSolutionMenu.vue)
 - `<ModulesSupportModule>` | `<modules-support-module>` (components/modules/SupportModule.vue)
 - `<ModulesYoutubeFullscreen>` | `<modules-youtube-fullscreen>` (components/modules/YoutubeFullscreen.vue)
-<<<<<<< HEAD
-- `<NewsCommonBaner>` | `<news-common-baner>` (components/news/CommonBaner.vue)
-=======
-<<<<<<< HEAD
-- `<Paging>` | `<paging>` (components/paging/paging.vue)
->>>>>>> 596e34699acfe9b6a3789a69a400534611e6d88b
 - `<PolicySubMenuPayment>` | `<policy-sub-menu-payment>` (components/policy/subMenuPayment.vue)
 - `<PolicySubMenuPolicy>` | `<policy-sub-menu-policy>` (components/policy/subMenuPolicy.vue)
 - `<PolicySubMenuTerms>` | `<policy-sub-menu-terms>` (components/policy/subMenuTerms.vue)
@@ -75,20 +52,12 @@ You can directly use them in pages and other components without the need to impo
 - `<ProductsNewEffectPartDataEn>` | `<products-new-effect-part-data-en>` (components/products/newEffectPartData_en.js)
 - `<ProductsNewModuleData>` | `<products-new-module-data>` (components/products/newModuleData.js)
 - `<ProductsNewModuleDataEn>` | `<products-new-module-data-en>` (components/products/newModuleData_en.js)
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 596e34699acfe9b6a3789a69a400534611e6d88b
 - `<SubscriptionComForm>` | `<subscription-com-form>` (components/subscription/comForm.vue)
 - `<SubscriptionComModal>` | `<subscription-com-modal>` (components/subscription/comModal.vue)
 - `<SubscriptionForm>` | `<subscription-form>` (components/subscription/form.vue)
 - `<SubscriptionModal>` | `<subscription-modal>` (components/subscription/modal.vue)
 - `<SubscriptionProForm>` | `<subscription-pro-form>` (components/subscription/proForm.vue)
 - `<SubscriptionProModal>` | `<subscription-pro-modal>` (components/subscription/proModal.vue)
-<<<<<<< HEAD
-=======
->>>>>>> 81863a479c527c43abc8478fde2bae3db3c48726
->>>>>>> 596e34699acfe9b6a3789a69a400534611e6d88b
 - `<SupportSubMenu>` | `<support-sub-menu>` (components/support/SubMenu.vue)
 - `<SupportFaq>` | `<support-faq>` (components/support/faq.vue)
 - `<SupportFaqBanner>` | `<support-faq-banner>` (components/support/faqBanner.vue)
@@ -122,11 +91,6 @@ You can directly use them in pages and other components without the need to impo
 - `<ProductsPagesTrack>` | `<products-pages-track>` (components/products/pages/Track.vue)
 - `<ProductsPagesTwin>` | `<products-pages-twin>` (components/products/pages/Twin.vue)
 - `<ProductsPagesView>` | `<products-pages-view>` (components/products/pages/View.vue)
-- `<SolutionsPagesAirline>` | `<solutions-pages-airline>` (components/solutions/pages/Airline.vue)
-- `<SolutionsPagesEPC>` | `<solutions-pages-e-p-c>` (components/solutions/pages/EPC.vue)
-- `<SolutionsPagesEnergy>` | `<solutions-pages-energy>` (components/solutions/pages/Energy.vue)
-- `<SolutionsPagesMotor>` | `<solutions-pages-motor>` (components/solutions/pages/Motor.vue)
-- `<SolutionsPagesOil>` | `<solutions-pages-oil>` (components/solutions/pages/Oil.vue)
 - `<ProductsPartialsBenefitPart>` | `<products-partials-benefit-part>` (components/products/partials/BenefitPart.vue)
 - `<ProductsPartialsBgSlidePart>` | `<products-partials-bg-slide-part>` (components/products/partials/BgSlidePart.vue)
 - `<ProductsPartialsEffectPart>` | `<products-partials-effect-part>` (components/products/partials/EffectPart.vue)
@@ -155,6 +119,11 @@ You can directly use them in pages and other components without the need to impo
 - `<ProductsPartialsSubMenuTrack>` | `<products-partials-sub-menu-track>` (components/products/partials/subMenuTrack.vue)
 - `<ProductsPartialsSubMenuTwin>` | `<products-partials-sub-menu-twin>` (components/products/partials/subMenuTwin.vue)
 - `<ProductsPartialsSubMenuView>` | `<products-partials-sub-menu-view>` (components/products/partials/subMenuView.vue)
+- `<SolutionsPagesAirline>` | `<solutions-pages-airline>` (components/solutions/pages/Airline.vue)
+- `<SolutionsPagesEPC>` | `<solutions-pages-e-p-c>` (components/solutions/pages/EPC.vue)
+- `<SolutionsPagesEnergy>` | `<solutions-pages-energy>` (components/solutions/pages/Energy.vue)
+- `<SolutionsPagesMotor>` | `<solutions-pages-motor>` (components/solutions/pages/Motor.vue)
+- `<SolutionsPagesOil>` | `<solutions-pages-oil>` (components/solutions/pages/Oil.vue)
 - `<SolutionsPartialsBgNormalPart>` | `<solutions-partials-bg-normal-part>` (components/solutions/partials/BgNormalPart.vue)
 - `<SolutionsPartialsInfographicPart>` | `<solutions-partials-infographic-part>` (components/solutions/partials/InfographicPart.vue)
 - `<SolutionsPartialsIssuePart>` | `<solutions-partials-issue-part>` (components/solutions/partials/IssuePart.vue)
