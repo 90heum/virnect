@@ -60,7 +60,7 @@ export default {
         seo: true,
         //prefix_except_default <= 기존 no_prefix로바꾸고 호출문  setLocale(locale) 이거구현하니까 원하는모습나옴 대박
         strategy: "no_prefix",
-        defaultLocale: "en",
+        defaultLocale: "ko",
         lazy: true,
         langDir: "lang/",
 
