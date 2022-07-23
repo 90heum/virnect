@@ -260,7 +260,7 @@ import examplePart from "../partials/ExamplePart";
 import bgSlidePart from "../partials/BgSlidePart";
 import NewModule from "~/components/products/partials/newModule.vue";
 import NewBgSlide from "~/components/products/partials/NewBgSlide.vue";
-import NewEffectPart from "~/components/products/partials/NewEffectPart.vue";
+import NewEffectPart from "~/components/products/partials/NewEffectPartMake.vue";
 import headingModule from "../../modules/Heading";
 import { filedData, moduleData } from "~/components/products/newModuleData.js";
 import { title, effectList } from "~/components/products/newEffectPartData.js";

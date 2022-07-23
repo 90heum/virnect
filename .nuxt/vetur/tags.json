@@ -53,18 +53,6 @@
   "NewsCommonBaner": {
     "description": "Auto imported from components/news/CommonBaner.vue"
   },
-  "Paging": {
-    "description": "Auto imported from components/paging/paging.vue"
-  },
-  "PolicySubMenuPayment": {
-    "description": "Auto imported from components/policy/subMenuPayment.vue"
-  },
-  "PolicySubMenuPolicy": {
-    "description": "Auto imported from components/policy/subMenuPolicy.vue"
-  },
-  "PolicySubMenuTerms": {
-    "description": "Auto imported from components/policy/subMenuTerms.vue"
-  },
   "ModulesBanner": {
     "description": "Auto imported from components/modules/Banner.vue"
   },
@@ -121,6 +109,18 @@
   },
   "ModulesYoutubeFullscreen": {
     "description": "Auto imported from components/modules/YoutubeFullscreen.vue"
+  },
+  "Paging": {
+    "description": "Auto imported from components/paging/paging.vue"
+  },
+  "PolicySubMenuPayment": {
+    "description": "Auto imported from components/policy/subMenuPayment.vue"
+  },
+  "PolicySubMenuPolicy": {
+    "description": "Auto imported from components/policy/subMenuPolicy.vue"
+  },
+  "PolicySubMenuTerms": {
+    "description": "Auto imported from components/policy/subMenuTerms.vue"
   },
   "ProductsNewBgPartData": {
     "description": "Auto imported from components/products/NewBgPartData.js"
@@ -280,6 +280,21 @@
   },
   "ProductsPartialsNewEffectPart": {
     "description": "Auto imported from components/products/partials/NewEffectPart.vue"
+  },
+  "ProductsPartialsNewEffectPartMake": {
+    "description": "Auto imported from components/products/partials/NewEffectPartMake.vue"
+  },
+  "ProductsPartialsNewEffectRemote": {
+    "description": "Auto imported from components/products/partials/NewEffectRemote.vue"
+  },
+  "ProductsPartialsNewEffectTrack": {
+    "description": "Auto imported from components/products/partials/NewEffectTrack.vue"
+  },
+  "ProductsPartialsNewEffectTwin": {
+    "description": "Auto imported from components/products/partials/NewEffectTwin.vue"
+  },
+  "ProductsPartialsNewEffectView": {
+    "description": "Auto imported from components/products/partials/NewEffectView.vue"
   },
   "ProductsMainBanner": {
     "description": "Auto imported from components/products/partials/ProductsMainBanner.vue"
