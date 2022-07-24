@@ -213,6 +213,8 @@ export default {
 .tabCont {
   > div {
     width: 100%;
+    height: 100%;
+    overflow: hidden;
   }
   display: flex;
   gap: 20px;

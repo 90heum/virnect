@@ -2,7 +2,7 @@
   <div id="menu_re" class="SubMenuUse">
     <span class="SubMenuMobileTitle" @click="handleToggle()">
       <span>엔터테인먼트</span>
-      <i><img src="require(~/assets/images/pages/down.png)" /></i>
+      <i><img :src="require(`~/assets/images/pages/down.png`)" /></i>
     </span>
     <ul
       :class="`SubMenuNav ${toggle ? 'mobileActive' : ''}`"
