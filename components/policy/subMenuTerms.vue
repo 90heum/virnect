@@ -2,13 +2,13 @@
   <div class="SubMenuUse">
     <ul class="SubMenuNav">
       <li class="SubUseNavActive subMenu">
-        <nuxt-link to="/policy/Terms"> 서비스 이용약관 </nuxt-link>
+        <nuxt-link to="/terms/Terms"> 서비스 이용약관 </nuxt-link>
       </li>
-      <li class="subMenu">
+      <li class="SubUseNavActive subMenu">
         <nuxt-link to="/policy/Policy"> 개인정보처리방침 </nuxt-link>
       </li>
       <li class="subMenu">
-        <nuxt-link to="/policy/Payment"> 유료상품 이용약관 </nuxt-link>
+        <nuxt-link to="/payment/Payment"> 유료상품 이용약관 </nuxt-link>
       </li>
     </ul>
   </div>

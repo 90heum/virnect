@@ -69,12 +69,14 @@
                 <li><nuxt-link to="/support/notice">Notice</nuxt-link></li>
                 <li><nuxt-link to="/support/faq">FAQ</nuxt-link></li>
                 <li>
-                  <nuxt-link to="/support/learning-center">{{$t(`footer.support.tit1`)}}</nuxt-link>
+                  <nuxt-link to="/support/learning-center">{{
+                    $t(`footer.support.tit1`)
+                  }}</nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link to="/support/inquiry" :target="blank"
-                    >{{$t(`footer.support.tit2`)}}</nuxt-link
-                  >
+                  <nuxt-link to="/support/inquiry" :target="blank">{{
+                    $t(`footer.support.tit2`)
+                  }}</nuxt-link>
                 </li>
               </ul>
             </li>
@@ -398,12 +400,12 @@
                 }}</nuxt-link></u
               >
               <u
-                ><nuxt-link to="/terms/persnal">{{
+                ><nuxt-link to="/policy/persnal">{{
                   $t(`footer.service.title2`)
                 }}</nuxt-link></u
               >
               <u
-                ><nuxt-link to="/terms/charged">{{
+                ><nuxt-link to="/payment/charged">{{
                   $t(`footer.service.title3`)
                 }}</nuxt-link></u
               >

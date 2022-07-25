@@ -49,11 +49,25 @@
     "_name": "_4925b379"
   },
   {
+    "name": "payment-charged",
+    "path": "/payment/charged",
+    "component": "/Users/majeongheum/virnect/pages/payment/charged.vue",
+    "chunkName": "pages/payment/charged",
+    "_name": "_6f888f2b"
+  },
+  {
     "name": "policy-Payment",
     "path": "/policy/Payment",
     "component": "/Users/majeongheum/virnect/pages/policy/Payment.vue",
     "chunkName": "pages/policy/Payment",
     "_name": "_de437096"
+  },
+  {
+    "name": "policy-persnal",
+    "path": "/policy/persnal",
+    "component": "/Users/majeongheum/virnect/pages/policy/persnal.vue",
+    "chunkName": "pages/policy/persnal",
+    "_name": "_257ac1b2"
   },
   {
     "name": "policy-Policy",
@@ -180,20 +194,6 @@
     "component": "/Users/majeongheum/virnect/pages/support/supportSubMain.vue",
     "chunkName": "pages/support/supportSubMain",
     "_name": "_9592d694"
-  },
-  {
-    "name": "terms-charged",
-    "path": "/terms/charged",
-    "component": "/Users/majeongheum/virnect/pages/terms/charged.vue",
-    "chunkName": "pages/terms/charged",
-    "_name": "_7618382c"
-  },
-  {
-    "name": "terms-persnal",
-    "path": "/terms/persnal",
-    "component": "/Users/majeongheum/virnect/pages/terms/persnal.vue",
-    "chunkName": "pages/terms/persnal",
-    "_name": "_55a30642"
   },
   {
     "name": "terms-service",

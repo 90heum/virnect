@@ -212,5 +212,9 @@
   "service": {
     "text1": "Service Login",
     "text2": "Download Center 2.0"
+  },
+  "supportAvenger": {
+    "text1": "Learning Center",
+    "text2": "Inquiry"
   }
 }

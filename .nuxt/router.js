@@ -11,7 +11,9 @@ const _48dad132 = () => interopDefault(import('../pages/company/ir-detail.vue' /
 const _789d6c2c = () => interopDefault(import('../pages/company/talent.vue' /* webpackChunkName: "pages/company/talent" */))
 const _7c007011 = () => interopDefault(import('../pages/news/detail.vue' /* webpackChunkName: "pages/news/detail" */))
 const _4925b379 = () => interopDefault(import('../pages/news/main.vue' /* webpackChunkName: "pages/news/main" */))
+const _6f888f2b = () => interopDefault(import('../pages/payment/charged.vue' /* webpackChunkName: "pages/payment/charged" */))
 const _de437096 = () => interopDefault(import('../pages/policy/Payment.vue' /* webpackChunkName: "pages/policy/Payment" */))
+const _257ac1b2 = () => interopDefault(import('../pages/policy/persnal.vue' /* webpackChunkName: "pages/policy/persnal" */))
 const _bf480c5a = () => interopDefault(import('../pages/policy/Policy.vue' /* webpackChunkName: "pages/policy/Policy" */))
 const _7be75076 = () => interopDefault(import('../pages/policy/Terms.vue' /* webpackChunkName: "pages/policy/Terms" */))
 const _491047bd = () => interopDefault(import('../pages/products/make.vue' /* webpackChunkName: "pages/products/make" */))
@@ -30,8 +32,6 @@ const _64128576 = () => interopDefault(import('../pages/support/learning-video-d
 const _3777a178 = () => interopDefault(import('../pages/support/notice.vue' /* webpackChunkName: "pages/support/notice" */))
 const _4a96d02a = () => interopDefault(import('../pages/support/notice-detail.vue' /* webpackChunkName: "pages/support/notice-detail" */))
 const _9592d694 = () => interopDefault(import('../pages/support/supportSubMain.vue' /* webpackChunkName: "pages/support/supportSubMain" */))
-const _7618382c = () => interopDefault(import('../pages/terms/charged.vue' /* webpackChunkName: "pages/terms/charged" */))
-const _55a30642 = () => interopDefault(import('../pages/terms/persnal.vue' /* webpackChunkName: "pages/terms/persnal" */))
 const _73efff9e = () => interopDefault(import('../pages/terms/service.vue' /* webpackChunkName: "pages/terms/service" */))
 const _65235dee = () => interopDefault(import('../pages/value/entertainment.vue' /* webpackChunkName: "pages/value/entertainment" */))
 const _24e04b7a = () => interopDefault(import('../pages/value/etc.vue' /* webpackChunkName: "pages/value/etc" */))
@@ -81,9 +81,17 @@ export const routerOptions = {
     component: _4925b379,
     name: "news-main"
   }, {
+    path: "/payment/charged",
+    component: _6f888f2b,
+    name: "payment-charged"
+  }, {
     path: "/policy/Payment",
     component: _de437096,
     name: "policy-Payment"
+  }, {
+    path: "/policy/persnal",
+    component: _257ac1b2,
+    name: "policy-persnal"
   }, {
     path: "/policy/Policy",
     component: _bf480c5a,
@@ -156,14 +164,6 @@ export const routerOptions = {
     path: "/support/supportSubMain",
     component: _9592d694,
     name: "support-supportSubMain"
-  }, {
-    path: "/terms/charged",
-    component: _7618382c,
-    name: "terms-charged"
-  }, {
-    path: "/terms/persnal",
-    component: _55a30642,
-    name: "terms-persnal"
   }, {
     path: "/terms/service",
     component: _73efff9e,
