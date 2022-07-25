@@ -1,5 +1,8 @@
 {
     "newsRoom": {
+        "topText": {
+            "text": "VIRNECT finds solutions for industrial problems together with our clients, aiming for a safer and more efficient worksite."
+        },
         "gnbHeaderText": {
             "text": "We bring you the latest <p>news of the leaping Bernect.</p>"
         },
