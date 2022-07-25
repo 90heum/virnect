@@ -53,6 +53,9 @@
   "NewsCommonBaner": {
     "description": "Auto imported from components/news/CommonBaner.vue"
   },
+  "Paging": {
+    "description": "Auto imported from components/paging/paging.vue"
+  },
   "ModulesBanner": {
     "description": "Auto imported from components/modules/Banner.vue"
   },
@@ -109,9 +112,6 @@
   },
   "ModulesYoutubeFullscreen": {
     "description": "Auto imported from components/modules/YoutubeFullscreen.vue"
-  },
-  "Paging": {
-    "description": "Auto imported from components/paging/paging.vue"
   },
   "PolicySubMenuPayment": {
     "description": "Auto imported from components/policy/subMenuPayment.vue"
