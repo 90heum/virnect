@@ -2,7 +2,7 @@
   <div class="SubMenuUse">
     <ul class="SubMenuNav">
       <li>
-        <nuxt-link to="/company/about">About VIRNECT</nuxt-link>
+        <nuxt-link to="/company/about">About VIRNECT </nuxt-link>
       </li>
       <li v-if="$i18n.localeProperties.code === 'ko'">
         <nuxt-link to="/company/talent">인재채용</nuxt-link>
