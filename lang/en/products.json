@@ -1,5 +1,11 @@
 {
 	"productsText": {
+		"submenu": {
+			"title1": "Overview",
+			"title2": "Introduce",
+			"title3": "Features",
+			"title4": "Expect"
+		},
 		"data": {
 			"battery": "Battery Consumption",
 			"temperature": "Device external temperature",

@@ -113,7 +113,7 @@ export default {
       this.responseData = {};
       if (!this.isDetail) return;
       const { data } = await this.$axios.$get(`admin/support/faq/${e}`);
-      this.responseData = data;
+      this.responseData = data ? null : !this.isDetail
     },
   },
 };
