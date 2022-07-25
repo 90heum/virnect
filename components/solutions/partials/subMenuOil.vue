@@ -1,7 +1,7 @@
 <template>
   <div id="menu_re" class="SubMenuUse">
     <span class="SubMenuMobileTitle" @click="handleToggle()">
-      <span>제조/건설</span>
+      <span>{{ $t("gnb[0].array[1].text") }}</span>
       <i><img src="~assets/images/common/icon-down@2x.png" /></i>
     </span>
     <ul
