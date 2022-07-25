@@ -3,14 +3,13 @@
     <div class="moduleTop">
       <span class="moduleTopTit">
         <p>Products</p>
-        <h2>{{$t(`productsText.moduleTop.title`)}}</h2>
+        <h2>{{ $t(`productsText.moduleTop.title`) }}</h2>
         <span>
-          <p v-html="$t(`productsText.moduleTop.contents`)">
-          </p>
+          <p v-html="$t(`productsText.moduleTop.contents`)"></p>
         </span>
         <ul ul class="dataModule">
           <li>
-            <span>{{$t(`productsText.moduleTop.text1`)}}</span>
+            <span>{{ $t(`productsText.moduleTop.text1`) }}</span>
             <span>
               <p>20%</p>
               <p>
@@ -22,9 +21,9 @@
             </span>
           </li>
           <li>
-            <span>{{$t(`productsText.moduleTop.text2`)}}</span>
+            <span>{{ $t(`productsText.moduleTop.text2`) }}</span>
             <span>
-              <p>4.7%</p>
+              <p>5%</p>
               <p>
                 <img
                   src="https://velog.velcdn.com/images/kyj0206/post/a0ed0456-10c5-49a1-8d99-7e71777be5b4/image.png"
@@ -34,7 +33,7 @@
             </span>
           </li>
           <li>
-            <span>{{$t(`productsText.moduleTop.text3`)}}</span>
+            <span>{{ $t(`productsText.moduleTop.text3`) }}</span>
             <span>
               <p>10%</p>
               <p>
@@ -46,7 +45,7 @@
             </span>
           </li>
           <li>
-            <span>{{$t(`productsText.moduleTop.text4`)}}</span>
+            <span>{{ $t(`productsText.moduleTop.text4`) }}</span>
             <span>
               <p>10%</p>
               <p>
@@ -126,10 +125,14 @@
             <div style="padding-top: 52px">
               <span>
                 <button>
-                  <nuxt-link to="/products/remote">{{$t(`productsText.remoteinfo.text1`)}}</nuxt-link>
+                  <nuxt-link to="/products/remote">{{
+                    $t(`productsText.remoteinfo.text1`)
+                  }}</nuxt-link>
                 </button>
                 <button>
-                  <a href="support/demo" target="blank">{{$t(`productsText.remoteinfo.text2`)}}</a>
+                  <a href="support/demo" target="blank">{{
+                    $t(`productsText.remoteinfo.text2`)
+                  }}</a>
                 </button>
               </span>
               <span>
@@ -140,7 +143,9 @@
                       alt="다운로드이미지"
                     />
                   </i>
-                  <p><u>{{$t(`productsText.remoteinfo.text3`)}}</u></p>
+                  <p>
+                    <u>{{ $t(`productsText.remoteinfo.text3`) }}</u>
+                  </p>
                 </a>
               </span>
             </div>
@@ -168,10 +173,14 @@
             <div style="padding-top: 52px">
               <span>
                 <button>
-                  <nuxt-link to="/products/make">{{$t(`productsText.remoteinfo.text1`)}} </nuxt-link>
+                  <nuxt-link to="/products/make"
+                    >{{ $t(`productsText.remoteinfo.text1`) }}
+                  </nuxt-link>
                 </button>
                 <button>
-                  <a href="support/demo" target="_blank"> {{$t(`productsText.remoteinfo.text2`)}} </a>
+                  <a href="support/demo" target="_blank">
+                    {{ $t(`productsText.remoteinfo.text2`) }}
+                  </a>
                 </button>
               </span>
               <span>
@@ -182,7 +191,9 @@
                       alt="다운로드이미지"
                     />
                   </i>
-                  <p><u>{{$t(`productsText.remoteinfo.text3`)}}</u></p>
+                  <p>
+                    <u>{{ $t(`productsText.remoteinfo.text3`) }}</u>
+                  </p>
                 </a>
               </span>
             </div>
@@ -210,10 +221,14 @@
             <div class="viewview" style="padding-top: 52px">
               <span>
                 <button>
-                  <nuxt-link to="/products/view">{{$t(`productsText.remoteinfo.text1`)}}</nuxt-link>
+                  <nuxt-link to="/products/view">{{
+                    $t(`productsText.remoteinfo.text1`)
+                  }}</nuxt-link>
                 </button>
                 <button>
-                  <a href="support/demo" target="blank"> {{$t(`productsText.remoteinfo.text2`)}} </a>
+                  <a href="support/demo" target="blank">
+                    {{ $t(`productsText.remoteinfo.text2`) }}
+                  </a>
                 </button>
               </span>
               <span>
@@ -224,7 +239,9 @@
                       alt="다운로드이미지"
                     />
                   </i>
-                  <p><u>{{$t(`productsText.remoteinfo.text3`)}}</u></p>
+                  <p>
+                    <u>{{ $t(`productsText.remoteinfo.text3`) }}</u>
+                  </p>
                 </a>
               </span>
             </div>
@@ -252,10 +269,14 @@
             <div style="height: 92px; padding-top: 52px">
               <span>
                 <button>
-                  <nuxt-link to="/products/twin">{{$t(`productsText.remoteinfo.text1`)}}</nuxt-link>
+                  <nuxt-link to="/products/twin">{{
+                    $t(`productsText.remoteinfo.text1`)
+                  }}</nuxt-link>
                 </button>
                 <button>
-                  <a href="support/demo" target="blank"> {{$t(`productsText.remoteinfo.text2`)}} </a>
+                  <a href="support/demo" target="blank">
+                    {{ $t(`productsText.remoteinfo.text2`) }}
+                  </a>
                 </button>
               </span>
               <!-- <span>
@@ -292,10 +313,14 @@
             <div style="height: 92px; padding-top: 52px">
               <span>
                 <button>
-                  <nuxt-link to="/products/track"> {{$t(`productsText.remoteinfo.text1`)}}</nuxt-link>
+                  <nuxt-link to="/products/track">
+                    {{ $t(`productsText.remoteinfo.text1`) }}</nuxt-link
+                  >
                 </button>
                 <button>
-                  <a href="support/demo" target="blank"> {{$t(`productsText.remoteinfo.text2`)}} </a>
+                  <a href="support/demo" target="blank">
+                    {{ $t(`productsText.remoteinfo.text2`) }}
+                  </a>
                 </button>
               </span>
               <!-- <span>
@@ -382,7 +407,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.moduleBottom a {cursor: pointer;}
+.moduleBottom a {
+  cursor: pointer;
+}
 .productsModule {
   ul,
   li,
