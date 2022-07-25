@@ -87,12 +87,18 @@
     <div class="bannerMoule" v-if="$i18n.localeProperties.code === 'ko'">
       <span class="banner1024">
         <a href="/news/detail?id=145&type">
-          <img src="~/assets/images/common/contestHome1.png" alt="배너모듈" />
+          <img
+            src="~/assets/images/common/_____XR-0722bannerHompage.png"
+            alt="배너모듈"
+          />
         </a>
       </span>
       <span class="banner768">
         <a href="/news/detail?id=145&type">
-          <img src="~/assets/images/common/homhomhom.png" alt="배너모듈" />
+          <img
+            src="~/assets/images/common/_____XR0722mobile.png"
+            alt="배너모듈"
+          />
         </a>
       </span>
     </div>
