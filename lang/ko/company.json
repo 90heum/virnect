@@ -201,6 +201,10 @@
 			"partTime": "계약직",
 			"internship": "인턴",
 			"person": "명"
+		},
+		"banner":{
+			"text1": "VIRNECT 회사소개",
+			"text2": "회사소개서 다운로드(PDF)"
 		}
 	}
 }

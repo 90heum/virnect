@@ -190,6 +190,10 @@
 			"partTime": "Contract employees",
 			"internship": "Interns",
 			"person": "persons"
+		},
+		"banner":{
+			"text1": "VIRNECT Company Overivew",
+			"text2": "Download Company_Profile"
 		}
 	}
 }

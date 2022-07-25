@@ -2,7 +2,11 @@
   <div id="menu_re" class="SubMenuUse">
     <span class="SubMenuMobileTitle" @click="handleToggle()">
       <span>제조/건설</span>
+<<<<<<< HEAD
+      <i><img :src="require(`~/assets/images/pages/down.png`)" /></i>
+=======
       <i><img src="~assets/images/common/icon-down@2x.png" /></i>
+>>>>>>> d0fa589fe5c83ed7eee0b2640adc4484c14515ac
     </span>
     <ul
       :class="`SubMenuNav ${toggle ? 'mobileActive' : ''}`"

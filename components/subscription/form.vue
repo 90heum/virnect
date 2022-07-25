@@ -92,7 +92,7 @@ body{
     .gudockPopup{
         /* min-width: 600px; */
         width: 100vw;
-        top: 55%;
+        top: 0;
         left: 0;
         transform: translate(0);
     }

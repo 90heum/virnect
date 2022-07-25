@@ -125,7 +125,7 @@
                 href="#headingModuleTop"
                 id="a01"
                 @click="() => (navActive = 1)"
-                >제품개요</a
+                >{{$t(`productsText.submenu.title1`)}}</a
               >
             </li>
             <li>
@@ -134,7 +134,7 @@
                 href="#featuresWrapId"
                 id="a02"
                 @click="() => (navActive = 2)"
-                >제품특징</a
+                >{{$t(`productsText.submenu.title2`)}}</a
               >
             </li>
             <li>
@@ -143,7 +143,7 @@
                 href="#headingModuleBottom"
                 id="a03"
                 @click="() => (navActive = 3)"
-                >기능소개</a
+                >{{$t(`productsText.submenu.title3`)}}</a
               >
             </li>
             <li>
@@ -152,7 +152,7 @@
                 href="#functionPart"
                 id="a04"
                 @click="() => (navActive = 4)"
-                >도입효과</a
+                >{{$t(`productsText.submenu.title4`)}}</a
               >
             </li>
           </ul>
