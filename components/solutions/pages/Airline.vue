@@ -540,5 +540,6 @@ export default {
 @import "~assets/css/pages/products.scss";
 @import "~/assets/css/pages/enterChallenges.scss";
 @import "~/assets/css/pages/enterS&E.scss";
+// @import "~/assets/css/pages/infraS&E.scss";
 @import "~/assets/css/pages/enter_Usecase.scss";
 </style>

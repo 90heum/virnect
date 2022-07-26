@@ -99,26 +99,13 @@
                   <p @click="showMenu(1)">
                     {{ $t("ValueText.ValueUseCaseText.title1") }}
                   </p>
-                  <ul class="listInner" v-if="menu === 1">
-                    <li>
-                      <p
-                        v-html="$t('ValueText.ValueUseCaseText.contents1-1')"
-                      ></p>
-
-                      <i>
-                        <img
-                          src="~/assets/images/pages/value/valueB-1@2x.png"
-                          alt="협업솔루션"
-                        />
-                      </i>
-                    </li>
-                  </ul>
                 </span>
                 <i>
-                  <img
+                                    <img
                     src="~/assets/images/pages/value/img-value-1@2x.png"
                     alt="협업솔루션"
                   />
+
                   <img
                     class="normal"
                     src="https://velog.velcdn.com/images/kyj0206/post/6add4766-ac35-47a3-affa-aba62b87881e/image.png"
@@ -132,6 +119,20 @@
                   />
                 </i>
               </div>
+              <ul class="listInner" v-if="menu === 1">
+                <li>
+                      <p
+                        v-html="$t('ValueText.ValueUseCaseText.contents1-1')"
+                      ></p>
+
+                  <i>
+                        <img
+                          src="~/assets/images/pages/value/valueB-1@2x.png"
+                          alt="협업솔루션"
+                        />
+                  </i>
+                </li>
+              </ul>
             </li>
             <li>
               <div class="listWrap">
@@ -139,31 +140,13 @@
                   <p @click="showMenu(2)">
                     {{ $t("ValueText.ValueUseCaseText.title2") }}
                   </p>
-                  <ul class="listInner" v-if="menu === 2">
-                    <li>
-                      <p
-                        v-html="$t('ValueText.ValueUseCaseText.contents2-1')"
-                      ></p>
-                      <p
-                        v-html="$t('ValueText.ValueUseCaseText.contents2-2')"
-                      ></p>
-                      <p
-                        v-html="$t('ValueText.ValueUseCaseText.contents2-3')"
-                      ></p>
-                      <i>
-                        <img
-                          src="~/assets/images/pages/value/valueB-2@2x.png"
-                          alt="협업솔루션"
-                        />
-                      </i>
-                    </li>
-                  </ul>
                 </span>
                 <i>
-                  <img
+                                    <img
                     src="~/assets/images/pages/value/img-value-2@2x.png"
                     alt="시스템개발"
                   />
+
                   <img
                     class="normal"
                     src="https://velog.velcdn.com/images/kyj0206/post/6add4766-ac35-47a3-affa-aba62b87881e/image.png"
@@ -177,6 +160,25 @@
                   />
                 </i>
               </div>
+              <ul class="listInner" v-if="menu === 2">
+                <li>
+                      <p
+                        v-html="$t('ValueText.ValueUseCaseText.contents2-1')"
+                      ></p>
+                      <p
+                        v-html="$t('ValueText.ValueUseCaseText.contents2-2')"
+                      ></p>
+                      <p
+                        v-html="$t('ValueText.ValueUseCaseText.contents2-3')"
+                      ></p>
+                  <i>
+                        <img
+                          src="~/assets/images/pages/value/valueB-2@2x.png"
+                          alt="협업솔루션"
+                        />
+                  </i>
+                </li>
+              </ul>
             </li>
             <li>
               <div class="listWrap">
@@ -184,25 +186,9 @@
                   <p @click="showMenu(3)">
                     {{ $t("ValueText.ValueUseCaseText.title3") }}
                   </p>
-                  <ul class="listInner" v-if="menu === 3">
-                    <li>
-                      <p
-                        v-html="$t('ValueText.ValueUseCaseText.contents3-1')"
-                      ></p>
-                      <p
-                        v-html="$t('ValueText.ValueUseCaseText.contents3-2')"
-                      ></p>
-                      <i>
-                        <img
-                          src="~/assets/images/pages/value/valueB-3@2x.png"
-                          alt="협업솔루션"
-                        />
-                      </i>
-                    </li>
-                  </ul>
                 </span>
                 <i>
-                  <img
+                   <img
                     src="~/assets/images/pages/value/img-value-3@2x.png"
                     alt="검증솔루션"
                   />
@@ -219,6 +205,23 @@
                   />
                 </i>
               </div>
+              <ul class="listInner" v-if="menu === 3">
+                <li>
+                      <p
+                        v-html="$t('ValueText.ValueUseCaseText.contents3-1')"
+                      ></p>
+                      <p
+                        v-html="$t('ValueText.ValueUseCaseText.contents3-2')"
+                      ></p>
+                  <i>
+                        <img
+                          src="~/assets/images/pages/value/valueB-3@2x.png"
+                          alt="협업솔루션"
+                        />
+
+                  </i>
+                </li>
+              </ul>
             </li>
             <li>
               <div class="listWrap">
@@ -226,25 +229,6 @@
                   <p @click="showMenu(4)">
                     {{ $t("ValueText.ValueUseCaseText.title4") }}
                   </p>
-                  <ul class="listInner" v-if="menu === 4">
-                    <li>
-                      <p
-                        v-html="$t('ValueText.ValueUseCaseText.contents4-1')"
-                      ></p>
-                      <p
-                        v-html="$t('ValueText.ValueUseCaseText.contents4-2')"
-                      ></p>
-                      <p
-                        v-html="$t('ValueText.ValueUseCaseText.contents4-3')"
-                      ></p>
-                      <i>
-                        <img
-                          src="~/assets/images/pages/value/valueB-4@2x.png"
-                          alt="협업솔루션"
-                        />
-                      </i>
-                    </li>
-                  </ul>
                 </span>
                 <i>
                   <img
@@ -264,6 +248,27 @@
                   />
                 </i>
               </div>
+              <ul class="listInner" v-if="menu === 4">
+                <li>
+                      <p
+                        v-html="$t('ValueText.ValueUseCaseText.contents4-1')"
+                        
+                      ></p>
+                      <p
+                        v-html="$t('ValueText.ValueUseCaseText.contents4-2')"
+                      ></p>
+                      <p
+                        v-html="$t('ValueText.ValueUseCaseText.contents4-3')"
+                      ></p>
+                  <i>
+                        <img
+                          src="~/assets/images/pages/value/valueB-4@2x.png"
+                          alt="협업솔루션"
+                        />
+
+                  </i>
+                </li>
+              </ul>
             </li>
             <li>
               <div class="listWrap">
@@ -271,26 +276,6 @@
                   <p @click="showMenu(5)">
                     {{ $t("ValueText.ValueUseCaseText.title5") }}
                   </p>
-                  <ul class="listInner" v-if="menu === 5">
-                    <li>
-                      <p
-                        v-html="$t('ValueText.ValueUseCaseText.contents5-1')"
-                      ></p>
-                      <p
-                        v-html="$t('ValueText.ValueUseCaseText.contents5-2')"
-                      ></p>
-                      <p
-                        v-html="$t('ValueText.ValueUseCaseText.contents5-3')"
-                      ></p>
-
-                      <i>
-                        <img
-                          src="~/assets/images/pages/value/valueB-5@2x.png"
-                          alt="협업솔루션"
-                        />
-                      </i>
-                    </li>
-                  </ul>
                 </span>
                 <i>
                   <img
@@ -310,7 +295,27 @@
                   />
                 </i>
               </div>
+              <ul class="listInner" v-if="menu === 5">
+                <li>
+                       <p
+                        v-html="$t('ValueText.ValueUseCaseText.contents5-1')"
+                      ></p>
+                      <p
+                        v-html="$t('ValueText.ValueUseCaseText.contents5-2')"
+                      ></p>
+                      <p
+                        v-html="$t('ValueText.ValueUseCaseText.contents5-3')"
+                      ></p>
+                  <i>
+                        <img
+                          src="~/assets/images/pages/value/valueB-5@2x.png"
+                          alt="협업솔루션"
+                        />
+                  </i>
+                </li>
+              </ul>
             </li>
+
           </ul>
         </span>
       </div>
