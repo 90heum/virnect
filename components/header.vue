@@ -914,7 +914,8 @@ export default {
     redirectPage(locale) {
       if (locale === "ko") return;
       const routePath = this.$route.fullPath;
-      console.log(routePath);
+      
+      
       if (
         routePath.includes("/company/ir") ||
         routePath.includes("/company/talent")
@@ -963,8 +964,11 @@ export default {
     },
 
     langlang(locale) {
+
       this.showEarth = !this.showEarth;
+      // @param 07/26 추가
       this.redirectPage(locale);
+      console.log(`${locale} 너의 언어는 뭐니?????`)
     },
     showServiceMenu() {
       this.isServiceMenu = !this.isServiceMenu;

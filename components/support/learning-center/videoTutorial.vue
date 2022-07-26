@@ -139,7 +139,7 @@ export default {
                     margin-right: 15px;
                     margin-bottom: 15px;
                 }
-                &:nth-child(3){
+                &:nth-child(3n){
                     margin-right: 0px;
                     margin-bottom: 15px;
                 }
