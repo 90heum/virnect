@@ -1,5 +1,11 @@
 {
 	"productsText": {
+		"submenu": {
+			"title1": "Overview",
+			"title2": "Introduce",
+			"title3": "Features",
+			"title4": "Expect"
+		},
 		"looklook": {
 			"text": "Read more"
 		},
@@ -35,9 +41,9 @@
 			"contents": "VIRNECT Remote enables seamless collaboration overcoming time and space constraints."
 		},
 		"remoteinfo": {
-			"text1": "Know more",
+			"text1": "Learn more",
 			"text2": "Free Trials",
-			"text3": "Download Remote_Leaflet"
+			"text3": "Download Products_Leaflet"
 		},
 		"remoteSubText": {
 			"TimeCost": "Slash costs, along with idle and travel times.",
@@ -207,19 +213,23 @@
 			"functionLists": [
 				{
 					"title": "Stable detection and tracking",
-					"contents": "Enjoy stable AR content with consistent QR code, image, and 3D object detection, despite the camera angle."
+					"contents": "Enjoy stable AR content with consistent QR code, image, and 3D object detection, despite the camera angle.",
+					"img": "https://velog.velcdn.com/images/heezin/post/45362a14-71ef-46ae-8db0-f05e87e7bb31/image.png"
 				},
 				{
 					"title": "Seamless blending",
-					"contents": "Enter stable immersive content as VIRNECT Track perceives and tracks surroundings in real-time, creating a smoothly mixed reality."
+					"contents": "Enter stable immersive content as VIRNECT Track perceives and tracks surroundings in real-time, creating a smoothly mixed reality.",
+					"img": "https://velog.velcdn.com/images/heezin/post/5bf8cea8-57f0-4517-8023-f02cd6c3c0c2/image.png"
 				},
 				{
 					"title": "Multi-target detection",
-					"contents": "Follow several objects with VIRNECT Track that perceives multiple images or 3D objects simultaneously."
+					"contents": "Follow several objects with VIRNECT Track that perceives multiple images or 3D objects simultaneously.",
+					"img": "https://velog.velcdn.com/images/heezin/post/1383e52b-f7d1-40ca-82ca-de9dc06f3930/image.png"
 				},
 				{
 					"title": "Visual SLAM",
-					"contents": "VIRNECT Track draws the video clips' feature points. It forms a virtual map of reality, ensuring the stability of the augmentation of objects."
+					"contents": "VIRNECT Track draws the video clips' feature points. It forms a virtual map of reality, ensuring the stability of the augmentation of objects.",
+					"img": "https://velog.velcdn.com/images/heezin/post/3b75dd9c-d752-4996-8286-5a2b5461ef66/image.png"
 				}
 			],
 			"effectHeading": {
@@ -322,31 +332,32 @@
 				{
 					"title": "Available for multiple devices",
 					"contents": "Access content from the device that fits your needs.",
-					"image": "https://virnect.com/images/pages/products/img-products-remote-function-01@2x.png"
+					"img": "https://velog.velcdn.com/images/heezin/post/cd743e07-996c-458d-b301-3f20f83a7883/image.png"
 				},
 				{
 					"title": "Tasks assignments and progress reporting",
 					"contents": "Check a list of assigned tasks by workers to be performed with AR assistance. Control the progress and revisit feedback from previous reports.",
-					"image": "https://virnect.com/images/pages/products/img-products-remote-function-01@2x.png"
+					"img": "https://velog.velcdn.com/images/heezin/post/b7208e36-e4c0-44aa-9184-295464f64e28/image.png"
 				},
 				{
 					"title": "Field-optimized visual content",
-					"contents": "Access contents under any situation, even if there is no internet connection."
+					"contents": "Access contents under any situation, even if there is no internet connection.",
+					"img": "https://velog.velcdn.com/images/heezin/post/5750fbde-2daa-4b73-b13a-d92aa2b1f107/image.png"
 				},
 				{
 					"title": "Task reporting history",
 					"contents": "Report task progress with text and images while viewing the content from the field. The data is stored in the cloud for managers' analysis.",
-					"image": "https://virnect.com/images/pages/products/img-products-remote-function-01@2x.png"
+					"img": "https://velog.velcdn.com/images/heezin/post/e5ebddea-811d-42d6-aa6c-f2ddbc460989/image.png"
 				},
 				{
 					"title": "AR visualization of data from IoT or other sources",
 					"contents": "On-premise customers can access content that shows real-time information over AR. Allowing workers to visualize the details of the industrial process as it goes.",
-					"image": "https://virnect.com/images/pages/products/img-products-remote-function-01@2x.png"
+					"img": "https://velog.velcdn.com/images/heezin/post/a3af2d82-5609-4cf9-bc1c-0291f3b5b3ef/image.png"
 				},
 				{
 					"title": "Emergency AR location",
 					"contents": "On-premise customers can alert managers of real-time emergency locations for immediate support.",
-					"image": "https://virnect.com/images/pages/products/img-products-remote-function-01@2x.png"
+					"img": "https://velog.velcdn.com/images/heezin/post/af637f9b-06de-402e-85d0-fd88adea894d/image.png"
 				}
 			],
 			"effectHeading": {
@@ -501,27 +512,33 @@
 			"functionLists": [
 				{
 					"title": "XR content creation using various targets",
-					"contents": "Create content for different AR targets, such as QR codes and images, or to be displayed on any surface."
+					"contents": "Create content for different AR targets, such as QR codes and images, or to be displayed on any surface.",
+					"img": "https://velog.velcdn.com/images/heezin/post/8337a071-fc61-454d-b2f8-34cf757c2099/image.png"
 				},
 				{
 					"title": "Device optimization",
-					"contents": "Preview and optimize material for different screens to create AR content that leverages the pros of the device of choice."
+					"contents": "Preview and optimize material for different screens to create AR content that leverages the pros of the device of choice.",
+					"img": "https://velog.velcdn.com/images/heezin/post/d144c033-a379-42d5-91ab-ce345203e35e/image.png"
 				},
 				{
 					"title": "Real-Time data feed in graphs and tables.",
-					"contents": "Create XR graphs or tables based on real-time data (OPC UA, SQL Quarry, or TCP/IP) to deliver complex information clearly and efficiently."
+					"contents": "Create XR graphs or tables based on real-time data (OPC UA, SQL Quarry, or TCP/IP) to deliver complex information clearly and efficiently.",
+					"img": "https://velog.velcdn.com/images/heezin/post/8822b6d6-20c8-47ca-8b97-7a67e706e2e8/image.png"
 				},
 				{
 					"title": "On-site reporting",
-					"contents": "Assign tasks and receive feedback through AR content. Facility inspection and maintenance reports are stored and available for managers in real-time."
+					"contents": "Assign tasks and receive feedback through AR content. Facility inspection and maintenance reports are stored and available for managers in real-time.",
+					"img": "https://velog.velcdn.com/images/heezin/post/b0895d07-16b0-4cab-99d2-dcfd6d526870/image.png"
 				},
 				{
 					"title": "Interactions",
-					"contents": "Set custom reactions on buttons and create interaction content."
+					"contents": "Set custom reactions on buttons and create interaction content.",
+					"img": "https://velog.velcdn.com/images/heezin/post/c5466450-080d-4ec1-ab7c-1931ae84f43d/image.png"
 				},
 				{
 					"title": "Animation",
-					"contents": "Add animations to different objects to make content more transparent and engaging. Communicate the direction and speed of the objects' movement accurately. Moving AR objects will enhance the concentration of the workers and contribute to an intuitive understanding of the tasks."
+					"contents": "Add animations to different objects to make content more transparent and engaging. Communicate the direction and speed of the objects' movement accurately. Moving AR objects will enhance the concentration of the workers and contribute to an intuitive understanding of the tasks.",
+					"img": "https://velog.velcdn.com/images/heezin/post/7defde1f-738f-4182-ae08-bed250a49da1/image.png"
 				}
 			],
 			"effectHeading": {
@@ -826,27 +843,33 @@
 			"functionLists": [
 				{
 					"title": "Virtual 3D environments",
-					"contents": "Connect a virtual 3D model with current industrial data streams. Be able to receive sensor feeds or IoT information, and have a virtual environment that mimics real-time conditions."
+					"contents": "Connect a virtual 3D model with current industrial data streams. Be able to receive sensor feeds or IoT information, and have a virtual environment that mimics real-time conditions.",
+					"img": "https://velog.velcdn.com/images/heezin/post/5d88555b-75da-4705-a4cc-55b016fef910/image.png"
 				},
 				{
 					"title": "Integrated data management",
-					"contents": "Have everything in the same place. VIRNECT Twin integrates all operational data, thermal imaging camera feeds (FLIR), and IoT sensors data on gas, vibration, micro-dust, temperature, or humidity."
+					"contents": "Have everything in the same place. VIRNECT Twin integrates all operational data, thermal imaging camera feeds (FLIR), and IoT sensors data on gas, vibration, micro-dust, temperature, or humidity.",
+					"img": "https://velog.velcdn.com/images/heezin/post/9301f1a3-293c-478a-8c42-71e08e585a62/image.png"
 				},
 				{
 					"title": "Team members and device tracking",
-					"contents": "Know your team and equipment status. AI-based video recognition, location, and measuring technology lets you follow up on workers and facility status. The digital twin reflects the current situation in real-time."
+					"contents": "Know your team and equipment status. AI-based video recognition, location, and measuring technology lets you follow up on workers and facility status. The digital twin reflects the current situation in real-time.",
+					"img": "https://velog.velcdn.com/images/heezin/post/521aa4ee-af00-4535-9c6a-9de13fb81e92/image.png"
 				},
 				{
 					"title": "Improved monitoring and management",
-					"contents": "The control room can monitor the actual site as it navigates the virtual model using remote-controlled 360 PTZ (pan-tilt-zoom) security cameras."
+					"contents": "The control room can monitor the actual site as it navigates the virtual model using remote-controlled 360 PTZ (pan-tilt-zoom) security cameras.",
+					"img": "https://velog.velcdn.com/images/heezin/post/41705446-d301-4581-96a7-fd8fe4856f02/image.png"
 				},
 				{
 					"title": "Historical data management",
-					"contents": "The historical data can be stored for analysis, allowing better HR management, maintenance, and optimized workflows."
+					"contents": "The historical data can be stored for analysis, allowing better HR management, maintenance, and optimized workflows.",
+					"img": "https://velog.velcdn.com/images/heezin/post/b59b46fb-1ef4-4f3b-873d-1821623b7183/image.png"
 				},
 				{
 					"title": "Simulation, diagnosis, and analysis",
-					"contents": "Get insights from the digital twin to recognize repetitive bottle-necks, match production to product lifecycles, and create preventive maintenance protocols."
+					"contents": "Get insights from the digital twin to recognize repetitive bottle-necks, match production to product lifecycles, and create preventive maintenance protocols.",
+					"img": "https://velog.velcdn.com/images/heezin/post/e4826753-d9ef-4e1e-b46f-251946f620e1/image.png"
 				}
 			],
 			"effectHeading": {

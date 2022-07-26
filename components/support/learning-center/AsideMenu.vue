@@ -8,7 +8,7 @@
                     alt="LearningCenterTag"></i>
         </span>
         <span @click="chooseTypeMenuAndToggle(typeList[0].id)">
-            <p :class="`${isTypeMenu === typeList[0].id ? 'asideActive' : ''}`">{{$i18n.localeProperties.code === "ko" ? typeList[0].name : typeList[0].nameEn}}</p>
+            <p :class="`${isTypeMenu === typeList[0].id ? 'asideActive' : ''}`">{{$i18n.localeProperties.code === "ko" ? "User's Manual" : "User's Manual"}}</p>
             <i><img src="https://velog.velcdn.com/images/kyj0206/post/677e0a5b-146e-46a5-a5db-ef2b185febf4/image.png"
                     alt="LearningCenterTag"></i>
         </span>

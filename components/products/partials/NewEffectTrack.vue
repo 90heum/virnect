@@ -8,7 +8,7 @@
       </div>
       <div class="guide2Menu">
         <ul>
-          NewEffectPart
+          <!-- NewEffectPart -->
           <li>
             <p>{{ $t(`trackList.Speedy.title`) }}</p>
             <span v-html="$t(`trackList.Speedy.contents`)"> </span>

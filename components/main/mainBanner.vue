@@ -2,23 +2,27 @@
   <div class="mainBanner">
     <div class="mainBannerInner">
       <span class="mainBannerTit">
-        <p class="bannerTitN1">{{$t(`mainTit.title1`)}}</p>
+        <p class="bannerTitN1">{{ $t(`mainTit.title1`) }}</p>
         <h1 class="bannerTitN2">
-          {{$t(`mainTit.title2`)}}
+          {{ $t(`mainTit.title2`) }}
         </h1>
         <p class="bannerTitN3">
-          {{$t(`mainTit.title3`)}}
+          {{ $t(`mainTit.title3`) }}
         </p>
         <span class="bannerButton">
           <button>
-            <nuxt-link to="/products/productsMain">{{$t(`bannerTit.text1`)}}</nuxt-link>
+            <nuxt-link to="/products/productsMain">{{
+              $t(`bannerTit.text1`)
+            }}</nuxt-link>
           </button>
           <button>
-            <nuxt-link to="/support/demo" target="_blank">{{$t(`bannerTit.text2`)}}</nuxt-link>
+            <nuxt-link to="/support/demo" target="_blank">{{
+              $t(`bannerTit.text2`)
+            }}</nuxt-link>
           </button>
         </span>
         <span class="bannerTitN4">
-          <p>{{$t(`bannerTit.text3`)}}</p>
+          <p>{{ $t(`bannerTit.text3`) }}</p>
           <span>
             <i>
               <img
@@ -27,7 +31,10 @@
               />
             </i>
             <p>
-              {{$t(`bannerTit.text4`)}}<a href="support/inquiry"><u>{{$t(`bannerTit.text5`)}}</u></a>
+              {{ $t(`bannerTit.text4`)
+              }}<a href="support/inquiry"
+                ><u>{{ $t(`bannerTit.text5`) }}</u></a
+              >
             </p>
           </span>
         </span>
@@ -38,25 +45,27 @@
           alt="메인베너이미지"
         /> -->
         <!-- 조성우추가 -->
-        <img src="~/assets/images/common/main_th.gif" alt="메인베너이미지" />        
+        <img src="~/assets/images/common/main_th.gif" alt="메인베너이미지" />
         <!-- <img src="~/assets/images/common/logo-gnb-ci.png" alt="메인베너이미지" />  -->
       </span>
       <span class="mainBannerTitMb">
         <p class="bannerTitMb">
-          산업 현장을 혁신으로 이끌 버넥트 XR 솔루션을 확인하세요
+          {{ $t("mainTit.title3") }}
         </p>
         <span class="bannerButtonMb">
           <button>
-            <nuxt-link to="/products/productsMain" target="_blank"
-              >자세히 보기</nuxt-link
-            >
+            <nuxt-link to="/products/productsMain" target="_blank">{{
+              $t("bannerTit.text1")
+            }}</nuxt-link>
           </button>
           <button>
-            <a href="/support/demo" target="_blank">데모신청</a>
+            <a href="/support/demo" target="_blank">{{
+              $t("bannerTit.text2")
+            }}</a>
           </button>
         </span>
         <span class="bannerTitMb2">
-          <p>준비된 기술 컨설턴트가 직접 도움을 드립니다.</p>
+          <p>{{ $t("bannerTit.text3") }}</p>
           <span>
             <i>
               <img
@@ -65,7 +74,10 @@
               />
             </i>
             <p>
-              070. 7733. 2025 <a href="support/inquiry"><u>문의하기</u></a>
+              {{ $t("bannerTit.text4")
+              }}<a href="support/inquiry"
+                ><u>{{ $t("bannerTit.text5") }}</u></a
+              >
             </p>
           </span>
         </span>
@@ -75,12 +87,18 @@
     <div class="bannerMoule" v-if="$i18n.localeProperties.code === 'ko'">
       <span class="banner1024">
         <a href="/news/detail?id=145&type">
-          <img src="~/assets/images/common/contestHome1.png" alt="배너모듈" />
+          <img
+            src="~/assets/images/common/_____XR-0722bannerHompage.png"
+            alt="배너모듈"
+          />
         </a>
       </span>
       <span class="banner768">
         <a href="/news/detail?id=145&type">
-          <img src="~/assets/images/common/homhomhom.png" alt="배너모듈" />
+          <img
+            src="~/assets/images/common/_____XR0722mobile.png"
+            alt="배너모듈"
+          />
         </a>
       </span>
     </div>
@@ -112,9 +130,7 @@ export default {
       // const buttonTarget = document.querySelectorAll(
       //   ".banner .agile__dot button"
       // );
-
       // const parentButtonTarget = document.querySelector(".agile__dots");
-
       // parentButtonTarget.style.position = "absolute";
       // parentButtonTarget.style.top = "-2px";
       // parentButtonTarget.style.right = "25%";
@@ -252,7 +268,7 @@ export default {
           // 조성우추가
           padding: 15px 35px 13px;
           cursor: pointer;
-          transition: all 0.4s;          
+          transition: all 0.4s;
           a {
             width: 100%;
             height: 100%;
@@ -267,8 +283,8 @@ export default {
             background-color: #fff;
           }
           &:last-child {
-            border: solid 1px #78BBFD;
-            background-color: #78BBFD;
+            border: solid 1px #78bbfd;
+            background-color: #78bbfd;
           }
         }
       }

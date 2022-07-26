@@ -87,7 +87,7 @@ body{
     .proForm{
         /* min-width: 600px; */
         width: 100vw;
-        top: 55%;
+        top: 50%;
         left: 0;
         transform: translate(0);
     }

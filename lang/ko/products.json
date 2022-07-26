@@ -1,5 +1,11 @@
 {
 	"productsText": {
+		"submenu": {
+			"title1": "제품개요",
+			"title2": "제품특징",
+			"title3": "기능소개",
+			"title4": "도입효과"
+		},
 		"looklook": {
 			"text": "자세히보기"
 		},

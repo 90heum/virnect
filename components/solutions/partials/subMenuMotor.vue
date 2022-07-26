@@ -1,8 +1,8 @@
 <template>
   <div id="menu_re" class="SubMenuUse">
     <span class="SubMenuMobileTitle" @click="handleToggle()">
-      <span>공공/교육</span>
-      <i><img src="require(~/assets/images/pages/down.png)" /></i>
+      <span>{{ $t("gnb[0].array[2].text") }}</span>
+      <i><img src="~assets/images/common/icon-down@2x.png" /></i>
     </span>
     <ul
       :class="`SubMenuNav ${toggle ? 'mobileActive' : ''}`"
@@ -93,6 +93,9 @@ export default {
   .SubMenuMobileTitle {
     display: none;
   }
+  .SubMenuMobileTitle img {
+    margin-top: 10px;
+  }
   background-color: #e6e8eb;
   .SubMenuNav {
     position: relative;
@@ -105,13 +108,13 @@ export default {
     li {
       width: 20%;
       &::after {
-          position: absolute;
-          content: "";
-          display: block;
-          height: 25px;
-          top: 50%;
-          border-right: 1px solid #c5c8cf;
-          transform: translateY(-50%);
+        position: absolute;
+        content: "";
+        display: block;
+        height: 25px;
+        top: 50%;
+        border-right: 1px solid #c5c8cf;
+        transform: translateY(-50%);
       }
       a {
         text-decoration: none;
@@ -139,7 +142,7 @@ export default {
         color: #9a9da3;
         word-break: break-all;
         align-items: center;
-        justify-content: center;    
+        justify-content: center;
       }
       &.SubUseNavActive,
       &:hover {
@@ -192,16 +195,16 @@ export default {
   .SubMenuUse .SubMenuNav li.subMenu a::after {
     content: none;
   }
-  .SubMenuUse .mobileActive{
+  .SubMenuUse .mobileActive {
     display: block;
     max-width: 100%;
   }
 
-  .SubMenuUse .mobileActive .subMenu{
+  .SubMenuUse .mobileActive .subMenu {
     width: 100%;
   }
 
-  .SubMenuUse .SubMenuNav li::after{
+  .SubMenuUse .SubMenuNav li::after {
     display: none;
   }
 }

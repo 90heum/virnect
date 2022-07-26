@@ -71,7 +71,7 @@
                 alt="VIRNECT 회사소개"
               />
               <div>
-                <span> VIRNECT 회사소개 </span>
+                <span>{{$t(`companyText.banner.text1`)}}</span>
                 <span>
                   <img
                     src="https://velog.velcdn.com/images/kyj0206/post/094e88c4-3d54-4c08-a0ee-7876622f7e3b/image.svg"
@@ -101,7 +101,7 @@
           <div class="virnectModule3">
             <a @click="comModal()">
               <span>
-                <u>회사소개서 다운로드(PDF)</u>
+                <u>{{$t(`companyText.banner.text2`)}}</u>
               </span>
               <span>
                 <img

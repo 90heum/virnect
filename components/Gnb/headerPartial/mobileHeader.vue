@@ -12,19 +12,19 @@
           </a>
           <ul class="hamUseCaseMenu" v-if="mobileMenu['list1']">
             <li @click="goToPage(`/value/infra_resource`)">
-              <a> 인프라/자원 </a>
+              <a>{{ $t("gnb[0].array[0].text") }}</a>
             </li>
             <li @click="goToPage(`/value/manufacture_construction`)">
-              <a> 제조/건설 </a>
+              <a>{{ $t("gnb[0].array[1].text") }}</a>
             </li>
             <li @click="goToPage('/value/public_education')">
-              <a> 공공/교육 </a>
+              <a> {{ $t("gnb[0].array[2].text") }}</a>
             </li>
             <li @click="goToPage('/value/entertainment')">
-              <a> 엔터테인먼트 </a>
+              <a> {{ $t("gnb[0].array[3].text") }}</a>
             </li>
             <li @click="goToPage('/value/etc')">
-              <a> 기타 </a>
+              <a> {{ $t("gnb[0].array[4].text") }}</a>
             </li>
           </ul>
         </span>
@@ -102,10 +102,10 @@
               <a> FAQ </a>
             </li>
             <li @click="goToPage('/support/learning-center')">
-              <a> 학습센터 </a>
+              <a> {{ $t("supportAvenger.text1") }}</a>
             </li>
             <li @click="goToPage('/support/inquiry')">
-              <a> 문의하기 </a>
+              <a> {{ $t("supportAvenger.text2") }} </a>
             </li>
           </ul>
         </span>
@@ -208,7 +208,7 @@
               href="https://console.virnect.com/?continue=https%3A%2F%2Fvirnect.com%2F"
               target="blank"
             >
-              <p>서비스 로그인</p>
+              <p>{{ $t("service.text1") }}</p>
               <i>
                 <img
                   class="subBottomMenuIconOpen"
@@ -225,7 +225,7 @@
           </li>
           <li class="option">
             <a href="https://download.virnect.com/remote" target="blank">
-              <p>다운로드 센터 2.0</p>
+              <p>{{ $t("service.text2") }}</p>
               <i>
                 <img
                   class="subBottomMenuIconOpen"

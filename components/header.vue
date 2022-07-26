@@ -167,7 +167,7 @@
           </ul>
         </nav>
         <div class="demo">
-          <nuxt-link to="/support/demo"> {{$t(`header.demo`)}} </nuxt-link>
+          <nuxt-link to="/support/demo"> {{ $t(`header.demo`) }} </nuxt-link>
         </div>
         <div
           class="serviceSelect"

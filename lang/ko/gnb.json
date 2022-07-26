@@ -217,5 +217,9 @@
   "service": {
     "text1": "서비스 로그인",
     "text2": "다운로드 센터 2.0"
+  },
+  "supportAvenger": {
+    "text1": "학습센터",
+    "text2": "문의하기"
   }
 }
