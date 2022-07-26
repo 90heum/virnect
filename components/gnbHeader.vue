@@ -86,7 +86,7 @@
           </div>
         </div>
         <!-- 언어선택 박스 -->
-        <div class="language" @click="langlang()">
+        <!-- <div class="language" @click="langlang()">
           <i>
             <img
               src="https://velog.velcdn.com/images/kyj0206/post/3904dc78-e6ec-44d2-8bc0-f6e4c0c7c3a0/image.png"
@@ -102,6 +102,23 @@
             >
               <a>{{ locale.name }}</a>
             </span>
+          </div>
+        </div> -->
+         <div
+          class="language"
+          @click="
+             langlang('ko')
+          " 
+        >
+          <i>
+            <img
+              src="https://velog.velcdn.com/images/kyj0206/post/3904dc78-e6ec-44d2-8bc0-f6e4c0c7c3a0/image.png"
+              alt="글로벌이미지"
+            />
+          </i>
+          <div class="languageWrap" v-if="showEarth">
+            <p><a href="https://test-web.virnect.com/en">english</a></p>
+            <p><a href="https://test-web.virnect.com/">korean</a></p>
           </div>
         </div>
         <!-- 햄버거 버튼 [모바일 메뉴] -->
