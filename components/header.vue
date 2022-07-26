@@ -915,7 +915,6 @@ export default {
       if (locale === "ko") return;
       const routePath = this.$route.fullPath;
       
-      
       if (
         routePath.includes("/company/ir") ||
         routePath.includes("/company/talent")
