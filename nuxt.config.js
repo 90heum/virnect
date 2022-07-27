@@ -8,7 +8,7 @@ export default {
     ],
     title: 'virnect-ssr',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'ko'
     },
     meta: [
       { charset: 'utf-8' },
