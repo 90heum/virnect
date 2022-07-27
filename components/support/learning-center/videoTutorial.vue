@@ -233,7 +233,7 @@ export default {
         overflow: hidden;
         height: 26px;
         p {
-            max-width: 60px;
+            // max-width: 60px;
             max-height: 24px;
             padding: 6px 10px;
             border-radius: 12px;

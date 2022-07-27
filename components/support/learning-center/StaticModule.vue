@@ -37,7 +37,7 @@ export default {};
   width: 100%;
   display: flex;
   align-items: center;
-  margin-bottom: 90px;
+  margin-bottom: 100px;
   background-color: #f7f8f9;
   .centerModuleTit {
     width: 50%;

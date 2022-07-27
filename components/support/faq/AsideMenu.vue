@@ -63,7 +63,7 @@ export default {
 
 
 <style lang="scss" scoped>
-.surplusFaqWrapper { width: 100%; max-width: 180px; }
+.surplusFaqWrapper { width: 100%;}
     .FAQAside{
         display: flex;
         gap: 30px;
@@ -106,7 +106,7 @@ export default {
     .FAQMbAside{
         display: none;
         max-width: 200px;
-        width: 200px;
+        width: auto;
         border: 1px solid #999;
         font-size: 16px;
         font-weight: bold;

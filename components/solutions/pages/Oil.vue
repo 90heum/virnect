@@ -144,7 +144,7 @@
         </span>
         <span class="usecaseCont">
           <ul class="usecaseList">
-            <li>
+            <li @click="showMenu(1)">
               <div class="listWrap">
                 <span>
                   <p @click="showMenu(1)">
@@ -189,7 +189,7 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li @click="showMenu(2)">
               <div class="listWrap">
                 <span>
                   <p @click="showMenu(2)">
@@ -235,7 +235,7 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li @click="showMenu(3)">
               <div class="listWrap">
                 <span>
                   <p @click="showMenu(3)">
@@ -278,7 +278,7 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li @click="showMenu(4)">
               <div class="listWrap">
                 <span>
                   <p @click="showMenu(4)">
@@ -317,7 +317,7 @@
                 </li>
               </ul>
             </li>
-            <li>
+            <li @click="showMenu(5)">
               <div class="listWrap">
                 <span>
                   <p @click="showMenu(5)">
