@@ -70,13 +70,13 @@ export default {
             iso: "ko",
             name: "Korean",
             file: "ko/index.js"
-          },
-          {
-            code: "en",
-            iso: "en",
-            name: "English",
-            file: "en/index.js"
           }
+          // {
+          //   code: "en",
+          //   iso: "en",
+          //   name: "English",
+          //   file: "en/index.js"
+          // }
 
         ]
       }
