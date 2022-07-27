@@ -13,11 +13,11 @@
 
     <div class="overViewTrack">
       <div class="overViewWrap">
-        <span class="overViewTit" > 
-          <p>{{ $t("productsText.twinTitle.category") }}</p> 
+        <span class="overViewTit">
+          <p>{{ $t("productsText.twinTitle.category") }}</p>
           <h2>{{ $t("productsText.twinTitle.title") }}</h2>
           <span>
-              {{ $t("productsText.twinTitle.contents") }}
+            {{ $t("productsText.twinTitle.contents") }}
           </span>
         </span>
         <span class="overViewCont">
@@ -59,7 +59,7 @@
             <p>{{ $t("productsText.twinSubText.Title4") }}</p>
             <p>{{ $t("productsText.twinSubText.Contents4") }}</p>
           </span>
-          <span id="headingModuleBottom"/>
+          <span id="headingModuleBottom" />
         </span>
       </div>
     </div>
@@ -145,7 +145,7 @@ import NewModule from "~/components/products/partials/newModule.vue";
 import NewBgSlide from "~/components/products/partials/NewBgSlide.vue";
 
 import headingModule from "../../modules/Heading";
-import NewEffectPart from "~/components/products/partials/NewEffectPart.vue";
+import NewEffectPart from "~/components/products/partials/NewEffectTrack.vue";
 import { filedData, moduleData } from "~/components/products/newModuleData.js";
 import { title, effectList } from "~/components/products/newEffectPartData.js";
 

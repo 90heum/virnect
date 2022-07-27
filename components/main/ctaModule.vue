@@ -1,14 +1,18 @@
 <template>
   <div class="CtaModule">
     <div class="CtaCont">
-      <h2>{{$t(`supportText.supModule.subtitle`)}}</h2>
-      <p>준비된 기술 컨설턴트가 직접 도움을 드립니다.</p>
+      <h2>{{ $t(`supportText.supModule.subtitle`) }}</h2>
+      <p>{{ $t(`supportText.supModule.subtitle2`) }}</p>
       <span>
         <button>
-          <a href="/support/demo" target="blank"> 데모신청 </a>
+          <a href="/support/demo" target="blank">{{
+            $t(`supportText.supModule.btnText1`)
+          }}</a>
         </button>
         <button>
-          <a href="/support/inquiry" target="blank"> 도입문의 </a>
+          <a href="/support/inquiry" target="blank">
+            {{ $t(`supportText.supModule.btnText2`) }}</a
+          >
         </button>
       </span>
     </div>

@@ -260,7 +260,7 @@ import examplePart from "../partials/ExamplePart";
 import bgSlidePart from "../partials/BgSlidePart";
 import NewModule from "~/components/products/partials/newModule.vue";
 import NewBgSlide from "~/components/products/partials/NewBgSlide.vue";
-import NewEffectPart from "~/components/products/partials/NewEffectPart.vue";
+import NewEffectPart from "~/components/products/partials/NewEffectPartMake.vue";
 import headingModule from "../../modules/Heading";
 import { filedData, moduleData } from "~/components/products/newModuleData.js";
 import { title, effectList } from "~/components/products/newEffectPartData.js";
@@ -296,7 +296,7 @@ export default {
           "https://player.vimeo.com/external/560736136.hd.mp4?s=34d4f2557f02474e88d1c1450bbecf3ae5ebb8cb&profile_id=174",
       },
       functionIconImage:
-        "~assets/images/pages/products/img-products-remote-function-0",
+        "~/assets/images/pages/products/functionImage/Make/Make1.png",
       effectBG: "../images/pages/products/img-make-effect",
       supportTitle: {
         align: "left",

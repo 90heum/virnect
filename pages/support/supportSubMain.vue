@@ -32,7 +32,7 @@
           <p>
             <nuxt-link
               :to="`/support/notice-detail?id=${contentData[0].id}&type`"
-              >자세히보기</nuxt-link
+              >{{ $t("productsText.looklook.text") }}</nuxt-link
             >
           </p>
         </span>
@@ -157,7 +157,9 @@
           <span>
             <p>{{ $t("supportText.LearnText.contents") }}</p>
             <p>
-              <a href="/support/learning-center">{{ $t("supportText.LearnText.text") }}</a>
+              <a href="/support/learning-center">{{
+                $t("supportText.LearnText.text")
+              }}</a>
               <i>
                 <img
                   src="https://velog.velcdn.com/images/kyj0206/post/5b6d5b4d-eb77-45e8-b225-2bd6c2f328cb/image.png"

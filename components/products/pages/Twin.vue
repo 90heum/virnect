@@ -21,7 +21,11 @@
           </span>
         </span>
         <span class="overViewCont">
-          <span :class="`${$i18n.localeProperties.code !== 'ko' ? 'overViewActive' : ''}`">
+          <span
+            :class="`${
+              $i18n.localeProperties.code !== 'ko' ? 'overViewActive' : ''
+            }`"
+          >
             <i
               ><img
                 src="https://velog.velcdn.com/images/kyj0206/post/a093d711-5ab6-43e9-a55f-1686b3a56c45/image.png"
@@ -30,7 +34,11 @@
             <p>{{ $t("productsText.twinSubText.Title1") }}</p>
             <p>{{ $t("productsText.twinSubText.Contents1") }}</p>
           </span>
-          <span :class="`${$i18n.localeProperties.code !== 'ko' ? 'overViewActive' : ''}`">
+          <span
+            :class="`${
+              $i18n.localeProperties.code !== 'ko' ? 'overViewActive' : ''
+            }`"
+          >
             <i
               ><img
                 src="https://velog.velcdn.com/images/kyj0206/post/2f434057-76ce-44f4-add8-0c22ca243216/image.png"
@@ -39,7 +47,11 @@
             <p>{{ $t("productsText.twinSubText.Title2") }}</p>
             <p>{{ $t("productsText.twinSubText.Contents2") }}</p>
           </span>
-          <span :class="`${$i18n.localeProperties.code !== 'ko' ? 'overViewActive' : ''}`">
+          <span
+            :class="`${
+              $i18n.localeProperties.code !== 'ko' ? 'overViewActive' : ''
+            }`"
+          >
             <i
               ><img
                 src="https://velog.velcdn.com/images/kyj0206/post/4917a77e-db49-489c-99bc-0f7c915dc254/image.png"
@@ -48,7 +60,11 @@
             <p>{{ $t("productsText.twinSubText.Title3") }}</p>
             <p>{{ $t("productsText.twinSubText.Contents3") }}</p>
           </span>
-          <span :class="`${$i18n.localeProperties.code !== 'ko' ? 'overViewActive' : ''}`">
+          <span
+            :class="`${
+              $i18n.localeProperties.code !== 'ko' ? 'overViewActive' : ''
+            }`"
+          >
             <i
               ><img
                 src="https://velog.velcdn.com/images/kyj0206/post/8dcad46f-f757-4a25-be3c-ab59ce941656/image.png"
@@ -161,7 +177,7 @@ import NewModule from "~/components/products/partials/newModule.vue";
 import NewBgSlide from "~/components/products/partials/NewBgSlide.vue";
 
 import headingModule from "../../modules/Heading";
-import NewEffectPart from "~/components/products/partials/NewEffectPart.vue";
+import NewEffectPart from "~/components/products/partials/NewEffectTwin.vue";
 import { filedData, moduleData } from "~/components/products/newModuleData.js";
 import { title, effectList } from "~/components/products/newEffectPartData.js";
 
@@ -207,9 +223,9 @@ export default {
 <style lang="scss" scoped>
 @import "~assets/css/pages/products.scss";
 @import "~/assets/css/pages/overviewTwin.scss";
-.overViewTwin .overViewWrap .overViewCont .overViewActive { 
-  width: 50%; 
-  max-width: none; 
-  border-bottom: 0!important;
+.overViewTwin .overViewWrap .overViewCont .overViewActive {
+  width: 50%;
+  max-width: none;
+  border-bottom: 0 !important;
 }
 </style>

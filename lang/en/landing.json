@@ -11,31 +11,31 @@
     },
     "solutionText": {
       "solutionTitle": {
-				"title": "Clear-cut solutions by experts",
-				"contents": "VIRNECT has completed over 130 projects, including proof of concept to commercialization. With our expertise in various types of industries, our Extended reality(XR) consulting can provide you with the best solutions for your problems. We propose and implement customized solutions based on close consulting with our clients."
+        "title": "Clear-cut solutions by experts",
+        "contents": "VIRNECT has completed over 130 projects, including proof of concept to commercialization. With our expertise in various types of industries, our Extended reality(XR) consulting can provide you with the best solutions for your problems. We propose and implement customized solutions based on close consulting with our clients."
       },
       "solutionBenefitLists": [
-				{
-					"title": "infra_resource",
-					"contents": "The infrastructure/resource industry suffers from a declining management efficiency, caused by overly-complicated facilities and data problems."
-				},
-				{
-					"title": "manufacture_construction​",
-					"contents": "In the manufacturing/construction project sites, various workplace accidents, risks to workers and problems in the manufacturing process may occur originating."
-				},
-				{
-					"title": "public_education",
-					"contents": "The traditional training scheme currently used in the public/training sector is less effective than the costs."
-				},
-				{
-					"title": "entertainment",
-					"contents": "In the entertainment sector, a need for immersive content is being highlighted for its realism, as customers enjoy experiencing the content in a safe manner."
-				},
-				{
-					"title": "etc",
-					"contents": "XR technology can be applied to various sectors including industrial project sites, but also those closely related to day-to-day life such as medical and health care projects."
-				}
-			]
+        {
+          "title": "infra_resource",
+          "contents": "The infrastructure/resource industry suffers from a declining management efficiency, caused by overly-complicated facilities and data problems."
+        },
+        {
+          "title": "manufacture_construction​",
+          "contents": "In the manufacturing/construction project sites, various workplace accidents, risks to workers and problems in the manufacturing process may occur originating."
+        },
+        {
+          "title": "public_education",
+          "contents": "The traditional training scheme currently used in the public/training sector is less effective than the costs."
+        },
+        {
+          "title": "entertainment",
+          "contents": "In the entertainment sector, a need for immersive content is being highlighted for its realism, as customers enjoy experiencing the content in a safe manner."
+        },
+        {
+          "title": "etc",
+          "contents": "XR technology can be applied to various sectors including industrial project sites, but also those closely related to day-to-day life such as medical and health care projects."
+        }
+      ]
     },
     "productText": {
       "title": "AR and DT products for <br>solving industrial problems",
@@ -69,49 +69,64 @@
         {
           "image": "../images/pages/landing/logo-01",
           "text": "The Korean Ministry of Science and ICT, SW Marketability Support Project (Remote) Grand Prize"
-        }, {
+        },
+        {
           "image": "../images/pages/landing/logo-01",
           "text": "The Korean Ministry of Science and ICT, Awarded for contributing to the Digital Content Industry"
-        },  {
+        },
+        {
           "image": "../images/pages/landing/logo-02",
           "text": "The Korean Ministry of Science and ICT, WIS 2019 Innovation Award"
-        }, {
+        },
+        {
           "image": "../images/pages/landing/logo-03",
           "text": "The Korean Ministry of Science and ICT, selected as the top 10 companies in the Smart City Business Fair​​"
-        }, {
+        },
+        {
           "image": "../images/pages/landing/logo-04",
           "text": "Korea Communications Agency, Awarded for excellent performance in the information and communications sector​​"
-        }, {
+        },
+        {
           "image": "../images/pages/landing/logo-05",
           "text": "Army M&S International Conference & National Defense ICT Exhibition, Plaque of Appreciation​"
-        }, {
+        },
+        {
           "image": "../images/pages/landing/logo-06",
           "text": "2020 Smart Factory Award, Technology Innovation Grand Prize in AR Category"
-        }, {
+        },
+        {
           "image": "../images/pages/landing/logo-07",
           "text": "Seoul VRAR Awards, AR Award"
-        }, {
+        },
+        {
           "image": "../images/pages/landing/logo-08",
           "text": "3D Fusion Industry Association, Plaque of Merit​​​"
-        }, {
+        },
+        {
           "image": "../images/pages/landing/logo-09",
           "text": "Korea Electronics Association (KEA), Innovation Award Best Content"
-        }, {
+        },
+        {
           "image": "../images/pages/landing/logo-10",
           "text": "Korean Institute of BIM 2019 Regular Academic Conference, Excellent Research Presentation Award"
-        }, {
+        },
+        {
           "image": "../images/pages/landing/logo-11",
           "text": "The Korea Federation of ICT Organizations, 2018 Korea ICT Innovation Special Award"
-        }, {
+        },
+        {
           "image": "../images/pages/landing/logo-12",
           "text": "The Public Procurement Service, Innovation Procurement Certifications (VIRNECT Remote)"
-        }, {
+        },
+        {
           "image": "../images/pages/landing/logo-12",
           "text": "The Public Procurement Service, Innovation Procurement Certifications (VIRNECT Make & View)"
-        }, {
+        },
+        {
           "image": "../images/pages/landing/logo-13",
           "text": "GS certifications (VIRNECT Remote)"
-        }, {
+        },
+        {
           "image": "../images/pages/landing/logo-13",
           "text": "GS cetifications (VIRNECT Make & View)"
         }
