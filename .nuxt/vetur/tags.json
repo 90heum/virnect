@@ -113,15 +113,6 @@
   "ModulesYoutubeFullscreen": {
     "description": "Auto imported from components/modules/YoutubeFullscreen.vue"
   },
-  "PolicySubMenuPayment": {
-    "description": "Auto imported from components/policy/subMenuPayment.vue"
-  },
-  "PolicySubMenuPolicy": {
-    "description": "Auto imported from components/policy/subMenuPolicy.vue"
-  },
-  "PolicySubMenuTerms": {
-    "description": "Auto imported from components/policy/subMenuTerms.vue"
-  },
   "ProductsNewBgPartData": {
     "description": "Auto imported from components/products/NewBgPartData.js"
   },
@@ -136,6 +127,15 @@
   },
   "ProductsNewModuleDataEn": {
     "description": "Auto imported from components/products/newModuleData_en.js"
+  },
+  "PolicySubMenuPayment": {
+    "description": "Auto imported from components/policy/subMenuPayment.vue"
+  },
+  "PolicySubMenuPolicy": {
+    "description": "Auto imported from components/policy/subMenuPolicy.vue"
+  },
+  "PolicySubMenuTerms": {
+    "description": "Auto imported from components/policy/subMenuTerms.vue"
   },
   "SubscriptionComForm": {
     "description": "Auto imported from components/subscription/comForm.vue"
@@ -188,27 +188,6 @@
   "SupportNotice": {
     "description": "Auto imported from components/support/notice.vue"
   },
-  "GnbCompany": {
-    "description": "Auto imported from components/Gnb/Company/index.vue"
-  },
-  "GnbContact": {
-    "description": "Auto imported from components/Gnb/Contact/index.vue"
-  },
-  "GnbFreeTrials": {
-    "description": "Auto imported from components/Gnb/FreeTrials/index.vue"
-  },
-  "GnbPricing": {
-    "description": "Auto imported from components/Gnb/Pricing/index.vue"
-  },
-  "GnbProducts": {
-    "description": "Auto imported from components/Gnb/Products/index.vue"
-  },
-  "GnbSolution": {
-    "description": "Auto imported from components/Gnb/Solution/index.vue"
-  },
-  "GnbHeaderPartialMobileHeader": {
-    "description": "Auto imported from components/Gnb/headerPartial/mobileHeader.vue"
-  },
   "CompanyPagesRecruit": {
     "description": "Auto imported from components/company/pages/Recruit.vue"
   },
@@ -232,6 +211,27 @@
   },
   "CompanyPartialsSubMenuIr": {
     "description": "Auto imported from components/company/partials/subMenuIr.vue"
+  },
+  "GnbCompany": {
+    "description": "Auto imported from components/Gnb/Company/index.vue"
+  },
+  "GnbContact": {
+    "description": "Auto imported from components/Gnb/Contact/index.vue"
+  },
+  "GnbFreeTrials": {
+    "description": "Auto imported from components/Gnb/FreeTrials/index.vue"
+  },
+  "GnbPricing": {
+    "description": "Auto imported from components/Gnb/Pricing/index.vue"
+  },
+  "GnbProducts": {
+    "description": "Auto imported from components/Gnb/Products/index.vue"
+  },
+  "GnbSolution": {
+    "description": "Auto imported from components/Gnb/Solution/index.vue"
+  },
+  "GnbHeaderPartialMobileHeader": {
+    "description": "Auto imported from components/Gnb/headerPartial/mobileHeader.vue"
   },
   "ProductsPagesMS": {
     "description": "Auto imported from components/products/pages/MS.vue"
