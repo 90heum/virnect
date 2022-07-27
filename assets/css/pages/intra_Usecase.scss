@@ -42,20 +42,11 @@
   flex-direction: column;
   align-items: center;
   border-bottom: solid 1px #c5c8cf;
-  padding: 45px 50px;
-  /* &.active {
-    .listInner {
-      display: block;
-    }
-  } */
+  background: #fff;
 }
-/* .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li {
-  .listInner {
-    display: none;
-  }
-} */
 
 .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap {
+  padding: 45px 50px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -81,35 +72,7 @@
   line-height: 1.31;
   letter-spacing: -0.22px;
   color: #092e6e;
-}
-
-.intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap span .listInner {
-  /* display: none; */
-  width: 100%;
-  margin-top: 85px;
-}
-
-.intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap span .listInner li p {
-  font-size: 18px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.94;
-  letter-spacing: -0.15px;
-  color: #121212;
-}
-
-.intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap span .listInner li p:nth-last-child(2) {
-  margin-bottom: 22px;
-}
-
-.intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap span .listInner li i img {
-  display: block;
-  max-width: 455px;
-  width: 100%;
-  height: 224px;
-  -o-object-fit: cover;
-  object-fit: cover;
+  padding-right: 28.5px;
 }
 
 .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap>i {
@@ -146,6 +109,36 @@
   height: 48px;
 }
 
+.intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listInner {
+  padding: 45px 50px;
+  /* display: none; */
+  width: 100%;
+  background: #f7f8f9;
+}
+
+.intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listInner li p {
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.94;
+  letter-spacing: -0.15px;
+  color: #121212;
+}
+
+.intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listInner li p:nth-last-child(2) {
+  margin-bottom: 22px;
+}
+
+.intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listInner li i img {
+  display: block;
+  max-width: 455px;
+  width: 100%;
+  height: 224px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li:last-child {
   border: none;
 }
@@ -160,7 +153,11 @@
   display: block;
 }
 
-.intra_usecase .usecaseWrap .usecaseCont .usecaseList>li.active .listWrap span .listInner {
+.intra_usecase .usecaseWrap .usecaseCont .usecaseList>li.active .listWrap {
+  border-bottom: 1px solid #c5c8cf;
+}
+
+.intra_usecase .usecaseWrap .usecaseCont .usecaseList>li.active .listInner {
   display: block;
 }
 
@@ -170,28 +167,9 @@
   }
 }
 
-@media screen and (max-width: 880px) {
-  .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap {
-    position: relative;
-  }
-
-  .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap span>p::after {
-    content: "";
-    display: none;
-    position: absolute;
-    top: 110px;
-    width: 100%;
-    border-bottom: 1px solid #c5c8cf;
-  }
-
-  .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap>i {
-    border-left: none;
-    padding-left: 0;
-    justify-content: flex-end;
-  }
-
-  .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap span .listInner {
-    margin-top: 35px;
+@media screen and (max-width: 768px) {
+  .intra_usecase {
+    padding: 115px 24px 90px;
   }
 
   .intra_usecase .usecaseWrap .usecaseTit h2 {
@@ -206,10 +184,6 @@
     color: #0a51b7;
   }
 
-  .intra_usecase {
-    padding: 90px 24px;
-  }
-
   .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap span>p {
     font-size: 24px;
     font-weight: bold;
@@ -220,33 +194,28 @@
     color: #092e6e;
   }
 
-  .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap span .listInner {
-    /* position: absolute;
-    top: 110px; */
-    width: 100%;
+  .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap,
+  .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listInner {
+    padding: 45px 24px;
   }
 }
 
 @media screen and (max-width: 680px) {
+  .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li.active .listWrap span>p::after {
+    top: 235px;
+  }
 
   .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap {
     flex-direction: column;
+    padding: 45px 24px 0;
   }
 
   .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap span .listInner li p:nth-last-child(2) {
     margin-bottom: 7px;
   }
 
-  .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li {
-    padding: 20px 20px 0;
-  }
-
   .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li.active .listWrap span .listInner {
     top: 235px;
-  }
-
-  .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li.active {
-    padding: 20px;
   }
 
   .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap span .listInner li i img {
@@ -258,11 +227,14 @@
     justify-content: center;
     height: auto;
     margin-bottom: 34px;
+    padding: 0;
   }
 
   .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap>i {
     flex-direction: column;
     align-items: center;
+    padding: 0;
+    border-left: none;
   }
 
   .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap>i img.hover,
@@ -278,8 +250,13 @@
     margin: 0 auto;
   }
 
+  .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap>i img.hover,
   .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listWrap>i img.normal {
     position: relative;
     top: 5px;
+  }
+
+  .intra_usecase .usecaseWrap .usecaseCont .usecaseList>li .listInner li i img {
+    max-width: 100%;
   }
 }

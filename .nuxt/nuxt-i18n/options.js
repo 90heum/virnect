@@ -12,7 +12,7 @@ export const nuxtOptions = {
 export const options = {
   vueI18n: {},
   vueI18nLoader: false,
-  locales: [{"code":"ko","iso":"ko","name":"Korean","file":"ko/index.js"},{"code":"en","iso":"en","name":"English","file":"en/index.js"}],
+  locales: [{"code":"ko","iso":"ko","name":"Korean","file":"ko/index.js"}],
   defaultLocale: "ko",
   defaultDirection: "ltr",
   routesNameSeparator: "___",
@@ -32,12 +32,11 @@ export const options = {
   onBeforeLanguageSwitch: () => {},
   onLanguageSwitched: () => null,
   seo: true,
-  normalizedLocales: [{"code":"ko","iso":"ko","name":"Korean","file":"ko/index.js"},{"code":"en","iso":"en","name":"English","file":"en/index.js"}],
-  localeCodes: ["ko","en"],
+  normalizedLocales: [{"code":"ko","iso":"ko","name":"Korean","file":"ko/index.js"}],
+  localeCodes: ["ko"],
   additionalMessages: [],
 }
 
 export const localeMessages = {
   'ko/index.js': () => import('../../lang/ko/index.js' /* webpackChunkName: "lang-ko/index.js" */),
-  'en/index.js': () => import('../../lang/en/index.js' /* webpackChunkName: "lang-en/index.js" */),
 }

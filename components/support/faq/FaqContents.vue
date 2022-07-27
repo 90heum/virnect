@@ -105,6 +105,7 @@ export default {
   },
   methods: {
     chooseDetail(e) {
+      
       this.isDetail = this.isDetail === e ? null : e;
       // this.$router.push(`?type=${e ? e : ''}${this.isCategory ? '&category=' + this.isCategory : ''}`);
       this.requestData(this.isDetail);
@@ -113,7 +114,7 @@ export default {
       this.responseData = {};
       if (!this.isDetail) return;
       const { data } = await this.$axios.$get(`admin/support/faq/${e}`);
-      this.responseData = data ? null : !this.isDetail
+      this.responseData = data ? data : !this.isDetail
     },
   },
 };
@@ -125,6 +126,7 @@ export default {
 .FAQList {
   display: block;
   width: 100%;
+
   li,
   ul,
   a {
