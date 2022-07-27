@@ -53,7 +53,7 @@ export default {
     padding: 26px 30px 28px;
     text-align: left;
     background-repeat: no-repeat;
-    background-position: 274px 200px;
+    background-position: 175px 200px;
     background-size: 100px;
     border-top: 1px solid #ced3dc;
     border-right: 1px solid #ced3dc;
