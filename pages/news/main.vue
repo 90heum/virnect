@@ -79,7 +79,9 @@
           </ul>
         </div>
         <!-- 블로그 탭 리스트 -->
-        <span class="newsPressList">
+        <span class="newsPressList"
+              v-show="newsData()"
+        >
           <!-- Video Tutorial -->
           <div class="tutorialBox">
             <!-- 컨텐츠박스 -->
@@ -185,6 +187,9 @@ export default {
       this.pagingData = { ...this.pagingData, currentPage: currentPage };
       this.handleIsType(this.isType, true);
     },
+    newsData(){
+      if (this.$i18n.locale === 'ko') return (<p>게시물이 없습니다.</p>);
+    }
   },
   async asyncData({ $axios }) {
       try {

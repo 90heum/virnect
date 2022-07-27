@@ -92,7 +92,7 @@
           <p>
             {{ $t("newCompany.BrandText.downText") }}
           </p>
-          <a href="#" download>{{
+          <a href="http://13.209.200.75:8080/static/VIRNECT_CI.zip" download>{{
             $t("newCompany.BrandText.downTextButtonText")
           }}</a>
         </div>
