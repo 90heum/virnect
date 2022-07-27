@@ -74,11 +74,11 @@ export default {
     pushLocation(e) {
       const routePath =
         e === 1
-          ? "/terms/service"
+          ? "/terms"
           : e === 2
-          ? "/policy/persnal"
+          ? "/Policy"
           : e === 3
-          ? "/payment/charged"
+          ? "/payment"
           : "";
       this.$router.push(`${routePath}`);
     },

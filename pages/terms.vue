@@ -74,11 +74,11 @@ export default {
     pushLocation(e) {
       const routePath =
         e === 1
-          ? "/terms/service"
+          ? "/terms"
           : e === 2
-          ? "/policy/persnal"
+          ? "/Policy"
           : e === 3
-          ? "/payment/charged"
+          ? "/payment"
           : "";
       this.$router.push(`${routePath}`);
     },
@@ -97,7 +97,7 @@ export default {
     // $i18n.localeProperties.code === "ko" ? res.data.data.content : res.data.data.contentEn
     async requestData(e) {
       this.$axios
-        .get(`admin/terms/3?termsId=${e}`)
+        .get(`admin/terms/1?termsId=${e}`)
         .then(async (res) => {
           this.contentData = res.data.data;
           const md = new Markdown({ toc: false, sanitize: false });
@@ -111,7 +111,7 @@ export default {
   },
   data() {
     return {
-      type: 3,
+      type: 1,
       toggle: false,
       dateIdx: 0,
       contentData: null,
@@ -122,8 +122,8 @@ export default {
       const md = new Markdown({ toc: false, sanitize: false });
       const data = Promise.all([
         $axios.get(`/admin/terms/type`),
-        $axios.get(`/admin/terms?typeId=3`),
-        $axios.get(`/admin/terms/3`),
+        $axios.get(`/admin/terms?typeId=1`),
+        $axios.get(`/admin/terms/1`),
       ]);
       const dataJson = await data;
       const contents = await md.toMarkup(dataJson[2].data.data.content);
@@ -157,11 +157,20 @@ export default {
         border: 1px solid #dcdcdc;
         margin-top: 2px;
         padding-left: 0px;
+        ol {
+          text-align: left;
+          list-style: auto;
+
+          margin-bottom: 10px;
+
+        }
         li {
           padding: 10px 20px 10px 20px;
           width: auto;
           margin: 0px;
           cursor: pointer;
+          list-style: auto;
+          margin-bottom: 10px;
         }
         li:hover {
           background-color: #f5f7fa;
@@ -264,7 +273,6 @@ export default {
       color: #0d2a58;
     }
   }
-
   @media screen and (max-width: 1200px) {
     .termsTypeWrapper {
       overflow-x: scroll;
@@ -279,6 +287,7 @@ export default {
       font-size: 14px;
       border-bottom: 0;
       min-width: 150px;
+      cursor: pointer;
     }
   }
 }

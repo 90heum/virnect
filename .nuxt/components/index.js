@@ -14,7 +14,9 @@ export { default as MainProducts } from '../../components/main/products.vue'
 export { default as MainSlideCarousel } from '../../components/main/slideCarousel.vue'
 export { default as MainSuppoert } from '../../components/main/suppoert.vue'
 export { default as MainUseCase } from '../../components/main/useCase.vue'
+export { default as MixinsMixin } from '../../components/mixins/mixin.js'
 export { default as NewsCommonBaner } from '../../components/news/CommonBaner.vue'
+<<<<<<< HEAD
 export { default as Paging } from '../../components/paging/paging.vue'
 export { default as PolicySubMenuPayment } from '../../components/policy/subMenuPayment.vue'
 export { default as PolicySubMenuPolicy } from '../../components/policy/subMenuPolicy.vue'
@@ -25,6 +27,11 @@ export { default as ProductsNewEffectPartDataEn } from '../../components/product
 export { default as ProductsNewModuleData } from '../../components/products/newModuleData.js'
 export { default as ProductsNewModuleDataEn } from '../../components/products/newModuleData_en.js'
 export { default as MixinsMixin } from '../../components/mixins/mixin.js'
+=======
+export { default as PolicySubMenuPayment } from '../../components/policy/subMenuPayment.vue'
+export { default as PolicySubMenuPolicy } from '../../components/policy/subMenuPolicy.vue'
+export { default as PolicySubMenuTerms } from '../../components/policy/subMenuTerms.vue'
+>>>>>>> ac2db0a144eebd88a4807813bb06d1ee2720846d
 export { default as ModulesBanner } from '../../components/modules/Banner.vue'
 export { default as ModulesBoard } from '../../components/modules/Board.vue'
 export { default as ModulesBoardView } from '../../components/modules/BoardView.vue'
@@ -44,7 +51,16 @@ export { default as ModulesSnb } from '../../components/modules/Snb.vue'
 export { default as ModulesSubSolutionMenu } from '../../components/modules/SubSolutionMenu.vue'
 export { default as ModulesSupportModule } from '../../components/modules/SupportModule.vue'
 export { default as ModulesYoutubeFullscreen } from '../../components/modules/YoutubeFullscreen.vue'
+<<<<<<< HEAD
 export { default as GnbCompany } from '../../components/Gnb/Company/index.vue'
+=======
+export { default as ProductsNewBgPartData } from '../../components/products/NewBgPartData.js'
+export { default as ProductsNewEffectPartData } from '../../components/products/newEffectPartData.js'
+export { default as ProductsNewEffectPartDataEn } from '../../components/products/newEffectPartData_en.js'
+export { default as ProductsNewModuleData } from '../../components/products/newModuleData.js'
+export { default as ProductsNewModuleDataEn } from '../../components/products/newModuleData_en.js'
+export { default as Paging } from '../../components/paging/paging.vue'
+>>>>>>> ac2db0a144eebd88a4807813bb06d1ee2720846d
 export { default as SubscriptionComForm } from '../../components/subscription/comForm.vue'
 export { default as SubscriptionComModal } from '../../components/subscription/comModal.vue'
 export { default as SubscriptionForm } from '../../components/subscription/form.vue'
@@ -62,6 +78,10 @@ export { default as SupportInquiryBanner } from '../../components/support/inquir
 export { default as SupportLearnBanner } from '../../components/support/learnBanner.vue'
 export { default as SupportLearningCenter } from '../../components/support/learning-center.vue'
 export { default as SupportNotice } from '../../components/support/notice.vue'
+<<<<<<< HEAD
+=======
+export { default as GnbCompany } from '../../components/Gnb/Company/index.vue'
+>>>>>>> ac2db0a144eebd88a4807813bb06d1ee2720846d
 export { default as GnbContact } from '../../components/Gnb/Contact/index.vue'
 export { default as GnbFreeTrials } from '../../components/Gnb/FreeTrials/index.vue'
 export { default as GnbPricing } from '../../components/Gnb/Pricing/index.vue'

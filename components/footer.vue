@@ -395,17 +395,17 @@
           <div class="bottomInnerLeft">
             <span>
               <u
-                ><nuxt-link to="/terms/service">{{
+                ><nuxt-link to="/terms">{{
                   $t(`footer.service.title1`)
                 }}</nuxt-link></u
               >
               <u
-                ><nuxt-link to="/policy/persnal">{{
+                ><nuxt-link to="/Policy">{{
                   $t(`footer.service.title2`)
                 }}</nuxt-link></u
               >
               <u
-                ><nuxt-link to="/payment/charged">{{
+                ><nuxt-link to="/payment">{{
                   $t(`footer.service.title3`)
                 }}</nuxt-link></u
               >
