@@ -26,6 +26,7 @@
         </div>
       </div>
     </div>
+    <noticeBanner />
   </div>
 </template>
 
@@ -34,6 +35,7 @@ import HeadBanner from "~/components/support/headBannerProduct.vue";
 import SubMenu from "~/components/support/SubMenu.vue";
 import AsideMenu from "~/components/support/notice/AsideMenu.vue";
 import NoticeContents from "~/components/support/notice/NoticeContents.vue";
+import noticeBanner from "~/layouts/common/Tail.vue";
 export default {
   watch: {
     $route() {
@@ -46,6 +48,7 @@ export default {
     SubMenu,
     AsideMenu,
     NoticeContents,
+    noticeBanner,
   },
   data() {
     return {

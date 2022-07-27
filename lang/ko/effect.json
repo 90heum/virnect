@@ -79,15 +79,15 @@
             "contents": "사내 제작으로 외주 대비 3배 이상의 제작 시간 단축"
         },
         "Reliable": {
-            "title": "Accurate",
+            "title": "Reliable",
             "contents": "외주 대비 99% 이상의 제작 비용 및 유지보수 비용 절감"
         },
         "Immediately": {
-            "title": "Hands-Free",
+            "title": "Immediately",
             "contents": "현장 상황이나 작업 변동 시, 빠른 콘텐츠 수정 및 배포"
         },
         "Security": {
-            "title": "Efficient",
+            "title": "Security",
             "contents": "중요한 산업 정보의 외부 유출에 대한 보안 우려 감소"
         }
     },
@@ -98,20 +98,20 @@
             "contents": "관리자는 VIRNECT Twin을 통해 모든 현장에 강력한 모니터링 시스템 을 구축하여, 운영 전반의 통찰력과 판단력을 강화할 수 있습니다. VIRNECT Twin의 데이터 분석 및 예측 기능은 프로세스 전반을 최적 화하고 제품의 품질을 향상할 수 있도록 합니다."
         },
         "Speedy": {
-            "title": "Visualize",
-            "contents": "설비 및 데이터 XR 시각화를 통해 현황 파악의 편의성 증대"
+            "title": "Real-Time",
+            "contents": "현장의 모습을 복제한 모델에서 연결된 실시간 데이터를 확인"
         },
         "Reliable": {
-            "title": "Intuitive",
-            "contents": "업무 정보를 현장 설비에서 직관적으로 증강하여 작업 오류 최소화"
+            "title": "Prediction",
+            "contents": "데이터 기반의 장비 다운 타임 방지 및 정비 시기 예측"
         },
         "Immediately": {
-            "title": "Real-Time",
-            "contents": "현장 실시간 보고를 통한 보고 프로세스 최적화와 공정 관리 효율 증가"
+            "title": "Efficiency",
+            "contents": "가상 환경 시뮬레이션을 통한 현장 운영 효율화"
         },
         "Security": {
-            "title": "Speedy",
-            "contents": "문제 발생 위치 및 이상 유형 등 알람 정보 시각화로 대응 속도 향상"
+            "title": "Safe",
+            "contents": "현장 작업자 위치 정보 공유를 통한 안전 사고 예방"
         }
     },
     "trackList": {

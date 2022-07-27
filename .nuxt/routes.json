@@ -2,253 +2,217 @@
   {
     "name": "payment",
     "path": "/payment",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/payment.vue",
-    "chunkName": "pages/payment",
-    "_name": "_40c0fe5b"
+    "component": "/Users/majeongheum/virnect/pages/payment.vue",
+    "chunkName": "pages/payment"
   },
   {
     "name": "Policy",
     "path": "/Policy",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/Policy.vue",
-    "chunkName": "pages/Policy",
-    "_name": "_4e66b28d"
+    "component": "/Users/majeongheum/virnect/pages/Policy.vue",
+    "chunkName": "pages/Policy"
   },
   {
     "name": "terms",
     "path": "/terms",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/terms.vue",
-    "chunkName": "pages/terms",
-    "_name": "_e3990ec8"
+    "component": "/Users/majeongheum/virnect/pages/terms.vue",
+    "chunkName": "pages/terms"
   },
   {
     "name": "company-about",
     "path": "/company/about",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/company/about.vue",
-    "chunkName": "pages/company/about",
-    "_name": "_86e848e0"
+    "component": "/Users/majeongheum/virnect/pages/company/about.vue",
+    "chunkName": "pages/company/about"
   },
   {
     "name": "company-aboutSub",
     "path": "/company/aboutSub",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/company/aboutSub.vue",
-    "chunkName": "pages/company/aboutSub",
-    "_name": "_0c5b0680"
+    "component": "/Users/majeongheum/virnect/pages/company/aboutSub.vue",
+    "chunkName": "pages/company/aboutSub"
   },
   {
     "name": "company-ir",
     "path": "/company/ir",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/company/ir.vue",
-    "chunkName": "pages/company/ir",
-    "_name": "_76522194"
+    "component": "/Users/majeongheum/virnect/pages/company/ir.vue",
+    "chunkName": "pages/company/ir"
   },
   {
     "name": "company-ir-detail",
     "path": "/company/ir-detail",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/company/ir-detail.vue",
-    "chunkName": "pages/company/ir-detail",
-    "_name": "_351b9bf8"
+    "component": "/Users/majeongheum/virnect/pages/company/ir-detail.vue",
+    "chunkName": "pages/company/ir-detail"
   },
   {
     "name": "company-talent",
     "path": "/company/talent",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/company/talent.vue",
-    "chunkName": "pages/company/talent",
-    "_name": "_54d8120e"
+    "component": "/Users/majeongheum/virnect/pages/company/talent.vue",
+    "chunkName": "pages/company/talent"
   },
   {
     "name": "news-detail",
     "path": "/news/detail",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/news/detail.vue",
-    "chunkName": "pages/news/detail",
-    "_name": "_5f887562"
+    "component": "/Users/majeongheum/virnect/pages/news/detail.vue",
+    "chunkName": "pages/news/detail"
   },
   {
     "name": "news-main",
     "path": "/news/main",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/news/main.vue",
-    "chunkName": "pages/news/main",
-    "_name": "_a23e4dec"
+    "component": "/Users/majeongheum/virnect/pages/news/main.vue",
+    "chunkName": "pages/news/main"
   },
   {
     "name": "policy-Payment",
     "path": "/policy/Payment",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/policy/Payment.vue",
-    "chunkName": "pages/policy/Payment",
-    "_name": "_ba7e1678"
+    "component": "/Users/majeongheum/virnect/pages/policy/Payment.vue",
+    "chunkName": "pages/policy/Payment"
   },
   {
     "name": "policy-persnal",
     "path": "/policy/persnal",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/policy/persnal.vue",
-    "chunkName": "pages/policy/persnal",
-    "_name": "_375d6ec1"
+    "component": "/Users/majeongheum/virnect/pages/policy/persnal.vue",
+    "chunkName": "pages/policy/persnal"
   },
   {
     "name": "policy-Terms",
     "path": "/policy/Terms",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/policy/Terms.vue",
-    "chunkName": "pages/policy/Terms",
-    "_name": "_095ff545"
+    "component": "/Users/majeongheum/virnect/pages/policy/Terms.vue",
+    "chunkName": "pages/policy/Terms"
   },
   {
     "name": "products-make",
     "path": "/products/make",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/products/make.vue",
-    "chunkName": "pages/products/make",
-    "_name": "_6aac3cce"
+    "component": "/Users/majeongheum/virnect/pages/products/make.vue",
+    "chunkName": "pages/products/make"
   },
   {
     "name": "products-ms",
     "path": "/products/ms",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/products/ms.vue",
-    "chunkName": "pages/products/ms",
-    "_name": "_60a0da86"
+    "component": "/Users/majeongheum/virnect/pages/products/ms.vue",
+    "chunkName": "pages/products/ms"
   },
   {
     "name": "products-productsMain",
     "path": "/products/productsMain",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/products/productsMain.vue",
-    "chunkName": "pages/products/productsMain",
-    "_name": "_65f3aec6"
+    "component": "/Users/majeongheum/virnect/pages/products/productsMain.vue",
+    "chunkName": "pages/products/productsMain"
   },
   {
     "name": "products-remote",
     "path": "/products/remote",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/products/remote.vue",
-    "chunkName": "pages/products/remote",
-    "_name": "_4394ddb4"
+    "component": "/Users/majeongheum/virnect/pages/products/remote.vue",
+    "chunkName": "pages/products/remote"
   },
   {
     "name": "products-track",
     "path": "/products/track",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/products/track.vue",
-    "chunkName": "pages/products/track",
-    "_name": "_64fd77ca"
+    "component": "/Users/majeongheum/virnect/pages/products/track.vue",
+    "chunkName": "pages/products/track"
   },
   {
     "name": "products-twin",
     "path": "/products/twin",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/products/twin.vue",
-    "chunkName": "pages/products/twin",
-    "_name": "_6a9a9e70"
+    "component": "/Users/majeongheum/virnect/pages/products/twin.vue",
+    "chunkName": "pages/products/twin"
   },
   {
     "name": "products-view",
     "path": "/products/view",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/products/view.vue",
-    "chunkName": "pages/products/view",
-    "_name": "_a0ed83f6"
+    "component": "/Users/majeongheum/virnect/pages/products/view.vue",
+    "chunkName": "pages/products/view"
   },
   {
     "name": "support-demo",
     "path": "/support/demo",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/support/demo.vue",
-    "chunkName": "pages/support/demo",
-    "_name": "_7276229e"
+    "component": "/Users/majeongheum/virnect/pages/support/demo.vue",
+    "chunkName": "pages/support/demo"
   },
   {
     "name": "support-faq",
     "path": "/support/faq",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/support/faq.vue",
-    "chunkName": "pages/support/faq",
-    "_name": "_3ab5b2aa"
+    "component": "/Users/majeongheum/virnect/pages/support/faq.vue",
+    "chunkName": "pages/support/faq"
   },
   {
     "name": "support-inquiry",
     "path": "/support/inquiry",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/support/inquiry.vue",
-    "chunkName": "pages/support/inquiry",
-    "_name": "_6b491e5c"
+    "component": "/Users/majeongheum/virnect/pages/support/inquiry.vue",
+    "chunkName": "pages/support/inquiry"
   },
   {
     "name": "support-learning-center",
     "path": "/support/learning-center",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/support/learning-center.vue",
-    "chunkName": "pages/support/learning-center",
-    "_name": "_234116f9"
+    "component": "/Users/majeongheum/virnect/pages/support/learning-center.vue",
+    "chunkName": "pages/support/learning-center"
   },
   {
     "name": "support-learning-manual-detail",
     "path": "/support/learning-manual-detail",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/support/learning-manual-detail.vue",
-    "chunkName": "pages/support/learning-manual-detail",
-    "_name": "_98607278"
+    "component": "/Users/majeongheum/virnect/pages/support/learning-manual-detail.vue",
+    "chunkName": "pages/support/learning-manual-detail"
   },
   {
     "name": "support-learning-video-detail",
     "path": "/support/learning-video-detail",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/support/learning-video-detail.vue",
-    "chunkName": "pages/support/learning-video-detail",
-    "_name": "_47278ef2"
+    "component": "/Users/majeongheum/virnect/pages/support/learning-video-detail.vue",
+    "chunkName": "pages/support/learning-video-detail"
   },
   {
     "name": "support-notice",
     "path": "/support/notice",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/support/notice.vue",
-    "chunkName": "pages/support/notice",
-    "_name": "_13b2475a"
+    "component": "/Users/majeongheum/virnect/pages/support/notice.vue",
+    "chunkName": "pages/support/notice"
   },
   {
     "name": "support-notice-detail",
     "path": "/support/notice-detail",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/support/notice-detail.vue",
-    "chunkName": "pages/support/notice-detail",
-    "_name": "_100db78a"
+    "component": "/Users/majeongheum/virnect/pages/support/notice-detail.vue",
+    "chunkName": "pages/support/notice-detail"
   },
   {
     "name": "support-supportSubMain",
     "path": "/support/supportSubMain",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/support/supportSubMain.vue",
-    "chunkName": "pages/support/supportSubMain",
-    "_name": "_97c27a76"
+    "component": "/Users/majeongheum/virnect/pages/support/supportSubMain.vue",
+    "chunkName": "pages/support/supportSubMain"
   },
   {
     "name": "value-entertainment",
     "path": "/value/entertainment",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/value/entertainment.vue",
-    "chunkName": "pages/value/entertainment",
-    "_name": "_ff04fb82"
+    "component": "/Users/majeongheum/virnect/pages/value/entertainment.vue",
+    "chunkName": "pages/value/entertainment"
   },
   {
     "name": "value-etc",
     "path": "/value/etc",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/value/etc.vue",
-    "chunkName": "pages/value/etc",
-    "_name": "_eac91dea"
+    "component": "/Users/majeongheum/virnect/pages/value/etc.vue",
+    "chunkName": "pages/value/etc"
   },
   {
     "name": "value-infra_resource",
     "path": "/value/infra_resource",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/value/infra_resource.vue",
-    "chunkName": "pages/value/infra_resource",
-    "_name": "_c028cd14"
+    "component": "/Users/majeongheum/virnect/pages/value/infra_resource.vue",
+    "chunkName": "pages/value/infra_resource"
   },
   {
     "name": "value-manufacture_construction",
     "path": "/value/manufacture_construction",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/value/manufacture_construction.vue",
-    "chunkName": "pages/value/manufacture_construction",
-    "_name": "_44750d28"
+    "component": "/Users/majeongheum/virnect/pages/value/manufacture_construction.vue",
+    "chunkName": "pages/value/manufacture_construction"
   },
   {
     "name": "value-public_education",
     "path": "/value/public_education",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/value/public_education.vue",
-    "chunkName": "pages/value/public_education",
-    "_name": "_2ee9e26b"
+    "component": "/Users/majeongheum/virnect/pages/value/public_education.vue",
+    "chunkName": "pages/value/public_education"
   },
   {
     "name": "company-subCompany-Brand",
     "path": "/company/subCompany/Brand",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/company/subCompany/Brand.vue",
-    "chunkName": "pages/company/subCompany/Brand",
-    "_name": "_3a687042"
+    "component": "/Users/majeongheum/virnect/pages/company/subCompany/Brand.vue",
+    "chunkName": "pages/company/subCompany/Brand"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/hellodigital/Desktop/hj01/virnect/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_37948b32"
+    "component": "/Users/majeongheum/virnect/pages/index.vue",
+    "chunkName": "pages/index"
   }
 ]
