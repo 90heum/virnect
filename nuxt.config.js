@@ -88,7 +88,10 @@ export default {
   publicRuntimeConfig: {
     axios: {
       baseURL: 'http://13.209.200.75:8080',
-      credential: true
+      credential: true,
+      https: true,
+      proxy: true,
+
     }
   },
   gsap: {
@@ -99,11 +102,7 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: ["gsap-trial"]
-  },
-  axios: {
-    https: true,
-    proxy: true,
+  }
 
-  },
 
 }
