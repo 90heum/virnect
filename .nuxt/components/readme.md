@@ -24,7 +24,26 @@ You can directly use them in pages and other components without the need to impo
 - `<MainUseCase>` | `<main-use-case>` (components/main/useCase.vue)
 - `<MixinsMixin>` | `<mixins-mixin>` (components/mixins/mixin.js)
 - `<NewsCommonBaner>` | `<news-common-baner>` (components/news/CommonBaner.vue)
+<<<<<<< HEAD
 - `<Paging>` | `<paging>` (components/paging/paging.vue)
+=======
+<<<<<<< HEAD
+- `<Paging>` | `<paging>` (components/paging/paging.vue)
+- `<PolicySubMenuPayment>` | `<policy-sub-menu-payment>` (components/policy/subMenuPayment.vue)
+- `<PolicySubMenuPolicy>` | `<policy-sub-menu-policy>` (components/policy/subMenuPolicy.vue)
+- `<PolicySubMenuTerms>` | `<policy-sub-menu-terms>` (components/policy/subMenuTerms.vue)
+- `<ProductsNewBgPartData>` | `<products-new-bg-part-data>` (components/products/NewBgPartData.js)
+- `<ProductsNewEffectPartData>` | `<products-new-effect-part-data>` (components/products/newEffectPartData.js)
+- `<ProductsNewEffectPartDataEn>` | `<products-new-effect-part-data-en>` (components/products/newEffectPartData_en.js)
+- `<ProductsNewModuleData>` | `<products-new-module-data>` (components/products/newModuleData.js)
+- `<ProductsNewModuleDataEn>` | `<products-new-module-data-en>` (components/products/newModuleData_en.js)
+- `<MixinsMixin>` | `<mixins-mixin>` (components/mixins/mixin.js)
+=======
+- `<PolicySubMenuPayment>` | `<policy-sub-menu-payment>` (components/policy/subMenuPayment.vue)
+- `<PolicySubMenuPolicy>` | `<policy-sub-menu-policy>` (components/policy/subMenuPolicy.vue)
+- `<PolicySubMenuTerms>` | `<policy-sub-menu-terms>` (components/policy/subMenuTerms.vue)
+>>>>>>> ac2db0a144eebd88a4807813bb06d1ee2720846d
+>>>>>>> 9684e52972c3a109476480f7993fad13eb0d0c52
 - `<ModulesBanner>` | `<modules-banner>` (components/modules/Banner.vue)
 - `<ModulesBoard>` | `<modules-board>` (components/modules/Board.vue)
 - `<ModulesBoardView>` | `<modules-board-view>` (components/modules/BoardView.vue)
@@ -44,14 +63,22 @@ You can directly use them in pages and other components without the need to impo
 - `<ModulesSubSolutionMenu>` | `<modules-sub-solution-menu>` (components/modules/SubSolutionMenu.vue)
 - `<ModulesSupportModule>` | `<modules-support-module>` (components/modules/SupportModule.vue)
 - `<ModulesYoutubeFullscreen>` | `<modules-youtube-fullscreen>` (components/modules/YoutubeFullscreen.vue)
+<<<<<<< HEAD
+- `<GnbCompany>` | `<gnb-company>` (components/Gnb/Company/index.vue)
+=======
 - `<ProductsNewBgPartData>` | `<products-new-bg-part-data>` (components/products/NewBgPartData.js)
 - `<ProductsNewEffectPartData>` | `<products-new-effect-part-data>` (components/products/newEffectPartData.js)
 - `<ProductsNewEffectPartDataEn>` | `<products-new-effect-part-data-en>` (components/products/newEffectPartData_en.js)
 - `<ProductsNewModuleData>` | `<products-new-module-data>` (components/products/newModuleData.js)
 - `<ProductsNewModuleDataEn>` | `<products-new-module-data-en>` (components/products/newModuleData_en.js)
+<<<<<<< HEAD
 - `<PolicySubMenuPayment>` | `<policy-sub-menu-payment>` (components/policy/subMenuPayment.vue)
 - `<PolicySubMenuPolicy>` | `<policy-sub-menu-policy>` (components/policy/subMenuPolicy.vue)
 - `<PolicySubMenuTerms>` | `<policy-sub-menu-terms>` (components/policy/subMenuTerms.vue)
+=======
+- `<Paging>` | `<paging>` (components/paging/paging.vue)
+>>>>>>> ac2db0a144eebd88a4807813bb06d1ee2720846d
+>>>>>>> 9684e52972c3a109476480f7993fad13eb0d0c52
 - `<SubscriptionComForm>` | `<subscription-com-form>` (components/subscription/comForm.vue)
 - `<SubscriptionComModal>` | `<subscription-com-modal>` (components/subscription/comModal.vue)
 - `<SubscriptionForm>` | `<subscription-form>` (components/subscription/form.vue)
@@ -69,7 +96,10 @@ You can directly use them in pages and other components without the need to impo
 - `<SupportLearnBanner>` | `<support-learn-banner>` (components/support/learnBanner.vue)
 - `<SupportLearningCenter>` | `<support-learning-center>` (components/support/learning-center.vue)
 - `<SupportNotice>` | `<support-notice>` (components/support/notice.vue)
+<<<<<<< HEAD
+=======
 - `<GnbCompany>` | `<gnb-company>` (components/Gnb/Company/index.vue)
+>>>>>>> ac2db0a144eebd88a4807813bb06d1ee2720846d
 - `<GnbContact>` | `<gnb-contact>` (components/Gnb/Contact/index.vue)
 - `<GnbFreeTrials>` | `<gnb-free-trials>` (components/Gnb/FreeTrials/index.vue)
 - `<GnbPricing>` | `<gnb-pricing>` (components/Gnb/Pricing/index.vue)
