@@ -33,7 +33,7 @@
               </span>
             </nuxt-link>
             <span>
-              <a href="#">
+              <a href="/news/detail?id=140&type">
                 <img
                   src="~/assets/images/pages/epc/moduleimage123wd.png"
                   alt="Product Notice 이미지"
@@ -108,7 +108,7 @@
         <div>
           <nuxt-link to="/support/learning-center">
             <span>
-              <p>{{$t(`newMainText.supportInfo.text1`)}}</p>
+              <p>{{ $t(`newMainText.supportInfo.text1`) }}</p>
               <p>
                 <img
                   src="~/assets/images/pages/epc/addbtn.png"
@@ -147,8 +147,8 @@
       </span>
       <span class="SupportBottomTit">
         <div>
-          <p>{{$t(`newMainText.supportmodulText.kokacktext1`)}}</p>
-          <p>{{$t(`newMainText.supportmodulText.kokacktext2`)}}</p>
+          <p>{{ $t(`newMainText.supportmodulText.kokacktext1`) }}</p>
+          <p>{{ $t(`newMainText.supportmodulText.kokacktext2`) }}</p>
         </div>
         <div>
           <div>
@@ -161,7 +161,9 @@
             <p>070.7733.2025</p>
           </div>
           <div>
-            <nuxt-link to="/support/inquiry">{{$t(`newMainText.supportInfo.text2`)}}</nuxt-link>
+            <nuxt-link to="/support/inquiry">{{
+              $t(`newMainText.supportInfo.text2`)
+            }}</nuxt-link>
           </div>
         </div>
       </span>
