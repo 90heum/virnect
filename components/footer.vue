@@ -132,61 +132,39 @@
             </li>
             <li>
               <nuxt-link to="/products/make">
-                <i
-                  ><img
-                    src="https://velog.velcdn.com/images/kyj0206/post/6bd22ee2-8bfe-4266-a733-fa30444c86c4/image.png"
-                    alt="Make"
-                /></i>
+                <i><img src="~/assets/volog/asdf23df.png" alt="Make" /></i>
                 <p>VIRNECT Make</p>
                 <i
-                  ><img
-                    src="https://velog.velcdn.com/images/kyj0206/post/80ac6d1e-8bf0-400b-aaae-4117151d714d/image.png"
-                    alt="tap아이콘"
+                  ><img src="~/assets/volog/asasdfwrfgh.png" alt="tap아이콘"
                 /></i>
               </nuxt-link>
             </li>
             <li>
               <nuxt-link to="/products/view">
                 <i
-                  ><img
-                    src="https://velog.velcdn.com/images/kyj0206/post/eaee1485-ad71-4cb5-9bc4-334007dea716/image.png"
-                    alt="View"
+                  ><img src="~/assets/volog/footericon1121.png" alt="View"
                 /></i>
                 <p>VIRNECT View</p>
                 <i
-                  ><img
-                    src="https://velog.velcdn.com/images/kyj0206/post/80ac6d1e-8bf0-400b-aaae-4117151d714d/image.png"
-                    alt="tap아이콘"
+                  ><img src="~/assets/volog/asasdfwrfgh.png" alt="tap아이콘"
                 /></i>
               </nuxt-link>
             </li>
             <li>
               <nuxt-link to="/products/twin">
-                <i
-                  ><img
-                    src="https://velog.velcdn.com/images/kyj0206/post/737f774b-0624-4e69-8d03-d54d4eca271e/image.png"
-                    alt="Twin"
-                /></i>
+                <i><img src="~/assets/volog/footericon02.png" alt="Twin" /></i>
                 <p>VIRNECT Twin</p>
                 <i
-                  ><img
-                    src="https://velog.velcdn.com/images/kyj0206/post/80ac6d1e-8bf0-400b-aaae-4117151d714d/image.png"
-                    alt="tap아이콘"
+                  ><img src="~/assets/volog/asasdfwrfgh.png" alt="tap아이콘"
                 /></i>
               </nuxt-link>
             </li>
             <li>
               <nuxt-link to="/products/track">
-                <i
-                  ><img
-                    src="https://velog.velcdn.com/images/kyj0206/post/503bf3bb-8bb4-4dcf-87bd-ab561d3a374f/image.png"
-                    alt="Track"
-                /></i>
+                <i><img src="~/assets/volog/footericon03.png" alt="Track" /></i>
                 <p>VIRNECT Track</p>
                 <i
-                  ><img
-                    src="https://velog.velcdn.com/images/kyj0206/post/80ac6d1e-8bf0-400b-aaae-4117151d714d/image.png"
-                    alt="tap아이콘"
+                  ><img src="~/assets/volog/asasdfwrfgh.png" alt="tap아이콘"
                 /></i>
               </nuxt-link>
             </li>
@@ -195,10 +173,7 @@
         <span class="footerInfo">
           <span class="infoLeft">
             <span class="infoLogoWeb">
-              <img
-                src="https://velog.velcdn.com/images/kyj0206/post/d3ed8e90-ece6-44d8-be3c-5e6a93b8a7ec/image.png"
-                alt="infoLogo"
-              />
+              <img src="~/assets/volog/footerlogo.png" alt="infoLogo" />
             </span>
             <span class="infoList">
               <p>
@@ -235,13 +210,13 @@
                       <div class="arrow">
                         <img
                           class="downIcon6"
-                          src="https://velog.velcdn.com/images/kyj0206/post/5933ac65-99ad-42c7-a624-4158514e9df8/image.png"
+                          src="~/assets/volog/downIconfooter01.png"
                           alt="다운아이콘"
                           v-if="!isServiceMenu"
                         />
                         <img
                           class="upIcon6"
-                          src="https://velog.velcdn.com/images/kyj0206/post/40c8c0f7-9963-4afb-b488-b7fab422d86f/image.png"
+                          src="~/assets/volog/upiconhehehe.png"
                           alt="업아이콘"
                           v-if="isServiceMenu"
                         />
@@ -258,12 +233,12 @@
                           <i>
                             <img
                               class="subBottomMenuIconOpen"
-                              src="https://velog.velcdn.com/images/kyj0206/post/bd7c4128-8517-4eb0-b693-b3df42c50524/image.png"
+                              src="~/assets/volog/suboptionmenuicon1.png"
                               alt="서브옵션메뉴아이콘"
                             />
                             <img
                               class="subBottomMenuIconClose"
-                              src="https://velog.velcdn.com/images/kyj0206/post/c045ee98-b154-48bb-bb09-365f51214fec/image.png"
+                              src="~/assets/volog/suboptionmenicon0303.png"
                               alt="서브옵션메뉴아이콘"
                             />
                           </i>
@@ -279,12 +254,12 @@
                           <i>
                             <img
                               class="subBottomMenuIconOpen"
-                              src="https://velog.velcdn.com/images/kyj0206/post/bd7c4128-8517-4eb0-b693-b3df42c50524/image.png"
+                              src="~/assets/volog/suboptionmenuicon1.png"
                               alt="서브옵션메뉴아이콘"
                             />
                             <img
                               class="subBottomMenuIconClose"
-                              src="https://velog.velcdn.com/images/kyj0206/post/c045ee98-b154-48bb-bb09-365f51214fec/image.png"
+                              src="~/assets/volog/suboptionmenicon0303.png"
                               alt="서브옵션메뉴아이콘"
                             />
                           </i>
@@ -300,12 +275,12 @@
                           <i>
                             <img
                               class="subBottomMenuIconOpen"
-                              src="https://velog.velcdn.com/images/kyj0206/post/bd7c4128-8517-4eb0-b693-b3df42c50524/image.png"
+                              src="~/assets/volog/suboptionmenuicon1.png"
                               alt="서브옵션메뉴아이콘"
                             />
                             <img
                               class="subBottomMenuIconClose"
-                              src="https://velog.velcdn.com/images/kyj0206/post/c045ee98-b154-48bb-bb09-365f51214fec/image.png"
+                              src="~/assets/volog/suboptionmenicon0303.png"
                               alt="서브옵션메뉴아이콘"
                             />
                           </i>
@@ -321,12 +296,12 @@
                           <i>
                             <img
                               class="subBottomMenuIconOpen"
-                              src="https://velog.velcdn.com/images/kyj0206/post/bd7c4128-8517-4eb0-b693-b3df42c50524/image.png"
+                              src="~/assets/volog/suboptionmenuicon1.png"
                               alt="서브옵션메뉴아이콘"
                             />
                             <img
                               class="subBottomMenuIconClose"
-                              src="https://velog.velcdn.com/images/kyj0206/post/c045ee98-b154-48bb-bb09-365f51214fec/image.png"
+                              src="~/assets/volog/suboptionmenicon0303.png"
                               alt="서브옵션메뉴아이콘"
                             />
                           </i>
@@ -347,12 +322,12 @@
                   <a>
                     <i class="downIcon"
                       ><img
-                        src="https://velog.velcdn.com/images/kyj0206/post/82654c80-4c59-4e7e-a9bc-7d5ed7523d93/image.png"
+                        src="~/assets/volog/companyDownload21.png"
                         alt="회사소개서 다운로드"
                     /></i>
                     <i class="downHoverIcon"
                       ><img
-                        src="https://velog.velcdn.com/images/kyj0206/post/034f327b-6153-4e14-8058-17d2899545b7/image.png"
+                        src="~/assets/volog/downhoverload.png"
                         alt="다운로드호버"
                     /></i>
                     <u>{{ $t(`footer.infolink.contents8`) }}</u>
@@ -362,12 +337,12 @@
                   <a>
                     <i class="downIcon"
                       ><img
-                        src="https://velog.velcdn.com/images/kyj0206/post/82654c80-4c59-4e7e-a9bc-7d5ed7523d93/image.png"
+                        src="~/assets/volog/companyDownload21.png"
                         alt="제품소개서 다운로드"
                     /></i>
                     <i class="downHoverIcon"
                       ><img
-                        src="https://velog.velcdn.com/images/kyj0206/post/034f327b-6153-4e14-8058-17d2899545b7/image.png"
+                        src="~/assets/volog/downhoverload.png"
                         alt="다운로드호버"
                     /></i>
                     <u>{{ $t(`footer.infolink.contents9`) }}</u>
@@ -418,28 +393,20 @@
             <span>
               <a href="https://www.youtube.com/virnect%E2%80%8B" target="blank">
                 <i class="iconOn iconOn1"
-                  ><img
-                    src="https://velog.velcdn.com/images/kyj0206/post/9dddd89b-60a1-4f6d-a723-f50f21a095d7/image.png"
-                    alt="유튜브"
+                  ><img src="~/assets/volog/utubeicon1.png" alt="유튜브"
                 /></i>
                 <i class="iconHover iconHover1"
-                  ><img
-                    src="https://velog.velcdn.com/images/kyj0206/post/f86f0c8e-13c6-4ae8-aa60-df5e46c2f659/image.png"
-                    alt="유튜브"
+                  ><img src="~/assets/volog/utuobeicon000.png" alt="유튜브"
                 /></i>
               </a>
             </span>
             <span>
               <a href="https://blog.naver.com/virnect" target="blank">
                 <i class="iconOn iconOn2"
-                  ><img
-                    src="https://velog.velcdn.com/images/kyj0206/post/d88977ea-8624-4d40-8315-5bb1e85565eb/image.png"
-                    alt="블로그"
+                  ><img src="~/assets/volog/blogicon1.png" alt="블로그"
                 /></i>
                 <i class="iconHover iconHover2"
-                  ><img
-                    src="https://velog.velcdn.com/images/kyj0206/post/75c4888d-5feb-4715-97c8-0bd431a4ca1a/image.png"
-                    alt="블로그"
+                  ><img src="~/assets/volog/blogIcon010101.png" alt="블로그"
                 /></i>
               </a>
             </span>
@@ -449,28 +416,20 @@
                 target="blank"
               >
                 <i class="iconOn iconOn3"
-                  ><img
-                    src="https://velog.velcdn.com/images/kyj0206/post/7ac04e9b-2cc6-489a-8cbb-775ec8b110da/image.png"
-                    alt="링크드인"
+                  ><img src="~/assets/volog/inIconheum.png" alt="링크드인"
                 /></i>
                 <i class="iconHover iconHover3"
-                  ><img
-                    src="https://velog.velcdn.com/images/kyj0206/post/366b74df-cd6d-4710-8fb1-b027fbee5fe1/image.png"
-                    alt="링크드인"
+                  ><img src="~/assets/volog/iconinhi.png" alt="링크드인"
                 /></i>
               </a>
             </span>
             <span>
               <a href="https://www.facebook.com/virnectkorea" target="blank">
                 <i class="iconOn iconOn4"
-                  ><img
-                    src="https://velog.velcdn.com/images/kyj0206/post/1d55cef0-568a-4322-9ea5-9658c7a099c3/image.png"
-                    alt="페이스북"
+                  ><img src="~/assets/volog/facebookaa.png" alt="페이스북"
                 /></i>
                 <i class="iconHover iconHover4"
-                  ><img
-                    src="https://velog.velcdn.com/images/kyj0206/post/83cf0191-860c-46e0-bea9-0d66c830d5ca/image.png"
-                    alt="페이스북"
+                  ><img src="~/assets/volog/faceiconbook.png" alt="페이스북"
                 /></i>
               </a>
             </span>
@@ -480,9 +439,7 @@
               v-click-outside="langHide"
             >
               <i
-                ><img
-                  src="https://velog.velcdn.com/images/kyj0206/post/20a62134-5b70-4f72-ab0d-fdef4689940f/image.png"
-                  alt="언어선택"
+                ><img src="~/assets/volog/langugeChoice12.png" alt="언어선택"
               /></i>
               <div>
                 <span>{{
@@ -490,7 +447,7 @@
                 }}</span>
                 <i
                   ><img
-                    src="https://velog.velcdn.com/images/kyj0206/post/7390c5c2-b41e-4326-88fa-12fee83798e0/image.png"
+                    src="~/assets/volog/downfooter5a4sdf.png"
                     alt="다운아이콘"
                 /></i>
               </div>

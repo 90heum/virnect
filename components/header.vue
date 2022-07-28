@@ -43,7 +43,7 @@
                 <i>
                   <img
                     class="downIcon1"
-                    src="https://velog.velcdn.com/images/kyj0206/post/5933ac65-99ad-42c7-a624-4158514e9df8/image.png"
+                    src="~/assets/volog/downIconfooter01.png"
                     alt="다운아이콘"
                     v-show="!gnb1"
                   />
@@ -70,7 +70,7 @@
                 <i>
                   <img
                     class="downIcon2"
-                    src="https://velog.velcdn.com/images/kyj0206/post/5933ac65-99ad-42c7-a624-4158514e9df8/image.png"
+                    src="~/assets/volog/downIconfooter01.png"
                     alt="다운아이콘"
                     v-show="!gnb2"
                   />
@@ -97,7 +97,7 @@
                 <i>
                   <img
                     class="downIcon3"
-                    src="https://velog.velcdn.com/images/kyj0206/post/5933ac65-99ad-42c7-a624-4158514e9df8/image.png"
+                    src="~/assets/volog/downIconfooter01.png"
                     alt="다운아이콘"
                     v-if="!gnb3"
                   />
@@ -124,7 +124,7 @@
                 <i>
                   <img
                     class="downIcon4"
-                    src="https://velog.velcdn.com/images/kyj0206/post/5933ac65-99ad-42c7-a624-4158514e9df8/image.png"
+                    src="~/assets/volog/downIconfooter01.png"
                     alt="다운아이콘"
                     v-if="!gnb4"
                   />
@@ -151,7 +151,7 @@
                 <i>
                   <img
                     class="downIcon5"
-                    src="https://velog.velcdn.com/images/kyj0206/post/5933ac65-99ad-42c7-a624-4158514e9df8/image.png"
+                    src="~/assets/volog/downIconfooter01.png"
                     alt="다운아이콘"
                     v-if="!gnb5"
                   />
@@ -181,7 +181,7 @@
               <div class="arrow">
                 <img
                   class="downIcon6"
-                  src="https://velog.velcdn.com/images/kyj0206/post/5933ac65-99ad-42c7-a624-4158514e9df8/image.png"
+                  src="~/assets/volog/downIconfooter01.png"
                   alt="다운아이콘"
                   v-if="!isServiceMenu"
                   width="24px"
@@ -205,12 +205,12 @@
                   <i>
                     <img
                       class="subBottomMenuIconOpen"
-                      src="https://velog.velcdn.com/images/kyj0206/post/bd7c4128-8517-4eb0-b693-b3df42c50524/image.png"
+                      src="~/assets/volog/suboptionmenuicon1.png"
                       alt="서브옵션메뉴아이콘"
                     />
                     <img
                       class="subBottomMenuIconClose"
-                      src="https://velog.velcdn.com/images/kyj0206/post/c045ee98-b154-48bb-bb09-365f51214fec/image.png"
+                      src="~/assets/volog/suboptionmenicon0303.png"
                       alt="서브옵션메뉴아이콘"
                     />
                   </i>
@@ -222,12 +222,12 @@
                   <i>
                     <img
                       class="subBottomMenuIconOpen"
-                      src="https://velog.velcdn.com/images/kyj0206/post/bd7c4128-8517-4eb0-b693-b3df42c50524/image.png"
+                      src="~/assets/volog/suboptionmenuicon1.png"
                       alt="서브옵션메뉴아이콘"
                     />
                     <img
                       class="subBottomMenuIconClose"
-                      src="https://velog.velcdn.com/images/kyj0206/post/c045ee98-b154-48bb-bb09-365f51214fec/image.png"
+                      src="~/assets/volog/suboptionmenicon0303.png"
                       alt="서브옵션메뉴아이콘"
                     />
                   </i>
@@ -239,12 +239,12 @@
                   <i>
                     <img
                       class="subBottomMenuIconOpen"
-                      src="https://velog.velcdn.com/images/kyj0206/post/bd7c4128-8517-4eb0-b693-b3df42c50524/image.png"
+                      src="~/assets/volog/suboptionmenuicon1.png"
                       alt="서브옵션메뉴아이콘"
                     />
                     <img
                       class="subBottomMenuIconClose"
-                      src="https://velog.velcdn.com/images/kyj0206/post/c045ee98-b154-48bb-bb09-365f51214fec/image.png"
+                      src="~/assets/volog/suboptionmenicon0303.png"
                       alt="서브옵션메뉴아이콘"
                     />
                   </i>
@@ -256,12 +256,12 @@
                   <i>
                     <img
                       class="subBottomMenuIconOpen"
-                      src="https://velog.velcdn.com/images/kyj0206/post/bd7c4128-8517-4eb0-b693-b3df42c50524/image.png"
+                      src="~/assets/volog/suboptionmenuicon1.png"
                       alt="서브옵션메뉴아이콘"
                     />
                     <img
                       class="subBottomMenuIconClose"
-                      src="https://velog.velcdn.com/images/kyj0206/post/c045ee98-b154-48bb-bb09-365f51214fec/image.png"
+                      src="~/assets/volog/suboptionmenicon0303.png"
                       alt="서브옵션메뉴아이콘"
                     />
                   </i>
@@ -914,7 +914,7 @@ export default {
     redirectPage(locale) {
       if (locale === "ko") return;
       const routePath = this.$route.fullPath;
-      
+
       if (
         routePath.includes("/company/ir") ||
         routePath.includes("/company/talent")
@@ -963,11 +963,10 @@ export default {
     },
 
     langlang(locale) {
-
       this.showEarth = !this.showEarth;
       // @param 07/26 추가
       this.redirectPage(locale);
-      console.log(`${locale} 너의 언어는 뭐니?????`)
+      console.log(`${locale} 너의 언어는 뭐니?????`);
     },
     showServiceMenu() {
       this.isServiceMenu = !this.isServiceMenu;
