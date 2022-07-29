@@ -15,6 +15,30 @@ export { default as MainSlideCarousel } from '../../components/main/slideCarouse
 export { default as MainSuppoert } from '../../components/main/suppoert.vue'
 export { default as MainUseCase } from '../../components/main/useCase.vue'
 export { default as MixinsMixin } from '../../components/mixins/mixin.js'
+<<<<<<< HEAD
+=======
+export { default as NewsCommonBaner } from '../../components/news/CommonBaner.vue'
+<<<<<<< HEAD
+export { default as Paging } from '../../components/paging/paging.vue'
+=======
+<<<<<<< HEAD
+export { default as Paging } from '../../components/paging/paging.vue'
+export { default as PolicySubMenuPayment } from '../../components/policy/subMenuPayment.vue'
+export { default as PolicySubMenuPolicy } from '../../components/policy/subMenuPolicy.vue'
+export { default as PolicySubMenuTerms } from '../../components/policy/subMenuTerms.vue'
+export { default as ProductsNewBgPartData } from '../../components/products/NewBgPartData.js'
+export { default as ProductsNewEffectPartData } from '../../components/products/newEffectPartData.js'
+export { default as ProductsNewEffectPartDataEn } from '../../components/products/newEffectPartData_en.js'
+export { default as ProductsNewModuleData } from '../../components/products/newModuleData.js'
+export { default as ProductsNewModuleDataEn } from '../../components/products/newModuleData_en.js'
+export { default as MixinsMixin } from '../../components/mixins/mixin.js'
+=======
+export { default as PolicySubMenuPayment } from '../../components/policy/subMenuPayment.vue'
+export { default as PolicySubMenuPolicy } from '../../components/policy/subMenuPolicy.vue'
+export { default as PolicySubMenuTerms } from '../../components/policy/subMenuTerms.vue'
+>>>>>>> ac2db0a144eebd88a4807813bb06d1ee2720846d
+>>>>>>> 9684e52972c3a109476480f7993fad13eb0d0c52
+>>>>>>> 9e1b08d11061a9d84c57387a80926f99d89c140c
 export { default as ModulesBanner } from '../../components/modules/Banner.vue'
 export { default as ModulesBoard } from '../../components/modules/Board.vue'
 export { default as ModulesBoardView } from '../../components/modules/BoardView.vue'
@@ -44,6 +68,17 @@ export { default as ProductsNewEffectPartData } from '../../components/products/
 export { default as ProductsNewEffectPartDataEn } from '../../components/products/newEffectPartData_en.js'
 export { default as ProductsNewModuleData } from '../../components/products/newModuleData.js'
 export { default as ProductsNewModuleDataEn } from '../../components/products/newModuleData_en.js'
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+export { default as PolicySubMenuPayment } from '../../components/policy/subMenuPayment.vue'
+export { default as PolicySubMenuPolicy } from '../../components/policy/subMenuPolicy.vue'
+export { default as PolicySubMenuTerms } from '../../components/policy/subMenuTerms.vue'
+=======
+export { default as Paging } from '../../components/paging/paging.vue'
+>>>>>>> ac2db0a144eebd88a4807813bb06d1ee2720846d
+>>>>>>> 9684e52972c3a109476480f7993fad13eb0d0c52
+>>>>>>> 9e1b08d11061a9d84c57387a80926f99d89c140c
 export { default as SubscriptionComForm } from '../../components/subscription/comForm.vue'
 export { default as SubscriptionComModal } from '../../components/subscription/comModal.vue'
 export { default as SubscriptionForm } from '../../components/subscription/form.vue'
