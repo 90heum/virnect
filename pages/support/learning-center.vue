@@ -65,6 +65,19 @@ import UserManual from "~/components/support/learning-center/userManual.vue";
 import VideoTutoral from "~/components/support/learning-center/videoTutorial.vue";
 import VideoRealGuide from "~/components/support/learning-center/videoRealGuide.vue";
 export default {
+  head: {
+    title: '학습센터 - VIRNECT',
+    htmlAttrs: {
+      lang: 'ko',
+    },
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'VIRNECT 제품 사용을 위한 튜토리얼,메뉴얼,유용한 팁 등을 안내합니다.'
+      }
+    ],
+  },
   watch: {
     $route(to, from) {
       // this.chooseTabMenu(Number(this.$route.query.category) || 1)

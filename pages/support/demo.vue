@@ -35,7 +35,21 @@
 </template>
 
 <script>
-export default {};
+export default {
+  head: {
+    title: '산업용 XR 전문 솔루션을 무료로 체험하세요 - VIRNECT',
+    htmlAttrs: {
+      lang: 'ko',
+    },
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: '산업현장의 XR/DT 혁신, 지금 바로 경험해 보세요.'
+      }
+    ],
+  },
+};
 </script>
 
 <style lang="scss" scoped>

@@ -24,7 +24,9 @@
         @click="chooseTabMenu(data.id)"
       >
         <p>
-          <img :src="data.thumbnail" :alt="data.name" />
+          <img :src="data.iconData"
+              :alt="data.name"
+          />
         </p>
         <p>
           {{ $i18n.localeProperties.code === "ko" ? data.name : data.nameEn }}
@@ -62,6 +64,24 @@ export default {
     isTabMenu: Number,
     chooseTabMenu: Function,
   },
+  data() {
+    return {
+      iconData: [
+        {
+          src:"~/assets/images/pages/support/icon-product-remote@2x.png",
+        },
+        {
+          src:"~assets/images/pages/support/icon-product-make@2x.png",
+        },
+        {
+          src:"~assets/images/pages/support/icon-product-view@2x.png",
+        },
+        {
+          src:"~assets/images/pages/support/icon-product-workstation@2x.png",
+        }
+      ]
+    }
+  }
 };
 </script>
 

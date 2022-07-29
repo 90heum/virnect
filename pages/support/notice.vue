@@ -35,6 +35,19 @@ import SubMenu from "~/components/support/SubMenu.vue";
 import AsideMenu from "~/components/support/notice/AsideMenu.vue";
 import NoticeContents from "~/components/support/notice/NoticeContents.vue";
 export default {
+  head: {
+    title: 'Product Notice - VIRNECT',
+    htmlAttrs: {
+      lang: 'ko',
+    },
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'VIRNECT 제품 및 서비스 이용을 위한 주요 안내를 확인해 보세요'
+      }
+    ],
+  },
   watch: {
     $route() {
       const type = Number(this.$route.query.type) || null;

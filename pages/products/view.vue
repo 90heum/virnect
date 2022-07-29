@@ -34,6 +34,19 @@ import SubBannerView from "~/components/products/partials/subBannerView.vue";
 import subMenuView from "~/components/products/partials/subMenuView.vue";
 import CtaModule from "~/components/main/ctaModule.vue";
 export default {
+  head: {
+    title: 'VIRNECT View - 확장현실(XR) 콘텐츠 시각화 솔루션',
+    htmlAttrs: {
+      lang: 'ko',
+    },
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'VIRNECT View는 확장현실(XR) 정보 및 데이터 시각화 솔루션입니다. 상용회된 기기로 작업 매뉴얼, 안전 가이드 등의 업무 정보와 운영 데이터를 현장에서 바로 확인할 수 있으며, 신속한 의사 결정과 빠른 대응이 가능합니다.'
+      }
+    ],
+  },
   components: {
     subVisualSection,
     snbSection,

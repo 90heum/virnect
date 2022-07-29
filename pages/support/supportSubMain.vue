@@ -219,6 +219,19 @@ import AsideMenu from "~/components/support/notice/AsideMenu.vue";
 import NoticeContents from "~/components/support/notice/NoticeContents.vue";
 import ContactCtaModule from "~/components/company/partials/contactModule.vue";
 export default {
+  head: {
+    title: 'Support - VIRNECT',
+    htmlAttrs: {
+      lang: 'ko',
+    },
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'VIRNECT 서비스 이용에 도움이 되도록 빠르고 친절하게 해결해 드리겠습니다.'
+      }
+    ],
+  },
   watch: {
     $route(to, from) {
       this.chooseType(Number(this.$route.query.type) || null);

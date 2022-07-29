@@ -143,6 +143,19 @@ import CommonPaging from "~/components/paging/paging.vue";
 import ContactCtaModule from "~/components/company/partials/contactModule.vue";
 
 export default {
+  head: {
+    title: '글로벌 No.1 확장현실 (XR) 플랫폼 기업 - VIRNECT',
+    htmlAttrs: {
+      lang: 'ko',
+    },
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: '증강현실 기술기업 버넥트는 고객의 요구에 맞는 최고의 솔루션을 제공합니다. 산업에 특화된 XR 솔루션으로 공정 오류 감소, 생산 시간 단축 등 산업 효율성 향상을 지원합니다.'
+      }
+    ],
+  },
   data() {
     return {
       isType: null,
