@@ -51,6 +51,19 @@ import AboutSub from "./aboutSub.vue";
 import ctxModule from "~/components/main/ctaModule.vue";
 
 export default {
+  head: {
+    title: '글로벌 No.1 XR 플랫폼 기업 - VIRNECT',
+    htmlAttrs: {
+      lang: 'ko',
+    },
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: '버넥트는 Smart future, Safe future, Low-Carbon future라는 세 가지 관점으로 확장현실(XR) 기술을 활용한 산업현장의 디지털 트랜스포메이션을 이끌고 있습니다. 자체 개발한 컴퓨터 비전 기반의 증강현실 원천기술을 바탕으로 메타버스 기술 트렌드를 선도하는 XR 솔루션 전문 기업입니다.'
+      }
+    ],
+  },
   components: {
     subVisualSection,
     snbSection,

@@ -41,6 +41,19 @@ import subMenuIr from "../../components/company/partials/subMenuIr.vue";
 import contactModule from "~/components/company/partials/contactModule.vue";
 
 export default {
+  head: {
+    title: 'Investor Relations - VIRNECT',
+    htmlAttrs: {
+      lang: 'ko',
+    },
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: '버넥트는 고객, 주주, 임직원을 비롯한 다양한 파트너들과 가치를 공유하며 생활 전반에 XR 기술이 스며들도록 최선을 다하고 있습니다.'
+      }
+    ],
+  },
   data() {
     return {
       pagingData: {

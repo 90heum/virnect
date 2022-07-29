@@ -78,6 +78,19 @@ import SubMenu from "~/components/support/SubMenu.vue";
 import AsideMenu from "~/components/support/faq/AsideMenu.vue";
 import FaqContents from "~/components/support/faq/FaqContents.vue";
 export default {
+  head: {
+    title: 'FAQ - VIRNECT',
+    htmlAttrs: {
+      lang: 'ko',
+    },
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'VIRNECT 제품에 대한 사용자들이 자주 묻는 질문과 답변을 확인해 보세요.'
+      }
+    ],
+  },
   watch: {
     $route(to, from) {
       // this.chooseCategory(Number(this.$route.query.category) || null)

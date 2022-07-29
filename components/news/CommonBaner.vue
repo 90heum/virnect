@@ -12,7 +12,21 @@
 </template>
 
 <script>
-export default {};
+export default {
+  head: {
+    title: 'News & Press - VIRNECT',
+    htmlAttrs: {
+      lang: 'ko',
+    },
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'VIRNECT는 고객과 함께 산업 현장의 문제를 해결하고, 더 안전하고 효율적인 현장을 만들어 가고 있습니다.'
+      }
+    ],
+  },
+};
 </script>
 
 <style lang="scss" scoped>

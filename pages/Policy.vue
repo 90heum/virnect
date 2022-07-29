@@ -64,6 +64,12 @@
 import ClickOutside from "vue-click-outside";
 import Markdown from "@nuxt/markdown";
 export default {
+  head: {
+    title: '개인정보 처리방침 안내 - VIRNECT',
+    htmlAttrs: {
+      lang: 'ko',
+    },
+  },
   directives: {
     ClickOutside,
   },

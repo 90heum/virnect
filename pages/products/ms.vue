@@ -129,6 +129,19 @@ import { filedData, moduleData } from "~/components/products/NewBgPartData.js";
 import ctaModule from "~/components/main/ctaModule.vue";
 
 export default {
+  head: {
+    title: 'VIRNECT XR Devices',
+    htmlAttrs: {
+      lang: 'ko',
+    },
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: '다양한 XR (eXtended Reality) 디바이스를 통해 버넥트 확장현실(XR) 솔루션과 완벽한 퍼포먼스를 경험하세요.'
+      }
+    ],
+  },
   components: {
     subVisualSection,
     snbSection,

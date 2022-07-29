@@ -34,6 +34,19 @@ import SubMenuMake from "~/components/products/partials/subMenuMake.vue";
 import CtaModule from "~/components/main/ctaModule.vue";
 
 export default {
+  head: {
+    title: 'VIRNECT Make - 확장현실(XR) 콘텐츠 제작 솔루션',
+    htmlAttrs: {
+      lang: 'ko',
+    },
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'VIRNECT Make는 XR 콘텐츠로 제작 도구로, 비전문가도 마우스 클릭으로 XR 콘텐츠 제작이 가능합니다. 또한 문자, 사진, 비디오, 3D 모델은 물론 기존 작업 문서, 설비 도면 등을 그대로 제작에 빠르게 활용할 수 있습니다.'
+      }
+    ],
+  },
   components: {
     subVisualSection,
     snbSection,

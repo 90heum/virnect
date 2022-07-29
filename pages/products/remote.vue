@@ -49,6 +49,19 @@ import CtaModule from "~/components/main/ctaModule.vue";
 import SubMenuProduct from "~/components/products/partials/subMenuProduct.vue";
 
 export default {
+  head: {
+    title: 'VIRNECT Remote - XR 원격 협업 솔루션',
+    htmlAttrs: {
+      lang: 'ko',
+    },
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'VIRNECT Remote의 실시간 원격협업 서비스를 통해 산업 현장에 필요한 정보와 이슈를 실시간으로 공유하여 언제 어디서든 업무 대응이 가능합니다. 쉽고 빠르게 협업이 가능하며 기존의 익숙한 업무 환경을 그대로 유지하여 업무의 정확성과 효율성을 높일 수 있습니다.'
+      }
+    ],
+  },
   components: {
     subVisualSection,
     snbSection,

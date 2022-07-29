@@ -36,6 +36,19 @@ import subMenuTrack from "~/components/products/partials/subMenuTrack.vue";
 import CtaModule from "~/components/main/ctaModule.vue";
 
 export default {
+  head: {
+    title: 'VIRNECT Track - 검출/추적용 XR 개발 엔진',
+    htmlAttrs: {
+      lang: 'ko',
+    },
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'VIRNECT Track은 빠르고 정확하게 객체를 학습, 인식 검출, 추적하는 버넥트 자체 개발 XR 엔진입니다. 버넥트 XR 제품들에 탑재되어 뛰어난 성능과 운영 퍼포먼스를 제공하고 있습니다.'
+      }
+    ],
+  },
   components: {
     subVisualSection,
     snbSection,

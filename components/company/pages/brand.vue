@@ -92,7 +92,7 @@
           <p>
             {{ $t("newCompany.BrandText.downText") }}
           </p>
-          <a href="http://test-api.virnect.com:8080/static/VIRNECT_CI.zip" download>{{
+          <a href="https://test-api.virnect.com:8080/static/VIRNECT_CI.zip" download>{{
             $t("newCompany.BrandText.downTextButtonText")
           }}</a>
         </div>
@@ -119,6 +119,19 @@
 <script>
 import headingModule from "../../modules/Heading";
 export default {
+  head: {
+    title: '글로벌 No.1 XR 플랫폼 기업 - VIRNECT',
+    htmlAttrs: {
+      lang: 'ko',
+    },
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'VIRNECT는 고객의 문제를 해결하기 위해 가상 현실(VIRTUAL)과 고객의 현실을 연결(Connect)합니다.'
+      }
+    ],
+  },
   components: {
     headingModule,
   },
