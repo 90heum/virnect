@@ -101,21 +101,22 @@
                   </p>
                 </span>
                 <i>
-                                    <img
+                  <img
                     src="~/assets/images/pages/value/img-value-1@2x.png"
                     alt="협업솔루션"
                   />
 
                   <img
                     class="normal"
-                    src="https://velog.velcdn.com/images/kyj0206/post/6add4766-ac35-47a3-affa-aba62b87881e/image.png"
+                    :src="menu === 1 ? close : open"
                     alt="normal"
+                    @click="showMenu(1)"
                   />
                   <img
                     class="hover"
-                    src="https://velog.velcdn.com/images/kyj0206/post/198b9aa4-f609-4154-9726-c6e765ee2052/image.png"
+                    src="~assets/images/pages/value/icon-plus-hover@2x.png"
                     alt="hover"
-                    @click="showMenu(1)"
+                    
                   />
                 </i>
               </div>
@@ -142,19 +143,20 @@
                   </p>
                 </span>
                 <i>
-                                    <img
+                  <img
                     src="~/assets/images/pages/value/img-value-2@2x.png"
                     alt="시스템개발"
                   />
 
                   <img
                     class="normal"
-                    src="https://velog.velcdn.com/images/kyj0206/post/6add4766-ac35-47a3-affa-aba62b87881e/image.png"
+                    :src="menu=== 2 ? close : open"
                     alt="normal"
+                    @click="showMenu(2)"
                   />
                   <img
                     class="hover"
-                    src="https://velog.velcdn.com/images/kyj0206/post/198b9aa4-f609-4154-9726-c6e765ee2052/image.png"
+                    src="~assets/images/pages/value/icon-plus-hover@2x.png"
                     alt="hover"
                     @click="showMenu(2)"
                   />
@@ -194,12 +196,13 @@
                   />
                   <img
                     class="normal"
-                    src="https://velog.velcdn.com/images/kyj0206/post/6add4766-ac35-47a3-affa-aba62b87881e/image.png"
+                    :src="menu=== 3 ? close : open"
                     alt="normal"
+                    @click="showMenu(3)"
                   />
                   <img
                     class="hover"
-                    src="https://velog.velcdn.com/images/kyj0206/post/198b9aa4-f609-4154-9726-c6e765ee2052/image.png"
+                    src="~assets/images/pages/value/icon-plus-hover@2x.png"
                     alt="hover"
                     @click="showMenu(3)"
                   />
@@ -237,12 +240,13 @@
                   />
                   <img
                     class="normal"
-                    src="https://velog.velcdn.com/images/kyj0206/post/6add4766-ac35-47a3-affa-aba62b87881e/image.png"
+                    :src="menu=== 4 ? close : open"
                     alt="normal"
+                    @click="showMenu(4)"
                   />
                   <img
                     class="hover"
-                    src="https://velog.velcdn.com/images/kyj0206/post/198b9aa4-f609-4154-9726-c6e765ee2052/image.png"
+                    src="~assets/images/pages/value/icon-plus-hover@2x.png"
                     alt="hover"
                     @click="showMenu(4)"
                   />
@@ -284,12 +288,13 @@
                   />
                   <img
                     class="normal"
-                    src="https://velog.velcdn.com/images/kyj0206/post/6add4766-ac35-47a3-affa-aba62b87881e/image.png"
+                    :src="menu=== 5 ? close : open"
                     alt="normal"
+                    @click="showMenu(5)"
                   />
                   <img
                     class="hover"
-                    src="https://velog.velcdn.com/images/kyj0206/post/198b9aa4-f609-4154-9726-c6e765ee2052/image.png"
+                    src="~assets/images/pages/value/icon-plus-hover@2x.png"
                     alt="hover"
                     @click="showMenu(5)"
                   />
@@ -374,7 +379,8 @@ export default {
   data() {
     return {
       menu: 1,
-
+      open: require("~/assets/images/pages/value/icon-plus-close@2x.png"),
+      close: require("~/assets/images/pages/value/icon-plus-open@2x.png"),
       filedData,
       moduleData,
       issueBg:

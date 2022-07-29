@@ -23,6 +23,30 @@ You can directly use them in pages and other components without the need to impo
 - `<MainSuppoert>` | `<main-suppoert>` (components/main/suppoert.vue)
 - `<MainUseCase>` | `<main-use-case>` (components/main/useCase.vue)
 - `<MixinsMixin>` | `<mixins-mixin>` (components/mixins/mixin.js)
+<<<<<<< HEAD
+=======
+- `<NewsCommonBaner>` | `<news-common-baner>` (components/news/CommonBaner.vue)
+<<<<<<< HEAD
+- `<Paging>` | `<paging>` (components/paging/paging.vue)
+=======
+<<<<<<< HEAD
+- `<Paging>` | `<paging>` (components/paging/paging.vue)
+- `<PolicySubMenuPayment>` | `<policy-sub-menu-payment>` (components/policy/subMenuPayment.vue)
+- `<PolicySubMenuPolicy>` | `<policy-sub-menu-policy>` (components/policy/subMenuPolicy.vue)
+- `<PolicySubMenuTerms>` | `<policy-sub-menu-terms>` (components/policy/subMenuTerms.vue)
+- `<ProductsNewBgPartData>` | `<products-new-bg-part-data>` (components/products/NewBgPartData.js)
+- `<ProductsNewEffectPartData>` | `<products-new-effect-part-data>` (components/products/newEffectPartData.js)
+- `<ProductsNewEffectPartDataEn>` | `<products-new-effect-part-data-en>` (components/products/newEffectPartData_en.js)
+- `<ProductsNewModuleData>` | `<products-new-module-data>` (components/products/newModuleData.js)
+- `<ProductsNewModuleDataEn>` | `<products-new-module-data-en>` (components/products/newModuleData_en.js)
+- `<MixinsMixin>` | `<mixins-mixin>` (components/mixins/mixin.js)
+=======
+- `<PolicySubMenuPayment>` | `<policy-sub-menu-payment>` (components/policy/subMenuPayment.vue)
+- `<PolicySubMenuPolicy>` | `<policy-sub-menu-policy>` (components/policy/subMenuPolicy.vue)
+- `<PolicySubMenuTerms>` | `<policy-sub-menu-terms>` (components/policy/subMenuTerms.vue)
+>>>>>>> ac2db0a144eebd88a4807813bb06d1ee2720846d
+>>>>>>> 9684e52972c3a109476480f7993fad13eb0d0c52
+>>>>>>> 9e1b08d11061a9d84c57387a80926f99d89c140c
 - `<ModulesBanner>` | `<modules-banner>` (components/modules/Banner.vue)
 - `<ModulesBoard>` | `<modules-board>` (components/modules/Board.vue)
 - `<ModulesBoardView>` | `<modules-board-view>` (components/modules/BoardView.vue)
@@ -52,6 +76,17 @@ You can directly use them in pages and other components without the need to impo
 - `<ProductsNewEffectPartDataEn>` | `<products-new-effect-part-data-en>` (components/products/newEffectPartData_en.js)
 - `<ProductsNewModuleData>` | `<products-new-module-data>` (components/products/newModuleData.js)
 - `<ProductsNewModuleDataEn>` | `<products-new-module-data-en>` (components/products/newModuleData_en.js)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+- `<PolicySubMenuPayment>` | `<policy-sub-menu-payment>` (components/policy/subMenuPayment.vue)
+- `<PolicySubMenuPolicy>` | `<policy-sub-menu-policy>` (components/policy/subMenuPolicy.vue)
+- `<PolicySubMenuTerms>` | `<policy-sub-menu-terms>` (components/policy/subMenuTerms.vue)
+=======
+- `<Paging>` | `<paging>` (components/paging/paging.vue)
+>>>>>>> ac2db0a144eebd88a4807813bb06d1ee2720846d
+>>>>>>> 9684e52972c3a109476480f7993fad13eb0d0c52
+>>>>>>> 9e1b08d11061a9d84c57387a80926f99d89c140c
 - `<SubscriptionComForm>` | `<subscription-com-form>` (components/subscription/comForm.vue)
 - `<SubscriptionComModal>` | `<subscription-com-modal>` (components/subscription/comModal.vue)
 - `<SubscriptionForm>` | `<subscription-form>` (components/subscription/form.vue)
