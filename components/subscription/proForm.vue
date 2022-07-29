@@ -1,6 +1,7 @@
 <template>
    <section class="proForm">
         <div class="proTit">
+            <p>제품소개서 다운로드</p>
             <p>
                 <i @click="modal()">
                     <img src="https://velog.velcdn.com/images/kyj0206/post/1af5b98b-2587-414f-b0e2-0b877bdadef0/image.png" alt="Xbutton" />

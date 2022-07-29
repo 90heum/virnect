@@ -24,7 +24,7 @@
         @click="chooseTabMenu(data.id)"
       >
         <p>
-          <img :src="data.iconData"
+          <img :src="`~/assets/images/pages/support/${iconData[idx]}`"
               :alt="data.name"
           />
         </p>
@@ -68,16 +68,16 @@ export default {
     return {
       iconData: [
         {
-          src:"~/assets/images/pages/support/icon-product-remote@2x.png",
+          src:"icon-product-remote@2x.png",
         },
         {
-          src:"~assets/images/pages/support/icon-product-make@2x.png",
+          src:"icon-product-make@2x.png",
         },
         {
-          src:"~assets/images/pages/support/icon-product-view@2x.png",
+          src:"icon-product-view@2x.png",
         },
         {
-          src:"~assets/images/pages/support/icon-product-workstation@2x.png",
+          src:"icon-product-workstation@2x.png",
         }
       ]
     }

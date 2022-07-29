@@ -1,6 +1,7 @@
 <template>
    <section class="comForm">
         <div class="comTit">
+            <p>VIRNECT 회사소개서 다운로드</p>
             <p>
                 <i @click="comModal()">
                     <img src="https://velog.velcdn.com/images/kyj0206/post/1af5b98b-2587-414f-b0e2-0b877bdadef0/image.png" alt="Xbutton" />
@@ -41,7 +42,7 @@ body{
     position: absolute;
     z-index: 9999;
     top: 50%;
-    left: 50%;
+    left: 33%;
     transform: translate(-50%, -50%);
     .comTit{
         display: flex;
