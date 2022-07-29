@@ -21,7 +21,7 @@
                 <i>
                   <img
                     class="downIcon2"
-                    src="https://velog.velcdn.com/images/kyj0206/post/5933ac65-99ad-42c7-a624-4158514e9df8/image.png"
+                    src="~/assets/volog/downIconfooter01.png"
                     alt="다운아이콘"
                   />
                   <img
@@ -46,12 +46,12 @@
               <div class="arrow">
                 <img
                   class="downIcon6"
-                  src="https://velog.velcdn.com/images/kyj0206/post/5933ac65-99ad-42c7-a624-4158514e9df8/image.png"
+                  src="~/assets/volog/downIconfooter01.png"
                   alt="다운아이콘"
                 />
                 <img
                   class="upIcon6"
-                  src="https://velog.velcdn.com/images/kyj0206/post/40c8c0f7-9963-4afb-b488-b7fab422d86f/image.png"
+                  src="~/assets/volog/upiconhehehe.png"
                   alt="업아이콘"
                 />
               </div>
@@ -71,12 +71,12 @@
                   <i>
                     <img
                       class="subBottomMenuIconOpen"
-                      src="https://velog.velcdn.com/images/kyj0206/post/bd7c4128-8517-4eb0-b693-b3df42c50524/image.png"
+                      src="~/assets/volog/suboptionmenuicon1.png"
                       alt="서브옵션메뉴아이콘"
                     />
                     <img
                       class="subBottomMenuIconClose"
-                      src="https://velog.velcdn.com/images/kyj0206/post/c045ee98-b154-48bb-bb09-365f51214fec/image.png"
+                      src="~/assets/volog/suboptionmenicon0303.png"
                       alt="서브옵션메뉴아이콘"
                     />
                   </i>

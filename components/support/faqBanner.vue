@@ -23,7 +23,7 @@ export default {};
   margin-top: 80px;
   display: flex;
   background-image: url("https://velog.velcdn.com/images/kyj0206/post/8261f4b8-7f71-46b6-aad9-a9ed90b3b3e7/image.jpg");
-  background-size: auto 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   justify-content: center;

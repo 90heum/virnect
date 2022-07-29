@@ -43,10 +43,7 @@
         />
         <span class="termsSelectInputArrow">
           <span class="termsSelectInputInnerArrow">
-            <i
-              ><img
-                src="https://velog.velcdn.com/images/kyj0206/post/5933ac65-99ad-42c7-a624-4158514e9df8/image.png"
-            /></i>
+            <i><img src="~/assets/volog/downIconfooter01.png" /></i>
           </span>
         </span>
         <ul class="termsSelectBody" v-if="toggle">
@@ -79,13 +76,7 @@ export default {
   methods: {
     pushLocation(e) {
       const routePath =
-        e === 1
-          ? "/terms"
-          : e === 2
-          ? "/Policy"
-          : e === 3
-          ? "/payment"
-          : "";
+        e === 1 ? "/terms" : e === 2 ? "/Policy" : e === 3 ? "/payment" : "";
       this.$router.push(`${routePath}`);
     },
     handleToggle() {
