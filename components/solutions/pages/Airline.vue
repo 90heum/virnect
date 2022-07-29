@@ -449,6 +449,19 @@ import headingModule from "../../modules/Heading";
 
 import { filedData, moduleData } from "~/components/products/NewBgPartData.js";
 export default {
+  head: {
+    title: '엔터테인먼트 - VIRNECT',
+    htmlAttrs: {
+      lang: 'ko',
+    },
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: '엔터테인먼트 분야에서 고객이 안전하게 콘텐츠를 경험을 하는데 있어 현장감을 주기위한 몰입형 콘텐츠의 필요성이 점차 부각되고 있습니다. XR기술을 활용하면 창의적이고 실감나는 콘텐츠를 손쉽게 즐길 수 있습니다.'
+      }
+    ],
+  },
   components: {
     issuePart,
     bgNormalPart,
@@ -466,7 +479,7 @@ export default {
       menu: 1,
       open: require("~/assets/images/pages/value/icon-plus-close@2x.png"),
       close: require("~/assets/images/pages/value/icon-plus-open@2x.png"),
-      
+
       filedData,
       moduleData,
       issueBg: "../images/pages/solution/img-solution-airline-top",

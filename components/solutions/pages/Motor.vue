@@ -344,6 +344,19 @@ import NewBgSlide from "~/components/products/partials/NewBgSlide.vue";
 import headingModule from "../../modules/Heading";
 import { filedData, moduleData } from "~/components/products/NewBgPartData.js";
 export default {
+  head: {
+    title: '공공/교육 - VIRNECT',
+    htmlAttrs: {
+      lang: 'ko',
+    },
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: '공공/교육 분야에 사용되는 기존 교육 방식은 비용 대비 효과가 낮습니다. XR 기술을 활용한다면 보다 탁월한 학습효과는 물론 언제 어디서나 접근 가능합니다.'
+      }
+    ],
+  },
   components: {
     issuePart,
     bgNormalPart,

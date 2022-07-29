@@ -249,6 +249,19 @@ import InquiryBanner from "../../components/support/inquiryBanner.vue";
 import SupportTail from "~/layouts/common/Tail.vue";
 
 export default {
+  head: {
+    title: '문의하기 - VIRNECT',
+    htmlAttrs: {
+      lang: 'ko',
+    },
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: '문의할 내용을 작성해주시면 신속하게 답변 드리겠습니다.'
+      }
+    ],
+  },
   components: {
     SubMenu,
     GoogleMap,

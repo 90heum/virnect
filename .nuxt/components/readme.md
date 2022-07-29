@@ -23,30 +23,8 @@ You can directly use them in pages and other components without the need to impo
 - `<MainSuppoert>` | `<main-suppoert>` (components/main/suppoert.vue)
 - `<MainUseCase>` | `<main-use-case>` (components/main/useCase.vue)
 - `<MixinsMixin>` | `<mixins-mixin>` (components/mixins/mixin.js)
-<<<<<<< HEAD
-=======
 - `<NewsCommonBaner>` | `<news-common-baner>` (components/news/CommonBaner.vue)
-<<<<<<< HEAD
 - `<Paging>` | `<paging>` (components/paging/paging.vue)
-=======
-<<<<<<< HEAD
-- `<Paging>` | `<paging>` (components/paging/paging.vue)
-- `<PolicySubMenuPayment>` | `<policy-sub-menu-payment>` (components/policy/subMenuPayment.vue)
-- `<PolicySubMenuPolicy>` | `<policy-sub-menu-policy>` (components/policy/subMenuPolicy.vue)
-- `<PolicySubMenuTerms>` | `<policy-sub-menu-terms>` (components/policy/subMenuTerms.vue)
-- `<ProductsNewBgPartData>` | `<products-new-bg-part-data>` (components/products/NewBgPartData.js)
-- `<ProductsNewEffectPartData>` | `<products-new-effect-part-data>` (components/products/newEffectPartData.js)
-- `<ProductsNewEffectPartDataEn>` | `<products-new-effect-part-data-en>` (components/products/newEffectPartData_en.js)
-- `<ProductsNewModuleData>` | `<products-new-module-data>` (components/products/newModuleData.js)
-- `<ProductsNewModuleDataEn>` | `<products-new-module-data-en>` (components/products/newModuleData_en.js)
-- `<MixinsMixin>` | `<mixins-mixin>` (components/mixins/mixin.js)
-=======
-- `<PolicySubMenuPayment>` | `<policy-sub-menu-payment>` (components/policy/subMenuPayment.vue)
-- `<PolicySubMenuPolicy>` | `<policy-sub-menu-policy>` (components/policy/subMenuPolicy.vue)
-- `<PolicySubMenuTerms>` | `<policy-sub-menu-terms>` (components/policy/subMenuTerms.vue)
->>>>>>> ac2db0a144eebd88a4807813bb06d1ee2720846d
->>>>>>> 9684e52972c3a109476480f7993fad13eb0d0c52
->>>>>>> 9e1b08d11061a9d84c57387a80926f99d89c140c
 - `<ModulesBanner>` | `<modules-banner>` (components/modules/Banner.vue)
 - `<ModulesBoard>` | `<modules-board>` (components/modules/Board.vue)
 - `<ModulesBoardView>` | `<modules-board-view>` (components/modules/BoardView.vue)
@@ -66,27 +44,14 @@ You can directly use them in pages and other components without the need to impo
 - `<ModulesSubSolutionMenu>` | `<modules-sub-solution-menu>` (components/modules/SubSolutionMenu.vue)
 - `<ModulesSupportModule>` | `<modules-support-module>` (components/modules/SupportModule.vue)
 - `<ModulesYoutubeFullscreen>` | `<modules-youtube-fullscreen>` (components/modules/YoutubeFullscreen.vue)
-- `<NewsCommonBaner>` | `<news-common-baner>` (components/news/CommonBaner.vue)
 - `<PolicySubMenuPayment>` | `<policy-sub-menu-payment>` (components/policy/subMenuPayment.vue)
 - `<PolicySubMenuPolicy>` | `<policy-sub-menu-policy>` (components/policy/subMenuPolicy.vue)
 - `<PolicySubMenuTerms>` | `<policy-sub-menu-terms>` (components/policy/subMenuTerms.vue)
-- `<Paging>` | `<paging>` (components/paging/paging.vue)
 - `<ProductsNewBgPartData>` | `<products-new-bg-part-data>` (components/products/NewBgPartData.js)
 - `<ProductsNewEffectPartData>` | `<products-new-effect-part-data>` (components/products/newEffectPartData.js)
 - `<ProductsNewEffectPartDataEn>` | `<products-new-effect-part-data-en>` (components/products/newEffectPartData_en.js)
 - `<ProductsNewModuleData>` | `<products-new-module-data>` (components/products/newModuleData.js)
 - `<ProductsNewModuleDataEn>` | `<products-new-module-data-en>` (components/products/newModuleData_en.js)
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-- `<PolicySubMenuPayment>` | `<policy-sub-menu-payment>` (components/policy/subMenuPayment.vue)
-- `<PolicySubMenuPolicy>` | `<policy-sub-menu-policy>` (components/policy/subMenuPolicy.vue)
-- `<PolicySubMenuTerms>` | `<policy-sub-menu-terms>` (components/policy/subMenuTerms.vue)
-=======
-- `<Paging>` | `<paging>` (components/paging/paging.vue)
->>>>>>> ac2db0a144eebd88a4807813bb06d1ee2720846d
->>>>>>> 9684e52972c3a109476480f7993fad13eb0d0c52
->>>>>>> 9e1b08d11061a9d84c57387a80926f99d89c140c
 - `<SubscriptionComForm>` | `<subscription-com-form>` (components/subscription/comForm.vue)
 - `<SubscriptionComModal>` | `<subscription-com-modal>` (components/subscription/comModal.vue)
 - `<SubscriptionForm>` | `<subscription-form>` (components/subscription/form.vue)
@@ -104,6 +69,13 @@ You can directly use them in pages and other components without the need to impo
 - `<SupportLearnBanner>` | `<support-learn-banner>` (components/support/learnBanner.vue)
 - `<SupportLearningCenter>` | `<support-learning-center>` (components/support/learning-center.vue)
 - `<SupportNotice>` | `<support-notice>` (components/support/notice.vue)
+- `<GnbCompany>` | `<gnb-company>` (components/Gnb/Company/index.vue)
+- `<GnbContact>` | `<gnb-contact>` (components/Gnb/Contact/index.vue)
+- `<GnbFreeTrials>` | `<gnb-free-trials>` (components/Gnb/FreeTrials/index.vue)
+- `<GnbPricing>` | `<gnb-pricing>` (components/Gnb/Pricing/index.vue)
+- `<GnbProducts>` | `<gnb-products>` (components/Gnb/Products/index.vue)
+- `<GnbSolution>` | `<gnb-solution>` (components/Gnb/Solution/index.vue)
+- `<GnbHeaderPartialMobileHeader>` | `<gnb-header-partial-mobile-header>` (components/Gnb/headerPartial/mobileHeader.vue)
 - `<CompanyPagesRecruit>` | `<company-pages-recruit>` (components/company/pages/Recruit.vue)
 - `<CompanyPagesBrand>` | `<company-pages-brand>` (components/company/pages/brand.vue)
 - `<CompanyValue>` | `<company-value>` (components/company/pages/companyValue.vue)
@@ -112,13 +84,6 @@ You can directly use them in pages and other components without the need to impo
 - `<CompanyPartialsSubMenu>` | `<company-partials-sub-menu>` (components/company/partials/subMenu.vue)
 - `<CompanyPartialsSubMenuBrand>` | `<company-partials-sub-menu-brand>` (components/company/partials/subMenuBrand.vue)
 - `<CompanyPartialsSubMenuIr>` | `<company-partials-sub-menu-ir>` (components/company/partials/subMenuIr.vue)
-- `<GnbCompany>` | `<gnb-company>` (components/Gnb/Company/index.vue)
-- `<GnbContact>` | `<gnb-contact>` (components/Gnb/Contact/index.vue)
-- `<GnbFreeTrials>` | `<gnb-free-trials>` (components/Gnb/FreeTrials/index.vue)
-- `<GnbProducts>` | `<gnb-products>` (components/Gnb/Products/index.vue)
-- `<GnbSolution>` | `<gnb-solution>` (components/Gnb/Solution/index.vue)
-- `<GnbPricing>` | `<gnb-pricing>` (components/Gnb/Pricing/index.vue)
-- `<GnbHeaderPartialMobileHeader>` | `<gnb-header-partial-mobile-header>` (components/Gnb/headerPartial/mobileHeader.vue)
 - `<ProductsPagesMS>` | `<products-pages-m-s>` (components/products/pages/MS.vue)
 - `<ProductsPagesMake>` | `<products-pages-make>` (components/products/pages/Make.vue)
 - `<ProductsPagesPmain>` | `<products-pages-pmain>` (components/products/pages/Pmain.vue)
@@ -126,6 +91,11 @@ You can directly use them in pages and other components without the need to impo
 - `<ProductsPagesTrack>` | `<products-pages-track>` (components/products/pages/Track.vue)
 - `<ProductsPagesTwin>` | `<products-pages-twin>` (components/products/pages/Twin.vue)
 - `<ProductsPagesView>` | `<products-pages-view>` (components/products/pages/View.vue)
+- `<SolutionsPagesAirline>` | `<solutions-pages-airline>` (components/solutions/pages/Airline.vue)
+- `<SolutionsPagesEPC>` | `<solutions-pages-e-p-c>` (components/solutions/pages/EPC.vue)
+- `<SolutionsPagesEnergy>` | `<solutions-pages-energy>` (components/solutions/pages/Energy.vue)
+- `<SolutionsPagesMotor>` | `<solutions-pages-motor>` (components/solutions/pages/Motor.vue)
+- `<SolutionsPagesOil>` | `<solutions-pages-oil>` (components/solutions/pages/Oil.vue)
 - `<ProductsPartialsBenefitPart>` | `<products-partials-benefit-part>` (components/products/partials/BenefitPart.vue)
 - `<ProductsPartialsBgSlidePart>` | `<products-partials-bg-slide-part>` (components/products/partials/BgSlidePart.vue)
 - `<ProductsPartialsEffectPart>` | `<products-partials-effect-part>` (components/products/partials/EffectPart.vue)
@@ -159,11 +129,6 @@ You can directly use them in pages and other components without the need to impo
 - `<ProductsPartialsSubMenuTrack>` | `<products-partials-sub-menu-track>` (components/products/partials/subMenuTrack.vue)
 - `<ProductsPartialsSubMenuTwin>` | `<products-partials-sub-menu-twin>` (components/products/partials/subMenuTwin.vue)
 - `<ProductsPartialsSubMenuView>` | `<products-partials-sub-menu-view>` (components/products/partials/subMenuView.vue)
-- `<SolutionsPagesAirline>` | `<solutions-pages-airline>` (components/solutions/pages/Airline.vue)
-- `<SolutionsPagesEPC>` | `<solutions-pages-e-p-c>` (components/solutions/pages/EPC.vue)
-- `<SolutionsPagesEnergy>` | `<solutions-pages-energy>` (components/solutions/pages/Energy.vue)
-- `<SolutionsPagesMotor>` | `<solutions-pages-motor>` (components/solutions/pages/Motor.vue)
-- `<SolutionsPagesOil>` | `<solutions-pages-oil>` (components/solutions/pages/Oil.vue)
 - `<SolutionsPartialsBgNormalPart>` | `<solutions-partials-bg-normal-part>` (components/solutions/partials/BgNormalPart.vue)
 - `<SolutionsPartialsInfographicPart>` | `<solutions-partials-infographic-part>` (components/solutions/partials/InfographicPart.vue)
 - `<SolutionsPartialsIssuePart>` | `<solutions-partials-issue-part>` (components/solutions/partials/IssuePart.vue)

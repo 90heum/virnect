@@ -288,8 +288,8 @@ export default {
       moduleData,
       isMobile: false,
       makeIntro: {
-        logo: "../images/pages/products/logo-products-bi-make",
-        img: "../images/pages/products/img-products-make",
+        logo: "../images/pages/products/logo-products-bi-make.png",
+        img: "../images/pages/products/img-products-make.png",
         // intoBtn: `${window.urls['download']}/make`,
         btnText: this.$t("global.downloadIntoBtn"),
         videoLink:
@@ -297,7 +297,7 @@ export default {
       },
       functionIconImage:
         "~/assets/images/pages/products/functionImage/Make/Make1.png",
-      effectBG: "../images/pages/products/img-make-effect",
+      effectBG: "../images/pages/products/img-make-effect.png",
       supportTitle: {
         align: "left",
         btnText: "Pricing",

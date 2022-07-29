@@ -326,6 +326,19 @@ import NewBgSlide from "~/components/products/partials/NewBgSlide.vue";
 import headingModule from "../../modules/Heading";
 import { filedData, moduleData } from "~/components/products/NewBgPartData.js";
 export default {
+  head: {
+    title: '기타 - VIRNECT',
+    htmlAttrs: {
+      lang: 'ko',
+    },
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'XR기술은 산업현장은 뿐만 아니라 의료, 헬스케어 등 일상 생활 속 밀접한 부분까지 다양한 분야에 적용 가능합니다.'
+      }
+    ],
+  },
   components: {
     issuePart,
     bgNormalPart,
@@ -343,7 +356,7 @@ export default {
       menu: 1,
       open: require("~/assets/images/pages/value/icon-plus-close@2x.png"),
       close: require("~/assets/images/pages/value/icon-plus-open@2x.png"),
-      
+
       filedData,
       moduleData,
       issueBg: "../images/pages/solution/img-solution-epc-top",

@@ -35,6 +35,19 @@ import subMenuTwin from "~/components/products/partials/subMenuTwin.vue";
 import CtaModule from "~/components/main/ctaModule.vue";
 
 export default {
+  head: {
+    title: 'VIRNECT Twin - XR 기반 3D 현장 관리 솔루션',
+    htmlAttrs: {
+      lang: 'ko',
+    },
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'VIRNECT Twin은 산업 현장을 가상 모델로 재현하고 이를 실제 데이터와 연동하여, 산업 현장의 운영 상태 및 프로세스를 모니터링할 수 있는 제품입니다'
+      }
+    ],
+  },
   components: {
     subVisualSection,
     snbSection,
